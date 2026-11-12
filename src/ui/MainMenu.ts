@@ -86,17 +86,17 @@ export class MainMenu {
             <li><strong>Space</strong><span>Jump.</span></li>
             <li><strong>C</strong><span>Crawl under low props. Tap again to stand.</span></li>
             <li><strong>Drag mouse</strong><span>Look around. Wheel zooms the camera.</span></li>
-            <li><strong>E / click</strong><span>Pocket the object under the crosshair.</span></li>
-            <li><strong>Tab</strong><span>Switch between objects within reach.</span></li>
+            <li><strong>E / click</strong><span>Act on the nearest thing in reach &mdash; pocket it, open a door, light a lantern, get on a horse, ask a person.</span></li>
+            <li><strong>Tab</strong><span>Switch between the things in reach.</span></li>
             <li><strong>V</strong><span>First or third person.</span></li>
-            <li><strong>Esc</strong><span>Pause. The clock stops with you.</span></li>
+            <li><strong>Esc</strong><span>Pause.</span></li>
           </ul>
           <p class="mission-hint">
             <em>Every map hides five objects that do not belong to it &mdash; a toaster
-            in a forest, a barrel in a chrome city. Walk close, put the crosshair on
-            one, press E. You are told what they are only after you find them. Wrong
-            object three times and the hunt is over. Stuck for five minutes? A vague
-            hint appears.</em>
+            in a forest, a barrel in a chrome city. Walk close, press E. You are told
+            what they are only after you find them. Wrong object three times and the
+            hunt is over. Stuck? Ask one of the people in the map &mdash; they will
+            describe one still-missing object, once each.</em>
           </p>
           <button id="btn-close-controls" class="btn btn-small interactive-ui">Got it</button>
         </div>
