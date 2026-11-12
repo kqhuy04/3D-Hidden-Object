@@ -15,6 +15,7 @@ import { RenderQuality } from '../render/Quality';
 import { SunShadows } from '../render/SunShadows';
 import { Atmosphere } from '../render/Atmosphere';
 import { TargetGlow } from '../render/TargetGlow';
+import { NpcCrowd } from '../npc/NpcCrowd';
 import { moodFor } from '../../data/mapMood';
 import { HiddenItemPlacement, hiddenItemsFor } from '../../data/hiddenItems';
 import { UIManager } from '../../ui/UIManager';
@@ -110,6 +111,8 @@ export class Game {
   private atmosphere: Atmosphere;
   /** Makes the object under the reticle glow, in the scene itself. */
   private glow = new TargetGlow();
+  /** The people the kit already placed in the map, walking about. */
+  private npcs: NpcCrowd;
   /** Where the settings sheet was opened from, so closing it goes back there. */
   private settingsReturn: GameState = GameState.MENU;
   /** Smoothed frame rate for the HUD readout. */
@@ -151,6 +154,7 @@ export class Game {
 
     // 3. Subsystem initialization
     this.collision = new WorldCollision();
+    this.npcs = new NpcCrowd(this.collision);
     this.worldLoader = new WorldLoader();
     this.collisionDebug = new CollisionDebugView(this.scene);
 
@@ -306,6 +310,7 @@ export class Game {
       this.worldGroup = null;
     }
     this.collision.clear();
+    this.npcs.dispose();
     this.hiddenItems.clear();
     this.pickupTarget = null;
     this.map = map;
@@ -377,6 +382,12 @@ export class Game {
 
     onProgress?.('Setting up spawn position...');
     this.placeAtSpawn();
+
+    // The kit's own cast, given something to do. After the spawn, because the
+    // nearest few to it are the ones worth animating, and before the shader
+    // warm-up so anything they touch is compiled behind the loading screen.
+    onProgress?.('Waking the locals...');
+    await this.npcs.attach(worldGroup, this.player.getPosition().clone());
     const tSpawn = performance.now();
 
     // Compile every material now, behind the loading screen.
@@ -428,6 +439,9 @@ export class Game {
       // What the reticle is currently lighting up, so a probe can confirm the
       // highlight follows the selection rather than a stale object.
       glow: this.glow,
+      // The animated cast, so a probe can watch them move and check they stay
+      // on the ground instead of judging it from a screenshot.
+      npcs: this.npcs,
       save: this.save,
       // A getter, not a snapshot: `selectMap` replaces the collider, and a
       // harness that held the old one measured the previous map's geometry
@@ -1000,6 +1014,8 @@ export class Game {
     // The glow breathes whether or not the player is moving, so it reads as a
     // live highlight rather than a painted-on tint.
     this.glow.update(delta);
+    // The people keep walking behind the pause menu, like the weather does.
+    this.npcs.update(delta);
 
     if (this.state === GameState.PLAYING) {
       // 1. Player movement

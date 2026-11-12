@@ -1,0 +1,36 @@
+NPCs: the kit's own cast, walking about
+
+Every kit ships people — a ranger, an angler, a kid with a torch — and until now
+they stood in their modelled pose, which is the loudest thing that says "this is
+a model and not a place".
+
+They now walk a short leg, pause, talk to each other, and walk another. Four to
+five per map, the ones nearest the spawn, because a farmer idling two hundred
+metres away is a cost with no payoff.
+
+Deliberately dull. No pathing graph, no schedules: a leg in a random direction,
+validated by six ground samples and a blockage test, rejected if the ground
+moves more than 0.3 m under it. That is what keeps them off stairs, out of the
+lake and off ledges. When every direction fails they stand still, which is
+exactly what the map did before.
+
+The clips come from polyfork (Idle / Walk / Talking, 125 kB total) and are
+vendored into public/assets/clips/ rather than fetched from their CDN at play
+time: a player on a train should not get a person who never moves.
+
+Three things cost real time here and are worth remembering:
+
+- A merged map renames every bone to keep the file valid: Hips_31, Spine2_18.
+  Matching exact names found nobody on twenty maps out of twenty-one, so the
+  whole cast stood still. Bone names are compared with the suffix stripped.
+- Skinned meshes are baked into the collision soup at their bind pose, so a
+  ground query at a character's own feet returns the top of its own legs. Every
+  actor measured a 0.37 m offset and every leg was rejected as a cliff. The
+  offset is now the median of a ring of samples at 1.2 m, and the height along
+  a leg is interpolated from its two ends rather than re-queried per frame.
+- A kit character is often several skinned meshes (body, hair, coat), each with
+  its own skeleton at the same coordinates. The first run animated five parts
+  of one man. Candidates are grouped by where they stand and the rig with the
+  most bones wins.
+
+109 tests, tsc clean, build OK, 22/22 maps swept clean.
