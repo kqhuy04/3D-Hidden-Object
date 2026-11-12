@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { SunShadows } from './SunShadows';
 import { Weather } from './Weather';
+import { WaterSurface } from './WaterSurface';
 import { skyAt, createSkyState } from './skyModel';
 import { MapMood, WeatherKind, DEFAULT_MOOD } from '../../data/mapMood';
 
@@ -55,8 +56,13 @@ const TINTS: Record<WeatherKind, Tint> = {
   mist: { grey: 0.5, dim: 1.0, sun: 0.5, ambient: 1.02, fog: 3.4 },
   rain: { grey: 0.74, dim: 0.74, sun: 0.26, ambient: 0.98, fog: 2.8 },
   // Snow is the one weather that makes the sky *brighter*: a snowfield throws
-  // light back up, and a grey lid over a white ground looks wrong.
-  snow: { grey: 0.58, dim: 1.06, sun: 0.45, ambient: 1.05, fog: 2.3 },
+  // light back up, and a grey lid over a white ground looks wrong. The sun is
+  // kept higher than rain's on purpose — a snowfield is read almost entirely by
+  // the shadows its drifts cast, and the first version dimmed them away.
+  snow: { grey: 0.58, dim: 1.06, sun: 0.58, ambient: 1.05, fog: 2.3 },
+  // Silt. The tint only matters for the moment before `refresh` replaces it
+  // with the sea's own colour; it is here so the table stays total.
+  motes: { grey: 0.15, dim: 0.9, sun: 0.55, ambient: 1.0, fog: 1.0 },
 };
 
 /** Fog density at the clear-weather baseline. Matches the pre-atmosphere look. */
@@ -93,11 +99,26 @@ const MIN_AMBIENT_GROUND_LIGHTNESS = 0.3;
  */
 const HAZE_COLOR = 0xd8c3a4;
 
+/**
+ * Water, for the maps that are under it.
+ *
+ * `SEA_FOG` is a visibility of about 22 m — far enough to pick a shape out of
+ * the blue, short enough that the far edge of the reef fades out instead of
+ * ending on a horizon line drawn against a sky that is not there.
+ */
+const SEA_COLOR = 0x14606a;
+const SEA_FOG = 0.045;
+/** Sunlight that has already been through metres of water: cool and weak. */
+const SEA_SUN = 0x9fe4e0;
+const SEA_AMBIENT_SKY = 0x3f8f96;
+const SEA_AMBIENT_GROUND = 0x2b5a4e;
+
 export class Atmosphere {
   private sky = createSkyState();
   private mood: MapMood = DEFAULT_MOOD;
   private hour = DEFAULT_MOOD.timeOfDay;
   private weather: Weather;
+  private water: WaterSurface;
 
   /** The hour the light was last built for, so a still sun is free. */
   private appliedHour = Number.NaN;
@@ -107,10 +128,15 @@ export class Atmosphere {
   private readonly ambientSky = new THREE.Color(0xd6eaf8);
   private readonly ambientGround = new THREE.Color(0x6e8858);
   private readonly haze = new THREE.Color(HAZE_COLOR);
+  private readonly sea = new THREE.Color(SEA_COLOR);
+  private readonly seaSun = new THREE.Color(SEA_SUN);
+  private readonly seaSky = new THREE.Color(SEA_AMBIENT_SKY);
+  private readonly seaGround = new THREE.Color(SEA_AMBIENT_GROUND);
   private readonly hsl = { h: 0, s: 0, l: 0 };
 
   constructor(private scene: THREE.Scene, private sun: SunShadows) {
     this.weather = new Weather(scene);
+    this.water = new WaterSurface(scene);
     this.scene.background = this.background;
     this.scene.fog = this.fog;
   }
@@ -144,6 +170,15 @@ export class Atmosphere {
       if (drift > 0.02) this.refresh();
     }
     this.weather.update(deltaSeconds, playerPosition);
+
+    // The surface is placed from the body rather than from the map, so it does
+    // not have to be measured: a reef is fifteen metres of water deep.
+    if (this.mood.submerged) {
+      if (!this.water.isShowing()) this.water.show(playerPosition.y);
+      this.water.update(deltaSeconds, playerPosition);
+    } else if (this.water.isShowing()) {
+      this.water.hide();
+    }
   }
 
   private refresh(): void {
@@ -180,6 +215,22 @@ export class Atmosphere {
       this.lift(this.ambientGround, sky.groundColor, MIN_AMBIENT_GROUND_LIGHTNESS),
       Math.max(MIN_AMBIENT, sky.ambientIntensity * tint.ambient)
     );
+
+    // Under water the hour is *filtered*, not lit: there is no sky down there to
+    // be warm or cool, and what reaches the reef has already passed through
+    // metres of sea. Replaced rather than tinted, because a reef that merely
+    // looks a little green is still a reef in a desert.
+    if (this.mood.submerged) {
+      this.background.copy(this.sea).lerp(sky.skyColor, 0.12);
+      this.fog.color.copy(this.background);
+      this.fog.density = SEA_FOG;
+      this.sun.setLight(sky.sunDirection, this.seaSun, sky.sunIntensity * 0.55);
+      this.sun.setAmbient(
+        this.seaSky,
+        this.seaGround,
+        Math.max(MIN_AMBIENT, sky.ambientIntensity * 1.1)
+      );
+    }
   }
 
   /** Copies `source` into `target`, raising its lightness to at least `floor`. */

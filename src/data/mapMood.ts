@@ -17,7 +17,7 @@
  * numbers below say.
  */
 
-export type WeatherKind = 'clear' | 'overcast' | 'mist' | 'rain' | 'snow';
+export type WeatherKind = 'clear' | 'overcast' | 'mist' | 'rain' | 'snow' | 'motes';
 
 export interface MapMood {
   /** Hours on a 24-hour clock. 16.5 is half past four in the afternoon. */
@@ -33,6 +33,17 @@ export interface MapMood {
   weather: WeatherKind;
   /** Extra haze on top of what the weather implies, 0…1. */
   haze?: number;
+  /**
+   * True for a map that is under water rather than under a sky.
+   *
+   * This is a *place*, not a weather, which is why it is not another
+   * `WeatherKind`: a reef does not stop being under water when the sun comes
+   * out. It replaces the sky with the water's own colour, thickens the fog to
+   * the twenty-odd metres you can actually see in, and cools the sun to the
+   * light that gets through the surface. Without it the reef map was a sand
+   * desert with a sea turtle flying through a pale blue sky.
+   */
+  submerged?: boolean;
 }
 
 /**
@@ -45,11 +56,12 @@ export interface MapMood {
 export const MAP_MOODS: Record<string, MapMood> = {
   // Mid-afternoon at a working ski resort: the sun is already low enough to
   // throw long blue shadows across the piste, which is the one thing a snowfield
-  // needs to stop reading as a white void. Clear rather than snowing on purpose —
-  // falling snow is the obvious choice and it costs the map its shadows, and the
-  // kit already supplies the snow. The one map that owns the weather is
-  // `symphony-stagecraft`; this one owns the light.
-  'alpine-and-snow': { timeOfDay: 15.2, weather: 'clear' },
+  // needs to stop reading as a white void. It snows here, and it did not until
+  // the player asked why the snowy map had no snow in it: the argument for
+  // `clear` was that falling snow costs the map its shadows, and the answer is
+  // that a map called "alpine and snow" that never snows costs it the whole
+  // point. The tint below keeps enough sun for the shadows to survive.
+  'alpine-and-snow': { timeOfDay: 15.2, weather: 'snow' },
 
   // Late afternoon on a lake: the hour that makes the water read as water.
   'campground-lake': { timeOfDay: 17.6, weather: 'clear' },
@@ -66,8 +78,10 @@ export const MAP_MOODS: Record<string, MapMood> = {
   // High overcast and dust: concrete looks right under a flat white sky.
   'construction-site': { timeOfDay: 11.0, weather: 'overcast', haze: 0.25 },
 
-  // Noon, clear water, maximum colour.
-  'coral-reef': { timeOfDay: 11.6, weather: 'clear' },
+  // Noon under water. The kit is a seabed — corals, seagrass, a research
+  // habitat — so the map is not "a reef on a beach", it is twenty metres down,
+  // and the sky and the fog have to say so before a single prop is lit.
+  'coral-reef': { timeOfDay: 11.6, weather: 'motes', submerged: true },
 
   // Early train, morning mist in the cutting.
   'countryside-railway': { timeOfDay: 7.8, weather: 'mist' },

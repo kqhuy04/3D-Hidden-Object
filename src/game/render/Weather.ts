@@ -49,6 +49,12 @@ const SETTINGS: Record<Exclude<WeatherKind, 'clear' | 'overcast' | 'mist'>, Kind
   rain: { count: 2600, fall: 17, drift: 2.2, size: 14, streak: 1, color: 0xc8d4e2, opacity: 0.5 },
   // Flakes are much smaller than drops read, and much slower.
   snow: { count: 1500, fall: 1.5, drift: 0.5, size: 5, streak: 0, color: 0xffffff, opacity: 0.85 },
+  // Marine snow: the silt that drifts down through every cubic metre of sea.
+  // Finer and slower than a flake, and it barely moves sideways — the sway in
+  // the vertex shader does the rest. This is what tells the eye the camera is
+  // under water before it has found the surface, and it is the cheapest part of
+  // the effect by far.
+  motes: { count: 1100, fall: 0.45, drift: 0.08, size: 2.5, streak: 0, color: 0xdff0ea, opacity: 0.5 },
 };
 
 /** Half-extent of the volume the drops live in, in metres. */

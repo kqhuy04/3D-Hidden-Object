@@ -47,7 +47,8 @@ look that ignores the clock.
 | overcast | 0.72 | 0.94 | 0.32 | ×1.7 |
 | mist | 0.50 | 1.00 | 0.50 | ×3.4 |
 | rain | 0.74 | 0.74 | 0.26 | ×2.8 |
-| snow | 0.58 | 1.06 | 0.45 | ×2.3 |
+| snow | 0.58 | 1.06 | 0.58 | ×2.3 |
+| motes | 0.15 | 0.90 | 0.55 | ×1.0 |
 
 `grey` **desaturates the hour's own sky** rather than mixing it toward a fixed
 grey. The first version mixed toward `#c9c9c4`, which made the four overcast maps
@@ -56,6 +57,30 @@ blue-grey, and the hours may as well not have been set.
 
 `haze` is per map on top of that. It thickens the fog *and warms the sky*, or the
 "dust and heat" maps come out the same cool grey as the hospital corridor.
+
+## Under water is a place, not a weather
+
+`coral-reef` sets `submerged: true` instead of a weather. The distinction is not
+pedantry: a reef does not stop being under water when the sun comes out, and
+expressing it as another `WeatherKind` would have made the two mutually
+exclusive. Everything the hour produced is *replaced*:
+
+| | above water | under water |
+| --- | --- | --- |
+| background / fog colour | the hour's sky | `#14606a` lerped 12% toward it |
+| fog density | 0.012 × tint | **0.045** — about 22 m of visibility |
+| sun colour / intensity | warm, full | `#9fe4e0`, ×0.55 |
+| particles | — | `motes`: marine snow, 0.45 m/s down |
+
+The 12% keeps a morning reef cooler than a noon one without ever letting the sky
+show through. `WaterSurface` draws the underside — a 420 m plane fifteen metres
+over the body, following it in XZ — because a flat fog colour overhead is a
+ceiling, and the thing that says *water* is movement above your head.
+
+**Why this was needed.** The map is a seabed: corals, seagrass, a research
+habitat, a sea turtle. Lit by a noon sky it came out as a sand desert with a
+turtle flying through it. No amount of prop work fixes that; the light has to
+say where you are before the props are read.
 
 ## The two floors
 
