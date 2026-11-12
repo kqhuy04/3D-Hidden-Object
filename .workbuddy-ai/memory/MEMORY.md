@@ -66,6 +66,17 @@ Player-facing docs: `docs/START_SCREEN.md`, `MAP_SELECT.md`, `ATMOSPHERE.md`,
   to the bottom preset, so every round began at 360p with shadows off.
 - **No post-processing chain.** `Game.render()` is one `renderer.render`;
   `antialias: true` is the only AA. `MIN_SCALE` is 0.80 (0.55 read as "trông rất xấu").
+- **The shadow map is split by what moves.** A full rebuild is 1423 draw calls and
+  372k triangles on `frontier-town` (2.4× the main pass), so it can never run per
+  frame — but refreshing it every 0.4 m made the character's shadow lag a stride and
+  snap, which read as the character stuttering ("mỗi bước chân", gone with shadows
+  off). `worldMap` holds the world alone and is rendered only when the sun's anchor
+  steps (6 m); the map the materials sample is rebuilt every frame from a blit of
+  `worldMap` plus a second pass over the movers — 71 draw calls. Movers are lifted
+  onto render layer 1 and have `castShadow` cleared, or the world copy keeps a ghost
+  of them. `SunShadows.setDynamic` must be re-called per map; `Game` does it after
+  `npcs.attach`. Kit characters are several meshes per person, so the roots are
+  `Player.getGroup()`, `npcs.movingParts` and `mounts.movingParts` — not the units.
 - **The selection is a rim, not a pulse** (the user asked for the outline back).
   `TargetOutline` adds an inverted hull per mesh — collect the meshes into an array
   *first*; adding a hull during `traverse` walks into it and recurses until the stack
