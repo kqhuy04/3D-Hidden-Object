@@ -108,6 +108,124 @@ function isNeverWall(name: string): boolean {
 }
 
 /**
+ * Reads one placement node into a collider.
+ *
+ * Used twice: once per part when a map loads, and again by `rebakePart` when
+ * something the player opened has moved. The second use passes the ground and
+ * flatness columns of the part being replaced, so a door that swings keeps the
+ * floor it was measured against instead of being re-measured against a
+ * heightfield it is now standing somewhere else on.
+ */
+function collectPart(
+  child: THREE.Object3D,
+  groundAt?: (x: number, z: number) => number,
+  skip?: Set<THREE.Object3D>,
+  keepBases?: Float32Array,
+  keepFlats?: Uint8Array
+): { part: CollisionPart | null; skipped: number } {
+  const vertices: number[] = [];
+  const triBounds: number[] = [];
+  const bases: number[] = [];
+  const flats: number[] = [];
+  let partMeshes = 0;
+  let skipped = 0;
+
+  child.traverse((node) => {
+    const mesh = node as THREE.Mesh;
+    if (!mesh.isMesh || !mesh.geometry) return;
+    if (skip && skip.has(mesh)) {
+      skipped++;
+      return;
+    }
+    if (CollisionGeometry.isNonSolid(mesh)) {
+      skipped++;
+      return;
+    }
+
+    const geom = mesh.geometry as THREE.BufferGeometry;
+    const pos = geom.getAttribute('position');
+    if (!pos) return;
+
+    // Measured extent, not a guess: skip surface detail.
+    if (!geom.boundingBox) geom.computeBoundingBox();
+    const size = geom.boundingBox ? geom.boundingBox.getSize(_v) : null;
+    const scale = mesh.getWorldScale(new THREE.Vector3());
+    const extent = size
+      ? Math.max(size.x * Math.abs(scale.x), size.y * Math.abs(scale.y), size.z * Math.abs(scale.z))
+      : 0;
+    if (extent < MIN_SOLID_EXTENT) {
+      skipped++;
+      return;
+    }
+
+    const index = geom.getIndex();
+    const triCountForMesh = (index ? index.count : pos.count) / 3;
+    if (triCountForMesh < 1) return;
+
+    partMeshes++;
+
+    const matrix = mesh.matrixWorld;
+    const readVertex = (i: number, out: number[]) => {
+      _v.fromBufferAttribute(pos, i).applyMatrix4(matrix);
+      out.push(_v.x, _v.y, _v.z);
+    };
+
+    const tri = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    const count = index ? index.count : pos.count;
+    for (let i = 0; i < count; i += 3) {
+      tri.length = 0;
+      if (index) {
+        readVertex(index.getX(i), tri);
+        readVertex(index.getX(i + 1), tri);
+        readVertex(index.getX(i + 2), tri);
+      } else {
+        readVertex(i, tri);
+        readVertex(i + 1, tri);
+        readVertex(i + 2, tri);
+      }
+      pushTriangle(vertices, triBounds, tri);
+      const t = bases.length;
+      bases.push(keepBases ? keepBases[t] : groundUnder(tri, groundAt));
+      flats.push(keepFlats ? keepFlats[t] : isFlat(tri) ? 1 : 0);
+    }
+  });
+
+  if (partMeshes === 0) return { part: null, skipped };
+
+  let minBase = Infinity;
+  for (let i = 0; i < bases.length; i++) if (bases[i] < minBase) minBase = bases[i];
+  if (!Number.isFinite(minBase)) minBase = 0;
+
+  const part: CollisionPart = {
+    name: child.name || '(unnamed part)',
+    node: child,
+    vertices: Float32Array.from(vertices),
+    triBounds: Float32Array.from(triBounds),
+    triBase: Float32Array.from(bases),
+    triFlat: Uint8Array.from(flats),
+    minBase,
+    bounds: new THREE.Box3(),
+    meshes: partMeshes,
+    triangles: vertices.length / 9,
+    neverWall: isNeverWall(child.name || ''),
+    stepBonus: STAIR_PART.test(child.name || '') ? STAIR_STEP_BONUS : 0,
+  };
+  // Derive the part bounds from the triangle bounds we already computed.
+  part.bounds.makeEmpty();
+  for (let t = 0; t < part.triangles; t++) {
+    const o = t * 6;
+    part.bounds.expandByPoint(
+      _v.set(part.triBounds[o], part.triBounds[o + 2], part.triBounds[o + 4])
+    );
+    part.bounds.expandByPoint(
+      _v.set(part.triBounds[o + 1], part.triBounds[o + 3], part.triBounds[o + 5])
+    );
+  }
+
+  return { part, skipped };
+}
+
+/**
  * True when a placement node is a *thing*, rather than the ground, the water or
  * a field of crops.
  *
@@ -191,6 +309,8 @@ export interface CircleContact {
 
 interface CollisionPart {
   name: string;
+  /** The placement node this part was read from, so it can be re-baked. */
+  node: THREE.Object3D;
   /** 9 floats per triangle: ax ay az bx by bz cx cy cz (world space). */
   vertices: Float32Array;
   /** 6 floats per triangle: minX maxX minY maxY minZ maxZ. */
@@ -269,6 +389,14 @@ export class CollisionGeometry {
 
   /** True when the mesh must not contribute collision. */
   public static isNonSolid(mesh: THREE.Mesh): boolean {
+    // A skinned mesh is a *thing that moves*. Baked into the static soup it
+    // leaves a copy of itself where it was standing: the people this game
+    // started animating walked away and left invisible bodies behind, and a
+    // horse that a player rides out of the stable would have been a two-metre
+    // wall standing in the yard for the rest of the round. Nothing that walks
+    // is architecture, so nothing that walks is a collider.
+    if ((mesh as THREE.SkinnedMesh).isSkinnedMesh) return true;
+
     const name = mesh.name || '';
     if (!name) return false; // unnamed meshes in this kit are real parts (doors, wheels)
     if (NON_SOLID_EXACT.has(name)) return true;
@@ -323,109 +451,13 @@ export class CollisionGeometry {
         continue;
       }
 
-      const vertices: number[] = [];
-      const triBounds: number[] = [];
-      const bases: number[] = [];
-      const flats: number[] = [];
-      let partMeshes = 0;
+      const built = collectPart(child, groundAt, skip);
+      skipped += built.skipped;
+      if (!built.part) continue;
 
-      child.traverse((node) => {
-        const mesh = node as THREE.Mesh;
-        if (!mesh.isMesh || !mesh.geometry) return;
-        if (skip && skip.has(mesh)) {
-          skipped++;
-          return;
-        }
-        if (CollisionGeometry.isNonSolid(mesh)) {
-          skipped++;
-          return;
-        }
-
-        const geom = mesh.geometry as THREE.BufferGeometry;
-        const pos = geom.getAttribute('position');
-        if (!pos) return;
-
-        // Measured extent, not a guess: skip surface detail.
-        if (!geom.boundingBox) geom.computeBoundingBox();
-        const size = geom.boundingBox ? geom.boundingBox.getSize(_v) : null;
-        const scale = mesh.getWorldScale(new THREE.Vector3());
-        const extent = size
-          ? Math.max(size.x * Math.abs(scale.x), size.y * Math.abs(scale.y), size.z * Math.abs(scale.z))
-          : 0;
-        if (extent < MIN_SOLID_EXTENT) {
-          skipped++;
-          return;
-        }
-
-        const index = geom.getIndex();
-        const triCountForMesh = (index ? index.count : pos.count) / 3;
-        if (triCountForMesh < 1) return;
-
-        meshCount++;
-        partMeshes++;
-        triCount += triCountForMesh;
-
-        const matrix = mesh.matrixWorld;
-        const readVertex = (i: number, out: number[]) => {
-          _v.fromBufferAttribute(pos, i).applyMatrix4(matrix);
-          out.push(_v.x, _v.y, _v.z);
-        };
-
-        const tri = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-        if (index) {
-          for (let i = 0; i < index.count; i += 3) {
-            tri.length = 0;
-            readVertex(index.getX(i), tri);
-            readVertex(index.getX(i + 1), tri);
-            readVertex(index.getX(i + 2), tri);
-            pushTriangle(vertices, triBounds, tri);
-            bases.push(groundUnder(tri, groundAt));
-            flats.push(isFlat(tri) ? 1 : 0);
-          }
-        } else {
-          for (let i = 0; i < pos.count; i += 3) {
-            tri.length = 0;
-            readVertex(i, tri);
-            readVertex(i + 1, tri);
-            readVertex(i + 2, tri);
-            pushTriangle(vertices, triBounds, tri);
-            bases.push(groundUnder(tri, groundAt));
-            flats.push(isFlat(tri) ? 1 : 0);
-          }
-        }
-      });
-
-      if (partMeshes === 0) continue;
-
-      let minBase = Infinity;
-      for (let i = 0; i < bases.length; i++) if (bases[i] < minBase) minBase = bases[i];
-      if (!Number.isFinite(minBase)) minBase = 0;
-
-      const part: CollisionPart = {
-        name: child.name || '(unnamed part)',
-        vertices: Float32Array.from(vertices),
-        triBounds: Float32Array.from(triBounds),
-        triBase: Float32Array.from(bases),
-        triFlat: Uint8Array.from(flats),
-        minBase,
-        bounds: new THREE.Box3(),
-        meshes: partMeshes,
-        triangles: vertices.length / 9,
-        neverWall: isNeverWall(child.name || ''),
-        stepBonus: STAIR_PART.test(child.name || '') ? STAIR_STEP_BONUS : 0,
-      };
-      // Derive the part bounds from the triangle bounds we already computed.
-      part.bounds.makeEmpty();
-      for (let t = 0; t < part.triangles; t++) {
-        const o = t * 6;
-        part.bounds.expandByPoint(
-          _v.set(part.triBounds[o], part.triBounds[o + 2], part.triBounds[o + 4])
-        );
-        part.bounds.expandByPoint(
-          _v.set(part.triBounds[o + 1], part.triBounds[o + 3], part.triBounds[o + 5])
-        );
-      }
-      parts.push(part);
+      meshCount += built.part.meshes;
+      triCount += built.part.triangles;
+      parts.push(built.part);
     }
 
     this.parts = parts;
@@ -437,6 +469,43 @@ export class CollisionGeometry {
       skippedMeshes: skipped,
       buildMs: Math.round((performance.now() - t0) * 100) / 100,
     };
+  }
+
+  /**
+   * Re-measures the collider that owns this node, after the node has moved.
+   *
+   * A door that swings open has to take its collider with it, or the player
+   * walks into an invisible door standing in a doorway they can plainly see
+   * through. The part's triangles are re-read from the same meshes, in the same
+   * order, so only the positions change — the ground under each triangle and its
+   * flatness are kept, because a door turning on its hinge neither moves to a
+   * different hill nor stops being flat.
+   *
+   * A door is usually *not* a part of its own: the kit nests it inside the
+   * building it belongs to, and the collider is the whole building. So the node
+   * is matched against the nearest part it sits inside, which is the one whose
+   * triangle soup contains its meshes.
+   *
+   * Returns false when no part owns the node, or when re-reading produced a
+   * different number of triangles; the caller then leaves the collider where it
+   * was rather than half-updating it.
+   */
+  public rebakePart(node: THREE.Object3D): boolean {
+    let index = -1;
+    let scope: THREE.Object3D | null = node;
+    while (scope && index < 0) {
+      index = this.parts.findIndex((part) => part.node === scope);
+      scope = scope.parent;
+    }
+    if (index < 0) return false;
+
+    const before = this.parts[index];
+    before.node.updateMatrixWorld(true);
+    const built = collectPart(before.node, undefined, undefined, before.triBase, before.triFlat);
+    if (!built.part || built.part.triangles !== before.triangles) return false;
+
+    this.parts[index] = built.part;
+    return true;
   }
 
   /**

@@ -12,13 +12,15 @@ import { AudioEngine } from '../app/audio/AudioEngine';
 export class GameHUD {
   private element: HTMLDivElement;
   private feedbackBanner: HTMLDivElement;
-  private timerDisplay: HTMLSpanElement;
+  private objectivesPanel: HTMLDivElement;
+  private objectivesToggle: HTMLButtonElement;
   private counterDisplay: HTMLSpanElement;
   private itemsContainer: HTMLUListElement;
   private briefText: HTMLParagraphElement;
   private hintBox: HTMLDivElement;
   private hintText: HTMLSpanElement;
   private pickupPrompt: HTMLDivElement;
+  private pickupLabel: HTMLSpanElement;
   private pickupCycle: HTMLSpanElement;
   private strikesBox: HTMLDivElement;
   private pauseBtn: HTMLButtonElement;
@@ -27,7 +29,6 @@ export class GameHUD {
   private fpsChip: HTMLDivElement;
   private fpsValue: HTMLSpanElement;
   /** Last strings written, so a per-frame update can skip the DOM. */
-  private lastTimerLabel = '';
   private lastFpsLabel = '';
 
   private onPauseCallback: (() => void) | null = null;
@@ -41,38 +42,31 @@ export class GameHUD {
     this.element.className = 'hud-container';
 
     this.element.innerHTML = `
-      <!-- Top Left: what is still missing -->
-      <div class="hud-panel hud-top-left">
-        <div class="panel-header">
+      <!-- Top Left: what is still missing, folded into one line -->
+      <div id="hud-objectives" class="hud-panel hud-top-left collapsed">
+        <button id="hud-objectives-toggle" class="panel-header panel-toggle interactive-ui" title="Show the list">
           <span class="panel-title">Odd objects</span>
           <span id="hud-counter" class="panel-counter">0 / 5</span>
-        </div>
-        <p id="hud-brief" class="panel-brief"></p>
-        <ul id="hud-objectives-list" class="objectives-list">
-          <li class="objective-item pending">
-            <span class="obj-index">01</span>
-            <span class="obj-text">???</span>
-            <span class="obj-check">&#10003;</span>
-          </li>
-        </ul>
-        <div id="hud-hint" class="hud-hint hidden">
-          <span class="hint-label">HINT</span>
-          <span id="hud-hint-text"></span>
-        </div>
-      </div>
-
-      <!-- Top Center: time spent hunting, and how many wrong guesses are left -->
-      <div class="hud-panel hud-top-center">
-        <div class="timer-badge">
-          <span id="hud-timer-display" class="timer-value">0:00</span>
-        </div>
-        <div id="hud-strikes" class="strikes" title="Wrong objects left before the hunt ends">
-          <span class="strikes-label">MISTAKES</span>
-          <span class="strikes-pips">
+          <span id="hud-strikes" class="strikes strikes-inline" title="Wrong objects left before the hunt ends">
             <span class="strike-pip"></span>
             <span class="strike-pip"></span>
             <span class="strike-pip"></span>
           </span>
+          <span class="panel-caret" aria-hidden="true"></span>
+        </button>
+        <div class="panel-body">
+          <p id="hud-brief" class="panel-brief"></p>
+          <ul id="hud-objectives-list" class="objectives-list">
+            <li class="objective-item pending">
+              <span class="obj-index">01</span>
+              <span class="obj-text">???</span>
+              <span class="obj-check">&#10003;</span>
+            </li>
+          </ul>
+          <div id="hud-hint" class="hud-hint hidden">
+            <span class="hint-label">HINT</span>
+            <span id="hud-hint-text"></span>
+          </div>
         </div>
       </div>
 
@@ -96,7 +90,7 @@ export class GameHUD {
       <!-- Appears when something is within arm's reach -->
       <div id="hud-pickup-prompt" class="pickup-prompt hidden">
         <span class="key-cap">E</span>
-        <span class="pickup-label">Pick up</span>
+        <span id="hud-pickup-label" class="pickup-label">Pick up</span>
         <span class="pickup-alt">or click</span>
         <span id="hud-pickup-cycle" class="pickup-cycle hidden">
           <span class="key-cap key-cap-small">TAB</span> switch
@@ -113,24 +107,10 @@ export class GameHUD {
         <span id="hud-fps-value">60</span>
         <span class="hud-fps-unit">fps</span>
       </div>
-
-      <!-- Bottom bar -->
-      <div class="hud-bottom-bar">
-        <div class="controls-hint">
-          <span><strong>WASD</strong> Walk</span>
-          <span><strong>SHIFT</strong> Run</span>
-          <span><strong>SPACE</strong> Jump</span>
-          <span><strong>E</strong> Pick up</span>
-          <span><strong>TAB</strong> Switch</span>
-          <span><strong>C</strong> Crawl</span>
-          <span><strong>V</strong> View</span>
-          <span><strong>DRAG</strong> Look</span>
-          <span><strong>WHEEL</strong> Zoom</span>
-        </div>
-      </div>
     `;
 
-    this.timerDisplay = this.element.querySelector('#hud-timer-display')!;
+    this.objectivesPanel = this.element.querySelector('#hud-objectives')!;
+    this.objectivesToggle = this.element.querySelector('#hud-objectives-toggle')!;
     this.counterDisplay = this.element.querySelector('#hud-counter')!;
     this.itemsContainer = this.element.querySelector('#hud-objectives-list')!;
     this.briefText = this.element.querySelector('#hud-brief')!;
@@ -138,6 +118,7 @@ export class GameHUD {
     this.hintText = this.element.querySelector('#hud-hint-text')!;
     this.feedbackBanner = this.element.querySelector('#hud-feedback-banner')!;
     this.pickupPrompt = this.element.querySelector('#hud-pickup-prompt')!;
+    this.pickupLabel = this.element.querySelector('#hud-pickup-label')!;
     this.pickupCycle = this.element.querySelector('#hud-pickup-cycle')!;
     this.strikesBox = this.element.querySelector('#hud-strikes')!;
     this.pauseBtn = this.element.querySelector('#btn-hud-pause')!;
@@ -150,6 +131,12 @@ export class GameHUD {
   }
 
   private bindEvents(): void {
+    this.objectivesToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.audio.playClick();
+      this.setObjectivesCollapsed(!this.isObjectivesCollapsed());
+    });
+
     this.pauseBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       this.audio.playClick();
@@ -178,16 +165,22 @@ export class GameHUD {
     this.briefText.textContent = text;
   }
 
-  public updateTimer(label: string, freeRoam = false): void {
-    // A map without a hunt has nothing to time.
-    const text = freeRoam ? 'Free roam' : label;
-    // Called sixty times a second, and the label only changes once a second.
-    // Writing identical text to a live node still costs a style invalidation
-    // on the containing layer, which is the sort of thing that shows up as a
-    // constant 1.5 ms of layout on a phone.
-    if (text === this.lastTimerLabel) return;
-    this.lastTimerLabel = text;
-    this.timerDisplay.textContent = text;
+  /**
+   * Folds the list down to its one-line header, or opens it.
+   *
+   * The hunt is "notice five things"; the list is a reminder, not a dashboard,
+   * and five rows of `???` in the corner of the screen is a lot of paper for
+   * something the player already knows. Collapsed by default — the header still
+   * carries the count and the mistakes, which are the two numbers worth a
+   * glance.
+   */
+  public setObjectivesCollapsed(collapsed: boolean): void {
+    this.objectivesPanel.classList.toggle('collapsed', collapsed);
+    this.objectivesToggle.title = collapsed ? 'Show the list' : 'Hide the list';
+  }
+
+  public isObjectivesCollapsed(): boolean {
+    return this.objectivesPanel.classList.contains('collapsed');
   }
 
   /** Turns the frame-rate chip on or off. */
@@ -248,10 +241,12 @@ export class GameHUD {
     this.counterDisplay.textContent = `${found} / ${items.length}`;
   }
 
-  /** The five-minute nudge, shown inside the list panel. */
+  /** A hint, shown inside the list panel — which opens itself to show it. */
   public showHint(text: string): void {
     this.hintText.textContent = text;
     this.hintBox.classList.remove('hidden');
+    // A hint behind a folded panel is a hint nobody reads.
+    this.setObjectivesCollapsed(false);
   }
 
   public hideHint(): void {
@@ -259,15 +254,20 @@ export class GameHUD {
   }
 
   /**
-   * Shown while an object is close enough and under the crosshair.
+   * Shown while something is close enough and under the crosshair.
    *
    * `canCycle` adds the TAB hint. It appears only when there is actually more
    * than one thing in reach: a hint to switch between one object is noise, and
    * a permanent hint trains the player to stop reading it.
+   *
+   * `label` is the verb, and it is the whole point of the prompt: the same key
+   * picks things up, opens doors, turns wheels and gets you on a horse, and a
+   * prompt that always said "Pick up" would be lying about three of those.
    */
-  public setPickupPrompt(visible: boolean, canCycle = false): void {
+  public setPickupPrompt(visible: boolean, canCycle = false, label = 'Pick up'): void {
     this.pickupPrompt.classList.toggle('hidden', !visible);
     this.pickupCycle.classList.toggle('hidden', !visible || !canCycle);
+    if (this.pickupLabel.textContent !== label) this.pickupLabel.textContent = label;
     // The reticle is the "you are on target" signal; it opens up and turns rust
     // the moment something is in reach, a beat before the label is read.
     this.reticle.classList.toggle('is-active', visible);

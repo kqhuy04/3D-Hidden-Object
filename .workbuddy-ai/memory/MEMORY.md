@@ -21,6 +21,23 @@ Player-facing docs: `docs/START_SCREEN.md`, `MAP_SELECT.md`, `ATMOSPHERE.md`,
   text; the icon set is typographic.
 - **Polish the existing game, do not add modes** — the "each map is its own game" plan
   was cancelled: *"hơi khó quá, cứ tập trung làm tốt game hiện tại là oke"*.
+- **Hints come from people, never from a clock.** Every animated person carries an
+  `Ask` verb; asking describes the nearest still-missing object. Five objects, five
+  hints. The timer was removed at the user's request.
+
+## What answers E
+
+- **Four verbs, not forty.** `src/game/interact/Interactions.ts` sorts props into
+  `hinge` / `spin` / `rock` / `lamp` by name and validates them by shape. A new verb
+  is a new family, and the player has to learn one more rule — be sure it earns that.
+- **A moving thing cannot live in the spatial hash.** `InteractableAction.moving`
+  keeps it in a flat list whose `centre` the owner rewrites every frame; a snapshot
+  centre left the horse's "Get off" prompt at the stable.
+- **People are not decoys.** `NpcCrowd.characters` (every human unit, animated or not)
+  is filtered out of `collectPropTargets` — E on a farmer must never cost a strike.
+  That is also why `npcs.attach` runs before the prop collection.
+- **A door must re-bake its collider** (`CollisionGeometry.rebakePart`) or it is a
+  wall you can open and not walk through.
 
 ## Interface
 
@@ -86,4 +103,12 @@ Player-facing docs: `docs/START_SCREEN.md`, `MAP_SELECT.md`, `ATMOSPHERE.md`,
 - **SwiftShader runs are expensive and the user notices.** Prefer Node-only analysis
   (terrain 0.3 s, moods 0.2 s, tests 2.4 s). Clear `maps/work/` after a prep run.
 - **The Bash tool eats backslashes in a heredoc** — write the script, then run it.
+- **A cutscene's start pose must be searched against the collider, not fixed.** 26 m
+  out and 10 m up opens beautifully on a lake and inside a tenement on `nyc-city`.
+  `Cutscene.START_CANDIDATES` is tried in order against `raycastSegment`, including
+  two points along the descent; `office` (one room, one ceiling) refuses and keeps a
+  2.6 s caption instead. Never add a candidate that is not tested.
+- **`selectMap` starts a round itself** when the map is already loaded, so calling
+  `startNewRound` afterwards runs `beginHunt` twice. `beginHunt` now ends a running
+  cutscene first; harnesses should call only one of the two.
 - `node tools/hidden-objects-doc.mjs --write` regenerates `docs/HIDDEN_OBJECTS.md`.

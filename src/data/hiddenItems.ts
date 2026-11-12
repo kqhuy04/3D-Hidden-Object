@@ -4,8 +4,8 @@
 // the map looking for things that feel off, presses E on one to pocket it, and
 // the object disappears for good. Names are hidden until the object is found —
 // the list shows `???` — so the hunt is "notice the odd thing", not "tick off a
-// shopping list". After five minutes a vague description of one still-missing
-// object is revealed, which is the only nudge the player gets.
+// shopping list". The only nudge is a person in the map: ask one of the locals
+// and they describe one still-missing object in vague terms.
 //
 // Coordinates come from the map's own scene graph (tools: tmp-props.mjs prints
 // every named prop with its world bounds), so an object can be placed against a
@@ -28,7 +28,7 @@ export interface HiddenItemPlacement {
   asset: string;
   /** Shown only once found. */
   name: string;
-  /** The five-minute nudge: describes the object without naming it. */
+  /** What a local says about it: describes the object without naming it. */
   hint: string;
   spot: HiddenSpot;
   /** Radians. Objects face +Z, so this is usually chosen to face a wall. */

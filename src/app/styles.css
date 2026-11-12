@@ -813,6 +813,66 @@ canvas {
   z-index: 100;
 }
 
+/* =========================================================================
+   MAP TITLE CARD
+   The caption that comes up over the establishing shot: the place's name, and
+   one line about it. It belongs to the three seconds before the hunt, which is
+   why it is not part of the HUD — the HUD is a dashboard that is either on or
+   off, and this is a caption that arrives and leaves on its own.
+   ========================================================================= */
+
+.map-title-card {
+  position: absolute;
+  left: 52px;
+  bottom: 92px;
+  z-index: 420;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 46vw;
+  pointer-events: none;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 420ms ease-out, transform 420ms ease-out;
+  /* Cream on the world, so the type is cut out of the scene with a hard shadow
+     rather than smudged onto it. No blur radius, here or anywhere. */
+  color: var(--paper-hi);
+  text-shadow: 2px 2px 0 rgba(25, 21, 16, 0.85);
+}
+
+.map-title-card.hidden {
+  display: none;
+}
+
+.map-title-card.is-leaving {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.map-title-rule {
+  width: 56px;
+  height: 3px;
+  background: var(--rust);
+  box-shadow: 2px 2px 0 rgba(25, 21, 16, 0.55);
+}
+
+.map-title-name {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.6vw, 44px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.map-title-note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.92;
+}
+
 #game-hud.hidden {
   display: none;
 }
@@ -962,40 +1022,6 @@ canvas {
   vertical-align: 1px;
 }
 
-/* Top centre: clock and mistakes ----------------------------------------- */
-
-.hud-top-center {
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 9px 18px 8px;
-  min-width: 132px;
-  text-align: center;
-}
-
-.timer-badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timer-value {
-  font-family: var(--font-mono);
-  font-size: 21px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  font-variant-numeric: tabular-nums;
-  color: var(--ink);
-}
-
-.timer-warning {
-  color: var(--clay);
-}
-
-.timer-critical {
-  color: var(--rust);
-}
-
 /* Mistakes: three small squares, flat, filled while a mistake is still
    available. No glow — a spent pip is simply an empty outline. */
 .strikes {
@@ -1012,18 +1038,7 @@ canvas {
   display: none;
 }
 
-.strikes-label {
-  font-family: var(--font-ui);
-  font-size: 8.5px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  color: var(--ink-faint);
-}
 
-.strikes-pips {
-  display: inline-flex;
-  gap: 4px;
-}
 
 .strike-pip {
   width: 7px;
@@ -1280,53 +1295,61 @@ canvas {
   }
 }
 
-/* Bottom bar ------------------------------------------------------------- */
+/* Folded objectives ------------------------------------------------------ */
 
-.hud-bottom-bar {
-  position: absolute;
-  bottom: 20px;
-  left: 22px;
-  right: 22px;
-  display: flex;
+/* The header is the button: one line, count on the right, mistakes beside it.
+   Everything below it is the panel's body, and collapsing hides the body.
+   The list is a reminder, not a dashboard — five rows of `???` is a lot of
+   paper for something the player already knows. */
+.panel-toggle {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
   align-items: center;
-  justify-content: center;
 }
 
-.controls-hint {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 6px 4px;
-  background: var(--paper);
-  border: 1.5px solid var(--ink);
-  border-radius: 2px;
-  box-shadow: 3px 3px 0 rgba(25, 21, 16, 0.18);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
+.hud-top-left.collapsed {
+  width: auto;
 }
 
-/* Each item is a key word plus its action, separated by a hairline instead of
-   a bullet dot — a dot between every pair is what made this read as a legend
-   glued to the bottom of the screen. */
-.controls-hint > span {
-  padding: 0 10px;
-  border-right: 1px solid var(--ink-rule);
-  white-space: nowrap;
+.hud-top-left.collapsed .panel-header {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
-.controls-hint > span:last-child {
-  border-right: none;
+.hud-top-left.collapsed .panel-body {
+  display: none;
 }
 
-.controls-hint strong {
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--ink);
-  margin-right: 4px;
+/* The caret is two borders, not a glyph: a chevron character is a different
+   size on every platform, and the whole HUD is built on typography. */
+.panel-caret {
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--ink-faint);
+  transition: transform 140ms steps(2, end);
+}
+
+.hud-top-left.collapsed .panel-caret {
+  transform: rotate(-90deg);
+}
+
+/* Mistakes, in the header. The `.strikes` block below is the stacked form;
+   this is three 7 px squares in a row, next to the count. */
+.strikes-inline {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  gap: 3px;
 }
 
 /* Feedback banner -------------------------------------------------------- */
@@ -2292,12 +2315,8 @@ canvas {
     padding: 10px 12px 11px;
   }
 
-  .hud-bottom-bar {
-    display: none;
-  }
-
-  .controls-hint > span:nth-child(n + 5) {
-    display: none;
+  .hud-top-left.collapsed {
+    width: auto;
   }
 
   /* The start screen stacks. Side by side, a 700 px window gives each half

@@ -2,7 +2,7 @@
 
 > Low-Poly 3D Hidden-Object Hunt for Windows Desktop (MSI First)
 
-Odd Objects is an offline, casual 3D exploration game built with **Three.js**, **TypeScript**, **Vite**, and **Tauri 2**. Each map hides five objects that do not belong to it — a toaster in a forest, a wooden barrel in a chrome arcology, a vending machine in a timber settlement. The player walks the map, notices what is wrong, and pockets it. Twenty-one maps ship, and every one of them hides five objects.
+Odd Objects is an offline, casual 3D exploration game built with **Three.js**, **TypeScript**, **Vite**, and **Tauri 2**. Each map hides five objects that do not belong to it — a toaster in a forest, a wooden barrel in a chrome arcology, a vending machine in a timber settlement. The player walks the map, notices what is wrong, and pockets it. Twenty-two maps ship, and every one of them hides five objects.
 
 ---
 
@@ -12,8 +12,9 @@ Odd Objects is an offline, casual 3D exploration game built with **Three.js**, *
 2. **No shopping list:** the HUD shows five `???` slots. An object's name is revealed only once it is in your pocket, so you are hunting *wrongness*, not ticking off nouns.
 3. **Pick up with E:** walk within reach, put the crosshair on the object, press **E**. It disappears from the world for good and the slot flips to its name.
 4. **No countdown:** the clock counts *up*. Rushing past the thing you are meant to notice is the wrong instinct, so nothing is timing you.
-5. **One vague hint:** after five minutes a hint describes one still-missing object without naming it ("A box that browns bread and pops it up — and it wants a wall socket"). Another arrives every 75 seconds after that, so nobody is stuck forever.
-6. **Finish:** when the fifth object is pocketed the results card shows the time you took and the names of all five.
+5. **Ask a local:** the people in a map are not scenery. Walk up to one and press **E** — they stop, turn, and describe one still-missing object without naming it ("A box that browns bread and pops it up — and it wants a wall socket"). Each of the five is described once, nearest first, so nobody is stuck forever.
+6. **Touch the world:** doors open, wheels turn, lanterns light, bells ring, and a saddled horse can be ridden around the map with its own gait.
+7. **Finish:** when the fifth object is pocketed the results card shows the time you took and the names of all five.
 
 ---
 
@@ -25,7 +26,9 @@ Odd Objects is an offline, casual 3D exploration game built with **Three.js**, *
 | **Pointer Drag** (Mouse or Touch) | Orbit / Aim Camera (Yaw & Pitch) |
 | **Mouse Wheel** | Zoom Camera In / Out (3m to 14m) |
 | **SPACEBAR** | Jump |
-| **E** | Pick up the object under the crosshair |
+| **E** | Pick up the object nearest in reach — or open a door, light a lantern, ride a horse, ask a person |
+| **TAB** | Cycle between the things in reach when several are close |
+| **C** | Toggle the crawl |
 | **ESCAPE** or **Pause Button** | Pause / Resume (stops the hunt clock) |
 
 ---

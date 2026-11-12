@@ -1,13 +1,18 @@
 import * as THREE from 'three';
 import { HiddenItem } from './HiddenItemSystem';
 import { PropTarget } from './PropTargets';
+import { InteractableAction } from '../interact/Interactions';
 import { WorldCollision } from '../world/WorldCollision';
 
 /** Anything the player can point at and press E on. */
 export interface Candidate {
   /** Stable identity across frames, so a selection can survive a re-sort. */
   key: string;
-  kind: 'item' | 'decoy';
+  /**
+   * `item` is one of the five, `decoy` is a prop that costs a mistake, and
+   * `action` is a prop that answers — a door, a wheel, a lantern.
+   */
+  kind: 'item' | 'decoy' | 'action';
   object: THREE.Object3D;
   centre: THREE.Vector3;
   radius: number;
@@ -15,6 +20,8 @@ export interface Candidate {
   distance: number;
   /** The hunt item, when this candidate is one. */
   item?: HiddenItem;
+  /** The verb, when this candidate is something that answers. */
+  action?: InteractableAction;
 }
 
 const _projected = new THREE.Vector3();
@@ -82,7 +89,17 @@ const SIGHT_MOVE = 0.5;
  */
 export class InteractableSelector {
   private props: PropTarget[] = [];
+  private actions: InteractableAction[] = [];
   private grid = new Map<string, PropTarget[]>();
+  private actionGrid = new Map<string, InteractableAction[]>();
+  /**
+   * The actions that walk: horses under a rider, people.
+   *
+   * Not in the grid, because their centres change and a cell key is a snapshot.
+   * There are never more than a handful, so testing them outright every frame
+   * costs less than keeping their keys honest would.
+   */
+  private movingActions: InteractableAction[] = [];
   private maxRadius = 0.5;
   private selectedKey: string | null = null;
   private candidates: Candidate[] = [];
@@ -127,6 +144,29 @@ export class InteractableSelector {
     this.stickyUntil = 0;
   }
 
+  /**
+   * The props that answer to E, indexed the same way as the decoys.
+   *
+   * Kept in their own grid rather than merged into the prop list because the
+   * two answer E differently: one costs a mistake, the other opens.
+   */
+  public setActions(actions: readonly InteractableAction[]): void {
+    this.actions = [...actions];
+    this.actionGrid.clear();
+    this.movingActions = [];
+    for (const action of this.actions) {
+      if (action.radius > this.maxRadius) this.maxRadius = action.radius;
+      if (action.moving) {
+        this.movingActions.push(action);
+        continue;
+      }
+      const key = this.cellKey(action.centre.x, action.centre.z);
+      const bucket = this.actionGrid.get(key);
+      if (bucket) bucket.push(action);
+      else this.actionGrid.set(key, [action]);
+    }
+  }
+
   public getProps(): readonly PropTarget[] {
     return this.props;
   }
@@ -157,8 +197,9 @@ export class InteractableSelector {
       centre: THREE.Vector3,
       radius: number,
       key: string,
-      kind: 'item' | 'decoy',
-      item?: HiddenItem
+      kind: 'item' | 'decoy' | 'action',
+      item?: HiddenItem,
+      action?: InteractableAction
     ): void => {
       // Measured to the centre, and only the centre. This is the whole rule:
       // an arm's length of the object's own surface is what counts, so a sofa
@@ -171,7 +212,7 @@ export class InteractableSelector {
       if (_projected.z < -1 || _projected.z > 1) return;
       if (Math.max(Math.abs(_projected.x), Math.abs(_projected.y)) > MAX_OFF_AXIS) return;
 
-      scored.push({ key, kind, object, centre, radius, distance, item });
+      scored.push({ key, kind, object, centre, radius, distance, item, action });
     };
 
     for (const item of items) {
@@ -189,16 +230,40 @@ export class InteractableSelector {
 
     for (let cx = minX; cx <= maxX; cx++) {
       for (let cz = minZ; cz <= maxZ; cz++) {
-        const bucket = this.grid.get(`${cx}:${cz}`);
-        if (!bucket) continue;
-        for (const prop of bucket) {
-          // Keyed by uuid, not by name: a kit names every chair `chair-mesh`,
-          // and two props sharing a key makes the selection jump between them.
-          const key = `prop:${prop.object.uuid}`;
-          if (this.rejected.has(key)) continue;
-          consider(prop.object, prop.centre, prop.radius, key, 'decoy');
+        const key = `${cx}:${cz}`;
+        const bucket = this.grid.get(key);
+        if (bucket) {
+          for (const prop of bucket) {
+            // Keyed by uuid, not by name: a kit names every chair `chair-mesh`,
+            // and two props sharing a key makes the selection jump between them.
+            const propKey = `prop:${prop.object.uuid}`;
+            if (this.rejected.has(propKey)) continue;
+            consider(prop.object, prop.centre, prop.radius, propKey, 'decoy');
+          }
+        }
+
+        // The props that answer. They sort into the same list as everything
+        // else, so the nearest thing in reach wins whether it opens, rings or
+        // costs a mistake.
+        const answering = this.actionGrid.get(key);
+        if (answering) {
+          for (const action of answering) {
+            // An action that says it is not available right now — "Ride" for a
+            // horse you are already riding another of — is not a candidate at
+            // all, so the prompt cannot offer it.
+            if (action.enabled && !action.enabled()) continue;
+            consider(action.object, action.centre, action.radius, action.key, 'action', undefined, action);
+          }
         }
       }
+    }
+
+    // The things that walk. Read from their live centres, which their owners
+    // wrote this frame, so "Ask" follows the person and "Get off" follows the
+    // horse instead of waiting for the player back at the stable.
+    for (const action of this.movingActions) {
+      if (action.enabled && !action.enabled()) continue;
+      consider(action.object, action.centre, action.radius, action.key, 'action', undefined, action);
     }
 
     scored.sort((a, b) => a.distance - b.distance);
@@ -336,7 +401,10 @@ export class InteractableSelector {
 
   public reset(): void {
     this.props = [];
+    this.actions = [];
+    this.movingActions = [];
     this.grid.clear();
+    this.actionGrid.clear();
     this.maxRadius = 0.5;
     this.selectedKey = null;
     this.candidates = [];

@@ -15,8 +15,12 @@ import { RenderQuality } from '../render/Quality';
 import { SunShadows } from '../render/SunShadows';
 import { Atmosphere } from '../render/Atmosphere';
 import { TargetGlow } from '../render/TargetGlow';
+import { Cutscene } from '../render/Cutscene';
 import { NpcCrowd } from '../npc/NpcCrowd';
+import { Mounts } from '../npc/Mounts';
+import { Interactions } from '../interact/Interactions';
 import { moodFor } from '../../data/mapMood';
+import type { MapMood } from '../../data/mapMood';
 import { HiddenItemPlacement, hiddenItemsFor } from '../../data/hiddenItems';
 import { UIManager } from '../../ui/UIManager';
 import { GAME_CONFIG } from '../../data/gameConfig';
@@ -25,10 +29,6 @@ import { SaveStore, Settings } from '../../app/Storage';
 import { characterFor, characterModelUrl } from '../../data/characters';
 import { AudioEngine } from '../../app/audio/AudioEngine';
 
-/** Seconds of hunting before the first vague hint appears. */
-const HINT_FIRST_AT = 300;
-/** Seconds between the following hints. */
-const HINT_INTERVAL = 75;
 /**
  * Height above the body's feet that counts as "the player" for reach.
  *
@@ -46,7 +46,25 @@ const REACH_CHEST_HEIGHT = 1.1;
  */
 const REACH_DISTANCE = 2.8;
 
+/** How long the caption stays up on a map that has no establishing shot. */
+const TITLE_ONLY_MS = 2600;
+
 const _reachOrigin = new THREE.Vector3();
+
+/**
+ * What the caption under a map's name says about its weather.
+ *
+ * A record rather than a chain of ternaries so that adding a `WeatherKind`
+ * fails to compile here instead of silently captioning the new one "Clear".
+ */
+const WEATHER_LABELS: Record<MapMood['weather'], string> = {
+  clear: 'Clear',
+  overcast: 'Overcast',
+  mist: 'Mist',
+  rain: 'Rain',
+  snow: 'Snow',
+  motes: 'Under water',
+};
 
 export class Game {
   private container: HTMLElement;
@@ -88,8 +106,6 @@ export class Game {
   private pickupTarget: HiddenItem | null = null;
   /** Objects whose hint has already been revealed, in reveal order. */
   private hinted = new Set<string>();
-  /** Elapsed seconds at which the next hint is due. */
-  private nextHintAt = HINT_FIRST_AT;
   /** Guards a second restore while the five meshes are still loading. */
   private restoring = false;
   /**
@@ -113,6 +129,22 @@ export class Game {
   private glow = new TargetGlow();
   /** The people the kit already placed in the map, walking about. */
   private npcs: NpcCrowd;
+  /** The props that answer to E — doors, wheels, bells, lanterns. */
+  private interactions: Interactions;
+  /** The animals that can be ridden, and the rider on them. */
+  private mounts: Mounts;
+  /** The establishing shot a map opens with. */
+  private cutscene = new Cutscene();
+  /** True once a freshly loaded map still owes the player its establishing shot. */
+  private cutscenePending = false;
+  /**
+   * When the caption shown *without* a shot should go away, in ms.
+   *
+   * A map the lens cannot fly over — the office is one room under one ceiling —
+   * still has to say its name. It gets the caption and no descent, rather than
+   * opening on the inside of a roof.
+   */
+  private titleUntil = 0;
   /** Where the settings sheet was opened from, so closing it goes back there. */
   private settingsReturn: GameState = GameState.MENU;
   /** Smoothed frame rate for the HUD readout. */
@@ -159,6 +191,8 @@ export class Game {
     this.collisionDebug = new CollisionDebugView(this.scene);
 
     this.player = new Player();
+    this.interactions = new Interactions(this.collision);
+    this.mounts = new Mounts(this.collision, this.player);
     this.cameraController = new CameraController(this.camera, this.renderer.domElement);
     this.cameraController.setCollision(this.collision);
     this.input = new InputController();
@@ -311,6 +345,8 @@ export class Game {
     }
     this.collision.clear();
     this.npcs.dispose();
+    this.interactions.dispose();
+    this.mounts.dispose();
     this.hiddenItems.clear();
     this.pickupTarget = null;
     this.map = map;
@@ -343,12 +379,42 @@ export class Game {
         `skipped=${stats.skippedMeshes} build=${stats.buildMs}ms`
     );
 
+    // The props that answer to E, the animals that can be ridden and the people
+    // who can be asked. All three are found before the decoy list is built,
+    // because a thing that does something must not also be a thing that costs a
+    // mistake — two candidates on one object is a coin toss on every press.
+    onProgress?.('Waking the furniture...');
+    this.interactions.attach(worldGroup);
+    const spawn = new THREE.Vector3(map.spawn.x, map.spawn.y, map.spawn.z);
+    await this.mounts.attach(worldGroup, spawn);
+    // The kit's own cast, given something to do. The horses are excluded: the
+    // mount system is driving those.
+    onProgress?.('Waking the locals...');
+    await this.npcs.attach(worldGroup, spawn, this.mounts.claimed);
+    this.npcs.setAskHandler(() => this.revealAskedHint());
+    const tCast = performance.now();
+
     // Every small prop becomes a decoy: clickable, outlined, and wrong. Read
     // from the scene graph rather than the collider because the outline pass
     // needs the render objects, and a collision part is an anonymous soup.
-    const props = collectPropTargets(worldGroup, collisionGeometry.getPartContainerName());
+    // People are not props, animated or not: pressing E on a farmer and being
+    // told you guessed wrong is the game punishing you for its own furniture.
+    const props = collectPropTargets(worldGroup, collisionGeometry.getPartContainerName()).filter(
+      (prop) =>
+        !this.interactions.covers(prop.object) &&
+        !this.mounts.claimed.has(prop.object) &&
+        !this.npcs.characters.has(prop.object)
+    );
     this.selector.setProps(props);
-    console.info(`[hunt] ${props.length} decoy props on ${map.id}`);
+    this.selector.setActions([
+      ...this.interactions.actions,
+      ...this.mounts.actions,
+      ...this.npcs.actions,
+    ]);
+    console.info(
+      `[hunt] ${props.length} decoy props, ${this.interactions.count} answering props, ` +
+        `${this.mounts.count} rideable animals, ${this.npcs.count} people on ${map.id}`
+    );
 
     let playerMs = 0;
     if (!this.playerReady) {
@@ -365,7 +431,7 @@ export class Game {
       this.scene.add(playerGroup);
       this.playerReady = true;
       this.characterId = chosen.id;
-      playerMs = Math.round(performance.now() - tDebug);
+      playerMs = Math.round(performance.now() - tCast);
     }
     const tPlayer = performance.now();
 
@@ -382,12 +448,6 @@ export class Game {
 
     onProgress?.('Setting up spawn position...');
     this.placeAtSpawn();
-
-    // The kit's own cast, given something to do. After the spawn, because the
-    // nearest few to it are the ones worth animating, and before the shader
-    // warm-up so anything they touch is compiled behind the loading screen.
-    onProgress?.('Waking the locals...');
-    await this.npcs.attach(worldGroup, this.player.getPosition().clone());
     const tSpawn = performance.now();
 
     // Compile every material now, behind the loading screen.
@@ -410,9 +470,14 @@ export class Game {
       `[load] ${map.id} total=${Math.round(performance.now() - t0)}ms ` +
         `world=${Math.round(tWorld - t0)}ms (${JSON.stringify(this.worldLoader.timings)}) ` +
         `debug=${Math.round(tDebug - tWorld)}ms ` +
+        `cast=${Math.round(tCast - tDebug)}ms ` +
         `player=${playerMs}ms (${JSON.stringify(this.player.timings)}) ` +
         `spawn=${Math.round(tSpawn - tPlayer)}ms warm=${warmMs}ms`
     );
+
+    // A new map opens with an establishing shot. Set here rather than on the
+    // round, so a retry of the same map does not replay it.
+    this.cutscenePending = true;
   }
 
   private exposeDebugHandle(): void {
@@ -442,6 +507,15 @@ export class Game {
       // The animated cast, so a probe can watch them move and check they stay
       // on the ground instead of judging it from a screenshot.
       npcs: this.npcs,
+      // The props that answer to E, and the animals that can be ridden. Both are
+      // exposed because "does the door open" is not a thing a screenshot
+      // settles: the harness reads the node's angle.
+      interactions: this.interactions,
+      mounts: this.mounts,
+      // What the reticle resolves to, and what is in reach of it. A probe that
+      // wants to know whether the prompt appears for a person has to read the
+      // selection, because the answer is a DOM node and a distance.
+      selector: this.selector,
       save: this.save,
       // A getter, not a snapshot: `selectMap` replaces the collider, and a
       // harness that held the old one measured the previous map's geometry
@@ -858,12 +932,20 @@ export class Game {
 
   /** Shared tail of "start" and "retry": reset the body and the panels. */
   private beginHunt(brief = ''): void {
+    // A teleport ends a ride: the horse stays where it is standing, and the
+    // body goes to the spawn point on its own two feet.
+    this.mounts.dismount();
     this.placeAtSpawn();
+
+    // Starting a round while the last one's establishing shot is still flying
+    // would leave the lens in the air with the dashboard already back. It is a
+    // three-second window, but a player who mashes Play on the results card
+    // should not be able to fall through it.
+    if (this.cutscene.isRunning) this.endCutscene();
 
     this.state = GameState.PLAYING;
     this.pickupTarget = null;
     this.hinted.clear();
-    this.nextHintAt = HINT_FIRST_AT;
 
     // A retry puts back the props that were struck off as well as the objects
     // that were found: the map is the same, the guesses are fresh.
@@ -871,13 +953,76 @@ export class Game {
     this.glow.hide();
 
     this.ui.showGameplay();
+    this.titleUntil = 0;
     this.ui.hud.setBrief(brief);
     this.ui.hud.updateItems(this.roundManager.getItems());
-    this.ui.hud.updateTimer(this.roundManager.getElapsedLabel(), this.roundManager.isFreeRoam());
     this.ui.hud.setStrikes(0, this.roundManager.isFreeRoam() ? 0 : MAX_STRIKES);
     this.ui.hud.hideHint();
     this.ui.hud.setPickupPrompt(false);
     this.ui.hud.setViewMode(this.cameraController.isFirstPerson());
+
+    // The establishing shot, if this round is the first on a freshly loaded map.
+    // The camera is already at the spawn (`placeAtSpawn` snapped it), so the
+    // descent has an exact pose to land on.
+    if (this.cutscenePending) {
+      this.cutscenePending = false;
+      const geometry = this.collision.getCollisionGeometry();
+      const started = this.cutscene.start(
+        this.player.getPosition(),
+        this.camera,
+        this.cameraController.getYaw(),
+        this.cameraController.getPitch(),
+        this.cameraController.getDistance(),
+        // The collider, so the shot cannot open inside a wall on a dense map.
+        geometry
+          ? (ax, ay, az, bx, by, bz) => geometry.raycastSegment(ax, ay, az, bx, by, bz)
+          : undefined
+      );
+      // A map with a roof directly over the spawn has nowhere to fly from. It
+      // keeps the caption — the one thing that tells the player where they are —
+      // and skips the descent.
+      if (started) {
+        this.titleUntil = 0;
+        // A dashboard over an establishing shot is a dashboard over a photograph.
+        this.ui.hud.hide();
+        this.ui.showTitleCard(this.map.label, this.titleNote());
+      } else {
+        this.ui.showTitleCard(this.map.label, this.titleNote());
+        this.titleUntil = performance.now() + TITLE_ONLY_MS;
+      }
+    }
+  }
+
+  /**
+   * Hands the frame back to the player.
+   *
+   * Called both when the descent finishes and when the player skips it, so it
+   * has to be safe to call twice: the camera has already been put on its end
+   * pose by `skip`, and the title card's own fade makes the second call a
+   * no-op. The HUD is the only thing that has to be put back, and it is put
+   * back whole rather than field by field — `beginHunt` filled it in before the
+   * shot started, and nothing has changed it since.
+   */
+  private endCutscene(): void {
+    this.cutscene.skip(this.camera);
+    this.ui.hideTitleCard();
+    this.ui.hud.show();
+    this.ui.hud.setViewMode(this.cameraController.isFirstPerson());
+  }
+
+  /**
+   * The line under the place name.
+   *
+   * Two facts the player can act on: what the weather is doing, and how many
+   * odd objects are hidden here. Both are already known at load time, so this
+   * is a caption rather than a promise.
+   */
+  private titleNote(): string {
+    const hunt = hiddenItemsFor(this.map.id);
+    const count = hunt ? hunt.items.length : 0;
+    const mood = moodFor(this.map.id);
+    const weather = WEATHER_LABELS[mood.weather];
+    return count > 0 ? `${weather} · ${count} odd objects` : `${weather} · free roam`;
   }
 
   /**
@@ -914,7 +1059,11 @@ export class Game {
     this.ui.hud.setViewMode(first);
   }
 
-  public togglePause(): void {    if (this.state === GameState.PLAYING) {
+  public togglePause(): void {
+    if (this.state === GameState.PLAYING) {
+      // Pausing mid-descent would freeze the camera in the air with the round
+      // frozen too. The shot is three seconds long; land it and pause.
+      if (this.cutscene.isRunning) this.endCutscene();
       this.state = GameState.PAUSED;
       this.roundManager.pause();
       this.ui.showPause();
@@ -932,6 +1081,11 @@ export class Game {
   }
 
   public returnToMainMenu(): void {
+    // Leaving mid-descent leaves the shot running with nobody to watch it, and
+    // the next round would inherit a camera still in the air.
+    this.cutscene.skip(this.camera);
+    this.titleUntil = 0;
+    this.ui.hideTitleCard();
     this.state = GameState.MENU;
     this.roundManager.pause();
     this.ui.showMainMenu();
@@ -951,6 +1105,14 @@ export class Game {
     this.refreshPickupPrompt();
     const selected = this.selector.getSelected();
     if (!selected) return;
+
+    // A prop that answers does not cost a mistake. That is the whole point of
+    // the interaction layer: some things in this world are yours to touch.
+    if (selected.kind === 'action') {
+      selected.action?.use();
+      this.refreshPickupPrompt();
+      return;
+    }
 
     if (selected.kind === 'decoy') {
       this.rejectDecoy(selected);
@@ -1015,31 +1177,64 @@ export class Game {
     // live highlight rather than a painted-on tint.
     this.glow.update(delta);
     // The people keep walking behind the pause menu, like the weather does.
-    this.npcs.update(delta);
+    this.npcs.update(delta, this.player.getPosition());
+    // Doors that were left mid-swing finish their swing, and a lamp that was
+    // switched on comes up, whether or not the game is paused.
+    this.interactions.update(delta);
 
     if (this.state === GameState.PLAYING) {
+      // The caption on a map with no establishing shot retires on its own. It
+      // is wall-clock, not round time: the player may stand still for a minute
+      // reading it, and it should not wait for them.
+      if (this.titleUntil > 0 && performance.now() >= this.titleUntil) {
+        this.titleUntil = 0;
+        this.ui.hideTitleCard();
+      }
+
       // 1. Player movement
       const moveVec = this.input.getMovementVector();
       const cameraYaw = this.cameraController.getYaw();
       const controller = this.player.getController();
-      controller?.update(moveVec, cameraYaw, delta, this.input.consumeJump());
+      // The jump is consumed either way: a jump pressed while riding must not
+      // sit in the buffer and fire the moment the player gets off.
+      const jump = this.input.consumeJump();
 
-      // 2. Camera follow & orbit. The surface height is passed separately: the
-      // camera settles onto the ground rather than riding the jump arc.
-      this.cameraController.update(
-        this.player.getPosition(),
-        delta,
-        controller?.getGroundY()
-      );
+      if (this.cutscene.isRunning) {
+        // The establishing shot owns the camera and the clock. The round has not
+        // started yet, so the seconds it takes do not count against the hunt.
+        const still = this.cutscene.update(delta, this.camera, this.player.getPosition());
+        // Any input at all means "I would like to play now".
+        if (moveVec.length() > 0.05 || jump) {
+          this.cutscene.skip(this.camera);
+          this.endCutscene();
+        } else if (!still) {
+          this.endCutscene();
+        }
+      } else {
+        const riding = this.mounts.isRiding();
 
-      // 3. Hunt clock, the crosshair prompt, and the five-minute nudge
-      this.roundManager.update(delta);
-      this.ui.hud.updateTimer(
-        this.roundManager.getElapsedLabel(),
-        this.roundManager.isFreeRoam()
-      );
-      this.refreshPickupPrompt();
-      this.revealDueHint();
+        if (riding) {
+          // A horse owns the body the way a ladder does: the mount drives both
+          // the animal and the rider, and the controller is not consulted.
+          this.mounts.update(delta, moveVec, cameraYaw);
+        } else {
+          controller?.update(moveVec, cameraYaw, delta, jump);
+          this.mounts.update(delta, moveVec, cameraYaw);
+        }
+
+        // 2. Camera follow & orbit. The surface height is passed separately: the
+        // camera settles onto the ground rather than riding the jump arc, and
+        // under a rider that surface is the one the horse is standing on.
+        this.cameraController.update(
+          this.player.getPosition(),
+          delta,
+          riding ? this.mounts.getGroundY() : controller?.getGroundY()
+        );
+
+        // 3. Hunt clock, the crosshair prompt, and the nudge
+        this.roundManager.update(delta);
+        this.refreshPickupPrompt();
+      }
     } else if (this.state === GameState.MENU) {
       // Idle camera slow orbit for aesthetic menu background
       const playerPos = this.player.getPosition();
@@ -1088,7 +1283,9 @@ export class Game {
 
     const visible = selected !== null;
     const canCycle = this.selector.getCandidates().length > 1;
-    this.ui.hud.setPickupPrompt(visible, canCycle);
+    const label =
+      selected?.kind === 'action' ? (selected.action?.label() ?? 'Use') : 'Pick up';
+    this.ui.hud.setPickupPrompt(visible, canCycle, label);
 
     // The object itself glows, rather than a bracket drawn over it. Framed from
     // the candidate's own bounding sphere — the sphere was measured once at
@@ -1097,7 +1294,12 @@ export class Game {
     // standing. It also handles decoys and hidden objects alike, which reading
     // `selected.item` did not: that silently dropped the mark on every decoy,
     // so the prompt appeared, E cost a strike, and nothing was marked on screen.
-    if (visible && selected) {
+    //
+    // The horse you are sitting on is the exception: the prompt has to be there
+    // to say "get off", but a horse lit up like a lamp post under the rider is
+    // the one thing this highlight must not do. Nor does a person: lighting a
+    // person up to say "you can talk to this" turns the cast into buttons.
+    if (visible && selected && !selected.action?.quiet && selected.object !== this.mounts.mountedObject) {
       this.glow.show(selected.object);
     } else {
       this.glow.hide();
@@ -1116,26 +1318,36 @@ export class Game {
   }
 
   /**
-   * After five minutes, describe one still-missing object in vague terms.
+   * Somebody in the map has been asked about the odd objects.
    *
-   * One hint at a time, and only for objects that have not been found, so the
-   * nudge always points at something that is actually still out there. A further
-   * hint arrives every `HINT_INTERVAL` seconds after that, which keeps a player
-   * who is completely lost moving instead of quitting.
+   * This replaces the clock. A hint that arrives by itself after five minutes
+   * is a hint the player did not ask for and cannot ask for again; a hint that
+   * comes out of a person is a reason to walk up to the people in the map, and
+   * it is the one piece of help the world itself can offer without a menu.
+   *
+   * Nearest-first: a person who says "there's one behind the bar" is only
+   * useful if the bar is the one you can see, so the object described is the
+   * closest thing still missing. Every object is described once, and once all
+   * of them have been, the locals have nothing left to add.
    */
-  private revealDueHint(): void {
-    if (this.roundManager.getStatus() !== 'playing') return;
-    if (this.roundManager.getElapsed() < this.nextHintAt) return;
-
+  private revealAskedHint(): void {
+    const body = this.player.getPosition();
     const next = this.roundManager
       .getItems()
-      .find((item) => !item.found && !this.hinted.has(item.placement.id));
-    if (!next) return;
+      .filter((item) => !item.found && !this.hinted.has(item.placement.id))
+      .sort(
+        (a, b) =>
+          Math.hypot(a.placement.spot.x - body.x, a.placement.spot.z - body.z) -
+          Math.hypot(b.placement.spot.x - body.x, b.placement.spot.z - body.z)
+      )[0];
+
+    if (!next) {
+      this.ui.hud.showHint('Nothing more to tell you. What you want is out there, not in here.');
+      return;
+    }
 
     this.hinted.add(next.placement.id);
-    this.nextHintAt += HINT_INTERVAL;
     this.ui.hud.showHint(next.placement.hint);
-    this.ui.hud.showFeedback('HINT UNLOCKED', true);
   }
 
   private render(): void {

@@ -42,12 +42,29 @@ for (const id of MAPS) {
       const p1 = c.getPosition().clone();
       const travelled = +Math.hypot(p1.x - p0.x, p1.z - p0.z).toFixed(2);
       const items = h.hiddenItems.getItems().length;
+      const byFamily = {};
+      for (const a of h.interactions.actions) byFamily[a.family] = (byFamily[a.family] ?? 0) + 1;
+      // People must never be decoys: E on a farmer costing a strike is the game
+      // punishing the player for the map's own furniture.
+      const props = h.selector.getProps();
+      let peopleAsDecoy = 0;
+      for (const p of props) if (h.npcs.characters.has(p.object)) peopleAsDecoy++;
+      const counts = {
+        acts: h.interactions.count,
+        mounts: h.mounts.count,
+        npcs: h.npcs.count,
+        talk: h.npcs.actions.length,
+        props: props.length,
+        peopleAsDecoy,
+        byFamily,
+      };
       h.game.loop.start();
       return {
         spawnGap, travelled, nan,
         yRange: [+minY.toFixed(2), +maxY.toFixed(2)],
         endY: +p1.y.toFixed(2),
         items,
+        ...counts,
       };
     })()`);
   } catch (err) {
@@ -58,7 +75,7 @@ for (const id of MAPS) {
   console.log(`${id.padEnd(30)} ${JSON.stringify(row)} errors=${errors}`);
 }
 
-const bad = rows.filter((r) => r.failed || r.nan || r.spawnGap > 0.15 || Math.abs(r.spawnGap) > 0.15 || r.travelled < 0.5 || r.items !== 5 || r.errors > 0);
+const bad = rows.filter((r) => r.failed || r.nan || r.spawnGap > 0.15 || Math.abs(r.spawnGap) > 0.15 || r.travelled < 0.5 || r.items !== 5 || r.errors > 0 || r.peopleAsDecoy > 0);
 console.log('\nSUMMARY', rows.length, 'maps,', bad.length, 'flagged');
 for (const r of bad) console.log('  !', r.id, JSON.stringify(r));
 await cdp.close();

@@ -426,6 +426,17 @@ export class CameraController {
     return this.currentPitch;
   }
 
+  /**
+   * Length of the boom, in metres.
+   *
+   * The establishing shot interpolates in the same spherical terms the boom
+   * uses — yaw, pitch, distance — so it needs the third one to land exactly
+   * where `update` would have put the lens.
+   */
+  public getDistance(): number {
+    return this.currentDistance;
+  }
+
   public getCamera(): THREE.PerspectiveCamera {
     return this.camera;
   }

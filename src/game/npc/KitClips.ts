@@ -69,6 +69,21 @@ export interface KitAnimator {
   /** Idle, Walk or Run for a body moving at `metresPerSecond`. */
   locomotion(metresPerSecond: number): void;
   update(deltaSeconds: number): void;
+  dispose(): void;
+}
+
+/**
+ * What a crowd actor needs from whatever is moving it.
+ *
+ * The kits' people are driven by baked clips and their animals by a procedural
+ * gait, and the crowd should not have to care which. Both answer to the same
+ * four calls, so a dog and a farmer can share a leg of the walk home.
+ */
+export interface ActorAnimator {
+  locomotion(metresPerSecond: number): void;
+  play(name: string): void;
+  update(deltaSeconds: number): void;
+  dispose(): void;
 }
 
 /** The bones a clip can be bound to must be present, or the clip folds a sheep. */
@@ -194,5 +209,9 @@ export async function animateKitHumanoid(
     play,
     locomotion,
     update: (delta) => mixer.update(delta),
+    dispose: () => {
+      mixer.stopAllAction();
+      mixer.uncacheRoot(root);
+    },
   };
 }

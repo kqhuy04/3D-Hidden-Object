@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { WorldCollision } from '../world/WorldCollision';
-import { animateKitHumanoid, isHumanoid, KitAnimator } from './KitClips';
+import { animateKitHumanoid, ActorAnimator, isHumanoid } from './KitClips';
+import { animateQuadruped, isQuadruped } from './Quadruped';
+import { InteractableAction } from '../interact/Interactions';
 
 /**
  * The people already standing in a map, given something to do.
@@ -33,6 +35,16 @@ import { animateKitHumanoid, isHumanoid, KitAnimator } from './KitClips';
 /** How many people to animate per map. Enough to notice, few enough to afford. */
 const MAX_ACTORS = 5;
 
+/**
+ * How many animals to animate per map, on their own budget.
+ *
+ * The farm has a dog, two cows and four sheep, and a shared budget would have
+ * spent all five on livestock and left the farmer standing. Animals are also
+ * cheaper: their gait is a few sines on twelve bones, where a person is a
+ * keyframe clip.
+ */
+const MAX_ANIMALS = 4;
+
 /** Metres per second. A stroll, not a walk cycle pushed to its limit. */
 const WALK_SPEED = 0.85;
 
@@ -61,11 +73,24 @@ const IDLE_MAX = 6.0;
 /** How far from the spawn point a person may be and still be worth animating. */
 const MAX_SPAWN_DISTANCE = 45;
 
+/**
+ * How long a person stays stopped and talking after being spoken to.
+ *
+ * Long enough that the conversation is over before they wander off — a person
+ * who answers your question and immediately walks away mid-sentence is the one
+ * thing that would make asking feel broken.
+ */
+const ANSWER_SECONDS = 7;
+
+/** How far from a person's own origin the prompt is measured, in metres. */
+const HEAD_LIFT = 1.15;
+const BODY_RADIUS = 0.5;
+
 const UP = new THREE.Vector3(0, 1, 0);
 
 interface Actor {
   unit: THREE.Object3D;
-  animator: KitAnimator;
+  animator: ActorAnimator;
   /** Where the kit put them, in world space. The centre of their wandering. */
   home: THREE.Vector3;
   target: THREE.Vector3 | null;
@@ -91,6 +116,11 @@ interface Actor {
   toY: number;
   /** Length of the current leg, so progress along it can be interpolated. */
   legLength: number;
+  /**
+   * The "Ask" verb, for a person. Null for an animal — you do not interview a
+   * sheep, and a prompt offering to would be the first joke the map makes.
+   */
+  talk: InteractableAction | null;
 }
 
 const _world = new THREE.Vector3();
@@ -135,11 +165,47 @@ function worldYaw(node: THREE.Object3D): number {
 
 export class NpcCrowd {
   private actors: Actor[] = [];
+  /**
+   * Every person the map placed, animated or not.
+   *
+   * The five who walk are the ones you can talk to, but the rest must still not
+   * be decoys: pressing E on a farmer and being told you guessed wrong is the
+   * game punishing you for the map's own furniture. This set is what the prop
+   * list is filtered against.
+   */
+  private people = new Set<THREE.Object3D>();
+  /** Where the player is, so a person can turn to face them. */
+  private playerPosition = new THREE.Vector3();
+  /** What to do when the player asks somebody something. */
+  private askHandler: ((speaker: THREE.Object3D) => void) | null = null;
 
   constructor(private collision: WorldCollision) {}
 
   public get count(): number {
     return this.actors.length;
+  }
+
+  /** The people on the map, for keeping them out of the decoy list. */
+  public get characters(): ReadonlySet<THREE.Object3D> {
+    return this.people;
+  }
+
+  /** The "Ask" verbs, for the selector. */
+  public get actions(): readonly InteractableAction[] {
+    const list: InteractableAction[] = [];
+    for (const actor of this.actors) if (actor.talk) list.push(actor.talk);
+    return list;
+  }
+
+  /**
+   * What to do when the player asks a person something.
+   *
+   * The crowd knows who was asked and how to make them answer; the game knows
+   * which of the five is still missing and how to say so. Keeping the split
+   * here is what stops the hint from becoming a timer with a face on it.
+   */
+  public setAskHandler(handler: ((speaker: THREE.Object3D) => void) | null): void {
+    this.askHandler = handler;
   }
 
   /** Where each animated person is, for probes and the debug overlay. */
@@ -153,8 +219,15 @@ export class NpcCrowd {
    * The nearest `MAX_ACTORS` to the spawn point, because the point of this is
    * that the player *sees* it, and a farmer idling two hundred metres away is
    * a cost with no payoff.
+   *
+   * `skip` holds the units somebody else is already driving — the horses, which
+   * the mount system owns. Walking a horse home mid-ride would be a bad joke.
    */
-  public async attach(root: THREE.Object3D, spawn: THREE.Vector3): Promise<void> {
+  public async attach(
+    root: THREE.Object3D,
+    spawn: THREE.Vector3,
+    skip: ReadonlySet<THREE.Object3D> = new Set()
+  ): Promise<void> {
     this.dispose();
 
     const bySkeleton = new Map<THREE.Skeleton, THREE.SkinnedMesh[]>();
@@ -176,28 +249,38 @@ export class NpcCrowd {
     // the body and drops the hair.
     const byPlace = new Map<
       string,
-      { skeleton: THREE.Skeleton; unit: THREE.Object3D; distance: number; bones: number }
+      { skeleton: THREE.Skeleton; unit: THREE.Object3D; distance: number; bones: number; animal: boolean }
     >();
     for (const skeleton of bySkeleton.keys()) {
-      if (!isHumanoid(skeleton)) continue;
+      const human = isHumanoid(skeleton);
+      if (!human && !isQuadruped(skeleton)) continue;
       const unit = characterUnit(skeleton.bones[0]);
+      // Everyone the map placed, however far away, so that none of them can be
+      // mistaken for a prop and cost the player a strike for touching a person.
+      if (human) this.people.add(unit);
+      if (skip.has(unit)) continue;
       const world = unit.getWorldPosition(_world);
       const distance = world.distanceTo(spawn);
       if (distance > MAX_SPAWN_DISTANCE) continue;
       const key = `${Math.round(world.x * 2)}:${Math.round(world.z * 2)}`;
       const previous = byPlace.get(key);
       if (!previous || skeleton.bones.length > previous.bones) {
-        byPlace.set(key, { skeleton, unit, distance, bones: skeleton.bones.length });
+        byPlace.set(key, { skeleton, unit, distance, bones: skeleton.bones.length, animal: !human });
       }
     }
 
-    const candidates = [...byPlace.values()].sort((a, b) => a.distance - b.distance);
+    const all = [...byPlace.values()].sort((a, b) => a.distance - b.distance);
+    const chosen = [
+      ...all.filter((candidate) => !candidate.animal).slice(0, MAX_ACTORS),
+      ...all.filter((candidate) => candidate.animal).slice(0, MAX_ANIMALS),
+    ];
 
-    const chosen = candidates.slice(0, MAX_ACTORS);
     const started = await Promise.all(
-      chosen.map(async ({ skeleton, unit }): Promise<Actor | null> => {
+      chosen.map(async ({ skeleton, unit, animal }): Promise<Actor | null> => {
         try {
-          const animator = await animateKitHumanoid(skeleton, unit);
+          const animator: ActorAnimator = animal
+            ? animateQuadruped(skeleton, unit)
+            : await animateKitHumanoid(skeleton, unit);
           const home = unit.getWorldPosition(new THREE.Vector3());
           return {
             unit,
@@ -207,11 +290,25 @@ export class NpcCrowd {
             yaw: worldYaw(unit),
             idle: Math.random() * IDLE_MAX,
             talking: false,
-            speed: WALK_SPEED * (0.85 + Math.random() * 0.3),
+            // An animal trots; a person strolls.
+            speed: (animal ? WALK_SPEED * 1.35 : WALK_SPEED) * (0.85 + Math.random() * 0.3),
             footOffset: this.measureFootOffset(home),
             fromY: home.y,
             toY: home.y,
             legLength: 1,
+            talk: animal
+              ? null
+              : {
+                  key: `talk:${unit.uuid}`,
+                  object: unit,
+                  centre: home.clone().setY(home.y + HEAD_LIFT),
+                  radius: BODY_RADIUS,
+                  // Rewritten every frame in `update`: people walk.
+                  moving: true,
+                  quiet: true,
+                  label: () => 'Ask',
+                  use: () => this.ask(unit),
+                },
           };
         } catch (error) {
           console.warn('[npc] could not animate a character:', error);
@@ -223,10 +320,44 @@ export class NpcCrowd {
     this.actors = started.filter((actor): actor is Actor => actor !== null);
   }
 
-  /** One frame. `delta` is already clamped by the game loop. */
-  public update(delta: number): void {
+  /**
+   * Somebody has been asked something.
+   *
+   * The person stops, turns, and talks; the game decides what they say. The
+   * turn is the whole reason this is not just a line of text — a hint that
+   * arrives while the speaker is walking away from you reads as a subtitle,
+   * not as a conversation.
+   */
+  private ask(unit: THREE.Object3D): void {
+    const actor = this.actors.find((candidate) => candidate.unit === unit);
+    if (!actor) return;
+
+    actor.target = null;
+    actor.idle = Math.max(actor.idle, ANSWER_SECONDS);
+    actor.talking = true;
+    actor.animator.play('Talking');
+    this.faceTowards(actor, this.playerPosition.x, this.playerPosition.z);
+    this.askHandler?.(unit);
+  }
+
+  /**
+   * One frame. `delta` is already clamped by the game loop.
+   *
+   * `player` is where the body is, so a person who is asked something can turn
+   * round. Optional because the crowd also runs behind the menu, where there is
+   * nobody to turn to.
+   */
+  public update(delta: number, player?: THREE.Vector3): void {
+    if (player) this.playerPosition.copy(player);
+
     for (const actor of this.actors) {
       actor.animator.update(delta);
+
+      // The prompt follows the person, not the place the kit put them.
+      if (actor.talk) {
+        const here = actor.unit.getWorldPosition(_world);
+        actor.talk.centre.set(here.x, here.y + HEAD_LIFT, here.z);
+      }
 
       if (actor.idle > 0) {
         actor.idle -= delta;
@@ -417,10 +548,8 @@ export class NpcCrowd {
   }
 
   public dispose(): void {
-    for (const actor of this.actors) {
-      actor.animator.mixer.stopAllAction();
-      actor.animator.mixer.uncacheRoot(actor.unit);
-    }
+    for (const actor of this.actors) actor.animator.dispose();
     this.actors = [];
+    this.people.clear();
   }
 }

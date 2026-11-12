@@ -71,7 +71,7 @@ for (const m of maps) {
   out.push('');
   out.push(`*${m.brief}*`);
   out.push('');
-  out.push('| Object | Hint (shown after five minutes) | Position |');
+  out.push('| Object | Hint (what a local says about it) | Position |');
   out.push('|---|---|---|');
   for (const it of m.items) {
     out.push(`| **${it.name}** | ${it.hint} | \`${it.x}, ${it.y ?? 'ground'}, ${it.z}\` |`);

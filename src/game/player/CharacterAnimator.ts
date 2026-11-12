@@ -77,7 +77,7 @@ const CHAIN_WINDOW_MS = 320;
 const LANDING_SKIP = 0.15;
 
 /** Every clip the animator knows how to drive. */
-const CLIP_NAMES = ['idle', 'walk', 'run', 'jump', 'stairsUp', 'stairsDown', 'ladder', 'crawl'] as const;
+const CLIP_NAMES = ['idle', 'walk', 'run', 'jump', 'stairsUp', 'stairsDown', 'ladder', 'crawl', 'driving'] as const;
 
 /**
  * The raw keyframe files, fetched once for the whole app.

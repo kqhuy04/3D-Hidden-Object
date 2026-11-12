@@ -5,7 +5,7 @@ The game used to be a photo hunt: three randomised subjects, a viewfinder, a
 simpler to explain and harder to design — every map hides **five objects that do
 not belong to its theme**, and the player has to notice them.
 
-This document covers the mechanic, the data, where all hundred and five objects are,
+This document covers the mechanic, the data, where all hundred and ten objects are,
 and how to author another map.
 
 ---
@@ -15,13 +15,13 @@ and how to author another map.
 | | |
 |---|---|
 | **Goal** | Find and pocket all five intruders on the map |
-| **Input** | `E`, or a left-click — pick up whatever the crosshair is on. A drag of more than 6 px is a camera orbit, not a click |
-| **Reach** | 3.2 m from the player's chest, and within 42% of the screen centre |
+| **Input** | `E`, or a left-click — act on whatever is nearest in reach. `Tab` cycles when several things are close. A drag of more than 6 px is a camera orbit, not a click |
+| **Reach** | 2.8 m from the player's chest, and on screen. The nearest thing in reach wins |
 | **Occlusion** | A ray from the camera to the object must be clear (0.35 m tolerance) |
 | **On pickup** | The object is removed from the scene and its buffers freed. It does not come back until a retry or replay |
 | **Naming** | The HUD shows `???` until an object is found, then its name |
-| **Clock** | Counts *up*, no limit. Shown as `m:ss` |
-| **Hint** | At 5:00, a vague description of one still-missing object. Every 75 s after that, another |
+| **Clock** | Counts *up*, no limit, and is not on screen. It exists for the results card |
+| **Hint** | Ask one of the people in the map. Each object is described once, nearest first |
 | **Win** | All five found → results card with the time taken |
 
 ### Why no timer
@@ -61,7 +61,7 @@ export interface HiddenItemPlacement {
   id: string;        // unique within the map; the round tracks this
   asset: string;     // Polyfork asset id → /assets/hidden/<asset>.glb
   name: string;      // revealed only after pickup
-  hint: string;      // the five-minute nudge: describes, never names
+  hint: string;      // what a local says about it: describes, never names
   spot: { x: number; z: number; y?: number };
   rotationY: number;
   scale?: number;
@@ -99,7 +99,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left in this camp that no camper would pack.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Toaster** | A box that browns bread and pops it up — and it wants a wall socket. | `2.35, 0.76, 1.45` |
 | **Fire hydrant** | A squat iron post with two capped nozzles, painted red, in a clearing. | `-3, 0, 6.5` |
@@ -111,7 +111,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left on this mountain that the snow does not explain.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Scarecrow** | A figure in a coat and a straw hat, arms held out, guarding a field that is not there. | `-7.6, ground, 39.4` |
 | **Toilet** | A white ceramic bowl with its cistern, standing in the snow behind the ski racks. | `11.0, ground, 46.8` |
@@ -123,7 +123,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five objects here were made by hands that never touched chrome.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Wooden barrel** | Staves and iron hoops, the kind you roll — in a city with no wood. | `36.1, 0.06, -13.4` |
 | **Hay bale** | Dried grass, tied up with twine, dropped where a bus parks. | `30, ground, 11.4` |
@@ -135,7 +135,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were carried into this settlement from a century it has never seen.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Rubber duck** | Small, yellow, and it floats. It has never seen water here. | `-2.2, 0.58, -14.6` |
 | **Microwave** | A little oven with a numbered keypad and a glass door. | `-6.6, 0.46, -7.8` |
@@ -147,7 +147,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things sank here that were never meant to get wet.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Fire hydrant** | A squat iron post with two capped nozzles — for a street that is not down here. | `13, -0.07, 2` |
 | **Parking meter** | A thin post with a coin slot and a little window, waiting for a car that cannot come. | `18, -0.31, 9.5` |
@@ -159,7 +159,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things came off a train that has never stopped here.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Sofa** | Three cushions, two arms, upholstery — on a platform where people wait standing up. | `-2, 0, 2.5` |
 | **Espresso machine** | Chrome, a portafilter, a steam wand — it wants pressure and a power line. | `-5, 1.17, -8` |
@@ -171,7 +171,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left in this yard that the farm has no use for.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Phone booth** | A red glass box with a handset — the fields have no line. | `-13.5, 0, 6` |
 | **Vending machine** | A lit cabinet of snacks behind glass, humming where there is no mains. | `11.5, 0, 6` |
@@ -183,7 +183,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were carried in with the flowers that belong to no altar.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Toilet** | Porcelain, a lid and a cistern, standing among the graves. | `-5.5, -1.7, -6` |
 | **Sofa** | Three cushions and two arms, set out as if for a family that never sits. | `-3, 3.19, 16.5` |
@@ -195,7 +195,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were unloaded here that no site ordered.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Sofa** | Three cushions and two arms, on a stack of pallets in the mud. | `12.5, -2.57, 3.5` |
 | **Fridge freezer** | A tall white cupboard that hums, standing where the power is a generator. | `15, 0.05, 18.5` |
@@ -207,7 +207,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left on this street that were not made in this century.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Vending machine** | A lit cabinet of snacks behind glass, humming on a boardwalk. | `-3, 0.05, 13.5` |
 | **Phone booth** | A glass box with a handset, and no wire running out of it. | `-11, 1.22, 3.5` |
@@ -219,7 +219,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were brought into this building that belong outside it.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Hay bale** | Dried grass, tied with twine, sitting on a bench in a corridor. | `12, 0.03, 1.5` |
 | **Campfire** | A ring of stones with charred logs — indoors, on a vinyl floor. | `-8, 0.04, 1.5` |
@@ -231,7 +231,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left on this street that the street has no place for.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Scarecrow** | A coat on crossed sticks with a sack head, watching a pavement. | `-8.5, 0, 1.5` |
 | **Straw bale** | A cube of dried stalks, tied with twine, on a tiled street. | `11.5, 0, 1.5` |
@@ -243,7 +243,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things appeared in this village that no trader could have carried here.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Vending machine** | A lit cabinet of snacks behind glass, humming beside the market stalls. | `9, 0.61, 9.5` |
 | **Office chair** | Five little wheels and a lever underneath, on packed earth. | `-11, 0.04, -2` |
@@ -255,7 +255,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left on this terrace that came in from a field.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Straw bale** | A cube of dried stalks tied with twine, beside a parasol. | `12.5, 0.05, 6` |
 | **Anvil** | A block of iron with a horn, sitting where the plates go. | `9, 1.13, -3` |
@@ -267,7 +267,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left along these paths that this street never had.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Deck cannon** | An iron barrel on a wooden carriage with small wheels, aimed at a hedge. | `13, 0.42, 10` |
 | **Stone well** | A ring of stone with a rope and a bucket, sunk into a front lawn. | `-17, 0.53, 1` |
@@ -279,7 +279,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left on this block that came in from somewhere quieter.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Stone well** | A ring of stone with a rope and a bucket, on a sidewalk. | `-9, 0.57, 11` |
 | **Rowboat** | A wooden hull with two oars, pulled up where the taxis stop. | `-15, 0.96, -4` |
@@ -291,7 +291,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left in this building that were never part of the job.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Straw bale** | A cube of dried stalks, tied with twine, in a breakout area. | `5.5, 0.05, 2` |
 | **Campfire** | A ring of stones with charred logs, burning on a carpet tile. | `-9, 0.77, 1` |
@@ -303,7 +303,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things washed up in this cove that no ship here ever carried.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Vending machine** | A lit cabinet of snacks behind glass, humming on the boards. | `-1, 0.88, 10.5` |
 | **Laptop** | A hinged slab that folds shut, the kind people type on. | `5, 0.88, 12` |
@@ -315,7 +315,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were dumped here that no skater brought.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Sofa** | Three cushions and two arms, parked on a flat slab. | `-9, 0.05, 10.5` |
 | **Fridge freezer** | A tall white cupboard that hums, standing by the rail. | `8.5, 0.05, 8` |
@@ -327,7 +327,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were brought out here that this base has no use for.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Hay bale** | Dried grass tied with twine, sitting on a service walkway. | `-8.5, 0.67, -15.5` |
 | **Stone well** | A ring of stone with a rope and a bucket, sunk into regolith. | `11, -0.75, -20` |
@@ -339,7 +339,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left in this ground that no team brought.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Sofa** | Three cushions and two arms, set down where the warm-up happens. | `16.5, -0.06, 1` |
 | **Fridge freezer** | A tall white cupboard that hums, standing on the touchline. | `16.5, -0.06, -9` |
@@ -351,7 +351,7 @@ pizza box at a campsite is just a pizza box.
 
 *Five things were left in this hall that no orchestra carries.*
 
-| Object | Hint (shown after five minutes) | Position |
+| Object | Hint (what a local says about it) | Position |
 |---|---|---|
 | **Hay bale** | Dried grass tied with twine, sitting on a riser in the stalls. | `-6.5, 0.45, 0` |
 | **Kitchen sink** | A basin with a tap and a drain, in the middle of the floor. | `7, 0.85, 7.5` |
