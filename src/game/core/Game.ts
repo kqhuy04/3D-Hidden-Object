@@ -388,6 +388,17 @@ export class Game {
     onProgress?.('Waking the locals...');
     await this.npcs.attach(worldGroup, spawn, this.mounts.claimed);
     this.npcs.setAskHandler(() => this.revealAskedHint());
+
+    // What has to follow its own shadow. Everything else on the map is baked
+    // into the static shadow map and costs nothing until the sun's anchor
+    // steps — see `SunShadows`. The lists are meshes rather than units because
+    // a kit character is a body, a coat and a pair of trousers, and only the
+    // body is inside the unit.
+    this.sun.setDynamic([
+      this.player.getGroup(),
+      ...this.mounts.movingParts,
+      ...this.npcs.movingParts,
+    ]);
     const tCast = performance.now();
 
     // Every small prop becomes a decoy: clickable, outlined, and wrong. Read

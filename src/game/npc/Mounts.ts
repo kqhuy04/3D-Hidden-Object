@@ -101,6 +101,8 @@ function characterUnit(bone: THREE.Object3D): THREE.Object3D {
 export class Mounts {
   private mounts: Mount[] = [];
   private riding: Mount | null = null;
+  /** Every mesh that moves with an animal, tack included. See `movingParts`. */
+  private moving: THREE.Object3D[] = [];
   /** The rider's hip height in the seated pose, measured once per character. */
   private hipLift = HIP_LIFT_FALLBACK;
   private hipMeasured = false;
@@ -137,12 +139,24 @@ export class Mounts {
     return new Set(this.mounts.map((mount) => mount.unit));
   }
 
+  /**
+   * Every mesh that moves with an animal, tack included.
+   *
+   * A horse is a body, a saddle, a collar and a bridle, and only the body is
+   * inside the unit the mount system drives. Anything that has to follow the
+   * animal — the shadow map, for one — needs all four.
+   */
+  public get movingParts(): readonly THREE.Object3D[] {
+    return this.moving;
+  }
+
   public async attach(root: THREE.Object3D, spawn: THREE.Vector3): Promise<void> {
     this.dispose();
 
     // One entry per animal: a horse is four skinned meshes (body, saddle,
     // collar, bridle) sharing a standing place, so the rig with the most bones
     // is the body and the rest are its tack.
+    const byRootBone = new Map<THREE.Bone, THREE.SkinnedMesh[]>();
     const byPlace = new Map<
       string,
       { skeleton: THREE.Skeleton; unit: THREE.Object3D; distance: number; bones: number }
@@ -151,7 +165,13 @@ export class Mounts {
       const mesh = child as THREE.SkinnedMesh;
       if (!mesh.isSkinnedMesh || !mesh.skeleton) return;
       if (!isQuadruped(mesh.skeleton)) return;
-      const unit = characterUnit(mesh.skeleton.bones[0]);
+      const rootBone = mesh.skeleton.bones[0];
+      if (!rootBone) return;
+      const parts = byRootBone.get(rootBone);
+      if (parts) parts.push(mesh);
+      else byRootBone.set(rootBone, [mesh]);
+
+      const unit = characterUnit(rootBone);
       if (!RIDEABLE.test(unit.name || '')) return;
       const world = unit.getWorldPosition(_world);
       const distance = world.distanceTo(spawn);
@@ -170,7 +190,10 @@ export class Mounts {
     for (const { skeleton, unit } of chosen) {
       try {
         const mount = this.build(skeleton, unit);
-        if (mount) this.mounts.push(mount);
+        if (mount) {
+          this.mounts.push(mount);
+          this.moving.push(...(byRootBone.get(skeleton.bones[0]) ?? [unit]));
+        }
       } catch (error) {
         console.warn('[mounts] could not rig an animal:', error);
       }
@@ -384,6 +407,7 @@ export class Mounts {
   public dispose(): void {
     for (const mount of this.mounts) mount.animator.dispose();
     this.mounts = [];
+    this.moving = [];
     this.riding = null;
     this.hipMeasured = false;
   }

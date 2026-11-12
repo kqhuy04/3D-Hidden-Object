@@ -175,6 +175,15 @@ export class NpcCrowd {
    * list is filtered against.
    */
   private people = new Set<THREE.Object3D>();
+  /**
+   * Every mesh that moves with an animated person or animal.
+   *
+   * Not the same thing as the actor's `unit`: a kit person is a body, a coat
+   * and a pair of trousers, and only the body is inside the unit. Anything that
+   * has to follow one of these people — the shadow map, for one — has to be
+   * handed all of them or the coat stays behind.
+   */
+  private moving: THREE.Object3D[] = [];
   /** Where the player is, so a person can turn to face them. */
   private playerPosition = new THREE.Vector3();
   /** What to do when the player asks somebody something. */
@@ -189,6 +198,11 @@ export class NpcCrowd {
   /** The people on the map, for keeping them out of the decoy list. */
   public get characters(): ReadonlySet<THREE.Object3D> {
     return this.people;
+  }
+
+  /** Every mesh that moves with an animated person or animal. */
+  public get movingParts(): readonly THREE.Object3D[] {
+    return this.moving;
   }
 
   /** The "Ask" verbs, for the selector. */
@@ -300,8 +314,10 @@ export class NpcCrowd {
           // Every mesh skinned to this rig, not just the one the unit holds:
           // the coat and the trousers are separate objects, and they are the
           // parts that vanish.
-          for (const part of byRootBone.get(skeleton.bones[0]) ?? []) part.frustumCulled = false;
+          const parts = byRootBone.get(skeleton.bones[0]) ?? [];
+          for (const part of parts) part.frustumCulled = false;
           stopCullingAnimatedParts(unit);
+          this.moving.push(...parts);
           const home = unit.getWorldPosition(new THREE.Vector3());
           return {
             unit,
@@ -572,5 +588,6 @@ export class NpcCrowd {
     for (const actor of this.actors) actor.animator.dispose();
     this.actors = [];
     this.people.clear();
+    this.moving = [];
   }
 }
