@@ -232,12 +232,27 @@ export class NpcCrowd {
     this.dispose();
 
     const bySkeleton = new Map<THREE.Skeleton, THREE.SkinnedMesh[]>();
+    // A kit person is several skinned meshes — body, hair, hat, coat, trousers —
+    // and each carries **its own `Skeleton` instance over the same bone
+    // objects**. `bySkeleton` therefore sees five rigs where the player sees one
+    // person, and `characterUnit` keeps the body and leaves the rest outside the
+    // unit it animates. Those parts still move, because they are skinned to the
+    // same bones — but they are not inside the unit, so anything done to "the
+    // character" has to be done to them separately. Grouping by the root bone
+    // finds all of them: same bone object, five skeletons.
+    const byRootBone = new Map<THREE.Bone, THREE.SkinnedMesh[]>();
     root.traverse((child) => {
       const mesh = child as THREE.SkinnedMesh;
       if (!mesh.isSkinnedMesh || !mesh.skeleton) return;
       const list = bySkeleton.get(mesh.skeleton);
       if (list) list.push(mesh);
       else bySkeleton.set(mesh.skeleton, [mesh]);
+
+      const rootBone = mesh.skeleton.bones[0];
+      if (!rootBone) return;
+      const parts = byRootBone.get(rootBone);
+      if (parts) parts.push(mesh);
+      else byRootBone.set(rootBone, [mesh]);
     });
 
     // One entry per *person*, not per skeleton.
@@ -282,6 +297,10 @@ export class NpcCrowd {
           const animator: ActorAnimator = animal
             ? animateQuadruped(skeleton, unit)
             : await animateKitHumanoid(skeleton, unit);
+          // Every mesh skinned to this rig, not just the one the unit holds:
+          // the coat and the trousers are separate objects, and they are the
+          // parts that vanish.
+          for (const part of byRootBone.get(skeleton.bones[0]) ?? []) part.frustumCulled = false;
           stopCullingAnimatedParts(unit);
           const home = unit.getWorldPosition(new THREE.Vector3());
           return {
