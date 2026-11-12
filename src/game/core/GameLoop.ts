@@ -39,8 +39,15 @@ export class GameLoop {
   private tick = (time: number): void => {
     if (!this.running) return;
 
-    const frameMs = time - this.lastTime;
-    const delta = Math.min(0.1, frameMs / 1000);
+    const frameMs = Math.max(0, time - this.lastTime);
+    // Clamped at both ends. The ceiling is the tab that was asleep: a delta of
+    // four seconds would teleport the player. The floor matters just as much and
+    // was missing — `start` stamps `lastTime` with `performance.now()`, and the
+    // first animation frame can report a timestamp from *before* that call, so
+    // the first delta of every round could be negative. A negative delta runs
+    // the animation mixer backwards for a frame, which is a body that steps
+    // backwards and then continues: a jerk, right at the start.
+    const delta = Math.min(0.1, Math.max(0, frameMs / 1000));
     this.lastTime = time;
 
     // Before the draw, never after. `onFrameTime` is where the adaptive scaler

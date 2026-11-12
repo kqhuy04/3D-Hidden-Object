@@ -50,4 +50,28 @@ describe('GameLoop frame order', () => {
 
     expect(order).toEqual([]);
   });
+
+  /**
+   * `start` stamps `lastTime` with `performance.now()`, but the first animation
+   * frame reports the timestamp of the frame it belongs to — which can be
+   * earlier. The delta was only clamped at the top, so that first frame went to
+   * the animation mixer negative and played the walk cycle backwards: a body
+   * that steps backwards and then carries on.
+   */
+  it('never hands the game a negative delta', () => {
+    const deltas: number[] = [];
+    const loop = new GameLoop(
+      (delta) => deltas.push(delta),
+      () => {}
+    );
+
+    loop.start();
+    const tick = (loop as unknown as { tick: (t: number) => void }).tick.bind(loop);
+    // A frame timestamp from before `start` was called.
+    tick(performance.now() - 40);
+    tick(performance.now() + 16);
+
+    expect(deltas[0]).toBeGreaterThanOrEqual(0);
+    expect(deltas[1]).toBeGreaterThanOrEqual(0);
+  });
 });
