@@ -1,0 +1,87 @@
+[
+  {
+    "id": "frontier-vending",
+    "ok": true,
+    "spot": {
+      "x": -3,
+      "z": 13.5,
+      "y": 0.05,
+      "d": 9,
+      "kind": "G",
+      "ok": true,
+      "best": {
+        "ring": 2.1,
+        "angle": 3.93
+      }
+    },
+    "triedCount": 1
+  },
+  {
+    "id": "frontier-booth",
+    "ok": true,
+    "spot": {
+      "0": -11,
+      "1": 1.22,
+      "2": 3.5,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 2.3,
+        "angle": 0
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "frontier-fridge",
+    "ok": true,
+    "spot": {
+      "x": 7,
+      "z": 23.5,
+      "y": 0.29,
+      "d": 9.6,
+      "kind": "G",
+      "ok": true,
+      "best": {
+        "ring": 2,
+        "angle": 3.14
+      }
+    },
+    "triedCount": 1
+  },
+  {
+    "id": "frontier-jukebox",
+    "ok": true,
+    "spot": {
+      "x": 7,
+      "z": 3.5,
+      "y": 0.29,
+      "d": 10.5,
+      "kind": "G",
+      "ok": true,
+      "best": {
+        "ring": 1.9,
+        "angle": 3.14
+      }
+    },
+    "triedCount": 2
+  },
+  {
+    "id": "frontier-microwave",
+    "ok": true,
+    "spot": {
+      "0": -3,
+      "1": 0.01,
+      "2": 23.5,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 1.3,
+        "angle": 0
+      }
+    },
+    "triedCount": 0
+  }
+]

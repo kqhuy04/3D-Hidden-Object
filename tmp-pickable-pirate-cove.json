@@ -1,0 +1,102 @@
+[
+  {
+    "id": "cove-vending",
+    "name": "Vending machine",
+    "centre": [
+      -1,
+      1.83,
+      10.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 1.57,
+      "px": -0.38,
+      "pz": 10.5,
+      "pitch": 0.35,
+      "hit": "cove-vending",
+      "bodyToItem": 0.64,
+      "camToItem": 8.78,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cove-laptop",
+    "name": "Laptop",
+    "centre": [
+      4.98,
+      0.99,
+      12.02
+    ],
+    "ok": true,
+    "from": {
+      "angle": 5.5,
+      "px": 4.21,
+      "pz": 14.9,
+      "pitch": 0.26,
+      "hit": "cove-laptop",
+      "bodyToItem": 2.98,
+      "camToItem": 11.02,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cove-chair",
+    "name": "Office chair",
+    "centre": [
+      1.5,
+      0.44,
+      -13
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 1.5,
+      "pz": -11.5,
+      "pitch": 0.51,
+      "hit": "cove-chair",
+      "bodyToItem": 1.64,
+      "camToItem": 9.84,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cove-cone",
+    "name": "Traffic cone",
+    "centre": [
+      9,
+      0.25,
+      -10.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 9,
+      "pz": -9,
+      "pitch": 0.65,
+      "hit": "cove-cone",
+      "bodyToItem": 1.72,
+      "camToItem": 9.95,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cove-jukebox",
+    "name": "Jukebox",
+    "centre": [
+      11.5,
+      0.7,
+      -3.01
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 11.5,
+      "pz": -1.51,
+      "pitch": 0.54,
+      "hit": "cove-jukebox",
+      "bodyToItem": 1.55,
+      "camToItem": 9.7,
+      "prompt": true
+    }
+  }
+]

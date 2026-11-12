@@ -1,0 +1,4809 @@
+{
+ "file": "/assets/maps/pirate-cove.glb",
+ "bytes": 872792,
+ "generatedAt": "2026-11-10T03:50:45.706Z",
+ "structure": {
+  "nodes": 658,
+  "meshes": 283,
+  "materials": 185,
+  "images": 0,
+  "partContainer": "pirate-cove-2ebea4",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 185,
+  "keys": 48,
+  "triangles": 106426,
+  "meshes": 283,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "rock-small",
+   "instances": 31,
+   "triangles": 5828,
+   "maxExtent": 1.271,
+   "hasBounds": true
+  },
+  {
+   "key": "grass-tuft",
+   "instances": 18,
+   "triangles": 8892,
+   "maxExtent": 0.876,
+   "hasBounds": true
+  },
+  {
+   "key": "fern-bush",
+   "instances": 11,
+   "triangles": 7205,
+   "maxExtent": 1.974,
+   "hasBounds": true
+  },
+  {
+   "key": "terrain-blob-grass",
+   "instances": 9,
+   "triangles": 3780,
+   "maxExtent": 10.745,
+   "hasBounds": true
+  },
+  {
+   "key": "barrel",
+   "instances": 7,
+   "triangles": 3864,
+   "maxExtent": 0.9,
+   "hasBounds": true
+  },
+  {
+   "key": "crate",
+   "instances": 6,
+   "triangles": 3216,
+   "maxExtent": 1.12,
+   "hasBounds": true
+  },
+  {
+   "key": "palm-sapling",
+   "instances": 6,
+   "triangles": 3594,
+   "maxExtent": 2.562,
+   "hasBounds": true
+  },
+  {
+   "key": "terrain-blob-sand",
+   "instances": 6,
+   "triangles": 2667,
+   "maxExtent": 13.317,
+   "hasBounds": true
+  },
+  {
+   "key": "torch-stake",
+   "instances": 6,
+   "triangles": 4128,
+   "maxExtent": 1.5,
+   "hasBounds": true
+  },
+  {
+   "key": "palm-tree",
+   "instances": 5,
+   "triangles": 3225,
+   "maxExtent": 5.969,
+   "hasBounds": true
+  },
+  {
+   "key": "path-stone-large",
+   "instances": 5,
+   "triangles": 400,
+   "maxExtent": 1.579,
+   "hasBounds": true
+  },
+  {
+   "key": "path-stone-small",
+   "instances": 5,
+   "triangles": 380,
+   "maxExtent": 1.105,
+   "hasBounds": true
+  },
+  {
+   "key": "rope-coil",
+   "instances": 5,
+   "triangles": 3360,
+   "maxExtent": 0.962,
+   "hasBounds": true
+  },
+  {
+   "key": "boulder-large",
+   "instances": 4,
+   "triangles": 760,
+   "maxExtent": 2.962,
+   "hasBounds": true
+  },
+  {
+   "key": "fence-section",
+   "instances": 4,
+   "triangles": 1856,
+   "maxExtent": 2.379,
+   "hasBounds": true
+  },
+  {
+   "key": "lantern-post",
+   "instances": 4,
+   "triangles": 984,
+   "maxExtent": 2.6,
+   "hasBounds": true
+  },
+  {
+   "key": "campfire",
+   "instances": 3,
+   "triangles": 1842,
+   "maxExtent": 1.362,
+   "hasBounds": true
+  },
+  {
+   "key": "cannonball",
+   "instances": 3,
+   "triangles": 1014,
+   "maxExtent": 0.158,
+   "hasBounds": true
+  },
+  {
+   "key": "cargo-sack",
+   "instances": 3,
+   "triangles": 1332,
+   "maxExtent": 0.7,
+   "hasBounds": true
+  },
+  {
+   "key": "mooring-post",
+   "instances": 3,
+   "triangles": 1524,
+   "maxExtent": 1.1,
+   "hasBounds": true
+  },
+  {
+   "key": "pier-deck-section",
+   "instances": 3,
+   "triangles": 2508,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "pier-railing",
+   "instances": 3,
+   "triangles": 1794,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "pirate-deckhand",
+   "instances": 3,
+   "triangles": 4230,
+   "maxExtent": 1.748,
+   "hasBounds": true
+  },
+  {
+   "key": "sea-stack",
+   "instances": 3,
+   "triangles": 1713,
+   "maxExtent": 18.58,
+   "hasBounds": true
+  },
+  {
+   "key": "shipwreck-hull",
+   "instances": 3,
+   "triangles": 2115,
+   "maxExtent": 7.309,
+   "hasBounds": true
+  },
+  {
+   "key": "driftwood-log",
+   "instances": 2,
+   "triangles": 1044,
+   "maxExtent": 2.172,
+   "hasBounds": true
+  },
+  {
+   "key": "rowboat",
+   "instances": 2,
+   "triangles": 1388,
+   "maxExtent": 3.105,
+   "hasBounds": true
+  },
+  {
+   "key": "tree-stump",
+   "instances": 2,
+   "triangles": 912,
+   "maxExtent": 1.187,
+   "hasBounds": true
+  },
+  {
+   "key": "anchor",
+   "instances": 1,
+   "triangles": 620,
+   "maxExtent": 1.877,
+   "hasBounds": true
+  },
+  {
+   "key": "brigantine",
+   "instances": 1,
+   "triangles": 4044,
+   "maxExtent": 14.62,
+   "hasBounds": true
+  },
+  {
+   "key": "cannon",
+   "instances": 1,
+   "triangles": 692,
+   "maxExtent": 1.908,
+   "hasBounds": true
+  },
+  {
+   "key": "capstan",
+   "instances": 1,
+   "triangles": 612,
+   "maxExtent": 1.56,
+   "hasBounds": true
+  },
+  {
+   "key": "cave-mouth",
+   "instances": 1,
+   "triangles": 1027,
+   "maxExtent": 5.995,
+   "hasBounds": true
+  },
+  {
+   "key": "dock-warehouse",
+   "instances": 1,
+   "triangles": 1430,
+   "maxExtent": 5.845,
+   "hasBounds": true
+  },
+  {
+   "key": "fisher-shack",
+   "instances": 1,
+   "triangles": 1638,
+   "maxExtent": 6.359,
+   "hasBounds": true
+  },
+  {
+   "key": "fishing-net-rack",
+   "instances": 1,
+   "triangles": 576,
+   "maxExtent": 2.334,
+   "hasBounds": true
+  },
+  {
+   "key": "flag-pole",
+   "instances": 1,
+   "triangles": 508,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "galleon",
+   "instances": 1,
+   "triangles": 4461,
+   "maxExtent": 26.691,
+   "hasBounds": true
+  },
+  {
+   "key": "gangplank",
+   "instances": 1,
+   "triangles": 486,
+   "maxExtent": 3.532,
+   "hasBounds": true
+  },
+  {
+   "key": "pirate-captain",
+   "instances": 1,
+   "triangles": 1430,
+   "maxExtent": 2.14,
+   "hasBounds": true
+  },
+  {
+   "key": "ships-wheel",
+   "instances": 1,
+   "triangles": 688,
+   "maxExtent": 1.293,
+   "hasBounds": true
+  },
+  {
+   "key": "signpost",
+   "instances": 1,
+   "triangles": 404,
+   "maxExtent": 2.2,
+   "hasBounds": true
+  },
+  {
+   "key": "sloop",
+   "instances": 1,
+   "triangles": 3878,
+   "maxExtent": 12.308,
+   "hasBounds": true
+  },
+  {
+   "key": "sloop-hull",
+   "instances": 1,
+   "triangles": 4347,
+   "maxExtent": 9.774,
+   "hasBounds": true
+  },
+  {
+   "key": "tavern",
+   "instances": 1,
+   "triangles": 1762,
+   "maxExtent": 8.901,
+   "hasBounds": true
+  },
+  {
+   "key": "treasure-chest",
+   "instances": 1,
+   "triangles": 562,
+   "maxExtent": 1.013,
+   "hasBounds": true
+  },
+  {
+   "key": "watchtower",
+   "instances": 1,
+   "triangles": 962,
+   "maxExtent": 10.044,
+   "hasBounds": true
+  },
+  {
+   "key": "water-blob",
+   "instances": 1,
+   "triangles": 744,
+   "maxExtent": 65,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "water-blob",
+   "key": "water-blob",
+   "meshes": 2,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     -31.547,
+     -0.25,
+     -30.864
+    ],
+    "max": [
+     33.453,
+     -0.2,
+     34.136
+    ]
+   },
+   "size": [
+    65,
+    0.05,
+    65
+   ]
+  },
+  {
+   "index": 4,
+   "name": "terrain-blob-sand",
+   "key": "terrain-blob-sand",
+   "meshes": 1,
+   "triangles": 287,
+   "aabb": {
+    "min": [
+     -26.833,
+     -0.248,
+     -13.383
+    ],
+    "max": [
+     -14.167,
+     -0.063,
+     -1.345
+    ]
+   },
+   "size": [
+    12.665,
+    0.185,
+    12.038
+   ]
+  },
+  {
+   "index": 6,
+   "name": "terrain-blob-sand",
+   "key": "terrain-blob-sand",
+   "meshes": 1,
+   "triangles": 539,
+   "aabb": {
+    "min": [
+     -20.12,
+     -0.232,
+     -15.836
+    ],
+    "max": [
+     -6.88,
+     -0.034,
+     -2.892
+    ]
+   },
+   "size": [
+    13.239,
+    0.198,
+    12.945
+   ]
+  },
+  {
+   "index": 8,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -28.079,
+     -0.176,
+     -7.972
+    ],
+    "max": [
+     -18.593,
+     -0.026,
+     2.002
+    ]
+   },
+   "size": [
+    9.485,
+    0.15,
+    9.974
+   ]
+  },
+  {
+   "index": 10,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -16.736,
+     -0.248,
+     -17.7
+    ],
+    "max": [
+     -6.264,
+     -0.098,
+     -7.028
+    ]
+   },
+   "size": [
+    10.472,
+    0.15,
+    10.673
+   ]
+  },
+  {
+   "index": 12,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -23.589,
+     -0.171,
+     -5.801
+    ],
+    "max": [
+     -12.945,
+     -0.121,
+     4.945
+    ]
+   },
+   "size": [
+    10.644,
+    0.05,
+    10.745
+   ]
+  },
+  {
+   "index": 14,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -14.487,
+     -0.216,
+     -9.107
+    ],
+    "max": [
+     -4.513,
+     -0.066,
+     0.379
+    ]
+   },
+   "size": [
+    9.974,
+    0.15,
+    9.485
+   ]
+  },
+  {
+   "index": 16,
+   "name": "terrain-blob-sand",
+   "key": "terrain-blob-sand",
+   "meshes": 1,
+   "triangles": 224,
+   "aabb": {
+    "min": [
+     -2.972,
+     -0.219,
+     -25.634
+    ],
+    "max": [
+     9.972,
+     -0.169,
+     -12.394
+    ]
+   },
+   "size": [
+    12.945,
+    0.05,
+    13.239
+   ]
+  },
+  {
+   "index": 18,
+   "name": "terrain-blob-sand",
+   "key": "terrain-blob-sand",
+   "meshes": 1,
+   "triangles": 539,
+   "aabb": {
+    "min": [
+     4.532,
+     -0.231,
+     -19.908
+    ],
+    "max": [
+     16.468,
+     -0.033,
+     -8.82
+    ]
+   },
+   "size": [
+    11.937,
+    0.198,
+    11.089
+   ]
+  },
+  {
+   "index": 20,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -7.822,
+     -0.248,
+     -21.737
+    ],
+    "max": [
+     2.822,
+     -0.098,
+     -10.991
+    ]
+   },
+   "size": [
+    10.644,
+    0.15,
+    10.745
+   ]
+  },
+  {
+   "index": 22,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     0.574,
+     -0.239,
+     -16.662
+    ],
+    "max": [
+     8.426,
+     -0.189,
+     -8.066
+    ]
+   },
+   "size": [
+    7.852,
+    0.05,
+    8.596
+   ]
+  },
+  {
+   "index": 24,
+   "name": "terrain-blob-sand",
+   "key": "terrain-blob-sand",
+   "meshes": 1,
+   "triangles": 539,
+   "aabb": {
+    "min": [
+     10.915,
+     -0.346,
+     4.978
+    ],
+    "max": [
+     24.085,
+     -0.148,
+     18.296
+    ]
+   },
+   "size": [
+    13.169,
+    0.198,
+    13.317
+   ]
+  },
+  {
+   "index": 26,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     5.357,
+     -0.248,
+     7.692
+    ],
+    "max": [
+     15.643,
+     -0.098,
+     17.582
+    ]
+   },
+   "size": [
+    10.286,
+    0.15,
+    9.89
+   ]
+  },
+  {
+   "index": 28,
+   "name": "terrain-blob-sand",
+   "key": "terrain-blob-sand",
+   "meshes": 1,
+   "triangles": 539,
+   "aabb": {
+    "min": [
+     -18.703,
+     -0.248,
+     9.046
+    ],
+    "max": [
+     -6.297,
+     -0.05,
+     20.736
+    ]
+   },
+   "size": [
+    12.407,
+    0.198,
+    11.69
+   ]
+  },
+  {
+   "index": 30,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -14.254,
+     -0.232,
+     15.071
+    ],
+    "max": [
+     -4.034,
+     -0.182,
+     25.591
+    ]
+   },
+   "size": [
+    10.22,
+    0.05,
+    10.519
+   ]
+  },
+  {
+   "index": 32,
+   "name": "pier-deck-section",
+   "key": "pier-deck-section",
+   "meshes": 1,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     6.5,
+     -0.71,
+     10.137
+    ],
+    "max": [
+     10.5,
+     0.85,
+     13.137
+    ]
+   },
+   "size": [
+    4,
+    1.56,
+    3
+   ]
+  },
+  {
+   "index": 34,
+   "name": "pier-deck-section",
+   "key": "pier-deck-section",
+   "meshes": 1,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     2.5,
+     -0.32,
+     10.137
+    ],
+    "max": [
+     6.5,
+     1.24,
+     13.137
+    ]
+   },
+   "size": [
+    4,
+    1.56,
+    3
+   ]
+  },
+  {
+   "index": 36,
+   "name": "pier-deck-section",
+   "key": "pier-deck-section",
+   "meshes": 1,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     -1.5,
+     -0.32,
+     10.137
+    ],
+    "max": [
+     2.5,
+     1.24,
+     13.137
+    ]
+   },
+   "size": [
+    4,
+    1.56,
+    3
+   ]
+  },
+  {
+   "index": 38,
+   "name": "pier-railing",
+   "key": "pier-railing",
+   "meshes": 2,
+   "triangles": 598,
+   "aabb": {
+    "min": [
+     6.5,
+     0.37,
+     12.793
+    ],
+    "max": [
+     10.5,
+     1.37,
+     13.053
+    ]
+   },
+   "size": [
+    4,
+    1,
+    0.26
+   ]
+  },
+  {
+   "index": 42,
+   "name": "pier-railing",
+   "key": "pier-railing",
+   "meshes": 2,
+   "triangles": 598,
+   "aabb": {
+    "min": [
+     2.5,
+     0.883,
+     12.876
+    ],
+    "max": [
+     6.5,
+     1.883,
+     13.136
+    ]
+   },
+   "size": [
+    4,
+    1,
+    0.26
+   ]
+  },
+  {
+   "index": 46,
+   "name": "pier-railing",
+   "key": "pier-railing",
+   "meshes": 2,
+   "triangles": 598,
+   "aabb": {
+    "min": [
+     -1.5,
+     0.88,
+     12.876
+    ],
+    "max": [
+     2.5,
+     1.88,
+     13.136
+    ]
+   },
+   "size": [
+    4,
+    1,
+    0.26
+   ]
+  },
+  {
+   "index": 50,
+   "name": "galleon",
+   "key": "galleon",
+   "meshes": 8,
+   "triangles": 4461,
+   "aabb": {
+    "min": [
+     -1.806,
+     -2.004,
+     23.28
+    ],
+    "max": [
+     24.885,
+     13.796,
+     31.463
+    ]
+   },
+   "size": [
+    26.691,
+    15.8,
+    8.183
+   ]
+  },
+  {
+   "index": 66,
+   "name": "brigantine",
+   "key": "brigantine",
+   "meshes": 5,
+   "triangles": 4044,
+   "aabb": {
+    "min": [
+     -5.785,
+     -1.404,
+     -0.188
+    ],
+    "max": [
+     8.835,
+     10.529,
+     11.517
+    ]
+   },
+   "size": [
+    14.62,
+    11.933,
+    11.704
+   ]
+  },
+  {
+   "index": 77,
+   "name": "gangplank",
+   "key": "gangplank",
+   "meshes": 1,
+   "triangles": 486,
+   "aabb": {
+    "min": [
+     2.168,
+     0.88,
+     7.588
+    ],
+    "max": [
+     4.092,
+     2.764,
+     11.121
+    ]
+   },
+   "size": [
+    1.924,
+    1.884,
+    3.532
+   ]
+  },
+  {
+   "index": 79,
+   "name": "sloop",
+   "key": "sloop",
+   "meshes": 4,
+   "triangles": 3878,
+   "aabb": {
+    "min": [
+     25.611,
+     -1.004,
+     -12.399
+    ],
+    "max": [
+     33.476,
+     7.686,
+     -0.091
+    ]
+   },
+   "size": [
+    7.865,
+    8.69,
+    12.308
+   ]
+  },
+  {
+   "index": 88,
+   "name": "sloop-hull",
+   "key": "sloop-hull",
+   "meshes": 3,
+   "triangles": 4347,
+   "aabb": {
+    "min": [
+     25.262,
+     -1.004,
+     1.9
+    ],
+    "max": [
+     31.847,
+     3.916,
+     11.674
+    ]
+   },
+   "size": [
+    6.585,
+    4.92,
+    9.774
+   ]
+  },
+  {
+   "index": 95,
+   "name": "shipwreck-hull",
+   "key": "shipwreck-hull",
+   "meshes": 2,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     -27.403,
+     -3.019,
+     -17.953
+    ],
+    "max": [
+     -21.831,
+     2.928,
+     -10.644
+    ]
+   },
+   "size": [
+    5.572,
+    5.947,
+    7.309
+   ]
+  },
+  {
+   "index": 99,
+   "name": "rowboat",
+   "key": "rowboat",
+   "meshes": 3,
+   "triangles": 694,
+   "aabb": {
+    "min": [
+     -16.553,
+     -0.141,
+     11.84
+    ],
+    "max": [
+     -13.447,
+     0.574,
+     13.434
+    ]
+   },
+   "size": [
+    3.105,
+    0.715,
+    1.594
+   ]
+  },
+  {
+   "index": 105,
+   "name": "tavern",
+   "key": "tavern",
+   "meshes": 6,
+   "triangles": 1762,
+   "aabb": {
+    "min": [
+     -25.082,
+     -0.311,
+     -10.452
+    ],
+    "max": [
+     -17.598,
+     8.59,
+     -2.276
+    ]
+   },
+   "size": [
+    7.484,
+    8.901,
+    8.177
+   ]
+  },
+  {
+   "index": 117,
+   "name": "flag-pole",
+   "key": "flag-pole",
+   "meshes": 2,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     -12.455,
+     -0.246,
+     -4.806
+    ],
+    "max": [
+     -10.309,
+     3.754,
+     -3.404
+    ]
+   },
+   "size": [
+    2.146,
+    4,
+    1.402
+   ]
+  },
+  {
+   "index": 121,
+   "name": "campfire",
+   "key": "campfire",
+   "meshes": 2,
+   "triangles": 614,
+   "aabb": {
+    "min": [
+     -13.181,
+     -0.222,
+     -2.544
+    ],
+    "max": [
+     -11.819,
+     0.298,
+     -1.184
+    ]
+   },
+   "size": [
+    1.362,
+    0.52,
+    1.36
+   ]
+  },
+  {
+   "index": 125,
+   "name": "signpost",
+   "key": "signpost",
+   "meshes": 3,
+   "triangles": 404,
+   "aabb": {
+    "min": [
+     -8.645,
+     0.02,
+     -7.555
+    ],
+    "max": [
+     -8.36,
+     2.22,
+     -6.173
+    ]
+   },
+   "size": [
+    0.285,
+    2.2,
+    1.381
+   ]
+  },
+  {
+   "index": 131,
+   "name": "lantern-post",
+   "key": "lantern-post",
+   "meshes": 2,
+   "triangles": 246,
+   "aabb": {
+    "min": [
+     -16.941,
+     -0.121,
+     -9.255
+    ],
+    "max": [
+     -15.931,
+     2.479,
+     -8.615
+    ]
+   },
+   "size": [
+    1.011,
+    2.6,
+    0.641
+   ]
+  },
+  {
+   "index": 135,
+   "name": "lantern-post",
+   "key": "lantern-post",
+   "meshes": 2,
+   "triangles": 246,
+   "aabb": {
+    "min": [
+     -8.428,
+     -0.224,
+     -2.829
+    ],
+    "max": [
+     -7.504,
+     2.376,
+     -1.842
+    ]
+   },
+   "size": [
+    0.924,
+    2.6,
+    0.987
+   ]
+  },
+  {
+   "index": 139,
+   "name": "torch-stake",
+   "key": "torch-stake",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     -15.144,
+     -0.25,
+     -4.013
+    ],
+    "max": [
+     -14.856,
+     1.25,
+     -3.715
+    ]
+   },
+   "size": [
+    0.288,
+    1.5,
+    0.299
+   ]
+  },
+  {
+   "index": 143,
+   "name": "torch-stake",
+   "key": "torch-stake",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     -9.644,
+     -0.272,
+     -8.013
+    ],
+    "max": [
+     -9.356,
+     1.228,
+     -7.715
+    ]
+   },
+   "size": [
+    0.288,
+    1.5,
+    0.299
+   ]
+  },
+  {
+   "index": 147,
+   "name": "rope-coil",
+   "key": "rope-coil",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     -10.423,
+     -0.2,
+     -1.791
+    ],
+    "max": [
+     -9.577,
+     0.054,
+     -0.937
+    ]
+   },
+   "size": [
+    0.846,
+    0.254,
+    0.854
+   ]
+  },
+  {
+   "index": 149,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     -12.447,
+     -0.23,
+     -8.811
+    ],
+    "max": [
+     -11.553,
+     0.67,
+     -7.917
+    ]
+   },
+   "size": [
+    0.893,
+    0.9,
+    0.893
+   ]
+  },
+  {
+   "index": 153,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     -11.531,
+     -0.178,
+     -9.595
+    ],
+    "max": [
+     -10.669,
+     0.722,
+     -8.733
+    ]
+   },
+   "size": [
+    0.862,
+    0.9,
+    0.862
+   ]
+  },
+  {
+   "index": 157,
+   "name": "tree-stump",
+   "key": "tree-stump",
+   "meshes": 1,
+   "triangles": 456,
+   "aabb": {
+    "min": [
+     -16.593,
+     -0.222,
+     -0.949
+    ],
+    "max": [
+     -15.407,
+     0.382,
+     0.221
+    ]
+   },
+   "size": [
+    1.187,
+    0.604,
+    1.169
+   ]
+  },
+  {
+   "index": 159,
+   "name": "tree-stump",
+   "key": "tree-stump",
+   "meshes": 1,
+   "triangles": 456,
+   "aabb": {
+    "min": [
+     -8.073,
+     -0.202,
+     -5.902
+    ],
+    "max": [
+     -6.927,
+     0.402,
+     -4.826
+    ]
+   },
+   "size": [
+    1.145,
+    0.604,
+    1.077
+   ]
+  },
+  {
+   "index": 161,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 536,
+   "aabb": {
+    "min": [
+     -15.06,
+     -0.215,
+     -11.424
+    ],
+    "max": [
+     -13.94,
+     0.585,
+     -10.304
+    ]
+   },
+   "size": [
+    1.12,
+    0.8,
+    1.12
+   ]
+  },
+  {
+   "index": 165,
+   "name": "fence-section",
+   "key": "fence-section",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     -18.281,
+     -0.225,
+     -12.226
+    ],
+    "max": [
+     -15.923,
+     1.175,
+     -11.274
+    ]
+   },
+   "size": [
+    2.357,
+    1.4,
+    0.952
+   ]
+  },
+  {
+   "index": 167,
+   "name": "fence-section",
+   "key": "fence-section",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     -15.871,
+     -0.274,
+     -12.367
+    ],
+    "max": [
+     -13.493,
+     1.126,
+     -11.519
+    ]
+   },
+   "size": [
+    2.379,
+    1.4,
+    0.847
+   ]
+  },
+  {
+   "index": 169,
+   "name": "fence-section",
+   "key": "fence-section",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     -13.553,
+     -0.287,
+     -11.746
+    ],
+    "max": [
+     -11.175,
+     1.113,
+     -10.898
+    ]
+   },
+   "size": [
+    2.379,
+    1.4,
+    0.847
+   ]
+  },
+  {
+   "index": 171,
+   "name": "fence-section",
+   "key": "fence-section",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     -11.234,
+     -0.3,
+     -11.125
+    ],
+    "max": [
+     -8.856,
+     1.1,
+     -10.277
+    ]
+   },
+   "size": [
+    2.379,
+    1.4,
+    0.847
+   ]
+  },
+  {
+   "index": 173,
+   "name": "cave-mouth",
+   "key": "cave-mouth",
+   "meshes": 1,
+   "triangles": 1027,
+   "aabb": {
+    "min": [
+     0.149,
+     -0.24,
+     -22.057
+    ],
+    "max": [
+     6.143,
+     3.748,
+     -16.851
+    ]
+   },
+   "size": [
+    5.995,
+    3.988,
+    5.206
+   ]
+  },
+  {
+   "index": 175,
+   "name": "boulder-large",
+   "key": "boulder-large",
+   "meshes": 1,
+   "triangles": 190,
+   "aabb": {
+    "min": [
+     -1.399,
+     -0.004,
+     -23.345
+    ],
+    "max": [
+     1.399,
+     1.538,
+     -20.383
+    ]
+   },
+   "size": [
+    2.798,
+    1.542,
+    2.962
+   ]
+  },
+  {
+   "index": 177,
+   "name": "boulder-large",
+   "key": "boulder-large",
+   "meshes": 1,
+   "triangles": 190,
+   "aabb": {
+    "min": [
+     5.574,
+     -0.316,
+     -23.089
+    ],
+    "max": [
+     8.426,
+     1.226,
+     -20.639
+    ]
+   },
+   "size": [
+    2.851,
+    1.542,
+    2.45
+   ]
+  },
+  {
+   "index": 179,
+   "name": "treasure-chest",
+   "key": "treasure-chest",
+   "meshes": 3,
+   "triangles": 562,
+   "aabb": {
+    "min": [
+     1.913,
+     -0.146,
+     -20.443
+    ],
+    "max": [
+     2.907,
+     0.454,
+     -19.431
+    ]
+   },
+   "size": [
+    0.994,
+    0.6,
+    1.013
+   ]
+  },
+  {
+   "index": 185,
+   "name": "campfire",
+   "key": "campfire",
+   "meshes": 2,
+   "triangles": 614,
+   "aabb": {
+    "min": [
+     5.477,
+     -0.215,
+     -17.386
+    ],
+    "max": [
+     6.523,
+     0.305,
+     -16.342
+    ]
+   },
+   "size": [
+    1.047,
+    0.52,
+    1.044
+   ]
+  },
+  {
+   "index": 189,
+   "name": "torch-stake",
+   "key": "torch-stake",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     1.276,
+     -0.239,
+     -16.729
+    ],
+    "max": [
+     1.564,
+     1.261,
+     -16.431
+    ]
+   },
+   "size": [
+    0.288,
+    1.5,
+    0.299
+   ]
+  },
+  {
+   "index": 193,
+   "name": "torch-stake",
+   "key": "torch-stake",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     5.704,
+     -0.238,
+     -18.837
+    ],
+    "max": [
+     5.992,
+     1.262,
+     -18.539
+    ]
+   },
+   "size": [
+    0.288,
+    1.5,
+    0.299
+   ]
+  },
+  {
+   "index": 197,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     8.164,
+     -0.163,
+     -17.7
+    ],
+    "max": [
+     8.836,
+     0.737,
+     -17.028
+    ]
+   },
+   "size": [
+    0.672,
+    0.9,
+    0.672
+   ]
+  },
+  {
+   "index": 201,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 536,
+   "aabb": {
+    "min": [
+     -2.021,
+     -0.367,
+     -14.885
+    ],
+    "max": [
+     -0.979,
+     0.433,
+     -13.843
+    ]
+   },
+   "size": [
+    1.041,
+    0.8,
+    1.041
+   ]
+  },
+  {
+   "index": 205,
+   "name": "driftwood-log",
+   "key": "driftwood-log",
+   "meshes": 1,
+   "triangles": 522,
+   "aabb": {
+    "min": [
+     -4.71,
+     -0.384,
+     -13.95
+    ],
+    "max": [
+     -3.29,
+     0.431,
+     -11.778
+    ]
+   },
+   "size": [
+    1.42,
+    0.815,
+    2.172
+   ]
+  },
+  {
+   "index": 207,
+   "name": "watchtower",
+   "key": "watchtower",
+   "meshes": 2,
+   "triangles": 962,
+   "aabb": {
+    "min": [
+     10.739,
+     -0.336,
+     -15.125
+    ],
+    "max": [
+     14.261,
+     9.708,
+     -11.603
+    ]
+   },
+   "size": [
+    3.522,
+    10.044,
+    3.522
+   ]
+  },
+  {
+   "index": 211,
+   "name": "rope-coil",
+   "key": "rope-coil",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     10.521,
+     -0.223,
+     -11.345
+    ],
+    "max": [
+     11.479,
+     0.031,
+     -10.383
+    ]
+   },
+   "size": [
+    0.958,
+    0.254,
+    0.962
+   ]
+  },
+  {
+   "index": 213,
+   "name": "dock-warehouse",
+   "key": "dock-warehouse",
+   "meshes": 3,
+   "triangles": 1430,
+   "aabb": {
+    "min": [
+     13.5,
+     -0.206,
+     7.641
+    ],
+    "max": [
+     19.344,
+     3.531,
+     12.101
+    ]
+   },
+   "size": [
+    5.845,
+    3.737,
+    4.461
+   ]
+  },
+  {
+   "index": 219,
+   "name": "cargo-sack",
+   "key": "cargo-sack",
+   "meshes": 1,
+   "triangles": 444,
+   "aabb": {
+    "min": [
+     12.738,
+     -0.227,
+     7.874
+    ],
+    "max": [
+     13.262,
+     0.473,
+     8.4
+    ]
+   },
+   "size": [
+    0.524,
+    0.7,
+    0.526
+   ]
+  },
+  {
+   "index": 221,
+   "name": "cargo-sack",
+   "key": "cargo-sack",
+   "meshes": 1,
+   "triangles": 444,
+   "aabb": {
+    "min": [
+     13.379,
+     -0.269,
+     8.613
+    ],
+    "max": [
+     13.821,
+     0.431,
+     9.061
+    ]
+   },
+   "size": [
+    0.442,
+    0.7,
+    0.448
+   ]
+  },
+  {
+   "index": 223,
+   "name": "cargo-sack",
+   "key": "cargo-sack",
+   "meshes": 1,
+   "triangles": 444,
+   "aabb": {
+    "min": [
+     12.263,
+     -0.254,
+     8.803
+    ],
+    "max": [
+     12.736,
+     0.446,
+     9.271
+    ]
+   },
+   "size": [
+    0.473,
+    0.7,
+    0.468
+   ]
+  },
+  {
+   "index": 225,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 536,
+   "aabb": {
+    "min": [
+     13.479,
+     -0.209,
+     12.616
+    ],
+    "max": [
+     14.521,
+     0.591,
+     13.658
+    ]
+   },
+   "size": [
+    1.041,
+    0.8,
+    1.041
+   ]
+  },
+  {
+   "index": 229,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 536,
+   "aabb": {
+    "min": [
+     12.656,
+     -0.249,
+     13.393
+    ],
+    "max": [
+     13.744,
+     0.551,
+     14.481
+    ]
+   },
+   "size": [
+    1.088,
+    0.8,
+    1.088
+   ]
+  },
+  {
+   "index": 233,
+   "name": "anchor",
+   "key": "anchor",
+   "meshes": 2,
+   "triangles": 620,
+   "aabb": {
+    "min": [
+     8.167,
+     -0.39,
+     6.988
+    ],
+    "max": [
+     10.044,
+     0.024,
+     8.405
+    ]
+   },
+   "size": [
+    1.877,
+    0.414,
+    1.417
+   ]
+  },
+  {
+   "index": 237,
+   "name": "torch-stake",
+   "key": "torch-stake",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     10.856,
+     0.02,
+     10.988
+    ],
+    "max": [
+     11.144,
+     1.52,
+     11.286
+    ]
+   },
+   "size": [
+    0.288,
+    1.5,
+    0.299
+   ]
+  },
+  {
+   "index": 241,
+   "name": "lantern-post",
+   "key": "lantern-post",
+   "meshes": 2,
+   "triangles": 246,
+   "aabb": {
+    "min": [
+     11.926,
+     -0.278,
+     12.695
+    ],
+    "max": [
+     12.734,
+     2.322,
+     13.719
+    ]
+   },
+   "size": [
+    0.808,
+    2.6,
+    1.024
+   ]
+  },
+  {
+   "index": 245,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     20.36,
+     -0.352,
+     9.015
+    ],
+    "max": [
+     21.254,
+     0.548,
+     9.909
+    ]
+   },
+   "size": [
+    0.893,
+    0.9,
+    0.893
+   ]
+  },
+  {
+   "index": 249,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     19.751,
+     -0.282,
+     9.561
+    ],
+    "max": [
+     20.613,
+     0.618,
+     10.423
+    ]
+   },
+   "size": [
+    0.862,
+    0.9,
+    0.862
+   ]
+  },
+  {
+   "index": 253,
+   "name": "capstan",
+   "key": "capstan",
+   "meshes": 3,
+   "triangles": 612,
+   "aabb": {
+    "min": [
+     7.32,
+     0.427,
+     11.057
+    ],
+    "max": [
+     8.88,
+     1.527,
+     12.617
+    ]
+   },
+   "size": [
+    1.56,
+    1.1,
+    1.56
+   ]
+  },
+  {
+   "index": 259,
+   "name": "ships-wheel",
+   "key": "ships-wheel",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     9.268,
+     0.422,
+     11.201
+    ],
+    "max": [
+     10.278,
+     1.715,
+     11.983
+    ]
+   },
+   "size": [
+    1.01,
+    1.293,
+    0.782
+   ]
+  },
+  {
+   "index": 264,
+   "name": "cannon",
+   "key": "cannon",
+   "meshes": 6,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     1.132,
+     0.88,
+     11.389
+    ],
+    "max": [
+     3.04,
+     1.536,
+     12.79
+    ]
+   },
+   "size": [
+    1.908,
+    0.656,
+    1.401
+   ]
+  },
+  {
+   "index": 276,
+   "name": "cannonball",
+   "key": "cannonball",
+   "meshes": 1,
+   "triangles": 338,
+   "aabb": {
+    "min": [
+     1.023,
+     0.88,
+     12.558
+    ],
+    "max": [
+     1.177,
+     1.036,
+     12.716
+    ]
+   },
+   "size": [
+    0.154,
+    0.156,
+    0.158
+   ]
+  },
+  {
+   "index": 278,
+   "name": "cannonball",
+   "key": "cannonball",
+   "meshes": 1,
+   "triangles": 338,
+   "aabb": {
+    "min": [
+     0.873,
+     0.88,
+     12.378
+    ],
+    "max": [
+     1.027,
+     1.036,
+     12.536
+    ]
+   },
+   "size": [
+    0.154,
+    0.156,
+    0.158
+   ]
+  },
+  {
+   "index": 280,
+   "name": "cannonball",
+   "key": "cannonball",
+   "meshes": 1,
+   "triangles": 338,
+   "aabb": {
+    "min": [
+     1.143,
+     0.88,
+     12.338
+    ],
+    "max": [
+     1.297,
+     1.036,
+     12.496
+    ]
+   },
+   "size": [
+    0.154,
+    0.156,
+    0.158
+   ]
+  },
+  {
+   "index": 282,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 536,
+   "aabb": {
+    "min": [
+     5.426,
+     0.88,
+     11.563
+    ],
+    "max": [
+     6.374,
+     1.68,
+     12.511
+    ]
+   },
+   "size": [
+    0.949,
+    0.8,
+    0.949
+   ]
+  },
+  {
+   "index": 286,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     6.764,
+     0.445,
+     10.501
+    ],
+    "max": [
+     7.436,
+     1.345,
+     11.173
+    ]
+   },
+   "size": [
+    0.672,
+    0.9,
+    0.672
+   ]
+  },
+  {
+   "index": 290,
+   "name": "rope-coil",
+   "key": "rope-coil",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     4.421,
+     0.88,
+     10.556
+    ],
+    "max": [
+     5.379,
+     1.134,
+     11.518
+    ]
+   },
+   "size": [
+    0.958,
+    0.254,
+    0.962
+   ]
+  },
+  {
+   "index": 292,
+   "name": "rope-coil",
+   "key": "rope-coil",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     -0.543,
+     0.88,
+     11.798
+    ],
+    "max": [
+     0.343,
+     1.134,
+     12.676
+    ]
+   },
+   "size": [
+    0.886,
+    0.254,
+    0.879
+   ]
+  },
+  {
+   "index": 294,
+   "name": "lantern-post",
+   "key": "lantern-post",
+   "meshes": 2,
+   "triangles": 246,
+   "aabb": {
+    "min": [
+     -1.078,
+     0.88,
+     12.105
+    ],
+    "max": [
+     -0.245,
+     3.48,
+     13.125
+    ]
+   },
+   "size": [
+    0.833,
+    2.6,
+    1.021
+   ]
+  },
+  {
+   "index": 298,
+   "name": "mooring-post",
+   "key": "mooring-post",
+   "meshes": 2,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     8.37,
+     0.382,
+     10.073
+    ],
+    "max": [
+     9.03,
+     1.482,
+     10.701
+    ]
+   },
+   "size": [
+    0.66,
+    1.1,
+    0.628
+   ]
+  },
+  {
+   "index": 302,
+   "name": "mooring-post",
+   "key": "mooring-post",
+   "meshes": 2,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     4.37,
+     0.88,
+     10.073
+    ],
+    "max": [
+     5.03,
+     1.98,
+     10.701
+    ]
+   },
+   "size": [
+    0.66,
+    1.1,
+    0.628
+   ]
+  },
+  {
+   "index": 306,
+   "name": "mooring-post",
+   "key": "mooring-post",
+   "meshes": 2,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     0.37,
+     0.88,
+     10.073
+    ],
+    "max": [
+     1.03,
+     1.98,
+     10.701
+    ]
+   },
+   "size": [
+    0.66,
+    1.1,
+    0.628
+   ]
+  },
+  {
+   "index": 310,
+   "name": "fisher-shack",
+   "key": "fisher-shack",
+   "meshes": 2,
+   "triangles": 1638,
+   "aabb": {
+    "min": [
+     -15.669,
+     -0.224,
+     12.457
+    ],
+    "max": [
+     -9.333,
+     5.23,
+     18.815
+    ]
+   },
+   "size": [
+    6.336,
+    5.454,
+    6.359
+   ]
+  },
+  {
+   "index": 314,
+   "name": "fishing-net-rack",
+   "key": "fishing-net-rack",
+   "meshes": 2,
+   "triangles": 576,
+   "aabb": {
+    "min": [
+     -9.667,
+     -0.166,
+     19.77
+    ],
+    "max": [
+     -7.333,
+     1.489,
+     21.502
+    ]
+   },
+   "size": [
+    2.334,
+    1.655,
+    1.732
+   ]
+  },
+  {
+   "index": 318,
+   "name": "campfire",
+   "key": "campfire",
+   "meshes": 2,
+   "triangles": 614,
+   "aabb": {
+    "min": [
+     -10.332,
+     -0.212,
+     18.7
+    ],
+    "max": [
+     -9.286,
+     0.308,
+     19.744
+    ]
+   },
+   "size": [
+    1.047,
+    0.52,
+    1.044
+   ]
+  },
+  {
+   "index": 322,
+   "name": "driftwood-log",
+   "key": "driftwood-log",
+   "meshes": 1,
+   "triangles": 522,
+   "aabb": {
+    "min": [
+     -9.611,
+     -0.342,
+     13.093
+    ],
+    "max": [
+     -7.733,
+     0.473,
+     15.181
+    ]
+   },
+   "size": [
+    1.879,
+    0.815,
+    2.088
+   ]
+  },
+  {
+   "index": 324,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     -14.778,
+     -0.248,
+     13.801
+    ],
+    "max": [
+     -14.106,
+     0.652,
+     14.473
+    ]
+   },
+   "size": [
+    0.672,
+    0.9,
+    0.672
+   ]
+  },
+  {
+   "index": 328,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 536,
+   "aabb": {
+    "min": [
+     -11.56,
+     -0.208,
+     21.076
+    ],
+    "max": [
+     -10.44,
+     0.592,
+     22.196
+    ]
+   },
+   "size": [
+    1.12,
+    0.8,
+    1.12
+   ]
+  },
+  {
+   "index": 332,
+   "name": "rope-coil",
+   "key": "rope-coil",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     -11.923,
+     -0.282,
+     12.21
+    ],
+    "max": [
+     -11.077,
+     -0.028,
+     13.064
+    ]
+   },
+   "size": [
+    0.846,
+    0.254,
+    0.854
+   ]
+  },
+  {
+   "index": 334,
+   "name": "torch-stake",
+   "key": "torch-stake",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     -13.067,
+     -0.207,
+     19.436
+    ],
+    "max": [
+     -12.779,
+     1.293,
+     19.734
+    ]
+   },
+   "size": [
+    0.288,
+    1.5,
+    0.299
+   ]
+  },
+  {
+   "index": 338,
+   "name": "pirate-deckhand",
+   "key": "pirate-deckhand",
+   "meshes": 4,
+   "triangles": 1410,
+   "aabb": {
+    "min": [
+     10.734,
+     -0.222,
+     6.797
+    ],
+    "max": [
+     11.593,
+     1.526,
+     8.475
+    ]
+   },
+   "size": [
+    0.858,
+    1.748,
+    1.677
+   ]
+  },
+  {
+   "index": 368,
+   "name": "pirate-deckhand",
+   "key": "pirate-deckhand",
+   "meshes": 4,
+   "triangles": 1410,
+   "aabb": {
+    "min": [
+     -11.724,
+     -0.191,
+     19.739
+    ],
+    "max": [
+     -10.271,
+     1.557,
+     21.13
+    ]
+   },
+   "size": [
+    1.454,
+    1.748,
+    1.391
+   ]
+  },
+  {
+   "index": 398,
+   "name": "sea-stack",
+   "key": "sea-stack",
+   "meshes": 1,
+   "triangles": 571,
+   "aabb": {
+    "min": [
+     -26.955,
+     -0.304,
+     -14.198
+    ],
+    "max": [
+     -24.433,
+     4.196,
+     -11.678
+    ]
+   },
+   "size": [
+    2.522,
+    4.5,
+    2.519
+   ]
+  },
+  {
+   "index": 400,
+   "name": "sea-stack",
+   "key": "sea-stack",
+   "meshes": 1,
+   "triangles": 571,
+   "aabb": {
+    "min": [
+     28.308,
+     -0.304,
+     -16.55
+    ],
+    "max": [
+     30.692,
+     4.196,
+     -14.178
+    ]
+   },
+   "size": [
+    2.383,
+    4.5,
+    2.373
+   ]
+  },
+  {
+   "index": 402,
+   "name": "sea-stack",
+   "key": "sea-stack",
+   "meshes": 1,
+   "triangles": 571,
+   "aabb": {
+    "min": [
+     -8.369,
+     -1.051,
+     -34.526
+    ],
+    "max": [
+     10.211,
+     8.871,
+     -16.302
+    ]
+   },
+   "size": [
+    18.58,
+    9.922,
+    18.223
+   ]
+  },
+  {
+   "index": 404,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -30.118,
+     -0.366,
+     -0.982
+    ],
+    "max": [
+     -28.882,
+     0.283,
+     0.254
+    ]
+   },
+   "size": [
+    1.236,
+    0.649,
+    1.235
+   ]
+  },
+  {
+   "index": 406,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -28.875,
+     -0.306,
+     -11.739
+    ],
+    "max": [
+     -28.125,
+     0.102,
+     -10.989
+    ]
+   },
+   "size": [
+    0.751,
+    0.408,
+    0.75
+   ]
+  },
+  {
+   "index": 408,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -20.985,
+     -0.336,
+     -18.35
+    ],
+    "max": [
+     -20.015,
+     0.193,
+     -17.378
+    ]
+   },
+   "size": [
+    0.971,
+    0.529,
+    0.972
+   ]
+  },
+  {
+   "index": 410,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     1.147,
+     -0.294,
+     -27.717
+    ],
+    "max": [
+     1.853,
+     0.066,
+     -27.011
+    ]
+   },
+   "size": [
+    0.706,
+    0.36,
+    0.706
+   ]
+  },
+  {
+   "index": 412,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     12.034,
+     -0.354,
+     -23.831
+    ],
+    "max": [
+     12.966,
+     0.247,
+     -22.897
+    ]
+   },
+   "size": [
+    0.932,
+    0.601,
+    0.934
+   ]
+  },
+  {
+   "index": 414,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     21.077,
+     -0.312,
+     -17.788
+    ],
+    "max": [
+     21.923,
+     0.121,
+     -16.94
+    ]
+   },
+   "size": [
+    0.847,
+    0.433,
+    0.847
+   ]
+  },
+  {
+   "index": 416,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     23.915,
+     -0.348,
+     -10.949
+    ],
+    "max": [
+     25.085,
+     0.229,
+     -9.779
+    ]
+   },
+   "size": [
+    1.169,
+    0.577,
+    1.169
+   ]
+  },
+  {
+   "index": 418,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     24.992,
+     -0.342,
+     16.129
+    ],
+    "max": [
+     26.008,
+     0.211,
+     17.143
+    ]
+   },
+   "size": [
+    1.016,
+    0.553,
+    1.015
+   ]
+  },
+  {
+   "index": 420,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     17.882,
+     -0.372,
+     18.018
+    ],
+    "max": [
+     19.118,
+     0.301,
+     19.254
+    ]
+   },
+   "size": [
+    1.236,
+    0.673,
+    1.237
+   ]
+  },
+  {
+   "index": 422,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     15.988,
+     -0.33,
+     21.124
+    ],
+    "max": [
+     17.012,
+     0.175,
+     22.148
+    ]
+   },
+   "size": [
+    1.023,
+    0.505,
+    1.023
+   ]
+  },
+  {
+   "index": 424,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     8.876,
+     -0.36,
+     18.012
+    ],
+    "max": [
+     10.124,
+     0.265,
+     19.26
+    ]
+   },
+   "size": [
+    1.247,
+    0.625,
+    1.248
+   ]
+  },
+  {
+   "index": 426,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -11.947,
+     -0.318,
+     7.19
+    ],
+    "max": [
+     -11.053,
+     0.139,
+     8.084
+    ]
+   },
+   "size": [
+    0.894,
+    0.457,
+    0.894
+   ]
+  },
+  {
+   "index": 428,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -18.838,
+     -0.3,
+     8.3
+    ],
+    "max": [
+     -18.162,
+     0.084,
+     8.974
+    ]
+   },
+   "size": [
+    0.675,
+    0.384,
+    0.675
+   ]
+  },
+  {
+   "index": 430,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -24.939,
+     -0.336,
+     4.198
+    ],
+    "max": [
+     -24.061,
+     0.193,
+     5.076
+    ]
+   },
+   "size": [
+    0.879,
+    0.529,
+    0.877
+   ]
+  },
+  {
+   "index": 432,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     6.002,
+     -0.354,
+     -6.863
+    ],
+    "max": [
+     6.998,
+     0.247,
+     -5.865
+    ]
+   },
+   "size": [
+    0.997,
+    0.601,
+    0.998
+   ]
+  },
+  {
+   "index": 434,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -25.938,
+     -0.186,
+     -0.802
+    ],
+    "max": [
+     -25.062,
+     0.247,
+     0.074
+    ]
+   },
+   "size": [
+    0.877,
+    0.433,
+    0.877
+   ]
+  },
+  {
+   "index": 436,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -17.853,
+     -0.242,
+     -13.717
+    ],
+    "max": [
+     -17.147,
+     0.118,
+     -13.011
+    ]
+   },
+   "size": [
+    0.706,
+    0.36,
+    0.706
+   ]
+  },
+  {
+   "index": 438,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -8.966,
+     -0.308,
+     -10.331
+    ],
+    "max": [
+     -8.034,
+     0.293,
+     -9.397
+    ]
+   },
+   "size": [
+    0.932,
+    0.601,
+    0.934
+   ]
+  },
+  {
+   "index": 440,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -6.829,
+     -0.231,
+     -1.693
+    ],
+    "max": [
+     -6.171,
+     0.105,
+     -1.035
+    ]
+   },
+   "size": [
+    0.659,
+    0.336,
+    0.659
+   ]
+  },
+  {
+   "index": 442,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -15.008,
+     -0.433,
+     2.13
+    ],
+    "max": [
+     -13.992,
+     0.12,
+     3.144
+    ]
+   },
+   "size": [
+    1.016,
+    0.553,
+    1.015
+   ]
+  },
+  {
+   "index": 444,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -0.961,
+     0.018,
+     -23.325
+    ],
+    "max": [
+     -0.039,
+     0.475,
+     -22.403
+    ]
+   },
+   "size": [
+    0.922,
+    0.457,
+    0.922
+   ]
+  },
+  {
+   "index": 446,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     7.888,
+     -0.291,
+     -20.976
+    ],
+    "max": [
+     9.112,
+     0.334,
+     -19.752
+    ]
+   },
+   "size": [
+    1.223,
+    0.625,
+    1.224
+   ]
+  },
+  {
+   "index": 448,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     13.089,
+     -0.293,
+     -11.274
+    ],
+    "max": [
+     13.911,
+     0.236,
+     -10.454
+    ]
+   },
+   "size": [
+    0.822,
+    0.529,
+    0.82
+   ]
+  },
+  {
+   "index": 450,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -4.913,
+     -0.214,
+     -14.776
+    ],
+    "max": [
+     -4.087,
+     0.194,
+     -13.952
+    ]
+   },
+   "size": [
+    0.825,
+    0.408,
+    0.825
+   ]
+  },
+  {
+   "index": 452,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     8.022,
+     0.01,
+     14.158
+    ],
+    "max": [
+     8.978,
+     0.587,
+     15.116
+    ]
+   },
+   "size": [
+    0.957,
+    0.577,
+    0.958
+   ]
+  },
+  {
+   "index": 454,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     23.109,
+     -0.475,
+     3.245
+    ],
+    "max": [
+     23.891,
+     0.03,
+     4.029
+    ]
+   },
+   "size": [
+    0.783,
+    0.505,
+    0.784
+   ]
+  },
+  {
+   "index": 456,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     13.102,
+     -0.367,
+     2.24
+    ],
+    "max": [
+     13.898,
+     0.066,
+     3.034
+    ]
+   },
+   "size": [
+    0.795,
+    0.433,
+    0.794
+   ]
+  },
+  {
+   "index": 458,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     20.865,
+     -0.381,
+     15.501
+    ],
+    "max": [
+     22.135,
+     0.268,
+     16.771
+    ]
+   },
+   "size": [
+    1.271,
+    0.649,
+    1.27
+   ]
+  },
+  {
+   "index": 460,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -17.041,
+     0.012,
+     15.096
+    ],
+    "max": [
+     -15.959,
+     0.565,
+     16.178
+    ]
+   },
+   "size": [
+    1.082,
+    0.553,
+    1.083
+   ]
+  },
+  {
+   "index": 462,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -7.853,
+     -0.215,
+     17.783
+    ],
+    "max": [
+     -7.147,
+     0.169,
+     18.489
+    ]
+   },
+   "size": [
+    0.706,
+    0.384,
+    0.707
+   ]
+  },
+  {
+   "index": 464,
+   "name": "rock-small",
+   "key": "rock-small",
+   "meshes": 1,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -9.952,
+     -0.264,
+     23.294
+    ],
+    "max": [
+     -8.896,
+     0.337,
+     24.348
+    ]
+   },
+   "size": [
+    1.055,
+    0.601,
+    1.054
+   ]
+  },
+  {
+   "index": 466,
+   "name": "boulder-large",
+   "key": "boulder-large",
+   "meshes": 1,
+   "triangles": 190,
+   "aabb": {
+    "min": [
+     -27.148,
+     -0.257,
+     -4.749
+    ],
+    "max": [
+     -24.852,
+     1.285,
+     -1.979
+    ]
+   },
+   "size": [
+    2.296,
+    1.542,
+    2.77
+   ]
+  },
+  {
+   "index": 468,
+   "name": "boulder-large",
+   "key": "boulder-large",
+   "meshes": 1,
+   "triangles": 190,
+   "aabb": {
+    "min": [
+     7.545,
+     -0.332,
+     14.697
+    ],
+    "max": [
+     10.455,
+     1.21,
+     17.283
+    ]
+   },
+   "size": [
+    2.91,
+    1.542,
+    2.586
+   ]
+  },
+  {
+   "index": 470,
+   "name": "palm-tree",
+   "key": "palm-tree",
+   "meshes": 2,
+   "triangles": 645,
+   "aabb": {
+    "min": [
+     -25.415,
+     -0.246,
+     -3.215
+    ],
+    "max": [
+     -19.585,
+     5.723,
+     2.555
+    ]
+   },
+   "size": [
+    5.829,
+    5.969,
+    5.769
+   ]
+  },
+  {
+   "index": 474,
+   "name": "palm-tree",
+   "key": "palm-tree",
+   "meshes": 2,
+   "triangles": 645,
+   "aabb": {
+    "min": [
+     -9.422,
+     -0.246,
+     -9.305
+    ],
+    "max": [
+     -3.578,
+     5.723,
+     -3.423
+    ]
+   },
+   "size": [
+    5.844,
+    5.969,
+    5.883
+   ]
+  },
+  {
+   "index": 478,
+   "name": "palm-tree",
+   "key": "palm-tree",
+   "meshes": 2,
+   "triangles": 645,
+   "aabb": {
+    "min": [
+     -5.85,
+     -0.378,
+     -18.22
+    ],
+    "max": [
+     -0.562,
+     5.591,
+     -12.8
+    ]
+   },
+   "size": [
+    5.288,
+    5.969,
+    5.421
+   ]
+  },
+  {
+   "index": 482,
+   "name": "palm-tree",
+   "key": "palm-tree",
+   "meshes": 2,
+   "triangles": 645,
+   "aabb": {
+    "min": [
+     10.356,
+     -0.386,
+     11.927
+    ],
+    "max": [
+     15.644,
+     5.583,
+     17.347
+    ]
+   },
+   "size": [
+    5.288,
+    5.969,
+    5.421
+   ]
+  },
+  {
+   "index": 486,
+   "name": "palm-tree",
+   "key": "palm-tree",
+   "meshes": 2,
+   "triangles": 645,
+   "aabb": {
+    "min": [
+     -10.598,
+     -0.316,
+     16.117
+    ],
+    "max": [
+     -5.402,
+     5.653,
+     21.155
+    ]
+   },
+   "size": [
+    5.195,
+    5.969,
+    5.037
+   ]
+  },
+  {
+   "index": 490,
+   "name": "palm-sapling",
+   "key": "palm-sapling",
+   "meshes": 1,
+   "triangles": 599,
+   "aabb": {
+    "min": [
+     -11.758,
+     -0.292,
+     -15.111
+    ],
+    "max": [
+     -9.242,
+     1.761,
+     -12.617
+    ]
+   },
+   "size": [
+    2.515,
+    2.053,
+    2.493
+   ]
+  },
+  {
+   "index": 492,
+   "name": "palm-sapling",
+   "key": "palm-sapling",
+   "meshes": 1,
+   "triangles": 599,
+   "aabb": {
+    "min": [
+     -18.322,
+     -0.246,
+     -1.704
+    ],
+    "max": [
+     -16.678,
+     1.36,
+     -0.024
+    ]
+   },
+   "size": [
+    1.643,
+    1.606,
+    1.681
+   ]
+  },
+  {
+   "index": 494,
+   "name": "palm-sapling",
+   "key": "palm-sapling",
+   "meshes": 1,
+   "triangles": 599,
+   "aabb": {
+    "min": [
+     6.243,
+     -0.346,
+     -12.645
+    ],
+    "max": [
+     8.757,
+     1.974,
+     -10.083
+    ]
+   },
+   "size": [
+    2.514,
+    2.32,
+    2.562
+   ]
+  },
+  {
+   "index": 496,
+   "name": "palm-sapling",
+   "key": "palm-sapling",
+   "meshes": 1,
+   "triangles": 599,
+   "aabb": {
+    "min": [
+     10.352,
+     -0.26,
+     -18.502
+    ],
+    "max": [
+     12.648,
+     1.614,
+     -16.226
+    ]
+   },
+   "size": [
+    2.296,
+    1.874,
+    2.277
+   ]
+  },
+  {
+   "index": 498,
+   "name": "palm-sapling",
+   "key": "palm-sapling",
+   "meshes": 1,
+   "triangles": 599,
+   "aabb": {
+    "min": [
+     13.379,
+     -0.564,
+     5.52
+    ],
+    "max": [
+     15.621,
+     1.578,
+     7.712
+    ]
+   },
+   "size": [
+    2.241,
+    2.142,
+    2.191
+   ]
+  },
+  {
+   "index": 500,
+   "name": "palm-sapling",
+   "key": "palm-sapling",
+   "meshes": 1,
+   "triangles": 599,
+   "aabb": {
+    "min": [
+     -11.397,
+     -0.204,
+     21.8
+    ],
+    "max": [
+     -9.267,
+     1.492,
+     23.936
+    ]
+   },
+   "size": [
+    2.131,
+    1.696,
+    2.137
+   ]
+  },
+  {
+   "index": 502,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     -22.392,
+     0.022,
+     -11.267
+    ],
+    "max": [
+     -20.608,
+     1.076,
+     -9.461
+    ]
+   },
+   "size": [
+    1.784,
+    1.054,
+    1.807
+   ]
+  },
+  {
+   "index": 504,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     -14.17,
+     -0.227,
+     -11.617
+    ],
+    "max": [
+     -12.736,
+     0.607,
+     -10.175
+    ]
+   },
+   "size": [
+    1.434,
+    0.834,
+    1.442
+   ]
+  },
+  {
+   "index": 506,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     -8.361,
+     -0.224,
+     -4.184
+    ],
+    "max": [
+     -6.639,
+     0.962,
+     -2.544
+    ]
+   },
+   "size": [
+    1.721,
+    1.186,
+    1.639
+   ]
+  },
+  {
+   "index": 508,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     -19.105,
+     -0.155,
+     1.363
+    ],
+    "max": [
+     -17.695,
+     0.767,
+     2.717
+    ]
+   },
+   "size": [
+    1.41,
+    0.922,
+    1.354
+   ]
+  },
+  {
+   "index": 510,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     -5.347,
+     0.021,
+     -18.239
+    ],
+    "max": [
+     -3.653,
+     1.119,
+     -16.489
+    ]
+   },
+   "size": [
+    1.693,
+    1.098,
+    1.749
+   ]
+  },
+  {
+   "index": 512,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     1.638,
+     -0.255,
+     -13.271
+    ],
+    "max": [
+     3.196,
+     0.755,
+     -11.661
+    ]
+   },
+   "size": [
+    1.558,
+    1.01,
+    1.609
+   ]
+  },
+  {
+   "index": 514,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     11.513,
+     -0.252,
+     -13.345
+    ],
+    "max": [
+     13.487,
+     0.89,
+     -11.383
+    ]
+   },
+   "size": [
+    1.974,
+    1.142,
+    1.962
+   ]
+  },
+  {
+   "index": 516,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     9.672,
+     -0.277,
+     5.487
+    ],
+    "max": [
+     11.328,
+     0.689,
+     7.123
+    ]
+   },
+   "size": [
+    1.656,
+    0.966,
+    1.636
+   ]
+  },
+  {
+   "index": 518,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     17.362,
+     -0.351,
+     6.601
+    ],
+    "max": [
+     19.14,
+     0.703,
+     8.345
+    ]
+   },
+   "size": [
+    1.778,
+    1.054,
+    1.745
+   ]
+  },
+  {
+   "index": 520,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     -7.698,
+     -0.228,
+     19.903
+    ],
+    "max": [
+     -6.302,
+     0.782,
+     21.369
+    ]
+   },
+   "size": [
+    1.396,
+    1.01,
+    1.466
+   ]
+  },
+  {
+   "index": 522,
+   "name": "fern-bush",
+   "key": "fern-bush",
+   "meshes": 1,
+   "triangles": 655,
+   "aabb": {
+    "min": [
+     -16.134,
+     0.028,
+     13.486
+    ],
+    "max": [
+     -14.866,
+     0.818,
+     14.788
+    ]
+   },
+   "size": [
+    1.269,
+    0.79,
+    1.301
+   ]
+  },
+  {
+   "index": 524,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -19.777,
+     0.028,
+     -11.143
+    ],
+    "max": [
+     -19.223,
+     0.478,
+     -10.585
+    ]
+   },
+   "size": [
+    0.554,
+    0.45,
+    0.557
+   ]
+  },
+  {
+   "index": 526,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -16.43,
+     -0.222,
+     -11.602
+    ],
+    "max": [
+     -15.57,
+     0.503,
+     -10.726
+    ]
+   },
+   "size": [
+    0.86,
+    0.725,
+    0.876
+   ]
+  },
+  {
+   "index": 528,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -11.816,
+     -0.152,
+     -6.688
+    ],
+    "max": [
+     -11.184,
+     0.398,
+     -6.04
+    ]
+   },
+   "size": [
+    0.632,
+    0.55,
+    0.648
+   ]
+  },
+  {
+   "index": 530,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -9.371,
+     -0.138,
+     -11.242
+    ],
+    "max": [
+     -8.629,
+     0.487,
+     -10.486
+    ]
+   },
+   "size": [
+    0.741,
+    0.625,
+    0.755
+   ]
+  },
+  {
+   "index": 532,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -17.077,
+     -0.115,
+     2.441
+    ],
+    "max": [
+     -16.593,
+     0.285,
+     2.915
+    ]
+   },
+   "size": [
+    0.483,
+    0.4,
+    0.474
+   ]
+  },
+  {
+   "index": 534,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -22.918,
+     0.019,
+     -5.282
+    ],
+    "max": [
+     -22.082,
+     0.694,
+     -4.446
+    ]
+   },
+   "size": [
+    0.836,
+    0.675,
+    0.836
+   ]
+  },
+  {
+   "index": 536,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -9.795,
+     -0.22,
+     -0.151
+    ],
+    "max": [
+     -9.205,
+     0.28,
+     0.423
+    ]
+   },
+   "size": [
+    0.59,
+    0.5,
+    0.575
+   ]
+  },
+  {
+   "index": 538,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -2.777,
+     0.022,
+     -19.657
+    ],
+    "max": [
+     -2.223,
+     0.622,
+     -19.071
+    ]
+   },
+   "size": [
+    0.553,
+    0.6,
+    0.586
+   ]
+  },
+  {
+   "index": 540,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     4.158,
+     -0.202,
+     -15.687
+    ],
+    "max": [
+     4.842,
+     0.498,
+     -15.041
+    ]
+   },
+   "size": [
+    0.684,
+    0.7,
+    0.645
+   ]
+  },
+  {
+   "index": 542,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     9.29,
+     0.029,
+     -16.585
+    ],
+    "max": [
+     9.71,
+     0.454,
+     -16.143
+    ]
+   },
+   "size": [
+    0.421,
+    0.425,
+    0.442
+   ]
+  },
+  {
+   "index": 544,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     6.153,
+     -0.217,
+     -10.205
+    ],
+    "max": [
+     6.847,
+     0.358,
+     -9.523
+    ]
+   },
+   "size": [
+    0.695,
+    0.575,
+    0.682
+   ]
+  },
+  {
+   "index": 546,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     13.162,
+     -0.205,
+     -15.186
+    ],
+    "max": [
+     13.838,
+     0.445,
+     -14.542
+    ]
+   },
+   "size": [
+    0.676,
+    0.65,
+    0.644
+   ]
+  },
+  {
+   "index": 548,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     7.25,
+     0.031,
+     10.377
+    ],
+    "max": [
+     7.75,
+     0.506,
+     10.897
+    ]
+   },
+   "size": [
+    0.5,
+    0.475,
+    0.52
+   ]
+  },
+  {
+   "index": 550,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     11.144,
+     -0.229,
+     15.275
+    ],
+    "max": [
+     11.856,
+     0.371,
+     15.999
+    ]
+   },
+   "size": [
+    0.712,
+    0.6,
+    0.725
+   ]
+  },
+  {
+   "index": 552,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     20.989,
+     -0.325,
+     10
+    ],
+    "max": [
+     21.589,
+     0.2,
+     10.58
+    ]
+   },
+   "size": [
+    0.599,
+    0.525,
+    0.58
+   ]
+  },
+  {
+   "index": 554,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -10.767,
+     -0.215,
+     13.365
+    ],
+    "max": [
+     -10.233,
+     0.235,
+     13.909
+    ]
+   },
+   "size": [
+    0.534,
+    0.45,
+    0.544
+   ]
+  },
+  {
+   "index": 556,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -7.871,
+     -0.193,
+     21.258
+    ],
+    "max": [
+     -7.129,
+     0.432,
+     22.014
+    ]
+   },
+   "size": [
+    0.741,
+    0.625,
+    0.755
+   ]
+  },
+  {
+   "index": 558,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -9.789,
+     -0.171,
+     22.335
+    ],
+    "max": [
+     -9.211,
+     0.379,
+     22.937
+    ]
+   },
+   "size": [
+    0.578,
+    0.55,
+    0.602
+   ]
+  },
+  {
+   "index": 560,
+   "name": "path-stone-large",
+   "key": "path-stone-large",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -12.663,
+     -0.209,
+     -5.705
+    ],
+    "max": [
+     -11.137,
+     -0.145,
+     -4.223
+    ]
+   },
+   "size": [
+    1.526,
+    0.064,
+    1.483
+   ]
+  },
+  {
+   "index": 562,
+   "name": "path-stone-small",
+   "key": "path-stone-small",
+   "meshes": 1,
+   "triangles": 76,
+   "aabb": {
+    "min": [
+     -13.472,
+     -0.208,
+     -5.652
+    ],
+    "max": [
+     -12.728,
+     -0.141,
+     -4.876
+    ]
+   },
+   "size": [
+    0.744,
+    0.067,
+    0.777
+   ]
+  },
+  {
+   "index": 564,
+   "name": "path-stone-large",
+   "key": "path-stone-large",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -15.016,
+     -0.204,
+     -6.376
+    ],
+    "max": [
+     -13.584,
+     -0.149,
+     -4.952
+    ]
+   },
+   "size": [
+    1.432,
+    0.055,
+    1.424
+   ]
+  },
+  {
+   "index": 566,
+   "name": "path-stone-small",
+   "key": "path-stone-small",
+   "meshes": 1,
+   "triangles": 76,
+   "aabb": {
+    "min": [
+     -16.147,
+     -0.225,
+     -6.616
+    ],
+    "max": [
+     -15.053,
+     -0.149,
+     -5.512
+    ]
+   },
+   "size": [
+    1.095,
+    0.076,
+    1.105
+   ]
+  },
+  {
+   "index": 568,
+   "name": "path-stone-large",
+   "key": "path-stone-large",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.944,
+     -0.238,
+     -19.753
+    ],
+    "max": [
+     4.456,
+     -0.166,
+     -18.175
+    ]
+   },
+   "size": [
+    1.512,
+    0.072,
+    1.579
+   ]
+  },
+  {
+   "index": 570,
+   "name": "path-stone-small",
+   "key": "path-stone-small",
+   "meshes": 1,
+   "triangles": 76,
+   "aabb": {
+    "min": [
+     3.767,
+     -0.218,
+     -17.904
+    ],
+    "max": [
+     4.433,
+     -0.168,
+     -17.222
+    ]
+   },
+   "size": [
+    0.667,
+    0.05,
+    0.683
+   ]
+  },
+  {
+   "index": 572,
+   "name": "path-stone-large",
+   "key": "path-stone-large",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.816,
+     -0.217,
+     -16.94
+    ],
+    "max": [
+     5.384,
+     -0.156,
+     -15.388
+    ]
+   },
+   "size": [
+    1.569,
+    0.061,
+    1.552
+   ]
+  },
+  {
+   "index": 574,
+   "name": "path-stone-small",
+   "key": "path-stone-small",
+   "meshes": 1,
+   "triangles": 76,
+   "aabb": {
+    "min": [
+     4.407,
+     -0.221,
+     -15.245
+    ],
+    "max": [
+     5.393,
+     -0.148,
+     -14.281
+    ]
+   },
+   "size": [
+    0.986,
+    0.073,
+    0.963
+   ]
+  },
+  {
+   "index": 576,
+   "name": "path-stone-small",
+   "key": "path-stone-small",
+   "meshes": 1,
+   "triangles": 76,
+   "aabb": {
+    "min": [
+     12.007,
+     0.02,
+     10.441
+    ],
+    "max": [
+     12.993,
+     0.087,
+     11.433
+    ]
+   },
+   "size": [
+    0.987,
+    0.067,
+    0.991
+   ]
+  },
+  {
+   "index": 578,
+   "name": "path-stone-large",
+   "key": "path-stone-large",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     10.402,
+     0.024,
+     10.563
+    ],
+    "max": [
+     11.798,
+     0.085,
+     11.911
+    ]
+   },
+   "size": [
+    1.397,
+    0.061,
+    1.348
+   ]
+  },
+  {
+   "index": 580,
+   "name": "pirate-captain",
+   "key": "pirate-captain",
+   "meshes": 5,
+   "triangles": 1430,
+   "aabb": {
+    "min": [
+     1.817,
+     0.834,
+     10.395
+    ],
+    "max": [
+     3.383,
+     2.974,
+     11.782
+    ]
+   },
+   "size": [
+    1.566,
+    2.14,
+    1.388
+   ]
+  },
+  {
+   "index": 612,
+   "name": "shipwreck-hull",
+   "key": "shipwreck-hull",
+   "meshes": 2,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     20.95,
+     -1.104,
+     17.32
+    ],
+    "max": [
+     27.154,
+     2.364,
+     24.044
+    ]
+   },
+   "size": [
+    6.204,
+    3.468,
+    6.725
+   ]
+  },
+  {
+   "index": 616,
+   "name": "shipwreck-hull",
+   "key": "shipwreck-hull",
+   "meshes": 2,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     7.83,
+     -1.104,
+     -25.175
+    ],
+    "max": [
+     14.034,
+     2.364,
+     -18.451
+    ]
+   },
+   "size": [
+    6.204,
+    3.468,
+    6.725
+   ]
+  },
+  {
+   "index": 620,
+   "name": "pirate-deckhand",
+   "key": "pirate-deckhand",
+   "meshes": 4,
+   "triangles": 1410,
+   "aabb": {
+    "min": [
+     -22.835,
+     -0.191,
+     -3.014
+    ],
+    "max": [
+     -21.378,
+     1.557,
+     -1.627
+    ]
+   },
+   "size": [
+    1.457,
+    1.748,
+    1.387
+   ]
+  },
+  {
+   "index": 650,
+   "name": "rowboat",
+   "key": "rowboat",
+   "meshes": 3,
+   "triangles": 694,
+   "aabb": {
+    "min": [
+     -21.695,
+     -0.141,
+     -1.326
+    ],
+    "max": [
+     -20.233,
+     0.574,
+     1.728
+    ]
+   },
+   "size": [
+    1.462,
+    0.715,
+    3.053
+   ]
+  },
+  {
+   "index": 656,
+   "name": "terrain-blob-grass",
+   "key": "terrain-blob-grass",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -29.081,
+     -0.144,
+     -13.349
+    ],
+    "max": [
+     -19.595,
+     0.006,
+     -3.375
+    ]
+   },
+   "size": [
+    9.485,
+    0.15,
+    9.974
+   ]
+  }
+ ],
+ "id": "pirate-cove",
+ "label": "Pirate Cove",
+ "sourceBytes": 12307720,
+ "spawn": {
+  "x": -0.55,
+  "y": 0.5,
+  "z": -0.96,
+  "on": "96 floor pieces at y=0"
+ }
+}

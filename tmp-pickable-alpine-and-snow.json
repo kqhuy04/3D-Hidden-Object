@@ -1,0 +1,102 @@
+[
+  {
+    "id": "alpine-scarecrow",
+    "name": "Scarecrow",
+    "centre": [
+      -7.6,
+      -13.01,
+      39.4
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -7.6,
+      "pz": 40.9,
+      "pitch": 0.38,
+      "hit": "alpine-scarecrow",
+      "bodyToItem": 1.52,
+      "camToItem": 9.62,
+      "prompt": true
+    }
+  },
+  {
+    "id": "alpine-toilet",
+    "name": "Toilet",
+    "centre": [
+      11,
+      -13.58,
+      46.8
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 11,
+      "pz": 48.3,
+      "pitch": 0.55,
+      "hit": "alpine-toilet",
+      "bodyToItem": 1.64,
+      "camToItem": 9.84,
+      "prompt": true
+    }
+  },
+  {
+    "id": "alpine-mower",
+    "name": "Riding mower",
+    "centre": [
+      -1.99,
+      -12.28,
+      40.02
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0.79,
+      "px": 0.01,
+      "pz": 42.25,
+      "pitch": 0.05,
+      "hit": "alpine-mower",
+      "bodyToItem": 3.38,
+      "camToItem": 11.01,
+      "prompt": true
+    }
+  },
+  {
+    "id": "alpine-piano",
+    "name": "Upright piano",
+    "centre": [
+      11.2,
+      -11.65,
+      35.39
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 11.2,
+      "pz": 36.89,
+      "pitch": 0.08,
+      "hit": "alpine-piano",
+      "bodyToItem": 1.53,
+      "camToItem": 9.5,
+      "prompt": true
+    }
+  },
+  {
+    "id": "alpine-anchor",
+    "name": "Admiralty anchor",
+    "centre": [
+      23,
+      -12.74,
+      48.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 23,
+      "pz": 50,
+      "pitch": 0.05,
+      "hit": "alpine-anchor",
+      "bodyToItem": 1.7,
+      "camToItem": 9.49,
+      "prompt": true
+    }
+  }
+]

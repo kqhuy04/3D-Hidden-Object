@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- The game's own mark: four corner brackets around a single found dot.
+       Same shape as the in-game target frame, so the tab matches the hunt. -->
+  <rect width="32" height="32" rx="3" fill="#f4ecd9"/>
+  <g stroke="#191510" stroke-width="2.4" stroke-linecap="square" fill="none">
+    <path d="M6 11 V6 H11"/>
+    <path d="M21 6 H26 V11"/>
+    <path d="M6 21 V26 H11"/>
+    <path d="M26 21 V26 H21"/>
+  </g>
+  <circle cx="16" cy="16" r="3.2" fill="#b0472a"/>
+</svg>

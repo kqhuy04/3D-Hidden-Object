@@ -1,0 +1,409 @@
+[
+  {
+    "id": "toaster-0d6c5c",
+    "title": "Toaster",
+    "credit": "Toaster by Polyfork (https://polyfork.dev/asset/toaster-0d6c5c), CC BY 4.0",
+    "size": {
+      "x": 0.32,
+      "y": 0.23,
+      "z": 0.17
+    },
+    "triangles": 136
+  },
+  {
+    "id": "fire-hydrant-b68b17",
+    "title": "Fire Hydrant",
+    "credit": "Fire Hydrant by Polyfork (https://polyfork.dev/asset/fire-hydrant-b68b17), CC BY 4.0",
+    "size": {
+      "x": 0.51,
+      "y": 0.81,
+      "z": 0.5
+    },
+    "triangles": 525
+  },
+  {
+    "id": "parking-meter-e9cf71",
+    "title": "Parking Meter",
+    "credit": "Parking Meter by Polyfork (https://polyfork.dev/asset/parking-meter-e9cf71), CC BY 4.0",
+    "size": {
+      "x": 0.41,
+      "y": 1.3,
+      "z": 0.34
+    },
+    "triangles": 386
+  },
+  {
+    "id": "phone-booth-10967f",
+    "title": "Phone-booth",
+    "credit": "Phone-booth by Polyfork (https://polyfork.dev/asset/phone-booth-10967f), CC BY 4.0",
+    "size": {
+      "x": 1.2,
+      "y": 2.3,
+      "z": 1.06
+    },
+    "triangles": 718
+  },
+  {
+    "id": "kitchen-sink-7ea438",
+    "title": "Kitchen Sink",
+    "credit": "Kitchen Sink by Polyfork (https://polyfork.dev/asset/kitchen-sink-7ea438), CC BY 4.0",
+    "size": {
+      "x": 1,
+      "y": 0.56,
+      "z": 0.5
+    },
+    "triangles": 374
+  },
+  {
+    "id": "wooden-barrel-ab50ca",
+    "title": "Wooden Barrel",
+    "credit": "Wooden Barrel by Polyfork (https://polyfork.dev/asset/wooden-barrel-ab50ca), CC BY 4.0",
+    "size": {
+      "x": 0.6,
+      "y": 0.9,
+      "z": 0.58
+    },
+    "triangles": 540
+  },
+  {
+    "id": "hay-bale-079e8c",
+    "title": "Hay Bale",
+    "credit": "Hay Bale by Polyfork (https://polyfork.dev/asset/hay-bale-079e8c), CC BY 4.0",
+    "size": {
+      "x": 0.94,
+      "y": 0.52,
+      "z": 0.46
+    },
+    "triangles": 582
+  },
+  {
+    "id": "stone-well-b2dfcd",
+    "title": "Stone Well",
+    "credit": "Stone Well by Polyfork (https://polyfork.dev/asset/stone-well-b2dfcd), CC BY 4.0",
+    "size": {
+      "x": 0.97,
+      "y": 1.75,
+      "z": 0.88
+    },
+    "triangles": 600
+  },
+  {
+    "id": "treasure-chest-c2ac4f",
+    "title": "Treasure Chest",
+    "credit": "Treasure Chest by Polyfork (https://polyfork.dev/asset/treasure-chest-c2ac4f), CC BY 4.0",
+    "size": {
+      "x": 0.9,
+      "y": 0.6,
+      "z": 0.56
+    },
+    "triangles": 562
+  },
+  {
+    "id": "candle-spike-cluster-d7c566",
+    "title": "Candle Spike Cluster",
+    "credit": "Candle Spike Cluster by Polyfork (https://polyfork.dev/asset/candle-spike-cluster-d7c566), CC BY 4.0",
+    "size": {
+      "x": 0.17,
+      "y": 0.42,
+      "z": 0.18
+    },
+    "triangles": 661
+  },
+  {
+    "id": "office-chair-7c9874",
+    "title": "Office Chair",
+    "credit": "Office Chair by Polyfork (https://polyfork.dev/asset/office-chair-7c9874), CC BY 4.0",
+    "size": {
+      "x": 0.65,
+      "y": 0.87,
+      "z": 0.62
+    },
+    "triangles": 636
+  },
+  {
+    "id": "vending-machine-471c29",
+    "title": "Vending Machine",
+    "credit": "Vending Machine by Polyfork (https://polyfork.dev/asset/vending-machine-471c29), CC BY 4.0",
+    "size": {
+      "x": 1.11,
+      "y": 1.9,
+      "z": 0.8
+    },
+    "triangles": 692
+  },
+  {
+    "id": "microwave-oven-7f60d4",
+    "title": "Microwave Oven",
+    "credit": "Microwave Oven by Polyfork (https://polyfork.dev/asset/microwave-oven-7f60d4), CC BY 4.0",
+    "size": {
+      "x": 0.5,
+      "y": 0.35,
+      "z": 0.44
+    },
+    "triangles": 614
+  },
+  {
+    "id": "rubber-duck-e41831",
+    "title": "Rubber Duck",
+    "credit": "Rubber Duck by Polyfork (https://polyfork.dev/asset/rubber-duck-e41831), CC BY 4.0",
+    "size": {
+      "x": 0.09,
+      "y": 0.1,
+      "z": 0.1
+    },
+    "triangles": 600
+  },
+  {
+    "id": "skateboard-667a82",
+    "title": "Skateboard",
+    "credit": "Skateboard by Polyfork (https://polyfork.dev/asset/skateboard-667a82), CC BY 4.0",
+    "size": {
+      "x": 0.25,
+      "y": 0.18,
+      "z": 0.82
+    },
+    "triangles": 1592
+  },
+  {
+    "id": "sofa-9c0e7e",
+    "title": "Sofa",
+    "credit": "Sofa by Polyfork (https://polyfork.dev/asset/sofa-9c0e7e), CC BY 4.0",
+    "size": {
+      "x": 2,
+      "y": 0.96,
+      "z": 1
+    },
+    "triangles": 480
+  },
+  {
+    "id": "fridge-freezer-fb9b5a",
+    "title": "Fridge Freezer",
+    "credit": "Fridge Freezer by Polyfork (https://polyfork.dev/asset/fridge-freezer-fb9b5a), CC BY 4.0",
+    "size": {
+      "x": 0.6,
+      "y": 1.9,
+      "z": 0.65
+    },
+    "triangles": 344
+  },
+  {
+    "id": "upright-piano-c0b0ef",
+    "title": "Upright Piano",
+    "credit": "Upright Piano by Polyfork (https://polyfork.dev/asset/upright-piano-c0b0ef), CC BY 4.0",
+    "size": {
+      "x": 1.5,
+      "y": 1.2,
+      "z": 0.75
+    },
+    "triangles": 680
+  },
+  {
+    "id": "garden-birdbath-9671de",
+    "title": "Garden Birdbath",
+    "credit": "Garden Birdbath by Polyfork (https://polyfork.dev/asset/garden-birdbath-9671de), CC BY 4.0",
+    "size": {
+      "x": 0.67,
+      "y": 0.9,
+      "z": 0.67
+    },
+    "triangles": 512
+  },
+  {
+    "id": "red-post-box-f12045",
+    "title": "Red Post Box",
+    "credit": "Red Post Box by Polyfork (https://polyfork.dev/asset/red-post-box-f12045), CC BY 4.0",
+    "size": {
+      "x": 0.55,
+      "y": 1.4,
+      "z": 0.57
+    },
+    "triangles": 562
+  },
+  {
+    "id": "jukebox-1e2ea6",
+    "title": "Jukebox",
+    "credit": "Jukebox by Polyfork (https://polyfork.dev/asset/jukebox-1e2ea6), CC BY 4.0",
+    "size": {
+      "x": 0.85,
+      "y": 1.4,
+      "z": 0.72
+    },
+    "triangles": 731
+  },
+  {
+    "id": "toilet-2edbd9",
+    "title": "Toilet",
+    "credit": "Toilet by Polyfork (https://polyfork.dev/asset/toilet-2edbd9), CC BY 4.0",
+    "size": {
+      "x": 0.4,
+      "y": 0.8,
+      "z": 0.7
+    },
+    "triangles": 480
+  },
+  {
+    "id": "espresso-machine-a2db84",
+    "title": "Espresso Machine",
+    "credit": "Espresso Machine by Polyfork (https://polyfork.dev/asset/espresso-machine-a2db84), CC BY 4.0",
+    "size": {
+      "x": 0.74,
+      "y": 0.71,
+      "z": 0.58
+    },
+    "triangles": 668
+  },
+  {
+    "id": "hammock-on-posts-7d5c47",
+    "title": "Hammock on Posts",
+    "credit": "Hammock on Posts by Polyfork (https://polyfork.dev/asset/hammock-on-posts-7d5c47), CC BY 4.0",
+    "size": {
+      "x": 3.75,
+      "y": 1.5,
+      "z": 0.98
+    },
+    "triangles": 782
+  },
+  {
+    "id": "campfire-4390aa",
+    "title": "Campfire",
+    "credit": "Campfire by Polyfork (https://polyfork.dev/asset/campfire-4390aa), CC BY 4.0",
+    "size": {
+      "x": 1.05,
+      "y": 0.52,
+      "z": 1.04
+    },
+    "triangles": 614
+  },
+  {
+    "id": "scarecrow-334079",
+    "title": "Scarecrow",
+    "credit": "Scarecrow by Polyfork (https://polyfork.dev/asset/scarecrow-334079), CC BY 4.0",
+    "size": {
+      "x": 1.36,
+      "y": 1.9,
+      "z": 0.58
+    },
+    "triangles": 697
+  },
+  {
+    "id": "anvil-0ad53c",
+    "title": "Anvil",
+    "credit": "Anvil by Polyfork (https://polyfork.dev/asset/anvil-0ad53c), CC BY 4.0",
+    "size": {
+      "x": 0.53,
+      "y": 0.45,
+      "z": 0.7
+    },
+    "triangles": 454
+  },
+  {
+    "id": "rowboat-c42d85",
+    "title": "Rowboat",
+    "credit": "Rowboat by Polyfork (https://polyfork.dev/asset/rowboat-c42d85), CC BY 4.0",
+    "size": {
+      "x": 1.34,
+      "y": 0.72,
+      "z": 3
+    },
+    "triangles": 694
+  },
+  {
+    "id": "straw-bale-56facd",
+    "title": "Straw bale",
+    "credit": "Straw bale by Polyfork (https://polyfork.dev/asset/straw-bale-56facd), CC BY 4.0",
+    "size": {
+      "x": 1.3,
+      "y": 1,
+      "z": 1.3
+    },
+    "triangles": 741
+  },
+  {
+    "id": "riding-lawn-tractor-09e93c",
+    "title": "Riding Lawn Tractor",
+    "credit": "Riding Lawn Tractor by Polyfork (https://polyfork.dev/asset/riding-lawn-tractor-09e93c), CC BY 4.0",
+    "size": {
+      "x": 1.26,
+      "y": 1.31,
+      "z": 1.85
+    },
+    "triangles": 1960
+  },
+  {
+    "id": "coffin-prop-d62082",
+    "title": "Coffin Prop",
+    "credit": "Coffin Prop by Polyfork (https://polyfork.dev/asset/coffin-prop-d62082), CC BY 4.0",
+    "size": {
+      "x": 2,
+      "y": 0.62,
+      "z": 0.96
+    },
+    "triangles": 712
+  },
+  {
+    "id": "traffic-cone-c421e4",
+    "title": "Traffic-cone",
+    "credit": "Traffic-cone by Polyfork (https://polyfork.dev/asset/traffic-cone-c421e4), CC BY 4.0",
+    "size": {
+      "x": 0.35,
+      "y": 0.5,
+      "z": 0.35
+    },
+    "triangles": 312
+  },
+  {
+    "id": "deck-cannon-17849e",
+    "title": "Deck Cannon",
+    "credit": "Deck Cannon by Polyfork (https://polyfork.dev/asset/deck-cannon-17849e), CC BY 4.0",
+    "size": {
+      "x": 0.85,
+      "y": 0.66,
+      "z": 1.8
+    },
+    "triangles": 692
+  },
+  {
+    "id": "forest-outhouse-e968d1",
+    "title": "Forest Outhouse",
+    "credit": "Forest Outhouse by Polyfork (https://polyfork.dev/asset/forest-outhouse-e968d1), CC BY 4.0",
+    "size": {
+      "x": 2,
+      "y": 2.2,
+      "z": 2
+    },
+    "triangles": 568
+  },
+  {
+    "id": "camp-tent-3c5c89",
+    "title": "Camp Tent",
+    "credit": "Camp Tent by Polyfork (https://polyfork.dev/asset/camp-tent-3c5c89), CC BY 4.0",
+    "size": {
+      "x": 2.23,
+      "y": 1.98,
+      "z": 2.98
+    },
+    "triangles": 636
+  },
+  {
+    "id": "laptop-e775ba",
+    "title": "Laptop",
+    "credit": "Laptop by Polyfork (https://polyfork.dev/asset/laptop-e775ba), CC BY 4.0",
+    "size": {
+      "x": 0.32,
+      "y": 0.22,
+      "z": 0.28
+    },
+    "triangles": 626
+  },
+  {
+    "id": "admiralty-anchor-bd6882",
+    "title": "Admiralty Anchor",
+    "credit": "Admiralty Anchor by Polyfork (https://polyfork.dev/asset/admiralty-anchor-bd6882), CC BY 4.0",
+    "size": {
+      "x": 2.04,
+      "y": 2.36,
+      "z": 0.71
+    },
+    "triangles": 560
+  }
+]

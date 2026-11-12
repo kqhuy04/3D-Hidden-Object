@@ -1,0 +1,7127 @@
+{
+ "file": "/assets/maps/alpine-and-snow.glb",
+ "bytes": 3391596,
+ "generatedAt": "2026-11-12T03:18:46.215Z",
+ "structure": {
+  "nodes": 2781,
+  "meshes": 1096,
+  "materials": 285,
+  "images": 0,
+  "partContainer": "alpine-and-snow-092f66",
+  "extensions": [
+   "KHR_materials_unlit"
+  ]
+ },
+ "totals": {
+  "objects": 278,
+  "keys": 60,
+  "triangles": 323662,
+  "meshes": 1096,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "snow-laden-spruce",
+   "instances": 44,
+   "triangles": 30528,
+   "maxExtent": 6.776,
+   "hasBounds": true
+  },
+  {
+   "key": "dwarf-pine-mat",
+   "instances": 25,
+   "triangles": 19630,
+   "maxExtent": 4.596,
+   "hasBounds": true
+  },
+  {
+   "key": "rock-outcrop",
+   "instances": 22,
+   "triangles": 16698,
+   "maxExtent": 7.919,
+   "hasBounds": true
+  },
+  {
+   "key": "avalanche-barrier-run",
+   "instances": 15,
+   "triangles": 11928,
+   "maxExtent": 3.022,
+   "hasBounds": true
+  },
+  {
+   "key": "snow-fence-run",
+   "instances": 15,
+   "triangles": 10164,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "boulder-field-cluster",
+   "instances": 14,
+   "triangles": 7108,
+   "maxExtent": 3.736,
+   "hasBounds": true
+  },
+  {
+   "key": "cleared-stone-path-tile",
+   "instances": 14,
+   "triangles": 9780,
+   "maxExtent": 2.192,
+   "hasBounds": true
+  },
+  {
+   "key": "groomed-piste-tile",
+   "instances": 9,
+   "triangles": 6378,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "windblown-larch",
+   "instances": 9,
+   "triangles": 7308,
+   "maxExtent": 8.206,
+   "hasBounds": true
+  },
+  {
+   "key": "piste-marker-pole",
+   "instances": 7,
+   "triangles": 2814,
+   "maxExtent": 2.2,
+   "hasBounds": true
+  },
+  {
+   "key": "skier",
+   "instances": 7,
+   "triangles": 22303,
+   "maxExtent": 1.874,
+   "hasBounds": true
+  },
+  {
+   "key": "chairlift-chair",
+   "instances": 6,
+   "triangles": 15378,
+   "maxExtent": 3.945,
+   "hasBounds": true
+  },
+  {
+   "key": "bare-mountain-rowan",
+   "instances": 5,
+   "triangles": 4950,
+   "maxExtent": 6.149,
+   "hasBounds": true
+  },
+  {
+   "key": "rope-tow-run",
+   "instances": 5,
+   "triangles": 3001,
+   "maxExtent": 2.74,
+   "hasBounds": true
+  },
+  {
+   "key": "safety-net-run",
+   "instances": 5,
+   "triangles": 3390,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "slalom-gate",
+   "instances": 5,
+   "triangles": 3080,
+   "maxExtent": 1.968,
+   "hasBounds": true
+  },
+  {
+   "key": "alpine-ibex",
+   "instances": 4,
+   "triangles": 11376,
+   "maxExtent": 1.454,
+   "hasBounds": true
+  },
+  {
+   "key": "haul-rope-span",
+   "instances": 4,
+   "triangles": 1672,
+   "maxExtent": 14.303,
+   "hasBounds": true
+  },
+  {
+   "key": "alpine-snow-bench",
+   "instances": 3,
+   "triangles": 2180,
+   "maxExtent": 2.103,
+   "hasBounds": true
+  },
+  {
+   "key": "lift-pylon",
+   "instances": 3,
+   "triangles": 7054,
+   "maxExtent": 9.68,
+   "hasBounds": true
+  },
+  {
+   "key": "mountain-hare",
+   "instances": 3,
+   "triangles": 8925,
+   "maxExtent": 0.556,
+   "hasBounds": true
+  },
+  {
+   "key": "scree-heap",
+   "instances": 3,
+   "triangles": 1921,
+   "maxExtent": 3.482,
+   "hasBounds": true
+  },
+  {
+   "key": "akja-rescue-sledge",
+   "instances": 2,
+   "triangles": 1684,
+   "maxExtent": 2.042,
+   "hasBounds": true
+  },
+  {
+   "key": "deep-powder-tile",
+   "instances": 2,
+   "triangles": 884,
+   "maxExtent": 2.192,
+   "hasBounds": true
+  },
+  {
+   "key": "gondola-cabin",
+   "instances": 2,
+   "triangles": 4824,
+   "maxExtent": 4.55,
+   "hasBounds": true
+  },
+  {
+   "key": "ice-axe-crampon-set",
+   "instances": 2,
+   "triangles": 1770,
+   "maxExtent": 1.371,
+   "hasBounds": true
+  },
+  {
+   "key": "lift-operator",
+   "instances": 2,
+   "triangles": 9874,
+   "maxExtent": 1.794,
+   "hasBounds": true
+  },
+  {
+   "key": "mountaineer",
+   "instances": 2,
+   "triangles": 9546,
+   "maxExtent": 1.793,
+   "hasBounds": true
+  },
+  {
+   "key": "piste-floodlight-mast",
+   "instances": 2,
+   "triangles": 1524,
+   "maxExtent": 6.087,
+   "hasBounds": true
+  },
+  {
+   "key": "probe-and-shovel-set",
+   "instances": 2,
+   "triangles": 1456,
+   "maxExtent": 2.049,
+   "hasBounds": true
+  },
+  {
+   "key": "rope-coil-and-harness",
+   "instances": 2,
+   "triangles": 1888,
+   "maxExtent": 0.525,
+   "hasBounds": true
+  },
+  {
+   "key": "ski-and-pole-stack",
+   "instances": 2,
+   "triangles": 840,
+   "maxExtent": 1.985,
+   "hasBounds": true
+  },
+  {
+   "key": "snow-capped-log-pile",
+   "instances": 2,
+   "triangles": 1508,
+   "maxExtent": 2.689,
+   "hasBounds": true
+  },
+  {
+   "key": "stone-cairn",
+   "instances": 2,
+   "triangles": 1457,
+   "maxExtent": 1.367,
+   "hasBounds": true
+  },
+  {
+   "key": "wooden-toboggan",
+   "instances": 2,
+   "triangles": 1612,
+   "maxExtent": 1.113,
+   "hasBounds": true
+  },
+  {
+   "key": "alpine-chalet",
+   "instances": 1,
+   "triangles": 1742,
+   "maxExtent": 11.657,
+   "hasBounds": true
+  },
+  {
+   "key": "alpine-fingerpost",
+   "instances": 1,
+   "triangles": 646,
+   "maxExtent": 2.464,
+   "hasBounds": true
+  },
+  {
+   "key": "alpine-hay-barn",
+   "instances": 1,
+   "triangles": 2074,
+   "maxExtent": 9.463,
+   "hasBounds": true
+  },
+  {
+   "key": "alpine-snow-terrain",
+   "instances": 1,
+   "triangles": 43504,
+   "maxExtent": 112.759,
+   "hasBounds": true
+  },
+  {
+   "key": "avalanche-gas-exploder",
+   "instances": 1,
+   "triangles": 884,
+   "maxExtent": 3.132,
+   "hasBounds": true
+  },
+  {
+   "key": "cleared-fire-pit",
+   "instances": 1,
+   "triangles": 796,
+   "maxExtent": 2.732,
+   "hasBounds": true
+  },
+  {
+   "key": "frozen-water-trough",
+   "instances": 1,
+   "triangles": 772,
+   "maxExtent": 2.118,
+   "hasBounds": true
+  },
+  {
+   "key": "frozen-waterfall",
+   "instances": 1,
+   "triangles": 709,
+   "maxExtent": 4.687,
+   "hasBounds": true
+  },
+  {
+   "key": "groomer-fuel-drum",
+   "instances": 1,
+   "triangles": 962,
+   "maxExtent": 1.281,
+   "hasBounds": true
+  },
+  {
+   "key": "groomer-winch-anchor",
+   "instances": 1,
+   "triangles": 890,
+   "maxExtent": 1.556,
+   "hasBounds": true
+  },
+  {
+   "key": "lift-base-station",
+   "instances": 1,
+   "triangles": 1926,
+   "maxExtent": 12.375,
+   "hasBounds": true
+  },
+  {
+   "key": "lift-top-station",
+   "instances": 1,
+   "triangles": 1858,
+   "maxExtent": 11.055,
+   "hasBounds": true
+  },
+  {
+   "key": "mountain-refuge-hut",
+   "instances": 1,
+   "triangles": 1588,
+   "maxExtent": 6.404,
+   "hasBounds": true
+  },
+  {
+   "key": "piste-basher-snowcat",
+   "instances": 1,
+   "triangles": 3178,
+   "maxExtent": 6.105,
+   "hasBounds": true
+  },
+  {
+   "key": "piste-patrol-hut",
+   "instances": 1,
+   "triangles": 1656,
+   "maxExtent": 5.409,
+   "hasBounds": true
+  },
+  {
+   "key": "piste-patroller",
+   "instances": 1,
+   "triangles": 3677,
+   "maxExtent": 1.76,
+   "hasBounds": true
+  },
+  {
+   "key": "race-start-hut",
+   "instances": 1,
+   "triangles": 1447,
+   "maxExtent": 4.443,
+   "hasBounds": true
+  },
+  {
+   "key": "rock-climbing-anchor",
+   "instances": 1,
+   "triangles": 444,
+   "maxExtent": 0.598,
+   "hasBounds": true
+  },
+  {
+   "key": "snow-cannon",
+   "instances": 1,
+   "triangles": 2023,
+   "maxExtent": 9.697,
+   "hasBounds": true
+  },
+  {
+   "key": "snowboard-rack",
+   "instances": 1,
+   "triangles": 762,
+   "maxExtent": 2.419,
+   "hasBounds": true
+  },
+  {
+   "key": "snowmobile",
+   "instances": 1,
+   "triangles": 2653,
+   "maxExtent": 2.761,
+   "hasBounds": true
+  },
+  {
+   "key": "summit-cross",
+   "instances": 1,
+   "triangles": 775,
+   "maxExtent": 3.564,
+   "hasBounds": true
+  },
+  {
+   "key": "timber-ski-rack",
+   "instances": 1,
+   "triangles": 704,
+   "maxExtent": 2.062,
+   "hasBounds": true
+  },
+  {
+   "key": "wayfinder-post",
+   "instances": 1,
+   "triangles": 668,
+   "maxExtent": 2.668,
+   "hasBounds": true
+  },
+  {
+   "key": "weather-station-mast",
+   "instances": 1,
+   "triangles": 891,
+   "maxExtent": 5,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "lift-base-station",
+   "key": "lift-base-station",
+   "meshes": 4,
+   "triangles": 1926,
+   "aabb": {
+    "min": [
+     12.812,
+     -13,
+     31.773
+    ],
+    "max": [
+     25.188,
+     -4.93,
+     42.227
+    ]
+   },
+   "size": [
+    12.375,
+    8.07,
+    10.453
+   ]
+  },
+  {
+   "index": 9,
+   "name": "lift-top-station",
+   "key": "lift-top-station",
+   "meshes": 2,
+   "triangles": 1858,
+   "aabb": {
+    "min": [
+     20.228,
+     -2.25,
+     -24.991
+    ],
+    "max": [
+     29.198,
+     8.805,
+     -14.232
+    ]
+   },
+   "size": [
+    8.97,
+    11.055,
+    10.759
+   ]
+  },
+  {
+   "index": 13,
+   "name": "lift-pylon",
+   "key": "lift-pylon",
+   "meshes": 11,
+   "triangles": 2356,
+   "aabb": {
+    "min": [
+     18.373,
+     -8,
+     19.668
+    ],
+    "max": [
+     22.881,
+     1.68,
+     22.096
+    ]
+   },
+   "size": [
+    4.508,
+    9.68,
+    2.427
+   ]
+  },
+  {
+   "index": 35,
+   "name": "lift-pylon",
+   "key": "lift-pylon",
+   "meshes": 11,
+   "triangles": 2342,
+   "aabb": {
+    "min": [
+     19.76,
+     -6.5,
+     7.748
+    ],
+    "max": [
+     23.902,
+     3.18,
+     10.138
+    ]
+   },
+   "size": [
+    4.142,
+    9.68,
+    2.39
+   ]
+  },
+  {
+   "index": 57,
+   "name": "lift-pylon",
+   "key": "lift-pylon",
+   "meshes": 11,
+   "triangles": 2356,
+   "aabb": {
+    "min": [
+     20.782,
+     -6.5,
+     -4.211
+    ],
+    "max": [
+     25.29,
+     3.18,
+     -1.783
+    ]
+   },
+   "size": [
+    4.508,
+    9.68,
+    2.427
+   ]
+  },
+  {
+   "index": 79,
+   "name": "haul-rope-span",
+   "key": "haul-rope-span",
+   "meshes": 3,
+   "triangles": 418,
+   "aabb": {
+    "min": [
+     17.576,
+     -5.033,
+     20.695
+    ],
+    "max": [
+     22.481,
+     0.033,
+     33.009
+    ]
+   },
+   "size": [
+    4.906,
+    5.066,
+    12.314
+   ]
+  },
+  {
+   "index": 83,
+   "name": "chairlift-chair",
+   "key": "chairlift-chair",
+   "meshes": 3,
+   "triangles": 2596,
+   "aabb": {
+    "min": [
+     20.512,
+     -7.619,
+     28.795
+    ],
+    "max": [
+     22.622,
+     -3.674,
+     30.195
+    ]
+   },
+   "size": [
+    2.11,
+    3.945,
+    1.4
+   ]
+  },
+  {
+   "index": 89,
+   "name": "chairlift-chair",
+   "key": "chairlift-chair",
+   "meshes": 3,
+   "triangles": 2530,
+   "aabb": {
+    "min": [
+     17.427,
+     -5.263,
+     23.508
+    ],
+    "max": [
+     19.537,
+     -1.318,
+     24.908
+    ]
+   },
+   "size": [
+    2.11,
+    3.945,
+    1.4
+   ]
+  },
+  {
+   "index": 95,
+   "name": "haul-rope-span",
+   "key": "haul-rope-span",
+   "meshes": 3,
+   "triangles": 418,
+   "aabb": {
+    "min": [
+     18.781,
+     -0.131,
+     8.756
+    ],
+    "max": [
+     23.686,
+     1.533,
+     21.07
+    ]
+   },
+   "size": [
+    4.906,
+    1.664,
+    12.314
+   ]
+  },
+  {
+   "index": 99,
+   "name": "chairlift-chair",
+   "key": "chairlift-chair",
+   "meshes": 3,
+   "triangles": 2596,
+   "aabb": {
+    "min": [
+     22.213,
+     -2.837,
+     11.93
+    ],
+    "max": [
+     24.323,
+     1.108,
+     13.33
+    ]
+   },
+   "size": [
+    2.11,
+    3.945,
+    1.4
+   ]
+  },
+  {
+   "index": 105,
+   "name": "chairlift-chair",
+   "key": "chairlift-chair",
+   "meshes": 3,
+   "triangles": 2530,
+   "aabb": {
+    "min": [
+     18.135,
+     -3.544,
+     16.494
+    ],
+    "max": [
+     20.245,
+     0.401,
+     17.894
+    ]
+   },
+   "size": [
+    2.11,
+    3.945,
+    1.4
+   ]
+  },
+  {
+   "index": 111,
+   "name": "haul-rope-span",
+   "key": "haul-rope-span",
+   "meshes": 3,
+   "triangles": 418,
+   "aabb": {
+    "min": [
+     19.985,
+     1.13,
+     -3.183
+    ],
+    "max": [
+     24.89,
+     1.533,
+     9.131
+    ]
+   },
+   "size": [
+    4.906,
+    0.403,
+    12.314
+   ]
+  },
+  {
+   "index": 115,
+   "name": "gondola-cabin",
+   "key": "gondola-cabin",
+   "meshes": 6,
+   "triangles": 2412,
+   "aabb": {
+    "min": [
+     23.074,
+     -3.038,
+     4.737
+    ],
+    "max": [
+     24.853,
+     1.512,
+     6.493
+    ]
+   },
+   "size": [
+    1.779,
+    4.55,
+    1.756
+   ]
+  },
+  {
+   "index": 125,
+   "name": "chairlift-chair",
+   "key": "chairlift-chair",
+   "meshes": 3,
+   "triangles": 2530,
+   "aabb": {
+    "min": [
+     19.837,
+     -2.441,
+     -0.37
+    ],
+    "max": [
+     21.947,
+     1.504,
+     1.03
+    ]
+   },
+   "size": [
+    2.11,
+    3.945,
+    1.4
+   ]
+  },
+  {
+   "index": 131,
+   "name": "haul-rope-span",
+   "key": "haul-rope-span",
+   "meshes": 3,
+   "triangles": 418,
+   "aabb": {
+    "min": [
+     21.19,
+     1.467,
+     -17.113
+    ],
+    "max": [
+     26.297,
+     5.783,
+     -2.809
+    ]
+   },
+   "size": [
+    5.108,
+    4.316,
+    14.303
+   ]
+  },
+  {
+   "index": 135,
+   "name": "chairlift-chair",
+   "key": "chairlift-chair",
+   "meshes": 3,
+   "triangles": 2596,
+   "aabb": {
+    "min": [
+     24.774,
+     0.673,
+     -13.441
+    ],
+    "max": [
+     26.884,
+     4.618,
+     -12.041
+    ]
+   },
+   "size": [
+    2.11,
+    3.945,
+    1.4
+   ]
+  },
+  {
+   "index": 141,
+   "name": "gondola-cabin",
+   "key": "gondola-cabin",
+   "meshes": 6,
+   "triangles": 2412,
+   "aabb": {
+    "min": [
+     20.773,
+     -1.946,
+     -8.059
+    ],
+    "max": [
+     22.552,
+     2.604,
+     -6.303
+    ]
+   },
+   "size": [
+    1.779,
+    4.55,
+    1.756
+   ]
+  },
+  {
+   "index": 151,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -4.186,
+     -13,
+     35.685
+    ],
+    "max": [
+     -1.994,
+     -12.886,
+     37.877
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 154,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 708,
+   "aabb": {
+    "min": [
+     -4.386,
+     -13,
+     37.675
+    ],
+    "max": [
+     -2.194,
+     -12.886,
+     39.867
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 157,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 727,
+   "aabb": {
+    "min": [
+     -4.587,
+     -13,
+     39.665
+    ],
+    "max": [
+     -2.395,
+     -12.887,
+     41.857
+    ]
+   },
+   "size": [
+    2.192,
+    0.113,
+    2.192
+   ]
+  },
+  {
+   "index": 160,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 708,
+   "aabb": {
+    "min": [
+     -2.597,
+     -13,
+     39.866
+    ],
+    "max": [
+     -0.405,
+     -12.887,
+     42.058
+    ]
+   },
+   "size": [
+    2.192,
+    0.113,
+    2.192
+   ]
+  },
+  {
+   "index": 163,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 706,
+   "aabb": {
+    "min": [
+     -0.607,
+     -13,
+     40.066
+    ],
+    "max": [
+     1.585,
+     -12.886,
+     42.258
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 166,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 706,
+   "aabb": {
+    "min": [
+     1.382,
+     -13,
+     40.267
+    ],
+    "max": [
+     3.574,
+     -12.886,
+     42.459
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 169,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 659,
+   "aabb": {
+    "min": [
+     3.372,
+     -13,
+     40.468
+    ],
+    "max": [
+     5.564,
+     -12.887,
+     42.66
+    ]
+   },
+   "size": [
+    2.192,
+    0.113,
+    2.192
+   ]
+  },
+  {
+   "index": 172,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     5.362,
+     -13,
+     40.669
+    ],
+    "max": [
+     7.554,
+     -12.886,
+     42.861
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 175,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     7.352,
+     -13,
+     40.87
+    ],
+    "max": [
+     9.544,
+     -12.886,
+     43.062
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 178,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 708,
+   "aabb": {
+    "min": [
+     9.342,
+     -13,
+     41.07
+    ],
+    "max": [
+     11.534,
+     -12.887,
+     43.262
+    ]
+   },
+   "size": [
+    2.192,
+    0.113,
+    2.192
+   ]
+  },
+  {
+   "index": 181,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 706,
+   "aabb": {
+    "min": [
+     11.332,
+     -13,
+     41.271
+    ],
+    "max": [
+     13.524,
+     -12.886,
+     43.463
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 184,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 659,
+   "aabb": {
+    "min": [
+     13.322,
+     -13,
+     41.472
+    ],
+    "max": [
+     15.514,
+     -12.887,
+     43.664
+    ]
+   },
+   "size": [
+    2.192,
+    0.113,
+    2.192
+   ]
+  },
+  {
+   "index": 187,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 708,
+   "aabb": {
+    "min": [
+     15.312,
+     -13,
+     41.673
+    ],
+    "max": [
+     17.504,
+     -12.886,
+     43.865
+    ]
+   },
+   "size": [
+    2.192,
+    0.114,
+    2.192
+   ]
+  },
+  {
+   "index": 190,
+   "name": "cleared-stone-path-tile",
+   "key": "cleared-stone-path-tile",
+   "meshes": 2,
+   "triangles": 697,
+   "aabb": {
+    "min": [
+     17.302,
+     -13,
+     41.874
+    ],
+    "max": [
+     19.494,
+     -12.888,
+     44.066
+    ]
+   },
+   "size": [
+    2.192,
+    0.112,
+    2.192
+   ]
+  },
+  {
+   "index": 193,
+   "name": "deep-powder-tile",
+   "key": "deep-powder-tile",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -2.798,
+     -13,
+     41.855
+    ],
+    "max": [
+     -0.606,
+     -12.895,
+     44.047
+    ]
+   },
+   "size": [
+    2.192,
+    0.105,
+    2.192
+   ]
+  },
+  {
+   "index": 195,
+   "name": "deep-powder-tile",
+   "key": "deep-powder-tile",
+   "meshes": 1,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     -0.808,
+     -13,
+     42.056
+    ],
+    "max": [
+     1.384,
+     -12.903,
+     44.248
+    ]
+   },
+   "size": [
+    2.192,
+    0.097,
+    2.192
+   ]
+  },
+  {
+   "index": 197,
+   "name": "snow-capped-log-pile",
+   "key": "snow-capped-log-pile",
+   "meshes": 1,
+   "triangles": 862,
+   "aabb": {
+    "min": [
+     -5.057,
+     -13,
+     41.331
+    ],
+    "max": [
+     -2.815,
+     -11.61,
+     44.021
+    ]
+   },
+   "size": [
+    2.242,
+    1.39,
+    2.689
+   ]
+  },
+  {
+   "index": 199,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 289,
+   "aabb": {
+    "min": [
+     0.912,
+     -13.252,
+     42.365
+    ],
+    "max": [
+     3.026,
+     -11.8,
+     44.479
+    ]
+   },
+   "size": [
+    2.113,
+    1.452,
+    2.113
+   ]
+  },
+  {
+   "index": 211,
+   "name": "alpine-snow-bench",
+   "key": "alpine-snow-bench",
+   "meshes": 6,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     -1.894,
+     -13,
+     44.406
+    ],
+    "max": [
+     0.128,
+     -11.975,
+     45.181
+    ]
+   },
+   "size": [
+    2.021,
+    1.025,
+    0.775
+   ]
+  },
+  {
+   "index": 223,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 467,
+   "aabb": {
+    "min": [
+     -6.874,
+     -13.259,
+     44.109
+    ],
+    "max": [
+     -4.296,
+     -12.043,
+     47.041
+    ]
+   },
+   "size": [
+    2.579,
+    1.216,
+    2.932
+   ]
+  },
+  {
+   "index": 235,
+   "name": "bare-mountain-rowan",
+   "key": "bare-mountain-rowan",
+   "meshes": 3,
+   "triangles": 990,
+   "aabb": {
+    "min": [
+     2.55,
+     -13.204,
+     43.678
+    ],
+    "max": [
+     8.163,
+     -8.577,
+     49.259
+    ]
+   },
+   "size": [
+    5.613,
+    4.627,
+    5.581
+   ]
+  },
+  {
+   "index": 241,
+   "name": "timber-ski-rack",
+   "key": "timber-ski-rack",
+   "meshes": 1,
+   "triangles": 704,
+   "aabb": {
+    "min": [
+     11.723,
+     -13,
+     44.549
+    ],
+    "max": [
+     13.785,
+     -11.41,
+     45.679
+    ]
+   },
+   "size": [
+    2.062,
+    1.59,
+    1.13
+   ]
+  },
+  {
+   "index": 243,
+   "name": "ski-and-pole-stack",
+   "key": "ski-and-pole-stack",
+   "meshes": 5,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     11.733,
+     -13.015,
+     45.219
+    ],
+    "max": [
+     13.718,
+     -11.227,
+     45.687
+    ]
+   },
+   "size": [
+    1.985,
+    1.788,
+    0.469
+   ]
+  },
+  {
+   "index": 253,
+   "name": "snowboard-rack",
+   "key": "snowboard-rack",
+   "meshes": 5,
+   "triangles": 762,
+   "aabb": {
+    "min": [
+     13.818,
+     -13,
+     44.687
+    ],
+    "max": [
+     15.88,
+     -10.581,
+     45.817
+    ]
+   },
+   "size": [
+    2.062,
+    2.419,
+    1.13
+   ]
+  },
+  {
+   "index": 263,
+   "name": "probe-and-shovel-set",
+   "key": "probe-and-shovel-set",
+   "meshes": 3,
+   "triangles": 728,
+   "aabb": {
+    "min": [
+     8.559,
+     -13.015,
+     43.672
+    ],
+    "max": [
+     10.601,
+     -11.373,
+     45.714
+    ]
+   },
+   "size": [
+    2.041,
+    1.642,
+    2.041
+   ]
+  },
+  {
+   "index": 269,
+   "name": "ice-axe-crampon-set",
+   "key": "ice-axe-crampon-set",
+   "meshes": 4,
+   "triangles": 882,
+   "aabb": {
+    "min": [
+     7.838,
+     -13.012,
+     45.509
+    ],
+    "max": [
+     9.21,
+     -12.747,
+     46.881
+    ]
+   },
+   "size": [
+    1.371,
+    0.265,
+    1.371
+   ]
+  },
+  {
+   "index": 276,
+   "name": "rope-coil-and-harness",
+   "key": "rope-coil-and-harness",
+   "meshes": 5,
+   "triangles": 944,
+   "aabb": {
+    "min": [
+     10.168,
+     -13,
+     46.217
+    ],
+    "max": [
+     10.636,
+     -12.669,
+     46.737
+    ]
+   },
+   "size": [
+    0.468,
+    0.331,
+    0.52
+   ]
+  },
+  {
+   "index": 286,
+   "name": "alpine-chalet",
+   "key": "alpine-chalet",
+   "meshes": 2,
+   "triangles": 1742,
+   "aabb": {
+    "min": [
+     -9.493,
+     -13,
+     27.498
+    ],
+    "max": [
+     2.163,
+     -5.576,
+     37.706
+    ]
+   },
+   "size": [
+    11.657,
+    7.424,
+    10.209
+   ]
+  },
+  {
+   "index": 290,
+   "name": "ski-and-pole-stack",
+   "key": "ski-and-pole-stack",
+   "meshes": 3,
+   "triangles": 280,
+   "aabb": {
+    "min": [
+     -0.846,
+     -13.015,
+     34.907
+    ],
+    "max": [
+     0.18,
+     -11.287,
+     35.473
+    ]
+   },
+   "size": [
+    1.026,
+    1.728,
+    0.566
+   ]
+  },
+  {
+   "index": 296,
+   "name": "wooden-toboggan",
+   "key": "wooden-toboggan",
+   "meshes": 1,
+   "triangles": 806,
+   "aabb": {
+    "min": [
+     -6.366,
+     -13,
+     37.23
+    ],
+    "max": [
+     -5.778,
+     -12.683,
+     38.274
+    ]
+   },
+   "size": [
+    0.589,
+    0.317,
+    1.044
+   ]
+  },
+  {
+   "index": 298,
+   "name": "cleared-fire-pit",
+   "key": "cleared-fire-pit",
+   "meshes": 6,
+   "triangles": 796,
+   "aabb": {
+    "min": [
+     4.519,
+     -13.05,
+     36.12
+    ],
+    "max": [
+     7.251,
+     -11.899,
+     38.852
+    ]
+   },
+   "size": [
+    2.732,
+    1.151,
+    2.732
+   ]
+  },
+  {
+   "index": 308,
+   "name": "alpine-snow-bench",
+   "key": "alpine-snow-bench",
+   "meshes": 6,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     7.977,
+     -13,
+     37.103
+    ],
+    "max": [
+     9.084,
+     -11.975,
+     39.207
+    ]
+   },
+   "size": [
+    1.106,
+    1.025,
+    2.103
+   ]
+  },
+  {
+   "index": 320,
+   "name": "alpine-snow-bench",
+   "key": "alpine-snow-bench",
+   "meshes": 6,
+   "triangles": 700,
+   "aabb": {
+    "min": [
+     2.835,
+     -13,
+     35.903
+    ],
+    "max": [
+     3.624,
+     -12.097,
+     37.929
+    ]
+   },
+   "size": [
+    0.789,
+    0.903,
+    2.026
+   ]
+  },
+  {
+   "index": 332,
+   "name": "lift-operator",
+   "key": "lift-operator",
+   "meshes": 8,
+   "triangles": 4967,
+   "aabb": {
+    "min": [
+     20.123,
+     -13,
+     43.252
+    ],
+    "max": [
+     21.71,
+     -11.206,
+     44.406
+    ]
+   },
+   "size": [
+    1.586,
+    1.794,
+    1.154
+   ]
+  },
+  {
+   "index": 381,
+   "name": "skier",
+   "key": "skier",
+   "meshes": 9,
+   "triangles": 3161,
+   "aabb": {
+    "min": [
+     22.608,
+     -13,
+     44.274
+    ],
+    "max": [
+     24.256,
+     -11.13,
+     45.798
+    ]
+   },
+   "size": [
+    1.648,
+    1.87,
+    1.524
+   ]
+  },
+  {
+   "index": 432,
+   "name": "wayfinder-post",
+   "key": "wayfinder-post",
+   "meshes": 1,
+   "triangles": 668,
+   "aabb": {
+    "min": [
+     18.695,
+     -13,
+     44.912
+    ],
+    "max": [
+     20.06,
+     -10.332,
+     46.165
+    ]
+   },
+   "size": [
+    1.366,
+    2.668,
+    1.253
+   ]
+  },
+  {
+   "index": 434,
+   "name": "frozen-waterfall",
+   "key": "frozen-waterfall",
+   "meshes": 1,
+   "triangles": 709,
+   "aabb": {
+    "min": [
+     -5.186,
+     -10.941,
+     11.615
+    ],
+    "max": [
+     -0.499,
+     -8.444,
+     14.169
+    ]
+   },
+   "size": [
+    4.687,
+    2.497,
+    2.555
+   ]
+  },
+  {
+   "index": 436,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 754,
+   "aabb": {
+    "min": [
+     -9.055,
+     -11.202,
+     10.87
+    ],
+    "max": [
+     -4.385,
+     -7.601,
+     15.672
+    ]
+   },
+   "size": [
+    4.67,
+    3.601,
+    4.802
+   ]
+  },
+  {
+   "index": 448,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     -1.561,
+     -11.636,
+     9.632
+    ],
+    "max": [
+     3.153,
+     -7.155,
+     14.984
+    ]
+   },
+   "size": [
+    4.714,
+    4.481,
+    5.353
+   ]
+  },
+  {
+   "index": 460,
+   "name": "race-start-hut",
+   "key": "race-start-hut",
+   "meshes": 3,
+   "triangles": 1447,
+   "aabb": {
+    "min": [
+     32.376,
+     -7.24,
+     -11.621
+    ],
+    "max": [
+     35.624,
+     -3.783,
+     -7.179
+    ]
+   },
+   "size": [
+    3.247,
+    3.457,
+    4.443
+   ]
+  },
+  {
+   "index": 465,
+   "name": "skier",
+   "key": "skier",
+   "meshes": 9,
+   "triangles": 3241,
+   "aabb": {
+    "min": [
+     30.892,
+     -7.25,
+     -8.336
+    ],
+    "max": [
+     32.317,
+     -5.589,
+     -6.945
+    ]
+   },
+   "size": [
+    1.425,
+    1.661,
+    1.391
+   ]
+  },
+  {
+   "index": 516,
+   "name": "slalom-gate",
+   "key": "slalom-gate",
+   "meshes": 3,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     31.1,
+     -7.24,
+     -5.84
+    ],
+    "max": [
+     32.101,
+     -5.272,
+     -5.355
+    ]
+   },
+   "size": [
+    1,
+    1.968,
+    0.485
+   ]
+  },
+  {
+   "index": 529,
+   "name": "slalom-gate",
+   "key": "slalom-gate",
+   "meshes": 3,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     33.312,
+     -7.189,
+     -2.51
+    ],
+    "max": [
+     34.288,
+     -5.221,
+     -2.286
+    ]
+   },
+   "size": [
+    0.976,
+    1.968,
+    0.225
+   ]
+  },
+  {
+   "index": 542,
+   "name": "slalom-gate",
+   "key": "slalom-gate",
+   "meshes": 3,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     29.9,
+     -6.831,
+     1.56
+    ],
+    "max": [
+     30.901,
+     -4.863,
+     2.045
+    ]
+   },
+   "size": [
+    1,
+    1.968,
+    0.485
+   ]
+  },
+  {
+   "index": 555,
+   "name": "slalom-gate",
+   "key": "slalom-gate",
+   "meshes": 3,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     33.112,
+     -6.801,
+     5.69
+    ],
+    "max": [
+     34.088,
+     -4.833,
+     5.914
+    ]
+   },
+   "size": [
+    0.976,
+    1.968,
+    0.225
+   ]
+  },
+  {
+   "index": 568,
+   "name": "slalom-gate",
+   "key": "slalom-gate",
+   "meshes": 3,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     30.3,
+     -7.127,
+     9.56
+    ],
+    "max": [
+     31.301,
+     -5.159,
+     10.045
+    ]
+   },
+   "size": [
+    1,
+    1.968,
+    0.485
+   ]
+  },
+  {
+   "index": 581,
+   "name": "safety-net-run",
+   "key": "safety-net-run",
+   "meshes": 2,
+   "triangles": 624,
+   "aabb": {
+    "min": [
+     26.31,
+     -7.28,
+     20.6
+    ],
+    "max": [
+     27.698,
+     -5.934,
+     22.58
+    ]
+   },
+   "size": [
+    1.389,
+    1.346,
+    1.98
+   ]
+  },
+  {
+   "index": 589,
+   "name": "safety-net-run",
+   "key": "safety-net-run",
+   "meshes": 2,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     26.31,
+     -7.28,
+     18.6
+    ],
+    "max": [
+     27.737,
+     -5.934,
+     20.6
+    ]
+   },
+   "size": [
+    1.427,
+    1.346,
+    2
+   ]
+  },
+  {
+   "index": 599,
+   "name": "safety-net-run",
+   "key": "safety-net-run",
+   "meshes": 2,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     26.31,
+     -7.28,
+     16.6
+    ],
+    "max": [
+     27.737,
+     -5.934,
+     18.6
+    ]
+   },
+   "size": [
+    1.427,
+    1.346,
+    2
+   ]
+  },
+  {
+   "index": 609,
+   "name": "safety-net-run",
+   "key": "safety-net-run",
+   "meshes": 2,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     26.31,
+     -7.28,
+     14.6
+    ],
+    "max": [
+     27.737,
+     -5.934,
+     16.6
+    ]
+   },
+   "size": [
+    1.427,
+    1.346,
+    2
+   ]
+  },
+  {
+   "index": 619,
+   "name": "safety-net-run",
+   "key": "safety-net-run",
+   "meshes": 2,
+   "triangles": 624,
+   "aabb": {
+    "min": [
+     26.31,
+     -7.28,
+     12.62
+    ],
+    "max": [
+     27.698,
+     -5.934,
+     14.6
+    ]
+   },
+   "size": [
+    1.389,
+    1.346,
+    1.98
+   ]
+  },
+  {
+   "index": 627,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     29.4,
+     -7.25,
+     12
+    ],
+    "max": [
+     31.4,
+     -7.2,
+     14
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 629,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     29.4,
+     -7.25,
+     14
+    ],
+    "max": [
+     31.4,
+     -7.2,
+     16
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 631,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     31.4,
+     -7.25,
+     14
+    ],
+    "max": [
+     33.4,
+     -7.2,
+     16
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 633,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     29.4,
+     -7.25,
+     16
+    ],
+    "max": [
+     31.4,
+     -7.2,
+     18
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 635,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     31.4,
+     -7.25,
+     16
+    ],
+    "max": [
+     33.4,
+     -7.2,
+     18
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 637,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     29.4,
+     -7.25,
+     18
+    ],
+    "max": [
+     31.4,
+     -7.2,
+     20
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 639,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     31.4,
+     -7.25,
+     18
+    ],
+    "max": [
+     33.4,
+     -7.2,
+     20
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 641,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     29.4,
+     -7.25,
+     20
+    ],
+    "max": [
+     31.4,
+     -7.2,
+     22
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 643,
+   "name": "groomed-piste-tile",
+   "key": "groomed-piste-tile",
+   "meshes": 1,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     31.4,
+     -7.25,
+     20
+    ],
+    "max": [
+     33.4,
+     -7.2,
+     22
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 645,
+   "name": "skier",
+   "key": "skier",
+   "meshes": 9,
+   "triangles": 3185,
+   "aabb": {
+    "min": [
+     31.599,
+     -7.2,
+     19.256
+    ],
+    "max": [
+     33.029,
+     -5.537,
+     20.647
+    ]
+   },
+   "size": [
+    1.43,
+    1.663,
+    1.391
+   ]
+  },
+  {
+   "index": 696,
+   "name": "rope-tow-run",
+   "key": "rope-tow-run",
+   "meshes": 2,
+   "triangles": 768,
+   "aabb": {
+    "min": [
+     34.796,
+     -11.782,
+     36
+    ],
+    "max": [
+     36.377,
+     -9.419,
+     37.985
+    ]
+   },
+   "size": [
+    1.581,
+    2.363,
+    1.985
+   ]
+  },
+  {
+   "index": 701,
+   "name": "rope-tow-run",
+   "key": "rope-tow-run",
+   "meshes": 1,
+   "triangles": 516,
+   "aabb": {
+    "min": [
+     34.804,
+     -11.571,
+     34
+    ],
+    "max": [
+     35.657,
+     -9.174,
+     36
+    ]
+   },
+   "size": [
+    0.853,
+    2.397,
+    2
+   ]
+  },
+  {
+   "index": 705,
+   "name": "rope-tow-run",
+   "key": "rope-tow-run",
+   "meshes": 1,
+   "triangles": 516,
+   "aabb": {
+    "min": [
+     34.804,
+     -11.361,
+     32
+    ],
+    "max": [
+     35.657,
+     -8.964,
+     34
+    ]
+   },
+   "size": [
+    0.853,
+    2.397,
+    2
+   ]
+  },
+  {
+   "index": 709,
+   "name": "rope-tow-run",
+   "key": "rope-tow-run",
+   "meshes": 1,
+   "triangles": 516,
+   "aabb": {
+    "min": [
+     34.804,
+     -11.151,
+     30
+    ],
+    "max": [
+     35.657,
+     -8.754,
+     32
+    ]
+   },
+   "size": [
+    0.853,
+    2.397,
+    2
+   ]
+  },
+  {
+   "index": 713,
+   "name": "rope-tow-run",
+   "key": "rope-tow-run",
+   "meshes": 2,
+   "triangles": 685,
+   "aabb": {
+    "min": [
+     34.627,
+     -10.941,
+     28.06
+    ],
+    "max": [
+     36.279,
+     -8.201,
+     30
+    ]
+   },
+   "size": [
+    1.652,
+    2.74,
+    1.94
+   ]
+  },
+  {
+   "index": 718,
+   "name": "piste-basher-snowcat",
+   "key": "piste-basher-snowcat",
+   "meshes": 13,
+   "triangles": 3178,
+   "aabb": {
+    "min": [
+     28.058,
+     -13.001,
+     27.798
+    ],
+    "max": [
+     33.494,
+     -10.386,
+     33.902
+    ]
+   },
+   "size": [
+    5.436,
+    2.615,
+    6.105
+   ]
+  },
+  {
+   "index": 746,
+   "name": "groomer-fuel-drum",
+   "key": "groomer-fuel-drum",
+   "meshes": 2,
+   "triangles": 962,
+   "aabb": {
+    "min": [
+     26.959,
+     -13.03,
+     31.76
+    ],
+    "max": [
+     28.239,
+     -11.928,
+     33.041
+    ]
+   },
+   "size": [
+    1.28,
+    1.102,
+    1.281
+   ]
+  },
+  {
+   "index": 750,
+   "name": "snowmobile",
+   "key": "snowmobile",
+   "meshes": 9,
+   "triangles": 2653,
+   "aabb": {
+    "min": [
+     26.082,
+     -13.02,
+     33.806
+    ],
+    "max": [
+     27.846,
+     -12.021,
+     36.568
+    ]
+   },
+   "size": [
+    1.763,
+    0.999,
+    2.761
+   ]
+  },
+  {
+   "index": 767,
+   "name": "akja-rescue-sledge",
+   "key": "akja-rescue-sledge",
+   "meshes": 4,
+   "triangles": 854,
+   "aabb": {
+    "min": [
+     27.287,
+     -13.015,
+     36.835
+    ],
+    "max": [
+     28.696,
+     -12.625,
+     38.878
+    ]
+   },
+   "size": [
+    1.409,
+    0.39,
+    2.042
+   ]
+  },
+  {
+   "index": 775,
+   "name": "groomer-winch-anchor",
+   "key": "groomer-winch-anchor",
+   "meshes": 2,
+   "triangles": 890,
+   "aabb": {
+    "min": [
+     16.622,
+     -0.767,
+     -25.278
+    ],
+    "max": [
+     18.178,
+     0.004,
+     -23.722
+    ]
+   },
+   "size": [
+    1.556,
+    0.771,
+    1.556
+   ]
+  },
+  {
+   "index": 779,
+   "name": "snow-cannon",
+   "key": "snow-cannon",
+   "meshes": 38,
+   "triangles": 2023,
+   "aabb": {
+    "min": [
+     34.792,
+     -7.203,
+     -0.15
+    ],
+    "max": [
+     38.522,
+     -3.006,
+     9.547
+    ]
+   },
+   "size": [
+    3.73,
+    4.197,
+    9.697
+   ]
+  },
+  {
+   "index": 825,
+   "name": "piste-floodlight-mast",
+   "key": "piste-floodlight-mast",
+   "meshes": 1,
+   "triangles": 762,
+   "aabb": {
+    "min": [
+     15.385,
+     -5.506,
+     -5.92
+    ],
+    "max": [
+     17.767,
+     0.581,
+     -3.483
+    ]
+   },
+   "size": [
+    2.382,
+    6.087,
+    2.438
+   ]
+  },
+  {
+   "index": 827,
+   "name": "piste-marker-pole",
+   "key": "piste-marker-pole",
+   "meshes": 2,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     36.1,
+     -7.275,
+     -13.9
+    ],
+    "max": [
+     37.1,
+     -5.075,
+     -12.9
+    ]
+   },
+   "size": [
+    1,
+    2.2,
+    1
+   ]
+  },
+  {
+   "index": 831,
+   "name": "piste-marker-pole",
+   "key": "piste-marker-pole",
+   "meshes": 2,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     35.9,
+     -7.316,
+     -4.2
+    ],
+    "max": [
+     37.3,
+     -5.116,
+     -2.8
+    ]
+   },
+   "size": [
+    1.4,
+    2.2,
+    1.4
+   ]
+  },
+  {
+   "index": 835,
+   "name": "piste-marker-pole",
+   "key": "piste-marker-pole",
+   "meshes": 2,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     33.482,
+     -7.238,
+     14.582
+    ],
+    "max": [
+     34.718,
+     -5.038,
+     15.818
+    ]
+   },
+   "size": [
+    1.237,
+    2.2,
+    1.237
+   ]
+  },
+  {
+   "index": 839,
+   "name": "piste-marker-pole",
+   "key": "piste-marker-pole",
+   "meshes": 2,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     33.454,
+     -7.241,
+     20.154
+    ],
+    "max": [
+     34.746,
+     -5.041,
+     21.446
+    ]
+   },
+   "size": [
+    1.292,
+    2.2,
+    1.292
+   ]
+  },
+  {
+   "index": 843,
+   "name": "piste-marker-pole",
+   "key": "piste-marker-pole",
+   "meshes": 2,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     16.311,
+     -3.812,
+     -12.189
+    ],
+    "max": [
+     17.689,
+     -1.612,
+     -10.811
+    ]
+   },
+   "size": [
+    1.378,
+    2.2,
+    1.378
+   ]
+  },
+  {
+   "index": 847,
+   "name": "piste-marker-pole",
+   "key": "piste-marker-pole",
+   "meshes": 2,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     16.258,
+     -6.347,
+     1.658
+    ],
+    "max": [
+     17.342,
+     -4.147,
+     2.742
+    ]
+   },
+   "size": [
+    1.083,
+    2.2,
+    1.083
+   ]
+  },
+  {
+   "index": 851,
+   "name": "piste-marker-pole",
+   "key": "piste-marker-pole",
+   "meshes": 2,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     18.694,
+     -6.343,
+     10.694
+    ],
+    "max": [
+     20.106,
+     -4.143,
+     12.106
+    ]
+   },
+   "size": [
+    1.412,
+    2.2,
+    1.412
+   ]
+  },
+  {
+   "index": 855,
+   "name": "summit-cross",
+   "key": "summit-cross",
+   "meshes": 2,
+   "triangles": 775,
+   "aabb": {
+    "min": [
+     -23.216,
+     16.677,
+     -9.058
+    ],
+    "max": [
+     -20.896,
+     20.241,
+     -6.924
+    ]
+   },
+   "size": [
+    2.321,
+    3.564,
+    2.134
+   ]
+  },
+  {
+   "index": 859,
+   "name": "mountaineer",
+   "key": "mountaineer",
+   "meshes": 10,
+   "triangles": 4819,
+   "aabb": {
+    "min": [
+     -21.229,
+     16.414,
+     -7.72
+    ],
+    "max": [
+     -19.974,
+     18.207,
+     -6.283
+    ]
+   },
+   "size": [
+    1.255,
+    1.793,
+    1.437
+   ]
+  },
+  {
+   "index": 912,
+   "name": "stone-cairn",
+   "key": "stone-cairn",
+   "meshes": 2,
+   "triangles": 805,
+   "aabb": {
+    "min": [
+     -26.012,
+     14.674,
+     -7.412
+    ],
+    "max": [
+     -24.788,
+     16.041,
+     -6.188
+    ]
+   },
+   "size": [
+    1.225,
+    1.367,
+    1.225
+   ]
+  },
+  {
+   "index": 916,
+   "name": "alpine-ibex",
+   "key": "alpine-ibex",
+   "meshes": 1,
+   "triangles": 2844,
+   "aabb": {
+    "min": [
+     -20.311,
+     16.817,
+     -11.142
+    ],
+    "max": [
+     -18.889,
+     18.271,
+     -10.058
+    ]
+   },
+   "size": [
+    1.421,
+    1.454,
+    1.084
+   ]
+  },
+  {
+   "index": 944,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     -31.863,
+     11.138,
+     -11.464
+    ],
+    "max": [
+     -26.952,
+     15.762,
+     -6.642
+    ]
+   },
+   "size": [
+    4.911,
+    4.624,
+    4.822
+   ]
+  },
+  {
+   "index": 956,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 757,
+   "aabb": {
+    "min": [
+     -27.3,
+     10.095,
+     -14.814
+    ],
+    "max": [
+     -22.431,
+     14.993,
+     -9.687
+    ]
+   },
+   "size": [
+    4.869,
+    4.897,
+    5.126
+   ]
+  },
+  {
+   "index": 968,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 762,
+   "aabb": {
+    "min": [
+     -20.583,
+     11.942,
+     -7.834
+    ],
+    "max": [
+     -16.03,
+     15.575,
+     -3.669
+    ]
+   },
+   "size": [
+    4.553,
+    3.633,
+    4.164
+   ]
+  },
+  {
+   "index": 980,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 754,
+   "aabb": {
+    "min": [
+     -29.048,
+     11.676,
+     -3.848
+    ],
+    "max": [
+     -26.152,
+     14.123,
+     -0.952
+    ]
+   },
+   "size": [
+    2.896,
+    2.447,
+    2.896
+   ]
+  },
+  {
+   "index": 992,
+   "name": "rock-climbing-anchor",
+   "key": "rock-climbing-anchor",
+   "meshes": 3,
+   "triangles": 444,
+   "aabb": {
+    "min": [
+     -28.101,
+     12.082,
+     -2.395
+    ],
+    "max": [
+     -27.522,
+     12.68,
+     -1.867
+    ]
+   },
+   "size": [
+    0.579,
+    0.598,
+    0.528
+   ]
+  },
+  {
+   "index": 998,
+   "name": "rope-coil-and-harness",
+   "key": "rope-coil-and-harness",
+   "meshes": 5,
+   "triangles": 944,
+   "aabb": {
+    "min": [
+     -28.041,
+     11.817,
+     -0.91
+    ],
+    "max": [
+     -27.556,
+     12.148,
+     -0.385
+    ]
+   },
+   "size": [
+    0.485,
+    0.331,
+    0.525
+   ]
+  },
+  {
+   "index": 1008,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -10.011,
+     12.234,
+     -13.251
+    ],
+    "max": [
+     -7.189,
+     15.256,
+     -10.429
+    ]
+   },
+   "size": [
+    2.823,
+    3.022,
+    2.823
+   ]
+  },
+  {
+   "index": 1010,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -11.511,
+     12.234,
+     -11.931
+    ],
+    "max": [
+     -8.689,
+     15.256,
+     -9.109
+    ]
+   },
+   "size": [
+    2.823,
+    3.022,
+    2.823
+   ]
+  },
+  {
+   "index": 1012,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -13.011,
+     12.234,
+     -10.611
+    ],
+    "max": [
+     -10.189,
+     15.256,
+     -7.789
+    ]
+   },
+   "size": [
+    2.823,
+    3.022,
+    2.823
+   ]
+  },
+  {
+   "index": 1014,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -14.511,
+     12.234,
+     -9.291
+    ],
+    "max": [
+     -11.689,
+     15.256,
+     -6.469
+    ]
+   },
+   "size": [
+    2.823,
+    3.022,
+    2.823
+   ]
+  },
+  {
+   "index": 1016,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 808,
+   "aabb": {
+    "min": [
+     -15.809,
+     12.234,
+     -7.971
+    ],
+    "max": [
+     -13.189,
+     15.256,
+     -5.327
+    ]
+   },
+   "size": [
+    2.62,
+    3.022,
+    2.644
+   ]
+  },
+  {
+   "index": 1018,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -9.013,
+     9.984,
+     -8.983
+    ],
+    "max": [
+     -6.227,
+     13.006,
+     -6.197
+    ]
+   },
+   "size": [
+    2.785,
+    3.022,
+    2.785
+   ]
+  },
+  {
+   "index": 1020,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -10.653,
+     9.984,
+     -7.843
+    ],
+    "max": [
+     -7.867,
+     13.006,
+     -5.057
+    ]
+   },
+   "size": [
+    2.785,
+    3.022,
+    2.785
+   ]
+  },
+  {
+   "index": 1022,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -12.293,
+     9.984,
+     -6.693
+    ],
+    "max": [
+     -9.507,
+     13.006,
+     -3.907
+    ]
+   },
+   "size": [
+    2.785,
+    3.022,
+    2.785
+   ]
+  },
+  {
+   "index": 1024,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -13.933,
+     9.984,
+     -5.543
+    ],
+    "max": [
+     -11.147,
+     13.006,
+     -2.757
+    ]
+   },
+   "size": [
+    2.785,
+    3.022,
+    2.785
+   ]
+  },
+  {
+   "index": 1026,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 808,
+   "aabb": {
+    "min": [
+     -15.352,
+     9.984,
+     -4.403
+    ],
+    "max": [
+     -12.787,
+     13.006,
+     -1.772
+    ]
+   },
+   "size": [
+    2.564,
+    3.022,
+    2.631
+   ]
+  },
+  {
+   "index": 1028,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -2.52,
+     4.484,
+     -15.3
+    ],
+    "max": [
+     -0.18,
+     7.506,
+     -12.96
+    ]
+   },
+   "size": [
+    2.339,
+    3.022,
+    2.339
+   ]
+  },
+  {
+   "index": 1030,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -2.15,
+     4.484,
+     -13.33
+    ],
+    "max": [
+     0.19,
+     7.506,
+     -10.99
+    ]
+   },
+   "size": [
+    2.339,
+    3.022,
+    2.339
+   ]
+  },
+  {
+   "index": 1032,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -1.77,
+     4.484,
+     -11.37
+    ],
+    "max": [
+     0.57,
+     7.506,
+     -9.03
+    ]
+   },
+   "size": [
+    2.339,
+    3.022,
+    2.339
+   ]
+  },
+  {
+   "index": 1034,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -1.39,
+     4.484,
+     -9.41
+    ],
+    "max": [
+     0.95,
+     7.506,
+     -7.07
+    ]
+   },
+   "size": [
+    2.339,
+    3.022,
+    2.339
+   ]
+  },
+  {
+   "index": 1036,
+   "name": "avalanche-barrier-run",
+   "key": "avalanche-barrier-run",
+   "meshes": 1,
+   "triangles": 808,
+   "aabb": {
+    "min": [
+     -1.02,
+     4.484,
+     -7.44
+    ],
+    "max": [
+     1.269,
+     7.506,
+     -5.366
+    ]
+   },
+   "size": [
+    2.289,
+    3.022,
+    2.074
+   ]
+  },
+  {
+   "index": 1038,
+   "name": "mountain-refuge-hut",
+   "key": "mountain-refuge-hut",
+   "meshes": 5,
+   "triangles": 1588,
+   "aabb": {
+    "min": [
+     -2.202,
+     -1.5,
+     -30.202
+    ],
+    "max": [
+     4.202,
+     2.907,
+     -23.798
+    ]
+   },
+   "size": [
+    6.404,
+    4.407,
+    6.404
+   ]
+  },
+  {
+   "index": 1048,
+   "name": "ice-axe-crampon-set",
+   "key": "ice-axe-crampon-set",
+   "meshes": 4,
+   "triangles": 888,
+   "aabb": {
+    "min": [
+     2.826,
+     -1.512,
+     -23.904
+    ],
+    "max": [
+     4.108,
+     -1.27,
+     -22.622
+    ]
+   },
+   "size": [
+    1.282,
+    0.242,
+    1.282
+   ]
+  },
+  {
+   "index": 1055,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     5.033,
+     -2.354,
+     -21.658
+    ],
+    "max": [
+     7,
+     -0.682,
+     -20.28
+    ]
+   },
+   "size": [
+    1.967,
+    1.672,
+    1.379
+   ]
+  },
+  {
+   "index": 1057,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     7,
+     -2.354,
+     -21.658
+    ],
+    "max": [
+     9,
+     -0.682,
+     -20.253
+    ]
+   },
+   "size": [
+    2,
+    1.672,
+    1.406
+   ]
+  },
+  {
+   "index": 1059,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     9,
+     -2.354,
+     -21.658
+    ],
+    "max": [
+     11,
+     -0.682,
+     -20.253
+    ]
+   },
+   "size": [
+    2,
+    1.672,
+    1.406
+   ]
+  },
+  {
+   "index": 1061,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     11,
+     -2.354,
+     -21.658
+    ],
+    "max": [
+     13,
+     -0.682,
+     -20.253
+    ]
+   },
+   "size": [
+    2,
+    1.672,
+    1.406
+   ]
+  },
+  {
+   "index": 1063,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     13,
+     -2.354,
+     -21.658
+    ],
+    "max": [
+     14.967,
+     -0.682,
+     -20.28
+    ]
+   },
+   "size": [
+    1.967,
+    1.672,
+    1.379
+   ]
+  },
+  {
+   "index": 1065,
+   "name": "alpine-fingerpost",
+   "key": "alpine-fingerpost",
+   "meshes": 1,
+   "triangles": 646,
+   "aabb": {
+    "min": [
+     2.175,
+     -1.463,
+     -23.625
+    ],
+    "max": [
+     4.225,
+     1.001,
+     -21.575
+    ]
+   },
+   "size": [
+    2.049,
+    2.464,
+    2.049
+   ]
+  },
+  {
+   "index": 1067,
+   "name": "stone-cairn",
+   "key": "stone-cairn",
+   "meshes": 2,
+   "triangles": 652,
+   "aabb": {
+    "min": [
+     3.759,
+     -1.49,
+     -24.541
+    ],
+    "max": [
+     5.041,
+     -0.425,
+     -23.259
+    ]
+   },
+   "size": [
+    1.282,
+    1.065,
+    1.282
+   ]
+  },
+  {
+   "index": 1071,
+   "name": "avalanche-gas-exploder",
+   "key": "avalanche-gas-exploder",
+   "meshes": 1,
+   "triangles": 884,
+   "aabb": {
+    "min": [
+     -3.658,
+     -1.49,
+     -23.631
+    ],
+    "max": [
+     -1.552,
+     1.474,
+     -20.499
+    ]
+   },
+   "size": [
+    2.106,
+    2.964,
+    3.132
+   ]
+  },
+  {
+   "index": 1073,
+   "name": "piste-patrol-hut",
+   "key": "piste-patrol-hut",
+   "meshes": 3,
+   "triangles": 1656,
+   "aabb": {
+    "min": [
+     11.303,
+     1.25,
+     -35.732
+    ],
+    "max": [
+     16.712,
+     5.907,
+     -30.323
+    ]
+   },
+   "size": [
+    5.409,
+    4.657,
+    5.409
+   ]
+  },
+  {
+   "index": 1079,
+   "name": "piste-patroller",
+   "key": "piste-patroller",
+   "meshes": 10,
+   "triangles": 3677,
+   "aabb": {
+    "min": [
+     15.805,
+     1.25,
+     -31.434
+    ],
+    "max": [
+     16.957,
+     3.01,
+     -29.921
+    ]
+   },
+   "size": [
+    1.152,
+    1.76,
+    1.513
+   ]
+  },
+  {
+   "index": 1132,
+   "name": "probe-and-shovel-set",
+   "key": "probe-and-shovel-set",
+   "meshes": 3,
+   "triangles": 728,
+   "aabb": {
+    "min": [
+     11.873,
+     1.235,
+     -30.733
+    ],
+    "max": [
+     13.923,
+     2.877,
+     -28.683
+    ]
+   },
+   "size": [
+    2.049,
+    1.642,
+    2.049
+   ]
+  },
+  {
+   "index": 1138,
+   "name": "weather-station-mast",
+   "key": "weather-station-mast",
+   "meshes": 3,
+   "triangles": 891,
+   "aabb": {
+    "min": [
+     18.014,
+     1.26,
+     -39.186
+    ],
+    "max": [
+     20.386,
+     6.26,
+     -36.814
+    ]
+   },
+   "size": [
+    2.372,
+    5,
+    2.372
+   ]
+  },
+  {
+   "index": 1145,
+   "name": "scree-heap",
+   "key": "scree-heap",
+   "meshes": 1,
+   "triangles": 674,
+   "aabb": {
+    "min": [
+     15.263,
+     1.019,
+     -27.937
+    ],
+    "max": [
+     18.337,
+     1.487,
+     -24.863
+    ]
+   },
+   "size": [
+    3.074,
+    0.468,
+    3.074
+   ]
+  },
+  {
+   "index": 1147,
+   "name": "alpine-hay-barn",
+   "key": "alpine-hay-barn",
+   "meshes": 2,
+   "triangles": 2074,
+   "aabb": {
+    "min": [
+     36.311,
+     -6.99,
+     15.669
+    ],
+    "max": [
+     44.489,
+     -2.714,
+     25.131
+    ]
+   },
+   "size": [
+    8.178,
+    4.276,
+    9.463
+   ]
+  },
+  {
+   "index": 1151,
+   "name": "frozen-water-trough",
+   "key": "frozen-water-trough",
+   "meshes": 1,
+   "triangles": 772,
+   "aabb": {
+    "min": [
+     36.94,
+     -6.99,
+     15.281
+    ],
+    "max": [
+     39.058,
+     -6.075,
+     16.565
+    ]
+   },
+   "size": [
+    2.118,
+    0.915,
+    1.284
+   ]
+  },
+  {
+   "index": 1153,
+   "name": "snow-capped-log-pile",
+   "key": "snow-capped-log-pile",
+   "meshes": 1,
+   "triangles": 646,
+   "aabb": {
+    "min": [
+     36.073,
+     -7.027,
+     21.342
+    ],
+    "max": [
+     38.117,
+     -6.07,
+     23.708
+    ]
+   },
+   "size": [
+    2.045,
+    0.957,
+    2.366
+   ]
+  },
+  {
+   "index": 1155,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     -16.002,
+     -13.329,
+     28.598
+    ],
+    "max": [
+     -12.798,
+     -11.282,
+     31.802
+    ]
+   },
+   "size": [
+    3.204,
+    2.047,
+    3.204
+   ]
+  },
+  {
+   "index": 1167,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 735,
+   "aabb": {
+    "min": [
+     39.398,
+     -8.156,
+     -13.602
+    ],
+    "max": [
+     42.602,
+     -6.108,
+     -10.398
+    ]
+   },
+   "size": [
+    3.204,
+    2.048,
+    3.204
+   ]
+  },
+  {
+   "index": 1179,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -20.216,
+     -13.455,
+     30.201
+    ],
+    "max": [
+     -16.984,
+     -12.108,
+     33.799
+    ]
+   },
+   "size": [
+    3.232,
+    1.347,
+    3.598
+   ]
+  },
+  {
+   "index": 1191,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 531,
+   "aabb": {
+    "min": [
+     -13.917,
+     -13.732,
+     31.033
+    ],
+    "max": [
+     -10.883,
+     -12.516,
+     33.767
+    ]
+   },
+   "size": [
+    3.033,
+    1.216,
+    2.734
+   ]
+  },
+  {
+   "index": 1203,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     38.509,
+     -8.086,
+     -15.583
+    ],
+    "max": [
+     41.491,
+     -6.634,
+     -12.417
+    ]
+   },
+   "size": [
+    2.982,
+    1.452,
+    3.165
+   ]
+  },
+  {
+   "index": 1215,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 467,
+   "aabb": {
+    "min": [
+     36.222,
+     -8.297,
+     25.96
+    ],
+    "max": [
+     38.978,
+     -6.845,
+     28.84
+    ]
+   },
+   "size": [
+    2.756,
+    1.452,
+    2.879
+   ]
+  },
+  {
+   "index": 1227,
+   "name": "alpine-ibex",
+   "key": "alpine-ibex",
+   "meshes": 1,
+   "triangles": 2844,
+   "aabb": {
+    "min": [
+     -16.873,
+     -12.615,
+     30.879
+    ],
+    "max": [
+     -15.527,
+     -11.279,
+     31.921
+    ]
+   },
+   "size": [
+    1.347,
+    1.336,
+    1.041
+   ]
+  },
+  {
+   "index": 1255,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 767,
+   "aabb": {
+    "min": [
+     -25.651,
+     10.319,
+     -5.721
+    ],
+    "max": [
+     -17.885,
+     17.074,
+     2.198
+    ]
+   },
+   "size": [
+    7.766,
+    6.755,
+    7.919
+   ]
+  },
+  {
+   "index": 1267,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 761,
+   "aabb": {
+    "min": [
+     -23.916,
+     8.305,
+     -3.083
+    ],
+    "max": [
+     -17.661,
+     13.145,
+     3.447
+    ]
+   },
+   "size": [
+    6.255,
+    4.84,
+    6.53
+   ]
+  },
+  {
+   "index": 1279,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 758,
+   "aabb": {
+    "min": [
+     -22.441,
+     5.24,
+     -0.238
+    ],
+    "max": [
+     -16.911,
+     9.948,
+     5.774
+    ]
+   },
+   "size": [
+    5.529,
+    4.708,
+    6.012
+   ]
+  },
+  {
+   "index": 1291,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 774,
+   "aabb": {
+    "min": [
+     -21.446,
+     1.508,
+     2.562
+    ],
+    "max": [
+     -16.218,
+     5.911,
+     8.152
+    ]
+   },
+   "size": [
+    5.228,
+    4.403,
+    5.59
+   ]
+  },
+  {
+   "index": 1303,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 763,
+   "aabb": {
+    "min": [
+     -14.28,
+     1.767,
+     -1.188
+    ],
+    "max": [
+     -8.299,
+     7.401,
+     5.439
+    ]
+   },
+   "size": [
+    5.981,
+    5.634,
+    6.626
+   ]
+  },
+  {
+   "index": 1315,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 769,
+   "aabb": {
+    "min": [
+     -12.753,
+     -1.106,
+     1.242
+    ],
+    "max": [
+     -7.26,
+     3.307,
+     7.065
+    ]
+   },
+   "size": [
+    5.492,
+    4.413,
+    5.823
+   ]
+  },
+  {
+   "index": 1327,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 758,
+   "aabb": {
+    "min": [
+     -11.761,
+     -4.896,
+     3.969
+    ],
+    "max": [
+     -6.614,
+     -0.47,
+     9.535
+    ]
+   },
+   "size": [
+    5.147,
+    4.425,
+    5.566
+   ]
+  },
+  {
+   "index": 1339,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 773,
+   "aabb": {
+    "min": [
+     -3.767,
+     -0.841,
+     -4.242
+    ],
+    "max": [
+     2.752,
+     4.802,
+     2.736
+    ]
+   },
+   "size": [
+    6.519,
+    5.643,
+    6.978
+   ]
+  },
+  {
+   "index": 1351,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 763,
+   "aabb": {
+    "min": [
+     -2.487,
+     -2.548,
+     -1.443
+    ],
+    "max": [
+     3.216,
+     2.056,
+     4.695
+    ]
+   },
+   "size": [
+    5.702,
+    4.604,
+    6.139
+   ]
+  },
+  {
+   "index": 1363,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 763,
+   "aabb": {
+    "min": [
+     -1.239,
+     -5.12,
+     1.267
+    ],
+    "max": [
+     4.253,
+     -0.733,
+     7.067
+    ]
+   },
+   "size": [
+    5.492,
+    4.386,
+    5.801
+   ]
+  },
+  {
+   "index": 1375,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 761,
+   "aabb": {
+    "min": [
+     -0.157,
+     -8.024,
+     3.986
+    ],
+    "max": [
+     4.744,
+     -4.409,
+     9.261
+    ]
+   },
+   "size": [
+    4.901,
+    3.614,
+    5.275
+   ]
+  },
+  {
+   "index": 1387,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -18.734,
+     -3.089,
+     7.254
+    ],
+    "max": [
+     -15.307,
+     -0.48,
+     10.352
+    ]
+   },
+   "size": [
+    3.427,
+    2.609,
+    3.098
+   ]
+  },
+  {
+   "index": 1399,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 789,
+   "aabb": {
+    "min": [
+     -16.832,
+     3.744,
+     1.229
+    ],
+    "max": [
+     -13.53,
+     6.399,
+     4.621
+    ]
+   },
+   "size": [
+    3.302,
+    2.655,
+    3.393
+   ]
+  },
+  {
+   "index": 1401,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 817,
+   "aabb": {
+    "min": [
+     3.41,
+     -6.021,
+     2.365
+    ],
+    "max": [
+     7.495,
+     -2.913,
+     6.334
+    ]
+   },
+   "size": [
+    4.084,
+    3.107,
+    3.968
+   ]
+  },
+  {
+   "index": 1403,
+   "name": "alpine-ibex",
+   "key": "alpine-ibex",
+   "meshes": 1,
+   "triangles": 2844,
+   "aabb": {
+    "min": [
+     -23.55,
+     13.96,
+     -3.054
+    ],
+    "max": [
+     -22.15,
+     15.414,
+     -2.146
+    ]
+   },
+   "size": [
+    1.401,
+    1.454,
+    0.908
+   ]
+  },
+  {
+   "index": 1431,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 912,
+   "aabb": {
+    "min": [
+     -34.421,
+     1.438,
+     7.579
+    ],
+    "max": [
+     -29.579,
+     8.199,
+     12.421
+    ]
+   },
+   "size": [
+    4.842,
+    6.761,
+    4.842
+   ]
+  },
+  {
+   "index": 1447,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -31.443,
+     0.941,
+     8.957
+    ],
+    "max": [
+     -28.857,
+     6.338,
+     11.543
+    ]
+   },
+   "size": [
+    2.586,
+    5.397,
+    2.586
+   ]
+  },
+  {
+   "index": 1459,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -32.881,
+     3.063,
+     6.429
+    ],
+    "max": [
+     -29.499,
+     8.467,
+     9.811
+    ]
+   },
+   "size": [
+    3.381,
+    5.404,
+    3.381
+   ]
+  },
+  {
+   "index": 1471,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -34.956,
+     0.269,
+     9.884
+    ],
+    "max": [
+     -31.864,
+     5.673,
+     12.976
+    ]
+   },
+   "size": [
+    3.092,
+    5.404,
+    3.092
+   ]
+  },
+  {
+   "index": 1483,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -31.412,
+     -0.935,
+     10.558
+    ],
+    "max": [
+     -28.588,
+     4.454,
+     13.382
+    ]
+   },
+   "size": [
+    2.824,
+    5.389,
+    2.824
+   ]
+  },
+  {
+   "index": 1495,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 665,
+   "aabb": {
+    "min": [
+     -33.378,
+     -1.412,
+     11.002
+    ],
+    "max": [
+     -29.962,
+     3.993,
+     14.418
+    ]
+   },
+   "size": [
+    3.415,
+    5.405,
+    3.415
+   ]
+  },
+  {
+   "index": 1507,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     -35.546,
+     1.955,
+     7.934
+    ],
+    "max": [
+     -32.734,
+     6.747,
+     10.746
+    ]
+   },
+   "size": [
+    2.813,
+    4.792,
+    2.813
+   ]
+  },
+  {
+   "index": 1517,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 898,
+   "aabb": {
+    "min": [
+     -24.75,
+     -5.53,
+     11.85
+    ],
+    "max": [
+     -20.85,
+     1.23,
+     15.75
+    ]
+   },
+   "size": [
+    3.9,
+    6.76,
+    3.9
+   ]
+  },
+  {
+   "index": 1533,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     -22.762,
+     -7.181,
+     14.308
+    ],
+    "max": [
+     -20.178,
+     -2.386,
+     16.892
+    ]
+   },
+   "size": [
+    2.584,
+    4.795,
+    2.584
+   ]
+  },
+  {
+   "index": 1543,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -26.647,
+     -5.384,
+     12.963
+    ],
+    "max": [
+     -23.113,
+     0.008,
+     16.497
+    ]
+   },
+   "size": [
+    3.533,
+    5.392,
+    3.533
+   ]
+  },
+  {
+   "index": 1555,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     -22.171,
+     -6.043,
+     12.029
+    ],
+    "max": [
+     -19.349,
+     -1.261,
+     14.851
+    ]
+   },
+   "size": [
+    2.822,
+    4.782,
+    2.822
+   ]
+  },
+  {
+   "index": 1565,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -25.246,
+     -6.435,
+     13.824
+    ],
+    "max": [
+     -21.754,
+     -1.03,
+     17.316
+    ]
+   },
+   "size": [
+    3.492,
+    5.405,
+    3.492
+   ]
+  },
+  {
+   "index": 1577,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 912,
+   "aabb": {
+    "min": [
+     -30.671,
+     -9.837,
+     19.929
+    ],
+    "max": [
+     -25.729,
+     -3.076,
+     24.871
+    ]
+   },
+   "size": [
+    4.943,
+    6.761,
+    4.943
+   ]
+  },
+  {
+   "index": 1593,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -31.581,
+     -10.213,
+     21.919
+    ],
+    "max": [
+     -28.519,
+     -4.816,
+     24.981
+    ]
+   },
+   "size": [
+    3.062,
+    5.397,
+    3.062
+   ]
+  },
+  {
+   "index": 1605,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -28.137,
+     -10.501,
+     21.913
+    ],
+    "max": [
+     -24.883,
+     -5.107,
+     25.167
+    ]
+   },
+   "size": [
+    3.254,
+    5.394,
+    3.254
+   ]
+  },
+  {
+   "index": 1617,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -27.682,
+     -9.766,
+     20.428
+    ],
+    "max": [
+     -24.858,
+     -4.368,
+     23.252
+    ]
+   },
+   "size": [
+    2.824,
+    5.398,
+    2.824
+   ]
+  },
+  {
+   "index": 1629,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 7,
+   "triangles": 765,
+   "aabb": {
+    "min": [
+     -30.958,
+     -8.625,
+     18.882
+    ],
+    "max": [
+     -27.482,
+     -2.572,
+     22.358
+    ]
+   },
+   "size": [
+    3.475,
+    6.053,
+    3.475
+   ]
+  },
+  {
+   "index": 1643,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -34.965,
+     -12.337,
+     24.235
+    ],
+    "max": [
+     -31.435,
+     -6.944,
+     27.765
+    ]
+   },
+   "size": [
+    3.531,
+    5.393,
+    3.531
+   ]
+  },
+  {
+   "index": 1655,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 7,
+   "triangles": 765,
+   "aabb": {
+    "min": [
+     -25.393,
+     -12.656,
+     26.807
+    ],
+    "max": [
+     -21.407,
+     -6.593,
+     30.793
+    ]
+   },
+   "size": [
+    3.987,
+    6.063,
+    3.987
+   ]
+  },
+  {
+   "index": 1669,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     -21.204,
+     -12.255,
+     26.996
+    ],
+    "max": [
+     -18.396,
+     -7.476,
+     29.804
+    ]
+   },
+   "size": [
+    2.807,
+    4.779,
+    2.807
+   ]
+  },
+  {
+   "index": 1679,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 898,
+   "aabb": {
+    "min": [
+     -18.861,
+     -15.296,
+     40.939
+    ],
+    "max": [
+     -14.339,
+     -8.52,
+     45.461
+    ]
+   },
+   "size": [
+    4.522,
+    6.776,
+    4.522
+   ]
+  },
+  {
+   "index": 1695,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -17.291,
+     -16.921,
+     43.409
+    ],
+    "max": [
+     -13.929,
+     -11.533,
+     46.771
+    ]
+   },
+   "size": [
+    3.362,
+    5.388,
+    3.362
+   ]
+  },
+  {
+   "index": 1707,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -16.446,
+     -15.401,
+     41.314
+    ],
+    "max": [
+     -12.954,
+     -10.009,
+     44.806
+    ]
+   },
+   "size": [
+    3.492,
+    5.392,
+    3.492
+   ]
+  },
+  {
+   "index": 1719,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     -17.589,
+     -15.052,
+     39.661
+    ],
+    "max": [
+     -14.771,
+     -10.269,
+     42.479
+    ]
+   },
+   "size": [
+    2.818,
+    4.783,
+    2.818
+   ]
+  },
+  {
+   "index": 1729,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 7,
+   "triangles": 765,
+   "aabb": {
+    "min": [
+     9.111,
+     -10.628,
+     23.311
+    ],
+    "max": [
+     13.289,
+     -4.573,
+     27.489
+    ]
+   },
+   "size": [
+    4.178,
+    6.055,
+    4.178
+   ]
+  },
+  {
+   "index": 1743,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 912,
+   "aabb": {
+    "min": [
+     6.826,
+     -11.067,
+     23.416
+    ],
+    "max": [
+     11.274,
+     -4.291,
+     27.864
+    ]
+   },
+   "size": [
+    4.449,
+    6.776,
+    4.449
+   ]
+  },
+  {
+   "index": 1759,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     8.491,
+     -9.696,
+     22.511
+    ],
+    "max": [
+     10.889,
+     -4.901,
+     24.909
+    ]
+   },
+   "size": [
+    2.399,
+    4.795,
+    2.399
+   ]
+  },
+  {
+   "index": 1769,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 551,
+   "aabb": {
+    "min": [
+     10.509,
+     -9.459,
+     22.199
+    ],
+    "max": [
+     13.331,
+     -4.671,
+     25.021
+    ]
+   },
+   "size": [
+    2.822,
+    4.788,
+    2.822
+   ]
+  },
+  {
+   "index": 1779,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     9.588,
+     -12.025,
+     26.158
+    ],
+    "max": [
+     12.172,
+     -7.239,
+     28.742
+    ]
+   },
+   "size": [
+    2.584,
+    4.786,
+    2.584
+   ]
+  },
+  {
+   "index": 1789,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 551,
+   "aabb": {
+    "min": [
+     11.973,
+     -10.87,
+     24.853
+    ],
+    "max": [
+     14.007,
+     -6.09,
+     26.887
+    ]
+   },
+   "size": [
+    2.035,
+    4.78,
+    2.035
+   ]
+  },
+  {
+   "index": 1799,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 7,
+   "triangles": 779,
+   "aabb": {
+    "min": [
+     11.867,
+     -9.969,
+     22.447
+    ],
+    "max": [
+     15.773,
+     -3.911,
+     26.353
+    ]
+   },
+   "size": [
+    3.905,
+    6.058,
+    3.905
+   ]
+  },
+  {
+   "index": 1813,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     10.719,
+     -9.772,
+     15.719
+    ],
+    "max": [
+     14.081,
+     -4.372,
+     19.081
+    ]
+   },
+   "size": [
+    3.362,
+    5.4,
+    3.362
+   ]
+  },
+  {
+   "index": 1825,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 7,
+   "triangles": 765,
+   "aabb": {
+    "min": [
+     12.404,
+     -9.021,
+     16.624
+    ],
+    "max": [
+     15.836,
+     -2.963,
+     20.056
+    ]
+   },
+   "size": [
+    3.432,
+    6.058,
+    3.432
+   ]
+  },
+  {
+   "index": 1839,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     9.378,
+     -10.469,
+     17.448
+    ],
+    "max": [
+     11.802,
+     -5.681,
+     19.872
+    ]
+   },
+   "size": [
+    2.424,
+    4.788,
+    2.424
+   ]
+  },
+  {
+   "index": 1849,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     8.917,
+     -10.234,
+     14.767
+    ],
+    "max": [
+     12.443,
+     -4.831,
+     18.293
+    ]
+   },
+   "size": [
+    3.527,
+    5.403,
+    3.527
+   ]
+  },
+  {
+   "index": 1861,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 898,
+   "aabb": {
+    "min": [
+     11.116,
+     -9.231,
+     13.626
+    ],
+    "max": [
+     16.064,
+     -2.456,
+     18.574
+    ]
+   },
+   "size": [
+    4.949,
+    6.775,
+    4.949
+   ]
+  },
+  {
+   "index": 1877,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 7,
+   "triangles": 765,
+   "aabb": {
+    "min": [
+     10.147,
+     -9.62,
+     13.397
+    ],
+    "max": [
+     14.133,
+     -3.561,
+     17.383
+    ]
+   },
+   "size": [
+    3.987,
+    6.059,
+    3.987
+   ]
+  },
+  {
+   "index": 1891,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 898,
+   "aabb": {
+    "min": [
+     2.457,
+     -11.408,
+     12.257
+    ],
+    "max": [
+     6.743,
+     -4.633,
+     16.543
+    ]
+   },
+   "size": [
+    4.287,
+    6.775,
+    4.287
+   ]
+  },
+  {
+   "index": 1907,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 898,
+   "aabb": {
+    "min": [
+     11.057,
+     -8.064,
+     10.257
+    ],
+    "max": [
+     15.343,
+     -1.291,
+     14.543
+    ]
+   },
+   "size": [
+    4.287,
+    6.773,
+    4.287
+   ]
+  },
+  {
+   "index": 1923,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     6.563,
+     -9.332,
+     9.763
+    ],
+    "max": [
+     9.037,
+     -4.547,
+     12.237
+    ]
+   },
+   "size": [
+    2.474,
+    4.785,
+    2.474
+   ]
+  },
+  {
+   "index": 1933,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 898,
+   "aabb": {
+    "min": [
+     24.126,
+     -10.161,
+     22.526
+    ],
+    "max": [
+     29.074,
+     -3.401,
+     27.474
+    ]
+   },
+   "size": [
+    4.949,
+    6.76,
+    4.949
+   ]
+  },
+  {
+   "index": 1949,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 6,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     25.642,
+     -12.398,
+     26.042
+    ],
+    "max": [
+     29.158,
+     -7.006,
+     29.558
+    ]
+   },
+   "size": [
+    3.516,
+    5.392,
+    3.516
+   ]
+  },
+  {
+   "index": 1961,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 8,
+   "triangles": 898,
+   "aabb": {
+    "min": [
+     23.421,
+     -12.988,
+     27.221
+    ],
+    "max": [
+     28.179,
+     -6.226,
+     31.979
+    ]
+   },
+   "size": [
+    4.758,
+    6.762,
+    4.758
+   ]
+  },
+  {
+   "index": 1977,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 8,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     -34.741,
+     4.061,
+     4.643
+    ],
+    "max": [
+     -27.247,
+     10.301,
+     10.156
+    ]
+   },
+   "size": [
+    7.494,
+    6.24,
+    5.513
+   ]
+  },
+  {
+   "index": 1993,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 8,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     -25.797,
+     -1.613,
+     6.748
+    ],
+    "max": [
+     -18.445,
+     5.137,
+     12.236
+    ]
+   },
+   "size": [
+    7.352,
+    6.75,
+    5.488
+   ]
+  },
+  {
+   "index": 2009,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 8,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     -38.441,
+     5.665,
+     1.505
+    ],
+    "max": [
+     -31.503,
+     12.115,
+     8.003
+    ]
+   },
+   "size": [
+    6.938,
+    6.45,
+    6.499
+   ]
+  },
+  {
+   "index": 2025,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 9,
+   "triangles": 874,
+   "aabb": {
+    "min": [
+     -29.244,
+     -6.003,
+     14.459
+    ],
+    "max": [
+     -22.316,
+     0.927,
+     18.201
+    ]
+   },
+   "size": [
+    6.929,
+    6.93,
+    3.741
+   ]
+  },
+  {
+   "index": 2043,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 8,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     37.33,
+     -6.083,
+     -30.837
+    ],
+    "max": [
+     43.775,
+     0.627,
+     -23.015
+    ]
+   },
+   "size": [
+    6.445,
+    6.71,
+    7.822
+   ]
+  },
+  {
+   "index": 2059,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 9,
+   "triangles": 874,
+   "aabb": {
+    "min": [
+     4.153,
+     -10.095,
+     9.328
+    ],
+    "max": [
+     12.36,
+     -2.785,
+     16.564
+    ]
+   },
+   "size": [
+    8.206,
+    7.31,
+    7.236
+   ]
+  },
+  {
+   "index": 2077,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 8,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     8.6,
+     -9.743,
+     9.507
+    ],
+    "max": [
+     16.17,
+     -3.093,
+     15.398
+    ]
+   },
+   "size": [
+    7.57,
+    6.65,
+    5.891
+   ]
+  },
+  {
+   "index": 2093,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 789,
+   "aabb": {
+    "min": [
+     -28.95,
+     8.471,
+     -0.45
+    ],
+    "max": [
+     -26.05,
+     9.946,
+     2.45
+    ]
+   },
+   "size": [
+    2.9,
+    1.475,
+    2.9
+   ]
+  },
+  {
+   "index": 2095,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 751,
+   "aabb": {
+    "min": [
+     -31.908,
+     8.632,
+     -1.308
+    ],
+    "max": [
+     -28.092,
+     9.99,
+     2.508
+    ]
+   },
+   "size": [
+    3.816,
+    1.358,
+    3.816
+   ]
+  },
+  {
+   "index": 2097,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 801,
+   "aabb": {
+    "min": [
+     36.532,
+     -10.424,
+     31.732
+    ],
+    "max": [
+     40.268,
+     -8.659,
+     35.468
+    ]
+   },
+   "size": [
+    3.736,
+    1.765,
+    3.736
+   ]
+  },
+  {
+   "index": 2099,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 785,
+   "aabb": {
+    "min": [
+     36.301,
+     -8.134,
+     -11.699
+    ],
+    "max": [
+     40.099,
+     -6.773,
+     -7.901
+    ]
+   },
+   "size": [
+    3.797,
+    1.361,
+    3.797
+   ]
+  },
+  {
+   "index": 2101,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 819,
+   "aabb": {
+    "min": [
+     34.06,
+     -6.972,
+     -19.44
+    ],
+    "max": [
+     36.94,
+     -5.662,
+     -16.56
+    ]
+   },
+   "size": [
+    2.88,
+    1.31,
+    2.88
+   ]
+  },
+  {
+   "index": 2103,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     31.202,
+     -5.468,
+     -23.298
+    ],
+    "max": [
+     35.798,
+     -3.828,
+     -18.702
+    ]
+   },
+   "size": [
+    4.596,
+    1.64,
+    4.596
+   ]
+  },
+  {
+   "index": 2105,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 789,
+   "aabb": {
+    "min": [
+     -22.186,
+     -6.749,
+     -32.186
+    ],
+    "max": [
+     -19.814,
+     -5.747,
+     -29.814
+    ]
+   },
+   "size": [
+    2.372,
+    1.002,
+    2.372
+   ]
+  },
+  {
+   "index": 2107,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 750,
+   "aabb": {
+    "min": [
+     -17.681,
+     -6.018,
+     -31.681
+    ],
+    "max": [
+     -13.119,
+     -4.38,
+     -27.119
+    ]
+   },
+   "size": [
+    4.563,
+    1.638,
+    4.563
+   ]
+  },
+  {
+   "index": 2109,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 809,
+   "aabb": {
+    "min": [
+     2.252,
+     -9.717,
+     6.833
+    ],
+    "max": [
+     6.021,
+     -7.041,
+     10.414
+    ]
+   },
+   "size": [
+    3.769,
+    2.676,
+    3.582
+   ]
+  },
+  {
+   "index": 2111,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 790,
+   "aabb": {
+    "min": [
+     13.862,
+     -7.761,
+     11.545
+    ],
+    "max": [
+     16.908,
+     -5.176,
+     14.344
+    ]
+   },
+   "size": [
+    3.046,
+    2.585,
+    2.799
+   ]
+  },
+  {
+   "index": 2113,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 771,
+   "aabb": {
+    "min": [
+     12.805,
+     -7.462,
+     6.518
+    ],
+    "max": [
+     17.065,
+     -5.577,
+     10.673
+    ]
+   },
+   "size": [
+    4.26,
+    1.885,
+    4.155
+   ]
+  },
+  {
+   "index": 2115,
+   "name": "bare-mountain-rowan",
+   "key": "bare-mountain-rowan",
+   "meshes": 3,
+   "triangles": 990,
+   "aabb": {
+    "min": [
+     -24.441,
+     -13.53,
+     29.746
+    ],
+    "max": [
+     -18.335,
+     -8.398,
+     35.896
+    ]
+   },
+   "size": [
+    6.106,
+    5.132,
+    6.149
+   ]
+  },
+  {
+   "index": 2121,
+   "name": "bare-mountain-rowan",
+   "key": "bare-mountain-rowan",
+   "meshes": 3,
+   "triangles": 990,
+   "aabb": {
+    "min": [
+     4.168,
+     -12.568,
+     28.005
+    ],
+    "max": [
+     10.232,
+     -7.686,
+     33.995
+    ]
+   },
+   "size": [
+    6.064,
+    4.882,
+    5.989
+   ]
+  },
+  {
+   "index": 2127,
+   "name": "bare-mountain-rowan",
+   "key": "bare-mountain-rowan",
+   "meshes": 3,
+   "triangles": 990,
+   "aabb": {
+    "min": [
+     31.193,
+     -11.648,
+     37.4
+    ],
+    "max": [
+     36.007,
+     -6.975,
+     42.6
+    ]
+   },
+   "size": [
+    4.813,
+    4.673,
+    5.2
+   ]
+  },
+  {
+   "index": 2133,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     -26.967,
+     -6.405,
+     -35.658
+    ],
+    "max": [
+     -25,
+     -4.733,
+     -34.28
+    ]
+   },
+   "size": [
+    1.967,
+    1.672,
+    1.379
+   ]
+  },
+  {
+   "index": 2135,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     -25,
+     -6.855,
+     -35.658
+    ],
+    "max": [
+     -23,
+     -5.183,
+     -34.253
+    ]
+   },
+   "size": [
+    2,
+    1.672,
+    1.406
+   ]
+  },
+  {
+   "index": 2137,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     -23,
+     -6.942,
+     -35.658
+    ],
+    "max": [
+     -21,
+     -5.27,
+     -34.253
+    ]
+   },
+   "size": [
+    2,
+    1.672,
+    1.406
+   ]
+  },
+  {
+   "index": 2139,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     -21,
+     -6.933,
+     -35.658
+    ],
+    "max": [
+     -19,
+     -5.261,
+     -34.253
+    ]
+   },
+   "size": [
+    2,
+    1.672,
+    1.406
+   ]
+  },
+  {
+   "index": 2141,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     -19,
+     -6.895,
+     -35.658
+    ],
+    "max": [
+     -17,
+     -5.223,
+     -34.253
+    ]
+   },
+   "size": [
+    2,
+    1.672,
+    1.406
+   ]
+  },
+  {
+   "index": 2143,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     -17,
+     -6.732,
+     -35.658
+    ],
+    "max": [
+     -15.033,
+     -5.06,
+     -34.28
+    ]
+   },
+   "size": [
+    1.967,
+    1.672,
+    1.379
+   ]
+  },
+  {
+   "index": 2145,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     -24.752,
+     -6.614,
+     -31.453
+    ],
+    "max": [
+     -21.248,
+     -5.267,
+     -28.547
+    ]
+   },
+   "size": [
+    3.503,
+    1.347,
+    2.905
+   ]
+  },
+  {
+   "index": 2157,
+   "name": "mountain-hare",
+   "key": "mountain-hare",
+   "meshes": 1,
+   "triangles": 2975,
+   "aabb": {
+    "min": [
+     -27.833,
+     -6.176,
+     -31.569
+    ],
+    "max": [
+     -27.367,
+     -5.642,
+     -31.231
+    ]
+   },
+   "size": [
+    0.466,
+    0.534,
+    0.337
+   ]
+  },
+  {
+   "index": 2185,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 8,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     -49.178,
+     -2.113,
+     -10.091
+    ],
+    "max": [
+     -42.682,
+     4.287,
+     -4.643
+    ]
+   },
+   "size": [
+    6.496,
+    6.4,
+    5.448
+   ]
+  },
+  {
+   "index": 2201,
+   "name": "windblown-larch",
+   "key": "windblown-larch",
+   "meshes": 9,
+   "triangles": 874,
+   "aabb": {
+    "min": [
+     -47.479,
+     -2.923,
+     -17.428
+    ],
+    "max": [
+     -39.836,
+     4.277,
+     -9.92
+    ]
+   },
+   "size": [
+    7.643,
+    7.2,
+    7.508
+   ]
+  },
+  {
+   "index": 2219,
+   "name": "bare-mountain-rowan",
+   "key": "bare-mountain-rowan",
+   "meshes": 3,
+   "triangles": 990,
+   "aabb": {
+    "min": [
+     -52.537,
+     -0.608,
+     -1.436
+    ],
+    "max": [
+     -47.499,
+     3.854,
+     3.525
+    ]
+   },
+   "size": [
+    5.038,
+    4.462,
+    4.961
+   ]
+  },
+  {
+   "index": 2225,
+   "name": "mountain-hare",
+   "key": "mountain-hare",
+   "meshes": 1,
+   "triangles": 2975,
+   "aabb": {
+    "min": [
+     -11.614,
+     -14.842,
+     42.373
+    ],
+    "max": [
+     -11.186,
+     -14.308,
+     42.827
+    ]
+   },
+   "size": [
+    0.428,
+    0.534,
+    0.454
+   ]
+  },
+  {
+   "index": 2253,
+   "name": "mountain-hare",
+   "key": "mountain-hare",
+   "meshes": 1,
+   "triangles": 2975,
+   "aabb": {
+    "min": [
+     37.967,
+     -8.536,
+     30.431
+    ],
+    "max": [
+     38.433,
+     -7.98,
+     30.769
+    ]
+   },
+   "size": [
+    0.466,
+    0.556,
+    0.337
+   ]
+  },
+  {
+   "index": 2281,
+   "name": "wooden-toboggan",
+   "key": "wooden-toboggan",
+   "meshes": 1,
+   "triangles": 806,
+   "aabb": {
+    "min": [
+     -7.833,
+     -12.991,
+     45.643
+    ],
+    "max": [
+     -6.967,
+     -12.674,
+     46.757
+    ]
+   },
+   "size": [
+    0.867,
+    0.317,
+    1.113
+   ]
+  },
+  {
+   "index": 2283,
+   "name": "mountaineer",
+   "key": "mountaineer",
+   "meshes": 9,
+   "triangles": 4727,
+   "aabb": {
+    "min": [
+     1.809,
+     -13.062,
+     46.659
+    ],
+    "max": [
+     3.394,
+     -11.269,
+     47.546
+    ]
+   },
+   "size": [
+    1.585,
+    1.793,
+    0.888
+   ]
+  },
+  {
+   "index": 2334,
+   "name": "akja-rescue-sledge",
+   "key": "akja-rescue-sledge",
+   "meshes": 3,
+   "triangles": 830,
+   "aabb": {
+    "min": [
+     15.365,
+     -13.046,
+     46.293
+    ],
+    "max": [
+     17.398,
+     -12.656,
+     47.325
+    ]
+   },
+   "size": [
+    2.034,
+    0.39,
+    1.032
+   ]
+  },
+  {
+   "index": 2341,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 765,
+   "aabb": {
+    "min": [
+     -15.612,
+     -18.454,
+     43.418
+    ],
+    "max": [
+     -8.076,
+     -11.825,
+     50.64
+    ]
+   },
+   "size": [
+    7.536,
+    6.629,
+    7.222
+   ]
+  },
+  {
+   "index": 2353,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -10.691,
+     -15.239,
+     47.892
+    ],
+    "max": [
+     -7.709,
+     -12.998,
+     51.316
+    ]
+   },
+   "size": [
+    2.982,
+    2.241,
+    3.424
+   ]
+  },
+  {
+   "index": 2365,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     -7.866,
+     -17.03,
+     51.171
+    ],
+    "max": [
+     -4.934,
+     -14.966,
+     54.036
+    ]
+   },
+   "size": [
+    2.932,
+    2.064,
+    2.865
+   ]
+  },
+  {
+   "index": 2377,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     15.4,
+     -15.961,
+     49.1
+    ],
+    "max": [
+     18.602,
+     -13.752,
+     52.496
+    ]
+   },
+   "size": [
+    3.202,
+    2.209,
+    3.396
+   ]
+  },
+  {
+   "index": 2389,
+   "name": "scree-heap",
+   "key": "scree-heap",
+   "meshes": 1,
+   "triangles": 577,
+   "aabb": {
+    "min": [
+     0.659,
+     -17.207,
+     50.776
+    ],
+    "max": [
+     4.141,
+     -15.525,
+     54.189
+    ]
+   },
+   "size": [
+    3.482,
+    1.682,
+    3.414
+   ]
+  },
+  {
+   "index": 2391,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 751,
+   "aabb": {
+    "min": [
+     -5.932,
+     -15.783,
+     48.996
+    ],
+    "max": [
+     -2.868,
+     -13.582,
+     52.229
+    ]
+   },
+   "size": [
+    3.064,
+    2.201,
+    3.233
+   ]
+  },
+  {
+   "index": 2393,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 776,
+   "aabb": {
+    "min": [
+     6.482,
+     -16.711,
+     50.397
+    ],
+    "max": [
+     9.518,
+     -14.512,
+     53.632
+    ]
+   },
+   "size": [
+    3.037,
+    2.199,
+    3.235
+   ]
+  },
+  {
+   "index": 2395,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 796,
+   "aabb": {
+    "min": [
+     11.704,
+     -15.231,
+     48.614
+    ],
+    "max": [
+     14.296,
+     -13.154,
+     51.441
+    ]
+   },
+   "size": [
+    2.591,
+    2.077,
+    2.827
+   ]
+  },
+  {
+   "index": 2397,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 771,
+   "aabb": {
+    "min": [
+     -2.302,
+     -15.411,
+     48.04
+    ],
+    "max": [
+     1.102,
+     -12.961,
+     51.635
+    ]
+   },
+   "size": [
+    3.404,
+    2.451,
+    3.595
+   ]
+  },
+  {
+   "index": 2399,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 788,
+   "aabb": {
+    "min": [
+     8.624,
+     -17.706,
+     51.361
+    ],
+    "max": [
+     12.176,
+     -15.099,
+     55.156
+    ]
+   },
+   "size": [
+    3.553,
+    2.607,
+    3.795
+   ]
+  },
+  {
+   "index": 2401,
+   "name": "snow-laden-spruce",
+   "key": "snow-laden-spruce",
+   "meshes": 5,
+   "triangles": 537,
+   "aabb": {
+    "min": [
+     -3.825,
+     -16.678,
+     51.575
+    ],
+    "max": [
+     -1.375,
+     -11.889,
+     54.025
+    ]
+   },
+   "size": [
+    2.449,
+    4.789,
+    2.449
+   ]
+  },
+  {
+   "index": 2411,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     40.342,
+     -7.884,
+     -17.6
+    ],
+    "max": [
+     41.856,
+     -6.198,
+     -15.633
+    ]
+   },
+   "size": [
+    1.514,
+    1.686,
+    1.967
+   ]
+  },
+  {
+   "index": 2413,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 656,
+   "aabb": {
+    "min": [
+     40.342,
+     -7.755,
+     -19.6
+    ],
+    "max": [
+     41.889,
+     -6.069,
+     -17.6
+    ]
+   },
+   "size": [
+    1.548,
+    1.686,
+    2
+   ]
+  },
+  {
+   "index": 2415,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 656,
+   "aabb": {
+    "min": [
+     40.342,
+     -7.703,
+     -21.6
+    ],
+    "max": [
+     41.889,
+     -6.017,
+     -19.6
+    ]
+   },
+   "size": [
+    1.548,
+    1.686,
+    2
+   ]
+  },
+  {
+   "index": 2417,
+   "name": "snow-fence-run",
+   "key": "snow-fence-run",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     40.342,
+     -7.612,
+     -23.567
+    ],
+    "max": [
+     41.856,
+     -5.926,
+     -21.6
+    ]
+   },
+   "size": [
+    1.514,
+    1.686,
+    1.967
+   ]
+  },
+  {
+   "index": 2419,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     42.046,
+     -8.864,
+     -22.354
+    ],
+    "max": [
+     45.154,
+     -7.767,
+     -19.246
+    ]
+   },
+   "size": [
+    3.108,
+    1.097,
+    3.108
+   ]
+  },
+  {
+   "index": 2421,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 804,
+   "aabb": {
+    "min": [
+     41.638,
+     -8.914,
+     -17.862
+    ],
+    "max": [
+     44.162,
+     -7.965,
+     -15.338
+    ]
+   },
+   "size": [
+    2.524,
+    0.949,
+    2.524
+   ]
+  },
+  {
+   "index": 2423,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 788,
+   "aabb": {
+    "min": [
+     40.793,
+     -8.135,
+     -25.207
+    ],
+    "max": [
+     43.607,
+     -7.03,
+     -22.393
+    ]
+   },
+   "size": [
+    2.814,
+    1.105,
+    2.814
+   ]
+  },
+  {
+   "index": 2425,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     26.751,
+     0.406,
+     -36.31
+    ],
+    "max": [
+     33.083,
+     5.281,
+     -30.516
+    ]
+   },
+   "size": [
+    6.332,
+    4.874,
+    5.794
+   ]
+  },
+  {
+   "index": 2437,
+   "name": "alpine-ibex",
+   "key": "alpine-ibex",
+   "meshes": 1,
+   "triangles": 2844,
+   "aabb": {
+    "min": [
+     30.034,
+     2.2,
+     -34.691
+    ],
+    "max": [
+     31.266,
+     3.352,
+     -34.009
+    ]
+   },
+   "size": [
+    1.231,
+    1.152,
+    0.682
+   ]
+  },
+  {
+   "index": 2465,
+   "name": "rock-outcrop",
+   "key": "rock-outcrop",
+   "meshes": 6,
+   "triangles": 755,
+   "aabb": {
+    "min": [
+     34.546,
+     -4.329,
+     -33.929
+    ],
+    "max": [
+     40.097,
+     0.02,
+     -28.967
+    ]
+   },
+   "size": [
+    5.551,
+    4.35,
+    4.961
+   ]
+  },
+  {
+   "index": 2477,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     32.735,
+     -3.333,
+     -28.608
+    ],
+    "max": [
+     35.78,
+     -0.67,
+     -24.872
+    ]
+   },
+   "size": [
+    3.045,
+    2.662,
+    3.736
+   ]
+  },
+  {
+   "index": 2489,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     31.943,
+     -3.787,
+     -40.379
+    ],
+    "max": [
+     35.275,
+     -1.48,
+     -37.486
+    ]
+   },
+   "size": [
+    3.333,
+    2.307,
+    2.893
+   ]
+  },
+  {
+   "index": 2501,
+   "name": "boulder-field-cluster",
+   "key": "boulder-field-cluster",
+   "meshes": 6,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     25.718,
+     2.402,
+     -40.365
+    ],
+    "max": [
+     28.765,
+     4.574,
+     -37.289
+    ]
+   },
+   "size": [
+    3.047,
+    2.172,
+    3.076
+   ]
+  },
+  {
+   "index": 2513,
+   "name": "scree-heap",
+   "key": "scree-heap",
+   "meshes": 1,
+   "triangles": 670,
+   "aabb": {
+    "min": [
+     29.198,
+     -2.212,
+     -29.435
+    ],
+    "max": [
+     32.402,
+     -0.352,
+     -26.349
+    ]
+   },
+   "size": [
+    3.204,
+    1.861,
+    3.086
+   ]
+  },
+  {
+   "index": 2515,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 809,
+   "aabb": {
+    "min": [
+     31.567,
+     -1.519,
+     -37.435
+    ],
+    "max": [
+     34.841,
+     0.692,
+     -34.116
+    ]
+   },
+   "size": [
+    3.274,
+    2.211,
+    3.32
+   ]
+  },
+  {
+   "index": 2517,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 780,
+   "aabb": {
+    "min": [
+     34.783,
+     -4.001,
+     -36.646
+    ],
+    "max": [
+     38.156,
+     -1.52,
+     -33.237
+    ]
+   },
+   "size": [
+    3.373,
+    2.48,
+    3.409
+   ]
+  },
+  {
+   "index": 2519,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 781,
+   "aabb": {
+    "min": [
+     28.677,
+     -1.704,
+     -42.334
+    ],
+    "max": [
+     32.392,
+     1.193,
+     -38.63
+    ]
+   },
+   "size": [
+    3.715,
+    2.897,
+    3.704
+   ]
+  },
+  {
+   "index": 2521,
+   "name": "dwarf-pine-mat",
+   "key": "dwarf-pine-mat",
+   "meshes": 1,
+   "triangles": 753,
+   "aabb": {
+    "min": [
+     26.013,
+     -0.022,
+     -32.183
+    ],
+    "max": [
+     29.318,
+     2.539,
+     -28.814
+    ]
+   },
+   "size": [
+    3.306,
+    2.561,
+    3.37
+   ]
+  },
+  {
+   "index": 2523,
+   "name": "piste-floodlight-mast",
+   "key": "piste-floodlight-mast",
+   "meshes": 1,
+   "triangles": 762,
+   "aabb": {
+    "min": [
+     36.426,
+     -7.376,
+     -7.684
+    ],
+    "max": [
+     38.717,
+     -1.316,
+     -5.35
+    ]
+   },
+   "size": [
+    2.291,
+    6.06,
+    2.334
+   ]
+  },
+  {
+   "index": 2525,
+   "name": "skier",
+   "key": "skier",
+   "meshes": 9,
+   "triangles": 3217,
+   "aabb": {
+    "min": [
+     17.664,
+     -2.173,
+     -16.473
+    ],
+    "max": [
+     19.124,
+     -0.299,
+     -14.768
+    ]
+   },
+   "size": [
+    1.46,
+    1.874,
+    1.705
+   ]
+  },
+  {
+   "index": 2576,
+   "name": "skier",
+   "key": "skier",
+   "meshes": 9,
+   "triangles": 3161,
+   "aabb": {
+    "min": [
+     18.813,
+     -2.24,
+     -15.3
+    ],
+    "max": [
+     20.272,
+     -0.446,
+     -13.719
+    ]
+   },
+   "size": [
+    1.459,
+    1.794,
+    1.581
+   ]
+  },
+  {
+   "index": 2627,
+   "name": "skier",
+   "key": "skier",
+   "meshes": 9,
+   "triangles": 3161,
+   "aabb": {
+    "min": [
+     26.179,
+     -7.161,
+     8.83
+    ],
+    "max": [
+     27.771,
+     -5.291,
+     10.495
+    ]
+   },
+   "size": [
+    1.592,
+    1.87,
+    1.665
+   ]
+  },
+  {
+   "index": 2678,
+   "name": "skier",
+   "key": "skier",
+   "meshes": 9,
+   "triangles": 3177,
+   "aabb": {
+    "min": [
+     27.242,
+     -7.238,
+     9.954
+    ],
+    "max": [
+     28.305,
+     -6.002,
+     11.047
+    ]
+   },
+   "size": [
+    1.062,
+    1.236,
+    1.093
+   ]
+  },
+  {
+   "index": 2729,
+   "name": "lift-operator",
+   "key": "lift-operator",
+   "meshes": 8,
+   "triangles": 4907,
+   "aabb": {
+    "min": [
+     25.908,
+     1.05,
+     -16.795
+    ],
+    "max": [
+     27.461,
+     2.786,
+     -15.601
+    ]
+   },
+   "size": [
+    1.553,
+    1.736,
+    1.194
+   ]
+  },
+  {
+   "index": 2778,
+   "name": "alpine-snow-terrain",
+   "key": "alpine-snow-terrain",
+   "meshes": 2,
+   "triangles": 43504,
+   "aabb": {
+    "min": [
+     -60.519,
+     -23.272,
+     -57.861
+    ],
+    "max": [
+     51.05,
+     18.281,
+     54.898
+    ]
+   },
+   "size": [
+    111.569,
+    41.552,
+    112.759
+   ]
+  }
+ ],
+ "id": "alpine-and-snow",
+ "label": "Alpine Ski Resort",
+ "sourceBytes": 42212824,
+ "spawn": {
+  "x": 8.45,
+  "y": -12.5,
+  "z": 41.97,
+  "on": "23 floor pieces at y=-13"
+ }
+}

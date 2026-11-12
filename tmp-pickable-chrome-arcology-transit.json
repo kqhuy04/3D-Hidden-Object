@@ -1,0 +1,102 @@
+[
+  {
+    "id": "arc-well",
+    "name": "Stone well",
+    "centre": [
+      -5.99,
+      0.94,
+      -36.4
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -7.34,
+      "pz": -35.55,
+      "pitch": 0.37,
+      "hit": "arc-well",
+      "bodyToItem": 1.61,
+      "camToItem": 9.72,
+      "prompt": true
+    }
+  },
+  {
+    "id": "arc-barrel",
+    "name": "Wooden barrel",
+    "centre": [
+      36.1,
+      0.51,
+      -13.4
+    ],
+    "ok": true,
+    "from": {
+      "angle": 3.14,
+      "px": 36.44,
+      "pz": -16.36,
+      "pitch": 0.32,
+      "hit": "arc-barrel",
+      "bodyToItem": 3.05,
+      "camToItem": 11.15,
+      "prompt": true
+    }
+  },
+  {
+    "id": "arc-hay",
+    "name": "Hay bale",
+    "centre": [
+      30,
+      0.35,
+      11.4
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 31.5,
+      "pz": 12.9,
+      "pitch": 0.62,
+      "hit": "arc-hay",
+      "bodyToItem": 2.25,
+      "camToItem": 10.4,
+      "prompt": true
+    }
+  },
+  {
+    "id": "arc-chest",
+    "name": "Treasure chest",
+    "centre": [
+      16.5,
+      0.3,
+      15.6
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 15.15,
+      "pz": 16.45,
+      "pitch": 0.64,
+      "hit": "arc-chest",
+      "bodyToItem": 1.79,
+      "camToItem": 10,
+      "prompt": true
+    }
+  },
+  {
+    "id": "arc-candle",
+    "name": "Candle cluster",
+    "centre": [
+      44,
+      0.32,
+      -12
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 44,
+      "pz": -10.5,
+      "pitch": 0.68,
+      "hit": "arc-candle",
+      "bodyToItem": 1.71,
+      "camToItem": 9.94,
+      "prompt": true
+    }
+  }
+]

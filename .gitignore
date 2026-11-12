@@ -1,0 +1,22 @@
+# Build output
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+
+# Kit archives and the scenes extracted from them. `maps/work/` is 807 MB of
+# intermediate `scene.glb` files that `tools/prepare-maps.mjs` writes and reads
+# back; the playable maps it produces live in `public/assets/maps/`. The
+# archives are re-downloadable from polyfork, the built maps are not.
+maps/work/
+*.zip
+
+# Screenshots and scratch harnesses write here, never into the repo.
+tmp-covers/
+# The CDP harness launches Chrome with a profile in the project root.
+tmp-chrome-profile/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.log

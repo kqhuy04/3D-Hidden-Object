@@ -1,0 +1,637 @@
+{
+  "toilet": [
+    {
+      "id": "toilet-2edbd9",
+      "title": "Toilet",
+      "tris": 480,
+      "size": {
+        "x": 0.4,
+        "y": 0.8,
+        "z": 0.7
+      },
+      "kit": "open-plan-b2ebd3"
+    },
+    {
+      "id": "portable-toilet-a3f1a2",
+      "title": "Portable Toilet",
+      "tris": 836,
+      "size": {
+        "x": 1.2,
+        "y": 2.48,
+        "z": 1.2
+      },
+      "kit": "construction-site-9e40b0"
+    },
+    {
+      "id": "seafront-toilet-block-c3f643",
+      "title": "Seafront Toilet Block",
+      "tris": 1414,
+      "size": {
+        "x": 4,
+        "y": 3.21,
+        "z": 4
+      },
+      "kit": "coast-and-boardwalk-d883fd"
+    },
+    {
+      "id": "toilet-block-da51a4",
+      "title": "Toilet Block",
+      "tris": 1548,
+      "size": {
+        "x": 6,
+        "y": 3.98,
+        "z": 3
+      },
+      "kit": "stadium-5db167"
+    },
+    {
+      "id": "timber-wash-house-c7e7d5",
+      "title": "Timber Wash House",
+      "tris": 1724,
+      "size": {
+        "x": 8,
+        "y": 3.19,
+        "z": 4
+      },
+      "kit": "campground-lake-ad32b0"
+    },
+    {
+      "id": "skatepark-clubhouse-c7b8b4",
+      "title": "Skatepark Clubhouse",
+      "tris": 1998,
+      "size": {
+        "x": 8,
+        "y": 4,
+        "z": 6
+      },
+      "kit": "skatepark-0922a9"
+    }
+  ],
+  "shower": [
+    {
+      "id": "shower-enclosure-a50c16",
+      "title": "Shower Enclosure",
+      "tris": 514,
+      "size": {
+        "x": 1,
+        "y": 2,
+        "z": 1
+      },
+      "kit": "open-plan-b2ebd3"
+    },
+    {
+      "id": "safety-shower-and-eyewash-1f5f20",
+      "title": "Safety Shower and Eyewash",
+      "tris": 676,
+      "size": {
+        "x": 0.64,
+        "y": 2.4,
+        "z": 0.84
+      },
+      "kit": "research-lab-9b9b5d"
+    },
+    {
+      "id": "beach-shower-post-719ac6",
+      "title": "Beach Shower Post",
+      "tris": 792,
+      "size": {
+        "x": 1,
+        "y": 2.4,
+        "z": 1
+      },
+      "kit": "coast-and-boardwalk-d883fd"
+    },
+    {
+      "id": "air-shower-airlock-cabin-ed83ae",
+      "title": "Air Shower Airlock Cabin",
+      "tris": 890,
+      "size": {
+        "x": 1.8,
+        "y": 2.8,
+        "z": 1.8
+      },
+      "kit": "research-lab-9b9b5d"
+    },
+    {
+      "id": "timber-wash-house-c7e7d5",
+      "title": "Timber Wash House",
+      "tris": 1724,
+      "size": {
+        "x": 8,
+        "y": 3.19,
+        "z": 4
+      },
+      "kit": "campground-lake-ad32b0"
+    }
+  ],
+  "fireplace": [
+    {
+      "id": "hearth-log-bench-c3c5ec",
+      "title": "Hearth Log Bench",
+      "tris": 682,
+      "size": {
+        "x": 1.5,
+        "y": 0.45,
+        "z": 0.6
+      },
+      "kit": "chronos-hearth-kit-4827fd"
+    },
+    {
+      "id": "deck-safe-clay-cooking-c8345b",
+      "title": "Deck-Safe Clay Cooking Hearth",
+      "tris": 839,
+      "size": {
+        "x": 1,
+        "y": 1.13,
+        "z": 1
+      },
+      "kit": "chronos-hearth-kit-4827fd"
+    },
+    {
+      "id": "leather-forge-bellows-7f6d42",
+      "title": "Leather Forge Bellows",
+      "tris": 872,
+      "size": {
+        "x": 0.96,
+        "y": 1.76,
+        "z": 1.39
+      },
+      "kit": "three-kingdoms-settlements-a-1e817b"
+    },
+    {
+      "id": "adjustable-hearth-cooking-lift-bc42d1",
+      "title": "Adjustable Hearth Cooking Lift",
+      "tris": 958,
+      "size": {
+        "x": 1.36,
+        "y": 1.48,
+        "z": 0.54
+      },
+      "kit": "chronos-hearth-kit-4827fd"
+    },
+    {
+      "id": "workshop-exhaust-modules-94599c",
+      "title": "Workshop Exhaust Modules",
+      "tris": 1010,
+      "size": {
+        "x": 1,
+        "y": 3.27,
+        "z": 1
+      },
+      "kit": "chronos-hearth-kit-4827fd"
+    },
+    {
+      "id": "blacksmith-s-shop-9c5f43",
+      "title": "Blacksmith's Shop",
+      "tris": 1339,
+      "size": {
+        "x": 6,
+        "y": 6.2,
+        "z": 6
+      },
+      "kit": "frontier-town-a0085b"
+    },
+    {
+      "id": "chronos-hearth-terrain-764465",
+      "title": "Chronos Hearth Terrain",
+      "tris": 19218,
+      "size": {
+        "x": 95.04,
+        "y": 15.74,
+        "z": 71.04
+      },
+      "kit": "chronos-hearth-kit-4827fd"
+    }
+  ],
+  "pool table": [
+    {
+      "id": "concrete-transition-module-dc0ddf",
+      "title": "Concrete Transition Module",
+      "tris": 66,
+      "size": {
+        "x": 2,
+        "y": 1.83,
+        "z": 4
+      },
+      "kit": "skatepark-0922a9"
+    },
+    {
+      "id": "cut-diamond-1fd38b",
+      "title": "Cut Diamond",
+      "tris": 96,
+      "size": {
+        "x": 0.12,
+        "y": 0.1,
+        "z": 0.1
+      },
+      "kit": "loot-lode-kit-63191e"
+    },
+    {
+      "id": "cut-amethyst-494337",
+      "title": "Cut Amethyst",
+      "tris": 98,
+      "size": {
+        "x": 0.1,
+        "y": 0.05,
+        "z": 0.12
+      },
+      "kit": "loot-lode-kit-63191e"
+    },
+    {
+      "id": "cut-emerald-74d180",
+      "title": "Cut Emerald",
+      "tris": 112,
+      "size": {
+        "x": 0.12,
+        "y": 0.03,
+        "z": 0.1
+      },
+      "kit": "loot-lode-kit-63191e"
+    },
+    {
+      "id": "cut-ruby-3ded3a",
+      "title": "Cut Ruby",
+      "tris": 112,
+      "size": {
+        "x": 0.12,
+        "y": 0.12,
+        "z": 0.05
+      },
+      "kit": "loot-lode-kit-63191e"
+    },
+    {
+      "id": "cut-sapphire-04ba83",
+      "title": "Cut Sapphire",
+      "tris": 126,
+      "size": {
+        "x": 0.12,
+        "y": 0.06,
+        "z": 0.12
+      },
+      "kit": "loot-lode-kit-63191e"
+    },
+    {
+      "id": "bistro-table-877a6d",
+      "title": "Bistro Table",
+      "tris": 208,
+      "size": {
+        "x": 0.7,
+        "y": 0.75,
+        "z": 0.7
+      },
+      "kit": "modern-restaurant-cafe-01ea4c"
+    },
+    {
+      "id": "pool-deck-paver-tile-074d8f",
+      "title": "Pool Deck Paver Tile",
+      "tris": 214,
+      "size": {
+        "x": 2,
+        "y": 0.05,
+        "z": 2
+      },
+      "kit": "casino-3dd029"
+    }
+  ],
+  "garden gnome": [
+    {
+      "id": "garden-rock-7f5d60",
+      "title": "Garden Rock",
+      "tris": 140,
+      "size": {
+        "x": 0.72,
+        "y": 0.42,
+        "z": 0.64
+      },
+      "kit": "cozy-farm-cc979f"
+    },
+    {
+      "id": "landscape-pebble-0dc027",
+      "title": "Landscape Pebble",
+      "tris": 254,
+      "size": {
+        "x": 0.26,
+        "y": 0.14,
+        "z": 0.22
+      },
+      "kit": "modern-restaurant-cafe-01ea4c"
+    },
+    {
+      "id": "garden-rock-2d3b51",
+      "title": "Garden Rock",
+      "tris": 340,
+      "size": {
+        "x": 0.9,
+        "y": 0.52,
+        "z": 0.82
+      },
+      "kit": "japanese-suburban-city-street-baa482"
+    },
+    {
+      "id": "garden-hoe-3974ad",
+      "title": "Garden Hoe",
+      "tris": 358,
+      "size": {
+        "x": 0.4,
+        "y": 1.5,
+        "z": 0.26
+      },
+      "kit": "cozy-farm-cc979f"
+    },
+    {
+      "id": "landscape-block-retaining-wall-2732a2",
+      "title": "Landscape Block Retaining Wall",
+      "tris": 460,
+      "size": {
+        "x": 4,
+        "y": 0.8,
+        "z": 0.3
+      },
+      "kit": "neighborhood-pathways-kit-a992cf"
+    },
+    {
+      "id": "sculpted-pine-e45d4f",
+      "title": "Sculpted Pine",
+      "tris": 510,
+      "size": {
+        "x": 3.34,
+        "y": 3.17,
+        "z": 2.93
+      },
+      "kit": "medieval-japan-cb01ad"
+    },
+    {
+      "id": "garden-birdbath-9671de",
+      "title": "Garden Birdbath",
+      "tris": 512,
+      "size": {
+        "x": 0.67,
+        "y": 0.9,
+        "z": 0.67
+      },
+      "kit": "neighborhood-pathways-kit-a992cf"
+    },
+    {
+      "id": "ornamental-front-yard-tree-c6781a",
+      "title": "Ornamental Front-Yard Tree",
+      "tris": 526,
+      "size": {
+        "x": 3.12,
+        "y": 4.5,
+        "z": 2.71
+      },
+      "kit": "neighborhood-pathways-kit-a992cf"
+    }
+  ],
+  "hammock": [
+    {
+      "id": "hammock-on-posts-7d5c47",
+      "title": "Hammock on Posts",
+      "tris": 782,
+      "size": {
+        "x": 3.75,
+        "y": 1.5,
+        "z": 0.98
+      },
+      "kit": "campground-lake-ad32b0"
+    }
+  ],
+  "postbox": [
+    {
+      "id": "curbside-mailbox-0e0736",
+      "title": "Curbside Mailbox",
+      "tris": 374,
+      "size": {
+        "x": 0.31,
+        "y": 1.26,
+        "z": 0.63
+      },
+      "kit": "neighborhood-pathways-kit-a992cf"
+    },
+    {
+      "id": "mailbox-8e36e8",
+      "title": "Mailbox",
+      "tris": 450,
+      "size": {
+        "x": 0.71,
+        "y": 1.2,
+        "z": 0.69
+      },
+      "kit": "nyc-city-kit-fbca88"
+    },
+    {
+      "id": "red-post-box-f12045",
+      "title": "Red Post Box",
+      "tris": 562,
+      "size": {
+        "x": 0.55,
+        "y": 1.4,
+        "z": 0.57
+      },
+      "kit": "japanese-suburban-city-street-baa482"
+    },
+    {
+      "id": "self-registration-post-e4636f",
+      "title": "Self-Registration Post",
+      "tris": 614,
+      "size": {
+        "x": 0.51,
+        "y": 1.4,
+        "z": 0.52
+      },
+      "kit": "campground-lake-ad32b0"
+    },
+    {
+      "id": "letters-to-santa-mailbox-f223e5",
+      "title": "Letters-to-Santa Mailbox",
+      "tris": 648,
+      "size": {
+        "x": 0.68,
+        "y": 1.34,
+        "z": 0.8
+      },
+      "kit": "christmas-village-fbc27a"
+    }
+  ],
+  "atm": [],
+  "kitchen sink": [
+    {
+      "id": "ceramic-floor-tile-ecf05f",
+      "title": "Ceramic Floor Tile",
+      "tris": 172,
+      "size": {
+        "x": 1,
+        "y": 0.05,
+        "z": 1
+      },
+      "kit": "open-plan-b2ebd3"
+    },
+    {
+      "id": "kitchen-resin-floor-tile-4c2150",
+      "title": "Kitchen Resin Floor Tile",
+      "tris": 220,
+      "size": {
+        "x": 2,
+        "y": 0.05,
+        "z": 2
+      },
+      "kit": "modern-restaurant-cafe-01ea4c"
+    },
+    {
+      "id": "base-cabinet-run-71d050",
+      "title": "Base Cabinet Run",
+      "tris": 230,
+      "size": {
+        "x": 1,
+        "y": 0.85,
+        "z": 0.6
+      },
+      "kit": "open-plan-b2ebd3"
+    },
+    {
+      "id": "plain-wall-segment-143b6d",
+      "title": "Plain Wall Segment",
+      "tris": 272,
+      "size": {
+        "x": 1,
+        "y": 2.6,
+        "z": 0.1
+      },
+      "kit": "open-plan-b2ebd3"
+    },
+    {
+      "id": "kitchen-extraction-canopy-94df44",
+      "title": "Kitchen Extraction Canopy",
+      "tris": 276,
+      "size": {
+        "x": 1.6,
+        "y": 1.2,
+        "z": 0.92
+      },
+      "kit": "modern-restaurant-cafe-01ea4c"
+    },
+    {
+      "id": "kitchen-sink-7ea438",
+      "title": "Kitchen Sink",
+      "tris": 374,
+      "size": {
+        "x": 1,
+        "y": 0.56,
+        "z": 0.5
+      },
+      "kit": "open-plan-b2ebd3"
+    },
+    {
+      "id": "tea-point-counter-module-1ad43e",
+      "title": "Tea Point Counter Module",
+      "tris": 392,
+      "size": {
+        "x": 1.6,
+        "y": 1.14,
+        "z": 0.82
+      },
+      "kit": "office-794453"
+    },
+    {
+      "id": "slim-led-light-bar-a6bb6f",
+      "title": "Slim LED Light Bar",
+      "tris": 444,
+      "size": {
+        "x": 1,
+        "y": 0.18,
+        "z": 0.38
+      },
+      "kit": "office-reefscape-kit-1afd7c"
+    }
+  ],
+  "washing line": [
+    {
+      "id": "round-path-stone-4130f3",
+      "title": "Round Path Stone",
+      "tris": 52,
+      "size": {
+        "x": 0.7,
+        "y": 0.06,
+        "z": 0.57
+      },
+      "kit": "nature-forest-kit-f29d6a"
+    },
+    {
+      "id": "path-stone-b-6ed75c",
+      "title": "Path Stone B",
+      "tris": 66,
+      "size": {
+        "x": 0.62,
+        "y": 0.05,
+        "z": 0.3
+      },
+      "kit": "medieval-village-kit-ca0b43"
+    },
+    {
+      "id": "small-path-stone-1679ff",
+      "title": "Small Path Stone",
+      "tris": 76,
+      "size": {
+        "x": 0.6,
+        "y": 0.06,
+        "z": 0.57
+      },
+      "kit": "pirate-cove-2ebea4"
+    },
+    {
+      "id": "slab-path-stone-e526f7",
+      "title": "Slab Path Stone",
+      "tris": 76,
+      "size": {
+        "x": 1.1,
+        "y": 0.06,
+        "z": 0.7
+      },
+      "kit": "nature-forest-kit-f29d6a"
+    },
+    {
+      "id": "path-stone-a-aead48",
+      "title": "Path Stone A",
+      "tris": 80,
+      "size": {
+        "x": 0.9,
+        "y": 0.06,
+        "z": 0.75
+      },
+      "kit": "medieval-village-kit-ca0b43"
+    },
+    {
+      "id": "large-path-stone-1b0844",
+      "title": "Large Path Stone",
+      "tris": 80,
+      "size": {
+        "x": 1.1,
+        "y": 0.06,
+        "z": 1.03
+      },
+      "kit": "pirate-cove-2ebea4"
+    },
+    {
+      "id": "a-running-track-tile-daf991",
+      "title": "Running Track Tile",
+      "tris": 80,
+      "size": {
+        "x": 4,
+        "y": 0.06,
+        "z": 4
+      },
+      "kit": "stadium-5db167"
+    },
+    {
+      "id": "turf-pitch-tile-aca1ef",
+      "title": "Turf Pitch Tile",
+      "tris": 100,
+      "size": {
+        "x": 4,
+        "y": 0.06,
+        "z": 4
+      },
+      "kit": "stadium-5db167"
+    }
+  ]
+}

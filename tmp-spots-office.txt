@@ -1,0 +1,16 @@
+# office  bounds -12,-0,-8 .. 12,3,8  spawn 0.5,-1.9
+# 12 surfaces, 6 spread, showing 6
+  T  x    -4.5  z       1  top   0.77  d   5.7  stand (-2.8, 1) gap 1.7
+  T  x     4.5  z     5.5  top   0.77  d   8.5  stand (2.6, 5.8) gap 1.87
+  T  x       9  z    -0.5  top    1.2  d   8.7  stand (6.6, 2.3) gap 3.7
+  T  x    -4.5  z     5.5  top   0.77  d   8.9  stand (-4.1, 7.1) gap 1.63
+  T  x      -9  z       1  top   0.77  d   9.9  stand (-9.2, 1) gap 0.2
+  T  x      -9  z     5.5  top   0.78  d    12  stand (-8.4, 6) gap 0.8
+# 7 open ground spots
+  G  x     0.5  z      -3  y   0.05  d   1.1
+  G  x     5.5  z       2  y   0.05  d   6.4
+  G  x      -2  z     4.5  y   0.05  d   6.9
+  G  x      -7  z      -3  y   0.05  d   7.5
+  G  x    10.5  z      -3  y   0.05  d  10.1
+  G  x    -9.5  z     4.5  y   0.77  d  11.8
+  G  x    10.5  z       7  y   0.05  d  13.4

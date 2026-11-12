@@ -1,0 +1,87 @@
+[
+  {
+    "id": "symphony-bale",
+    "ok": true,
+    "spot": {
+      "0": -6.5,
+      "1": 0.45,
+      "2": 0,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 1.6,
+        "angle": 5.5
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "symphony-sink",
+    "ok": true,
+    "spot": {
+      "0": 7,
+      "1": 0.85,
+      "2": 7.5,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 1.6,
+        "angle": 0.79
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "symphony-tractor",
+    "ok": true,
+    "spot": {
+      "0": -21.5,
+      "1": 0.73,
+      "2": 6,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 2.5,
+        "angle": 0.79
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "symphony-vending",
+    "ok": true,
+    "spot": {
+      "0": -15.5,
+      "1": 0.85,
+      "2": -6,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 2.1,
+        "angle": 2.36
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "symphony-chair",
+    "ok": true,
+    "spot": {
+      "x": 1.5,
+      "z": -2,
+      "y": 0.45,
+      "d": 13.1,
+      "kind": "G",
+      "ok": true,
+      "best": {
+        "ring": 1.7,
+        "angle": 0
+      }
+    },
+    "triedCount": 1
+  }
+]

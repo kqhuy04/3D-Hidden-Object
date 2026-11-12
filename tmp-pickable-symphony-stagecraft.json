@@ -1,0 +1,102 @@
+[
+  {
+    "id": "symphony-bale",
+    "name": "Hay bale",
+    "centre": [
+      -6.5,
+      0.71,
+      0
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -7.85,
+      "pz": 2.15,
+      "pitch": 0.32,
+      "hit": "symphony-bale",
+      "bodyToItem": 2.58,
+      "camToItem": 10.68,
+      "prompt": true
+    }
+  },
+  {
+    "id": "symphony-sink",
+    "name": "Kitchen sink",
+    "centre": [
+      7,
+      1.13,
+      7.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 8.35,
+      "pz": 9.65,
+      "pitch": 0.18,
+      "hit": "symphony-sink",
+      "bodyToItem": 2.54,
+      "camToItem": 10.57,
+      "prompt": true
+    }
+  },
+  {
+    "id": "symphony-tractor",
+    "name": "Riding mower",
+    "centre": [
+      -21.54,
+      1.38,
+      5.98
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -21.21,
+      "pz": 8.94,
+      "pitch": 0.07,
+      "hit": "symphony-tractor",
+      "bodyToItem": 2.99,
+      "camToItem": 10.99,
+      "prompt": true
+    }
+  },
+  {
+    "id": "symphony-vending",
+    "name": "Vending machine",
+    "centre": [
+      -15.5,
+      1.8,
+      -6
+    ],
+    "ok": true,
+    "from": {
+      "angle": 1.57,
+      "px": -15.35,
+      "pz": -6.65,
+      "pitch": 0.91,
+      "hit": "symphony-vending",
+      "bodyToItem": 0.68,
+      "camToItem": 8.85,
+      "prompt": true
+    }
+  },
+  {
+    "id": "symphony-chair",
+    "name": "Office chair",
+    "centre": [
+      1.5,
+      0.89,
+      -2
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 1.83,
+      "pz": -1.96,
+      "pitch": 1.1,
+      "hit": "symphony-chair",
+      "bodyToItem": 0.74,
+      "camToItem": 9.11,
+      "prompt": true
+    }
+  }
+]

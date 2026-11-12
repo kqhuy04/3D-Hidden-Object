@@ -1,0 +1,13425 @@
+{
+ "file": "/assets/maps/chrome-arcology-transit.glb",
+ "bytes": 2508996,
+ "generatedAt": "2026-11-10T03:49:18.098Z",
+ "structure": {
+  "nodes": 2320,
+  "meshes": 1041,
+  "materials": 542,
+  "images": 0,
+  "partContainer": "chrome-arcology-transit-kit-87a0e1",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 544,
+  "keys": 48,
+  "triangles": 275603,
+  "meshes": 1045,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "faceted-shrub-blob",
+   "instances": 111,
+   "triangles": 42021,
+   "maxExtent": 1.985,
+   "hasBounds": true
+  },
+  {
+   "key": "composite-plaza-tile",
+   "instances": 73,
+   "triangles": 21316,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "ornamental-grass-tuft",
+   "instances": 42,
+   "triangles": 21672,
+   "maxExtent": 0.83,
+   "hasBounds": true
+  },
+  {
+   "key": "service-deck-tile",
+   "instances": 39,
+   "triangles": 13884,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "pastel-flowering-plant",
+   "instances": 38,
+   "triangles": 26410,
+   "maxExtent": 0.381,
+   "hasBounds": true
+  },
+  {
+   "key": "sculptural-canopy-tree",
+   "instances": 38,
+   "triangles": 19080,
+   "maxExtent": 7.979,
+   "hasBounds": true
+  },
+  {
+   "key": "floating-capsule-bench",
+   "instances": 36,
+   "triangles": 13368,
+   "maxExtent": 2.761,
+   "hasBounds": true
+  },
+  {
+   "key": "two-lane-street-tile",
+   "instances": 33,
+   "triangles": 11100,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "landscape-boulder",
+   "instances": 27,
+   "triangles": 6804,
+   "maxExtent": 1.774,
+   "hasBounds": true
+  },
+  {
+   "key": "arc-street-lamp",
+   "instances": 14,
+   "triangles": 5870,
+   "maxExtent": 6,
+   "hasBounds": true
+  },
+  {
+   "key": "composite-supply-crate",
+   "instances": 8,
+   "triangles": 3136,
+   "maxExtent": 1.228,
+   "hasBounds": true
+  },
+  {
+   "key": "wheeled-city-coupe",
+   "instances": 8,
+   "triangles": 8208,
+   "maxExtent": 4.5,
+   "hasBounds": true
+  },
+  {
+   "key": "modular-planter-trough",
+   "instances": 5,
+   "triangles": 1940,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "balustrade-railing-run",
+   "instances": 4,
+   "triangles": 752,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "city-commuter",
+   "instances": 4,
+   "triangles": 13388,
+   "maxExtent": 1.866,
+   "hasBounds": true
+  },
+  {
+   "key": "commuter-hover-pod",
+   "instances": 4,
+   "triangles": 3344,
+   "maxExtent": 4.897,
+   "hasBounds": true
+  },
+  {
+   "key": "crossing-and-pad-decal",
+   "instances": 4,
+   "triangles": 1188,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "kerb-run",
+   "instances": 4,
+   "triangles": 1808,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "neon-sign-pylon",
+   "instances": 4,
+   "triangles": 1860,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "vehicle-charging-post",
+   "instances": 4,
+   "triangles": 1928,
+   "maxExtent": 1.4,
+   "hasBounds": true
+  },
+  {
+   "key": "recycling-capsule-bin",
+   "instances": 3,
+   "triangles": 1850,
+   "maxExtent": 1.2,
+   "hasBounds": true
+  },
+  {
+   "key": "sky-bridge-span",
+   "instances": 3,
+   "triangles": 1716,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "capsule-residential-tower",
+   "instances": 2,
+   "triangles": 3610,
+   "maxExtent": 58.57,
+   "hasBounds": true
+  },
+  {
+   "key": "eight-wheel-industrial-hauler",
+   "instances": 2,
+   "triangles": 4112,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "hauler-cargo-trailer",
+   "instances": 2,
+   "triangles": 2764,
+   "maxExtent": 11.965,
+   "hasBounds": true
+  },
+  {
+   "key": "holo-billboard-frame",
+   "instances": 2,
+   "triangles": 784,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "hover-cargo-skiff",
+   "instances": 2,
+   "triangles": 2336,
+   "maxExtent": 9.079,
+   "hasBounds": true
+  },
+  {
+   "key": "maintenance-technician",
+   "instances": 2,
+   "triangles": 6982,
+   "maxExtent": 2.022,
+   "hasBounds": true
+  },
+  {
+   "key": "security-patrol-cruiser",
+   "instances": 2,
+   "triangles": 1224,
+   "maxExtent": 5.5,
+   "hasBounds": true
+  },
+  {
+   "key": "service-drone-bot",
+   "instances": 2,
+   "triangles": 1204,
+   "maxExtent": 0.7,
+   "hasBounds": true
+  },
+  {
+   "key": "slab-apartment-block",
+   "instances": 2,
+   "triangles": 2768,
+   "maxExtent": 28.9,
+   "hasBounds": true
+  },
+  {
+   "key": "transit-shelter-canopy",
+   "instances": 2,
+   "triangles": 284,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "transit-station-module",
+   "instances": 2,
+   "triangles": 1379,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "vertical-farm-tower",
+   "instances": 2,
+   "triangles": 3160,
+   "maxExtent": 41,
+   "hasBounds": true
+  },
+  {
+   "key": "articulated-transit-bus",
+   "instances": 1,
+   "triangles": 2578,
+   "maxExtent": 16,
+   "hasBounds": true
+  },
+  {
+   "key": "boxy-delivery-van",
+   "instances": 1,
+   "triangles": 1116,
+   "maxExtent": 6,
+   "hasBounds": true
+  },
+  {
+   "key": "chrome-arcology-transit-terrain",
+   "instances": 1,
+   "triangles": 3956,
+   "maxExtent": 156,
+   "hasBounds": true
+  },
+  {
+   "key": "civic-dome-pavilion",
+   "instances": 1,
+   "triangles": 980,
+   "maxExtent": 20,
+   "hasBounds": true
+  },
+  {
+   "key": "civic-security-officer",
+   "instances": 1,
+   "triangles": 3887,
+   "maxExtent": 1.797,
+   "hasBounds": true
+  },
+  {
+   "key": "elevated-landing-pad",
+   "instances": 1,
+   "triangles": 780,
+   "maxExtent": 12.54,
+   "hasBounds": true
+  },
+  {
+   "key": "hover-scooter",
+   "instances": 1,
+   "triangles": 994,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "monolith-office-tower",
+   "instances": 1,
+   "triangles": 1352,
+   "maxExtent": 80.9,
+   "hasBounds": true
+  },
+  {
+   "key": "multi-wheel-crawler-loader",
+   "instances": 1,
+   "triangles": 2188,
+   "maxExtent": 9.96,
+   "hasBounds": true
+  },
+  {
+   "key": "plaza-stair-block",
+   "instances": 1,
+   "triangles": 562,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "retail-podium-arcade",
+   "instances": 1,
+   "triangles": 580,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "rooftop-antenna-mast",
+   "instances": 1,
+   "triangles": 594,
+   "maxExtent": 5,
+   "hasBounds": true
+  },
+  {
+   "key": "six-wheel-utility-truck",
+   "instances": 1,
+   "triangles": 2162,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "vehicle-depot-hangar",
+   "instances": 1,
+   "triangles": 624,
+   "maxExtent": 16,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 314,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -68
+    ],
+    "max": [
+     -20,
+     0.11,
+     -60
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 3,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -60
+    ],
+    "max": [
+     -20,
+     0.11,
+     -52
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 5,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -52
+    ],
+    "max": [
+     -20,
+     0.11,
+     -44
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 7,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -44
+    ],
+    "max": [
+     -20,
+     0.11,
+     -36
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 9,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -36
+    ],
+    "max": [
+     -20,
+     0.11,
+     -28
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 11,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -28
+    ],
+    "max": [
+     -20,
+     0.11,
+     -20
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 13,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -20
+    ],
+    "max": [
+     -20,
+     0.11,
+     -12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 15,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -12
+    ],
+    "max": [
+     -20,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 17,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -4
+    ],
+    "max": [
+     -20,
+     0.11,
+     4
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 19,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     4
+    ],
+    "max": [
+     -20,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 21,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     -44
+    ],
+    "max": [
+     -12,
+     0.11,
+     -36
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 23,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 314,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -44
+    ],
+    "max": [
+     -4,
+     0.11,
+     -36
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 25,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     -44
+    ],
+    "max": [
+     -28,
+     0.11,
+     -36
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 27,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 314,
+   "aabb": {
+    "min": [
+     -44,
+     0,
+     -44
+    ],
+    "max": [
+     -36,
+     0.11,
+     -36
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 29,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     -12
+    ],
+    "max": [
+     -28,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 31,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 314,
+   "aabb": {
+    "min": [
+     -44,
+     0,
+     -12
+    ],
+    "max": [
+     -36,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 33,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     4
+    ],
+    "max": [
+     -28,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 35,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -44,
+     0,
+     4
+    ],
+    "max": [
+     -36,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 37,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 314,
+   "aabb": {
+    "min": [
+     -52,
+     0,
+     4
+    ],
+    "max": [
+     -44,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 39,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     4
+    ],
+    "max": [
+     -12,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 41,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     4
+    ],
+    "max": [
+     -4,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 43,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     4
+    ],
+    "max": [
+     4,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 45,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     4
+    ],
+    "max": [
+     12,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 47,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     4
+    ],
+    "max": [
+     20,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 49,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     4
+    ],
+    "max": [
+     28,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 51,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     4
+    ],
+    "max": [
+     36,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 53,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     4
+    ],
+    "max": [
+     44,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 55,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 370,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     4
+    ],
+    "max": [
+     52,
+     0.11,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 57,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     12
+    ],
+    "max": [
+     52,
+     0.11,
+     20
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 59,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     20
+    ],
+    "max": [
+     52,
+     0.11,
+     28
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 61,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     28
+    ],
+    "max": [
+     52,
+     0.11,
+     36
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 63,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     36
+    ],
+    "max": [
+     52,
+     0.11,
+     44
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 65,
+   "name": "two-lane-street-tile",
+   "key": "two-lane-street-tile",
+   "meshes": 1,
+   "triangles": 314,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     44
+    ],
+    "max": [
+     52,
+     0.11,
+     52
+    ]
+   },
+   "size": [
+    8,
+    0.11,
+    8
+   ]
+  },
+  {
+   "index": 67,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -36
+    ],
+    "max": [
+     -12,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 69,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -32
+    ],
+    "max": [
+     -12,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 71,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -28
+    ],
+    "max": [
+     -12,
+     0.085,
+     -24
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 73,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -24
+    ],
+    "max": [
+     -12,
+     0.085,
+     -20
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 75,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -20
+    ],
+    "max": [
+     -12,
+     0.085,
+     -16
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 77,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -16
+    ],
+    "max": [
+     -12,
+     0.085,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 79,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -12
+    ],
+    "max": [
+     -12,
+     0.085,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 81,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -8
+    ],
+    "max": [
+     -12,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 83,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -4
+    ],
+    "max": [
+     -12,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 85,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -36
+    ],
+    "max": [
+     -8,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 87,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -32
+    ],
+    "max": [
+     -8,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 89,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -28
+    ],
+    "max": [
+     -8,
+     0.085,
+     -24
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 91,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -24
+    ],
+    "max": [
+     -8,
+     0.085,
+     -20
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 93,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -20
+    ],
+    "max": [
+     -8,
+     0.085,
+     -16
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 95,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -16
+    ],
+    "max": [
+     -8,
+     0.085,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 97,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -12
+    ],
+    "max": [
+     -8,
+     0.085,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 99,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -8
+    ],
+    "max": [
+     -8,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 101,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -4
+    ],
+    "max": [
+     -8,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 103,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -36
+    ],
+    "max": [
+     -4,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 105,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -32
+    ],
+    "max": [
+     -4,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 107,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -8
+    ],
+    "max": [
+     -4,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 109,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -4
+    ],
+    "max": [
+     -4,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 111,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -36
+    ],
+    "max": [
+     0,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 113,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -32
+    ],
+    "max": [
+     0,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 115,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -8
+    ],
+    "max": [
+     0,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 117,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -4
+    ],
+    "max": [
+     0,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 119,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -36
+    ],
+    "max": [
+     4,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 121,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -32
+    ],
+    "max": [
+     4,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 123,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -8
+    ],
+    "max": [
+     4,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 125,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -4
+    ],
+    "max": [
+     4,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 127,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -36
+    ],
+    "max": [
+     8,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 129,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -32
+    ],
+    "max": [
+     8,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 131,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -8
+    ],
+    "max": [
+     8,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 133,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -4
+    ],
+    "max": [
+     8,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 135,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -36
+    ],
+    "max": [
+     12,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 137,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -32
+    ],
+    "max": [
+     12,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 139,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -8
+    ],
+    "max": [
+     12,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 141,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -4
+    ],
+    "max": [
+     12,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 143,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -36
+    ],
+    "max": [
+     16,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 145,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -32
+    ],
+    "max": [
+     16,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 147,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -28
+    ],
+    "max": [
+     16,
+     0.085,
+     -24
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 149,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -24
+    ],
+    "max": [
+     16,
+     0.085,
+     -20
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 151,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -20
+    ],
+    "max": [
+     16,
+     0.085,
+     -16
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 153,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -16
+    ],
+    "max": [
+     16,
+     0.085,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 155,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -12
+    ],
+    "max": [
+     16,
+     0.085,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 157,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -8
+    ],
+    "max": [
+     16,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 159,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -4
+    ],
+    "max": [
+     16,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 161,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -36
+    ],
+    "max": [
+     20,
+     0.085,
+     -32
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 163,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -32
+    ],
+    "max": [
+     20,
+     0.085,
+     -28
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 165,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -28
+    ],
+    "max": [
+     20,
+     0.085,
+     -24
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 167,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -24
+    ],
+    "max": [
+     20,
+     0.085,
+     -20
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 169,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -20
+    ],
+    "max": [
+     20,
+     0.085,
+     -16
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 171,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -16
+    ],
+    "max": [
+     20,
+     0.085,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 173,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -12
+    ],
+    "max": [
+     20,
+     0.085,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 175,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -8
+    ],
+    "max": [
+     20,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 177,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -4
+    ],
+    "max": [
+     20,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 179,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     -16
+    ],
+    "max": [
+     24,
+     0.085,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 181,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     -12
+    ],
+    "max": [
+     24,
+     0.085,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 183,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     -8
+    ],
+    "max": [
+     24,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 185,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     -4
+    ],
+    "max": [
+     24,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 187,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     -16
+    ],
+    "max": [
+     28,
+     0.085,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 189,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     -12
+    ],
+    "max": [
+     28,
+     0.085,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 191,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     -8
+    ],
+    "max": [
+     28,
+     0.085,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 193,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     -4
+    ],
+    "max": [
+     28,
+     0.085,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 195,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     -16
+    ],
+    "max": [
+     32,
+     0.11,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 199,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     -12
+    ],
+    "max": [
+     32,
+     0.11,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 203,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     -8
+    ],
+    "max": [
+     32,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 207,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     -4
+    ],
+    "max": [
+     32,
+     0.11,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 211,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     -16
+    ],
+    "max": [
+     36,
+     0.11,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 215,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     -12
+    ],
+    "max": [
+     36,
+     0.11,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 219,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     -8
+    ],
+    "max": [
+     36,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 223,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     -4
+    ],
+    "max": [
+     36,
+     0.11,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 227,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     -16
+    ],
+    "max": [
+     40,
+     0.11,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 231,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     -12
+    ],
+    "max": [
+     40,
+     0.11,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 235,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     -8
+    ],
+    "max": [
+     40,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 239,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     -4
+    ],
+    "max": [
+     40,
+     0.11,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 243,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     -16
+    ],
+    "max": [
+     44,
+     0.11,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 247,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     -12
+    ],
+    "max": [
+     44,
+     0.11,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 251,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     -8
+    ],
+    "max": [
+     44,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 255,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     -4
+    ],
+    "max": [
+     44,
+     0.11,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 259,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     -16
+    ],
+    "max": [
+     48,
+     0.11,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 263,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     -12
+    ],
+    "max": [
+     48,
+     0.11,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 267,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     -8
+    ],
+    "max": [
+     48,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 271,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     44,
+     0,
+     -4
+    ],
+    "max": [
+     48,
+     0.11,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 275,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     48,
+     0,
+     -16
+    ],
+    "max": [
+     52,
+     0.11,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 279,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     48,
+     0,
+     -12
+    ],
+    "max": [
+     52,
+     0.11,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 283,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     48,
+     0,
+     -8
+    ],
+    "max": [
+     52,
+     0.11,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 287,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     48,
+     0,
+     -4
+    ],
+    "max": [
+     52,
+     0.11,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 291,
+   "name": "kerb-run",
+   "key": "kerb-run",
+   "meshes": 1,
+   "triangles": 452,
+   "aabb": {
+    "min": [
+     -16,
+     0.01,
+     -36
+    ],
+    "max": [
+     -12,
+     0.211,
+     -35.7
+    ]
+   },
+   "size": [
+    4,
+    0.201,
+    0.3
+   ]
+  },
+  {
+   "index": 293,
+   "name": "kerb-run",
+   "key": "kerb-run",
+   "meshes": 1,
+   "triangles": 452,
+   "aabb": {
+    "min": [
+     -12,
+     0.01,
+     -36
+    ],
+    "max": [
+     -8,
+     0.211,
+     -35.7
+    ]
+   },
+   "size": [
+    4,
+    0.201,
+    0.3
+   ]
+  },
+  {
+   "index": 295,
+   "name": "kerb-run",
+   "key": "kerb-run",
+   "meshes": 1,
+   "triangles": 452,
+   "aabb": {
+    "min": [
+     -8,
+     0.01,
+     -36
+    ],
+    "max": [
+     -4,
+     0.211,
+     -35.7
+    ]
+   },
+   "size": [
+    4,
+    0.201,
+    0.3
+   ]
+  },
+  {
+   "index": 297,
+   "name": "kerb-run",
+   "key": "kerb-run",
+   "meshes": 1,
+   "triangles": 452,
+   "aabb": {
+    "min": [
+     -4,
+     0.01,
+     -36
+    ],
+    "max": [
+     0,
+     0.211,
+     -35.7
+    ]
+   },
+   "size": [
+    4,
+    0.201,
+    0.3
+   ]
+  },
+  {
+   "index": 299,
+   "name": "balustrade-railing-run",
+   "key": "balustrade-railing-run",
+   "meshes": 3,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -16,
+     0.06,
+     -0.158
+    ],
+    "max": [
+     -12,
+     1.16,
+     -0.002
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.156
+   ]
+  },
+  {
+   "index": 304,
+   "name": "balustrade-railing-run",
+   "key": "balustrade-railing-run",
+   "meshes": 3,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -12,
+     0.06,
+     -0.158
+    ],
+    "max": [
+     -8,
+     1.16,
+     -0.002
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.156
+   ]
+  },
+  {
+   "index": 309,
+   "name": "balustrade-railing-run",
+   "key": "balustrade-railing-run",
+   "meshes": 3,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -8,
+     0.06,
+     -0.158
+    ],
+    "max": [
+     -4,
+     1.16,
+     -0.002
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.156
+   ]
+  },
+  {
+   "index": 314,
+   "name": "balustrade-railing-run",
+   "key": "balustrade-railing-run",
+   "meshes": 3,
+   "triangles": 188,
+   "aabb": {
+    "min": [
+     -4,
+     0.06,
+     -0.158
+    ],
+    "max": [
+     0,
+     1.16,
+     -0.002
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.156
+   ]
+  },
+  {
+   "index": 319,
+   "name": "monolith-office-tower",
+   "key": "monolith-office-tower",
+   "meshes": 2,
+   "triangles": 1352,
+   "aabb": {
+    "min": [
+     -9.75,
+     0.01,
+     -60
+    ],
+    "max": [
+     6.25,
+     80.91,
+     -44
+    ]
+   },
+   "size": [
+    16,
+    80.9,
+    16
+   ]
+  },
+  {
+   "index": 322,
+   "name": "retail-podium-arcade",
+   "key": "retail-podium-arcade",
+   "meshes": 6,
+   "triangles": 580,
+   "aabb": {
+    "min": [
+     14,
+     0.01,
+     -52
+    ],
+    "max": [
+     26,
+     8.91,
+     -40
+    ]
+   },
+   "size": [
+    12,
+    8.9,
+    12
+   ]
+  },
+  {
+   "index": 331,
+   "name": "sky-bridge-span",
+   "key": "sky-bridge-span",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     6,
+     4.445,
+     -50
+    ],
+    "max": [
+     14,
+     8.445,
+     -46
+    ]
+   },
+   "size": [
+    8,
+    4,
+    4
+   ]
+  },
+  {
+   "index": 333,
+   "name": "rooftop-antenna-mast",
+   "key": "rooftop-antenna-mast",
+   "meshes": 4,
+   "triangles": 594,
+   "aabb": {
+    "min": [
+     22.266,
+     8.01,
+     -50.5
+    ],
+    "max": [
+     23.734,
+     13.01,
+     -49.5
+    ]
+   },
+   "size": [
+    1.469,
+    5,
+    1
+   ]
+  },
+  {
+   "index": 341,
+   "name": "capsule-residential-tower",
+   "key": "capsule-residential-tower",
+   "meshes": 2,
+   "triangles": 1706,
+   "aabb": {
+    "min": [
+     -60,
+     0.01,
+     -11.98
+    ],
+    "max": [
+     -52,
+     50.58,
+     -4.02
+    ]
+   },
+   "size": [
+    8,
+    50.57,
+    7.96
+   ]
+  },
+  {
+   "index": 344,
+   "name": "capsule-residential-tower",
+   "key": "capsule-residential-tower",
+   "meshes": 2,
+   "triangles": 1904,
+   "aabb": {
+    "min": [
+     -52,
+     0.01,
+     -11.98
+    ],
+    "max": [
+     -44,
+     58.58,
+     -4.02
+    ]
+   },
+   "size": [
+    8,
+    58.57,
+    7.96
+   ]
+  },
+  {
+   "index": 347,
+   "name": "slab-apartment-block",
+   "key": "slab-apartment-block",
+   "meshes": 2,
+   "triangles": 1384,
+   "aabb": {
+    "min": [
+     -46,
+     0.01,
+     -36
+    ],
+    "max": [
+     -34,
+     28.91,
+     -24
+    ]
+   },
+   "size": [
+    12,
+    28.9,
+    12
+   ]
+  },
+  {
+   "index": 350,
+   "name": "slab-apartment-block",
+   "key": "slab-apartment-block",
+   "meshes": 2,
+   "triangles": 1384,
+   "aabb": {
+    "min": [
+     -46,
+     0.01,
+     -24
+    ],
+    "max": [
+     -34,
+     28.91,
+     -12
+    ]
+   },
+   "size": [
+    12,
+    28.9,
+    12
+   ]
+  },
+  {
+   "index": 353,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 340,
+   "aabb": {
+    "min": [
+     -33.006,
+     0.01,
+     -20.286
+    ],
+    "max": [
+     -30.994,
+     0.47,
+     -19.714
+    ]
+   },
+   "size": [
+    2.012,
+    0.46,
+    0.572
+   ]
+  },
+  {
+   "index": 355,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 340,
+   "aabb": {
+    "min": [
+     -33.006,
+     0.01,
+     -16.286
+    ],
+    "max": [
+     -30.994,
+     0.47,
+     -15.714
+    ]
+   },
+   "size": [
+    2.012,
+    0.46,
+    0.572
+   ]
+  },
+  {
+   "index": 357,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     -33.475,
+     0.01,
+     -12.325
+    ],
+    "max": [
+     -30.525,
+     6.01,
+     -11.675
+    ]
+   },
+   "size": [
+    2.95,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 359,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -34.943,
+     0.01,
+     -7.799
+    ],
+    "max": [
+     -31.057,
+     7.989,
+     -4.201
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 363,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     -42,
+     0.11,
+     -9.25
+    ],
+    "max": [
+     -40,
+     1.67,
+     -4.75
+    ]
+   },
+   "size": [
+    2,
+    1.56,
+    4.5
+   ]
+  },
+  {
+   "index": 365,
+   "name": "transit-station-module",
+   "key": "transit-station-module",
+   "meshes": 5,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     20,
+     0.01,
+     16
+    ],
+    "max": [
+     32,
+     8.01,
+     24
+    ]
+   },
+   "size": [
+    12,
+    8,
+    8
+   ]
+  },
+  {
+   "index": 375,
+   "name": "transit-station-module",
+   "key": "transit-station-module",
+   "meshes": 5,
+   "triangles": 687,
+   "aabb": {
+    "min": [
+     32,
+     0.01,
+     16
+    ],
+    "max": [
+     40,
+     8.01,
+     24
+    ]
+   },
+   "size": [
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "index": 385,
+   "name": "plaza-stair-block",
+   "key": "plaza-stair-block",
+   "meshes": 1,
+   "triangles": 562,
+   "aabb": {
+    "min": [
+     12,
+     0.01,
+     18
+    ],
+    "max": [
+     20,
+     4.01,
+     22
+    ]
+   },
+   "size": [
+    8,
+    4,
+    4
+   ]
+  },
+  {
+   "index": 387,
+   "name": "transit-shelter-canopy",
+   "key": "transit-shelter-canopy",
+   "meshes": 2,
+   "triangles": 142,
+   "aabb": {
+    "min": [
+     22,
+     0.01,
+     13.1
+    ],
+    "max": [
+     26,
+     2.66,
+     14.9
+    ]
+   },
+   "size": [
+    4,
+    2.65,
+    1.8
+   ]
+  },
+  {
+   "index": 391,
+   "name": "transit-shelter-canopy",
+   "key": "transit-shelter-canopy",
+   "meshes": 2,
+   "triangles": 142,
+   "aabb": {
+    "min": [
+     26,
+     0.01,
+     13.1
+    ],
+    "max": [
+     30,
+     2.66,
+     14.9
+    ]
+   },
+   "size": [
+    4,
+    2.65,
+    1.8
+   ]
+  },
+  {
+   "index": 395,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 404,
+   "aabb": {
+    "min": [
+     17.96,
+     0.01,
+     13.593
+    ],
+    "max": [
+     20.04,
+     0.47,
+     14.27
+    ]
+   },
+   "size": [
+    2.079,
+    0.46,
+    0.677
+   ]
+  },
+  {
+   "index": 397,
+   "name": "recycling-capsule-bin",
+   "key": "recycling-capsule-bin",
+   "meshes": 2,
+   "triangles": 602,
+   "aabb": {
+    "min": [
+     16.107,
+     0.01,
+     13.607
+    ],
+    "max": [
+     16.893,
+     1.21,
+     14.393
+    ]
+   },
+   "size": [
+    0.785,
+    1.2,
+    0.785
+   ]
+  },
+  {
+   "index": 401,
+   "name": "city-commuter",
+   "key": "city-commuter",
+   "meshes": 6,
+   "triangles": 3319,
+   "aabb": {
+    "min": [
+     25.191,
+     0.01,
+     15.275
+    ],
+    "max": [
+     26.809,
+     1.876,
+     15.925
+    ]
+   },
+   "size": [
+    1.618,
+    1.866,
+    0.651
+   ]
+  },
+  {
+   "index": 444,
+   "name": "neon-sign-pylon",
+   "key": "neon-sign-pylon",
+   "meshes": 1,
+   "triangles": 465,
+   "aabb": {
+    "min": [
+     41.5,
+     0.01,
+     13.5
+    ],
+    "max": [
+     42.5,
+     4.01,
+     14.5
+    ]
+   },
+   "size": [
+    1,
+    4,
+    1
+   ]
+  },
+  {
+   "index": 446,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     33.675,
+     0.01,
+     12.525
+    ],
+    "max": [
+     34.325,
+     6.01,
+     15.475
+    ]
+   },
+   "size": [
+    0.65,
+    6,
+    2.95
+   ]
+  },
+  {
+   "index": 448,
+   "name": "articulated-transit-bus",
+   "key": "articulated-transit-bus",
+   "meshes": 12,
+   "triangles": 2578,
+   "aabb": {
+    "min": [
+     22,
+     0.01,
+     7.5
+    ],
+    "max": [
+     38,
+     3.81,
+     10.5
+    ]
+   },
+   "size": [
+    16,
+    3.8,
+    3
+   ]
+  },
+  {
+   "index": 478,
+   "name": "vehicle-depot-hangar",
+   "key": "vehicle-depot-hangar",
+   "meshes": 3,
+   "triangles": 624,
+   "aabb": {
+    "min": [
+     32,
+     0.01,
+     -32
+    ],
+    "max": [
+     48,
+     14.279,
+     -16
+    ]
+   },
+   "size": [
+    16,
+    14.269,
+    16
+   ]
+  },
+  {
+   "index": 483,
+   "name": "civic-dome-pavilion",
+   "key": "civic-dome-pavilion",
+   "meshes": 3,
+   "triangles": 980,
+   "aabb": {
+    "min": [
+     -8,
+     0.06,
+     -28
+    ],
+    "max": [
+     12,
+     10.16,
+     -8
+    ]
+   },
+   "size": [
+    20,
+    10.1,
+    20
+   ]
+  },
+  {
+   "index": 489,
+   "name": "eight-wheel-industrial-hauler",
+   "key": "eight-wheel-industrial-hauler",
+   "meshes": 9,
+   "triangles": 2056,
+   "aabb": {
+    "min": [
+     40,
+     0.01,
+     -4
+    ],
+    "max": [
+     52,
+     4.81,
+     0
+    ]
+   },
+   "size": [
+    12,
+    4.8,
+    4
+   ]
+  },
+  {
+   "index": 511,
+   "name": "hauler-cargo-trailer",
+   "key": "hauler-cargo-trailer",
+   "meshes": 8,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     29.974,
+     0.01,
+     -4
+    ],
+    "max": [
+     41.939,
+     5.36,
+     0
+    ]
+   },
+   "size": [
+    11.965,
+    5.35,
+    4
+   ]
+  },
+  {
+   "index": 527,
+   "name": "multi-wheel-crawler-loader",
+   "key": "multi-wheel-crawler-loader",
+   "meshes": 14,
+   "triangles": 2188,
+   "aabb": {
+    "min": [
+     38.151,
+     0.06,
+     -22.845
+    ],
+    "max": [
+     42.131,
+     4.61,
+     -12.885
+    ]
+   },
+   "size": [
+    3.98,
+    4.55,
+    9.96
+   ]
+  },
+  {
+   "index": 560,
+   "name": "vehicle-charging-post",
+   "key": "vehicle-charging-post",
+   "meshes": 2,
+   "triangles": 482,
+   "aabb": {
+    "min": [
+     49.7,
+     0.06,
+     -10.3
+    ],
+    "max": [
+     50.3,
+     1.46,
+     -9.7
+    ]
+   },
+   "size": [
+    0.6,
+    1.4,
+    0.6
+   ]
+  },
+  {
+   "index": 564,
+   "name": "vehicle-charging-post",
+   "key": "vehicle-charging-post",
+   "meshes": 2,
+   "triangles": 482,
+   "aabb": {
+    "min": [
+     49.7,
+     0.06,
+     -6.3
+    ],
+    "max": [
+     50.3,
+     1.46,
+     -5.7
+    ]
+   },
+   "size": [
+    0.6,
+    1.4,
+    0.6
+   ]
+  },
+  {
+   "index": 568,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     34.8,
+     0.06,
+     -14.6
+    ],
+    "max": [
+     36,
+     1.288,
+     -13.4
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 572,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     34.8,
+     1.29,
+     -14.6
+    ],
+    "max": [
+     36,
+     2.518,
+     -13.4
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 576,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     36.1,
+     0.06,
+     -13.4
+    ],
+    "max": [
+     37.3,
+     1.288,
+     -12.2
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 580,
+   "name": "maintenance-technician",
+   "key": "maintenance-technician",
+   "meshes": 6,
+   "triangles": 3491,
+   "aabb": {
+    "min": [
+     34.332,
+     0.06,
+     -13.209
+    ],
+    "max": [
+     34.975,
+     1.861,
+     -11.187
+    ]
+   },
+   "size": [
+    0.643,
+    1.801,
+    2.022
+   ]
+  },
+  {
+   "index": 623,
+   "name": "service-drone-bot",
+   "key": "service-drone-bot",
+   "meshes": 3,
+   "triangles": 602,
+   "aabb": {
+    "min": [
+     41.65,
+     0.06,
+     -6.85
+    ],
+    "max": [
+     42.35,
+     0.726,
+     -6.15
+    ]
+   },
+   "size": [
+    0.7,
+    0.666,
+    0.7
+   ]
+  },
+  {
+   "index": 631,
+   "name": "crossing-and-pad-decal",
+   "key": "crossing-and-pad-decal",
+   "meshes": 1,
+   "triangles": 490,
+   "aabb": {
+    "min": [
+     36,
+     0.052,
+     -12
+    ],
+    "max": [
+     44,
+     0.068,
+     -4
+    ]
+   },
+   "size": [
+    8,
+    0.016,
+    8
+   ]
+  },
+  {
+   "index": 633,
+   "name": "hover-cargo-skiff",
+   "key": "hover-cargo-skiff",
+   "meshes": 4,
+   "triangles": 1168,
+   "aabb": {
+    "min": [
+     22.5,
+     1.01,
+     -14.5
+    ],
+    "max": [
+     25.5,
+     2.51,
+     -5.5
+    ]
+   },
+   "size": [
+    3,
+    1.5,
+    9
+   ]
+  },
+  {
+   "index": 641,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     23.6,
+     1.8,
+     -13.2
+    ],
+    "max": [
+     24.8,
+     3.028,
+     -12
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 645,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     23.3,
+     1.8,
+     -8
+    ],
+    "max": [
+     24.5,
+     3.028,
+     -6.8
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 649,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0.305,
+     34
+    ],
+    "max": [
+     36,
+     0.415,
+     38
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 653,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0.687,
+     38
+    ],
+    "max": [
+     36,
+     0.797,
+     42
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 657,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0.78,
+     42
+    ],
+    "max": [
+     36,
+     0.89,
+     46
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 661,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0.606,
+     46
+    ],
+    "max": [
+     36,
+     0.716,
+     50
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 665,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     32,
+     0.266,
+     50
+    ],
+    "max": [
+     36,
+     0.376,
+     54
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 669,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     34
+    ],
+    "max": [
+     40,
+     0.11,
+     38
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 673,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0.355,
+     38
+    ],
+    "max": [
+     40,
+     0.465,
+     42
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 677,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0.442,
+     42
+    ],
+    "max": [
+     40,
+     0.552,
+     46
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 681,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0.253,
+     46
+    ],
+    "max": [
+     40,
+     0.363,
+     50
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 685,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     50
+    ],
+    "max": [
+     40,
+     0.11,
+     54
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 689,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     34
+    ],
+    "max": [
+     44,
+     0.11,
+     38
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 693,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     38
+    ],
+    "max": [
+     44,
+     0.11,
+     42
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 697,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0.078,
+     42
+    ],
+    "max": [
+     44,
+     0.188,
+     46
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 701,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     46
+    ],
+    "max": [
+     44,
+     0.11,
+     50
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 705,
+   "name": "service-deck-tile",
+   "key": "service-deck-tile",
+   "meshes": 2,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     40,
+     0,
+     50
+    ],
+    "max": [
+     44,
+     0.11,
+     54
+    ]
+   },
+   "size": [
+    4,
+    0.11,
+    4
+   ]
+  },
+  {
+   "index": 709,
+   "name": "crossing-and-pad-decal",
+   "key": "crossing-and-pad-decal",
+   "meshes": 1,
+   "triangles": 286,
+   "aabb": {
+    "min": [
+     32,
+     0.577,
+     36
+    ],
+    "max": [
+     40,
+     0.593,
+     44
+    ]
+   },
+   "size": [
+    8,
+    0.016,
+    8
+   ]
+  },
+  {
+   "index": 711,
+   "name": "vehicle-charging-post",
+   "key": "vehicle-charging-post",
+   "meshes": 2,
+   "triangles": 482,
+   "aabb": {
+    "min": [
+     40.7,
+     0.06,
+     37.7
+    ],
+    "max": [
+     41.3,
+     1.46,
+     38.3
+    ]
+   },
+   "size": [
+    0.6,
+    1.4,
+    0.6
+   ]
+  },
+  {
+   "index": 715,
+   "name": "vehicle-charging-post",
+   "key": "vehicle-charging-post",
+   "meshes": 2,
+   "triangles": 482,
+   "aabb": {
+    "min": [
+     40.7,
+     0.232,
+     41.7
+    ],
+    "max": [
+     41.3,
+     1.632,
+     42.3
+    ]
+   },
+   "size": [
+    0.6,
+    1.4,
+    0.6
+   ]
+  },
+  {
+   "index": 719,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     37,
+     0.356,
+     35.75
+    ],
+    "max": [
+     39,
+     1.916,
+     40.25
+    ]
+   },
+   "size": [
+    2,
+    1.56,
+    4.5
+   ]
+  },
+  {
+   "index": 721,
+   "name": "elevated-landing-pad",
+   "key": "elevated-landing-pad",
+   "meshes": 1,
+   "triangles": 780,
+   "aabb": {
+    "min": [
+     34,
+     0.103,
+     46
+    ],
+    "max": [
+     42,
+     12.643,
+     54
+    ]
+   },
+   "size": [
+    8,
+    12.54,
+    8
+   ]
+  },
+  {
+   "index": 723,
+   "name": "commuter-hover-pod",
+   "key": "commuter-hover-pod",
+   "meshes": 6,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     36.009,
+     12.503,
+     47.551
+    ],
+    "max": [
+     39.991,
+     14.403,
+     52.449
+    ]
+   },
+   "size": [
+    3.982,
+    1.9,
+    4.897
+   ]
+  },
+  {
+   "index": 735,
+   "name": "vertical-farm-tower",
+   "key": "vertical-farm-tower",
+   "meshes": 2,
+   "triangles": 1580,
+   "aabb": {
+    "min": [
+     -3.834,
+     0.01,
+     42.418
+    ],
+    "max": [
+     4.166,
+     41.01,
+     50.418
+    ]
+   },
+   "size": [
+    8,
+    41,
+    8
+   ]
+  },
+  {
+   "index": 738,
+   "name": "hauler-cargo-trailer",
+   "key": "hauler-cargo-trailer",
+   "meshes": 8,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     28,
+     0.992,
+     36.085
+    ],
+    "max": [
+     32,
+     6.342,
+     48.05
+    ]
+   },
+   "size": [
+    4,
+    5.35,
+    11.965
+   ]
+  },
+  {
+   "index": 754,
+   "name": "eight-wheel-industrial-hauler",
+   "key": "eight-wheel-industrial-hauler",
+   "meshes": 9,
+   "triangles": 2056,
+   "aabb": {
+    "min": [
+     28,
+     0.599,
+     46
+    ],
+    "max": [
+     32,
+     5.399,
+     58
+    ]
+   },
+   "size": [
+    4,
+    4.8,
+    12
+   ]
+  },
+  {
+   "index": 776,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     32.6,
+     0.324,
+     34.6
+    ],
+    "max": [
+     33.8,
+     1.552,
+     35.8
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 780,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     32.6,
+     1.554,
+     34.6
+    ],
+    "max": [
+     33.8,
+     2.782,
+     35.8
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 784,
+   "name": "composite-supply-crate",
+   "key": "composite-supply-crate",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     33.9,
+     0.374,
+     35.8
+    ],
+    "max": [
+     35.1,
+     1.602,
+     37
+    ]
+   },
+   "size": [
+    1.2,
+    1.228,
+    1.2
+   ]
+  },
+  {
+   "index": 788,
+   "name": "maintenance-technician",
+   "key": "maintenance-technician",
+   "meshes": 6,
+   "triangles": 3491,
+   "aabb": {
+    "min": [
+     35.225,
+     0.644,
+     44.787
+    ],
+    "max": [
+     35.868,
+     2.445,
+     46.809
+    ]
+   },
+   "size": [
+    0.643,
+    1.801,
+    2.022
+   ]
+  },
+  {
+   "index": 831,
+   "name": "service-drone-bot",
+   "key": "service-drone-bot",
+   "meshes": 3,
+   "triangles": 602,
+   "aabb": {
+    "min": [
+     42.25,
+     0.06,
+     45.65
+    ],
+    "max": [
+     42.95,
+     0.726,
+     46.35
+    ]
+   },
+   "size": [
+    0.7,
+    0.666,
+    0.7
+   ]
+  },
+  {
+   "index": 839,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 656,
+   "aabb": {
+    "min": [
+     29.45,
+     0.443,
+     51.675
+    ],
+    "max": [
+     34.55,
+     6.443,
+     52.325
+    ]
+   },
+   "size": [
+    5.1,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 841,
+   "name": "neon-sign-pylon",
+   "key": "neon-sign-pylon",
+   "meshes": 1,
+   "triangles": 465,
+   "aabb": {
+    "min": [
+     39.5,
+     0.01,
+     57.5
+    ],
+    "max": [
+     40.5,
+     4.01,
+     58.5
+    ]
+   },
+   "size": [
+    1,
+    4,
+    1
+   ]
+  },
+  {
+   "index": 843,
+   "name": "holo-billboard-frame",
+   "key": "holo-billboard-frame",
+   "meshes": 1,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     32,
+     0.01,
+     55.61
+    ],
+    "max": [
+     36,
+     3.21,
+     56.39
+    ]
+   },
+   "size": [
+    4,
+    3.2,
+    0.78
+   ]
+  },
+  {
+   "index": 845,
+   "name": "neon-sign-pylon",
+   "key": "neon-sign-pylon",
+   "meshes": 1,
+   "triangles": 465,
+   "aabb": {
+    "min": [
+     -6.5,
+     0.06,
+     -34.5
+    ],
+    "max": [
+     -5.5,
+     4.06,
+     -33.5
+    ]
+   },
+   "size": [
+    1,
+    4,
+    1
+   ]
+  },
+  {
+   "index": 847,
+   "name": "holo-billboard-frame",
+   "key": "holo-billboard-frame",
+   "meshes": 1,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     4,
+     0.06,
+     -34.39
+    ],
+    "max": [
+     8,
+     3.26,
+     -33.61
+    ]
+   },
+   "size": [
+    4,
+    3.2,
+    0.78
+   ]
+  },
+  {
+   "index": 849,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     -0.293,
+     0.06,
+     -33.836
+    ],
+    "max": [
+     0.293,
+     3.06,
+     -32.164
+    ]
+   },
+   "size": [
+    0.585,
+    3,
+    1.671
+   ]
+  },
+  {
+   "index": 851,
+   "name": "city-commuter",
+   "key": "city-commuter",
+   "meshes": 6,
+   "triangles": 3407,
+   "aabb": {
+    "min": [
+     -2.789,
+     0.06,
+     -32.31
+    ],
+    "max": [
+     -1.211,
+     1.906,
+     -31.69
+    ]
+   },
+   "size": [
+    1.578,
+    1.846,
+    0.619
+   ]
+  },
+  {
+   "index": 894,
+   "name": "modular-planter-trough",
+   "key": "modular-planter-trough",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     17.5,
+     0.06,
+     -28
+    ],
+    "max": [
+     18.5,
+     0.66,
+     -24
+    ]
+   },
+   "size": [
+    1,
+    0.6,
+    4
+   ]
+  },
+  {
+   "index": 896,
+   "name": "modular-planter-trough",
+   "key": "modular-planter-trough",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     17.5,
+     0.06,
+     -24
+    ],
+    "max": [
+     18.5,
+     0.66,
+     -20
+    ]
+   },
+   "size": [
+    1,
+    0.6,
+    4
+   ]
+  },
+  {
+   "index": 898,
+   "name": "modular-planter-trough",
+   "key": "modular-planter-trough",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     17.5,
+     0.06,
+     -20
+    ],
+    "max": [
+     18.5,
+     0.66,
+     -16
+    ]
+   },
+   "size": [
+    1,
+    0.6,
+    4
+   ]
+  },
+  {
+   "index": 900,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     17.629,
+     0.62,
+     -27.627
+    ],
+    "max": [
+     18.371,
+     1.467,
+     -26.773
+    ]
+   },
+   "size": [
+    0.742,
+    0.847,
+    0.853
+   ]
+  },
+  {
+   "index": 904,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     17.857,
+     0.62,
+     -25.738
+    ],
+    "max": [
+     18.143,
+     1.001,
+     -25.462
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 908,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     17.857,
+     0.62,
+     -24.538
+    ],
+    "max": [
+     18.143,
+     1.001,
+     -24.262
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 912,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     17.629,
+     0.62,
+     -23.527
+    ],
+    "max": [
+     18.371,
+     1.467,
+     -22.673
+    ]
+   },
+   "size": [
+    0.742,
+    0.847,
+    0.853
+   ]
+  },
+  {
+   "index": 916,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     17.857,
+     0.62,
+     -21.538
+    ],
+    "max": [
+     18.143,
+     1.001,
+     -21.262
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 920,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     17.857,
+     0.62,
+     -20.338
+    ],
+    "max": [
+     18.143,
+     1.001,
+     -20.062
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 924,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     17.629,
+     0.62,
+     -19.327
+    ],
+    "max": [
+     18.371,
+     1.467,
+     -18.473
+    ]
+   },
+   "size": [
+    0.742,
+    0.847,
+    0.853
+   ]
+  },
+  {
+   "index": 928,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     17.857,
+     0.62,
+     -17.538
+    ],
+    "max": [
+     18.143,
+     1.001,
+     -17.262
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 932,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     17.857,
+     0.62,
+     -16.538
+    ],
+    "max": [
+     18.143,
+     1.001,
+     -16.262
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 936,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 340,
+   "aabb": {
+    "min": [
+     15.714,
+     0.06,
+     -15.006
+    ],
+    "max": [
+     16.286,
+     0.52,
+     -12.994
+    ]
+   },
+   "size": [
+    0.572,
+    0.46,
+    2.012
+   ]
+  },
+  {
+   "index": 938,
+   "name": "recycling-capsule-bin",
+   "key": "recycling-capsule-bin",
+   "meshes": 2,
+   "triangles": 646,
+   "aabb": {
+    "min": [
+     17.607,
+     0.06,
+     -12.393
+    ],
+    "max": [
+     18.393,
+     1.26,
+     -11.607
+    ]
+   },
+   "size": [
+    0.785,
+    1.2,
+    0.785
+   ]
+  },
+  {
+   "index": 942,
+   "name": "city-commuter",
+   "key": "city-commuter",
+   "meshes": 6,
+   "triangles": 3255,
+   "aabb": {
+    "min": [
+     14.683,
+     0.06,
+     -13.299
+    ],
+    "max": [
+     15.317,
+     1.752,
+     -11.901
+    ]
+   },
+   "size": [
+    0.634,
+    1.692,
+    1.398
+   ]
+  },
+  {
+   "index": 985,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 340,
+   "aabb": {
+    "min": [
+     -12.286,
+     0.06,
+     -17.006
+    ],
+    "max": [
+     -11.714,
+     0.52,
+     -14.994
+    ]
+   },
+   "size": [
+    0.572,
+    0.46,
+    2.012
+   ]
+  },
+  {
+   "index": 987,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 340,
+   "aabb": {
+    "min": [
+     -12.286,
+     0.06,
+     -13.006
+    ],
+    "max": [
+     -11.714,
+     0.52,
+     -10.994
+    ]
+   },
+   "size": [
+    0.572,
+    0.46,
+    2.012
+   ]
+  },
+  {
+   "index": 989,
+   "name": "hover-scooter",
+   "key": "hover-scooter",
+   "meshes": 4,
+   "triangles": 994,
+   "aabb": {
+    "min": [
+     -14.4,
+     0.06,
+     -9.5
+    ],
+    "max": [
+     -13.6,
+     1.46,
+     -7.5
+    ]
+   },
+   "size": [
+    0.8,
+    1.4,
+    2
+   ]
+  },
+  {
+   "index": 997,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     -22.475,
+     0.01,
+     -58.325
+    ],
+    "max": [
+     -19.525,
+     6.01,
+     -57.675
+    ]
+   },
+   "size": [
+    2.95,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 999,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     -22.475,
+     0.01,
+     -46.325
+    ],
+    "max": [
+     -19.525,
+     6.01,
+     -45.675
+    ]
+   },
+   "size": [
+    2.95,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 1001,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     -22.475,
+     0.01,
+     -30.325
+    ],
+    "max": [
+     -19.525,
+     6.01,
+     -29.675
+    ]
+   },
+   "size": [
+    2.95,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 1003,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     -22.475,
+     0.01,
+     -14.325
+    ],
+    "max": [
+     -19.525,
+     6.01,
+     -13.675
+    ]
+   },
+   "size": [
+    2.95,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 1005,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     -10.325,
+     0.01,
+     9.525
+    ],
+    "max": [
+     -9.675,
+     6.01,
+     12.475
+    ]
+   },
+   "size": [
+    0.65,
+    6,
+    2.95
+   ]
+  },
+  {
+   "index": 1007,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     1.675,
+     0.01,
+     9.525
+    ],
+    "max": [
+     2.325,
+     6.01,
+     12.475
+    ]
+   },
+   "size": [
+    0.65,
+    6,
+    2.95
+   ]
+  },
+  {
+   "index": 1009,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     17.675,
+     0.01,
+     9.525
+    ],
+    "max": [
+     18.325,
+     6.01,
+     12.475
+    ]
+   },
+   "size": [
+    0.65,
+    6,
+    2.95
+   ]
+  },
+  {
+   "index": 1011,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     49.525,
+     0.01,
+     21.675
+    ],
+    "max": [
+     52.475,
+     6.01,
+     22.325
+    ]
+   },
+   "size": [
+    2.95,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 1013,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 414,
+   "aabb": {
+    "min": [
+     49.525,
+     0.01,
+     33.675
+    ],
+    "max": [
+     52.475,
+     6.01,
+     34.325
+    ]
+   },
+   "size": [
+    2.95,
+    6,
+    0.65
+   ]
+  },
+  {
+   "index": 1015,
+   "name": "crossing-and-pad-decal",
+   "key": "crossing-and-pad-decal",
+   "meshes": 1,
+   "triangles": 206,
+   "aabb": {
+    "min": [
+     -4,
+     0.052,
+     4
+    ],
+    "max": [
+     4,
+     0.068,
+     12
+    ]
+   },
+   "size": [
+    8,
+    0.016,
+    8
+   ]
+  },
+  {
+   "index": 1017,
+   "name": "crossing-and-pad-decal",
+   "key": "crossing-and-pad-decal",
+   "meshes": 1,
+   "triangles": 206,
+   "aabb": {
+    "min": [
+     -28,
+     0.052,
+     -20
+    ],
+    "max": [
+     -20,
+     0.068,
+     -12
+    ]
+   },
+   "size": [
+    8,
+    0.016,
+    8
+   ]
+  },
+  {
+   "index": 1019,
+   "name": "civic-security-officer",
+   "key": "civic-security-officer",
+   "meshes": 6,
+   "triangles": 3887,
+   "aabb": {
+    "min": [
+     -4.209,
+     0.01,
+     4.396
+    ],
+    "max": [
+     -2.591,
+     1.807,
+     4.792
+    ]
+   },
+   "size": [
+    1.618,
+    1.797,
+    0.397
+   ]
+  },
+  {
+   "index": 1062,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -20.943,
+     0.01,
+     -19.799
+    ],
+    "max": [
+     -17.057,
+     7.989,
+     -16.201
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1066,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -20.932,
+     0.01,
+     -35.79
+    ],
+    "max": [
+     -17.068,
+     6.011,
+     -32.21
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1070,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     22.057,
+     0.01,
+     0.201
+    ],
+    "max": [
+     25.943,
+     7.989,
+     3.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1074,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     6.068,
+     0.01,
+     -41.79
+    ],
+    "max": [
+     9.932,
+     6.011,
+     -38.21
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1078,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 497,
+   "aabb": {
+    "min": [
+     -8.985,
+     0.06,
+     -33.418
+    ],
+    "max": [
+     -7.015,
+     3.06,
+     -31.582
+    ]
+   },
+   "size": [
+    1.969,
+    3,
+    1.837
+   ]
+  },
+  {
+   "index": 1082,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -46,
+     0,
+     18
+    ],
+    "max": [
+     -42,
+     0.085,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1084,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -46,
+     0,
+     22
+    ],
+    "max": [
+     -42,
+     0.085,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1086,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -46,
+     0,
+     26
+    ],
+    "max": [
+     -42,
+     0.085,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1088,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -42,
+     0,
+     18
+    ],
+    "max": [
+     -38,
+     0.085,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1090,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -42,
+     0,
+     22
+    ],
+    "max": [
+     -38,
+     0.085,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1092,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -42,
+     0,
+     26
+    ],
+    "max": [
+     -38,
+     0.085,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1094,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -38,
+     0,
+     18
+    ],
+    "max": [
+     -34,
+     0.085,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1096,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -38,
+     0,
+     22
+    ],
+    "max": [
+     -34,
+     0.085,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1098,
+   "name": "composite-plaza-tile",
+   "key": "composite-plaza-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -38,
+     0,
+     26
+    ],
+    "max": [
+     -34,
+     0.085,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.085,
+    4
+   ]
+  },
+  {
+   "index": 1100,
+   "name": "neon-sign-pylon",
+   "key": "neon-sign-pylon",
+   "meshes": 1,
+   "triangles": 465,
+   "aabb": {
+    "min": [
+     -44.5,
+     0.06,
+     17.5
+    ],
+    "max": [
+     -43.5,
+     4.06,
+     18.5
+    ]
+   },
+   "size": [
+    1,
+    4,
+    1
+   ]
+  },
+  {
+   "index": 1102,
+   "name": "arc-street-lamp",
+   "key": "arc-street-lamp",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     -36.293,
+     0.06,
+     17.164
+    ],
+    "max": [
+     -35.707,
+     3.06,
+     18.836
+    ]
+   },
+   "size": [
+    0.585,
+    3,
+    1.671
+   ]
+  },
+  {
+   "index": 1104,
+   "name": "modular-planter-trough",
+   "key": "modular-planter-trough",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     -46,
+     0.06,
+     29.5
+    ],
+    "max": [
+     -42,
+     0.66,
+     30.5
+    ]
+   },
+   "size": [
+    4,
+    0.6,
+    1
+   ]
+  },
+  {
+   "index": 1106,
+   "name": "modular-planter-trough",
+   "key": "modular-planter-trough",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     -42,
+     0.06,
+     29.5
+    ],
+    "max": [
+     -38,
+     0.66,
+     30.5
+    ]
+   },
+   "size": [
+    4,
+    0.6,
+    1
+   ]
+  },
+  {
+   "index": 1108,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -45.343,
+     0.62,
+     29.862
+    ],
+    "max": [
+     -45.057,
+     1.001,
+     30.138
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 1112,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -43.743,
+     0.62,
+     29.862
+    ],
+    "max": [
+     -43.457,
+     1.001,
+     30.138
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 1116,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -42.543,
+     0.62,
+     29.862
+    ],
+    "max": [
+     -42.257,
+     1.001,
+     30.138
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 1120,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -41.243,
+     0.62,
+     29.862
+    ],
+    "max": [
+     -40.957,
+     1.001,
+     30.138
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 1124,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -39.543,
+     0.62,
+     29.862
+    ],
+    "max": [
+     -39.257,
+     1.001,
+     30.138
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 1128,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -38.343,
+     0.62,
+     29.862
+    ],
+    "max": [
+     -38.057,
+     1.001,
+     30.138
+    ]
+   },
+   "size": [
+    0.286,
+    0.381,
+    0.276
+   ]
+  },
+  {
+   "index": 1132,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 340,
+   "aabb": {
+    "min": [
+     -43.006,
+     0.06,
+     23.714
+    ],
+    "max": [
+     -40.994,
+     0.52,
+     24.286
+    ]
+   },
+   "size": [
+    2.012,
+    0.46,
+    0.572
+   ]
+  },
+  {
+   "index": 1134,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 340,
+   "aabb": {
+    "min": [
+     -39.006,
+     0.06,
+     23.714
+    ],
+    "max": [
+     -36.994,
+     0.52,
+     24.286
+    ]
+   },
+   "size": [
+    2.012,
+    0.46,
+    0.572
+   ]
+  },
+  {
+   "index": 1136,
+   "name": "recycling-capsule-bin",
+   "key": "recycling-capsule-bin",
+   "meshes": 2,
+   "triangles": 602,
+   "aabb": {
+    "min": [
+     -35.393,
+     0.06,
+     20.607
+    ],
+    "max": [
+     -34.607,
+     1.26,
+     21.393
+    ]
+   },
+   "size": [
+    0.785,
+    1.2,
+    0.785
+   ]
+  },
+  {
+   "index": 1140,
+   "name": "city-commuter",
+   "key": "city-commuter",
+   "meshes": 6,
+   "triangles": 3407,
+   "aabb": {
+    "min": [
+     -40.789,
+     0.06,
+     20.69
+    ],
+    "max": [
+     -39.211,
+     1.906,
+     21.31
+    ]
+   },
+   "size": [
+    1.578,
+    1.846,
+    0.619
+   ]
+  },
+  {
+   "index": 1183,
+   "name": "boxy-delivery-van",
+   "key": "boxy-delivery-van",
+   "meshes": 6,
+   "triangles": 1116,
+   "aabb": {
+    "min": [
+     -42,
+     0.01,
+     7.96
+    ],
+    "max": [
+     -36,
+     2.91,
+     10
+    ]
+   },
+   "size": [
+    6,
+    2.9,
+    2.04
+   ]
+  },
+  {
+   "index": 1197,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -49.943,
+     0.01,
+     18.201
+    ],
+    "max": [
+     -46.057,
+     7.989,
+     21.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1201,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -49.932,
+     0.01,
+     28.21
+    ],
+    "max": [
+     -46.068,
+     6.011,
+     31.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1205,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -33.943,
+     0.01,
+     24.201
+    ],
+    "max": [
+     -30.057,
+     7.989,
+     27.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1209,
+   "name": "six-wheel-utility-truck",
+   "key": "six-wheel-utility-truck",
+   "meshes": 11,
+   "triangles": 2162,
+   "aabb": {
+    "min": [
+     -26.25,
+     0.01,
+     -32
+    ],
+    "max": [
+     -23.75,
+     3.9,
+     -24
+    ]
+   },
+   "size": [
+    2.5,
+    3.89,
+    8
+   ]
+  },
+  {
+   "index": 1233,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     -24,
+     0.11,
+     -16.25
+    ],
+    "max": [
+     -22,
+     1.67,
+     -11.75
+    ]
+   },
+   "size": [
+    2,
+    1.56,
+    4.5
+   ]
+  },
+  {
+   "index": 1235,
+   "name": "security-patrol-cruiser",
+   "key": "security-patrol-cruiser",
+   "meshes": 2,
+   "triangles": 612,
+   "aabb": {
+    "min": [
+     -26.25,
+     0.01,
+     -0.75
+    ],
+    "max": [
+     -23.75,
+     2.09,
+     4.75
+    ]
+   },
+   "size": [
+    2.5,
+    2.08,
+    5.5
+   ]
+  },
+  {
+   "index": 1239,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     46,
+     0.11,
+     23.75
+    ],
+    "max": [
+     48,
+     1.67,
+     28.25
+    ]
+   },
+   "size": [
+    2,
+    1.56,
+    4.5
+   ]
+  },
+  {
+   "index": 1241,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     23.75,
+     53.532,
+     -41
+    ],
+    "max": [
+     28.25,
+     55.092,
+     -39
+    ]
+   },
+   "size": [
+    4.5,
+    1.56,
+    2
+   ]
+  },
+  {
+   "index": 1243,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     -0.25,
+     10.1,
+     -41
+    ],
+    "max": [
+     4.25,
+     11.66,
+     -39
+    ]
+   },
+   "size": [
+    4.5,
+    1.56,
+    2
+   ]
+  },
+  {
+   "index": 1245,
+   "name": "commuter-hover-pod",
+   "key": "commuter-hover-pod",
+   "meshes": 6,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     -24.25,
+     10,
+     -41
+    ],
+    "max": [
+     -19.75,
+     11.9,
+     -39
+    ]
+   },
+   "size": [
+    4.5,
+    1.9,
+    2
+   ]
+  },
+  {
+   "index": 1257,
+   "name": "security-patrol-cruiser",
+   "key": "security-patrol-cruiser",
+   "meshes": 2,
+   "triangles": 612,
+   "aabb": {
+    "min": [
+     -25.25,
+     46.715,
+     -32.75
+    ],
+    "max": [
+     -22.75,
+     48.795,
+     -27.25
+    ]
+   },
+   "size": [
+    2.5,
+    2.08,
+    5.5
+   ]
+  },
+  {
+   "index": 1261,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     -25,
+     16.1,
+     -2.25
+    ],
+    "max": [
+     -23,
+     17.66,
+     2.25
+    ]
+   },
+   "size": [
+    2,
+    1.56,
+    4.5
+   ]
+  },
+  {
+   "index": 1263,
+   "name": "commuter-hover-pod",
+   "key": "commuter-hover-pod",
+   "meshes": 6,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     -25,
+     16,
+     23.75
+    ],
+    "max": [
+     -23,
+     17.9,
+     28.25
+    ]
+   },
+   "size": [
+    2,
+    1.9,
+    4.5
+   ]
+  },
+  {
+   "index": 1275,
+   "name": "wheeled-city-coupe",
+   "key": "wheeled-city-coupe",
+   "meshes": 1,
+   "triangles": 1026,
+   "aabb": {
+    "min": [
+     -26.568,
+     39.913,
+     37.062
+    ],
+    "max": [
+     -22.068,
+     41.473,
+     39.062
+    ]
+   },
+   "size": [
+    4.5,
+    1.56,
+    2
+   ]
+  },
+  {
+   "index": 1277,
+   "name": "hover-cargo-skiff",
+   "key": "hover-cargo-skiff",
+   "meshes": 4,
+   "triangles": 1168,
+   "aabb": {
+    "min": [
+     10.175,
+     43.854,
+     39.461
+    ],
+    "max": [
+     17.825,
+     45.354,
+     48.539
+    ]
+   },
+   "size": [
+    7.649,
+    1.5,
+    9.079
+   ]
+  },
+  {
+   "index": 1285,
+   "name": "commuter-hover-pod",
+   "key": "commuter-hover-pod",
+   "meshes": 6,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     37,
+     15,
+     29.75
+    ],
+    "max": [
+     39,
+     16.9,
+     34.25
+    ]
+   },
+   "size": [
+    2,
+    1.9,
+    4.5
+   ]
+  },
+  {
+   "index": 1297,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -7.943,
+     0.715,
+     22.201
+    ],
+    "max": [
+     -4.057,
+     8.694,
+     25.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1301,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -3.932,
+     1.163,
+     28.21
+    ],
+    "max": [
+     -0.068,
+     7.164,
+     31.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1305,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -10.932,
+     1.544,
+     31.21
+    ],
+    "max": [
+     -7.068,
+     7.545,
+     34.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1309,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -21.932,
+     1.126,
+     28.21
+    ],
+    "max": [
+     -18.068,
+     7.127,
+     31.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1313,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -25.943,
+     0.862,
+     35.201
+    ],
+    "max": [
+     -22.057,
+     8.841,
+     38.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1317,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -17.932,
+     1.562,
+     38.21
+    ],
+    "max": [
+     -14.068,
+     7.563,
+     41.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1321,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     2.057,
+     1.431,
+     32.201
+    ],
+    "max": [
+     5.943,
+     9.41,
+     35.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1325,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     8.068,
+     0.743,
+     28.21
+    ],
+    "max": [
+     11.932,
+     6.744,
+     31.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1329,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -33.932,
+     0.382,
+     36.21
+    ],
+    "max": [
+     -30.068,
+     6.383,
+     39.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1333,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 497,
+   "aabb": {
+    "min": [
+     -38.985,
+     0.01,
+     33.082
+    ],
+    "max": [
+     -37.015,
+     3.01,
+     34.918
+    ]
+   },
+   "size": [
+    1.969,
+    3,
+    1.837
+   ]
+  },
+  {
+   "index": 1337,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -30.932,
+     0.855,
+     43.21
+    ],
+    "max": [
+     -27.068,
+     6.856,
+     46.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1341,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -15.943,
+     1.908,
+     45.201
+    ],
+    "max": [
+     -12.057,
+     9.887,
+     48.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1345,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     10.068,
+     1.83,
+     40.21
+    ],
+    "max": [
+     13.932,
+     7.831,
+     43.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1349,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     4.068,
+     2.039,
+     46.21
+    ],
+    "max": [
+     7.932,
+     8.04,
+     49.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1353,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     20.068,
+     1.542,
+     42.21
+    ],
+    "max": [
+     23.932,
+     7.543,
+     45.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1357,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     16.057,
+     1.275,
+     50.201
+    ],
+    "max": [
+     19.943,
+     9.254,
+     53.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1361,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 497,
+   "aabb": {
+    "min": [
+     -40.985,
+     0.282,
+     39.082
+    ],
+    "max": [
+     -39.015,
+     3.282,
+     40.918
+    ]
+   },
+   "size": [
+    1.969,
+    3,
+    1.837
+   ]
+  },
+  {
+   "index": 1365,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -3.932,
+     2.328,
+     53.21
+    ],
+    "max": [
+     -0.068,
+     8.329,
+     56.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1369,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     6.068,
+     1.778,
+     54.21
+    ],
+    "max": [
+     9.932,
+     7.779,
+     57.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1373,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     22.068,
+     1.154,
+     48.21
+    ],
+    "max": [
+     25.932,
+     7.155,
+     51.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1377,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 497,
+   "aabb": {
+    "min": [
+     -22.985,
+     0.655,
+     19.082
+    ],
+    "max": [
+     -21.015,
+     3.655,
+     20.918
+    ]
+   },
+   "size": [
+    1.969,
+    3,
+    1.837
+   ]
+  },
+  {
+   "index": 1381,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -13.943,
+     0.236,
+     14.201
+    ],
+    "max": [
+     -10.057,
+     8.215,
+     17.799
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1385,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -35.943,
+     0.01,
+     -35.799
+    ],
+    "max": [
+     -32.057,
+     7.989,
+     -32.201
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1389,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -43.932,
+     0.01,
+     -7.79
+    ],
+    "max": [
+     -40.068,
+     6.011,
+     -4.21
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1393,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -15.943,
+     0.01,
+     -45.799
+    ],
+    "max": [
+     -12.057,
+     7.989,
+     -42.201
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1397,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -31.932,
+     0.01,
+     14.21
+    ],
+    "max": [
+     -28.068,
+     6.011,
+     17.79
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1401,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     28.057,
+     0.01,
+     -41.799
+    ],
+    "max": [
+     31.943,
+     7.989,
+     -38.201
+    ]
+   },
+   "size": [
+    3.886,
+    7.979,
+    3.599
+   ]
+  },
+  {
+   "index": 1405,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     10.068,
+     0.01,
+     -61.79
+    ],
+    "max": [
+     13.932,
+     6.011,
+     -58.21
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1409,
+   "name": "sculptural-canopy-tree",
+   "key": "sculptural-canopy-tree",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -17.932,
+     0.01,
+     -61.79
+    ],
+    "max": [
+     -14.068,
+     6.011,
+     -58.21
+    ]
+   },
+   "size": [
+    3.865,
+    6.001,
+    3.581
+   ]
+  },
+  {
+   "index": 1413,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     40.382,
+     -0.075,
+     61.393
+    ],
+    "max": [
+     41.261,
+     0.57,
+     61.873
+    ]
+   },
+   "size": [
+    0.879,
+    0.645,
+    0.481
+   ]
+  },
+  {
+   "index": 1415,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     38.375,
+     -0.072,
+     61.826
+    ],
+    "max": [
+     39.452,
+     1.07,
+     63.493
+    ]
+   },
+   "size": [
+    1.077,
+    1.142,
+    1.668
+   ]
+  },
+  {
+   "index": 1417,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     17.948,
+     0.416,
+     30.351
+    ],
+    "max": [
+     18.948,
+     1.061,
+     31.161
+    ]
+   },
+   "size": [
+    1,
+    0.645,
+    0.81
+   ]
+  },
+  {
+   "index": 1419,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     18.153,
+     0.046,
+     27.744
+    ],
+    "max": [
+     19.413,
+     1.188,
+     29.479
+    ]
+   },
+   "size": [
+    1.261,
+    1.142,
+    1.735
+   ]
+  },
+  {
+   "index": 1421,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     19.986,
+     0.459,
+     31.205
+    ],
+    "max": [
+     21.163,
+     1.27,
+     31.955
+    ]
+   },
+   "size": [
+    1.177,
+    0.811,
+    0.75
+   ]
+  },
+  {
+   "index": 1423,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -18.676,
+     1.707,
+     65.346
+    ],
+    "max": [
+     -17.748,
+     2.352,
+     66.33
+    ]
+   },
+   "size": [
+    0.929,
+    0.645,
+    0.984
+   ]
+  },
+  {
+   "index": 1425,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -17.541,
+     1.747,
+     66.537
+    ],
+    "max": [
+     -15.868,
+     2.889,
+     68.264
+    ]
+   },
+   "size": [
+    1.673,
+    1.142,
+    1.727
+   ]
+  },
+  {
+   "index": 1427,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -20.784,
+     1.745,
+     66.483
+    ],
+    "max": [
+     -19.529,
+     2.556,
+     67.593
+    ]
+   },
+   "size": [
+    1.255,
+    0.811,
+    1.11
+   ]
+  },
+  {
+   "index": 1429,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     8.733,
+     0.494,
+     67.27
+    ],
+    "max": [
+     9.412,
+     1.139,
+     68.239
+    ]
+   },
+   "size": [
+    0.679,
+    0.645,
+    0.969
+   ]
+  },
+  {
+   "index": 1431,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     6.035,
+     0.724,
+     67.316
+    ],
+    "max": [
+     7.801,
+     1.866,
+     68.704
+    ]
+   },
+   "size": [
+    1.765,
+    1.142,
+    1.388
+   ]
+  },
+  {
+   "index": 1433,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     8.745,
+     0.755,
+     64.847
+    ],
+    "max": [
+     9.837,
+     1.566,
+     66.105
+    ]
+   },
+   "size": [
+    1.092,
+    0.811,
+    1.258
+   ]
+  },
+  {
+   "index": 1435,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -8.698,
+     2.203,
+     48.326
+    ],
+    "max": [
+     -8.054,
+     2.848,
+     49.282
+    ]
+   },
+   "size": [
+    0.643,
+    0.645,
+    0.956
+   ]
+  },
+  {
+   "index": 1437,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -8.079,
+     2.209,
+     46.475
+    ],
+    "max": [
+     -6.485,
+     3.351,
+     47.396
+    ]
+   },
+   "size": [
+    1.594,
+    1.142,
+    0.921
+   ]
+  },
+  {
+   "index": 1439,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -7.054,
+     2.272,
+     49.772
+    ],
+    "max": [
+     -6.334,
+     3.083,
+     50.936
+    ]
+   },
+   "size": [
+    0.72,
+    0.811,
+    1.164
+   ]
+  },
+  {
+   "index": 1441,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     16.396,
+     0.294,
+     28.931
+    ],
+    "max": [
+     18.17,
+     1.436,
+     30.412
+    ]
+   },
+   "size": [
+    1.774,
+    1.142,
+    1.481
+   ]
+  },
+  {
+   "index": 1443,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     13.739,
+     0.208,
+     27.46
+    ],
+    "max": [
+     14.673,
+     1.019,
+     28.702
+    ]
+   },
+   "size": [
+    0.934,
+    0.811,
+    1.242
+   ]
+  },
+  {
+   "index": 1445,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     26.199,
+     -0.021,
+     64.618
+    ],
+    "max": [
+     27.201,
+     0.624,
+     65.455
+    ]
+   },
+   "size": [
+    1.002,
+    0.645,
+    0.837
+   ]
+  },
+  {
+   "index": 1447,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     23.806,
+     -0.007,
+     63.622
+    ],
+    "max": [
+     25.421,
+     1.135,
+     65.378
+    ]
+   },
+   "size": [
+    1.614,
+    1.142,
+    1.757
+   ]
+  },
+  {
+   "index": 1449,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     27.129,
+     -0.005,
+     62.399
+    ],
+    "max": [
+     28.334,
+     0.806,
+     63.611
+    ]
+   },
+   "size": [
+    1.205,
+    0.811,
+    1.211
+   ]
+  },
+  {
+   "index": 1451,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     9.27,
+     0.98,
+     62.747
+    ],
+    "max": [
+     10.171,
+     1.625,
+     63.269
+    ]
+   },
+   "size": [
+    0.901,
+    0.645,
+    0.521
+   ]
+  },
+  {
+   "index": 1453,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     10.827,
+     0.909,
+     60.819
+    ],
+    "max": [
+     11.97,
+     2.051,
+     62.514
+    ]
+   },
+   "size": [
+    1.142,
+    1.142,
+    1.694
+   ]
+  },
+  {
+   "index": 1455,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     10.095,
+     0.62,
+     64.575
+    ],
+    "max": [
+     11.341,
+     1.431,
+     65.524
+    ]
+   },
+   "size": [
+    1.246,
+    0.811,
+    0.948
+   ]
+  },
+  {
+   "index": 1457,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     25.538,
+     0.01,
+     -55.708
+    ],
+    "max": [
+     26.534,
+     0.655,
+     -54.926
+    ]
+   },
+   "size": [
+    0.996,
+    0.645,
+    0.781
+   ]
+  },
+  {
+   "index": 1459,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     23.234,
+     0.01,
+     -56.096
+    ],
+    "max": [
+     24.389,
+     0.821,
+     -55.395
+    ]
+   },
+   "size": [
+    1.155,
+    0.811,
+    0.702
+   ]
+  },
+  {
+   "index": 1461,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     56.287,
+     0.01,
+     -7.441
+    ],
+    "max": [
+     57.233,
+     0.655,
+     -6.467
+    ]
+   },
+   "size": [
+    0.946,
+    0.645,
+    0.974
+   ]
+  },
+  {
+   "index": 1463,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     54.183,
+     0.01,
+     -9.059
+    ],
+    "max": [
+     55.826,
+     1.152,
+     -7.315
+    ]
+   },
+   "size": [
+    1.644,
+    1.142,
+    1.745
+   ]
+  },
+  {
+   "index": 1465,
+   "name": "landscape-boulder",
+   "key": "landscape-boulder",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     57.807,
+     0.01,
+     -9.015
+    ],
+    "max": [
+     59.065,
+     0.821,
+     -7.934
+    ]
+   },
+   "size": [
+    1.259,
+    0.811,
+    1.081
+   ]
+  },
+  {
+   "index": 1467,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     19.921,
+     0.01,
+     -62.509
+    ],
+    "max": [
+     20.253,
+     0.493,
+     -62.177
+    ]
+   },
+   "size": [
+    0.331,
+    0.483,
+    0.333
+   ]
+  },
+  {
+   "index": 1473,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -5.841,
+     2.252,
+     46.677
+    ],
+    "max": [
+     -5.227,
+     2.893,
+     47.292
+    ]
+   },
+   "size": [
+    0.614,
+    0.641,
+    0.615
+   ]
+  },
+  {
+   "index": 1479,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     4.999,
+     -0.363,
+     -69.935
+    ],
+    "max": [
+     7.759,
+     0.582,
+     -68.519
+    ]
+   },
+   "size": [
+    2.761,
+    0.945,
+    1.417
+   ]
+  },
+  {
+   "index": 1481,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     19.879,
+     0.675,
+     32.642
+    ],
+    "max": [
+     20.254,
+     1.158,
+     33.011
+    ]
+   },
+   "size": [
+    0.375,
+    0.483,
+    0.369
+   ]
+  },
+  {
+   "index": 1487,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     54.24,
+     0.01,
+     -22.486
+    ],
+    "max": [
+     55.152,
+     0.769,
+     -20.288
+    ]
+   },
+   "size": [
+    0.911,
+    0.759,
+    2.198
+   ]
+  },
+  {
+   "index": 1489,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     5.458,
+     1.927,
+     42.227
+    ],
+    "max": [
+     6.025,
+     2.757,
+     42.799
+    ]
+   },
+   "size": [
+    0.567,
+    0.83,
+    0.572
+   ]
+  },
+  {
+   "index": 1495,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -8.8,
+     -0.204,
+     -68.862
+    ],
+    "max": [
+     -7.8,
+     0.369,
+     -67.194
+    ]
+   },
+   "size": [
+    0.999,
+    0.573,
+    1.667
+   ]
+  },
+  {
+   "index": 1497,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     47.162,
+     0.01,
+     -34.588
+    ],
+    "max": [
+     47.657,
+     0.651,
+     -34.1
+    ]
+   },
+   "size": [
+    0.496,
+    0.641,
+    0.488
+   ]
+  },
+  {
+   "index": 1503,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -10.635,
+     0.01,
+     -64.993
+    ],
+    "max": [
+     -7.875,
+     0.955,
+     -63.507
+    ]
+   },
+   "size": [
+    2.761,
+    0.945,
+    1.486
+   ]
+  },
+  {
+   "index": 1505,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -49.185,
+     0.01,
+     4.876
+    ],
+    "max": [
+     -48.721,
+     0.493,
+     5.34
+    ]
+   },
+   "size": [
+    0.465,
+    0.483,
+    0.464
+   ]
+  },
+  {
+   "index": 1511,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -26.471,
+     0.572,
+     29.661
+    ],
+    "max": [
+     -25.927,
+     1.213,
+     30.211
+    ]
+   },
+   "size": [
+    0.544,
+    0.641,
+    0.55
+   ]
+  },
+  {
+   "index": 1517,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     3.29,
+     0.01,
+     -41.071
+    ],
+    "max": [
+     3.841,
+     0.808,
+     -40.517
+    ]
+   },
+   "size": [
+    0.551,
+    0.798,
+    0.554
+   ]
+  },
+  {
+   "index": 1523,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -3.171,
+     2.195,
+     58.896
+    ],
+    "max": [
+     -1.777,
+     2.768,
+     60.416
+    ]
+   },
+   "size": [
+    1.395,
+    0.573,
+    1.52
+   ]
+  },
+  {
+   "index": 1525,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -33.604,
+     0.01,
+     -6.674
+    ],
+    "max": [
+     -32.989,
+     0.651,
+     -6.06
+    ]
+   },
+   "size": [
+    0.615,
+    0.641,
+    0.614
+   ]
+  },
+  {
+   "index": 1531,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     17.649,
+     0.987,
+     33.747
+    ],
+    "max": [
+     20.351,
+     1.932,
+     35.653
+    ]
+   },
+   "size": [
+    2.701,
+    0.945,
+    1.907
+   ]
+  },
+  {
+   "index": 1533,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     -34.729,
+     0.01,
+     -5.737
+    ],
+    "max": [
+     -34.35,
+     0.513,
+     -5.364
+    ]
+   },
+   "size": [
+    0.379,
+    0.503,
+    0.373
+   ]
+  },
+  {
+   "index": 1539,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     14.826,
+     0.075,
+     -66.393
+    ],
+    "max": [
+     16.77,
+     0.834,
+     -64.463
+    ]
+   },
+   "size": [
+    1.944,
+    0.759,
+    1.929
+   ]
+  },
+  {
+   "index": 1541,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -3.699,
+     1.996,
+     39.486
+    ],
+    "max": [
+     -2.934,
+     2.794,
+     40.249
+    ]
+   },
+   "size": [
+    0.765,
+    0.798,
+    0.763
+   ]
+  },
+  {
+   "index": 1547,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     20.861,
+     0.799,
+     53.848
+    ],
+    "max": [
+     22.407,
+     1.372,
+     55.204
+    ]
+   },
+   "size": [
+    1.547,
+    0.573,
+    1.357
+   ]
+  },
+  {
+   "index": 1549,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     11.997,
+     0.01,
+     -56.634
+    ],
+    "max": [
+     12.54,
+     0.651,
+     -56.086
+    ]
+   },
+   "size": [
+    0.542,
+    0.641,
+    0.549
+   ]
+  },
+  {
+   "index": 1555,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -10.533,
+     2.126,
+     52.077
+    ],
+    "max": [
+     -9.766,
+     2.924,
+     52.845
+    ]
+   },
+   "size": [
+    0.768,
+    0.798,
+    0.768
+   ]
+  },
+  {
+   "index": 1561,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     12.806,
+     0.01,
+     -55.03
+    ],
+    "max": [
+     13.241,
+     0.493,
+     -54.599
+    ]
+   },
+   "size": [
+    0.435,
+    0.483,
+    0.431
+   ]
+  },
+  {
+   "index": 1567,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -3.72,
+     0.01,
+     -62.745
+    ],
+    "max": [
+     -1.578,
+     0.769,
+     -62.101
+    ]
+   },
+   "size": [
+    2.143,
+    0.759,
+    0.643
+   ]
+  },
+  {
+   "index": 1569,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     10.932,
+     0.01,
+     -42.835
+    ],
+    "max": [
+     11.659,
+     0.808,
+     -42.114
+    ]
+   },
+   "size": [
+    0.727,
+    0.798,
+    0.722
+   ]
+  },
+  {
+   "index": 1575,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -27.444,
+     0.47,
+     26.878
+    ],
+    "max": [
+     -26.07,
+     1.043,
+     28.414
+    ]
+   },
+   "size": [
+    1.374,
+    0.573,
+    1.535
+   ]
+  },
+  {
+   "index": 1577,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     -1.051,
+     1.667,
+     35.196
+    ],
+    "max": [
+     -0.607,
+     2.333,
+     35.637
+    ]
+   },
+   "size": [
+    0.444,
+    0.666,
+    0.441
+   ]
+  },
+  {
+   "index": 1583,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -51.418,
+     0.01,
+     16.582
+    ],
+    "max": [
+     -50.24,
+     0.955,
+     19.326
+    ]
+   },
+   "size": [
+    1.179,
+    0.945,
+    2.743
+   ]
+  },
+  {
+   "index": 1585,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -0.775,
+     2.115,
+     42.27
+    ],
+    "max": [
+     -0.316,
+     2.598,
+     42.73
+    ]
+   },
+   "size": [
+    0.458,
+    0.483,
+    0.46
+   ]
+  },
+  {
+   "index": 1591,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -4.299,
+     1.968,
+     63.059
+    ],
+    "max": [
+     -2.577,
+     2.727,
+     65.153
+    ]
+   },
+   "size": [
+    1.722,
+    0.759,
+    2.094
+   ]
+  },
+  {
+   "index": 1593,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     56.7,
+     0.01,
+     -22.075
+    ],
+    "max": [
+     57.309,
+     0.808,
+     -21.477
+    ]
+   },
+   "size": [
+    0.609,
+    0.798,
+    0.598
+   ]
+  },
+  {
+   "index": 1599,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     20.152,
+     1.496,
+     47.428
+    ],
+    "max": [
+     20.502,
+     1.979,
+     47.775
+    ]
+   },
+   "size": [
+    0.35,
+    0.483,
+    0.347
+   ]
+  },
+  {
+   "index": 1605,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     8.933,
+     0.01,
+     -44.067
+    ],
+    "max": [
+     9.55,
+     0.651,
+     -43.451
+    ]
+   },
+   "size": [
+    0.616,
+    0.641,
+    0.616
+   ]
+  },
+  {
+   "index": 1611,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -19.189,
+     0.956,
+     20.365
+    ],
+    "max": [
+     -16.893,
+     1.901,
+     22.877
+    ]
+   },
+   "size": [
+    2.296,
+    0.945,
+    2.512
+   ]
+  },
+  {
+   "index": 1613,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     14.474,
+     1.591,
+     50.392
+    ],
+    "max": [
+     14.825,
+     2.074,
+     50.74
+    ]
+   },
+   "size": [
+    0.351,
+    0.483,
+    0.348
+   ]
+  },
+  {
+   "index": 1619,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     23.317,
+     -0.009,
+     63.82
+    ],
+    "max": [
+     24.705,
+     0.75,
+     66.02
+    ]
+   },
+   "size": [
+    1.388,
+    0.759,
+    2.201
+   ]
+  },
+  {
+   "index": 1621,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     43.011,
+     -0.096,
+     60.998
+    ],
+    "max": [
+     43.759,
+     0.734,
+     61.749
+    ]
+   },
+   "size": [
+    0.748,
+    0.83,
+    0.752
+   ]
+  },
+  {
+   "index": 1627,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -18.849,
+     0.736,
+     18.07
+    ],
+    "max": [
+     -17.863,
+     1.309,
+     19.738
+    ]
+   },
+   "size": [
+    0.985,
+    0.573,
+    1.669
+   ]
+  },
+  {
+   "index": 1629,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     11.126,
+     0.01,
+     -41.313
+    ],
+    "max": [
+     11.635,
+     0.651,
+     -40.812
+    ]
+   },
+   "size": [
+    0.508,
+    0.641,
+    0.501
+   ]
+  },
+  {
+   "index": 1635,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -23.042,
+     1.013,
+     32.447
+    ],
+    "max": [
+     -20.332,
+     1.958,
+     34.325
+    ]
+   },
+   "size": [
+    2.709,
+    0.945,
+    1.878
+   ]
+  },
+  {
+   "index": 1637,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -35.967,
+     0.01,
+     -8.22
+    ],
+    "max": [
+     -35.516,
+     0.493,
+     -7.767
+    ]
+   },
+   "size": [
+    0.45,
+    0.483,
+    0.453
+   ]
+  },
+  {
+   "index": 1643,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     4.667,
+     1.625,
+     61.81
+    ],
+    "max": [
+     5.114,
+     2.266,
+     62.26
+    ]
+   },
+   "size": [
+    0.447,
+    0.641,
+    0.45
+   ]
+  },
+  {
+   "index": 1649,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     35.125,
+     -0.062,
+     63.681
+    ],
+    "max": [
+     35.718,
+     0.736,
+     64.282
+    ]
+   },
+   "size": [
+    0.593,
+    0.798,
+    0.601
+   ]
+  },
+  {
+   "index": 1655,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -30.222,
+     0.043,
+     23.575
+    ],
+    "max": [
+     -28.712,
+     0.616,
+     24.983
+    ]
+   },
+   "size": [
+    1.51,
+    0.573,
+    1.408
+   ]
+  },
+  {
+   "index": 1657,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -1.305,
+     0.01,
+     19.33
+    ],
+    "max": [
+     -0.732,
+     0.651,
+     19.897
+    ]
+   },
+   "size": [
+    0.573,
+    0.641,
+    0.568
+   ]
+  },
+  {
+   "index": 1663,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -13.139,
+     1.819,
+     64.388
+    ],
+    "max": [
+     -10.775,
+     2.764,
+     66.846
+    ]
+   },
+   "size": [
+    2.363,
+    0.945,
+    2.457
+   ]
+  },
+  {
+   "index": 1665,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     21.364,
+     0.149,
+     -64.827
+    ],
+    "max": [
+     21.827,
+     0.652,
+     -64.363
+    ]
+   },
+   "size": [
+    0.463,
+    0.503,
+    0.464
+   ]
+  },
+  {
+   "index": 1671,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     25.701,
+     0.061,
+     60.593
+    ],
+    "max": [
+     27.293,
+     0.82,
+     62.743
+    ]
+   },
+   "size": [
+    1.591,
+    0.759,
+    2.15
+   ]
+  },
+  {
+   "index": 1673,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -13.433,
+     1.825,
+     61.491
+    ],
+    "max": [
+     -12.697,
+     2.623,
+     62.222
+    ]
+   },
+   "size": [
+    0.736,
+    0.798,
+    0.731
+   ]
+  },
+  {
+   "index": 1679,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     2.203,
+     2.013,
+     58.605
+    ],
+    "max": [
+     2.811,
+     2.586,
+     60.251
+    ]
+   },
+   "size": [
+    0.607,
+    0.573,
+    1.646
+   ]
+  },
+  {
+   "index": 1681,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -36.481,
+     0.01,
+     -4.991
+    ],
+    "max": [
+     -35.875,
+     0.651,
+     -4.383
+    ]
+   },
+   "size": [
+    0.606,
+    0.641,
+    0.608
+   ]
+  },
+  {
+   "index": 1687,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -26.923,
+     0.75,
+     39.449
+    ],
+    "max": [
+     -26.314,
+     1.548,
+     40.049
+    ]
+   },
+   "size": [
+    0.609,
+    0.798,
+    0.6
+   ]
+  },
+  {
+   "index": 1693,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -2.073,
+     0.01,
+     -41.061
+    ],
+    "max": [
+     -1.709,
+     0.493,
+     -40.703
+    ]
+   },
+   "size": [
+    0.364,
+    0.483,
+    0.357
+   ]
+  },
+  {
+   "index": 1699,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -2.118,
+     1.755,
+     64.874
+    ],
+    "max": [
+     -0.114,
+     2.514,
+     66.736
+    ]
+   },
+   "size": [
+    2.004,
+    0.759,
+    1.861
+   ]
+  },
+  {
+   "index": 1701,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     2.381,
+     1.771,
+     37.156
+    ],
+    "max": [
+     3.043,
+     2.569,
+     37.809
+    ]
+   },
+   "size": [
+    0.662,
+    0.798,
+    0.653
+   ]
+  },
+  {
+   "index": 1707,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     36.717,
+     -0.068,
+     62.548
+    ],
+    "max": [
+     38.025,
+     0.505,
+     64.124
+    ]
+   },
+   "size": [
+    1.307,
+    0.573,
+    1.576
+   ]
+  },
+  {
+   "index": 1709,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     -30.495,
+     0.01,
+     8.206
+    ],
+    "max": [
+     -30.039,
+     0.676,
+     8.665
+    ]
+   },
+   "size": [
+    0.456,
+    0.666,
+    0.459
+   ]
+  },
+  {
+   "index": 1715,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     3.652,
+     0.067,
+     22.04
+    ],
+    "max": [
+     5.854,
+     1.012,
+     24.616
+    ]
+   },
+   "size": [
+    2.201,
+    0.945,
+    2.575
+   ]
+  },
+  {
+   "index": 1717,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -23.763,
+     1.334,
+     53.198
+    ],
+    "max": [
+     -23.382,
+     1.817,
+     53.573
+    ]
+   },
+   "size": [
+    0.381,
+    0.483,
+    0.375
+   ]
+  },
+  {
+   "index": 1723,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -4.912,
+     2.185,
+     43.833
+    ],
+    "max": [
+     -2.778,
+     2.944,
+     44.443
+    ]
+   },
+   "size": [
+    2.134,
+    0.759,
+    0.61
+   ]
+  },
+  {
+   "index": 1725,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -21.822,
+     1.123,
+     39.241
+    ],
+    "max": [
+     -21.111,
+     1.921,
+     39.946
+    ]
+   },
+   "size": [
+    0.711,
+    0.798,
+    0.705
+   ]
+  },
+  {
+   "index": 1731,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -8.332,
+     0.494,
+     20.311
+    ],
+    "max": [
+     -7.883,
+     0.977,
+     20.756
+    ]
+   },
+   "size": [
+    0.448,
+    0.483,
+    0.446
+   ]
+  },
+  {
+   "index": 1737,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     3.323,
+     -0.025,
+     -67.002
+    ],
+    "max": [
+     3.931,
+     0.616,
+     -66.392
+    ]
+   },
+   "size": [
+    0.608,
+    0.641,
+    0.61
+   ]
+  },
+  {
+   "index": 1743,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     18.403,
+     0.137,
+     59.902
+    ],
+    "max": [
+     19.881,
+     1.082,
+     62.662
+    ]
+   },
+   "size": [
+    1.478,
+    0.945,
+    2.761
+   ]
+  },
+  {
+   "index": 1745,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     35.296,
+     0.01,
+     -38.824
+    ],
+    "max": [
+     35.713,
+     0.493,
+     -38.402
+    ]
+   },
+   "size": [
+    0.417,
+    0.483,
+    0.422
+   ]
+  },
+  {
+   "index": 1751,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -44.027,
+     0.01,
+     6.271
+    ],
+    "max": [
+     -42.111,
+     0.769,
+     8.229
+    ]
+   },
+   "size": [
+    1.916,
+    0.759,
+    1.957
+   ]
+  },
+  {
+   "index": 1753,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     38.986,
+     0.01,
+     -34.657
+    ],
+    "max": [
+     39.694,
+     0.84,
+     -33.956
+    ]
+   },
+   "size": [
+    0.708,
+    0.83,
+    0.701
+   ]
+  },
+  {
+   "index": 1759,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -39.219,
+     0.01,
+     8.017
+    ],
+    "max": [
+     -37.587,
+     0.583,
+     8.559
+    ]
+   },
+   "size": [
+    1.631,
+    0.573,
+    0.541
+   ]
+  },
+  {
+   "index": 1761,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     41.56,
+     0.01,
+     -37.882
+    ],
+    "max": [
+     42.15,
+     0.651,
+     -37.295
+    ]
+   },
+   "size": [
+    0.59,
+    0.641,
+    0.586
+   ]
+  },
+  {
+   "index": 1767,
+   "name": "floating-capsule-bench",
+   "key": "floating-capsule-bench",
+   "meshes": 1,
+   "triangles": 378,
+   "aabb": {
+    "min": [
+     -5.539,
+     1.964,
+     63.352
+    ],
+    "max": [
+     -2.841,
+     2.909,
+     65.268
+    ]
+   },
+   "size": [
+    2.698,
+    0.945,
+    1.917
+   ]
+  },
+  {
+   "index": 1769,
+   "name": "ornamental-grass-tuft",
+   "key": "ornamental-grass-tuft",
+   "meshes": 3,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     7.885,
+     1.251,
+     62.111
+    ],
+    "max": [
+     8.305,
+     1.734,
+     62.535
+    ]
+   },
+   "size": [
+    0.42,
+    0.483,
+    0.424
+   ]
+  },
+  {
+   "index": 1775,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     11.693,
+     1.117,
+     58.538
+    ],
+    "max": [
+     12.325,
+     1.837,
+     59.264
+    ]
+   },
+   "size": [
+    0.631,
+    0.72,
+    0.725
+   ]
+  },
+  {
+   "index": 1779,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     10.264,
+     1.134,
+     59.5
+    ],
+    "max": [
+     11.546,
+     2.113,
+     60.668
+    ]
+   },
+   "size": [
+    1.281,
+    0.979,
+    1.167
+   ]
+  },
+  {
+   "index": 1783,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -53.482,
+     0.01,
+     1.454
+    ],
+    "max": [
+     -52.498,
+     1.111,
+     2.58
+    ]
+   },
+   "size": [
+    0.984,
+    1.101,
+    1.126
+   ]
+  },
+  {
+   "index": 1787,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -55.048,
+     0.01,
+     2.327
+    ],
+    "max": [
+     -53.18,
+     1.43,
+     4.035
+    ]
+   },
+   "size": [
+    1.868,
+    1.42,
+    1.708
+   ]
+  },
+  {
+   "index": 1791,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     40.686,
+     0.01,
+     -36.866
+    ],
+    "max": [
+     41.456,
+     0.857,
+     -35.988
+    ]
+   },
+   "size": [
+    0.77,
+    0.847,
+    0.877
+   ]
+  },
+  {
+   "index": 1795,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     39.183,
+     0.01,
+     -35.966
+    ],
+    "max": [
+     40.673,
+     1.136,
+     -34.598
+    ]
+   },
+   "size": [
+    1.491,
+    1.126,
+    1.369
+   ]
+  },
+  {
+   "index": 1799,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     38.112,
+     0.01,
+     -38.489
+    ],
+    "max": [
+     39.86,
+     1.283,
+     -36.709
+    ]
+   },
+   "size": [
+    1.749,
+    1.273,
+    1.78
+   ]
+  },
+  {
+   "index": 1803,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     17.481,
+     1.68,
+     43.613
+    ],
+    "max": [
+     18.589,
+     2.512,
+     44.635
+    ]
+   },
+   "size": [
+    1.108,
+    0.832,
+    1.022
+   ]
+  },
+  {
+   "index": 1807,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     16.457,
+     1.669,
+     41.106
+    ],
+    "max": [
+     17.807,
+     2.648,
+     42.476
+    ]
+   },
+   "size": [
+    1.349,
+    0.979,
+    1.369
+   ]
+  },
+  {
+   "index": 1811,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -0.135,
+     2.018,
+     61.015
+    ],
+    "max": [
+     0.783,
+     2.992,
+     62.051
+    ]
+   },
+   "size": [
+    0.918,
+    0.974,
+    1.037
+   ]
+  },
+  {
+   "index": 1815,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -1.709,
+     1.997,
+     61.851
+    ],
+    "max": [
+     -0.005,
+     3.27,
+     63.427
+    ]
+   },
+   "size": [
+    1.703,
+    1.273,
+    1.576
+   ]
+  },
+  {
+   "index": 1819,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -2.702,
+     2.156,
+     59.3
+    ],
+    "max": [
+     -0.74,
+     3.576,
+     61.284
+    ]
+   },
+   "size": [
+    1.962,
+    1.42,
+    1.984
+   ]
+  },
+  {
+   "index": 1823,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -20.321,
+     1.515,
+     56.917
+    ],
+    "max": [
+     -19.631,
+     2.235,
+     57.693
+    ]
+   },
+   "size": [
+    0.689,
+    0.72,
+    0.775
+   ]
+  },
+  {
+   "index": 1827,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -21.834,
+     1.48,
+     57.78
+    ],
+    "max": [
+     -20.516,
+     2.459,
+     59.002
+    ]
+   },
+   "size": [
+    1.317,
+    0.979,
+    1.223
+   ]
+  },
+  {
+   "index": 1831,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -22.779,
+     1.426,
+     55.243
+    ],
+    "max": [
+     -21.219,
+     2.552,
+     56.815
+    ]
+   },
+   "size": [
+    1.56,
+    1.126,
+    1.573
+   ]
+  },
+  {
+   "index": 1835,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -5.509,
+     0.01,
+     -40.868
+    ],
+    "max": [
+     -4.437,
+     1.111,
+     -39.668
+    ]
+   },
+   "size": [
+    1.072,
+    1.101,
+    1.201
+   ]
+  },
+  {
+   "index": 1839,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -7.149,
+     0.01,
+     -40.095
+    ],
+    "max": [
+     -5.231,
+     1.43,
+     -38.309
+    ]
+   },
+   "size": [
+    1.918,
+    1.42,
+    1.787
+   ]
+  },
+  {
+   "index": 1843,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -7.553,
+     0.01,
+     -42.159
+    ],
+    "max": [
+     -6.397,
+     0.842,
+     -40.997
+    ]
+   },
+   "size": [
+    1.155,
+    0.832,
+    1.161
+   ]
+  },
+  {
+   "index": 1847,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -27.399,
+     0.447,
+     27.258
+    ],
+    "max": [
+     -26.563,
+     1.294,
+     28.192
+    ]
+   },
+   "size": [
+    0.837,
+    0.847,
+    0.934
+   ]
+  },
+  {
+   "index": 1851,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -28.981,
+     0.339,
+     28.055
+    ],
+    "max": [
+     -27.453,
+     1.465,
+     29.485
+    ]
+   },
+   "size": [
+    1.528,
+    1.126,
+    1.429
+   ]
+  },
+  {
+   "index": 1855,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -29.846,
+     0.184,
+     25.494
+    ],
+    "max": [
+     -28.076,
+     1.457,
+     27.268
+    ]
+   },
+   "size": [
+    1.77,
+    1.273,
+    1.773
+   ]
+  },
+  {
+   "index": 1859,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -19.556,
+     1.563,
+     56.449
+    ],
+    "max": [
+     -18.324,
+     2.791,
+     57.819
+    ]
+   },
+   "size": [
+    1.232,
+    1.228,
+    1.37
+   ]
+  },
+  {
+   "index": 1863,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -20.759,
+     1.511,
+     57.626
+    ],
+    "max": [
+     -19.625,
+     2.343,
+     58.69
+    ]
+   },
+   "size": [
+    1.134,
+    0.832,
+    1.065
+   ]
+  },
+  {
+   "index": 1867,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -21.579,
+     1.467,
+     55.077
+    ],
+    "max": [
+     -20.215,
+     2.446,
+     56.439
+    ]
+   },
+   "size": [
+    1.364,
+    0.979,
+    1.362
+   ]
+  },
+  {
+   "index": 1871,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     47.427,
+     0.01,
+     9.264
+    ],
+    "max": [
+     48.419,
+     0.984,
+     10.362
+    ]
+   },
+   "size": [
+    0.992,
+    0.974,
+    1.099
+   ]
+  },
+  {
+   "index": 1875,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -16.916,
+     0.967,
+     21.167
+    ],
+    "max": [
+     -16.172,
+     1.687,
+     21.987
+    ]
+   },
+   "size": [
+    0.743,
+    0.72,
+    0.82
+   ]
+  },
+  {
+   "index": 1879,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -18.503,
+     1.017,
+     21.923
+    ],
+    "max": [
+     -17.159,
+     1.996,
+     23.193
+    ]
+   },
+   "size": [
+    1.344,
+    0.979,
+    1.27
+   ]
+  },
+  {
+   "index": 1883,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -18.541,
+     1.305,
+     33.64
+    ],
+    "max": [
+     -17.389,
+     2.406,
+     34.908
+    ]
+   },
+   "size": [
+    1.153,
+    1.101,
+    1.268
+   ]
+  },
+  {
+   "index": 1887,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -20.244,
+     1.224,
+     34.307
+    ],
+    "max": [
+     -18.29,
+     2.644,
+     36.161
+    ]
+   },
+   "size": [
+    1.955,
+    1.42,
+    1.854
+   ]
+  },
+  {
+   "index": 1891,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -10.374,
+     0.01,
+     -65.256
+    ],
+    "max": [
+     -9.476,
+     0.857,
+     -64.27
+    ]
+   },
+   "size": [
+    0.899,
+    0.847,
+    0.985
+   ]
+  },
+  {
+   "index": 1895,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -12.02,
+     0.01,
+     -64.565
+    ],
+    "max": [
+     -10.466,
+     1.136,
+     -63.085
+    ]
+   },
+   "size": [
+    1.555,
+    1.126,
+    1.479
+   ]
+  },
+  {
+   "index": 1899,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -12.675,
+     -0.063,
+     -67.144
+    ],
+    "max": [
+     -10.895,
+     1.21,
+     -65.39
+    ]
+   },
+   "size": [
+    1.78,
+    1.273,
+    1.754
+   ]
+  },
+  {
+   "index": 1903,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     1.501,
+     2.261,
+     51.716
+    ],
+    "max": [
+     2.819,
+     3.489,
+     53.156
+    ]
+   },
+   "size": [
+    1.319,
+    1.228,
+    1.441
+   ]
+  },
+  {
+   "index": 1907,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -0.36,
+     2.322,
+     50.227
+    ],
+    "max": [
+     1.01,
+     3.301,
+     51.573
+    ]
+   },
+   "size": [
+    1.369,
+    0.979,
+    1.346
+   ]
+  },
+  {
+   "index": 1911,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     2.639,
+     0.01,
+     -39.76
+    ],
+    "max": [
+     3.699,
+     0.984,
+     -38.606
+    ]
+   },
+   "size": [
+    1.059,
+    0.974,
+    1.153
+   ]
+  },
+  {
+   "index": 1915,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     0.936,
+     0.01,
+     -39.137
+    ],
+    "max": [
+     2.702,
+     1.283,
+     -37.445
+    ]
+   },
+   "size": [
+    1.766,
+    1.273,
+    1.692
+   ]
+  },
+  {
+   "index": 1919,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     0.367,
+     0.01,
+     -41.722
+    ],
+    "max": [
+     2.353,
+     1.43,
+     -39.778
+    ]
+   },
+   "size": [
+    1.985,
+    1.42,
+    1.945
+   ]
+  },
+  {
+   "index": 1923,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     26.546,
+     0.01,
+     -54.565
+    ],
+    "max": [
+     27.338,
+     0.73,
+     -53.705
+    ]
+   },
+   "size": [
+    0.792,
+    0.72,
+    0.86
+   ]
+  },
+  {
+   "index": 1927,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     24.373,
+     0.01,
+     -56.499
+    ],
+    "max": [
+     25.947,
+     1.136,
+     -54.963
+    ]
+   },
+   "size": [
+    1.574,
+    1.126,
+    1.537
+   ]
+  },
+  {
+   "index": 1931,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     24.317,
+     0.01,
+     -36.241
+    ],
+    "max": [
+     25.541,
+     1.111,
+     -34.915
+    ]
+   },
+   "size": [
+    1.225,
+    1.101,
+    1.326
+   ]
+  },
+  {
+   "index": 1935,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     22.561,
+     0.01,
+     -35.685
+    ],
+    "max": [
+     24.539,
+     1.43,
+     -33.777
+    ]
+   },
+   "size": [
+    1.977,
+    1.42,
+    1.907
+   ]
+  },
+  {
+   "index": 1939,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     22.593,
+     0.01,
+     -37.77
+    ],
+    "max": [
+     23.755,
+     0.842,
+     -36.638
+    ]
+   },
+   "size": [
+    1.163,
+    0.832,
+    1.132
+   ]
+  },
+  {
+   "index": 1943,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     57.968,
+     0.01,
+     -10.275
+    ],
+    "max": [
+     58.922,
+     0.857,
+     -9.247
+    ]
+   },
+   "size": [
+    0.953,
+    0.847,
+    1.028
+   ]
+  },
+  {
+   "index": 1947,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     56.267,
+     0.01,
+     -9.697
+    ],
+    "max": [
+     57.837,
+     1.136,
+     -8.177
+    ]
+   },
+   "size": [
+    1.57,
+    1.126,
+    1.519
+   ]
+  },
+  {
+   "index": 1951,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     55.83,
+     0.01,
+     -12.278
+    ],
+    "max": [
+     57.606,
+     1.283,
+     -10.554
+    ]
+   },
+   "size": [
+    1.776,
+    1.273,
+    1.723
+   ]
+  },
+  {
+   "index": 1955,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     29.139,
+     -0.004,
+     61.185
+    ],
+    "max": [
+     30.535,
+     1.224,
+     62.687
+    ]
+   },
+   "size": [
+    1.396,
+    1.228,
+    1.501
+   ]
+  },
+  {
+   "index": 1959,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     27.849,
+     -0.006,
+     62.172
+    ],
+    "max": [
+     29.011,
+     0.826,
+     63.3
+    ]
+   },
+   "size": [
+    1.162,
+    0.832,
+    1.128
+   ]
+  },
+  {
+   "index": 1963,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     27.456,
+     0.024,
+     59.592
+    ],
+    "max": [
+     28.82,
+     1.003,
+     60.912
+    ]
+   },
+   "size": [
+    1.365,
+    0.979,
+    1.319
+   ]
+  },
+  {
+   "index": 1967,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     18.76,
+     1.554,
+     46.701
+    ],
+    "max": [
+     19.878,
+     2.528,
+     47.901
+    ]
+   },
+   "size": [
+    1.119,
+    0.974,
+    1.2
+   ]
+  },
+  {
+   "index": 1971,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     17.01,
+     1.574,
+     47.211
+    ],
+    "max": [
+     18.788,
+     2.847,
+     48.943
+    ]
+   },
+   "size": [
+    1.778,
+    1.273,
+    1.733
+   ]
+  },
+  {
+   "index": 1975,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     16.66,
+     1.677,
+     44.636
+    ],
+    "max": [
+     18.636,
+     3.097,
+     46.54
+    ]
+   },
+   "size": [
+    1.976,
+    1.42,
+    1.904
+   ]
+  },
+  {
+   "index": 1979,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -11.536,
+     1.012,
+     23.638
+    ],
+    "max": [
+     -10.168,
+     1.991,
+     24.976
+    ]
+   },
+   "size": [
+    1.369,
+    0.979,
+    1.338
+   ]
+  },
+  {
+   "index": 1983,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -11.843,
+     0.815,
+     21.063
+    ],
+    "max": [
+     -10.279,
+     1.941,
+     22.565
+    ]
+   },
+   "size": [
+    1.564,
+    1.126,
+    1.502
+   ]
+  },
+  {
+   "index": 1987,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -14.598,
+     1.792,
+     60.308
+    ],
+    "max": [
+     -13.31,
+     2.893,
+     61.682
+    ]
+   },
+   "size": [
+    1.289,
+    1.101,
+    1.374
+   ]
+  },
+  {
+   "index": 1991,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -16.392,
+     1.722,
+     60.75
+    ],
+    "max": [
+     -14.406,
+     3.142,
+     62.696
+    ]
+   },
+   "size": [
+    1.985,
+    1.42,
+    1.947
+   ]
+  },
+  {
+   "index": 1995,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -16.143,
+     1.727,
+     58.675
+    ],
+    "max": [
+     -14.989,
+     2.559,
+     59.779
+    ]
+   },
+   "size": [
+    1.154,
+    0.832,
+    1.104
+   ]
+  },
+  {
+   "index": 1999,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -7.71,
+     2.212,
+     55.587
+    ],
+    "max": [
+     -6.71,
+     3.059,
+     56.651
+    ]
+   },
+   "size": [
+    1.001,
+    0.847,
+    1.064
+   ]
+  },
+  {
+   "index": 2003,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -9.454,
+     2.137,
+     56.047
+    ],
+    "max": [
+     -7.88,
+     3.263,
+     57.597
+    ]
+   },
+   "size": [
+    1.575,
+    1.126,
+    1.549
+   ]
+  },
+  {
+   "index": 2007,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -9.671,
+     2.173,
+     53.484
+    ],
+    "max": [
+     -7.911,
+     3.446,
+     55.164
+    ]
+   },
+   "size": [
+    1.761,
+    1.273,
+    1.68
+   ]
+  },
+  {
+   "index": 2011,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     20.296,
+     0.01,
+     -62.417
+    ],
+    "max": [
+     21.76,
+     1.238,
+     -60.865
+    ]
+   },
+   "size": [
+    1.464,
+    1.228,
+    1.552
+   ]
+  },
+  {
+   "index": 2015,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     18.977,
+     0.01,
+     -61.536
+    ],
+    "max": [
+     20.141,
+     0.842,
+     -60.388
+    ]
+   },
+   "size": [
+    1.163,
+    0.832,
+    1.148
+   ]
+  },
+  {
+   "index": 2019,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     18.802,
+     0.023,
+     -64.104
+    ],
+    "max": [
+     20.152,
+     1.002,
+     -62.82
+    ]
+   },
+   "size": [
+    1.351,
+    0.979,
+    1.284
+   ]
+  },
+  {
+   "index": 2023,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -17.235,
+     1.7,
+     63.655
+    ],
+    "max": [
+     -16.065,
+     2.674,
+     64.893
+    ]
+   },
+   "size": [
+    1.17,
+    0.974,
+    1.237
+   ]
+  },
+  {
+   "index": 2027,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -19.018,
+     1.684,
+     64.048
+    ],
+    "max": [
+     -17.24,
+     2.957,
+     65.808
+    ]
+   },
+   "size": [
+    1.778,
+    1.273,
+    1.761
+   ]
+  },
+  {
+   "index": 2031,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -19.146,
+     1.626,
+     61.502
+    ],
+    "max": [
+     -17.194,
+     3.046,
+     63.352
+    ]
+   },
+   "size": [
+    1.953,
+    1.42,
+    1.851
+   ]
+  },
+  {
+   "index": 2035,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     20.526,
+     1.409,
+     38.715
+    ],
+    "max": [
+     21.398,
+     2.129,
+     39.635
+    ]
+   },
+   "size": [
+    0.872,
+    0.72,
+    0.92
+   ]
+  },
+  {
+   "index": 2039,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     18.788,
+     1.504,
+     39.125
+    ],
+    "max": [
+     20.154,
+     2.483,
+     40.483
+    ]
+   },
+   "size": [
+    1.367,
+    0.979,
+    1.357
+   ]
+  },
+  {
+   "index": 2043,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     18.701,
+     1.286,
+     36.574
+    ],
+    "max": [
+     20.245,
+     2.412,
+     38.032
+    ]
+   },
+   "size": [
+    1.544,
+    1.126,
+    1.458
+   ]
+  },
+  {
+   "index": 2047,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -46.233,
+     0.01,
+     9.376
+    ],
+    "max": [
+     -44.889,
+     1.111,
+     10.79
+    ]
+   },
+   "size": [
+    1.343,
+    1.101,
+    1.413
+   ]
+  },
+  {
+   "index": 2051,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -48.052,
+     0.01,
+     9.701
+    ],
+    "max": [
+     -46.072,
+     1.43,
+     11.673
+    ]
+   },
+   "size": [
+    1.98,
+    1.42,
+    1.973
+   ]
+  },
+  {
+   "index": 2055,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -47.587,
+     0.01,
+     7.651
+    ],
+    "max": [
+     -46.451,
+     0.842,
+     8.721
+    ]
+   },
+   "size": [
+    1.137,
+    0.832,
+    1.069
+   ]
+  },
+  {
+   "index": 2059,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     15.824,
+     -0.029,
+     68.487
+    ],
+    "max": [
+     16.866,
+     0.818,
+     69.579
+    ]
+   },
+   "size": [
+    1.041,
+    0.847,
+    1.092
+   ]
+  },
+  {
+   "index": 2063,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     14.05,
+     -0.032,
+     68.827
+    ],
+    "max": [
+     15.618,
+     1.094,
+     70.395
+    ]
+   },
+   "size": [
+    1.568,
+    1.126,
+    1.567
+   ]
+  },
+  {
+   "index": 2067,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     14.053,
+     0.227,
+     66.299
+    ],
+    "max": [
+     15.785,
+     1.5,
+     67.923
+    ]
+   },
+   "size": [
+    1.733,
+    1.273,
+    1.624
+   ]
+  },
+  {
+   "index": 2071,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     15.225,
+     1.537,
+     38.106
+    ],
+    "max": [
+     16.745,
+     2.765,
+     39.696
+    ]
+   },
+   "size": [
+    1.521,
+    1.228,
+    1.591
+   ]
+  },
+  {
+   "index": 2075,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     13.928,
+     1.403,
+     36.336
+    ],
+    "max": [
+     15.256,
+     2.382,
+     37.576
+    ]
+   },
+   "size": [
+    1.327,
+    0.979,
+    1.24
+   ]
+  },
+  {
+   "index": 2079,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     1.419,
+     0.01,
+     -66.26
+    ],
+    "max": [
+     2.633,
+     0.984,
+     -64.994
+    ]
+   },
+   "size": [
+    1.214,
+    0.974,
+    1.267
+   ]
+  },
+  {
+   "index": 2083,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -0.387,
+     0.01,
+     -65.987
+    ],
+    "max": [
+     1.379,
+     1.283,
+     -64.211
+    ]
+   },
+   "size": [
+    1.766,
+    1.273,
+    1.776
+   ]
+  },
+  {
+   "index": 2087,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -0.292,
+     -0.09,
+     -68.486
+    ],
+    "max": [
+     1.624,
+     1.33,
+     -66.704
+    ]
+   },
+   "size": [
+    1.915,
+    1.42,
+    1.782
+   ]
+  },
+  {
+   "index": 2091,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -33.598,
+     0.01,
+     0.043
+    ],
+    "max": [
+     -32.696,
+     0.73,
+     0.983
+    ]
+   },
+   "size": [
+    0.903,
+    0.72,
+    0.94
+   ]
+  },
+  {
+   "index": 2095,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -35.363,
+     0.01,
+     0.331
+    ],
+    "max": [
+     -34.007,
+     0.989,
+     1.699
+    ]
+   },
+   "size": [
+    1.355,
+    0.979,
+    1.368
+   ]
+  },
+  {
+   "index": 2099,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -17.731,
+     1.652,
+     60.41
+    ],
+    "max": [
+     -16.341,
+     2.753,
+     61.852
+    ]
+   },
+   "size": [
+    1.389,
+    1.101,
+    1.443
+   ]
+  },
+  {
+   "index": 2103,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -19.563,
+     1.601,
+     60.615
+    ],
+    "max": [
+     -17.603,
+     3.021,
+     62.599
+    ]
+   },
+   "size": [
+    1.96,
+    1.42,
+    1.984
+   ]
+  },
+  {
+   "index": 2107,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -18.886,
+     1.592,
+     58.605
+    ],
+    "max": [
+     -17.774,
+     2.424,
+     59.633
+    ]
+   },
+   "size": [
+    1.112,
+    0.832,
+    1.027
+   ]
+  },
+  {
+   "index": 2111,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     8.388,
+     0.01,
+     -50.988
+    ],
+    "max": [
+     9.462,
+     0.857,
+     -49.876
+    ]
+   },
+   "size": [
+    1.075,
+    0.847,
+    1.113
+   ]
+  },
+  {
+   "index": 2115,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     23.465,
+     0.232,
+     30.391
+    ],
+    "max": [
+     25.031,
+     1.46,
+     32.009
+    ]
+   },
+   "size": [
+    1.567,
+    1.228,
+    1.619
+   ]
+  },
+  {
+   "index": 2119,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     22.116,
+     0.373,
+     31.042
+    ],
+    "max": [
+     23.258,
+     1.205,
+     32.206
+    ]
+   },
+   "size": [
+    1.142,
+    0.832,
+    1.164
+   ]
+  },
+  {
+   "index": 2123,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     22.377,
+     0.01,
+     28.553
+    ],
+    "max": [
+     23.671,
+     0.989,
+     29.739
+    ]
+   },
+   "size": [
+    1.294,
+    0.979,
+    1.187
+   ]
+  },
+  {
+   "index": 2127,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     3.399,
+     0.01,
+     -64.743
+    ],
+    "max": [
+     5.263,
+     1.43,
+     -63.039
+    ]
+   },
+   "size": [
+    1.865,
+    1.42,
+    1.703
+   ]
+  },
+  {
+   "index": 2131,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     58.484,
+     0.01,
+     -18.25
+    ],
+    "max": [
+     59.412,
+     0.73,
+     -17.296
+    ]
+   },
+   "size": [
+    0.927,
+    0.72,
+    0.953
+   ]
+  },
+  {
+   "index": 2135,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     56.706,
+     0.01,
+     -18.086
+    ],
+    "max": [
+     58.04,
+     0.989,
+     -16.718
+    ]
+   },
+   "size": [
+    1.334,
+    0.979,
+    1.368
+   ]
+  },
+  {
+   "index": 2139,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     57.058,
+     0.01,
+     -20.537
+    ],
+    "max": [
+     58.528,
+     1.136,
+     -19.199
+    ]
+   },
+   "size": [
+    1.47,
+    1.126,
+    1.338
+   ]
+  },
+  {
+   "index": 2143,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     52.734,
+     0.01,
+     6.757
+    ],
+    "max": [
+     54.158,
+     1.111,
+     8.219
+    ]
+   },
+   "size": [
+    1.425,
+    1.101,
+    1.461
+   ]
+  },
+  {
+   "index": 2147,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     50.902,
+     0.01,
+     6.841
+    ],
+    "max": [
+     52.828,
+     1.43,
+     8.823
+    ]
+   },
+   "size": [
+    1.927,
+    1.42,
+    1.983
+   ]
+  },
+  {
+   "index": 2151,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     51.787,
+     0.01,
+     4.885
+    ],
+    "max": [
+     52.867,
+     0.842,
+     5.863
+    ]
+   },
+   "size": [
+    1.079,
+    0.832,
+    0.978
+   ]
+  },
+  {
+   "index": 2155,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     3.693,
+     1.83,
+     38.114
+    ],
+    "max": [
+     4.793,
+     2.677,
+     39.24
+    ]
+   },
+   "size": [
+    1.1,
+    0.847,
+    1.126
+   ]
+  },
+  {
+   "index": 2159,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     1.895,
+     1.88,
+     38.21
+    ],
+    "max": [
+     3.417,
+     3.006,
+     39.78
+    ]
+   },
+   "size": [
+    1.521,
+    1.126,
+    1.571
+   ]
+  },
+  {
+   "index": 2163,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -38.779,
+     0.01,
+     8.634
+    ],
+    "max": [
+     -37.177,
+     1.238,
+     10.268
+    ]
+   },
+   "size": [
+    1.602,
+    1.228,
+    1.635
+   ]
+  },
+  {
+   "index": 2167,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -40.129,
+     0.01,
+     9.162
+    ],
+    "max": [
+     -39.009,
+     0.842,
+     10.322
+    ]
+   },
+   "size": [
+    1.119,
+    0.832,
+    1.159
+   ]
+  },
+  {
+   "index": 2171,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -39.652,
+     0.01,
+     6.738
+    ],
+    "max": [
+     -38.4,
+     0.989,
+     7.864
+    ]
+   },
+   "size": [
+    1.252,
+    0.979,
+    1.125
+   ]
+  },
+  {
+   "index": 2175,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     17.539,
+     1.658,
+     41.827
+    ],
+    "max": [
+     18.815,
+     2.632,
+     43.125
+    ]
+   },
+   "size": [
+    1.275,
+    0.974,
+    1.298
+   ]
+  },
+  {
+   "index": 2179,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     15.729,
+     1.709,
+     41.855
+    ],
+    "max": [
+     17.433,
+     2.982,
+     43.625
+    ]
+   },
+   "size": [
+    1.704,
+    1.273,
+    1.77
+   ]
+  },
+  {
+   "index": 2183,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     16.265,
+     1.601,
+     39.502
+    ],
+    "max": [
+     18.067,
+     3.021,
+     41.114
+    ]
+   },
+   "size": [
+    1.801,
+    1.42,
+    1.612
+   ]
+  },
+  {
+   "index": 2187,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     0.958,
+     1.325,
+     67.521
+    ],
+    "max": [
+     1.904,
+     2.045,
+     68.481
+    ]
+   },
+   "size": [
+    0.945,
+    0.72,
+    0.96
+   ]
+  },
+  {
+   "index": 2191,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -0.821,
+     1.428,
+     67.558
+    ],
+    "max": [
+     0.483,
+     2.407,
+     68.918
+    ]
+   },
+   "size": [
+    1.303,
+    0.979,
+    1.359
+   ]
+  },
+  {
+   "index": 2195,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 451,
+   "aabb": {
+    "min": [
+     -0.252,
+     1.66,
+     65.186
+    ],
+    "max": [
+     1.164,
+     2.786,
+     66.448
+    ]
+   },
+   "size": [
+    1.417,
+    1.126,
+    1.262
+   ]
+  },
+  {
+   "index": 2199,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 311,
+   "aabb": {
+    "min": [
+     -12.376,
+     1.896,
+     41.416
+    ],
+    "max": [
+     -10.926,
+     2.997,
+     42.886
+    ]
+   },
+   "size": [
+    1.45,
+    1.101,
+    1.47
+   ]
+  },
+  {
+   "index": 2203,
+   "name": "faceted-shrub-blob",
+   "key": "faceted-shrub-blob",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     -14.196,
+     1.825,
+     41.379
+    ],
+    "max": [
+     -12.316,
+     3.245,
+     43.345
+    ]
+   },
+   "size": [
+    1.879,
+    1.42,
+    1.966
+   ]
+  },
+  {
+   "index": 2207,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -35.84,
+     0.01,
+     -6.755
+    ],
+    "max": [
+     -35.582,
+     0.353,
+     -6.507
+    ]
+   },
+   "size": [
+    0.258,
+    0.343,
+    0.249
+   ]
+  },
+  {
+   "index": 2211,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     6.976,
+     0.01,
+     20.441
+    ],
+    "max": [
+     7.322,
+     0.353,
+     20.791
+    ]
+   },
+   "size": [
+    0.346,
+    0.343,
+    0.349
+   ]
+  },
+  {
+   "index": 2215,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     19.536,
+     1.471,
+     39.267
+    ],
+    "max": [
+     19.876,
+     1.814,
+     39.611
+    ]
+   },
+   "size": [
+    0.339,
+    0.343,
+    0.343
+   ]
+  },
+  {
+   "index": 2219,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -34.702,
+     0.01,
+     13.358
+    ],
+    "max": [
+     -34.428,
+     0.353,
+     13.624
+    ]
+   },
+   "size": [
+    0.274,
+    0.343,
+    0.266
+   ]
+  },
+  {
+   "index": 2223,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -10.324,
+     2.081,
+     45.519
+    ],
+    "max": [
+     -9.972,
+     2.424,
+     45.873
+    ]
+   },
+   "size": [
+    0.352,
+    0.343,
+    0.354
+   ]
+  },
+  {
+   "index": 2227,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     54.99,
+     0.01,
+     -20.433
+    ],
+    "max": [
+     55.322,
+     0.353,
+     -20.097
+    ]
+   },
+   "size": [
+    0.331,
+    0.343,
+    0.336
+   ]
+  },
+  {
+   "index": 2231,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     5.335,
+     0.01,
+     18.434
+    ],
+    "max": [
+     5.623,
+     0.353,
+     18.716
+    ]
+   },
+   "size": [
+    0.289,
+    0.343,
+    0.281
+   ]
+  },
+  {
+   "index": 2235,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     8.769,
+     0.915,
+     64.315
+    ],
+    "max": [
+     9.125,
+     1.258,
+     64.671
+    ]
+   },
+   "size": [
+    0.356,
+    0.343,
+    0.357
+   ]
+  },
+  {
+   "index": 2239,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     40.362,
+     -0.087,
+     62.516
+    ],
+    "max": [
+     40.684,
+     0.256,
+     62.842
+    ]
+   },
+   "size": [
+    0.321,
+    0.343,
+    0.326
+   ]
+  },
+  {
+   "index": 2243,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     56.153,
+     0.01,
+     -15.892
+    ],
+    "max": [
+     56.455,
+     0.353,
+     -15.596
+    ]
+   },
+   "size": [
+    0.302,
+    0.343,
+    0.296
+   ]
+  },
+  {
+   "index": 2247,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -12.829,
+     0.01,
+     -64.522
+    ],
+    "max": [
+     -12.471,
+     0.353,
+     -64.164
+    ]
+   },
+   "size": [
+    0.358,
+    0.343,
+    0.358
+   ]
+  },
+  {
+   "index": 2251,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -6.279,
+     2.226,
+     57.062
+    ],
+    "max": [
+     -5.969,
+     2.569,
+     57.378
+    ]
+   },
+   "size": [
+    0.31,
+    0.343,
+    0.316
+   ]
+  },
+  {
+   "index": 2255,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -8.821,
+     1.849,
+     38.474
+    ],
+    "max": [
+     -8.507,
+     2.192,
+     38.782
+    ]
+   },
+   "size": [
+    0.315,
+    0.343,
+    0.308
+   ]
+  },
+  {
+   "index": 2259,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     8.837,
+     0.01,
+     -43.746
+    ],
+    "max": [
+     9.195,
+     0.353,
+     -43.388
+    ]
+   },
+   "size": [
+    0.358,
+    0.343,
+    0.358
+   ]
+  },
+  {
+   "index": 2263,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     3.298,
+     0.01,
+     -40.204
+    ],
+    "max": [
+     3.594,
+     0.353,
+     -39.9
+    ]
+   },
+   "size": [
+    0.297,
+    0.343,
+    0.304
+   ]
+  },
+  {
+   "index": 2267,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     43.632,
+     0.01,
+     -36.076
+    ],
+    "max": [
+     43.958,
+     0.353,
+     -35.756
+    ]
+   },
+   "size": [
+    0.325,
+    0.343,
+    0.32
+   ]
+  },
+  {
+   "index": 2271,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     6.518,
+     1.874,
+     40.053
+    ],
+    "max": [
+     6.876,
+     2.217,
+     40.409
+    ]
+   },
+   "size": [
+    0.357,
+    0.343,
+    0.356
+   ]
+  },
+  {
+   "index": 2275,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     15.74,
+     0.713,
+     58.642
+    ],
+    "max": [
+     16.022,
+     1.056,
+     58.932
+    ]
+   },
+   "size": [
+    0.283,
+    0.343,
+    0.291
+   ]
+  },
+  {
+   "index": 2279,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     34.655,
+     0.01,
+     -37.79
+    ],
+    "max": [
+     34.989,
+     0.353,
+     -37.46
+    ]
+   },
+   "size": [
+    0.335,
+    0.343,
+    0.33
+   ]
+  },
+  {
+   "index": 2283,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     11.439,
+     0.01,
+     14.841
+    ],
+    "max": [
+     11.793,
+     0.353,
+     15.193
+    ]
+   },
+   "size": [
+    0.354,
+    0.343,
+    0.352
+   ]
+  },
+  {
+   "index": 2287,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     44.893,
+     0.01,
+     -35.418
+    ],
+    "max": [
+     45.161,
+     0.353,
+     -35.142
+    ]
+   },
+   "size": [
+    0.267,
+    0.343,
+    0.276
+   ]
+  },
+  {
+   "index": 2291,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     59.877,
+     0.01,
+     -19.696
+    ],
+    "max": [
+     60.219,
+     0.353,
+     -19.358
+    ]
+   },
+   "size": [
+    0.343,
+    0.343,
+    0.339
+   ]
+  },
+  {
+   "index": 2295,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -35.607,
+     0.01,
+     13.706
+    ],
+    "max": [
+     -35.257,
+     0.353,
+     14.054
+    ]
+   },
+   "size": [
+    0.35,
+    0.343,
+    0.347
+   ]
+  },
+  {
+   "index": 2299,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -10.156,
+     1.287,
+     28.485
+    ],
+    "max": [
+     -9.904,
+     1.63,
+     28.745
+    ]
+   },
+   "size": [
+    0.251,
+    0.343,
+    0.26
+   ]
+  },
+  {
+   "index": 2303,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     11.902,
+     0.288,
+     67.949
+    ],
+    "max": [
+     12.25,
+     0.631,
+     68.295
+    ]
+   },
+   "size": [
+    0.349,
+    0.343,
+    0.346
+   ]
+  },
+  {
+   "index": 2307,
+   "name": "pastel-flowering-plant",
+   "key": "pastel-flowering-plant",
+   "meshes": 2,
+   "triangles": 695,
+   "aabb": {
+    "min": [
+     -39.239,
+     0.01,
+     0.54
+    ],
+    "max": [
+     -38.895,
+     0.353,
+     0.88
+    ]
+   },
+   "size": [
+    0.344,
+    0.343,
+    0.34
+   ]
+  },
+  {
+   "index": 2311,
+   "name": "vertical-farm-tower",
+   "key": "vertical-farm-tower",
+   "meshes": 2,
+   "triangles": 1580,
+   "aabb": {
+    "min": [
+     -26.822,
+     0.01,
+     41.488
+    ],
+    "max": [
+     -18.822,
+     41.01,
+     49.488
+    ]
+   },
+   "size": [
+    8,
+    41,
+    8
+   ]
+  },
+  {
+   "index": 2314,
+   "name": "sky-bridge-span",
+   "key": "sky-bridge-span",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     -11.592,
+     25.318,
+     44
+    ],
+    "max": [
+     -3.592,
+     29.318,
+     48
+    ]
+   },
+   "size": [
+    8,
+    4,
+    4
+   ]
+  },
+  {
+   "index": 2316,
+   "name": "sky-bridge-span",
+   "key": "sky-bridge-span",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     -19.594,
+     25.318,
+     44
+    ],
+    "max": [
+     -11.594,
+     29.318,
+     48
+    ]
+   },
+   "size": [
+    8,
+    4,
+    4
+   ]
+  },
+  {
+   "index": 2318,
+   "name": "chrome-arcology-transit-terrain",
+   "key": "chrome-arcology-transit-terrain",
+   "meshes": 1,
+   "triangles": 3956,
+   "aabb": {
+    "min": [
+     -72,
+     -8.299,
+     -76
+    ],
+    "max": [
+     68,
+     2.838,
+     80
+    ]
+   },
+   "size": [
+    140,
+    11.137,
+    156
+   ]
+  }
+ ],
+ "id": "chrome-arcology-transit",
+ "label": "Chrome Arcology Transit",
+ "sourceBytes": 32782032,
+ "spawn": {
+  "x": 6,
+  "y": 0.5,
+  "z": -2,
+  "on": "183 floor pieces at y=0"
+ }
+}

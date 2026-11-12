@@ -1,0 +1,6 @@
+6s {"prog":"Loading the first map","hunt":false}
+12s {"prog":"Loading Campground & Lake (100%)...","hunt":false}
+18s {"prog":"Loading 3D Character (0%)...","hunt":false}
+24s {"prog":"Loading 3D Character (100%)...","hunt":false}
+30s {"prog":"Setting up spawn position...","hunt":true}
+console: debug: [vite] connecting... | debug: [vite] connected. | info: [collision] parts=149 meshes=309 tris=110713 skipped=226 build=7287.9ms | info: [hunt] 63 decoy props on campground-lake | info: [load] campground-lake total=37249ms world=23022ms ({"fetchAndParse":10384,"dredge":2830,"terrain":4903,"scatter":220,"collision":7287.9,"arms":61,"process":12634}) debug=36ms player=9899ms ({"fetchAndParse":1894,"animator":7389,"controller":0}) spawn=4292ms

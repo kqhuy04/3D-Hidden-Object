@@ -1,0 +1,13689 @@
+{
+ "file": "/assets/maps/medieval-village.glb",
+ "bytes": 1300196,
+ "generatedAt": "2026-11-10T03:50:21.709Z",
+ "structure": {
+  "nodes": 1255,
+  "meshes": 606,
+  "materials": 566,
+  "images": 0,
+  "partContainer": "medieval-village-kit-ca0b43",
+  "extensions": [
+   "KHR_materials_emissive_strength"
+  ]
+ },
+ "totals": {
+  "objects": 559,
+  "keys": 34,
+  "triangles": 120191,
+  "meshes": 606,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "grass-terrain-blob",
+   "instances": 175,
+   "triangles": 24500,
+   "maxExtent": 12.025,
+   "hasBounds": true
+  },
+  {
+   "key": "path-stone-a",
+   "instances": 108,
+   "triangles": 8640,
+   "maxExtent": 1.336,
+   "hasBounds": true
+  },
+  {
+   "key": "path-stone-b",
+   "instances": 104,
+   "triangles": 5824,
+   "maxExtent": 0.784,
+   "hasBounds": true
+  },
+  {
+   "key": "grass-tuft",
+   "instances": 68,
+   "triangles": 36992,
+   "maxExtent": 1.404,
+   "hasBounds": true
+  },
+  {
+   "key": "small-rock",
+   "instances": 51,
+   "triangles": 4080,
+   "maxExtent": 1.108,
+   "hasBounds": true
+  },
+  {
+   "key": "bush",
+   "instances": 8,
+   "triangles": 2080,
+   "maxExtent": 1.255,
+   "hasBounds": true
+  },
+  {
+   "key": "sack",
+   "instances": 5,
+   "triangles": 2240,
+   "maxExtent": 0.791,
+   "hasBounds": true
+  },
+  {
+   "key": "crate",
+   "instances": 4,
+   "triangles": 2800,
+   "maxExtent": 1.116,
+   "hasBounds": true
+  },
+  {
+   "key": "tree-oak",
+   "instances": 4,
+   "triangles": 2840,
+   "maxExtent": 6.622,
+   "hasBounds": true
+  },
+  {
+   "key": "barrel",
+   "instances": 3,
+   "triangles": 1692,
+   "maxExtent": 0.92,
+   "hasBounds": true
+  },
+  {
+   "key": "fence-wood",
+   "instances": 3,
+   "triangles": 1392,
+   "maxExtent": 1.726,
+   "hasBounds": true
+  },
+  {
+   "key": "flower-planter",
+   "instances": 3,
+   "triangles": 2088,
+   "maxExtent": 0.873,
+   "hasBounds": true
+  },
+  {
+   "key": "lamp-post",
+   "instances": 2,
+   "triangles": 956,
+   "maxExtent": 2.2,
+   "hasBounds": true
+  },
+  {
+   "key": "anvil",
+   "instances": 1,
+   "triangles": 686,
+   "maxExtent": 1.003,
+   "hasBounds": true
+  },
+  {
+   "key": "blacksmith",
+   "instances": 1,
+   "triangles": 1668,
+   "maxExtent": 6.337,
+   "hasBounds": true
+  },
+  {
+   "key": "cart",
+   "instances": 1,
+   "triangles": 1746,
+   "maxExtent": 2.837,
+   "hasBounds": true
+  },
+  {
+   "key": "chapel",
+   "instances": 1,
+   "triangles": 1949,
+   "maxExtent": 8.15,
+   "hasBounds": true
+  },
+  {
+   "key": "cottage-small",
+   "instances": 1,
+   "triangles": 1764,
+   "maxExtent": 6.781,
+   "hasBounds": true
+  },
+  {
+   "key": "gate-wood",
+   "instances": 1,
+   "triangles": 642,
+   "maxExtent": 1.893,
+   "hasBounds": true
+  },
+  {
+   "key": "haystack",
+   "instances": 1,
+   "triangles": 711,
+   "maxExtent": 2.044,
+   "hasBounds": true
+  },
+  {
+   "key": "house-two-story",
+   "instances": 1,
+   "triangles": 1848,
+   "maxExtent": 9.192,
+   "hasBounds": true
+  },
+  {
+   "key": "market-stall",
+   "instances": 1,
+   "triangles": 592,
+   "maxExtent": 2.214,
+   "hasBounds": true
+  },
+  {
+   "key": "merchant",
+   "instances": 1,
+   "triangles": 1080,
+   "maxExtent": 1.82,
+   "hasBounds": true
+  },
+  {
+   "key": "quench-barrel",
+   "instances": 1,
+   "triangles": 576,
+   "maxExtent": 1.082,
+   "hasBounds": true
+  },
+  {
+   "key": "signpost",
+   "instances": 1,
+   "triangles": 780,
+   "maxExtent": 2.688,
+   "hasBounds": true
+  },
+  {
+   "key": "tavern",
+   "instances": 1,
+   "triangles": 1996,
+   "maxExtent": 15.386,
+   "hasBounds": true
+  },
+  {
+   "key": "terrain-water",
+   "instances": 1,
+   "triangles": 208,
+   "maxExtent": 8.563,
+   "hasBounds": true
+  },
+  {
+   "key": "tradesman",
+   "instances": 1,
+   "triangles": 1144,
+   "maxExtent": 1.89,
+   "hasBounds": true
+  },
+  {
+   "key": "tree-stump",
+   "instances": 1,
+   "triangles": 392,
+   "maxExtent": 1.478,
+   "hasBounds": true
+  },
+  {
+   "key": "watchtower",
+   "instances": 1,
+   "triangles": 1884,
+   "maxExtent": 9.45,
+   "hasBounds": true
+  },
+  {
+   "key": "water-trough",
+   "instances": 1,
+   "triangles": 670,
+   "maxExtent": 2.533,
+   "hasBounds": true
+  },
+  {
+   "key": "well",
+   "instances": 1,
+   "triangles": 788,
+   "maxExtent": 2.556,
+   "hasBounds": true
+  },
+  {
+   "key": "wheelbarrow",
+   "instances": 1,
+   "triangles": 1132,
+   "maxExtent": 1.717,
+   "hasBounds": true
+  },
+  {
+   "key": "windmill",
+   "instances": 1,
+   "triangles": 1811,
+   "maxExtent": 9.595,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.275,
+     -0.016,
+     -13.697
+    ],
+    "max": [
+     -3.989,
+     0.071,
+     -5.239
+    ]
+   },
+   "size": [
+    10.286,
+    0.087,
+    8.458
+   ]
+  },
+  {
+   "index": 3,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -13.728,
+     -0.021,
+     -16.286
+    ],
+    "max": [
+     -2.255,
+     0.067,
+     -5.169
+    ]
+   },
+   "size": [
+    11.473,
+    0.088,
+    11.118
+   ]
+  },
+  {
+   "index": 5,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10.078,
+     -0.011,
+     -16.01
+    ],
+    "max": [
+     -4.146,
+     0.056,
+     -8.495
+    ]
+   },
+   "size": [
+    5.932,
+    0.067,
+    7.515
+   ]
+  },
+  {
+   "index": 7,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8.124,
+     -0.022,
+     -17.775
+    ],
+    "max": [
+     -0.881,
+     0.054,
+     -8.865
+    ]
+   },
+   "size": [
+    7.243,
+    0.076,
+    8.91
+   ]
+  },
+  {
+   "index": 9,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -5.99,
+     -0.007,
+     -17.727
+    ],
+    "max": [
+     2.554,
+     0.062,
+     -10.349
+    ]
+   },
+   "size": [
+    8.544,
+    0.069,
+    7.377
+   ]
+  },
+  {
+   "index": 11,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2.674,
+     -0.021,
+     -18.295
+    ],
+    "max": [
+     6.564,
+     0.063,
+     -7.792
+    ]
+   },
+   "size": [
+    9.238,
+    0.084,
+    10.504
+   ]
+  },
+  {
+   "index": 13,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -0.714,
+     -0.025,
+     -16.368
+    ],
+    "max": [
+     9.194,
+     0.058,
+     -8.137
+    ]
+   },
+   "size": [
+    9.907,
+    0.083,
+    8.231
+   ]
+  },
+  {
+   "index": 15,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     1.57,
+     -0.019,
+     -15.351
+    ],
+    "max": [
+     11.801,
+     0.07,
+     -7.146
+    ]
+   },
+   "size": [
+    10.231,
+    0.089,
+    8.204
+   ]
+  },
+  {
+   "index": 17,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2.645,
+     -0.021,
+     -14.15
+    ],
+    "max": [
+     12.689,
+     0.064,
+     -5.922
+    ]
+   },
+   "size": [
+    10.044,
+    0.085,
+    8.228
+   ]
+  },
+  {
+   "index": 19,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.603,
+     -0.024,
+     -15.116
+    ],
+    "max": [
+     14.237,
+     0.06,
+     -4.235
+    ]
+   },
+   "size": [
+    10.633,
+    0.084,
+    10.881
+   ]
+  },
+  {
+   "index": 21,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.642,
+     -0.014,
+     -13.671
+    ],
+    "max": [
+     -4.906,
+     0.069,
+     -3.466
+    ]
+   },
+   "size": [
+    10.736,
+    0.083,
+    10.206
+   ]
+  },
+  {
+   "index": 23,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -13.451,
+     -0.016,
+     -14.882
+    ],
+    "max": [
+     -3.581,
+     0.063,
+     -6.299
+    ]
+   },
+   "size": [
+    9.871,
+    0.079,
+    8.583
+   ]
+  },
+  {
+   "index": 25,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -11.387,
+     -0.015,
+     -16.806
+    ],
+    "max": [
+     -2.17,
+     0.056,
+     -7.638
+    ]
+   },
+   "size": [
+    9.216,
+    0.071,
+    9.168
+   ]
+  },
+  {
+   "index": 27,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8.811,
+     -0.03,
+     -18.381
+    ],
+    "max": [
+     1.038,
+     0.058,
+     -7.258
+    ]
+   },
+   "size": [
+    9.849,
+    0.088,
+    11.123
+   ]
+  },
+  {
+   "index": 29,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -5.357,
+     -0.017,
+     -18.473
+    ],
+    "max": [
+     5.239,
+     0.066,
+     -7.688
+    ]
+   },
+   "size": [
+    10.595,
+    0.083,
+    10.785
+   ]
+  },
+  {
+   "index": 31,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -1.633,
+     -0.021,
+     -16.243
+    ],
+    "max": [
+     7.322,
+     0.061,
+     -9.381
+    ]
+   },
+   "size": [
+    8.956,
+    0.082,
+    6.862
+   ]
+  },
+  {
+   "index": 33,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.682,
+     -0.015,
+     -16.291
+    ],
+    "max": [
+     10.074,
+     0.052,
+     -8.464
+    ]
+   },
+   "size": [
+    6.392,
+    0.067,
+    7.827
+   ]
+  },
+  {
+   "index": 35,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.566,
+     -0.018,
+     -15.527
+    ],
+    "max": [
+     11.88,
+     0.068,
+     -5.363
+    ]
+   },
+   "size": [
+    8.314,
+    0.086,
+    10.164
+   ]
+  },
+  {
+   "index": 37,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     5.93,
+     -0.013,
+     -13.685
+    ],
+    "max": [
+     14.69,
+     0.058,
+     -4.425
+    ]
+   },
+   "size": [
+    8.76,
+    0.071,
+    9.26
+   ]
+  },
+  {
+   "index": 39,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     5.341,
+     -0.026,
+     -12.793
+    ],
+    "max": [
+     15.287,
+     0.059,
+     -1.887
+    ]
+   },
+   "size": [
+    9.946,
+    0.085,
+    10.906
+   ]
+  },
+  {
+   "index": 41,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16.342,
+     -0.012,
+     -12.337
+    ],
+    "max": [
+     -7.186,
+     0.067,
+     -2.192
+    ]
+   },
+   "size": [
+    9.156,
+    0.079,
+    10.145
+   ]
+  },
+  {
+   "index": 43,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.949,
+     -0.024,
+     -14.247
+    ],
+    "max": [
+     -5.292,
+     0.067,
+     -3.041
+    ]
+   },
+   "size": [
+    9.657,
+    0.091,
+    11.207
+   ]
+  },
+  {
+   "index": 45,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12.377,
+     -0.024,
+     -14.795
+    ],
+    "max": [
+     -4.669,
+     0.06,
+     -5.136
+    ]
+   },
+   "size": [
+    7.708,
+    0.084,
+    9.659
+   ]
+  },
+  {
+   "index": 47,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -11.506,
+     -0.013,
+     -17.13
+    ],
+    "max": [
+     -0.881,
+     0.07,
+     -6.477
+    ]
+   },
+   "size": [
+    10.625,
+    0.083,
+    10.653
+   ]
+  },
+  {
+   "index": 49,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     -0.022,
+     -17.144
+    ],
+    "max": [
+     3.431,
+     0.067,
+     -6.815
+    ]
+   },
+   "size": [
+    11.432,
+    0.089,
+    10.33
+   ]
+  },
+  {
+   "index": 51,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2.315,
+     -0.02,
+     -16
+    ],
+    "max": [
+     7.975,
+     0.06,
+     -5.71
+    ]
+   },
+   "size": [
+    10.29,
+    0.08,
+    10.29
+   ]
+  },
+  {
+   "index": 53,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     1.017,
+     -0.023,
+     -16.073
+    ],
+    "max": [
+     11.19,
+     0.056,
+     -5.995
+    ]
+   },
+   "size": [
+    10.173,
+    0.079,
+    10.078
+   ]
+  },
+  {
+   "index": 55,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.166,
+     -0.015,
+     -15.401
+    ],
+    "max": [
+     12.944,
+     0.066,
+     -4.934
+    ]
+   },
+   "size": [
+    9.778,
+    0.081,
+    10.466
+   ]
+  },
+  {
+   "index": 57,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     7.214,
+     -0.016,
+     -12.402
+    ],
+    "max": [
+     13.583,
+     0.06,
+     -4.089
+    ]
+   },
+   "size": [
+    6.369,
+    0.076,
+    8.313
+   ]
+  },
+  {
+   "index": 59,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     5.735,
+     -0.027,
+     -11.418
+    ],
+    "max": [
+     15.984,
+     0.059,
+     -2.897
+    ]
+   },
+   "size": [
+    10.248,
+    0.086,
+    8.521
+   ]
+  },
+  {
+   "index": 61,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16.526,
+     -0.021,
+     -11.725
+    ],
+    "max": [
+     -5.828,
+     0.071,
+     0.101
+    ]
+   },
+   "size": [
+    10.698,
+    0.092,
+    11.826
+   ]
+  },
+  {
+   "index": 63,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.793,
+     -0.01,
+     -12.729
+    ],
+    "max": [
+     -6.913,
+     0.058,
+     -4.306
+    ]
+   },
+   "size": [
+    8.88,
+    0.068,
+    8.423
+   ]
+  },
+  {
+   "index": 65,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -13.326,
+     -0.019,
+     -14.147
+    ],
+    "max": [
+     -4.147,
+     0.057,
+     -4.3
+    ]
+   },
+   "size": [
+    9.18,
+    0.076,
+    9.848
+   ]
+  },
+  {
+   "index": 67,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -9.762,
+     -0.014,
+     -13.565
+    ],
+    "max": [
+     0.924,
+     0.069,
+     -3.781
+    ]
+   },
+   "size": [
+    10.686,
+    0.083,
+    9.785
+   ]
+  },
+  {
+   "index": 69,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.24,
+     -0.019,
+     -13.145
+    ],
+    "max": [
+     5.043,
+     0.065,
+     -2.564
+    ]
+   },
+   "size": [
+    9.283,
+    0.084,
+    10.582
+   ]
+  },
+  {
+   "index": 71,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -0.721,
+     -0.017,
+     -12.645
+    ],
+    "max": [
+     8.695,
+     0.058,
+     -4.416
+    ]
+   },
+   "size": [
+    9.415,
+    0.075,
+    8.229
+   ]
+  },
+  {
+   "index": 73,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.777,
+     -0.021,
+     -14.081
+    ],
+    "max": [
+     12.607,
+     0.053,
+     -4.567
+    ]
+   },
+   "size": [
+    8.83,
+    0.074,
+    9.514
+   ]
+  },
+  {
+   "index": 75,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6.216,
+     -0.012,
+     -11.336
+    ],
+    "max": [
+     15.583,
+     0.063,
+     -3.15
+    ]
+   },
+   "size": [
+    9.367,
+    0.075,
+    8.187
+   ]
+  },
+  {
+   "index": 77,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     7.045,
+     -0.015,
+     -11.022
+    ],
+    "max": [
+     16.286,
+     0.058,
+     -1.64
+    ]
+   },
+   "size": [
+    9.241,
+    0.073,
+    9.382
+   ]
+  },
+  {
+   "index": 79,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     5.962,
+     -0.031,
+     -9.797
+    ],
+    "max": [
+     16.94,
+     0.061,
+     -0.65
+    ]
+   },
+   "size": [
+    10.978,
+    0.092,
+    9.147
+   ]
+  },
+  {
+   "index": 81,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18.098,
+     -0.018,
+     -7.788
+    ],
+    "max": [
+     -7.87,
+     0.068,
+     0.686
+    ]
+   },
+   "size": [
+    10.228,
+    0.086,
+    8.473
+   ]
+  },
+  {
+   "index": 83,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16.357,
+     -0.009,
+     -8.782
+    ],
+    "max": [
+     -10.798,
+     0.058,
+     -1.526
+    ]
+   },
+   "size": [
+    5.559,
+    0.067,
+    7.256
+   ]
+  },
+  {
+   "index": 85,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.913,
+     -0.023,
+     -9.688
+    ],
+    "max": [
+     -5.896,
+     0.058,
+     -1.016
+    ]
+   },
+   "size": [
+    10.017,
+    0.081,
+    8.671
+   ]
+  },
+  {
+   "index": 87,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10.287,
+     -0.006,
+     -9.467
+    ],
+    "max": [
+     -2.026,
+     0.064,
+     -2.695
+    ]
+   },
+   "size": [
+    8.261,
+    0.07,
+    6.772
+   ]
+  },
+  {
+   "index": 89,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -5.853,
+     -0.019,
+     -10.528
+    ],
+    "max": [
+     0.626,
+     0.064,
+     -1.816
+    ]
+   },
+   "size": [
+    6.479,
+    0.083,
+    8.712
+   ]
+  },
+  {
+   "index": 91,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2.857,
+     -0.013,
+     -10.05
+    ],
+    "max": [
+     5.821,
+     0.054,
+     -1.569
+    ]
+   },
+   "size": [
+    8.679,
+    0.067,
+    8.481
+   ]
+  },
+  {
+   "index": 93,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0.143,
+     -0.015,
+     -10.437
+    ],
+    "max": [
+     11.098,
+     0.071,
+     -0.602
+    ]
+   },
+   "size": [
+    10.955,
+    0.086,
+    9.835
+   ]
+  },
+  {
+   "index": 95,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.183,
+     -0.022,
+     -8.903
+    ],
+    "max": [
+     14.595,
+     0.068,
+     -0.52
+    ]
+   },
+   "size": [
+    10.412,
+    0.09,
+    8.383
+   ]
+  },
+  {
+   "index": 97,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8.263,
+     -0.013,
+     -9.031
+    ],
+    "max": [
+     17.327,
+     0.057,
+     -0.345
+    ]
+   },
+   "size": [
+    9.064,
+    0.07,
+    8.686
+   ]
+  },
+  {
+   "index": 99,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6.785,
+     -0.031,
+     -9.41
+    ],
+    "max": [
+     16.209,
+     0.06,
+     1.673
+    ]
+   },
+   "size": [
+    9.424,
+    0.091,
+    11.083
+   ]
+  },
+  {
+   "index": 101,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -17.852,
+     -0.011,
+     -7.474
+    ],
+    "max": [
+     -9.729,
+     0.064,
+     1.855
+    ]
+   },
+   "size": [
+    8.123,
+    0.075,
+    9.329
+   ]
+  },
+  {
+   "index": 103,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -17.333,
+     -0.024,
+     -7.813
+    ],
+    "max": [
+     -6.415,
+     0.064,
+     1.614
+    ]
+   },
+   "size": [
+    10.918,
+    0.088,
+    9.427
+   ]
+  },
+  {
+   "index": 105,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12.219,
+     -0.029,
+     -6.323
+    ],
+    "max": [
+     -2.802,
+     0.06,
+     0.702
+    ]
+   },
+   "size": [
+    9.417,
+    0.089,
+    7.025
+   ]
+  },
+  {
+   "index": 107,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8.576,
+     -0.012,
+     -7.658
+    ],
+    "max": [
+     -0.041,
+     0.066,
+     2.102
+    ]
+   },
+   "size": [
+    8.535,
+    0.078,
+    9.76
+   ]
+  },
+  {
+   "index": 109,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2.499,
+     -0.012,
+     -5.606
+    ],
+    "max": [
+     3.105,
+     0.06,
+     1.945
+    ]
+   },
+   "size": [
+    5.603,
+    0.072,
+    7.551
+   ]
+  },
+  {
+   "index": 111,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -0.537,
+     -0.02,
+     -8.076
+    ],
+    "max": [
+     8.817,
+     0.057,
+     1.871
+    ]
+   },
+   "size": [
+    9.354,
+    0.077,
+    9.947
+   ]
+  },
+  {
+   "index": 113,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2.633,
+     -0.017,
+     -8.816
+    ],
+    "max": [
+     13.975,
+     0.07,
+     2.17
+    ]
+   },
+   "size": [
+    11.343,
+    0.087,
+    10.986
+   ]
+  },
+  {
+   "index": 115,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6.619,
+     -0.021,
+     -6.664
+    ],
+    "max": [
+     16.535,
+     0.066,
+     1.25
+    ]
+   },
+   "size": [
+    9.916,
+    0.087,
+    7.913
+   ]
+  },
+  {
+   "index": 117,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6.465,
+     -0.026,
+     -7.459
+    ],
+    "max": [
+     17.851,
+     0.062,
+     3.545
+    ]
+   },
+   "size": [
+    11.386,
+    0.088,
+    11.004
+   ]
+  },
+  {
+   "index": 119,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6.976,
+     -0.032,
+     -5.153
+    ],
+    "max": [
+     16.753,
+     0.059,
+     2.223
+    ]
+   },
+   "size": [
+    9.777,
+    0.091,
+    7.376
+   ]
+  },
+  {
+   "index": 121,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18.686,
+     -0.014,
+     -4.131
+    ],
+    "max": [
+     -8.601,
+     0.064,
+     5.828
+    ]
+   },
+   "size": [
+    10.085,
+    0.078,
+    9.96
+   ]
+  },
+  {
+   "index": 123,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18.621,
+     -0.017,
+     -4.7
+    ],
+    "max": [
+     -8.803,
+     0.06,
+     5.215
+    ]
+   },
+   "size": [
+    9.817,
+    0.077,
+    9.915
+   ]
+  },
+  {
+   "index": 125,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.046,
+     -0.032,
+     -3.472
+    ],
+    "max": [
+     -5.212,
+     0.06,
+     3.909
+    ]
+   },
+   "size": [
+    9.834,
+    0.092,
+    7.381
+   ]
+  },
+  {
+   "index": 127,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -9.558,
+     -0.017,
+     -3.539
+    ],
+    "max": [
+     -1.74,
+     0.068,
+     6.201
+    ]
+   },
+   "size": [
+    7.817,
+    0.085,
+    9.74
+   ]
+  },
+  {
+   "index": 129,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -1.957,
+     -0.009,
+     -4.053
+    ],
+    "max": [
+     5.766,
+     0.057,
+     4.459
+    ]
+   },
+   "size": [
+    7.723,
+    0.066,
+    8.512
+   ]
+  },
+  {
+   "index": 131,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.307,
+     -0.018,
+     -3.21
+    ],
+    "max": [
+     9.122,
+     0.055,
+     4.53
+    ]
+   },
+   "size": [
+    5.815,
+    0.073,
+    7.74
+   ]
+  },
+  {
+   "index": 133,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.622,
+     -0.015,
+     -5.246
+    ],
+    "max": [
+     15.416,
+     0.069,
+     5.538
+    ]
+   },
+   "size": [
+    10.795,
+    0.084,
+    10.783
+   ]
+  },
+  {
+   "index": 135,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8.801,
+     -0.012,
+     -4.765
+    ],
+    "max": [
+     18.113,
+     0.061,
+     4.654
+    ]
+   },
+   "size": [
+    9.312,
+    0.073,
+    9.42
+   ]
+  },
+  {
+   "index": 137,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     9.244,
+     -0.016,
+     -3.578
+    ],
+    "max": [
+     17.66,
+     0.055,
+     3.321
+    ]
+   },
+   "size": [
+    8.416,
+    0.071,
+    6.9
+   ]
+  },
+  {
+   "index": 139,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -17.149,
+     -0.012,
+     -2.049
+    ],
+    "max": [
+     -8.823,
+     0.068,
+     7.729
+    ]
+   },
+   "size": [
+    8.325,
+    0.08,
+    9.778
+   ]
+  },
+  {
+   "index": 141,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.468,
+     -0.008,
+     -0.997
+    ],
+    "max": [
+     -8.166,
+     0.06,
+     6.849
+    ]
+   },
+   "size": [
+    6.302,
+    0.068,
+    7.846
+   ]
+  },
+  {
+   "index": 143,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -11.547,
+     -0.028,
+     -2.109
+    ],
+    "max": [
+     -3.021,
+     0.065,
+     8.531
+    ]
+   },
+   "size": [
+    8.526,
+    0.093,
+    10.64
+   ]
+  },
+  {
+   "index": 145,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -0.887,
+     -0.031,
+     -2.138
+    ],
+    "max": [
+     7.59,
+     0.06,
+     8.382
+    ]
+   },
+   "size": [
+    8.477,
+    0.091,
+    10.52
+   ]
+  },
+  {
+   "index": 147,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.345,
+     -0.008,
+     -0.056
+    ],
+    "max": [
+     12.204,
+     0.062,
+     7.765
+    ]
+   },
+   "size": [
+    8.86,
+    0.07,
+    7.821
+   ]
+  },
+  {
+   "index": 149,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     9.119,
+     -0.015,
+     -0.912
+    ],
+    "max": [
+     15.853,
+     0.059,
+     7.563
+    ]
+   },
+   "size": [
+    6.735,
+    0.074,
+    8.474
+   ]
+  },
+  {
+   "index": 151,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8.312,
+     -0.031,
+     -1.928
+    ],
+    "max": [
+     15.645,
+     0.062,
+     7.882
+    ]
+   },
+   "size": [
+    7.333,
+    0.093,
+    9.81
+   ]
+  },
+  {
+   "index": 153,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     7.244,
+     -0.013,
+     -2.524
+    ],
+    "max": [
+     17.47,
+     0.066,
+     7.432
+    ]
+   },
+   "size": [
+    10.226,
+    0.079,
+    9.956
+   ]
+  },
+  {
+   "index": 155,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -17.7,
+     -0.024,
+     -2.091
+    ],
+    "max": [
+     -6.812,
+     0.066,
+     9.602
+    ]
+   },
+   "size": [
+    10.888,
+    0.09,
+    11.693
+   ]
+  },
+  {
+   "index": 157,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.139,
+     -0.029,
+     0.611
+    ],
+    "max": [
+     -7.945,
+     0.062,
+     10.245
+    ]
+   },
+   "size": [
+    7.194,
+    0.091,
+    9.634
+   ]
+  },
+  {
+   "index": 159,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.393,
+     -0.011,
+     1.705
+    ],
+    "max": [
+     -6.072,
+     0.068,
+     11.861
+    ]
+   },
+   "size": [
+    9.321,
+    0.079,
+    10.156
+   ]
+  },
+  {
+   "index": 161,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -11.369,
+     -0.023,
+     1.154
+    ],
+    "max": [
+     -0.57,
+     0.067,
+     12.802
+    ]
+   },
+   "size": [
+    10.798,
+    0.09,
+    11.648
+   ]
+  },
+  {
+   "index": 163,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -5.884,
+     -0.021,
+     1.459
+    ],
+    "max": [
+     2.08,
+     0.06,
+     11.067
+    ]
+   },
+   "size": [
+    7.965,
+    0.081,
+    9.607
+   ]
+  },
+  {
+   "index": 165,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -3.659,
+     -0.03,
+     0.267
+    ],
+    "max": [
+     6.298,
+     0.058,
+     11.45
+    ]
+   },
+   "size": [
+    9.957,
+    0.088,
+    11.184
+   ]
+  },
+  {
+   "index": 167,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -0.237,
+     -0.022,
+     0.037
+    ],
+    "max": [
+     11.522,
+     0.068,
+     11.161
+    ]
+   },
+   "size": [
+    11.759,
+    0.09,
+    11.124
+   ]
+  },
+  {
+   "index": 169,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.632,
+     -0.025,
+     0.337
+    ],
+    "max": [
+     14.555,
+     0.064,
+     11.592
+    ]
+   },
+   "size": [
+    9.923,
+    0.089,
+    11.255
+   ]
+  },
+  {
+   "index": 171,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     5.411,
+     -0.031,
+     -1.229
+    ],
+    "max": [
+     17.238,
+     0.06,
+     10.092
+    ]
+   },
+   "size": [
+    11.826,
+    0.091,
+    11.321
+   ]
+  },
+  {
+   "index": 173,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8.489,
+     -0.005,
+     1.195
+    ],
+    "max": [
+     16.764,
+     0.061,
+     8.391
+    ]
+   },
+   "size": [
+    8.275,
+    0.066,
+    7.196
+   ]
+  },
+  {
+   "index": 175,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.225,
+     -0.024,
+     1.613
+    ],
+    "max": [
+     -6.733,
+     0.065,
+     12.044
+    ]
+   },
+   "size": [
+    8.492,
+    0.089,
+    10.431
+   ]
+  },
+  {
+   "index": 177,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.115,
+     -0.017,
+     4.698
+    ],
+    "max": [
+     -6.432,
+     0.054,
+     12.046
+    ]
+   },
+   "size": [
+    8.683,
+    0.071,
+    7.348
+   ]
+  },
+  {
+   "index": 179,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10.804,
+     -0.005,
+     5.738
+    ],
+    "max": [
+     -3.551,
+     0.063,
+     14.138
+    ]
+   },
+   "size": [
+    7.253,
+    0.068,
+    8.4
+   ]
+  },
+  {
+   "index": 181,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -7.354,
+     -0.009,
+     5.179
+    ],
+    "max": [
+     -2.004,
+     0.058,
+     12.329
+    ]
+   },
+   "size": [
+    5.351,
+    0.067,
+    7.151
+   ]
+  },
+  {
+   "index": 183,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -5.284,
+     -0.03,
+     4.12
+    ],
+    "max": [
+     6.369,
+     0.063,
+     14.311
+    ]
+   },
+   "size": [
+    11.654,
+    0.093,
+    10.192
+   ]
+  },
+  {
+   "index": 185,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -1.155,
+     -0.013,
+     3.841
+    ],
+    "max": [
+     9.61,
+     0.07,
+     13.975
+    ]
+   },
+   "size": [
+    10.764,
+    0.083,
+    10.134
+   ]
+  },
+  {
+   "index": 187,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2.646,
+     -0.024,
+     4.105
+    ],
+    "max": [
+     13.898,
+     0.069,
+     13.588
+    ]
+   },
+   "size": [
+    11.253,
+    0.093,
+    9.483
+   ]
+  },
+  {
+   "index": 189,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.809,
+     -0.025,
+     1.986
+    ],
+    "max": [
+     16.067,
+     0.063,
+     12.26
+    ]
+   },
+   "size": [
+    11.258,
+    0.088,
+    10.273
+   ]
+  },
+  {
+   "index": 191,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     5.62,
+     -0.031,
+     0.697
+    ],
+    "max": [
+     14.954,
+     0.059,
+     11.704
+    ]
+   },
+   "size": [
+    9.334,
+    0.09,
+    11.008
+   ]
+  },
+  {
+   "index": 193,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6.127,
+     -0.016,
+     1.139
+    ],
+    "max": [
+     16.499,
+     0.066,
+     10.339
+    ]
+   },
+   "size": [
+    10.372,
+    0.082,
+    9.2
+   ]
+  },
+  {
+   "index": 195,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.293,
+     -0.019,
+     4.881
+    ],
+    "max": [
+     -6.915,
+     0.061,
+     11.092
+    ]
+   },
+   "size": [
+    8.379,
+    0.08,
+    6.211
+   ]
+  },
+  {
+   "index": 197,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.671,
+     -0.018,
+     3.866
+    ],
+    "max": [
+     -6.43,
+     0.055,
+     13.248
+    ]
+   },
+   "size": [
+    9.241,
+    0.073,
+    9.382
+   ]
+  },
+  {
+   "index": 199,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -13.563,
+     -0.019,
+     4.775
+    ],
+    "max": [
+     -2.362,
+     0.07,
+     14.682
+    ]
+   },
+   "size": [
+    11.202,
+    0.089,
+    9.906
+   ]
+  },
+  {
+   "index": 201,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10.037,
+     -0.01,
+     8.431
+    ],
+    "max": [
+     -1.13,
+     0.059,
+     16.857
+    ]
+   },
+   "size": [
+    8.907,
+    0.069,
+    8.427
+   ]
+  },
+  {
+   "index": 203,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6.844,
+     -0.014,
+     9.211
+    ],
+    "max": [
+     1.747,
+     0.055,
+     16.719
+    ]
+   },
+   "size": [
+    8.59,
+    0.069,
+    7.508
+   ]
+  },
+  {
+   "index": 205,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -1.533,
+     -0.009,
+     7.927
+    ],
+    "max": [
+     4.548,
+     0.066,
+     15.979
+    ]
+   },
+   "size": [
+    6.081,
+    0.075,
+    8.052
+   ]
+  },
+  {
+   "index": 207,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0.884,
+     -0.019,
+     6.134
+    ],
+    "max": [
+     11.73,
+     0.064,
+     16.434
+    ]
+   },
+   "size": [
+    10.846,
+    0.083,
+    10.299
+   ]
+  },
+  {
+   "index": 209,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.476,
+     -0.02,
+     5.606
+    ],
+    "max": [
+     12.131,
+     0.059,
+     14.958
+    ]
+   },
+   "size": [
+    7.655,
+    0.079,
+    9.352
+   ]
+  },
+  {
+   "index": 211,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     5.513,
+     -0.027,
+     3.088
+    ],
+    "max": [
+     13.544,
+     0.056,
+     12.862
+    ]
+   },
+   "size": [
+    8.031,
+    0.083,
+    9.774
+   ]
+  },
+  {
+   "index": 213,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.626,
+     -0.02,
+     1.559
+    ],
+    "max": [
+     15.901,
+     0.068,
+     12.858
+    ]
+   },
+   "size": [
+    11.275,
+    0.088,
+    11.299
+   ]
+  },
+  {
+   "index": 215,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -15.413,
+     -0.018,
+     4.366
+    ],
+    "max": [
+     -5.335,
+     0.06,
+     13.536
+    ]
+   },
+   "size": [
+    10.078,
+    0.078,
+    9.17
+   ]
+  },
+  {
+   "index": 217,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -13.095,
+     -0.02,
+     6.939
+    ],
+    "max": [
+     -3.691,
+     0.055,
+     15.226
+    ]
+   },
+   "size": [
+    9.405,
+    0.075,
+    8.287
+   ]
+  },
+  {
+   "index": 219,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10.69,
+     -0.009,
+     7.391
+    ],
+    "max": [
+     -1.82,
+     0.062,
+     16.687
+    ]
+   },
+   "size": [
+    8.87,
+    0.071,
+    9.296
+   ]
+  },
+  {
+   "index": 221,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -9.054,
+     -0.025,
+     7.468
+    ],
+    "max": [
+     2.396,
+     0.066,
+     17.551
+    ]
+   },
+   "size": [
+    11.45,
+    0.091,
+    10.083
+   ]
+  },
+  {
+   "index": 223,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.433,
+     -0.024,
+     7.921
+    ],
+    "max": [
+     5.02,
+     0.058,
+     18.425
+    ]
+   },
+   "size": [
+    9.453,
+    0.082,
+    10.505
+   ]
+  },
+  {
+   "index": 225,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -0.918,
+     -0.005,
+     9.061
+    ],
+    "max": [
+     7.721,
+     0.063,
+     17.814
+    ]
+   },
+   "size": [
+    8.64,
+    0.068,
+    8.753
+   ]
+  },
+  {
+   "index": 227,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     1.321,
+     -0.009,
+     8.87
+    ],
+    "max": [
+     9.717,
+     0.058,
+     16.175
+    ]
+   },
+   "size": [
+    8.396,
+    0.067,
+    7.305
+   ]
+  },
+  {
+   "index": 229,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2.951,
+     -0.019,
+     5.937
+    ],
+    "max": [
+     12.572,
+     0.057,
+     15.808
+    ]
+   },
+   "size": [
+    9.621,
+    0.076,
+    9.871
+   ]
+  },
+  {
+   "index": 231,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.602,
+     -0.009,
+     4.162
+    ],
+    "max": [
+     13.821,
+     0.066,
+     13.933
+    ]
+   },
+   "size": [
+    9.218,
+    0.075,
+    9.771
+   ]
+  },
+  {
+   "index": 233,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6.517,
+     -0.007,
+     3.787
+    ],
+    "max": [
+     14.872,
+     0.06,
+     12.487
+    ]
+   },
+   "size": [
+    8.355,
+    0.067,
+    8.7
+   ]
+  },
+  {
+   "index": 235,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.814,
+     -0.015,
+     5.257
+    ],
+    "max": [
+     -5.484,
+     0.057,
+     14.079
+    ]
+   },
+   "size": [
+    9.33,
+    0.072,
+    8.822
+   ]
+  },
+  {
+   "index": 237,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12.92,
+     -0.016,
+     7.755
+    ],
+    "max": [
+     -4.688,
+     0.051,
+     14.83
+    ]
+   },
+   "size": [
+    8.233,
+    0.067,
+    7.076
+   ]
+  },
+  {
+   "index": 239,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -11.63,
+     -0.018,
+     5.758
+    ],
+    "max": [
+     -0.773,
+     0.068,
+     16.897
+    ]
+   },
+   "size": [
+    10.857,
+    0.086,
+    11.139
+   ]
+  },
+  {
+   "index": 241,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -7.633,
+     -0.012,
+     8.953
+    ],
+    "max": [
+     -1.205,
+     0.058,
+     16.961
+    ]
+   },
+   "size": [
+    6.427,
+    0.07,
+    8.008
+   ]
+  },
+  {
+   "index": 243,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -5.842,
+     -0.022,
+     8.473
+    ],
+    "max": [
+     3.427,
+     0.056,
+     18.556
+    ]
+   },
+   "size": [
+    9.269,
+    0.078,
+    10.083
+   ]
+  },
+  {
+   "index": 245,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.212,
+     -0.018,
+     7.34
+    ],
+    "max": [
+     6.506,
+     0.069,
+     18.657
+    ]
+   },
+   "size": [
+    10.718,
+    0.087,
+    11.317
+   ]
+  },
+  {
+   "index": 247,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -1.398,
+     -0.016,
+     8.099
+    ],
+    "max": [
+     8.591,
+     0.062,
+     17.251
+    ]
+   },
+   "size": [
+    9.989,
+    0.078,
+    9.152
+   ]
+  },
+  {
+   "index": 249,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0.855,
+     -0.025,
+     5.845
+    ],
+    "max": [
+     11.774,
+     0.06,
+     16.65
+    ]
+   },
+   "size": [
+    10.919,
+    0.085,
+    10.805
+   ]
+  },
+  {
+   "index": 251,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2.285,
+     -0.021,
+     3.678
+    ],
+    "max": [
+     13.452,
+     0.072,
+     15.703
+    ]
+   },
+   "size": [
+    11.166,
+    0.093,
+    12.025
+   ]
+  },
+  {
+   "index": 253,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4.673,
+     -0.013,
+     5.895
+    ],
+    "max": [
+     13.534,
+     0.062,
+     13.17
+    ]
+   },
+   "size": [
+    8.86,
+    0.075,
+    7.275
+   ]
+  },
+  {
+   "index": 255,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -7.007,
+     -0.47,
+     -3.09
+    ],
+    "max": [
+     2.726,
+     -0.392,
+     6.987
+    ]
+   },
+   "size": [
+    9.734,
+    0.078,
+    10.077
+   ]
+  },
+  {
+   "index": 257,
+   "name": "terrain-water",
+   "key": "terrain-water",
+   "meshes": 1,
+   "triangles": 208,
+   "aabb": {
+    "min": [
+     -6.28,
+     -0.012,
+     -2.067
+    ],
+    "max": [
+     1.99,
+     0.021,
+     6.495
+    ]
+   },
+   "size": [
+    8.271,
+    0.033,
+    8.563
+   ]
+  },
+  {
+   "index": 259,
+   "name": "blacksmith",
+   "key": "blacksmith",
+   "meshes": 3,
+   "triangles": 1668,
+   "aabb": {
+    "min": [
+     10.432,
+     0.05,
+     1.082
+    ],
+    "max": [
+     16.285,
+     4.01,
+     7.419
+    ]
+   },
+   "size": [
+    5.853,
+    3.96,
+    6.337
+   ]
+  },
+  {
+   "index": 265,
+   "name": "cottage-small",
+   "key": "cottage-small",
+   "meshes": 2,
+   "triangles": 1764,
+   "aabb": {
+    "min": [
+     0.214,
+     0.05,
+     12.666
+    ],
+    "max": [
+     6.995,
+     5.11,
+     17.965
+    ]
+   },
+   "size": [
+    6.781,
+    5.06,
+    5.299
+   ]
+  },
+  {
+   "index": 269,
+   "name": "tavern",
+   "key": "tavern",
+   "meshes": 4,
+   "triangles": 1996,
+   "aabb": {
+    "min": [
+     -17.578,
+     0.05,
+     1.459
+    ],
+    "max": [
+     -3.188,
+     11.05,
+     16.845
+    ]
+   },
+   "size": [
+    14.391,
+    11,
+    15.386
+   ]
+  },
+  {
+   "index": 277,
+   "name": "watchtower",
+   "key": "watchtower",
+   "meshes": 3,
+   "triangles": 1884,
+   "aabb": {
+    "min": [
+     -17.401,
+     0.05,
+     -8.033
+    ],
+    "max": [
+     -12.223,
+     9.5,
+     -2.959
+    ]
+   },
+   "size": [
+    5.178,
+    9.45,
+    5.074
+   ]
+  },
+  {
+   "index": 283,
+   "name": "house-two-story",
+   "key": "house-two-story",
+   "meshes": 2,
+   "triangles": 1848,
+   "aabb": {
+    "min": [
+     -10.006,
+     0.05,
+     -18.522
+    ],
+    "max": [
+     -1.944,
+     8.42,
+     -9.33
+    ]
+   },
+   "size": [
+    8.063,
+    8.37,
+    9.192
+   ]
+  },
+  {
+   "index": 287,
+   "name": "chapel",
+   "key": "chapel",
+   "meshes": 3,
+   "triangles": 1949,
+   "aabb": {
+    "min": [
+     2.109,
+     0.05,
+     -16.33
+    ],
+    "max": [
+     7.621,
+     8.2,
+     -9.242
+    ]
+   },
+   "size": [
+    5.512,
+    8.15,
+    7.088
+   ]
+  },
+  {
+   "index": 293,
+   "name": "windmill",
+   "key": "windmill",
+   "meshes": 3,
+   "triangles": 1811,
+   "aabb": {
+    "min": [
+     10.905,
+     0.05,
+     -11.49
+    ],
+    "max": [
+     17.008,
+     9.645,
+     -5.183
+    ]
+   },
+   "size": [
+    6.102,
+    9.595,
+    6.307
+   ]
+  },
+  {
+   "index": 300,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12.317,
+     -0.018,
+     -1.966
+    ],
+    "max": [
+     20.12,
+     0.058,
+     7.255
+    ]
+   },
+   "size": [
+    7.803,
+    0.076,
+    9.221
+   ]
+  },
+  {
+   "index": 302,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10.228,
+     -0.024,
+     0.661
+    ],
+    "max": [
+     19.497,
+     0.055,
+     10.807
+    ]
+   },
+   "size": [
+    9.269,
+    0.079,
+    10.147
+   ]
+  },
+  {
+   "index": 304,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     9.124,
+     -0.014,
+     2.626
+    ],
+    "max": [
+     19.296,
+     0.065,
+     11.998
+    ]
+   },
+   "size": [
+    10.172,
+    0.079,
+    9.372
+   ]
+  },
+  {
+   "index": 306,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12.407,
+     -0.017,
+     -1.949
+    ],
+    "max": [
+     20.04,
+     0.06,
+     7.219
+    ]
+   },
+   "size": [
+    7.633,
+    0.077,
+    9.168
+   ]
+  },
+  {
+   "index": 308,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8.748,
+     -0.027,
+     2.256
+    ],
+    "max": [
+     19.689,
+     0.058,
+     12.331
+    ]
+   },
+   "size": [
+    10.94,
+    0.085,
+    10.074
+   ]
+  },
+  {
+   "index": 310,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     1.883,
+     -0.013,
+     14.418
+    ],
+    "max": [
+     10.729,
+     0.065,
+     21.394
+    ]
+   },
+   "size": [
+    8.846,
+    0.078,
+    6.977
+   ]
+  },
+  {
+   "index": 312,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -1.239,
+     -0.02,
+     13.701
+    ],
+    "max": [
+     7.843,
+     0.063,
+     20.693
+    ]
+   },
+   "size": [
+    9.083,
+    0.083,
+    6.992
+   ]
+  },
+  {
+   "index": 314,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -3.002,
+     -0.019,
+     12.35
+    ],
+    "max": [
+     6.655,
+     0.055,
+     21.63
+    ]
+   },
+   "size": [
+    9.658,
+    0.074,
+    9.28
+   ]
+  },
+  {
+   "index": 316,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.379,
+     -0.011,
+     11.65
+    ],
+    "max": [
+     5.052,
+     0.067,
+     21.712
+    ]
+   },
+   "size": [
+    9.431,
+    0.078,
+    10.061
+   ]
+  },
+  {
+   "index": 318,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     1.862,
+     -0.014,
+     14.261
+    ],
+    "max": [
+     10.696,
+     0.061,
+     21.536
+    ]
+   },
+   "size": [
+    8.834,
+    0.075,
+    7.274
+   ]
+  },
+  {
+   "index": 320,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.034,
+     -0.023,
+     11.686
+    ],
+    "max": [
+     4.67,
+     0.059,
+     21.814
+    ]
+   },
+   "size": [
+    8.705,
+    0.082,
+    10.128
+   ]
+  },
+  {
+   "index": 322,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     1.847,
+     -0.011,
+     10.709
+    ],
+    "max": [
+     11.438,
+     0.068,
+     20.908
+    ]
+   },
+   "size": [
+    9.591,
+    0.079,
+    10.199
+   ]
+  },
+  {
+   "index": 324,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.166,
+     -0.018,
+     13.568
+    ],
+    "max": [
+     -5.408,
+     0.065,
+     20.074
+    ]
+   },
+   "size": [
+    8.758,
+    0.083,
+    6.506
+   ]
+  },
+  {
+   "index": 326,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -17.688,
+     -0.019,
+     8.129
+    ],
+    "max": [
+     -7.648,
+     0.059,
+     17.998
+    ]
+   },
+   "size": [
+    10.041,
+    0.078,
+    9.869
+   ]
+  },
+  {
+   "index": 328,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -17.735,
+     -0.022,
+     7.144
+    ],
+    "max": [
+     -9.646,
+     0.055,
+     16.58
+    ]
+   },
+   "size": [
+    8.088,
+    0.077,
+    9.436
+   ]
+  },
+  {
+   "index": 330,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -19.104,
+     -0.016,
+     5.392
+    ],
+    "max": [
+     -10.164,
+     0.066,
+     15.66
+    ]
+   },
+   "size": [
+    8.94,
+    0.082,
+    10.268
+   ]
+  },
+  {
+   "index": 332,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18.793,
+     -0.015,
+     5.166
+    ],
+    "max": [
+     -12.529,
+     0.059,
+     13.289
+    ]
+   },
+   "size": [
+    6.264,
+    0.074,
+    8.123
+   ]
+  },
+  {
+   "index": 334,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -20.343,
+     -0.023,
+     3.322
+    ],
+    "max": [
+     -12.948,
+     0.058,
+     12.573
+    ]
+   },
+   "size": [
+    7.394,
+    0.081,
+    9.251
+   ]
+  },
+  {
+   "index": 336,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -21.379,
+     -0.011,
+     1.951
+    ],
+    "max": [
+     -13.661,
+     0.065,
+     11.123
+    ]
+   },
+   "size": [
+    7.719,
+    0.076,
+    9.172
+   ]
+  },
+  {
+   "index": 338,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -22.612,
+     -0.018,
+     1.386
+    ],
+    "max": [
+     -12.786,
+     0.063,
+     11.927
+    ]
+   },
+   "size": [
+    9.826,
+    0.081,
+    10.541
+   ]
+  },
+  {
+   "index": 340,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -11.978,
+     -0.018,
+     9.941
+    ],
+    "max": [
+     -2.37,
+     0.057,
+     19.559
+    ]
+   },
+   "size": [
+    9.607,
+    0.075,
+    9.617
+   ]
+  },
+  {
+   "index": 342,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18.98,
+     -0.011,
+     -0.252
+    ],
+    "max": [
+     -10.763,
+     0.068,
+     9.406
+    ]
+   },
+   "size": [
+    8.218,
+    0.079,
+    9.658
+   ]
+  },
+  {
+   "index": 344,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -22.035,
+     -0.014,
+     -9.782
+    ],
+    "max": [
+     -12.555,
+     0.063,
+     0.206
+    ]
+   },
+   "size": [
+    9.48,
+    0.077,
+    9.989
+   ]
+  },
+  {
+   "index": 346,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -20.195,
+     -0.02,
+     -10.876
+    ],
+    "max": [
+     -12.808,
+     0.059,
+     -1.731
+    ]
+   },
+   "size": [
+    7.387,
+    0.079,
+    9.145
+   ]
+  },
+  {
+   "index": 348,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -20.333,
+     -0.021,
+     -11.81
+    ],
+    "max": [
+     -11.243,
+     0.054,
+     -4.134
+    ]
+   },
+   "size": [
+    9.09,
+    0.075,
+    7.676
+   ]
+  },
+  {
+   "index": 350,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -21.939,
+     -0.012,
+     -9.696
+    ],
+    "max": [
+     -12.661,
+     0.064,
+     0.126
+    ]
+   },
+   "size": [
+    9.277,
+    0.076,
+    9.822
+   ]
+  },
+  {
+   "index": 352,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -20.848,
+     -0.021,
+     -12.211
+    ],
+    "max": [
+     -10.762,
+     0.062,
+     -3.688
+    ]
+   },
+   "size": [
+    10.086,
+    0.083,
+    8.523
+   ]
+  },
+  {
+   "index": 354,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.559,
+     -0.02,
+     -21.115
+    ],
+    "max": [
+     -5.66,
+     0.055,
+     -11.461
+    ]
+   },
+   "size": [
+    8.899,
+    0.075,
+    9.653
+   ]
+  },
+  {
+   "index": 356,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -11.951,
+     -0.012,
+     -20.884
+    ],
+    "max": [
+     -3.236,
+     0.066,
+     -14.035
+    ]
+   },
+   "size": [
+    8.715,
+    0.078,
+    6.849
+   ]
+  },
+  {
+   "index": 358,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10.314,
+     -0.015,
+     -21.195
+    ],
+    "max": [
+     -2.069,
+     0.059,
+     -14.783
+    ]
+   },
+   "size": [
+    8.245,
+    0.074,
+    6.412
+   ]
+  },
+  {
+   "index": 360,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -9.785,
+     -0.021,
+     -22.932
+    ],
+    "max": [
+     0.015,
+     0.057,
+     -14.255
+    ]
+   },
+   "size": [
+    9.8,
+    0.078,
+    8.677
+   ]
+  },
+  {
+   "index": 362,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -13.009,
+     -0.011,
+     -20.403
+    ],
+    "max": [
+     -6.957,
+     0.067,
+     -12.256
+    ]
+   },
+   "size": [
+    6.052,
+    0.078,
+    8.147
+   ]
+  },
+  {
+   "index": 364,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -9.648,
+     -0.014,
+     -23.521
+    ],
+    "max": [
+     -0.112,
+     0.061,
+     -13.884
+    ]
+   },
+   "size": [
+    9.536,
+    0.075,
+    9.637
+   ]
+  },
+  {
+   "index": 366,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12.894,
+     -0.021,
+     -18.113
+    ],
+    "max": [
+     -4.991,
+     0.059,
+     -8.58
+    ]
+   },
+   "size": [
+    7.903,
+    0.08,
+    9.533
+   ]
+  },
+  {
+   "index": 368,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8.75,
+     -0.015,
+     -21.339
+    ],
+    "max": [
+     1.289,
+     0.07,
+     -10.381
+    ]
+   },
+   "size": [
+    10.04,
+    0.085,
+    10.958
+   ]
+  },
+  {
+   "index": 370,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -1.608,
+     -0.014,
+     -19.999
+    ],
+    "max": [
+     7.53,
+     0.064,
+     -12.508
+    ]
+   },
+   "size": [
+    9.138,
+    0.078,
+    7.492
+   ]
+  },
+  {
+   "index": 372,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0.988,
+     -0.02,
+     -20.143
+    ],
+    "max": [
+     10.942,
+     0.06,
+     -11.571
+    ]
+   },
+   "size": [
+    9.954,
+    0.08,
+    8.572
+   ]
+  },
+  {
+   "index": 374,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.011,
+     -0.021,
+     -20.569
+    ],
+    "max": [
+     12,
+     0.054,
+     -10.899
+    ]
+   },
+   "size": [
+    8.989,
+    0.075,
+    9.669
+   ]
+  },
+  {
+   "index": 376,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2.19,
+     -0.015,
+     -21.019
+    ],
+    "max": [
+     8.25,
+     0.066,
+     -11.378
+    ]
+   },
+   "size": [
+    10.44,
+    0.081,
+    9.641
+   ]
+  },
+  {
+   "index": 378,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2.403,
+     -0.018,
+     -20.552
+    ],
+    "max": [
+     12.549,
+     0.06,
+     -10.741
+    ]
+   },
+   "size": [
+    10.146,
+    0.078,
+    9.811
+   ]
+  },
+  {
+   "index": 380,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     9.602,
+     -0.023,
+     -16.006
+    ],
+    "max": [
+     19.013,
+     0.056,
+     -8.251
+    ]
+   },
+   "size": [
+    9.41,
+    0.079,
+    7.755
+   ]
+  },
+  {
+   "index": 382,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10.261,
+     -0.017,
+     -15.201
+    ],
+    "max": [
+     21.307,
+     0.068,
+     -4.553
+    ]
+   },
+   "size": [
+    11.046,
+    0.085,
+    10.648
+   ]
+  },
+  {
+   "index": 384,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12.603,
+     -0.02,
+     -13.845
+    ],
+    "max": [
+     20.851,
+     0.063,
+     -3.896
+    ]
+   },
+   "size": [
+    8.248,
+    0.083,
+    9.95
+   ]
+  },
+  {
+   "index": 386,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     13.235,
+     -0.02,
+     -12.462
+    ],
+    "max": [
+     21.817,
+     0.057,
+     -2.775
+    ]
+   },
+   "size": [
+    8.582,
+    0.077,
+    9.686
+   ]
+  },
+  {
+   "index": 388,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     9.911,
+     -0.012,
+     -15.536
+    ],
+    "max": [
+     18.603,
+     0.067,
+     -8.838
+    ]
+   },
+   "size": [
+    8.692,
+    0.079,
+    6.698
+   ]
+  },
+  {
+   "index": 390,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12.968,
+     -0.019,
+     -12.842
+    ],
+    "max": [
+     22.048,
+     0.064,
+     -2.432
+    ]
+   },
+   "size": [
+    9.08,
+    0.083,
+    10.409
+   ]
+  },
+  {
+   "index": 392,
+   "name": "grass-terrain-blob",
+   "key": "grass-terrain-blob",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10.447,
+     -0.017,
+     -10.412
+    ],
+    "max": [
+     19.978,
+     0.057,
+     -1.606
+    ]
+   },
+   "size": [
+    9.531,
+    0.074,
+    8.806
+   ]
+  },
+  {
+   "index": 394,
+   "name": "well",
+   "key": "well",
+   "meshes": 3,
+   "triangles": 788,
+   "aabb": {
+    "min": [
+     2.239,
+     0.05,
+     -1.217
+    ],
+    "max": [
+     4.671,
+     2.606,
+     1.045
+    ]
+   },
+   "size": [
+    2.432,
+    2.556,
+    2.262
+   ]
+  },
+  {
+   "index": 400,
+   "name": "signpost",
+   "key": "signpost",
+   "meshes": 4,
+   "triangles": 780,
+   "aabb": {
+    "min": [
+     4.018,
+     0.05,
+     -2.036
+    ],
+    "max": [
+     5.492,
+     2.738,
+     -0.334
+    ]
+   },
+   "size": [
+    1.474,
+    2.688,
+    1.702
+   ]
+  },
+  {
+   "index": 408,
+   "name": "fence-wood",
+   "key": "fence-wood",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     7.617,
+     0.05,
+     12.14
+    ],
+    "max": [
+     9.343,
+     1.269,
+     13.414
+    ]
+   },
+   "size": [
+    1.726,
+    1.219,
+    1.273
+   ]
+  },
+  {
+   "index": 410,
+   "name": "fence-wood",
+   "key": "fence-wood",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     9.305,
+     0.05,
+     10.959
+    ],
+    "max": [
+     11.031,
+     1.269,
+     12.233
+    ]
+   },
+   "size": [
+    1.726,
+    1.219,
+    1.273
+   ]
+  },
+  {
+   "index": 412,
+   "name": "gate-wood",
+   "key": "gate-wood",
+   "meshes": 2,
+   "triangles": 642,
+   "aabb": {
+    "min": [
+     10.909,
+     0.05,
+     9.668
+    ],
+    "max": [
+     12.801,
+     1.774,
+     11.16
+    ]
+   },
+   "size": [
+    1.893,
+    1.724,
+    1.493
+   ]
+  },
+  {
+   "index": 416,
+   "name": "fence-wood",
+   "key": "fence-wood",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     12.679,
+     0.05,
+     8.595
+    ],
+    "max": [
+     14.405,
+     1.269,
+     9.869
+    ]
+   },
+   "size": [
+    1.726,
+    1.219,
+    1.273
+   ]
+  },
+  {
+   "index": 418,
+   "name": "lamp-post",
+   "key": "lamp-post",
+   "meshes": 4,
+   "triangles": 478,
+   "aabb": {
+    "min": [
+     10.409,
+     0.05,
+     9.158
+    ],
+    "max": [
+     10.833,
+     2.25,
+     9.782
+    ]
+   },
+   "size": [
+    0.424,
+    2.2,
+    0.624
+   ]
+  },
+  {
+   "index": 424,
+   "name": "market-stall",
+   "key": "market-stall",
+   "meshes": 2,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     8.348,
+     0.05,
+     6.338
+    ],
+    "max": [
+     10.562,
+     2.07,
+     8.49
+    ]
+   },
+   "size": [
+    2.214,
+    2.02,
+    2.153
+   ]
+  },
+  {
+   "index": 428,
+   "name": "cart",
+   "key": "cart",
+   "meshes": 4,
+   "triangles": 1746,
+   "aabb": {
+    "min": [
+     4.772,
+     0.05,
+     9.819
+    ],
+    "max": [
+     7.609,
+     1.436,
+     12.043
+    ]
+   },
+   "size": [
+    2.837,
+    1.386,
+    2.224
+   ]
+  },
+  {
+   "index": 436,
+   "name": "water-trough",
+   "key": "water-trough",
+   "meshes": 2,
+   "triangles": 670,
+   "aabb": {
+    "min": [
+     7.398,
+     0.05,
+     8.71
+    ],
+    "max": [
+     9.931,
+     0.705,
+     10.925
+    ]
+   },
+   "size": [
+    2.533,
+    0.655,
+    2.215
+   ]
+  },
+  {
+   "index": 440,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 700,
+   "aabb": {
+    "min": [
+     6.725,
+     0.05,
+     7.561
+    ],
+    "max": [
+     7.785,
+     0.655,
+     8.467
+    ]
+   },
+   "size": [
+    1.06,
+    0.605,
+    0.906
+   ]
+  },
+  {
+   "index": 444,
+   "name": "sack",
+   "key": "sack",
+   "meshes": 1,
+   "triangles": 448,
+   "aabb": {
+    "min": [
+     10.762,
+     0.05,
+     6.224
+    ],
+    "max": [
+     11.553,
+     0.776,
+     7.008
+    ]
+   },
+   "size": [
+    0.791,
+    0.726,
+    0.784
+   ]
+  },
+  {
+   "index": 446,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 564,
+   "aabb": {
+    "min": [
+     7.211,
+     0.05,
+     5.87
+    ],
+    "max": [
+     8.099,
+     0.97,
+     6.758
+    ]
+   },
+   "size": [
+    0.888,
+    0.92,
+    0.888
+   ]
+  },
+  {
+   "index": 450,
+   "name": "haystack",
+   "key": "haystack",
+   "meshes": 1,
+   "triangles": 711,
+   "aabb": {
+    "min": [
+     14.293,
+     0.05,
+     -0.636
+    ],
+    "max": [
+     16.313,
+     1.895,
+     1.409
+    ]
+   },
+   "size": [
+    2.021,
+    1.845,
+    2.044
+   ]
+  },
+  {
+   "index": 452,
+   "name": "anvil",
+   "key": "anvil",
+   "meshes": 2,
+   "triangles": 686,
+   "aabb": {
+    "min": [
+     10.203,
+     0.05,
+     2.126
+    ],
+    "max": [
+     11.204,
+     0.872,
+     3.129
+    ]
+   },
+   "size": [
+    1.001,
+    0.822,
+    1.003
+   ]
+  },
+  {
+   "index": 456,
+   "name": "quench-barrel",
+   "key": "quench-barrel",
+   "meshes": 2,
+   "triangles": 576,
+   "aabb": {
+    "min": [
+     8.804,
+     0.05,
+     4.204
+    ],
+    "max": [
+     9.886,
+     0.75,
+     5.286
+    ]
+   },
+   "size": [
+    1.082,
+    0.7,
+    1.082
+   ]
+  },
+  {
+   "index": 460,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 700,
+   "aabb": {
+    "min": [
+     10.906,
+     0.05,
+     0.169
+    ],
+    "max": [
+     11.996,
+     0.655,
+     1.139
+    ]
+   },
+   "size": [
+    1.091,
+    0.605,
+    0.969
+   ]
+  },
+  {
+   "index": 464,
+   "name": "sack",
+   "key": "sack",
+   "meshes": 1,
+   "triangles": 448,
+   "aabb": {
+    "min": [
+     9.944,
+     0.05,
+     0.28
+    ],
+    "max": [
+     10.727,
+     0.776,
+     1.054
+    ]
+   },
+   "size": [
+    0.783,
+    0.726,
+    0.774
+   ]
+  },
+  {
+   "index": 466,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 564,
+   "aabb": {
+    "min": [
+     -8.168,
+     0.05,
+     4.04
+    ],
+    "max": [
+     -7.28,
+     0.97,
+     4.928
+    ]
+   },
+   "size": [
+    0.888,
+    0.92,
+    0.888
+   ]
+  },
+  {
+   "index": 470,
+   "name": "barrel",
+   "key": "barrel",
+   "meshes": 2,
+   "triangles": 564,
+   "aabb": {
+    "min": [
+     -8.991,
+     0.05,
+     2.907
+    ],
+    "max": [
+     -8.103,
+     0.97,
+     3.795
+    ]
+   },
+   "size": [
+    0.888,
+    0.92,
+    0.888
+   ]
+  },
+  {
+   "index": 474,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 700,
+   "aabb": {
+    "min": [
+     -6.145,
+     0.05,
+     6.838
+    ],
+    "max": [
+     -5.071,
+     0.655,
+     7.954
+    ]
+   },
+   "size": [
+    1.074,
+    0.605,
+    1.116
+   ]
+  },
+  {
+   "index": 478,
+   "name": "sack",
+   "key": "sack",
+   "meshes": 1,
+   "triangles": 448,
+   "aabb": {
+    "min": [
+     -5.45,
+     0.05,
+     7.92
+    ],
+    "max": [
+     -4.746,
+     0.776,
+     8.607
+    ]
+   },
+   "size": [
+    0.704,
+    0.726,
+    0.686
+   ]
+  },
+  {
+   "index": 480,
+   "name": "lamp-post",
+   "key": "lamp-post",
+   "meshes": 4,
+   "triangles": 478,
+   "aabb": {
+    "min": [
+     -6.572,
+     0.05,
+     5.624
+    ],
+    "max": [
+     -6.016,
+     2.25,
+     6.205
+    ]
+   },
+   "size": [
+    0.556,
+    2.2,
+    0.581
+   ]
+  },
+  {
+   "index": 486,
+   "name": "flower-planter",
+   "key": "flower-planter",
+   "meshes": 1,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -7.615,
+     0.05,
+     5.319
+    ],
+    "max": [
+     -6.791,
+     0.405,
+     6.105
+    ]
+   },
+   "size": [
+    0.824,
+    0.355,
+    0.787
+   ]
+  },
+  {
+   "index": 488,
+   "name": "flower-planter",
+   "key": "flower-planter",
+   "meshes": 1,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     4.598,
+     0.05,
+     13.046
+    ],
+    "max": [
+     5.472,
+     0.405,
+     13.554
+    ]
+   },
+   "size": [
+    0.873,
+    0.355,
+    0.509
+   ]
+  },
+  {
+   "index": 490,
+   "name": "flower-planter",
+   "key": "flower-planter",
+   "meshes": 1,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     2.851,
+     0.05,
+     12.611
+    ],
+    "max": [
+     3.725,
+     0.405,
+     13.119
+    ]
+   },
+   "size": [
+    0.873,
+    0.355,
+    0.509
+   ]
+  },
+  {
+   "index": 492,
+   "name": "wheelbarrow",
+   "key": "wheelbarrow",
+   "meshes": 3,
+   "triangles": 1132,
+   "aabb": {
+    "min": [
+     5.997,
+     0.05,
+     12.082
+    ],
+    "max": [
+     7.181,
+     0.916,
+     13.799
+    ]
+   },
+   "size": [
+    1.184,
+    0.866,
+    1.717
+   ]
+  },
+  {
+   "index": 498,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     1.278,
+     0.05,
+     10.765
+    ],
+    "max": [
+     2.532,
+     0.67,
+     12.007
+    ]
+   },
+   "size": [
+    1.255,
+    0.62,
+    1.242
+   ]
+  },
+  {
+   "index": 500,
+   "name": "sack",
+   "key": "sack",
+   "meshes": 1,
+   "triangles": 448,
+   "aabb": {
+    "min": [
+     11.058,
+     0.05,
+     -6.658
+    ],
+    "max": [
+     11.82,
+     0.776,
+     -5.886
+    ]
+   },
+   "size": [
+    0.762,
+    0.726,
+    0.773
+   ]
+  },
+  {
+   "index": 502,
+   "name": "sack",
+   "key": "sack",
+   "meshes": 1,
+   "triangles": 448,
+   "aabb": {
+    "min": [
+     11.754,
+     0.05,
+     -6.105
+    ],
+    "max": [
+     12.477,
+     0.776,
+     -5.398
+    ]
+   },
+   "size": [
+    0.723,
+    0.726,
+    0.707
+   ]
+  },
+  {
+   "index": 504,
+   "name": "crate",
+   "key": "crate",
+   "meshes": 2,
+   "triangles": 700,
+   "aabb": {
+    "min": [
+     10.179,
+     0.05,
+     -9.175
+    ],
+    "max": [
+     11.175,
+     0.655,
+     -8.073
+    ]
+   },
+   "size": [
+    0.997,
+    0.605,
+    1.102
+   ]
+  },
+  {
+   "index": 508,
+   "name": "tree-stump",
+   "key": "tree-stump",
+   "meshes": 2,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     0.168,
+     0.05,
+     -11.525
+    ],
+    "max": [
+     1.542,
+     1.356,
+     -10.047
+    ]
+   },
+   "size": [
+    1.373,
+    1.306,
+    1.478
+   ]
+  },
+  {
+   "index": 512,
+   "name": "merchant",
+   "key": "merchant",
+   "meshes": 2,
+   "triangles": 1080,
+   "aabb": {
+    "min": [
+     9.532,
+     0.05,
+     7.613
+    ],
+    "max": [
+     11.258,
+     1.87,
+     9.295
+    ]
+   },
+   "size": [
+    1.726,
+    1.82,
+    1.682
+   ]
+  },
+  {
+   "index": 539,
+   "name": "tradesman",
+   "key": "tradesman",
+   "meshes": 5,
+   "triangles": 1144,
+   "aabb": {
+    "min": [
+     8.589,
+     0.05,
+     2.051
+    ],
+    "max": [
+     9.749,
+     1.94,
+     3.66
+    ]
+   },
+   "size": [
+    1.16,
+    1.89,
+    1.61
+   ]
+  },
+  {
+   "index": 571,
+   "name": "tree-oak",
+   "key": "tree-oak",
+   "meshes": 1,
+   "triangles": 710,
+   "aabb": {
+    "min": [
+     -4.566,
+     0.05,
+     -10.185
+    ],
+    "max": [
+     1.876,
+     6.225,
+     -4.187
+    ]
+   },
+   "size": [
+    6.443,
+    6.175,
+    5.998
+   ]
+  },
+  {
+   "index": 573,
+   "name": "tree-oak",
+   "key": "tree-oak",
+   "meshes": 1,
+   "triangles": 710,
+   "aabb": {
+    "min": [
+     -10.732,
+     0.05,
+     -3.697
+    ],
+    "max": [
+     -4.358,
+     6.225,
+     2.925
+    ]
+   },
+   "size": [
+    6.374,
+    6.175,
+    6.622
+   ]
+  },
+  {
+   "index": 575,
+   "name": "tree-oak",
+   "key": "tree-oak",
+   "meshes": 1,
+   "triangles": 710,
+   "aabb": {
+    "min": [
+     4.708,
+     0.05,
+     -7.977
+    ],
+    "max": [
+     10.602,
+     6.225,
+     -1.595
+    ]
+   },
+   "size": [
+    5.894,
+    6.175,
+    6.381
+   ]
+  },
+  {
+   "index": 577,
+   "name": "tree-oak",
+   "key": "tree-oak",
+   "meshes": 1,
+   "triangles": 710,
+   "aabb": {
+    "min": [
+     -2.119,
+     0.05,
+     4.094
+    ],
+    "max": [
+     4.229,
+     6.225,
+     9.934
+    ]
+   },
+   "size": [
+    6.347,
+    6.175,
+    5.84
+   ]
+  },
+  {
+   "index": 579,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -16.572,
+     0.05,
+     -1.189
+    ],
+    "max": [
+     -15.326,
+     0.67,
+     0.065
+    ]
+   },
+   "size": [
+    1.246,
+    0.62,
+    1.255
+   ]
+  },
+  {
+   "index": 581,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -16.393,
+     0.05,
+     2.907
+    ],
+    "max": [
+     -15.497,
+     0.67,
+     3.921
+    ]
+   },
+   "size": [
+    0.895,
+    0.62,
+    1.014
+   ]
+  },
+  {
+   "index": 583,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -4.478,
+     0.05,
+     14.839
+    ],
+    "max": [
+     -3.412,
+     0.67,
+     15.989
+    ]
+   },
+   "size": [
+    1.065,
+    0.62,
+    1.151
+   ]
+  },
+  {
+   "index": 585,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     8.651,
+     0.05,
+     13.398
+    ],
+    "max": [
+     9.865,
+     0.67,
+     14.554
+    ]
+   },
+   "size": [
+    1.214,
+    0.62,
+    1.155
+   ]
+  },
+  {
+   "index": 587,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     11.076,
+     0.05,
+     -13.502
+    ],
+    "max": [
+     12.034,
+     0.67,
+     -12.672
+    ]
+   },
+   "size": [
+    0.959,
+    0.62,
+    0.83
+   ]
+  },
+  {
+   "index": 589,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -2.571,
+     0.05,
+     -16.701
+    ],
+    "max": [
+     -1.319,
+     0.67,
+     -15.473
+    ]
+   },
+   "size": [
+    1.252,
+    0.62,
+    1.227
+   ]
+  },
+  {
+   "index": 591,
+   "name": "bush",
+   "key": "bush",
+   "meshes": 1,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -13.506,
+     0.05,
+     -11.1
+    ],
+    "max": [
+     -12.384,
+     0.67,
+     -10.074
+    ]
+   },
+   "size": [
+    1.121,
+    0.62,
+    1.027
+   ]
+  },
+  {
+   "index": 593,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     4.93,
+     0.011,
+     -0.36
+    ],
+    "max": [
+     5.55,
+     0.063,
+     0.25
+    ]
+   },
+   "size": [
+    0.619,
+    0.052,
+    0.61
+   ]
+  },
+  {
+   "index": 595,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.101,
+     0.016,
+     0.188
+    ],
+    "max": [
+     6.125,
+     0.078,
+     1.068
+    ]
+   },
+   "size": [
+    1.023,
+    0.062,
+    0.879
+   ]
+  },
+  {
+   "index": 597,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.282,
+     0.003,
+     -0.902
+    ],
+    "max": [
+     6.568,
+     0.07,
+     0.434
+    ]
+   },
+   "size": [
+    1.286,
+    0.067,
+    1.336
+   ]
+  },
+  {
+   "index": 599,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     5.908,
+     0.03,
+     0.251
+    ],
+    "max": [
+     6.518,
+     0.079,
+     0.789
+    ]
+   },
+   "size": [
+    0.611,
+    0.049,
+    0.537
+   ]
+  },
+  {
+   "index": 601,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     6.139,
+     0.014,
+     -0.985
+    ],
+    "max": [
+     7.247,
+     0.074,
+     0.019
+    ]
+   },
+   "size": [
+    1.109,
+    0.06,
+    1.003
+   ]
+  },
+  {
+   "index": 603,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     6.382,
+     0.008,
+     -0.245
+    ],
+    "max": [
+     7.258,
+     0.066,
+     0.759
+    ]
+   },
+   "size": [
+    0.876,
+    0.058,
+    1.005
+   ]
+  },
+  {
+   "index": 605,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.141,
+     0.023,
+     -0.87
+    ],
+    "max": [
+     7.773,
+     0.075,
+     -0.486
+    ]
+   },
+   "size": [
+    0.632,
+    0.052,
+    0.384
+   ]
+  },
+  {
+   "index": 607,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     6.919,
+     0.006,
+     -0.432
+    ],
+    "max": [
+     8.059,
+     0.07,
+     0.578
+    ]
+   },
+   "size": [
+    1.141,
+    0.064,
+    1.01
+   ]
+  },
+  {
+   "index": 609,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     7.541,
+     0.027,
+     -1.18
+    ],
+    "max": [
+     8.623,
+     0.082,
+     -0.068
+    ]
+   },
+   "size": [
+    1.081,
+    0.055,
+    1.111
+   ]
+  },
+  {
+   "index": 611,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.945,
+     0.019,
+     -0.276
+    ],
+    "max": [
+     8.305,
+     0.071,
+     0.344
+    ]
+   },
+   "size": [
+    0.361,
+    0.052,
+    0.62
+   ]
+  },
+  {
+   "index": 613,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     8.172,
+     0.004,
+     -1.204
+    ],
+    "max": [
+     9.336,
+     0.066,
+     -0.144
+    ]
+   },
+   "size": [
+    1.164,
+    0.062,
+    1.059
+   ]
+  },
+  {
+   "index": 615,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     8.55,
+     0.028,
+     -0.327
+    ],
+    "max": [
+     9.474,
+     0.079,
+     0.503
+    ]
+   },
+   "size": [
+    0.924,
+    0.051,
+    0.83
+   ]
+  },
+  {
+   "index": 617,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     9.237,
+     0.017,
+     -1.104
+    ],
+    "max": [
+     9.541,
+     0.067,
+     -0.52
+    ]
+   },
+   "size": [
+    0.303,
+    0.05,
+    0.584
+   ]
+  },
+  {
+   "index": 619,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.371,
+     0.023,
+     -0.69
+    ],
+    "max": [
+     10.149,
+     0.082,
+     0.238
+    ]
+   },
+   "size": [
+    0.779,
+    0.059,
+    0.928
+   ]
+  },
+  {
+   "index": 621,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     10.034,
+     0.017,
+     -1.377
+    ],
+    "max": [
+     10.682,
+     0.07,
+     -0.977
+    ]
+   },
+   "size": [
+    0.649,
+    0.053,
+    0.399
+   ]
+  },
+  {
+   "index": 623,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     9.963,
+     0.009,
+     -0.62
+    ],
+    "max": [
+     10.631,
+     0.063,
+     -0.17
+    ]
+   },
+   "size": [
+    0.668,
+    0.054,
+    0.45
+   ]
+  },
+  {
+   "index": 625,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     10.661,
+     0.019,
+     -1.261
+    ],
+    "max": [
+     11.293,
+     0.075,
+     -0.955
+    ]
+   },
+   "size": [
+    0.632,
+    0.056,
+    0.307
+   ]
+  },
+  {
+   "index": 627,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     10.406,
+     0.012,
+     -0.929
+    ],
+    "max": [
+     11.498,
+     0.07,
+     0.221
+    ]
+   },
+   "size": [
+    1.092,
+    0.058,
+    1.151
+   ]
+  },
+  {
+   "index": 629,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     11.187,
+     0.018,
+     -2.109
+    ],
+    "max": [
+     12.475,
+     0.082,
+     -0.813
+    ]
+   },
+   "size": [
+    1.289,
+    0.064,
+    1.296
+   ]
+  },
+  {
+   "index": 631,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     11.496,
+     0.023,
+     -0.802
+    ],
+    "max": [
+     12.102,
+     0.072,
+     -0.376
+    ]
+   },
+   "size": [
+    0.606,
+    0.049,
+    0.425
+   ]
+  },
+  {
+   "index": 633,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     12.036,
+     0.007,
+     -1.555
+    ],
+    "max": [
+     12.698,
+     0.063,
+     -1.179
+    ]
+   },
+   "size": [
+    0.662,
+    0.056,
+    0.377
+   ]
+  },
+  {
+   "index": 635,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     12.291,
+     0.015,
+     -1.083
+    ],
+    "max": [
+     12.957,
+     0.074,
+     -0.359
+    ]
+   },
+   "size": [
+    0.666,
+    0.059,
+    0.725
+   ]
+  },
+  {
+   "index": 637,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     12.854,
+     0.012,
+     -1.755
+    ],
+    "max": [
+     13.49,
+     0.067,
+     -1.093
+    ]
+   },
+   "size": [
+    0.637,
+    0.055,
+    0.662
+   ]
+  },
+  {
+   "index": 639,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     12.977,
+     0.027,
+     -0.944
+    ],
+    "max": [
+     13.571,
+     0.079,
+     -0.654
+    ]
+   },
+   "size": [
+    0.594,
+    0.052,
+    0.29
+   ]
+  },
+  {
+   "index": 641,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     13.631,
+     0.015,
+     -2.287
+    ],
+    "max": [
+     14.533,
+     0.074,
+     -1.259
+    ]
+   },
+   "size": [
+    0.902,
+    0.059,
+    1.028
+   ]
+  },
+  {
+   "index": 643,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     13.814,
+     0.009,
+     -1.196
+    ],
+    "max": [
+     14.49,
+     0.063,
+     -0.684
+    ]
+   },
+   "size": [
+    0.676,
+    0.054,
+    0.512
+   ]
+  },
+  {
+   "index": 645,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     14.317,
+     0.026,
+     -2.46
+    ],
+    "max": [
+     15.259,
+     0.078,
+     -1.452
+    ]
+   },
+   "size": [
+    0.941,
+    0.052,
+    1.008
+   ]
+  },
+  {
+   "index": 647,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     14.349,
+     0.003,
+     -1.642
+    ],
+    "max": [
+     15.447,
+     0.07,
+     -0.422
+    ]
+   },
+   "size": [
+    1.098,
+    0.067,
+    1.22
+   ]
+  },
+  {
+   "index": 649,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     15.039,
+     0.017,
+     -2.483
+    ],
+    "max": [
+     16.241,
+     0.082,
+     -1.207
+    ]
+   },
+   "size": [
+    1.201,
+    0.065,
+    1.276
+   ]
+  },
+  {
+   "index": 651,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     15.052,
+     0.021,
+     -1.802
+    ],
+    "max": [
+     16.116,
+     0.074,
+     -0.736
+    ]
+   },
+   "size": [
+    1.065,
+    0.053,
+    1.066
+   ]
+  },
+  {
+   "index": 653,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     0.352,
+     0.013,
+     -1.166
+    ],
+    "max": [
+     0.98,
+     0.063,
+     -0.636
+    ]
+   },
+   "size": [
+    0.628,
+    0.05,
+    0.529
+   ]
+  },
+  {
+   "index": 655,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     0.534,
+     0.027,
+     -2.366
+    ],
+    "max": [
+     1.508,
+     0.079,
+     -1.476
+    ]
+   },
+   "size": [
+    0.973,
+    0.052,
+    0.891
+   ]
+  },
+  {
+   "index": 657,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -0.339,
+     0.021,
+     -1.6
+    ],
+    "max": [
+     0.587,
+     0.07,
+     -0.756
+    ]
+   },
+   "size": [
+    0.927,
+    0.049,
+    0.844
+   ]
+  },
+  {
+   "index": 659,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -0.31,
+     0.023,
+     -2.385
+    ],
+    "max": [
+     0.838,
+     0.082,
+     -1.195
+    ]
+   },
+   "size": [
+    1.148,
+    0.059,
+    1.191
+   ]
+  },
+  {
+   "index": 661,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -0.868,
+     0.023,
+     -1.495
+    ],
+    "max": [
+     -0.262,
+     0.071,
+     -1.013
+    ]
+   },
+   "size": [
+    0.606,
+    0.048,
+    0.482
+   ]
+  },
+  {
+   "index": 663,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -0.963,
+     0.006,
+     -2.482
+    ],
+    "max": [
+     0.251,
+     0.066,
+     -1.304
+    ]
+   },
+   "size": [
+    1.214,
+    0.06,
+    1.177
+   ]
+  },
+  {
+   "index": 665,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -1.898,
+     0.014,
+     -2.027
+    ],
+    "max": [
+     -1.022,
+     0.077,
+     -0.997
+    ]
+   },
+   "size": [
+    0.875,
+    0.063,
+    1.029
+   ]
+  },
+  {
+   "index": 667,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -1.61,
+     0.012,
+     -2.742
+    ],
+    "max": [
+     -0.632,
+     0.07,
+     -1.666
+    ]
+   },
+   "size": [
+    0.978,
+    0.058,
+    1.075
+   ]
+  },
+  {
+   "index": 669,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -2.171,
+     0.032,
+     -1.942
+    ],
+    "max": [
+     -1.751,
+     0.079,
+     -1.35
+    ]
+   },
+   "size": [
+    0.419,
+    0.047,
+    0.591
+   ]
+  },
+  {
+   "index": 671,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.287,
+     0.021,
+     -2.871
+    ],
+    "max": [
+     -1.479,
+     0.074,
+     -1.951
+    ]
+   },
+   "size": [
+    0.808,
+    0.053,
+    0.919
+   ]
+  },
+  {
+   "index": 673,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -3.313,
+     0.015,
+     -2.229
+    ],
+    "max": [
+     -2.299,
+     0.066,
+     -1.261
+    ]
+   },
+   "size": [
+    1.014,
+    0.051,
+    0.968
+   ]
+  },
+  {
+   "index": 675,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -3.107,
+     0.017,
+     -3.006
+    ],
+    "max": [
+     -1.889,
+     0.077,
+     -1.794
+    ]
+   },
+   "size": [
+    1.219,
+    0.06,
+    1.212
+   ]
+  },
+  {
+   "index": 677,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -3.951,
+     0.018,
+     -1.943
+    ],
+    "max": [
+     -3.373,
+     0.067,
+     -1.623
+    ]
+   },
+   "size": [
+    0.579,
+    0.049,
+    0.321
+   ]
+  },
+  {
+   "index": 679,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -3.817,
+     0.029,
+     -3.107
+    ],
+    "max": [
+     -2.797,
+     0.082,
+     -2.045
+    ]
+   },
+   "size": [
+    1.02,
+    0.053,
+    1.061
+   ]
+  },
+  {
+   "index": 681,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -4.638,
+     0.025,
+     -2.168
+    ],
+    "max": [
+     -4.324,
+     0.072,
+     -1.612
+    ]
+   },
+   "size": [
+    0.313,
+    0.047,
+    0.556
+   ]
+  },
+  {
+   "index": 683,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -4.595,
+     0,
+     -3.043
+    ],
+    "max": [
+     -3.811,
+     0.062,
+     -2.449
+    ]
+   },
+   "size": [
+    0.784,
+    0.062,
+    0.594
+   ]
+  },
+  {
+   "index": 685,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -5.769,
+     0.011,
+     -2.768
+    ],
+    "max": [
+     -4.477,
+     0.078,
+     -1.564
+    ]
+   },
+   "size": [
+    1.293,
+    0.067,
+    1.204
+   ]
+  },
+  {
+   "index": 687,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -5.395,
+     0.007,
+     -3.228
+    ],
+    "max": [
+     -4.661,
+     0.066,
+     -2.584
+    ]
+   },
+   "size": [
+    0.734,
+    0.059,
+    0.644
+   ]
+  },
+  {
+   "index": 689,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -6.128,
+     0.02,
+     -2.619
+    ],
+    "max": [
+     -5.442,
+     0.079,
+     -1.913
+    ]
+   },
+   "size": [
+    0.687,
+    0.059,
+    0.707
+   ]
+  },
+  {
+   "index": 691,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -6.128,
+     0.012,
+     -3.605
+    ],
+    "max": [
+     -5.1,
+     0.074,
+     -2.719
+    ]
+   },
+   "size": [
+    1.029,
+    0.062,
+    0.886
+   ]
+  },
+  {
+   "index": 693,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -7.261,
+     0.001,
+     -3.053
+    ],
+    "max": [
+     -6.097,
+     0.066,
+     -2.017
+    ]
+   },
+   "size": [
+    1.165,
+    0.065,
+    1.035
+   ]
+  },
+  {
+   "index": 695,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -7.201,
+     0.021,
+     -3.696
+    ],
+    "max": [
+     -6.081,
+     0.078,
+     -2.646
+    ]
+   },
+   "size": [
+    1.12,
+    0.057,
+    1.05
+   ]
+  },
+  {
+   "index": 697,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -7.913,
+     0.013,
+     -2.988
+    ],
+    "max": [
+     -7.019,
+     0.07,
+     -1.976
+    ]
+   },
+   "size": [
+    0.894,
+    0.057,
+    1.012
+   ]
+  },
+  {
+   "index": 699,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -7.556,
+     0.029,
+     -3.496
+    ],
+    "max": [
+     -6.98,
+     0.079,
+     -3.212
+    ]
+   },
+   "size": [
+    0.576,
+    0.05,
+    0.283
+   ]
+  },
+  {
+   "index": 701,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -8.79,
+     0.017,
+     -3.177
+    ],
+    "max": [
+     -8.232,
+     0.071,
+     -2.497
+    ]
+   },
+   "size": [
+    0.559,
+    0.054,
+    0.681
+   ]
+  },
+  {
+   "index": 703,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -8.682,
+     0.011,
+     -4.033
+    ],
+    "max": [
+     -7.576,
+     0.066,
+     -2.931
+    ]
+   },
+   "size": [
+    1.105,
+    0.055,
+    1.102
+   ]
+  },
+  {
+   "index": 705,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -9.423,
+     0.027,
+     -3.214
+    ],
+    "max": [
+     -8.823,
+     0.075,
+     -2.8
+    ]
+   },
+   "size": [
+    0.6,
+    0.048,
+    0.415
+   ]
+  },
+  {
+   "index": 707,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -9.34,
+     0.008,
+     -4.003
+    ],
+    "max": [
+     -8.85,
+     0.067,
+     -3.275
+    ]
+   },
+   "size": [
+    0.489,
+    0.059,
+    0.728
+   ]
+  },
+  {
+   "index": 709,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -10.554,
+     0.026,
+     -3.343
+    ],
+    "max": [
+     -9.9,
+     0.079,
+     -2.759
+    ]
+   },
+   "size": [
+    0.655,
+    0.053,
+    0.584
+   ]
+  },
+  {
+   "index": 711,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -10.21,
+     0.01,
+     -4.429
+    ],
+    "max": [
+     -9.756,
+     0.07,
+     -3.699
+    ]
+   },
+   "size": [
+    0.453,
+    0.06,
+    0.729
+   ]
+  },
+  {
+   "index": 713,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -11.358,
+     0.013,
+     -3.64
+    ],
+    "max": [
+     -10.732,
+     0.063,
+     -3.15
+    ]
+   },
+   "size": [
+    0.626,
+    0.05,
+    0.49
+   ]
+  },
+  {
+   "index": 715,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -11.232,
+     0.026,
+     -4.281
+    ],
+    "max": [
+     -10.64,
+     0.076,
+     -3.943
+    ]
+   },
+   "size": [
+    0.592,
+    0.05,
+    0.339
+   ]
+  },
+  {
+   "index": 717,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -12.44,
+     0.019,
+     -4.063
+    ],
+    "max": [
+     -11.462,
+     0.07,
+     -3.161
+    ]
+   },
+   "size": [
+    0.978,
+    0.051,
+    0.902
+   ]
+  },
+  {
+   "index": 719,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -11.996,
+     0.021,
+     -4.813
+    ],
+    "max": [
+     -11.294,
+     0.079,
+     -4.143
+    ]
+   },
+   "size": [
+    0.702,
+    0.058,
+    0.671
+   ]
+  },
+  {
+   "index": 721,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -13.35,
+     0.007,
+     -4.213
+    ],
+    "max": [
+     -12.36,
+     0.073,
+     -3.075
+    ]
+   },
+   "size": [
+    0.991,
+    0.066,
+    1.138
+   ]
+  },
+  {
+   "index": 723,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -13.024,
+     0.01,
+     -5.009
+    ],
+    "max": [
+     -12.492,
+     0.063,
+     -4.343
+    ]
+   },
+   "size": [
+    0.531,
+    0.053,
+    0.667
+   ]
+  },
+  {
+   "index": 725,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -14.495,
+     0.018,
+     -4.455
+    ],
+    "max": [
+     -13.301,
+     0.078,
+     -3.325
+    ]
+   },
+   "size": [
+    1.194,
+    0.06,
+    1.13
+   ]
+  },
+  {
+   "index": 727,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -13.98,
+     0.015,
+     -4.884
+    ],
+    "max": [
+     -13.346,
+     0.067,
+     -4.29
+    ]
+   },
+   "size": [
+    0.634,
+    0.052,
+    0.593
+   ]
+  },
+  {
+   "index": 729,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -15.336,
+     0.016,
+     -4.867
+    ],
+    "max": [
+     -14.064,
+     0.081,
+     -3.551
+    ]
+   },
+   "size": [
+    1.273,
+    0.065,
+    1.316
+   ]
+  },
+  {
+   "index": 731,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -15.145,
+     0.009,
+     -5.439
+    ],
+    "max": [
+     -13.847,
+     0.073,
+     -4.179
+    ]
+   },
+   "size": [
+    1.297,
+    0.064,
+    1.259
+   ]
+  },
+  {
+   "index": 733,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -15.73,
+     0.007,
+     -4.79
+    ],
+    "max": [
+     -15.244,
+     0.062,
+     -4.096
+    ]
+   },
+   "size": [
+    0.487,
+    0.055,
+    0.693
+   ]
+  },
+  {
+   "index": 735,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -15.794,
+     0.018,
+     -5.611
+    ],
+    "max": [
+     -15.082,
+     0.075,
+     -5.049
+    ]
+   },
+   "size": [
+    0.713,
+    0.057,
+    0.562
+   ]
+  },
+  {
+   "index": 737,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     5.03,
+     0.02,
+     1.697
+    ],
+    "max": [
+     5.436,
+     0.068,
+     2.291
+    ]
+   },
+   "size": [
+    0.406,
+    0.048,
+    0.594
+   ]
+  },
+  {
+   "index": 739,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     4.361,
+     0.02,
+     1.912
+    ],
+    "max": [
+     5.373,
+     0.082,
+     3.042
+    ]
+   },
+   "size": [
+    1.013,
+    0.062,
+    1.129
+   ]
+  },
+  {
+   "index": 741,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.349,
+     0.024,
+     1.849
+    ],
+    "max": [
+     6.367,
+     0.075,
+     2.861
+    ]
+   },
+   "size": [
+    1.019,
+    0.051,
+    1.012
+   ]
+  },
+  {
+   "index": 743,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     4.73,
+     0.005,
+     2.411
+    ],
+    "max": [
+     5.876,
+     0.066,
+     3.459
+    ]
+   },
+   "size": [
+    1.147,
+    0.061,
+    1.048
+   ]
+  },
+  {
+   "index": 745,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.729,
+     0.011,
+     2.377
+    ],
+    "max": [
+     6.985,
+     0.078,
+     3.701
+    ]
+   },
+   "size": [
+    1.256,
+    0.067,
+    1.323
+   ]
+  },
+  {
+   "index": 747,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.168,
+     0.021,
+     3.144
+    ],
+    "max": [
+     6.148,
+     0.07,
+     4.14
+    ]
+   },
+   "size": [
+    0.98,
+    0.049,
+    0.997
+   ]
+  },
+  {
+   "index": 749,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     6.597,
+     0.019,
+     2.969
+    ],
+    "max": [
+     7.183,
+     0.078,
+     3.713
+    ]
+   },
+   "size": [
+    0.586,
+    0.059,
+    0.745
+   ]
+  },
+  {
+   "index": 751,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.55,
+     0.011,
+     3.451
+    ],
+    "max": [
+     6.75,
+     0.074,
+     4.559
+    ]
+   },
+   "size": [
+    1.2,
+    0.063,
+    1.108
+   ]
+  },
+  {
+   "index": 753,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.055,
+     0.013,
+     3.754
+    ],
+    "max": [
+     7.459,
+     0.063,
+     4.374
+    ]
+   },
+   "size": [
+    0.405,
+    0.05,
+    0.62
+   ]
+  },
+  {
+   "index": 755,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     6.203,
+     0.012,
+     3.987
+    ],
+    "max": [
+     7.199,
+     0.077,
+     5.123
+    ]
+   },
+   "size": [
+    0.995,
+    0.065,
+    1.136
+   ]
+  },
+  {
+   "index": 757,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.518,
+     0.016,
+     4.239
+    ],
+    "max": [
+     8.134,
+     0.067,
+     4.607
+    ]
+   },
+   "size": [
+    0.615,
+    0.051,
+    0.368
+   ]
+  },
+  {
+   "index": 759,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     6.682,
+     0.023,
+     4.622
+    ],
+    "max": [
+     7.526,
+     0.082,
+     5.602
+    ]
+   },
+   "size": [
+    0.845,
+    0.059,
+    0.98
+   ]
+  },
+  {
+   "index": 761,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     7.596,
+     0.017,
+     4.716
+    ],
+    "max": [
+     8.75,
+     0.074,
+     5.86
+    ]
+   },
+   "size": [
+    1.154,
+    0.057,
+    1.144
+   ]
+  },
+  {
+   "index": 763,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.157,
+     0.012,
+     5.234
+    ],
+    "max": [
+     7.755,
+     0.063,
+     5.846
+    ]
+   },
+   "size": [
+    0.598,
+    0.051,
+    0.613
+   ]
+  },
+  {
+   "index": 765,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     8.251,
+     0.012,
+     5.681
+    ],
+    "max": [
+     8.963,
+     0.074,
+     6.047
+    ]
+   },
+   "size": [
+    0.712,
+    0.062,
+    0.365
+   ]
+  },
+  {
+   "index": 767,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.958,
+     0.021,
+     5.858
+    ],
+    "max": [
+     8.256,
+     0.068,
+     6.408
+    ]
+   },
+   "size": [
+    0.298,
+    0.047,
+    0.549
+   ]
+  },
+  {
+   "index": 769,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     8.747,
+     0.018,
+     5.636
+    ],
+    "max": [
+     9.861,
+     0.081,
+     6.844
+    ]
+   },
+   "size": [
+    1.114,
+    0.063,
+    1.209
+   ]
+  },
+  {
+   "index": 771,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     8.323,
+     0.013,
+     6.357
+    ],
+    "max": [
+     9.005,
+     0.07,
+     7.031
+    ]
+   },
+   "size": [
+    0.682,
+    0.057,
+    0.673
+   ]
+  },
+  {
+   "index": 773,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.089,
+     0.009,
+     6.324
+    ],
+    "max": [
+     9.895,
+     0.066,
+     7.264
+    ]
+   },
+   "size": [
+    0.805,
+    0.057,
+    0.941
+   ]
+  },
+  {
+   "index": 775,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     8.646,
+     0.023,
+     7.05
+    ],
+    "max": [
+     9.302,
+     0.075,
+     7.546
+    ]
+   },
+   "size": [
+    0.655,
+    0.052,
+    0.496
+   ]
+  },
+  {
+   "index": 777,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.755,
+     0.018,
+     7.053
+    ],
+    "max": [
+     10.757,
+     0.07,
+     8.093
+    ]
+   },
+   "size": [
+    1.002,
+    0.052,
+    1.04
+   ]
+  },
+  {
+   "index": 779,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     9.206,
+     0.027,
+     7.741
+    ],
+    "max": [
+     9.8,
+     0.079,
+     8.037
+    ]
+   },
+   "size": [
+    0.595,
+    0.052,
+    0.296
+   ]
+  },
+  {
+   "index": 781,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     10.151,
+     0.01,
+     7.482
+    ],
+    "max": [
+     11.445,
+     0.074,
+     8.768
+    ]
+   },
+   "size": [
+    1.293,
+    0.064,
+    1.286
+   ]
+  },
+  {
+   "index": 783,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     9.751,
+     0.016,
+     8.234
+    ],
+    "max": [
+     10.275,
+     0.063,
+     8.82
+    ]
+   },
+   "size": [
+    0.524,
+    0.047,
+    0.585
+   ]
+  },
+  {
+   "index": 785,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     10.933,
+     0.028,
+     8.402
+    ],
+    "max": [
+     11.625,
+     0.078,
+     9.216
+    ]
+   },
+   "size": [
+    0.693,
+    0.05,
+    0.815
+   ]
+  },
+  {
+   "index": 787,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     10.075,
+     0.017,
+     9.021
+    ],
+    "max": [
+     10.981,
+     0.071,
+     9.805
+    ]
+   },
+   "size": [
+    0.906,
+    0.054,
+    0.784
+   ]
+  },
+  {
+   "index": 789,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     11.568,
+     0.026,
+     9.118
+    ],
+    "max": [
+     12.008,
+     0.079,
+     9.77
+    ]
+   },
+   "size": [
+    0.441,
+    0.053,
+    0.653
+   ]
+  },
+  {
+   "index": 791,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     10.688,
+     0.021,
+     9.802
+    ],
+    "max": [
+     11.062,
+     0.071,
+     10.41
+    ]
+   },
+   "size": [
+    0.374,
+    0.05,
+    0.608
+   ]
+  },
+  {
+   "index": 793,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     11.508,
+     0,
+     9.428
+    ],
+    "max": [
+     12.812,
+     0.065,
+     10.672
+    ]
+   },
+   "size": [
+    1.304,
+    0.065,
+    1.245
+   ]
+  },
+  {
+   "index": 795,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     10.976,
+     0.015,
+     9.879
+    ],
+    "max": [
+     12.172,
+     0.078,
+     11.133
+    ]
+   },
+   "size": [
+    1.195,
+    0.063,
+    1.254
+   ]
+  },
+  {
+   "index": 797,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.232,
+     0.021,
+     2.496
+    ],
+    "max": [
+     4.234,
+     0.071,
+     3.484
+    ]
+   },
+   "size": [
+    1.003,
+    0.05,
+    0.987
+   ]
+  },
+  {
+   "index": 799,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.229,
+     0.029,
+     2.341
+    ],
+    "max": [
+     3.269,
+     0.082,
+     3.317
+    ]
+   },
+   "size": [
+    1.04,
+    0.053,
+    0.977
+   ]
+  },
+  {
+   "index": 801,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.331,
+     0.015,
+     3.317
+    ],
+    "max": [
+     4.165,
+     0.074,
+     4.291
+    ]
+   },
+   "size": [
+    0.834,
+    0.059,
+    0.975
+   ]
+  },
+  {
+   "index": 803,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.091,
+     0,
+     3.152
+    ],
+    "max": [
+     3.359,
+     0.065,
+     4.332
+    ]
+   },
+   "size": [
+    1.268,
+    0.065,
+    1.181
+   ]
+  },
+  {
+   "index": 805,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.148,
+     0.011,
+     4.031
+    ],
+    "max": [
+     3.924,
+     0.073,
+     4.719
+    ]
+   },
+   "size": [
+    0.777,
+    0.062,
+    0.689
+   ]
+  },
+  {
+   "index": 807,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.187,
+     0.015,
+     3.809
+    ],
+    "max": [
+     3.175,
+     0.07,
+     4.871
+    ]
+   },
+   "size": [
+    0.987,
+    0.055,
+    1.061
+   ]
+  },
+  {
+   "index": 809,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.924,
+     0.017,
+     4.755
+    ],
+    "max": [
+     3.93,
+     0.082,
+     5.897
+    ]
+   },
+   "size": [
+    1.006,
+    0.065,
+    1.142
+   ]
+  },
+  {
+   "index": 811,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     2.521,
+     0.011,
+     4.758
+    ],
+    "max": [
+     3.219,
+     0.071,
+     5.478
+    ]
+   },
+   "size": [
+    0.698,
+    0.06,
+    0.72
+   ]
+  },
+  {
+   "index": 813,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.104,
+     0.014,
+     5.555
+    ],
+    "max": [
+     3.964,
+     0.066,
+     6.293
+    ]
+   },
+   "size": [
+    0.86,
+    0.052,
+    0.738
+   ]
+  },
+  {
+   "index": 815,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     1.994,
+     0.014,
+     5.425
+    ],
+    "max": [
+     3.204,
+     0.078,
+     6.533
+    ]
+   },
+   "size": [
+    1.209,
+    0.064,
+    1.108
+   ]
+  },
+  {
+   "index": 817,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.025,
+     0.005,
+     6.235
+    ],
+    "max": [
+     4.073,
+     0.07,
+     7.127
+    ]
+   },
+   "size": [
+    1.048,
+    0.065,
+    0.891
+   ]
+  },
+  {
+   "index": 819,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.136,
+     0.025,
+     6.207
+    ],
+    "max": [
+     3.276,
+     0.082,
+     7.287
+    ]
+   },
+   "size": [
+    1.139,
+    0.057,
+    1.08
+   ]
+  },
+  {
+   "index": 821,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.383,
+     0.018,
+     6.958
+    ],
+    "max": [
+     3.941,
+     0.071,
+     7.622
+    ]
+   },
+   "size": [
+    0.558,
+    0.053,
+    0.665
+   ]
+  },
+  {
+   "index": 823,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     2.535,
+     0.009,
+     7.124
+    ],
+    "max": [
+     3.203,
+     0.063,
+     7.58
+    ]
+   },
+   "size": [
+    0.669,
+    0.054,
+    0.456
+   ]
+  },
+  {
+   "index": 825,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.357,
+     0.016,
+     7.608
+    ],
+    "max": [
+     3.831,
+     0.074,
+     8.326
+    ]
+   },
+   "size": [
+    0.474,
+    0.058,
+    0.719
+   ]
+  },
+  {
+   "index": 827,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     2.369,
+     0.008,
+     7.657
+    ],
+    "max": [
+     3.073,
+     0.066,
+     8.331
+    ]
+   },
+   "size": [
+    0.704,
+    0.058,
+    0.673
+   ]
+  },
+  {
+   "index": 829,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.571,
+     0.027,
+     8.488
+    ],
+    "max": [
+     4.199,
+     0.079,
+     8.874
+    ]
+   },
+   "size": [
+    0.629,
+    0.052,
+    0.385
+   ]
+  },
+  {
+   "index": 831,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.361,
+     0.013,
+     8.356
+    ],
+    "max": [
+     3.545,
+     0.074,
+     9.458
+    ]
+   },
+   "size": [
+    1.185,
+    0.061,
+    1.101
+   ]
+  },
+  {
+   "index": 833,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.565,
+     0,
+     9.126
+    ],
+    "max": [
+     4.269,
+     0.062,
+     9.884
+    ]
+   },
+   "size": [
+    0.704,
+    0.062,
+    0.759
+   ]
+  },
+  {
+   "index": 835,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     2.638,
+     0.029,
+     9.381
+    ],
+    "max": [
+     3.156,
+     0.076,
+     9.961
+    ]
+   },
+   "size": [
+    0.517,
+    0.047,
+    0.579
+   ]
+  },
+  {
+   "index": 837,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.597,
+     0.009,
+     9.916
+    ],
+    "max": [
+     4.277,
+     0.067,
+     10.606
+    ]
+   },
+   "size": [
+    0.681,
+    0.058,
+    0.69
+   ]
+  },
+  {
+   "index": 839,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     2.867,
+     0.033,
+     10.249
+    ],
+    "max": [
+     3.455,
+     0.08,
+     10.719
+    ]
+   },
+   "size": [
+    0.589,
+    0.047,
+    0.47
+   ]
+  },
+  {
+   "index": 841,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.298,
+     0.008,
+     10.475
+    ],
+    "max": [
+     4.532,
+     0.073,
+     11.773
+    ]
+   },
+   "size": [
+    1.235,
+    0.065,
+    1.298
+   ]
+  },
+  {
+   "index": 843,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.832,
+     0.012,
+     10.791
+    ],
+    "max": [
+     3.78,
+     0.066,
+     11.819
+    ]
+   },
+   "size": [
+    0.948,
+    0.054,
+    1.029
+   ]
+  },
+  {
+   "index": 845,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.932,
+     0.016,
+     11.627
+    ],
+    "max": [
+     4.478,
+     0.074,
+     12.355
+    ]
+   },
+   "size": [
+    0.545,
+    0.058,
+    0.729
+   ]
+  },
+  {
+   "index": 847,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     2.972,
+     0.006,
+     11.771
+    ],
+    "max": [
+     3.722,
+     0.066,
+     12.427
+    ]
+   },
+   "size": [
+    0.75,
+    0.06,
+    0.656
+   ]
+  },
+  {
+   "index": 849,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     4.102,
+     0.018,
+     12.161
+    ],
+    "max": [
+     4.752,
+     0.078,
+     12.919
+    ]
+   },
+   "size": [
+    0.65,
+    0.06,
+    0.757
+   ]
+  },
+  {
+   "index": 851,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.893,
+     0.016,
+     12.183
+    ],
+    "max": [
+     4.049,
+     0.074,
+     13.343
+    ]
+   },
+   "size": [
+    1.157,
+    0.058,
+    1.16
+   ]
+  },
+  {
+   "index": 853,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     1.375,
+     -0.001,
+     0.854
+    ],
+    "max": [
+     2.097,
+     0.062,
+     1.62
+    ]
+   },
+   "size": [
+    0.723,
+    0.063,
+    0.767
+   ]
+  },
+  {
+   "index": 855,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     1.07,
+     0.024,
+     0.424
+    ],
+    "max": [
+     1.572,
+     0.075,
+     1.066
+    ]
+   },
+   "size": [
+    0.503,
+    0.051,
+    0.642
+   ]
+  },
+  {
+   "index": 857,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     0.685,
+     0.013,
+     1
+    ],
+    "max": [
+     1.835,
+     0.07,
+     2.128
+    ]
+   },
+   "size": [
+    1.149,
+    0.057,
+    1.129
+   ]
+  },
+  {
+   "index": 859,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     0.396,
+     0.018,
+     0.325
+    ],
+    "max": [
+     1.098,
+     0.078,
+     1.053
+    ]
+   },
+   "size": [
+    0.703,
+    0.06,
+    0.729
+   ]
+  },
+  {
+   "index": 861,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     0.507,
+     0.011,
+     1.342
+    ],
+    "max": [
+     1.243,
+     0.07,
+     1.856
+    ]
+   },
+   "size": [
+    0.735,
+    0.059,
+    0.515
+   ]
+  },
+  {
+   "index": 863,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     0.117,
+     0.002,
+     0.679
+    ],
+    "max": [
+     0.869,
+     0.062,
+     1.289
+    ]
+   },
+   "size": [
+    0.752,
+    0.06,
+    0.61
+   ]
+  },
+  {
+   "index": 865,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -4.152,
+     0.021,
+     3.421
+    ],
+    "max": [
+     -3.004,
+     0.078,
+     4.565
+    ]
+   },
+   "size": [
+    1.148,
+    0.057,
+    1.144
+   ]
+  },
+  {
+   "index": 867,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -5.096,
+     0.013,
+     3.232
+    ],
+    "max": [
+     -4.424,
+     0.067,
+     3.806
+    ]
+   },
+   "size": [
+    0.673,
+    0.054,
+    0.575
+   ]
+  },
+  {
+   "index": 869,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -5.033,
+     0.023,
+     4.314
+    ],
+    "max": [
+     -4.677,
+     0.078,
+     4.966
+    ]
+   },
+   "size": [
+    0.355,
+    0.055,
+    0.651
+   ]
+  },
+  {
+   "index": 871,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -5.884,
+     0.017,
+     3.621
+    ],
+    "max": [
+     -4.772,
+     0.074,
+     4.771
+    ]
+   },
+   "size": [
+    1.112,
+    0.057,
+    1.15
+   ]
+  },
+  {
+   "index": 873,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -5.828,
+     0.009,
+     4.695
+    ],
+    "max": [
+     -5.48,
+     0.063,
+     5.333
+    ]
+   },
+   "size": [
+    0.349,
+    0.054,
+    0.638
+   ]
+  },
+  {
+   "index": 875,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -6.291,
+     0.015,
+     4.289
+    ],
+    "max": [
+     -5.575,
+     0.074,
+     4.723
+    ]
+   },
+   "size": [
+    0.715,
+    0.059,
+    0.434
+   ]
+  },
+  {
+   "index": 877,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -6.522,
+     0.013,
+     5.184
+    ],
+    "max": [
+     -5.942,
+     0.067,
+     5.858
+    ]
+   },
+   "size": [
+    0.58,
+    0.054,
+    0.673
+   ]
+  },
+  {
+   "index": 879,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -7.328,
+     0.028,
+     4.54
+    ],
+    "max": [
+     -6.454,
+     0.082,
+     5.52
+    ]
+   },
+   "size": [
+    0.875,
+    0.054,
+    0.979
+   ]
+  },
+  {
+   "index": 881,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.05,
+     0.015,
+     -3.469
+    ],
+    "max": [
+     3.752,
+     0.071,
+     -2.891
+    ]
+   },
+   "size": [
+    0.701,
+    0.056,
+    0.578
+   ]
+  },
+  {
+   "index": 883,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.837,
+     0.006,
+     -3.35
+    ],
+    "max": [
+     4.511,
+     0.063,
+     -2.678
+    ]
+   },
+   "size": [
+    0.674,
+    0.057,
+    0.673
+   ]
+  },
+  {
+   "index": 885,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.538,
+     0.016,
+     -4.332
+    ],
+    "max": [
+     3.782,
+     0.078,
+     -3.088
+    ]
+   },
+   "size": [
+    1.244,
+    0.062,
+    1.244
+   ]
+  },
+  {
+   "index": 887,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.808,
+     0.017,
+     -3.942
+    ],
+    "max": [
+     4.434,
+     0.067,
+     -3.388
+    ]
+   },
+   "size": [
+    0.627,
+    0.05,
+    0.554
+   ]
+  },
+  {
+   "index": 889,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     2.966,
+     0.029,
+     -4.59
+    ],
+    "max": [
+     3.574,
+     0.079,
+     -4.222
+    ]
+   },
+   "size": [
+    0.607,
+    0.05,
+    0.368
+   ]
+  },
+  {
+   "index": 891,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.913,
+     0.023,
+     -4.643
+    ],
+    "max": [
+     4.303,
+     0.071,
+     -4.051
+    ]
+   },
+   "size": [
+    0.391,
+    0.048,
+    0.592
+   ]
+  },
+  {
+   "index": 893,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.611,
+     0.001,
+     -5.505
+    ],
+    "max": [
+     3.841,
+     0.066,
+     -4.211
+    ]
+   },
+   "size": [
+    1.23,
+    0.065,
+    1.294
+   ]
+  },
+  {
+   "index": 895,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.637,
+     0.022,
+     -5.355
+    ],
+    "max": [
+     4.493,
+     0.078,
+     -4.379
+    ]
+   },
+   "size": [
+    0.857,
+    0.056,
+    0.975
+   ]
+  },
+  {
+   "index": 897,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.28,
+     0.007,
+     -5.642
+    ],
+    "max": [
+     3.832,
+     0.066,
+     -4.902
+    ]
+   },
+   "size": [
+    0.551,
+    0.059,
+    0.741
+   ]
+  },
+  {
+   "index": 899,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.67,
+     0.033,
+     -5.826
+    ],
+    "max": [
+     4.568,
+     0.082,
+     -5.022
+    ]
+   },
+   "size": [
+    0.898,
+    0.049,
+    0.804
+   ]
+  },
+  {
+   "index": 901,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.018,
+     0.012,
+     -6.025
+    ],
+    "max": [
+     3.75,
+     0.07,
+     -5.487
+    ]
+   },
+   "size": [
+    0.732,
+    0.058,
+    0.538
+   ]
+  },
+  {
+   "index": 903,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.968,
+     0,
+     -6.287
+    ],
+    "max": [
+     4.576,
+     0.062,
+     -5.507
+    ]
+   },
+   "size": [
+    0.609,
+    0.062,
+    0.78
+   ]
+  },
+  {
+   "index": 905,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.004,
+     0.017,
+     -7.017
+    ],
+    "max": [
+     4.016,
+     0.078,
+     -6.149
+    ]
+   },
+   "size": [
+    1.012,
+    0.061,
+    0.867
+   ]
+  },
+  {
+   "index": 907,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     3.935,
+     0.021,
+     -6.694
+    ],
+    "max": [
+     4.499,
+     0.068,
+     -6.142
+    ]
+   },
+   "size": [
+    0.564,
+    0.047,
+    0.552
+   ]
+  },
+  {
+   "index": 909,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.035,
+     0.029,
+     -7.648
+    ],
+    "max": [
+     4.097,
+     0.082,
+     -6.628
+    ]
+   },
+   "size": [
+    1.062,
+    0.053,
+    1.02
+   ]
+  },
+  {
+   "index": 911,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     4.201,
+     0.02,
+     -7.126
+    ],
+    "max": [
+     4.847,
+     0.071,
+     -6.64
+    ]
+   },
+   "size": [
+    0.646,
+    0.051,
+    0.487
+   ]
+  },
+  {
+   "index": 913,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.085,
+     0.01,
+     -8.062
+    ],
+    "max": [
+     4.221,
+     0.066,
+     -6.964
+    ]
+   },
+   "size": [
+    1.136,
+    0.056,
+    1.099
+   ]
+  },
+  {
+   "index": 915,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.683,
+     0.014,
+     -8.151
+    ],
+    "max": [
+     4.963,
+     0.077,
+     -6.899
+    ]
+   },
+   "size": [
+    1.28,
+    0.063,
+    1.251
+   ]
+  },
+  {
+   "index": 917,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.248,
+     0.016,
+     -8.636
+    ],
+    "max": [
+     4.266,
+     0.07,
+     -7.562
+    ]
+   },
+   "size": [
+    1.018,
+    0.054,
+    1.074
+   ]
+  },
+  {
+   "index": 919,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     4.099,
+     0.025,
+     -8.565
+    ],
+    "max": [
+     5.083,
+     0.082,
+     -7.705
+    ]
+   },
+   "size": [
+    0.983,
+    0.057,
+    0.86
+   ]
+  },
+  {
+   "index": 921,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.264,
+     0.018,
+     -9.349
+    ],
+    "max": [
+     4.382,
+     0.074,
+     -8.215
+    ]
+   },
+   "size": [
+    1.118,
+    0.056,
+    1.134
+   ]
+  },
+  {
+   "index": 923,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     3.961,
+     0.017,
+     -9.009
+    ],
+    "max": [
+     4.955,
+     0.067,
+     -8.055
+    ]
+   },
+   "size": [
+    0.993,
+    0.05,
+    0.954
+   ]
+  },
+  {
+   "index": 925,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     4.975,
+     0.025,
+     -3.041
+    ],
+    "max": [
+     6.021,
+     0.078,
+     -2.061
+    ]
+   },
+   "size": [
+    1.045,
+    0.053,
+    0.98
+   ]
+  },
+  {
+   "index": 927,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     5.469,
+     0.004,
+     -1.926
+    ],
+    "max": [
+     6.183,
+     0.066,
+     -1.564
+    ]
+   },
+   "size": [
+    0.714,
+    0.062,
+    0.362
+   ]
+  },
+  {
+   "index": 929,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.733,
+     0.031,
+     -3.284
+    ],
+    "max": [
+     6.629,
+     0.082,
+     -2.496
+    ]
+   },
+   "size": [
+    0.896,
+    0.051,
+    0.788
+   ]
+  },
+  {
+   "index": 931,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     5.909,
+     0.019,
+     -2.68
+    ],
+    "max": [
+     6.797,
+     0.074,
+     -1.686
+    ]
+   },
+   "size": [
+    0.889,
+    0.055,
+    0.993
+   ]
+  },
+  {
+   "index": 933,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     6.228,
+     0.006,
+     -3.585
+    ],
+    "max": [
+     7.316,
+     0.066,
+     -2.609
+    ]
+   },
+   "size": [
+    1.088,
+    0.06,
+    0.977
+   ]
+  },
+  {
+   "index": 935,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     6.484,
+     0.013,
+     -2.844
+    ],
+    "max": [
+     7.49,
+     0.077,
+     -2.004
+    ]
+   },
+   "size": [
+    1.007,
+    0.064,
+    0.841
+   ]
+  },
+  {
+   "index": 937,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     6.943,
+     0.009,
+     -3.706
+    ],
+    "max": [
+     7.633,
+     0.066,
+     -3.04
+    ]
+   },
+   "size": [
+    0.689,
+    0.057,
+    0.666
+   ]
+  },
+  {
+   "index": 939,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.463,
+     0.018,
+     -3.129
+    ],
+    "max": [
+     8.193,
+     0.078,
+     -2.667
+    ]
+   },
+   "size": [
+    0.731,
+    0.06,
+    0.462
+   ]
+  },
+  {
+   "index": 941,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     7.606,
+     0.019,
+     -4.014
+    ],
+    "max": [
+     8.256,
+     0.071,
+     -3.514
+    ]
+   },
+   "size": [
+    0.65,
+    0.052,
+    0.5
+   ]
+  },
+  {
+   "index": 943,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     7.654,
+     0.003,
+     -3.627
+    ],
+    "max": [
+     8.832,
+     0.066,
+     -2.555
+    ]
+   },
+   "size": [
+    1.178,
+    0.063,
+    1.071
+   ]
+  },
+  {
+   "index": 945,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     8.201,
+     0.016,
+     -4.616
+    ],
+    "max": [
+     8.675,
+     0.074,
+     -3.894
+    ]
+   },
+   "size": [
+    0.473,
+    0.058,
+    0.721
+   ]
+  },
+  {
+   "index": 947,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     8.594,
+     0.012,
+     -4.035
+    ],
+    "max": [
+     8.918,
+     0.067,
+     -3.403
+    ]
+   },
+   "size": [
+    0.325,
+    0.055,
+    0.632
+   ]
+  },
+  {
+   "index": 949,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     8.354,
+     0.03,
+     -5.264
+    ],
+    "max": [
+     9.408,
+     0.082,
+     -4.206
+    ]
+   },
+   "size": [
+    1.053,
+    0.052,
+    1.058
+   ]
+  },
+  {
+   "index": 951,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     9.245,
+     0.024,
+     -4.521
+    ],
+    "max": [
+     9.703,
+     0.071,
+     -3.923
+    ]
+   },
+   "size": [
+    0.459,
+    0.047,
+    0.598
+   ]
+  },
+  {
+   "index": 953,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     8.968,
+     0.007,
+     -5.378
+    ],
+    "max": [
+     9.646,
+     0.063,
+     -4.734
+    ]
+   },
+   "size": [
+    0.678,
+    0.056,
+    0.644
+   ]
+  },
+  {
+   "index": 955,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.382,
+     0.017,
+     -5.047
+    ],
+    "max": [
+     10.384,
+     0.078,
+     -4.193
+    ]
+   },
+   "size": [
+    1.002,
+    0.061,
+    0.855
+   ]
+  },
+  {
+   "index": 957,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     9.653,
+     0.019,
+     -5.758
+    ],
+    "max": [
+     10.257,
+     0.067,
+     -5.302
+    ]
+   },
+   "size": [
+    0.604,
+    0.048,
+    0.457
+   ]
+  },
+  {
+   "index": 959,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     10.31,
+     0.031,
+     -5.178
+    ],
+    "max": [
+     10.888,
+     0.079,
+     -4.842
+    ]
+   },
+   "size": [
+    0.577,
+    0.048,
+    0.335
+   ]
+  },
+  {
+   "index": 961,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.83,
+     0.011,
+     -6.7
+    ],
+    "max": [
+     10.914,
+     0.074,
+     -5.75
+    ]
+   },
+   "size": [
+    1.084,
+    0.063,
+    0.949
+   ]
+  },
+  {
+   "index": 963,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     10.424,
+     0.009,
+     -5.938
+    ],
+    "max": [
+     11.476,
+     0.066,
+     -4.99
+    ]
+   },
+   "size": [
+    1.051,
+    0.057,
+    0.947
+   ]
+  },
+  {
+   "index": 965,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     10.264,
+     0.024,
+     -6.884
+    ],
+    "max": [
+     10.912,
+     0.075,
+     -6.378
+    ]
+   },
+   "size": [
+    0.647,
+    0.051,
+    0.506
+   ]
+  },
+  {
+   "index": 967,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     11.181,
+     0.019,
+     -6.471
+    ],
+    "max": [
+     11.747,
+     0.067,
+     -5.883
+    ]
+   },
+   "size": [
+    0.565,
+    0.048,
+    0.587
+   ]
+  },
+  {
+   "index": 969,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     11.011,
+     0.029,
+     -7.616
+    ],
+    "max": [
+     11.555,
+     0.079,
+     -6.992
+    ]
+   },
+   "size": [
+    0.543,
+    0.05,
+    0.624
+   ]
+  },
+  {
+   "index": 971,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     11.182,
+     0.014,
+     -7.243
+    ],
+    "max": [
+     12.272,
+     0.074,
+     -6.261
+    ]
+   },
+   "size": [
+    1.09,
+    0.06,
+    0.981
+   ]
+  },
+  {
+   "index": 973,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.38,
+     0.017,
+     -3.308
+    ],
+    "max": [
+     -1.466,
+     0.067,
+     -2.336
+    ]
+   },
+   "size": [
+    0.915,
+    0.05,
+    0.973
+   ]
+  },
+  {
+   "index": 975,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -1.802,
+     0.018,
+     -3.608
+    ],
+    "max": [
+     -0.6,
+     0.078,
+     -2.446
+    ]
+   },
+   "size": [
+    1.203,
+    0.06,
+    1.163
+   ]
+  },
+  {
+   "index": 977,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.751,
+     0.008,
+     -4.17
+    ],
+    "max": [
+     -1.499,
+     0.07,
+     -2.922
+    ]
+   },
+   "size": [
+    1.253,
+    0.062,
+    1.248
+   ]
+  },
+  {
+   "index": 979,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.235,
+     0.022,
+     -4.506
+    ],
+    "max": [
+     -1.045,
+     0.082,
+     -3.384
+    ]
+   },
+   "size": [
+    1.19,
+    0.06,
+    1.122
+   ]
+  },
+  {
+   "index": 981,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -2.961,
+     0.009,
+     -4.259
+    ],
+    "max": [
+     -2.213,
+     0.07,
+     -3.789
+    ]
+   },
+   "size": [
+    0.748,
+    0.061,
+    0.469
+   ]
+  },
+  {
+   "index": 983,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.286,
+     0.007,
+     -5.049
+    ],
+    "max": [
+     -1.228,
+     0.066,
+     -4.107
+    ]
+   },
+   "size": [
+    1.057,
+    0.059,
+    0.943
+   ]
+  },
+  {
+   "index": 985,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -3.466,
+     0.015,
+     -5.346
+    ],
+    "max": [
+     -2.486,
+     0.078,
+     -4.53
+    ]
+   },
+   "size": [
+    0.98,
+    0.063,
+    0.817
+   ]
+  },
+  {
+   "index": 987,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.729,
+     0.004,
+     -5.841
+    ],
+    "max": [
+     -1.437,
+     0.07,
+     -4.511
+    ]
+   },
+   "size": [
+    1.291,
+    0.066,
+    1.33
+   ]
+  },
+  {
+   "index": 989,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -3.471,
+     0.028,
+     -5.738
+    ],
+    "max": [
+     -2.829,
+     0.079,
+     -5.284
+    ]
+   },
+   "size": [
+    0.642,
+    0.051,
+    0.454
+   ]
+  },
+  {
+   "index": 991,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -2.523,
+     0.019,
+     -6.082
+    ],
+    "max": [
+     -2.003,
+     0.071,
+     -5.432
+    ]
+   },
+   "size": [
+    0.521,
+    0.052,
+    0.651
+   ]
+  },
+  {
+   "index": 993,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -3.908,
+     0.005,
+     -6.586
+    ],
+    "max": [
+     -2.72,
+     0.066,
+     -5.474
+    ]
+   },
+   "size": [
+    1.188,
+    0.061,
+    1.113
+   ]
+  },
+  {
+   "index": 995,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -3.077,
+     0.013,
+     -6.942
+    ],
+    "max": [
+     -2.051,
+     0.078,
+     -5.786
+    ]
+   },
+   "size": [
+    1.025,
+    0.065,
+    1.156
+   ]
+  },
+  {
+   "index": 997,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -4.232,
+     0.017,
+     -7.228
+    ],
+    "max": [
+     -3.424,
+     0.07,
+     -6.306
+    ]
+   },
+   "size": [
+    0.809,
+    0.053,
+    0.922
+   ]
+  },
+  {
+   "index": 999,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -3.194,
+     0.025,
+     -7.354
+    ],
+    "max": [
+     -2.66,
+     0.079,
+     -6.676
+    ]
+   },
+   "size": [
+    0.534,
+    0.054,
+    0.677
+   ]
+  },
+  {
+   "index": 1001,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -4.663,
+     0.01,
+     -8.033
+    ],
+    "max": [
+     -3.459,
+     0.074,
+     -6.931
+    ]
+   },
+   "size": [
+    1.205,
+    0.064,
+    1.102
+   ]
+  },
+  {
+   "index": 1003,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -3.555,
+     0.008,
+     -8.286
+    ],
+    "max": [
+     -2.961,
+     0.063,
+     -7.604
+    ]
+   },
+   "size": [
+    0.594,
+    0.055,
+    0.682
+   ]
+  },
+  {
+   "index": 1005,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -4.362,
+     0.02,
+     -8.67
+    ],
+    "max": [
+     -4.012,
+     0.075,
+     -8.024
+    ]
+   },
+   "size": [
+    0.351,
+    0.055,
+    0.645
+   ]
+  },
+  {
+   "index": 1007,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -4.197,
+     0.006,
+     -9.182
+    ],
+    "max": [
+     -2.919,
+     0.07,
+     -7.954
+    ]
+   },
+   "size": [
+    1.279,
+    0.064,
+    1.227
+   ]
+  },
+  {
+   "index": 1009,
+   "name": "path-stone-a",
+   "key": "path-stone-a",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -5.075,
+     0.023,
+     -9.662
+    ],
+    "max": [
+     -3.889,
+     0.082,
+     -8.492
+    ]
+   },
+   "size": [
+    1.187,
+    0.059,
+    1.171
+   ]
+  },
+  {
+   "index": 1011,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -3.93,
+     0.018,
+     -9.525
+    ],
+    "max": [
+     -3.484,
+     0.071,
+     -8.871
+    ]
+   },
+   "size": [
+    0.445,
+    0.053,
+    0.655
+   ]
+  },
+  {
+   "index": 1013,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -5.058,
+     0.003,
+     -9.824
+    ],
+    "max": [
+     -4.344,
+     0.063,
+     -9.408
+    ]
+   },
+   "size": [
+    0.713,
+    0.06,
+    0.415
+   ]
+  },
+  {
+   "index": 1015,
+   "name": "path-stone-b",
+   "key": "path-stone-b",
+   "meshes": 1,
+   "triangles": 56,
+   "aabb": {
+    "min": [
+     -4.373,
+     0.025,
+     -10.487
+    ],
+    "max": [
+     -4.041,
+     0.075,
+     -9.891
+    ]
+   },
+   "size": [
+    0.332,
+    0.05,
+    0.595
+   ]
+  },
+  {
+   "index": 1017,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -17.951,
+     0.05,
+     2.896
+    ],
+    "max": [
+     -17.501,
+     0.344,
+     3.3
+    ]
+   },
+   "size": [
+    0.45,
+    0.294,
+    0.405
+   ]
+  },
+  {
+   "index": 1019,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -17.022,
+     0.05,
+     2.832
+    ],
+    "max": [
+     -15.98,
+     0.613,
+     3.904
+    ]
+   },
+   "size": [
+    1.042,
+    0.563,
+    1.071
+   ]
+  },
+  {
+   "index": 1021,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -17.013,
+     0.05,
+     2.485
+    ],
+    "max": [
+     -16.099,
+     0.524,
+     3.387
+    ]
+   },
+   "size": [
+    0.913,
+    0.474,
+    0.902
+   ]
+  },
+  {
+   "index": 1023,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -17.044,
+     0.05,
+     1.878
+    ],
+    "max": [
+     -15.849,
+     0.673,
+     3.028
+    ]
+   },
+   "size": [
+    1.195,
+    0.623,
+    1.15
+   ]
+  },
+  {
+   "index": 1025,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -15.909,
+     0.05,
+     2.09
+    ],
+    "max": [
+     -15.245,
+     0.489,
+     2.667
+    ]
+   },
+   "size": [
+    0.664,
+    0.439,
+    0.576
+   ]
+  },
+  {
+   "index": 1027,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -17.013,
+     0.05,
+     0.705
+    ],
+    "max": [
+     -16.098,
+     0.519,
+     1.613
+    ]
+   },
+   "size": [
+    0.915,
+    0.469,
+    0.907
+   ]
+  },
+  {
+   "index": 1029,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -18.457,
+     0.05,
+     2.855
+    ],
+    "max": [
+     -17.613,
+     0.485,
+     3.701
+    ]
+   },
+   "size": [
+    0.844,
+    0.435,
+    0.847
+   ]
+  },
+  {
+   "index": 1031,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -12.936,
+     0.05,
+     11.79
+    ],
+    "max": [
+     -11.91,
+     0.606,
+     12.77
+    ]
+   },
+   "size": [
+    1.026,
+    0.556,
+    0.98
+   ]
+  },
+  {
+   "index": 1033,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -13.099,
+     0.05,
+     12.185
+    ],
+    "max": [
+     -12.561,
+     0.357,
+     12.689
+    ]
+   },
+   "size": [
+    0.538,
+    0.307,
+    0.504
+   ]
+  },
+  {
+   "index": 1035,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -13.203,
+     0.05,
+     12.263
+    ],
+    "max": [
+     -12.527,
+     0.425,
+     12.965
+    ]
+   },
+   "size": [
+    0.676,
+    0.375,
+    0.703
+   ]
+  },
+  {
+   "index": 1037,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -14.502,
+     0.05,
+     11.418
+    ],
+    "max": [
+     -13.887,
+     0.367,
+     12.033
+    ]
+   },
+   "size": [
+    0.616,
+    0.317,
+    0.616
+   ]
+  },
+  {
+   "index": 1039,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -12.707,
+     0.05,
+     13.488
+    ],
+    "max": [
+     -11.773,
+     0.572,
+     14.353
+    ]
+   },
+   "size": [
+    0.935,
+    0.522,
+    0.864
+   ]
+  },
+  {
+   "index": 1041,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -13.243,
+     0.05,
+     10.633
+    ],
+    "max": [
+     -12.098,
+     0.64,
+     11.751
+    ]
+   },
+   "size": [
+    1.145,
+    0.59,
+    1.118
+   ]
+  },
+  {
+   "index": 1043,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -12.092,
+     0.05,
+     11.784
+    ],
+    "max": [
+     -11.258,
+     0.478,
+     12.609
+    ]
+   },
+   "size": [
+    0.834,
+    0.428,
+    0.825
+   ]
+  },
+  {
+   "index": 1045,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -4.101,
+     0.05,
+     15.522
+    ],
+    "max": [
+     -3.159,
+     0.571,
+     16.414
+    ]
+   },
+   "size": [
+    0.942,
+    0.521,
+    0.892
+   ]
+  },
+  {
+   "index": 1047,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -5.756,
+     0.05,
+     16.493
+    ],
+    "max": [
+     -5.272,
+     0.368,
+     16.927
+    ]
+   },
+   "size": [
+    0.483,
+    0.318,
+    0.433
+   ]
+  },
+  {
+   "index": 1049,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -5.859,
+     0.05,
+     15.938
+    ],
+    "max": [
+     -4.943,
+     0.53,
+     16.864
+    ]
+   },
+   "size": [
+    0.915,
+    0.48,
+    0.926
+   ]
+  },
+  {
+   "index": 1051,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -6.804,
+     0.05,
+     16.36
+    ],
+    "max": [
+     -5.933,
+     0.547,
+     17.158
+    ]
+   },
+   "size": [
+    0.871,
+    0.497,
+    0.798
+   ]
+  },
+  {
+   "index": 1053,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -5.796,
+     0.05,
+     16.083
+    ],
+    "max": [
+     -5.065,
+     0.54,
+     16.897
+    ]
+   },
+   "size": [
+    0.731,
+    0.49,
+    0.814
+   ]
+  },
+  {
+   "index": 1055,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -4.712,
+     0.05,
+     15.878
+    ],
+    "max": [
+     -4.066,
+     0.402,
+     16.551
+    ]
+   },
+   "size": [
+    0.646,
+    0.352,
+    0.673
+   ]
+  },
+  {
+   "index": 1057,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -6.2,
+     0.05,
+     16.767
+    ],
+    "max": [
+     -5.478,
+     0.459,
+     17.431
+    ]
+   },
+   "size": [
+    0.722,
+    0.409,
+    0.664
+   ]
+  },
+  {
+   "index": 1059,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     1.117,
+     0.05,
+     17.116
+    ],
+    "max": [
+     1.561,
+     0.281,
+     17.56
+    ]
+   },
+   "size": [
+    0.444,
+    0.231,
+    0.445
+   ]
+  },
+  {
+   "index": 1061,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     1.512,
+     0.05,
+     18.482
+    ],
+    "max": [
+     1.918,
+     0.267,
+     18.898
+    ]
+   },
+   "size": [
+    0.405,
+    0.217,
+    0.415
+   ]
+  },
+  {
+   "index": 1063,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     2.647,
+     0.05,
+     18.037
+    ],
+    "max": [
+     3.605,
+     0.552,
+     19.005
+    ]
+   },
+   "size": [
+    0.957,
+    0.502,
+    0.968
+   ]
+  },
+  {
+   "index": 1065,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     2.678,
+     0.05,
+     16.312
+    ],
+    "max": [
+     3.79,
+     0.627,
+     17.436
+    ]
+   },
+   "size": [
+    1.112,
+    0.577,
+    1.124
+   ]
+  },
+  {
+   "index": 1067,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     0.53,
+     0.05,
+     16.179
+    ],
+    "max": [
+     1.685,
+     0.661,
+     17.279
+    ]
+   },
+   "size": [
+    1.156,
+    0.611,
+    1.1
+   ]
+  },
+  {
+   "index": 1069,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -0.147,
+     0.05,
+     17.793
+    ],
+    "max": [
+     0.899,
+     0.589,
+     18.841
+    ]
+   },
+   "size": [
+    1.047,
+    0.539,
+    1.048
+   ]
+  },
+  {
+   "index": 1071,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     1.552,
+     0.05,
+     17.803
+    ],
+    "max": [
+     2.462,
+     0.52,
+     18.687
+    ]
+   },
+   "size": [
+    0.91,
+    0.47,
+    0.885
+   ]
+  },
+  {
+   "index": 1073,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.317,
+     0.05,
+     14.706
+    ],
+    "max": [
+     9.827,
+     0.342,
+     15.182
+    ]
+   },
+   "size": [
+    0.509,
+    0.292,
+    0.476
+   ]
+  },
+  {
+   "index": 1075,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     7.783,
+     0.05,
+     15.254
+    ],
+    "max": [
+     8.657,
+     0.558,
+     16.176
+    ]
+   },
+   "size": [
+    0.874,
+    0.508,
+    0.922
+   ]
+  },
+  {
+   "index": 1077,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     8.114,
+     0.05,
+     15.618
+    ],
+    "max": [
+     9.056,
+     0.562,
+     16.588
+    ]
+   },
+   "size": [
+    0.942,
+    0.512,
+    0.971
+   ]
+  },
+  {
+   "index": 1079,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.544,
+     0.05,
+     16.863
+    ],
+    "max": [
+     9.947,
+     0.77,
+     18.255
+    ]
+   },
+   "size": [
+    1.404,
+    0.72,
+    1.392
+   ]
+  },
+  {
+   "index": 1081,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.87,
+     0.05,
+     14.782
+    ],
+    "max": [
+     9.803,
+     0.764,
+     15.859
+    ]
+   },
+   "size": [
+    0.934,
+    0.714,
+    1.076
+   ]
+  },
+  {
+   "index": 1083,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.348,
+     0.05,
+     14.975
+    ],
+    "max": [
+     9.172,
+     0.489,
+     15.755
+    ]
+   },
+   "size": [
+    0.824,
+    0.439,
+    0.78
+   ]
+  },
+  {
+   "index": 1085,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.972,
+     0.05,
+     15.774
+    ],
+    "max": [
+     9.923,
+     0.54,
+     16.701
+    ]
+   },
+   "size": [
+    0.951,
+    0.49,
+    0.927
+   ]
+  },
+  {
+   "index": 1087,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     14.22,
+     0.05,
+     9.965
+    ],
+    "max": [
+     14.612,
+     0.277,
+     10.379
+    ]
+   },
+   "size": [
+    0.393,
+    0.227,
+    0.413
+   ]
+  },
+  {
+   "index": 1089,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     13.364,
+     0.05,
+     9.979
+    ],
+    "max": [
+     14.376,
+     0.582,
+     11.005
+    ]
+   },
+   "size": [
+    1.013,
+    0.532,
+    1.025
+   ]
+  },
+  {
+   "index": 1091,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     12.029,
+     0.05,
+     9.834
+    ],
+    "max": [
+     12.929,
+     0.621,
+     10.806
+    ]
+   },
+   "size": [
+    0.901,
+    0.571,
+    0.971
+   ]
+  },
+  {
+   "index": 1093,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     14.854,
+     0.05,
+     9.277
+    ],
+    "max": [
+     15.9,
+     0.723,
+     10.429
+    ]
+   },
+   "size": [
+    1.046,
+    0.673,
+    1.152
+   ]
+  },
+  {
+   "index": 1095,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     12.079,
+     0.05,
+     9.938
+    ],
+    "max": [
+     12.769,
+     0.433,
+     10.663
+    ]
+   },
+   "size": [
+    0.69,
+    0.383,
+    0.725
+   ]
+  },
+  {
+   "index": 1097,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     15.09,
+     0.05,
+     9.258
+    ],
+    "max": [
+     15.953,
+     0.677,
+     10.24
+    ]
+   },
+   "size": [
+    0.864,
+    0.627,
+    0.982
+   ]
+  },
+  {
+   "index": 1099,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     12.454,
+     0.05,
+     10.108
+    ],
+    "max": [
+     13.256,
+     0.554,
+     10.985
+    ]
+   },
+   "size": [
+    0.802,
+    0.504,
+    0.878
+   ]
+  },
+  {
+   "index": 1101,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     16.721,
+     0.05,
+     4.245
+    ],
+    "max": [
+     17.431,
+     0.502,
+     4.889
+    ]
+   },
+   "size": [
+    0.71,
+    0.452,
+    0.643
+   ]
+  },
+  {
+   "index": 1103,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     17.882,
+     0.05,
+     5.173
+    ],
+    "max": [
+     18.606,
+     0.429,
+     5.903
+    ]
+   },
+   "size": [
+    0.723,
+    0.379,
+    0.73
+   ]
+  },
+  {
+   "index": 1105,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     16.987,
+     0.05,
+     3.527
+    ],
+    "max": [
+     17.667,
+     0.45,
+     4.247
+    ]
+   },
+   "size": [
+    0.68,
+    0.4,
+    0.719
+   ]
+  },
+  {
+   "index": 1107,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     15.758,
+     0.05,
+     3.961
+    ],
+    "max": [
+     16.46,
+     0.461,
+     4.713
+    ]
+   },
+   "size": [
+    0.702,
+    0.411,
+    0.752
+   ]
+  },
+  {
+   "index": 1109,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     16.288,
+     0.05,
+     5.016
+    ],
+    "max": [
+     16.939,
+     0.474,
+     5.584
+    ]
+   },
+   "size": [
+    0.651,
+    0.424,
+    0.568
+   ]
+  },
+  {
+   "index": 1111,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     17.717,
+     0.05,
+     4.685
+    ],
+    "max": [
+     18.605,
+     0.51,
+     5.582
+    ]
+   },
+   "size": [
+    0.888,
+    0.46,
+    0.896
+   ]
+  },
+  {
+   "index": 1113,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     17.537,
+     0.05,
+     5.117
+    ],
+    "max": [
+     18.179,
+     0.38,
+     5.755
+    ]
+   },
+   "size": [
+    0.643,
+    0.33,
+    0.638
+   ]
+  },
+  {
+   "index": 1115,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     17.244,
+     0.05,
+     -11.959
+    ],
+    "max": [
+     18.01,
+     0.538,
+     -11.265
+    ]
+   },
+   "size": [
+    0.766,
+    0.488,
+    0.694
+   ]
+  },
+  {
+   "index": 1117,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     17.268,
+     0.05,
+     -12.492
+    ],
+    "max": [
+     17.852,
+     0.384,
+     -11.946
+    ]
+   },
+   "size": [
+    0.584,
+    0.334,
+    0.546
+   ]
+  },
+  {
+   "index": 1119,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     15.474,
+     0.05,
+     -13.004
+    ],
+    "max": [
+     16.378,
+     0.564,
+     -12.156
+    ]
+   },
+   "size": [
+    0.904,
+    0.514,
+    0.848
+   ]
+  },
+  {
+   "index": 1121,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     17.501,
+     0.05,
+     -12.148
+    ],
+    "max": [
+     18.428,
+     0.526,
+     -11.238
+    ]
+   },
+   "size": [
+    0.927,
+    0.476,
+    0.91
+   ]
+  },
+  {
+   "index": 1123,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     15.374,
+     0.05,
+     -12.948
+    ],
+    "max": [
+     16.27,
+     0.567,
+     -11.994
+    ]
+   },
+   "size": [
+    0.895,
+    0.517,
+    0.954
+   ]
+  },
+  {
+   "index": 1125,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     16.805,
+     0.05,
+     -11.67
+    ],
+    "max": [
+     17.638,
+     0.608,
+     -10.95
+    ]
+   },
+   "size": [
+    0.832,
+    0.558,
+    0.719
+   ]
+  },
+  {
+   "index": 1127,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     14.726,
+     0.05,
+     -14.545
+    ],
+    "max": [
+     15.637,
+     0.517,
+     -13.643
+    ]
+   },
+   "size": [
+    0.911,
+    0.467,
+    0.902
+   ]
+  },
+  {
+   "index": 1129,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     7.186,
+     0.05,
+     -15.456
+    ],
+    "max": [
+     7.972,
+     0.566,
+     -14.75
+    ]
+   },
+   "size": [
+    0.786,
+    0.516,
+    0.705
+   ]
+  },
+  {
+   "index": 1131,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     8.035,
+     0.05,
+     -16.782
+    ],
+    "max": [
+     9.141,
+     0.625,
+     -15.674
+    ]
+   },
+   "size": [
+    1.106,
+    0.575,
+    1.108
+   ]
+  },
+  {
+   "index": 1133,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     7.286,
+     0.05,
+     -15.208
+    ],
+    "max": [
+     7.65,
+     0.287,
+     -14.882
+    ]
+   },
+   "size": [
+    0.363,
+    0.237,
+    0.327
+   ]
+  },
+  {
+   "index": 1135,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     6.83,
+     0.05,
+     -17.468
+    ],
+    "max": [
+     7.525,
+     0.407,
+     -16.788
+    ]
+   },
+   "size": [
+    0.695,
+    0.357,
+    0.679
+   ]
+  },
+  {
+   "index": 1137,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     6.767,
+     0.05,
+     -16.195
+    ],
+    "max": [
+     7.69,
+     0.707,
+     -15.15
+    ]
+   },
+   "size": [
+    0.923,
+    0.657,
+    1.045
+   ]
+  },
+  {
+   "index": 1139,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.155,
+     0.05,
+     -17.846
+    ],
+    "max": [
+     9.268,
+     0.755,
+     -16.626
+    ]
+   },
+   "size": [
+    1.113,
+    0.705,
+    1.22
+   ]
+  },
+  {
+   "index": 1141,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.348,
+     0.05,
+     -16.247
+    ],
+    "max": [
+     9.729,
+     0.765,
+     -14.909
+    ]
+   },
+   "size": [
+    1.381,
+    0.715,
+    1.338
+   ]
+  },
+  {
+   "index": 1143,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -0.42,
+     0.05,
+     -16.613
+    ],
+    "max": [
+     0.546,
+     0.554,
+     -15.665
+    ]
+   },
+   "size": [
+    0.966,
+    0.504,
+    0.947
+   ]
+  },
+  {
+   "index": 1145,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     0.977,
+     0.05,
+     -16.377
+    ],
+    "max": [
+     1.451,
+     0.347,
+     -15.869
+    ]
+   },
+   "size": [
+    0.473,
+    0.297,
+    0.509
+   ]
+  },
+  {
+   "index": 1147,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     0.59,
+     0.05,
+     -17.342
+    ],
+    "max": [
+     1.054,
+     0.364,
+     -16.834
+    ]
+   },
+   "size": [
+    0.463,
+    0.314,
+    0.507
+   ]
+  },
+  {
+   "index": 1149,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -0.112,
+     0.05,
+     -17.266
+    ],
+    "max": [
+     1.029,
+     0.765,
+     -16.256
+    ]
+   },
+   "size": [
+    1.141,
+    0.715,
+    1.01
+   ]
+  },
+  {
+   "index": 1151,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     1.661,
+     0.05,
+     -17.847
+    ],
+    "max": [
+     2.975,
+     0.766,
+     -16.619
+    ]
+   },
+   "size": [
+    1.313,
+    0.716,
+    1.228
+   ]
+  },
+  {
+   "index": 1153,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     0.164,
+     0.05,
+     -17.357
+    ],
+    "max": [
+     0.89,
+     0.434,
+     -16.612
+    ]
+   },
+   "size": [
+    0.726,
+    0.384,
+    0.746
+   ]
+  },
+  {
+   "index": 1155,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -0.75,
+     0.05,
+     -16.694
+    ],
+    "max": [
+     -0.069,
+     0.405,
+     -16.002
+    ]
+   },
+   "size": [
+    0.681,
+    0.355,
+    0.692
+   ]
+  },
+  {
+   "index": 1157,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -7.004,
+     0.05,
+     -18.195
+    ],
+    "max": [
+     -6.61,
+     0.292,
+     -17.773
+    ]
+   },
+   "size": [
+    0.394,
+    0.242,
+    0.421
+   ]
+  },
+  {
+   "index": 1159,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -7.675,
+     0.05,
+     -18.673
+    ],
+    "max": [
+     -6.843,
+     0.618,
+     -17.759
+    ]
+   },
+   "size": [
+    0.832,
+    0.568,
+    0.913
+   ]
+  },
+  {
+   "index": 1161,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -7.126,
+     0.05,
+     -17.216
+    ],
+    "max": [
+     -6.638,
+     0.371,
+     -16.686
+    ]
+   },
+   "size": [
+    0.487,
+    0.321,
+    0.53
+   ]
+  },
+  {
+   "index": 1163,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -8.16,
+     0.05,
+     -18.305
+    ],
+    "max": [
+     -6.903,
+     0.742,
+     -17.135
+    ]
+   },
+   "size": [
+    1.257,
+    0.692,
+    1.171
+   ]
+  },
+  {
+   "index": 1165,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -7.506,
+     0.05,
+     -18.562
+    ],
+    "max": [
+     -6.467,
+     0.668,
+     -17.625
+    ]
+   },
+   "size": [
+    1.039,
+    0.618,
+    0.938
+   ]
+  },
+  {
+   "index": 1167,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -5.878,
+     0.05,
+     -19.211
+    ],
+    "max": [
+     -4.943,
+     0.753,
+     -18.137
+    ]
+   },
+   "size": [
+    0.936,
+    0.703,
+    1.074
+   ]
+  },
+  {
+   "index": 1169,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -8.306,
+     0.05,
+     -16.667
+    ],
+    "max": [
+     -7.453,
+     0.657,
+     -15.701
+    ]
+   },
+   "size": [
+    0.854,
+    0.607,
+    0.966
+   ]
+  },
+  {
+   "index": 1171,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -13.014,
+     0.05,
+     -11.389
+    ],
+    "max": [
+     -12.286,
+     0.496,
+     -10.611
+    ]
+   },
+   "size": [
+    0.728,
+    0.446,
+    0.778
+   ]
+  },
+  {
+   "index": 1173,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -12.219,
+     0.05,
+     -11.264
+    ],
+    "max": [
+     -11.869,
+     0.272,
+     -10.888
+    ]
+   },
+   "size": [
+    0.349,
+    0.222,
+    0.377
+   ]
+  },
+  {
+   "index": 1175,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -12.247,
+     0.05,
+     -11.269
+    ],
+    "max": [
+     -11.917,
+     0.272,
+     -10.975
+    ]
+   },
+   "size": [
+    0.329,
+    0.222,
+    0.293
+   ]
+  },
+  {
+   "index": 1177,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -12.64,
+     0.05,
+     -11.109
+    ],
+    "max": [
+     -11.98,
+     0.419,
+     -10.498
+    ]
+   },
+   "size": [
+    0.66,
+    0.369,
+    0.61
+   ]
+  },
+  {
+   "index": 1179,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -13.276,
+     0.05,
+     -11.185
+    ],
+    "max": [
+     -12.297,
+     0.598,
+     -10.154
+    ]
+   },
+   "size": [
+    0.979,
+    0.548,
+    1.031
+   ]
+  },
+  {
+   "index": 1181,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -12.318,
+     0.05,
+     -12.125
+    ],
+    "max": [
+     -11.309,
+     0.571,
+     -11.11
+    ]
+   },
+   "size": [
+    1.01,
+    0.521,
+    1.015
+   ]
+  },
+  {
+   "index": 1183,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -12.254,
+     0.05,
+     -12.513
+    ],
+    "max": [
+     -11.439,
+     0.468,
+     -11.706
+    ]
+   },
+   "size": [
+    0.815,
+    0.418,
+    0.807
+   ]
+  },
+  {
+   "index": 1185,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -17.825,
+     0.05,
+     -6.438
+    ],
+    "max": [
+     -17.015,
+     0.569,
+     -5.706
+    ]
+   },
+   "size": [
+    0.81,
+    0.519,
+    0.732
+   ]
+  },
+  {
+   "index": 1187,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -18.556,
+     0.05,
+     -6.64
+    ],
+    "max": [
+     -17.932,
+     0.474,
+     -5.956
+    ]
+   },
+   "size": [
+    0.625,
+    0.424,
+    0.684
+   ]
+  },
+  {
+   "index": 1189,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -17.131,
+     0.05,
+     -5.741
+    ],
+    "max": [
+     -16.395,
+     0.44,
+     -5.031
+    ]
+   },
+   "size": [
+    0.736,
+    0.39,
+    0.711
+   ]
+  },
+  {
+   "index": 1191,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -18.262,
+     0.05,
+     -4.712
+    ],
+    "max": [
+     -17.03,
+     0.688,
+     -3.519
+    ]
+   },
+   "size": [
+    1.232,
+    0.638,
+    1.193
+   ]
+  },
+  {
+   "index": 1193,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -17.28,
+     0.05,
+     -6.711
+    ],
+    "max": [
+     -16.22,
+     0.712,
+     -5.773
+    ]
+   },
+   "size": [
+    1.059,
+    0.662,
+    0.938
+   ]
+  },
+  {
+   "index": 1195,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -17.806,
+     0.05,
+     -6.025
+    ],
+    "max": [
+     -17.15,
+     0.402,
+     -5.406
+    ]
+   },
+   "size": [
+    0.656,
+    0.352,
+    0.619
+   ]
+  },
+  {
+   "index": 1197,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -18.825,
+     0.05,
+     -4.757
+    ],
+    "max": [
+     -17.463,
+     0.75,
+     -3.423
+    ]
+   },
+   "size": [
+    1.362,
+    0.7,
+    1.334
+   ]
+  },
+  {
+   "index": 1199,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -9.92,
+     0.05,
+     -2.736
+    ],
+    "max": [
+     -8.89,
+     0.585,
+     -1.706
+    ]
+   },
+   "size": [
+    1.03,
+    0.535,
+    1.029
+   ]
+  },
+  {
+   "index": 1201,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -10.081,
+     0.05,
+     -1.217
+    ],
+    "max": [
+     -9.101,
+     0.594,
+     -0.199
+    ]
+   },
+   "size": [
+    0.979,
+    0.544,
+    1.018
+   ]
+  },
+  {
+   "index": 1203,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -9.415,
+     0.05,
+     -2.413
+    ],
+    "max": [
+     -8.875,
+     0.33,
+     -1.875
+    ]
+   },
+   "size": [
+    0.541,
+    0.28,
+    0.538
+   ]
+  },
+  {
+   "index": 1205,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -8.956,
+     0.05,
+     -2.402
+    ],
+    "max": [
+     -8.033,
+     0.635,
+     -1.389
+    ]
+   },
+   "size": [
+    0.923,
+    0.585,
+    1.013
+   ]
+  },
+  {
+   "index": 1207,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -10.113,
+     0.05,
+     -2.809
+    ],
+    "max": [
+     -9.205,
+     0.751,
+     -1.76
+    ]
+   },
+   "size": [
+    0.908,
+    0.701,
+    1.049
+   ]
+  },
+  {
+   "index": 1209,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -9.843,
+     0.05,
+     -3.695
+    ],
+    "max": [
+     -8.806,
+     0.602,
+     -2.712
+    ]
+   },
+   "size": [
+    1.037,
+    0.552,
+    0.983
+   ]
+  },
+  {
+   "index": 1211,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -9.818,
+     0.05,
+     -2.941
+    ],
+    "max": [
+     -8.829,
+     0.619,
+     -1.888
+    ]
+   },
+   "size": [
+    0.989,
+    0.569,
+    1.053
+   ]
+  },
+  {
+   "index": 1213,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.933,
+     0.05,
+     6.725
+    ],
+    "max": [
+     -2.347,
+     0.359,
+     7.293
+    ]
+   },
+   "size": [
+    0.586,
+    0.309,
+    0.569
+   ]
+  },
+  {
+   "index": 1215,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -4.283,
+     0.05,
+     5.664
+    ],
+    "max": [
+     -3.439,
+     0.493,
+     6.518
+    ]
+   },
+   "size": [
+    0.843,
+    0.443,
+    0.853
+   ]
+  },
+  {
+   "index": 1217,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -3.247,
+     0.05,
+     6.539
+    ],
+    "max": [
+     -2.655,
+     0.377,
+     7.153
+    ]
+   },
+   "size": [
+    0.593,
+    0.327,
+    0.614
+   ]
+  },
+  {
+   "index": 1219,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -3.75,
+     0.05,
+     6.806
+    ],
+    "max": [
+     -2.751,
+     0.759,
+     7.935
+    ]
+   },
+   "size": [
+    0.999,
+    0.709,
+    1.13
+   ]
+  },
+  {
+   "index": 1221,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -3.594,
+     0.05,
+     4.81
+    ],
+    "max": [
+     -2.785,
+     0.469,
+     5.627
+    ]
+   },
+   "size": [
+    0.809,
+    0.419,
+    0.817
+   ]
+  },
+  {
+   "index": 1223,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -3.037,
+     0.05,
+     7.201
+    ],
+    "max": [
+     -1.72,
+     0.725,
+     8.503
+    ]
+   },
+   "size": [
+    1.317,
+    0.675,
+    1.301
+   ]
+  },
+  {
+   "index": 1225,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -3.522,
+     0.05,
+     5.934
+    ],
+    "max": [
+     -2.549,
+     0.554,
+     6.918
+    ]
+   },
+   "size": [
+    0.973,
+    0.504,
+    0.983
+   ]
+  },
+  {
+   "index": 1227,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -1.871,
+     0.05,
+     -4.606
+    ],
+    "max": [
+     -1.047,
+     0.477,
+     -3.788
+    ]
+   },
+   "size": [
+    0.823,
+    0.427,
+    0.818
+   ]
+  },
+  {
+   "index": 1229,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.757,
+     0.05,
+     -3.746
+    ],
+    "max": [
+     -2.277,
+     0.32,
+     -3.294
+    ]
+   },
+   "size": [
+    0.48,
+    0.27,
+    0.452
+   ]
+  },
+  {
+   "index": 1231,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     -2.707,
+     0.05,
+     -3.879
+    ],
+    "max": [
+     -2.339,
+     0.274,
+     -3.541
+    ]
+   },
+   "size": [
+    0.368,
+    0.224,
+    0.338
+   ]
+  },
+  {
+   "index": 1233,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -1.402,
+     0.05,
+     -4.844
+    ],
+    "max": [
+     -0.624,
+     0.542,
+     -4.158
+    ]
+   },
+   "size": [
+    0.778,
+    0.492,
+    0.687
+   ]
+  },
+  {
+   "index": 1235,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -2.011,
+     0.05,
+     -3.575
+    ],
+    "max": [
+     -0.81,
+     0.666,
+     -2.395
+    ]
+   },
+   "size": [
+    1.201,
+    0.616,
+    1.18
+   ]
+  },
+  {
+   "index": 1237,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -3.272,
+     0.05,
+     -4.481
+    ],
+    "max": [
+     -2.583,
+     0.558,
+     -3.693
+    ]
+   },
+   "size": [
+    0.69,
+    0.508,
+    0.788
+   ]
+  },
+  {
+   "index": 1239,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -0.732,
+     0.05,
+     -3.076
+    ],
+    "max": [
+     0.099,
+     0.682,
+     -2.119
+    ]
+   },
+   "size": [
+    0.831,
+    0.632,
+    0.957
+   ]
+  },
+  {
+   "index": 1241,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.039,
+     0.05,
+     -3.241
+    ],
+    "max": [
+     9.727,
+     0.503,
+     -2.493
+    ]
+   },
+   "size": [
+    0.688,
+    0.453,
+    0.748
+   ]
+  },
+  {
+   "index": 1243,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9.554,
+     0.05,
+     -3.011
+    ],
+    "max": [
+     10.33,
+     0.5,
+     -2.289
+    ]
+   },
+   "size": [
+    0.775,
+    0.45,
+    0.722
+   ]
+  },
+  {
+   "index": 1245,
+   "name": "small-rock",
+   "key": "small-rock",
+   "meshes": 1,
+   "triangles": 80,
+   "aabb": {
+    "min": [
+     9,
+     0.05,
+     -3.977
+    ],
+    "max": [
+     9.848,
+     0.571,
+     -3.069
+    ]
+   },
+   "size": [
+    0.849,
+    0.521,
+    0.908
+   ]
+  },
+  {
+   "index": 1247,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     11.034,
+     0.05,
+     -1.76
+    ],
+    "max": [
+     11.835,
+     0.516,
+     -0.905
+    ]
+   },
+   "size": [
+    0.8,
+    0.466,
+    0.855
+   ]
+  },
+  {
+   "index": 1249,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     10.023,
+     0.05,
+     -2.403
+    ],
+    "max": [
+     11.043,
+     0.652,
+     -1.308
+    ]
+   },
+   "size": [
+    1.02,
+    0.602,
+    1.095
+   ]
+  },
+  {
+   "index": 1251,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.161,
+     0.05,
+     -2.256
+    ],
+    "max": [
+     9.043,
+     0.59,
+     -1.299
+    ]
+   },
+   "size": [
+    0.881,
+    0.54,
+    0.957
+   ]
+  },
+  {
+   "index": 1253,
+   "name": "grass-tuft",
+   "key": "grass-tuft",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     10.331,
+     0.05,
+     -2.223
+    ],
+    "max": [
+     10.989,
+     0.388,
+     -1.567
+    ]
+   },
+   "size": [
+    0.658,
+    0.338,
+    0.656
+   ]
+  }
+ ],
+ "id": "medieval-village",
+ "label": "Medieval Village",
+ "sourceBytes": 13868312,
+ "spawn": {
+  "x": -0.56,
+  "y": 0.5,
+  "z": -1.25,
+  "on": "475 floor pieces at y=0"
+ }
+}

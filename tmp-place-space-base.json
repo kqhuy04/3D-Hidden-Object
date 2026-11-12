@@ -1,0 +1,87 @@
+[
+  {
+    "id": "space-hay",
+    "ok": true,
+    "spot": {
+      "0": -8.5,
+      "1": 0.67,
+      "2": -15.5,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 1.6,
+        "angle": 4.71
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "space-well",
+    "ok": true,
+    "spot": {
+      "0": 11,
+      "1": -0.75,
+      "2": -20,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 2,
+        "angle": 1.57
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "space-outhouse",
+    "ok": true,
+    "spot": {
+      "0": -1,
+      "1": -1.1,
+      "2": -30.5,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 2.8,
+        "angle": 0.79
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "space-fire",
+    "ok": true,
+    "spot": {
+      "0": 2,
+      "1": -0.44,
+      "2": -33.5,
+      "kind": "KEEP",
+      "d": 0,
+      "best": {
+        "ok": true,
+        "ring": 1.7,
+        "angle": 0.79
+      }
+    },
+    "triedCount": 0
+  },
+  {
+    "id": "space-anchor",
+    "ok": true,
+    "spot": {
+      "x": -6,
+      "z": -6.5,
+      "y": 0,
+      "d": 9.1,
+      "kind": "G",
+      "ok": true,
+      "best": {
+        "ring": 2.7,
+        "angle": 3.93
+      }
+    },
+    "triedCount": 1
+  }
+]

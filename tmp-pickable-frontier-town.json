@@ -1,0 +1,102 @@
+[
+  {
+    "id": "frontier-vending",
+    "name": "Vending machine",
+    "centre": [
+      -3,
+      1,
+      13.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -3,
+      "pz": 15,
+      "pitch": 0.36,
+      "hit": "frontier-vending",
+      "bodyToItem": 1.51,
+      "camToItem": 9.61,
+      "prompt": true
+    }
+  },
+  {
+    "id": "frontier-booth",
+    "name": "Phone booth",
+    "centre": [
+      -11,
+      2.37,
+      3.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -11.33,
+      "pz": 7.27,
+      "pitch": 0.05,
+      "hit": "frontier-booth",
+      "bodyToItem": 3.98,
+      "camToItem": 11.78,
+      "prompt": true
+    }
+  },
+  {
+    "id": "frontier-fridge",
+    "name": "Fridge freezer",
+    "centre": [
+      7,
+      1.24,
+      23.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 8.35,
+      "pz": 26.13,
+      "pitch": 0.29,
+      "hit": "frontier-fridge",
+      "bodyToItem": 2.96,
+      "camToItem": 10.92,
+      "prompt": true
+    }
+  },
+  {
+    "id": "frontier-jukebox",
+    "name": "Jukebox",
+    "centre": [
+      6.99,
+      0.99,
+      3.51
+    ],
+    "ok": true,
+    "from": {
+      "angle": 3.14,
+      "px": 6.06,
+      "pz": 0.84,
+      "pitch": 0.22,
+      "hit": "frontier-jukebox",
+      "bodyToItem": 2.84,
+      "camToItem": 10.88,
+      "prompt": true
+    }
+  },
+  {
+    "id": "frontier-microwave",
+    "name": "Microwave",
+    "centre": [
+      -2.98,
+      0.18,
+      23.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -2.98,
+      "pz": 25,
+      "pitch": 0.6,
+      "hit": "frontier-microwave",
+      "bodyToItem": 1.77,
+      "camToItem": 10,
+      "prompt": true
+    }
+  }
+]

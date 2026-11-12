@@ -1,0 +1,8088 @@
+{
+ "file": "/assets/maps/hospital.glb",
+ "bytes": 1229068,
+ "generatedAt": "2026-11-09T17:05:51.798Z",
+ "structure": {
+  "nodes": 1433,
+  "meshes": 600,
+  "materials": 326,
+  "images": 0,
+  "partContainer": "kit-composition",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 319,
+  "keys": 57,
+  "triangles": 114539,
+  "meshes": 600,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "clinical-vinyl-floor-tile",
+   "instances": 88,
+   "triangles": 12320,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "precast-paving-tile",
+   "instances": 71,
+   "triangles": 9940,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "clinical-wall-module",
+   "instances": 28,
+   "triangles": 9494,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "wayfinding-stripe-decal",
+   "instances": 12,
+   "triangles": 492,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "ambulance-bay-hatching-decal",
+   "instances": 11,
+   "triangles": 1224,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "waiting-room-chair",
+   "instances": 8,
+   "triangles": 3792,
+   "maxExtent": 0.805,
+   "hasBounds": true
+  },
+  {
+   "key": "clipped-hedge-section",
+   "instances": 7,
+   "triangles": 3780,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "mesh-fence-panel",
+   "instances": 7,
+   "triangles": 4288,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "glazed-partition-module",
+   "instances": 6,
+   "triangles": 2232,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "bollard-light",
+   "instances": 4,
+   "triangles": 2360,
+   "maxExtent": 1.02,
+   "hasBounds": true
+  },
+  {
+   "key": "ceiling-grid-panel",
+   "instances": 4,
+   "triangles": 1010,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "helipad-marking-decal",
+   "instances": 4,
+   "triangles": 1168,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "corridor-handrail-run",
+   "instances": 3,
+   "triangles": 1032,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "privacy-curtain-panel",
+   "instances": 3,
+   "triangles": 2304,
+   "maxExtent": 2.7,
+   "hasBounds": true
+  },
+  {
+   "key": "reception-desk",
+   "instances": 3,
+   "triangles": 1340,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "supply-tote",
+   "instances": 3,
+   "triangles": 1998,
+   "maxExtent": 0.748,
+   "hasBounds": true
+  },
+  {
+   "key": "bed-head-service-panel",
+   "instances": 2,
+   "triangles": 944,
+   "maxExtent": 1.6,
+   "hasBounds": true
+  },
+  {
+   "key": "bedside-locker",
+   "instances": 2,
+   "triangles": 1258,
+   "maxExtent": 0.849,
+   "hasBounds": true
+  },
+  {
+   "key": "clinical-waste-bin",
+   "instances": 2,
+   "triangles": 1136,
+   "maxExtent": 0.909,
+   "hasBounds": true
+  },
+  {
+   "key": "hand-sanitiser-dispenser",
+   "instances": 2,
+   "triangles": 970,
+   "maxExtent": 1.481,
+   "hasBounds": true
+  },
+  {
+   "key": "hospital-bed",
+   "instances": 2,
+   "triangles": 1488,
+   "maxExtent": 2.1,
+   "hasBounds": true
+  },
+  {
+   "key": "instrument-trolley",
+   "instances": 2,
+   "triangles": 1084,
+   "maxExtent": 0.9,
+   "hasBounds": true
+  },
+  {
+   "key": "iv-drip-stand",
+   "instances": 2,
+   "triangles": 1463,
+   "maxExtent": 1.98,
+   "hasBounds": true
+  },
+  {
+   "key": "medical-gas-cylinder",
+   "instances": 2,
+   "triangles": 1240,
+   "maxExtent": 1.35,
+   "hasBounds": true
+  },
+  {
+   "key": "overbed-table",
+   "instances": 2,
+   "triangles": 1068,
+   "maxExtent": 0.9,
+   "hasBounds": true
+  },
+  {
+   "key": "patient-in-gown",
+   "instances": 2,
+   "triangles": 6086,
+   "maxExtent": 1.724,
+   "hasBounds": true
+  },
+  {
+   "key": "patient-trolley",
+   "instances": 2,
+   "triangles": 1496,
+   "maxExtent": 2.12,
+   "hasBounds": true
+  },
+  {
+   "key": "sharps-bin",
+   "instances": 2,
+   "triangles": 1024,
+   "maxExtent": 0.354,
+   "hasBounds": true
+  },
+  {
+   "key": "supply-shelving-rack",
+   "instances": 2,
+   "triangles": 1382,
+   "maxExtent": 1.8,
+   "hasBounds": true
+  },
+  {
+   "key": "vital-signs-monitor",
+   "instances": 2,
+   "triangles": 1375,
+   "maxExtent": 1.4,
+   "hasBounds": true
+  },
+  {
+   "key": "ward-nurse",
+   "instances": 2,
+   "triangles": 6194,
+   "maxExtent": 1.724,
+   "hasBounds": true
+  },
+  {
+   "key": "wayfinding-totem",
+   "instances": 2,
+   "triangles": 924,
+   "maxExtent": 2.4,
+   "hasBounds": true
+  },
+  {
+   "key": "air-ambulance-helicopter",
+   "instances": 1,
+   "triangles": 1686,
+   "maxExtent": 13.6,
+   "hasBounds": true
+  },
+  {
+   "key": "ambulance-van",
+   "instances": 1,
+   "triangles": 1692,
+   "maxExtent": 6.56,
+   "hasBounds": true
+  },
+  {
+   "key": "anaesthesia-machine",
+   "instances": 1,
+   "triangles": 756,
+   "maxExtent": 1.5,
+   "hasBounds": true
+  },
+  {
+   "key": "clinic-annexe",
+   "instances": 1,
+   "triangles": 480,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "crash-cart",
+   "instances": 1,
+   "triangles": 718,
+   "maxExtent": 1.064,
+   "hasBounds": true
+  },
+  {
+   "key": "ct-scanner-gantry",
+   "instances": 1,
+   "triangles": 562,
+   "maxExtent": 2.67,
+   "hasBounds": true
+  },
+  {
+   "key": "doctor",
+   "instances": 1,
+   "triangles": 3819,
+   "maxExtent": 1.753,
+   "hasBounds": true
+  },
+  {
+   "key": "emergency-entrance-block",
+   "instances": 1,
+   "triangles": 520,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "entrance-canopy",
+   "instances": 1,
+   "triangles": 824,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "examination-couch",
+   "instances": 1,
+   "triangles": 564,
+   "maxExtent": 1.993,
+   "hasBounds": true
+  },
+  {
+   "key": "linen-trolley",
+   "instances": 1,
+   "triangles": 684,
+   "maxExtent": 1.112,
+   "hasBounds": true
+  },
+  {
+   "key": "medicine-cabinet",
+   "instances": 1,
+   "triangles": 478,
+   "maxExtent": 0.9,
+   "hasBounds": true
+  },
+  {
+   "key": "mop-bucket-trolley",
+   "instances": 1,
+   "triangles": 620,
+   "maxExtent": 1.02,
+   "hasBounds": true
+  },
+  {
+   "key": "multi-storey-ward-block",
+   "instances": 1,
+   "triangles": 412,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "neonatal-incubator",
+   "instances": 1,
+   "triangles": 658,
+   "maxExtent": 1.3,
+   "hasBounds": true
+  },
+  {
+   "key": "operating-table",
+   "instances": 1,
+   "triangles": 560,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "paramedic",
+   "instances": 1,
+   "triangles": 2997,
+   "maxExtent": 1.724,
+   "hasBounds": true
+  },
+  {
+   "key": "rooftop-helipad-deck",
+   "instances": 1,
+   "triangles": 1678,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "scrub-sink-station",
+   "instances": 1,
+   "triangles": 546,
+   "maxExtent": 1.5,
+   "hasBounds": true
+  },
+  {
+   "key": "stair-and-lift-core",
+   "instances": 1,
+   "triangles": 228,
+   "maxExtent": 10.35,
+   "hasBounds": true
+  },
+  {
+   "key": "standby-generator-enclosure",
+   "instances": 1,
+   "triangles": 848,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "surgeon-in-scrubs",
+   "instances": 1,
+   "triangles": 3255,
+   "maxExtent": 1.756,
+   "hasBounds": true
+  },
+  {
+   "key": "surgical-light",
+   "instances": 1,
+   "triangles": 756,
+   "maxExtent": 1.836,
+   "hasBounds": true
+  },
+  {
+   "key": "wet-floor-sign",
+   "instances": 1,
+   "triangles": 504,
+   "maxExtent": 0.62,
+   "hasBounds": true
+  },
+  {
+   "key": "wheelchair",
+   "instances": 1,
+   "triangles": 788,
+   "maxExtent": 1.118,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     -12
+    ],
+    "max": [
+     -16,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 3,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     -10
+    ],
+    "max": [
+     -16,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 5,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     -8
+    ],
+    "max": [
+     -16,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 7,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     -6
+    ],
+    "max": [
+     -16,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 9,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -12
+    ],
+    "max": [
+     -14,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 11,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -10
+    ],
+    "max": [
+     -14,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 13,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -8
+    ],
+    "max": [
+     -14,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 15,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -6
+    ],
+    "max": [
+     -14,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 17,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -12
+    ],
+    "max": [
+     -12,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 19,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -10
+    ],
+    "max": [
+     -12,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 21,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -8
+    ],
+    "max": [
+     -12,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 23,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -6
+    ],
+    "max": [
+     -12,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 25,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -12
+    ],
+    "max": [
+     -10,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 27,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -10
+    ],
+    "max": [
+     -10,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 29,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -8
+    ],
+    "max": [
+     -10,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 31,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -6
+    ],
+    "max": [
+     -10,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 33,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -12
+    ],
+    "max": [
+     -8,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 35,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -10
+    ],
+    "max": [
+     -8,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 37,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -8
+    ],
+    "max": [
+     -8,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 39,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -6
+    ],
+    "max": [
+     -8,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 41,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -12
+    ],
+    "max": [
+     -6,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 43,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -10
+    ],
+    "max": [
+     -6,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 45,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -8
+    ],
+    "max": [
+     -6,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 47,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -6
+    ],
+    "max": [
+     -6,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 49,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -12
+    ],
+    "max": [
+     -4,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 51,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -10
+    ],
+    "max": [
+     -4,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 53,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -8
+    ],
+    "max": [
+     -4,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 55,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -6
+    ],
+    "max": [
+     -4,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 57,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -12
+    ],
+    "max": [
+     -2,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 59,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -10
+    ],
+    "max": [
+     -2,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 61,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -8
+    ],
+    "max": [
+     -2,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 63,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -6
+    ],
+    "max": [
+     -2,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 65,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -12
+    ],
+    "max": [
+     0,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 67,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -10
+    ],
+    "max": [
+     0,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 69,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -8
+    ],
+    "max": [
+     0,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 71,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -6
+    ],
+    "max": [
+     0,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 73,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -12
+    ],
+    "max": [
+     2,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 75,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -10
+    ],
+    "max": [
+     2,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 77,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -8
+    ],
+    "max": [
+     2,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 79,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -6
+    ],
+    "max": [
+     2,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 81,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -12
+    ],
+    "max": [
+     4,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 83,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -10
+    ],
+    "max": [
+     4,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 85,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -8
+    ],
+    "max": [
+     4,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 87,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -6
+    ],
+    "max": [
+     4,
+     0.05,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 89,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     -4
+    ],
+    "max": [
+     -16,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 91,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     -2
+    ],
+    "max": [
+     -16,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 93,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     0
+    ],
+    "max": [
+     -16,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 95,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     2
+    ],
+    "max": [
+     -16,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 97,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -4
+    ],
+    "max": [
+     -14,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 99,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -2
+    ],
+    "max": [
+     -14,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 101,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     0
+    ],
+    "max": [
+     -14,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 103,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     2
+    ],
+    "max": [
+     -14,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 105,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -4
+    ],
+    "max": [
+     -12,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 107,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -2
+    ],
+    "max": [
+     -12,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 109,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     0
+    ],
+    "max": [
+     -12,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 111,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     2
+    ],
+    "max": [
+     -12,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 113,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -4
+    ],
+    "max": [
+     -10,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 115,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -2
+    ],
+    "max": [
+     -10,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 117,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     0
+    ],
+    "max": [
+     -10,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 119,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     2
+    ],
+    "max": [
+     -10,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 121,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -4
+    ],
+    "max": [
+     -8,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 123,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -2
+    ],
+    "max": [
+     -8,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 125,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     0
+    ],
+    "max": [
+     -8,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 127,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     2
+    ],
+    "max": [
+     -8,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 129,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -4
+    ],
+    "max": [
+     -6,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 131,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -2
+    ],
+    "max": [
+     -6,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 133,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     0
+    ],
+    "max": [
+     -6,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 135,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     2
+    ],
+    "max": [
+     -6,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 137,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -4
+    ],
+    "max": [
+     -4,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 139,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -2
+    ],
+    "max": [
+     -4,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 141,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     0
+    ],
+    "max": [
+     -4,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 143,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     2
+    ],
+    "max": [
+     -4,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 145,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -4
+    ],
+    "max": [
+     -2,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 147,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -2
+    ],
+    "max": [
+     -2,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 149,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     0
+    ],
+    "max": [
+     -2,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 151,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     2
+    ],
+    "max": [
+     -2,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 153,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -4
+    ],
+    "max": [
+     0,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 155,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -2
+    ],
+    "max": [
+     0,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 157,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     0
+    ],
+    "max": [
+     0,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 159,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     2
+    ],
+    "max": [
+     0,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 161,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -4
+    ],
+    "max": [
+     2,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 163,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -2
+    ],
+    "max": [
+     2,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 165,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     0
+    ],
+    "max": [
+     2,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 167,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     2
+    ],
+    "max": [
+     2,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 169,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -4
+    ],
+    "max": [
+     4,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 171,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -2
+    ],
+    "max": [
+     4,
+     0.05,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 173,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     0
+    ],
+    "max": [
+     4,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 175,
+   "name": "clinical-vinyl-floor-tile",
+   "key": "clinical-vinyl-floor-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     2
+    ],
+    "max": [
+     4,
+     0.05,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 177,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -6
+    ],
+    "max": [
+     6,
+     0.064,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 179,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -4
+    ],
+    "max": [
+     6,
+     0.064,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 181,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -2
+    ],
+    "max": [
+     6,
+     0.064,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 183,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     0
+    ],
+    "max": [
+     6,
+     0.064,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 185,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     2
+    ],
+    "max": [
+     6,
+     0.064,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 187,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     -6
+    ],
+    "max": [
+     8,
+     0.064,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 189,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     -4
+    ],
+    "max": [
+     8,
+     0.064,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 191,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     -2
+    ],
+    "max": [
+     8,
+     0.064,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 193,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     0
+    ],
+    "max": [
+     8,
+     0.064,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 195,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     2
+    ],
+    "max": [
+     8,
+     0.064,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 197,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -6
+    ],
+    "max": [
+     10,
+     0.064,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 199,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -4
+    ],
+    "max": [
+     10,
+     0.064,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 201,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -2
+    ],
+    "max": [
+     10,
+     0.064,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 203,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     0
+    ],
+    "max": [
+     10,
+     0.064,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 205,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     2
+    ],
+    "max": [
+     10,
+     0.064,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 207,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     -6
+    ],
+    "max": [
+     12,
+     0.064,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 209,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     -4
+    ],
+    "max": [
+     12,
+     0.064,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 211,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     -2
+    ],
+    "max": [
+     12,
+     0.064,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 213,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     0
+    ],
+    "max": [
+     12,
+     0.064,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 215,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     2
+    ],
+    "max": [
+     12,
+     0.064,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 217,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -6
+    ],
+    "max": [
+     14,
+     0.064,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 219,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -4
+    ],
+    "max": [
+     14,
+     0.064,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 221,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -2
+    ],
+    "max": [
+     14,
+     0.064,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 223,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     0
+    ],
+    "max": [
+     14,
+     0.064,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 225,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     2
+    ],
+    "max": [
+     14,
+     0.064,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 227,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     -6
+    ],
+    "max": [
+     16,
+     0.064,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 229,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     -4
+    ],
+    "max": [
+     16,
+     0.064,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 231,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     -2
+    ],
+    "max": [
+     16,
+     0.064,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 233,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     0
+    ],
+    "max": [
+     16,
+     0.064,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 235,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     2
+    ],
+    "max": [
+     16,
+     0.064,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 237,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -6
+    ],
+    "max": [
+     18,
+     0.064,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 239,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -4
+    ],
+    "max": [
+     18,
+     0.064,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 241,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -2
+    ],
+    "max": [
+     18,
+     0.064,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 243,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     0
+    ],
+    "max": [
+     18,
+     0.064,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 245,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     2
+    ],
+    "max": [
+     18,
+     0.064,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 247,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     4
+    ],
+    "max": [
+     -16,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 249,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     6
+    ],
+    "max": [
+     -16,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 251,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     4
+    ],
+    "max": [
+     -14,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 253,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     6
+    ],
+    "max": [
+     -14,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 255,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     4
+    ],
+    "max": [
+     -12,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 257,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     6
+    ],
+    "max": [
+     -12,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 259,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     4
+    ],
+    "max": [
+     -10,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 261,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     6
+    ],
+    "max": [
+     -10,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 263,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     4
+    ],
+    "max": [
+     -8,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 265,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     6
+    ],
+    "max": [
+     -8,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 267,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     4
+    ],
+    "max": [
+     -6,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 269,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     6
+    ],
+    "max": [
+     -6,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 271,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     4
+    ],
+    "max": [
+     -4,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 273,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     6
+    ],
+    "max": [
+     -4,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 275,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     4
+    ],
+    "max": [
+     -2,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 277,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     6
+    ],
+    "max": [
+     -2,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 279,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     4
+    ],
+    "max": [
+     0,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 281,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     6
+    ],
+    "max": [
+     0,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 283,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     4
+    ],
+    "max": [
+     2,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 285,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     6
+    ],
+    "max": [
+     2,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 287,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     4
+    ],
+    "max": [
+     4,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 289,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     6
+    ],
+    "max": [
+     4,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 291,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     4
+    ],
+    "max": [
+     6,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 293,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     6
+    ],
+    "max": [
+     6,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 295,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     4
+    ],
+    "max": [
+     8,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 297,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     6
+    ],
+    "max": [
+     8,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 299,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     4
+    ],
+    "max": [
+     10,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 301,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     6
+    ],
+    "max": [
+     10,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 303,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     4
+    ],
+    "max": [
+     12,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 305,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     6
+    ],
+    "max": [
+     12,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 307,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     4
+    ],
+    "max": [
+     14,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 309,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     6
+    ],
+    "max": [
+     14,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 311,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     4
+    ],
+    "max": [
+     16,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 313,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     6
+    ],
+    "max": [
+     16,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 315,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     4
+    ],
+    "max": [
+     18,
+     0.064,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 317,
+   "name": "precast-paving-tile",
+   "key": "precast-paving-tile",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     6
+    ],
+    "max": [
+     18,
+     0.064,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.064,
+    2
+   ]
+  },
+  {
+   "index": 319,
+   "name": "multi-storey-ward-block",
+   "key": "multi-storey-ward-block",
+   "meshes": 1,
+   "triangles": 412,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     -20
+    ],
+    "max": [
+     -6,
+     9.85,
+     -12
+    ]
+   },
+   "size": [
+    12,
+    9.85,
+    8
+   ]
+  },
+  {
+   "index": 321,
+   "name": "stair-and-lift-core",
+   "key": "stair-and-lift-core",
+   "meshes": 1,
+   "triangles": 228,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -16
+    ],
+    "max": [
+     -2,
+     10.35,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    10.35,
+    4
+   ]
+  },
+  {
+   "index": 323,
+   "name": "clinic-annexe",
+   "key": "clinic-annexe",
+   "meshes": 3,
+   "triangles": 480,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -18
+    ],
+    "max": [
+     6,
+     2.995,
+     -12
+    ]
+   },
+   "size": [
+    8,
+    2.995,
+    6
+   ]
+  },
+  {
+   "index": 329,
+   "name": "emergency-entrance-block",
+   "key": "emergency-entrance-block",
+   "meshes": 3,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -12
+    ],
+    "max": [
+     16,
+     3.45,
+     -6
+    ]
+   },
+   "size": [
+    12,
+    3.45,
+    6
+   ]
+  },
+  {
+   "index": 335,
+   "name": "entrance-canopy",
+   "key": "entrance-canopy",
+   "meshes": 1,
+   "triangles": 824,
+   "aabb": {
+    "min": [
+     6,
+     0.061,
+     -6
+    ],
+    "max": [
+     14,
+     4.761,
+     0
+    ]
+   },
+   "size": [
+    8,
+    4.7,
+    6
+   ]
+  },
+  {
+   "index": 337,
+   "name": "rooftop-helipad-deck",
+   "key": "rooftop-helipad-deck",
+   "meshes": 1,
+   "triangles": 1678,
+   "aabb": {
+    "min": [
+     -16,
+     9.001,
+     -20
+    ],
+    "max": [
+     -8,
+     12.001,
+     -12
+    ]
+   },
+   "size": [
+    8,
+    3,
+    8
+   ]
+  },
+  {
+   "index": 339,
+   "name": "helipad-marking-decal",
+   "key": "helipad-marking-decal",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -14,
+     11.002,
+     -18
+    ],
+    "max": [
+     -12,
+     11.018,
+     -16
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 341,
+   "name": "helipad-marking-decal",
+   "key": "helipad-marking-decal",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     11.002,
+     -18
+    ],
+    "max": [
+     -10,
+     11.018,
+     -16
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 343,
+   "name": "helipad-marking-decal",
+   "key": "helipad-marking-decal",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -14,
+     11.002,
+     -16
+    ],
+    "max": [
+     -12,
+     11.018,
+     -14
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 345,
+   "name": "helipad-marking-decal",
+   "key": "helipad-marking-decal",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     11.002,
+     -16
+    ],
+    "max": [
+     -10,
+     11.018,
+     -14
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 347,
+   "name": "air-ambulance-helicopter",
+   "key": "air-ambulance-helicopter",
+   "meshes": 4,
+   "triangles": 1686,
+   "aabb": {
+    "min": [
+     -18.8,
+     11.002,
+     -21.19
+    ],
+    "max": [
+     -5.2,
+     14.495,
+     -10.81
+    ]
+   },
+   "size": [
+    13.6,
+    3.493,
+    10.38
+   ]
+  },
+  {
+   "index": 355,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -16,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 357,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 240,
+   "aabb": {
+    "min": [
+     -16,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -14,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 359,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 2,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -14,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -12,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 362,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -12,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -10,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 364,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 240,
+   "aabb": {
+    "min": [
+     -10,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -8,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 366,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 2,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -8,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -6,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 369,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -6,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -4,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 371,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 240,
+   "aabb": {
+    "min": [
+     -4,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     -2,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 373,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 2,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -2,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     0,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 376,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 240,
+   "aabb": {
+    "min": [
+     0,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     2,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 378,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     2,
+     0.051,
+     -4.075
+    ],
+    "max": [
+     4,
+     3.051,
+     -3.925
+    ]
+   },
+   "size": [
+    2,
+    3,
+    0.15
+   ]
+  },
+  {
+   "index": 380,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     -12
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     -10
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 382,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     -10
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     -8
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 384,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     -8
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     -6
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 386,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     -6
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     -4
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 388,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     -4
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     -2
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 390,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     -2
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     0
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 392,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     0
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     2
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 394,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 418,
+   "aabb": {
+    "min": [
+     -18.075,
+     0.051,
+     2
+    ],
+    "max": [
+     -17.925,
+     3.051,
+     4
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 396,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -12.075,
+     0.051,
+     -12
+    ],
+    "max": [
+     -11.925,
+     3.051,
+     -10
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 398,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 240,
+   "aabb": {
+    "min": [
+     -12.075,
+     0.051,
+     -10
+    ],
+    "max": [
+     -11.925,
+     3.051,
+     -8
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 400,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -12.075,
+     0.051,
+     -8
+    ],
+    "max": [
+     -11.925,
+     3.051,
+     -6
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 402,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 2,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -12.075,
+     0.051,
+     -6
+    ],
+    "max": [
+     -11.925,
+     3.051,
+     -4
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 405,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -6.075,
+     0.051,
+     -12
+    ],
+    "max": [
+     -5.925,
+     3.051,
+     -10
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 407,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 240,
+   "aabb": {
+    "min": [
+     -6.075,
+     0.051,
+     -10
+    ],
+    "max": [
+     -5.925,
+     3.051,
+     -8
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 409,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -6.075,
+     0.051,
+     -8
+    ],
+    "max": [
+     -5.925,
+     3.051,
+     -6
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 411,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 2,
+   "triangles": 260,
+   "aabb": {
+    "min": [
+     -6.075,
+     0.051,
+     -6
+    ],
+    "max": [
+     -5.925,
+     3.051,
+     -4
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 414,
+   "name": "clinical-wall-module",
+   "key": "clinical-wall-module",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     3.925,
+     0.051,
+     -6
+    ],
+    "max": [
+     4.075,
+     3.051,
+     -4
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 416,
+   "name": "glazed-partition-module",
+   "key": "glazed-partition-module",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -0.075,
+     0.051,
+     -12
+    ],
+    "max": [
+     0.075,
+     3.051,
+     -10
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 418,
+   "name": "glazed-partition-module",
+   "key": "glazed-partition-module",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -0.075,
+     0.051,
+     -10
+    ],
+    "max": [
+     0.075,
+     3.051,
+     -8
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 420,
+   "name": "glazed-partition-module",
+   "key": "glazed-partition-module",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -0.075,
+     0.051,
+     -8
+    ],
+    "max": [
+     0.075,
+     3.051,
+     -6
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 422,
+   "name": "glazed-partition-module",
+   "key": "glazed-partition-module",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -0.075,
+     0.051,
+     -6
+    ],
+    "max": [
+     0.075,
+     3.051,
+     -4
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 424,
+   "name": "glazed-partition-module",
+   "key": "glazed-partition-module",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     3.925,
+     0.051,
+     -4
+    ],
+    "max": [
+     4.075,
+     3.051,
+     -2
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 426,
+   "name": "glazed-partition-module",
+   "key": "glazed-partition-module",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     3.925,
+     0.051,
+     -2
+    ],
+    "max": [
+     4.075,
+     3.051,
+     0
+    ]
+   },
+   "size": [
+    0.15,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 428,
+   "name": "ceiling-grid-panel",
+   "key": "ceiling-grid-panel",
+   "meshes": 2,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -16,
+     2.981,
+     -12
+    ],
+    "max": [
+     -14,
+     3.051,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.07,
+    2
+   ]
+  },
+  {
+   "index": 432,
+   "name": "ceiling-grid-panel",
+   "key": "ceiling-grid-panel",
+   "meshes": 2,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -14,
+     3.001,
+     -12
+    ],
+    "max": [
+     -12,
+     3.051,
+     -10
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 436,
+   "name": "ceiling-grid-panel",
+   "key": "ceiling-grid-panel",
+   "meshes": 2,
+   "triangles": 108,
+   "aabb": {
+    "min": [
+     -16,
+     3.001,
+     -10
+    ],
+    "max": [
+     -14,
+     3.051,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 440,
+   "name": "ceiling-grid-panel",
+   "key": "ceiling-grid-panel",
+   "meshes": 2,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     -14,
+     2.967,
+     -10
+    ],
+    "max": [
+     -12,
+     3.051,
+     -8
+    ]
+   },
+   "size": [
+    2,
+    0.084,
+    2
+   ]
+  },
+  {
+   "index": 444,
+   "name": "operating-table",
+   "key": "operating-table",
+   "meshes": 3,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     -15.5,
+     0.051,
+     -9.358
+    ],
+    "max": [
+     -13.5,
+     1.001,
+     -7.842
+    ]
+   },
+   "size": [
+    2,
+    0.95,
+    1.516
+   ]
+  },
+  {
+   "index": 450,
+   "name": "surgical-light",
+   "key": "surgical-light",
+   "meshes": 4,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     -15.645,
+     2.058,
+     -8.825
+    ],
+    "max": [
+     -13.809,
+     3.046,
+     -8.375
+    ]
+   },
+   "size": [
+    1.836,
+    0.988,
+    0.45
+   ]
+  },
+  {
+   "index": 458,
+   "name": "anaesthesia-machine",
+   "key": "anaesthesia-machine",
+   "meshes": 9,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     -17.564,
+     0.051,
+     -9.448
+    ],
+    "max": [
+     -16.57,
+     1.551,
+     -8.553
+    ]
+   },
+   "size": [
+    0.993,
+    1.5,
+    0.895
+   ]
+  },
+  {
+   "index": 476,
+   "name": "instrument-trolley",
+   "key": "instrument-trolley",
+   "meshes": 11,
+   "triangles": 576,
+   "aabb": {
+    "min": [
+     -13.044,
+     0.051,
+     -10.733
+    ],
+    "max": [
+     -12.156,
+     0.951,
+     -10.067
+    ]
+   },
+   "size": [
+    0.888,
+    0.9,
+    0.666
+   ]
+  },
+  {
+   "index": 498,
+   "name": "scrub-sink-station",
+   "key": "scrub-sink-station",
+   "meshes": 7,
+   "triangles": 546,
+   "aabb": {
+    "min": [
+     -17.93,
+     0.051,
+     -7.63
+    ],
+    "max": [
+     -17.31,
+     1.551,
+     -6.37
+    ]
+   },
+   "size": [
+    0.62,
+    1.5,
+    1.26
+   ]
+  },
+  {
+   "index": 512,
+   "name": "medical-gas-cylinder",
+   "key": "medical-gas-cylinder",
+   "meshes": 3,
+   "triangles": 718,
+   "aabb": {
+    "min": [
+     -16.893,
+     0.051,
+     -10.049
+    ],
+    "max": [
+     -16.24,
+     1.401,
+     -9.551
+    ]
+   },
+   "size": [
+    0.653,
+    1.35,
+    0.498
+   ]
+  },
+  {
+   "index": 518,
+   "name": "clinical-waste-bin",
+   "key": "clinical-waste-bin",
+   "meshes": 3,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     -12.71,
+     0.024,
+     -7.757
+    ],
+    "max": [
+     -12.058,
+     0.933,
+     -7.088
+    ]
+   },
+   "size": [
+    0.652,
+    0.909,
+    0.668
+   ]
+  },
+  {
+   "index": 524,
+   "name": "sharps-bin",
+   "key": "sharps-bin",
+   "meshes": 2,
+   "triangles": 512,
+   "aabb": {
+    "min": [
+     -13.34,
+     0.051,
+     -7.54
+    ],
+    "max": [
+     -13.06,
+     0.405,
+     -7.26
+    ]
+   },
+   "size": [
+    0.28,
+    0.354,
+    0.28
+   ]
+  },
+  {
+   "index": 528,
+   "name": "surgeon-in-scrubs",
+   "key": "surgeon-in-scrubs",
+   "meshes": 7,
+   "triangles": 3255,
+   "aabb": {
+    "min": [
+     -13.304,
+     0.051,
+     -9.409
+    ],
+    "max": [
+     -12.96,
+     1.807,
+     -7.791
+    ]
+   },
+   "size": [
+    0.344,
+    1.756,
+    1.618
+   ]
+  },
+  {
+   "index": 573,
+   "name": "ct-scanner-gantry",
+   "key": "ct-scanner-gantry",
+   "meshes": 3,
+   "triangles": 562,
+   "aabb": {
+    "min": [
+     -11.1,
+     0.051,
+     -10.535
+    ],
+    "max": [
+     -9.3,
+     2.251,
+     -7.865
+    ]
+   },
+   "size": [
+    1.8,
+    2.2,
+    2.67
+   ]
+  },
+  {
+   "index": 579,
+   "name": "patient-trolley",
+   "key": "patient-trolley",
+   "meshes": 9,
+   "triangles": 748,
+   "aabb": {
+    "min": [
+     -8.249,
+     0.051,
+     -9.46
+    ],
+    "max": [
+     -6.951,
+     1.143,
+     -7.34
+    ]
+   },
+   "size": [
+    1.298,
+    1.092,
+    2.12
+   ]
+  },
+  {
+   "index": 597,
+   "name": "vital-signs-monitor",
+   "key": "vital-signs-monitor",
+   "meshes": 7,
+   "triangles": 654,
+   "aabb": {
+    "min": [
+     -11.723,
+     0.051,
+     -10.923
+    ],
+    "max": [
+     -11.079,
+     1.451,
+     -10.275
+    ]
+   },
+   "size": [
+    0.645,
+    1.4,
+    0.647
+   ]
+  },
+  {
+   "index": 611,
+   "name": "clinical-waste-bin",
+   "key": "clinical-waste-bin",
+   "meshes": 3,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     -11.31,
+     0.024,
+     -7.757
+    ],
+    "max": [
+     -10.658,
+     0.933,
+     -7.088
+    ]
+   },
+   "size": [
+    0.652,
+    0.909,
+    0.668
+   ]
+  },
+  {
+   "index": 617,
+   "name": "hand-sanitiser-dispenser",
+   "key": "hand-sanitiser-dispenser",
+   "meshes": 4,
+   "triangles": 446,
+   "aabb": {
+    "min": [
+     -11.93,
+     1.001,
+     -6.078
+    ],
+    "max": [
+     -11.659,
+     1.532,
+     -5.922
+    ]
+   },
+   "size": [
+    0.271,
+    0.531,
+    0.156
+   ]
+  },
+  {
+   "index": 625,
+   "name": "doctor",
+   "key": "doctor",
+   "meshes": 8,
+   "triangles": 3819,
+   "aabb": {
+    "min": [
+     -9.785,
+     0.051,
+     -7.292
+    ],
+    "max": [
+     -8.232,
+     1.804,
+     -6.312
+    ]
+   },
+   "size": [
+    1.552,
+    1.753,
+    0.98
+   ]
+  },
+  {
+   "index": 672,
+   "name": "hospital-bed",
+   "key": "hospital-bed",
+   "meshes": 7,
+   "triangles": 730,
+   "aabb": {
+    "min": [
+     -5.102,
+     0.051,
+     -10.65
+    ],
+    "max": [
+     -4.098,
+     1.181,
+     -8.55
+    ]
+   },
+   "size": [
+    1.005,
+    1.13,
+    2.1
+   ]
+  },
+  {
+   "index": 686,
+   "name": "bed-head-service-panel",
+   "key": "bed-head-service-panel",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     -5.4,
+     0.961,
+     -12.05
+    ],
+    "max": [
+     -3.8,
+     1.811,
+     -11.797
+    ]
+   },
+   "size": [
+    1.6,
+    0.85,
+    0.253
+   ]
+  },
+  {
+   "index": 690,
+   "name": "hospital-bed",
+   "key": "hospital-bed",
+   "meshes": 8,
+   "triangles": 758,
+   "aabb": {
+    "min": [
+     -3.102,
+     0.051,
+     -10.65
+    ],
+    "max": [
+     -2.098,
+     1.246,
+     -8.55
+    ]
+   },
+   "size": [
+    1.005,
+    1.195,
+    2.1
+   ]
+  },
+  {
+   "index": 706,
+   "name": "bed-head-service-panel",
+   "key": "bed-head-service-panel",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     -3.4,
+     0.961,
+     -12.05
+    ],
+    "max": [
+     -1.8,
+     1.811,
+     -11.797
+    ]
+   },
+   "size": [
+    1.6,
+    0.85,
+    0.253
+   ]
+  },
+  {
+   "index": 710,
+   "name": "bedside-locker",
+   "key": "bedside-locker",
+   "meshes": 4,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     -3.849,
+     0.051,
+     -9.827
+    ],
+    "max": [
+     -3.353,
+     0.9,
+     -9.291
+    ]
+   },
+   "size": [
+    0.496,
+    0.849,
+    0.536
+   ]
+  },
+  {
+   "index": 718,
+   "name": "overbed-table",
+   "key": "overbed-table",
+   "meshes": 10,
+   "triangles": 534,
+   "aabb": {
+    "min": [
+     -4.965,
+     0.051,
+     -7.717
+    ],
+    "max": [
+     -4.235,
+     0.951,
+     -7.083
+    ]
+   },
+   "size": [
+    0.729,
+    0.9,
+    0.634
+   ]
+  },
+  {
+   "index": 742,
+   "name": "overbed-table",
+   "key": "overbed-table",
+   "meshes": 10,
+   "triangles": 534,
+   "aabb": {
+    "min": [
+     -3.013,
+     0.051,
+     -7.777
+    ],
+    "max": [
+     -2.187,
+     0.871,
+     -7.023
+    ]
+   },
+   "size": [
+    0.827,
+    0.82,
+    0.755
+   ]
+  },
+  {
+   "index": 766,
+   "name": "iv-drip-stand",
+   "key": "iv-drip-stand",
+   "meshes": 14,
+   "triangles": 704,
+   "aabb": {
+    "min": [
+     -3.969,
+     0.051,
+     -11.573
+    ],
+    "max": [
+     -3.244,
+     1.831,
+     -10.867
+    ]
+   },
+   "size": [
+    0.725,
+    1.78,
+    0.706
+   ]
+  },
+  {
+   "index": 799,
+   "name": "iv-drip-stand",
+   "key": "iv-drip-stand",
+   "meshes": 15,
+   "triangles": 759,
+   "aabb": {
+    "min": [
+     -2.071,
+     0.051,
+     -10.591
+    ],
+    "max": [
+     -1.313,
+     2.031,
+     -9.848
+    ]
+   },
+   "size": [
+    0.758,
+    1.98,
+    0.742
+   ]
+  },
+  {
+   "index": 834,
+   "name": "vital-signs-monitor",
+   "key": "vital-signs-monitor",
+   "meshes": 7,
+   "triangles": 721,
+   "aabb": {
+    "min": [
+     -2.022,
+     0.051,
+     -11.711
+    ],
+    "max": [
+     -1.384,
+     1.451,
+     -11.087
+    ]
+   },
+   "size": [
+    0.638,
+    1.4,
+    0.624
+   ]
+  },
+  {
+   "index": 848,
+   "name": "privacy-curtain-panel",
+   "key": "privacy-curtain-panel",
+   "meshes": 1,
+   "triangles": 768,
+   "aabb": {
+    "min": [
+     -5.769,
+     0.351,
+     -11.9
+    ],
+    "max": [
+     -5.231,
+     3.051,
+     -9.9
+    ]
+   },
+   "size": [
+    0.538,
+    2.7,
+    2
+   ]
+  },
+  {
+   "index": 850,
+   "name": "privacy-curtain-panel",
+   "key": "privacy-curtain-panel",
+   "meshes": 1,
+   "triangles": 768,
+   "aabb": {
+    "min": [
+     -5.769,
+     0.351,
+     -9.9
+    ],
+    "max": [
+     -5.231,
+     3.051,
+     -7.9
+    ]
+   },
+   "size": [
+    0.538,
+    2.7,
+    2
+   ]
+  },
+  {
+   "index": 852,
+   "name": "privacy-curtain-panel",
+   "key": "privacy-curtain-panel",
+   "meshes": 1,
+   "triangles": 768,
+   "aabb": {
+    "min": [
+     -5.769,
+     0.351,
+     -7.9
+    ],
+    "max": [
+     -5.231,
+     3.051,
+     -5.9
+    ]
+   },
+   "size": [
+    0.538,
+    2.7,
+    2
+   ]
+  },
+  {
+   "index": 854,
+   "name": "patient-in-gown",
+   "key": "patient-in-gown",
+   "meshes": 4,
+   "triangles": 2927,
+   "aabb": {
+    "min": [
+     -4.826,
+     0.051,
+     -6.504
+    ],
+    "max": [
+     -3.186,
+     1.775,
+     -5.962
+    ]
+   },
+   "size": [
+    1.64,
+    1.724,
+    0.542
+   ]
+  },
+  {
+   "index": 893,
+   "name": "ward-nurse",
+   "key": "ward-nurse",
+   "meshes": 7,
+   "triangles": 3043,
+   "aabb": {
+    "min": [
+     -2.305,
+     0.051,
+     -6.714
+    ],
+    "max": [
+     -0.708,
+     1.775,
+     -5.921
+    ]
+   },
+   "size": [
+    1.596,
+    1.724,
+    0.793
+   ]
+  },
+  {
+   "index": 938,
+   "name": "examination-couch",
+   "key": "examination-couch",
+   "meshes": 4,
+   "triangles": 564,
+   "aabb": {
+    "min": [
+     1.05,
+     0.051,
+     -8.972
+    ],
+    "max": [
+     3.043,
+     1.206,
+     -8.01
+    ]
+   },
+   "size": [
+    1.993,
+    1.155,
+    0.962
+   ]
+  },
+  {
+   "index": 946,
+   "name": "medicine-cabinet",
+   "key": "medicine-cabinet",
+   "meshes": 6,
+   "triangles": 478,
+   "aabb": {
+    "min": [
+     0.89,
+     1.251,
+     -12.12
+    ],
+    "max": [
+     1.51,
+     2.151,
+     -11.649
+    ]
+   },
+   "size": [
+    0.62,
+    0.9,
+    0.471
+   ]
+  },
+  {
+   "index": 956,
+   "name": "neonatal-incubator",
+   "key": "neonatal-incubator",
+   "meshes": 6,
+   "triangles": 658,
+   "aabb": {
+    "min": [
+     2.874,
+     0.051,
+     -7.285
+    ],
+    "max": [
+     3.926,
+     1.351,
+     -6.315
+    ]
+   },
+   "size": [
+    1.053,
+    1.3,
+    0.971
+   ]
+  },
+  {
+   "index": 967,
+   "name": "crash-cart",
+   "key": "crash-cart",
+   "meshes": 5,
+   "triangles": 718,
+   "aabb": {
+    "min": [
+     3.091,
+     0.051,
+     -8.971
+    ],
+    "max": [
+     3.952,
+     1.115,
+     -8.117
+    ]
+   },
+   "size": [
+    0.861,
+    1.064,
+    0.854
+   ]
+  },
+  {
+   "index": 976,
+   "name": "bedside-locker",
+   "key": "bedside-locker",
+   "meshes": 5,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     0.346,
+     0.051,
+     -9.837
+    ],
+    "max": [
+     0.858,
+     0.9,
+     -9.284
+    ]
+   },
+   "size": [
+    0.512,
+    0.849,
+    0.553
+   ]
+  },
+  {
+   "index": 986,
+   "name": "sharps-bin",
+   "key": "sharps-bin",
+   "meshes": 2,
+   "triangles": 512,
+   "aabb": {
+    "min": [
+     0.366,
+     0.051,
+     -7.734
+    ],
+    "max": [
+     0.634,
+     0.405,
+     -7.466
+    ]
+   },
+   "size": [
+    0.268,
+    0.354,
+    0.268
+   ]
+  },
+  {
+   "index": 990,
+   "name": "instrument-trolley",
+   "key": "instrument-trolley",
+   "meshes": 9,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     0.76,
+     0.051,
+     -11.118
+    ],
+    "max": [
+     1.64,
+     0.951,
+     -10.482
+    ]
+   },
+   "size": [
+    0.881,
+    0.9,
+    0.635
+   ]
+  },
+  {
+   "index": 1008,
+   "name": "corridor-handrail-run",
+   "key": "corridor-handrail-run",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     -17.93,
+     0.261,
+     -2
+    ],
+    "max": [
+     -17.756,
+     1.018,
+     0
+    ]
+   },
+   "size": [
+    0.174,
+    0.757,
+    2
+   ]
+  },
+  {
+   "index": 1010,
+   "name": "corridor-handrail-run",
+   "key": "corridor-handrail-run",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     -17.93,
+     0.261,
+     0
+    ],
+    "max": [
+     -17.756,
+     1.018,
+     2
+    ]
+   },
+   "size": [
+    0.174,
+    0.757,
+    2
+   ]
+  },
+  {
+   "index": 1012,
+   "name": "corridor-handrail-run",
+   "key": "corridor-handrail-run",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     -17.93,
+     0.261,
+     2
+    ],
+    "max": [
+     -17.756,
+     1.018,
+     4
+    ]
+   },
+   "size": [
+    0.174,
+    0.757,
+    2
+   ]
+  },
+  {
+   "index": 1014,
+   "name": "hand-sanitiser-dispenser",
+   "key": "hand-sanitiser-dispenser",
+   "meshes": 4,
+   "triangles": 524,
+   "aabb": {
+    "min": [
+     -16.818,
+     0.051,
+     -3.251
+    ],
+    "max": [
+     -16.425,
+     1.532,
+     -2.85
+    ]
+   },
+   "size": [
+    0.392,
+    1.481,
+    0.4
+   ]
+  },
+  {
+   "index": 1022,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -18,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -16,
+     0.065,
+     -2.76
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    0.48
+   ]
+  },
+  {
+   "index": 1024,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -16,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -14,
+     0.065,
+     -2.76
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    0.48
+   ]
+  },
+  {
+   "index": 1026,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -14,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -12,
+     0.065,
+     -2.76
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    0.48
+   ]
+  },
+  {
+   "index": 1028,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     -12,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -10,
+     0.065,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    1.24
+   ]
+  },
+  {
+   "index": 1030,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -11.24,
+     0.051,
+     -2
+    ],
+    "max": [
+     -10.76,
+     0.065,
+     0
+    ]
+   },
+   "size": [
+    0.48,
+    0.014,
+    2
+   ]
+  },
+  {
+   "index": 1032,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -10,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -8,
+     0.065,
+     -2.76
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    0.48
+   ]
+  },
+  {
+   "index": 1034,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -8,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -6,
+     0.065,
+     -2.76
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    0.48
+   ]
+  },
+  {
+   "index": 1036,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -6,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -4,
+     0.065,
+     -2.76
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    0.48
+   ]
+  },
+  {
+   "index": 1038,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -4,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -2,
+     0.065,
+     -2.76
+    ]
+   },
+   "size": [
+    2,
+    0.014,
+    0.48
+   ]
+  },
+  {
+   "index": 1040,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 60,
+   "aabb": {
+    "min": [
+     -2,
+     0.051,
+     -3.24
+    ],
+    "max": [
+     -0.76,
+     0.065,
+     -2
+    ]
+   },
+   "size": [
+    1.24,
+    0.014,
+    1.24
+   ]
+  },
+  {
+   "index": 1042,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -1.24,
+     0.051,
+     -2
+    ],
+    "max": [
+     -0.76,
+     0.065,
+     0
+    ]
+   },
+   "size": [
+    0.48,
+    0.014,
+    2
+   ]
+  },
+  {
+   "index": 1044,
+   "name": "wayfinding-stripe-decal",
+   "key": "wayfinding-stripe-decal",
+   "meshes": 1,
+   "triangles": 36,
+   "aabb": {
+    "min": [
+     -1.24,
+     0.051,
+     0
+    ],
+    "max": [
+     -0.76,
+     0.065,
+     2
+    ]
+   },
+   "size": [
+    0.48,
+    0.014,
+    2
+   ]
+  },
+  {
+   "index": 1046,
+   "name": "reception-desk",
+   "key": "reception-desk",
+   "meshes": 3,
+   "triangles": 384,
+   "aabb": {
+    "min": [
+     -10,
+     0.051,
+     -2.4
+    ],
+    "max": [
+     -8,
+     1.151,
+     -0.4
+    ]
+   },
+   "size": [
+    2,
+    1.1,
+    2
+   ]
+  },
+  {
+   "index": 1053,
+   "name": "reception-desk",
+   "key": "reception-desk",
+   "meshes": 4,
+   "triangles": 486,
+   "aabb": {
+    "min": [
+     -8,
+     0.051,
+     -1.6
+    ],
+    "max": [
+     -6,
+     1.151,
+     -0.4
+    ]
+   },
+   "size": [
+    2,
+    1.1,
+    1.2
+   ]
+  },
+  {
+   "index": 1062,
+   "name": "reception-desk",
+   "key": "reception-desk",
+   "meshes": 4,
+   "triangles": 470,
+   "aabb": {
+    "min": [
+     -6,
+     0.051,
+     -1.6
+    ],
+    "max": [
+     -4,
+     1.151,
+     -0.4
+    ]
+   },
+   "size": [
+    2,
+    1.1,
+    1.2
+   ]
+  },
+  {
+   "index": 1071,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -15.5,
+     0.051,
+     0.95
+    ],
+    "max": [
+     -14.9,
+     0.856,
+     1.456
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1073,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -15.5,
+     0.051,
+     3.144
+    ],
+    "max": [
+     -14.9,
+     0.856,
+     3.65
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1075,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -14.9,
+     0.051,
+     0.95
+    ],
+    "max": [
+     -14.3,
+     0.856,
+     1.456
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1077,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -14.9,
+     0.051,
+     3.144
+    ],
+    "max": [
+     -14.3,
+     0.856,
+     3.65
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1079,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -14.3,
+     0.051,
+     0.95
+    ],
+    "max": [
+     -13.7,
+     0.856,
+     1.456
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1081,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -14.3,
+     0.051,
+     3.144
+    ],
+    "max": [
+     -13.7,
+     0.856,
+     3.65
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1083,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -13.7,
+     0.051,
+     0.95
+    ],
+    "max": [
+     -13.1,
+     0.856,
+     1.456
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1085,
+   "name": "waiting-room-chair",
+   "key": "waiting-room-chair",
+   "meshes": 1,
+   "triangles": 474,
+   "aabb": {
+    "min": [
+     -13.7,
+     0.051,
+     3.144
+    ],
+    "max": [
+     -13.1,
+     0.856,
+     3.65
+    ]
+   },
+   "size": [
+    0.6,
+    0.805,
+    0.506
+   ]
+  },
+  {
+   "index": 1087,
+   "name": "wayfinding-totem",
+   "key": "wayfinding-totem",
+   "meshes": 1,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     -11.703,
+     0.051,
+     1.344
+    ],
+    "max": [
+     -10.297,
+     2.451,
+     2.256
+    ]
+   },
+   "size": [
+    1.407,
+    2.4,
+    0.913
+   ]
+  },
+  {
+   "index": 1089,
+   "name": "wheelchair",
+   "key": "wheelchair",
+   "meshes": 13,
+   "triangles": 788,
+   "aabb": {
+    "min": [
+     -3.992,
+     0.051,
+     1.033
+    ],
+    "max": [
+     -2.874,
+     1.127,
+     2.083
+    ]
+   },
+   "size": [
+    1.118,
+    1.076,
+    1.05
+   ]
+  },
+  {
+   "index": 1115,
+   "name": "wet-floor-sign",
+   "key": "wet-floor-sign",
+   "meshes": 2,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -2.604,
+     0.051,
+     2.595
+    ],
+    "max": [
+     -2.196,
+     0.671,
+     3.005
+    ]
+   },
+   "size": [
+    0.408,
+    0.62,
+    0.41
+   ]
+  },
+  {
+   "index": 1120,
+   "name": "patient-in-gown",
+   "key": "patient-in-gown",
+   "meshes": 4,
+   "triangles": 3159,
+   "aabb": {
+    "min": [
+     -6.77,
+     0.051,
+     0.872
+    ],
+    "max": [
+     -5.265,
+     1.775,
+     1.864
+    ]
+   },
+   "size": [
+    1.505,
+    1.724,
+    0.992
+   ]
+  },
+  {
+   "index": 1159,
+   "name": "ward-nurse",
+   "key": "ward-nurse",
+   "meshes": 6,
+   "triangles": 3151,
+   "aabb": {
+    "min": [
+     -10.154,
+     0.051,
+     1.892
+    ],
+    "max": [
+     -9.011,
+     1.775,
+     3.282
+    ]
+   },
+   "size": [
+    1.143,
+    1.724,
+    1.39
+   ]
+  },
+  {
+   "index": 1202,
+   "name": "supply-shelving-rack",
+   "key": "supply-shelving-rack",
+   "meshes": 10,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     0.4,
+     0.051,
+     -3.93
+    ],
+    "max": [
+     1.6,
+     1.851,
+     -3.33
+    ]
+   },
+   "size": [
+    1.2,
+    1.8,
+    0.6
+   ]
+  },
+  {
+   "index": 1222,
+   "name": "supply-shelving-rack",
+   "key": "supply-shelving-rack",
+   "meshes": 10,
+   "triangles": 698,
+   "aabb": {
+    "min": [
+     1.8,
+     0.051,
+     -3.93
+    ],
+    "max": [
+     3,
+     1.851,
+     -3.33
+    ]
+   },
+   "size": [
+    1.2,
+    1.8,
+    0.6
+   ]
+  },
+  {
+   "index": 1242,
+   "name": "linen-trolley",
+   "key": "linen-trolley",
+   "meshes": 7,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     2.665,
+     0.051,
+     -2.935
+    ],
+    "max": [
+     3.717,
+     1.163,
+     -1.883
+    ]
+   },
+   "size": [
+    1.052,
+    1.112,
+    1.052
+   ]
+  },
+  {
+   "index": 1256,
+   "name": "supply-tote",
+   "key": "supply-tote",
+   "meshes": 2,
+   "triangles": 666,
+   "aabb": {
+    "min": [
+     0.666,
+     0.051,
+     -1.847
+    ],
+    "max": [
+     1.334,
+     0.399,
+     -1.353
+    ]
+   },
+   "size": [
+    0.668,
+    0.348,
+    0.493
+   ]
+  },
+  {
+   "index": 1260,
+   "name": "supply-tote",
+   "key": "supply-tote",
+   "meshes": 2,
+   "triangles": 666,
+   "aabb": {
+    "min": [
+     0.666,
+     0.4,
+     -1.847
+    ],
+    "max": [
+     1.334,
+     0.748,
+     -1.353
+    ]
+   },
+   "size": [
+    0.668,
+    0.348,
+    0.493
+   ]
+  },
+  {
+   "index": 1264,
+   "name": "supply-tote",
+   "key": "supply-tote",
+   "meshes": 2,
+   "triangles": 666,
+   "aabb": {
+    "min": [
+     1.526,
+     0.051,
+     -1.334
+    ],
+    "max": [
+     2.274,
+     0.399,
+     -0.666
+    ]
+   },
+   "size": [
+    0.748,
+    0.348,
+    0.669
+   ]
+  },
+  {
+   "index": 1268,
+   "name": "mop-bucket-trolley",
+   "key": "mop-bucket-trolley",
+   "meshes": 11,
+   "triangles": 620,
+   "aabb": {
+    "min": [
+     2.646,
+     0.051,
+     -0.96
+    ],
+    "max": [
+     3.14,
+     1.071,
+     -0.327
+    ]
+   },
+   "size": [
+    0.493,
+    1.02,
+    0.633
+   ]
+  },
+  {
+   "index": 1290,
+   "name": "medical-gas-cylinder",
+   "key": "medical-gas-cylinder",
+   "meshes": 3,
+   "triangles": 522,
+   "aabb": {
+    "min": [
+     0.323,
+     0.051,
+     -2.377
+    ],
+    "max": [
+     0.85,
+     1.351,
+     -2.023
+    ]
+   },
+   "size": [
+    0.528,
+    1.3,
+    0.354
+   ]
+  },
+  {
+   "index": 1296,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     8,
+     0.061,
+     -6
+    ],
+    "max": [
+     10,
+     0.077,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 1298,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     8,
+     0.061,
+     -4
+    ],
+    "max": [
+     10,
+     0.077,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 1300,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     8,
+     0.061,
+     -2
+    ],
+    "max": [
+     10,
+     0.077,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 1302,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     8,
+     0.061,
+     0
+    ],
+    "max": [
+     10,
+     0.077,
+     2
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 1304,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     10,
+     0.061,
+     -6
+    ],
+    "max": [
+     12,
+     0.077,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 1306,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     10,
+     0.061,
+     -4
+    ],
+    "max": [
+     12,
+     0.077,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 1308,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     10,
+     0.061,
+     -2
+    ],
+    "max": [
+     12,
+     0.077,
+     0
+    ]
+   },
+   "size": [
+    2,
+    0.016,
+    2
+   ]
+  },
+  {
+   "index": 1310,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 96,
+   "aabb": {
+    "min": [
+     4,
+     0.061,
+     -6
+    ],
+    "max": [
+     6,
+     0.073,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.012,
+    2
+   ]
+  },
+  {
+   "index": 1312,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 96,
+   "aabb": {
+    "min": [
+     4,
+     0.061,
+     -4
+    ],
+    "max": [
+     6,
+     0.073,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.012,
+    2
+   ]
+  },
+  {
+   "index": 1314,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 96,
+   "aabb": {
+    "min": [
+     6,
+     0.061,
+     -6
+    ],
+    "max": [
+     8,
+     0.073,
+     -4
+    ]
+   },
+   "size": [
+    2,
+    0.012,
+    2
+   ]
+  },
+  {
+   "index": 1316,
+   "name": "ambulance-bay-hatching-decal",
+   "key": "ambulance-bay-hatching-decal",
+   "meshes": 1,
+   "triangles": 96,
+   "aabb": {
+    "min": [
+     6,
+     0.061,
+     -4
+    ],
+    "max": [
+     8,
+     0.073,
+     -2
+    ]
+   },
+   "size": [
+    2,
+    0.012,
+    2
+   ]
+  },
+  {
+   "index": 1318,
+   "name": "ambulance-van",
+   "key": "ambulance-van",
+   "meshes": 5,
+   "triangles": 1692,
+   "aabb": {
+    "min": [
+     7.844,
+     0.061,
+     -5
+    ],
+    "max": [
+     10.156,
+     2.786,
+     1.56
+    ]
+   },
+   "size": [
+    2.312,
+    2.725,
+    6.56
+   ]
+  },
+  {
+   "index": 1330,
+   "name": "patient-trolley",
+   "key": "patient-trolley",
+   "meshes": 9,
+   "triangles": 748,
+   "aabb": {
+    "min": [
+     9.57,
+     0.061,
+     1.55
+    ],
+    "max": [
+     11.63,
+     1.233,
+     2.45
+    ]
+   },
+   "size": [
+    2.06,
+    1.172,
+    0.9
+   ]
+  },
+  {
+   "index": 1348,
+   "name": "paramedic",
+   "key": "paramedic",
+   "meshes": 5,
+   "triangles": 2997,
+   "aabb": {
+    "min": [
+     8.802,
+     0.061,
+     1.58
+    ],
+    "max": [
+     9.235,
+     1.785,
+     3.214
+    ]
+   },
+   "size": [
+    0.433,
+    1.724,
+    1.633
+   ]
+  },
+  {
+   "index": 1389,
+   "name": "wayfinding-totem",
+   "key": "wayfinding-totem",
+   "meshes": 1,
+   "triangles": 452,
+   "aabb": {
+    "min": [
+     4.324,
+     0.061,
+     2.046
+    ],
+    "max": [
+     5.676,
+     2.461,
+     3.154
+    ]
+   },
+   "size": [
+    1.351,
+    2.4,
+    1.109
+   ]
+  },
+  {
+   "index": 1391,
+   "name": "mesh-fence-panel",
+   "key": "mesh-fence-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     14.925,
+     0.061,
+     -6
+    ],
+    "max": [
+     15.075,
+     1.861,
+     -4
+    ]
+   },
+   "size": [
+    0.15,
+    1.8,
+    2
+   ]
+  },
+  {
+   "index": 1393,
+   "name": "mesh-fence-panel",
+   "key": "mesh-fence-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     14.925,
+     0.061,
+     -4
+    ],
+    "max": [
+     15.075,
+     1.861,
+     -2
+    ]
+   },
+   "size": [
+    0.15,
+    1.8,
+    2
+   ]
+  },
+  {
+   "index": 1395,
+   "name": "mesh-fence-panel",
+   "key": "mesh-fence-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     14.925,
+     0.061,
+     -2
+    ],
+    "max": [
+     15.075,
+     1.861,
+     0
+    ]
+   },
+   "size": [
+    0.15,
+    1.8,
+    2
+   ]
+  },
+  {
+   "index": 1397,
+   "name": "mesh-fence-panel",
+   "key": "mesh-fence-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     14.925,
+     0.061,
+     0
+    ],
+    "max": [
+     15.075,
+     1.861,
+     2
+    ]
+   },
+   "size": [
+    0.15,
+    1.8,
+    2
+   ]
+  },
+  {
+   "index": 1399,
+   "name": "mesh-fence-panel",
+   "key": "mesh-fence-panel",
+   "meshes": 2,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     14.925,
+     0.061,
+     2
+    ],
+    "max": [
+     15.088,
+     1.861,
+     4
+    ]
+   },
+   "size": [
+    0.163,
+    1.8,
+    2
+   ]
+  },
+  {
+   "index": 1403,
+   "name": "mesh-fence-panel",
+   "key": "mesh-fence-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     14.925,
+     0.061,
+     4
+    ],
+    "max": [
+     15.075,
+     1.861,
+     6
+    ]
+   },
+   "size": [
+    0.15,
+    1.8,
+    2
+   ]
+  },
+  {
+   "index": 1405,
+   "name": "mesh-fence-panel",
+   "key": "mesh-fence-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     14.925,
+     0.061,
+     6
+    ],
+    "max": [
+     15.075,
+     1.861,
+     8
+    ]
+   },
+   "size": [
+    0.15,
+    1.8,
+    2
+   ]
+  },
+  {
+   "index": 1407,
+   "name": "clipped-hedge-section",
+   "key": "clipped-hedge-section",
+   "meshes": 1,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -18,
+     0.061,
+     6.76
+    ],
+    "max": [
+     -16,
+     0.958,
+     7.238
+    ]
+   },
+   "size": [
+    2,
+    0.897,
+    0.478
+   ]
+  },
+  {
+   "index": 1409,
+   "name": "clipped-hedge-section",
+   "key": "clipped-hedge-section",
+   "meshes": 1,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -16,
+     0.061,
+     6.76
+    ],
+    "max": [
+     -14,
+     0.958,
+     7.238
+    ]
+   },
+   "size": [
+    2,
+    0.897,
+    0.478
+   ]
+  },
+  {
+   "index": 1411,
+   "name": "clipped-hedge-section",
+   "key": "clipped-hedge-section",
+   "meshes": 1,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -14,
+     0.061,
+     6.76
+    ],
+    "max": [
+     -12,
+     0.958,
+     7.238
+    ]
+   },
+   "size": [
+    2,
+    0.897,
+    0.478
+   ]
+  },
+  {
+   "index": 1413,
+   "name": "clipped-hedge-section",
+   "key": "clipped-hedge-section",
+   "meshes": 1,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -12,
+     0.061,
+     6.76
+    ],
+    "max": [
+     -10,
+     0.958,
+     7.238
+    ]
+   },
+   "size": [
+    2,
+    0.897,
+    0.478
+   ]
+  },
+  {
+   "index": 1415,
+   "name": "clipped-hedge-section",
+   "key": "clipped-hedge-section",
+   "meshes": 1,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -10,
+     0.061,
+     6.76
+    ],
+    "max": [
+     -8,
+     0.958,
+     7.238
+    ]
+   },
+   "size": [
+    2,
+    0.897,
+    0.478
+   ]
+  },
+  {
+   "index": 1417,
+   "name": "clipped-hedge-section",
+   "key": "clipped-hedge-section",
+   "meshes": 1,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -8,
+     0.061,
+     6.76
+    ],
+    "max": [
+     -6,
+     0.958,
+     7.238
+    ]
+   },
+   "size": [
+    2,
+    0.897,
+    0.478
+   ]
+  },
+  {
+   "index": 1419,
+   "name": "clipped-hedge-section",
+   "key": "clipped-hedge-section",
+   "meshes": 1,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -6,
+     0.061,
+     6.76
+    ],
+    "max": [
+     -4,
+     0.958,
+     7.238
+    ]
+   },
+   "size": [
+    2,
+    0.897,
+    0.478
+   ]
+  },
+  {
+   "index": 1421,
+   "name": "bollard-light",
+   "key": "bollard-light",
+   "meshes": 1,
+   "triangles": 596,
+   "aabb": {
+    "min": [
+     -15.736,
+     0.061,
+     4.964
+    ],
+    "max": [
+     -15.264,
+     1.081,
+     5.436
+    ]
+   },
+   "size": [
+    0.472,
+    1.02,
+    0.472
+   ]
+  },
+  {
+   "index": 1423,
+   "name": "bollard-light",
+   "key": "bollard-light",
+   "meshes": 1,
+   "triangles": 596,
+   "aabb": {
+    "min": [
+     -11.736,
+     0.061,
+     4.964
+    ],
+    "max": [
+     -11.264,
+     1.081,
+     5.436
+    ]
+   },
+   "size": [
+    0.472,
+    1.02,
+    0.472
+   ]
+  },
+  {
+   "index": 1425,
+   "name": "bollard-light",
+   "key": "bollard-light",
+   "meshes": 1,
+   "triangles": 596,
+   "aabb": {
+    "min": [
+     -7.736,
+     0.061,
+     4.964
+    ],
+    "max": [
+     -7.264,
+     1.081,
+     5.436
+    ]
+   },
+   "size": [
+    0.472,
+    1.02,
+    0.472
+   ]
+  },
+  {
+   "index": 1427,
+   "name": "bollard-light",
+   "key": "bollard-light",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     -3.736,
+     0.061,
+     4.964
+    ],
+    "max": [
+     -3.264,
+     1.081,
+     5.436
+    ]
+   },
+   "size": [
+    0.472,
+    1.02,
+    0.472
+   ]
+  },
+  {
+   "index": 1429,
+   "name": "standby-generator-enclosure",
+   "key": "standby-generator-enclosure",
+   "meshes": 2,
+   "triangles": 848,
+   "aabb": {
+    "min": [
+     16,
+     0.061,
+     2
+    ],
+    "max": [
+     18,
+     3.611,
+     6
+    ]
+   },
+   "size": [
+    2,
+    3.55,
+    4
+   ]
+  }
+ ],
+ "id": "hospital",
+ "label": "Hospital",
+ "sourceBytes": 14782636,
+ "spawn": {
+  "x": 1,
+  "y": 0.5,
+  "z": -1.6,
+  "on": "186 floor pieces at y=0"
+ }
+}

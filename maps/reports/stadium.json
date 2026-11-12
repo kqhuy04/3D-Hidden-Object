@@ -1,0 +1,10706 @@
+{
+ "file": "/assets/maps/stadium.glb",
+ "bytes": 4968452,
+ "generatedAt": "2026-11-09T17:05:52.293Z",
+ "structure": {
+  "nodes": 4716,
+  "meshes": 1382,
+  "materials": 430,
+  "images": 0,
+  "partContainer": "kit-composition",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 424,
+  "keys": 71,
+  "triangles": 430812,
+  "meshes": 1386,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "turf-pitch-tile",
+   "instances": 53,
+   "triangles": 6958,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "terrace-step-run",
+   "instances": 38,
+   "triangles": 23712,
+   "maxExtent": 4.24,
+   "hasBounds": true
+  },
+  {
+   "key": "running-track-tile",
+   "instances": 35,
+   "triangles": 5422,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "spectator",
+   "instances": 30,
+   "triangles": 111182,
+   "maxExtent": 1.873,
+   "hasBounds": true
+  },
+  {
+   "key": "concourse-paving-tile",
+   "instances": 29,
+   "triangles": 14430,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "advertising-hoarding-run",
+   "instances": 28,
+   "triangles": 7478,
+   "maxExtent": 1.093,
+   "hasBounds": true
+  },
+  {
+   "key": "stand-roof-run",
+   "instances": 28,
+   "triangles": 14728,
+   "maxExtent": 9,
+   "hasBounds": true
+  },
+  {
+   "key": "grandstand-seating-run",
+   "instances": 24,
+   "triangles": 23904,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "perimeter-wall-run",
+   "instances": 24,
+   "triangles": 18636,
+   "maxExtent": 2.4,
+   "hasBounds": true
+  },
+  {
+   "key": "mesh-perimeter-fence-run",
+   "instances": 16,
+   "triangles": 7579,
+   "maxExtent": 2.4,
+   "hasBounds": true
+  },
+  {
+   "key": "outfield-player",
+   "instances": 13,
+   "triangles": 40367,
+   "maxExtent": 1.727,
+   "hasBounds": true
+  },
+  {
+   "key": "gravel-car-park-tile",
+   "instances": 12,
+   "triangles": 4032,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "match-ball",
+   "instances": 6,
+   "triangles": 3894,
+   "maxExtent": 0.22,
+   "hasBounds": true
+  },
+  {
+   "key": "athletics-hurdle",
+   "instances": 4,
+   "triangles": 1872,
+   "maxExtent": 1.18,
+   "hasBounds": true
+  },
+  {
+   "key": "corner-flag",
+   "instances": 4,
+   "triangles": 2128,
+   "maxExtent": 1.5,
+   "hasBounds": true
+  },
+  {
+   "key": "floodlight-mast",
+   "instances": 4,
+   "triangles": 2728,
+   "maxExtent": 16,
+   "hasBounds": true
+  },
+  {
+   "key": "gridiron-player",
+   "instances": 4,
+   "triangles": 16358,
+   "maxExtent": 1.771,
+   "hasBounds": true
+  },
+  {
+   "key": "ground-litter-bin",
+   "instances": 4,
+   "triangles": 2640,
+   "maxExtent": 0.72,
+   "hasBounds": true
+  },
+  {
+   "key": "manager",
+   "instances": 3,
+   "triangles": 10511,
+   "maxExtent": 1.768,
+   "hasBounds": true
+  },
+  {
+   "key": "cheerleader",
+   "instances": 2,
+   "triangles": 9318,
+   "maxExtent": 2.026,
+   "hasBounds": true
+  },
+  {
+   "key": "goalkeeper",
+   "instances": 2,
+   "triangles": 6998,
+   "maxExtent": 1.757,
+   "hasBounds": true
+  },
+  {
+   "key": "groundskeeper",
+   "instances": 2,
+   "triangles": 7518,
+   "maxExtent": 1.722,
+   "hasBounds": true
+  },
+  {
+   "key": "kit-bag",
+   "instances": 2,
+   "triangles": 1580,
+   "maxExtent": 0.8,
+   "hasBounds": true
+  },
+  {
+   "key": "match-goal",
+   "instances": 2,
+   "triangles": 1156,
+   "maxExtent": 3.9,
+   "hasBounds": true
+  },
+  {
+   "key": "sideline-yard-marker",
+   "instances": 2,
+   "triangles": 1148,
+   "maxExtent": 0.455,
+   "hasBounds": true
+  },
+  {
+   "key": "stand-gable-end",
+   "instances": 2,
+   "triangles": 2908,
+   "maxExtent": 8.08,
+   "hasBounds": true
+  },
+  {
+   "key": "starting-blocks",
+   "instances": 2,
+   "triangles": 1084,
+   "maxExtent": 1,
+   "hasBounds": true
+  },
+  {
+   "key": "substitutes-bench",
+   "instances": 2,
+   "triangles": 1284,
+   "maxExtent": 2.5,
+   "hasBounds": true
+  },
+  {
+   "key": "tackle-dummy",
+   "instances": 2,
+   "triangles": 1168,
+   "maxExtent": 1.7,
+   "hasBounds": true
+  },
+  {
+   "key": "team-dugout",
+   "instances": 2,
+   "triangles": 1364,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "team-minibus",
+   "instances": 2,
+   "triangles": 4772,
+   "maxExtent": 5.5,
+   "hasBounds": true
+  },
+  {
+   "key": "water-bottle-crate",
+   "instances": 2,
+   "triangles": 1520,
+   "maxExtent": 1.22,
+   "hasBounds": true
+  },
+  {
+   "key": "agility-bag-set",
+   "instances": 1,
+   "triangles": 640,
+   "maxExtent": 3.296,
+   "hasBounds": true
+  },
+  {
+   "key": "agility-ladder",
+   "instances": 1,
+   "triangles": 672,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "ball-cart",
+   "instances": 1,
+   "triangles": 1275,
+   "maxExtent": 1.151,
+   "hasBounds": true
+  },
+  {
+   "key": "blocking-sled",
+   "instances": 1,
+   "triangles": 604,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "chain-crew-set",
+   "instances": 1,
+   "triangles": 944,
+   "maxExtent": 9,
+   "hasBounds": true
+  },
+  {
+   "key": "clubhouse",
+   "instances": 1,
+   "triangles": 1760,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "discus-cage",
+   "instances": 1,
+   "triangles": 372,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "first-aid-bag",
+   "instances": 1,
+   "triangles": 712,
+   "maxExtent": 0.5,
+   "hasBounds": true
+  },
+  {
+   "key": "first-aid-room-module",
+   "instances": 1,
+   "triangles": 616,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "flag-pole",
+   "instances": 1,
+   "triangles": 588,
+   "maxExtent": 9,
+   "hasBounds": true
+  },
+  {
+   "key": "football-equipment-rack",
+   "instances": 1,
+   "triangles": 6970,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "goal-net-trolley",
+   "instances": 1,
+   "triangles": 418,
+   "maxExtent": 1.5,
+   "hasBounds": true
+  },
+  {
+   "key": "groundsmans-store-shed",
+   "instances": 1,
+   "triangles": 1571,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "high-jump-apparatus",
+   "instances": 1,
+   "triangles": 590,
+   "maxExtent": 5,
+   "hasBounds": true
+  },
+  {
+   "key": "inflatable-team-tunnel",
+   "instances": 1,
+   "triangles": 772,
+   "maxExtent": 6.03,
+   "hasBounds": true
+  },
+  {
+   "key": "line-marking-cart",
+   "instances": 1,
+   "triangles": 705,
+   "maxExtent": 1.002,
+   "hasBounds": true
+  },
+  {
+   "key": "long-jump-pit",
+   "instances": 1,
+   "triangles": 372,
+   "maxExtent": 7.5,
+   "hasBounds": true
+  },
+  {
+   "key": "main-entrance-gate",
+   "instances": 1,
+   "triangles": 1542,
+   "maxExtent": 6,
+   "hasBounds": true
+  },
+  {
+   "key": "marker-cone-set",
+   "instances": 1,
+   "triangles": 506,
+   "maxExtent": 4.327,
+   "hasBounds": true
+  },
+  {
+   "key": "match-scoreboard",
+   "instances": 1,
+   "triangles": 608,
+   "maxExtent": 4.777,
+   "hasBounds": true
+  },
+  {
+   "key": "pa-horn-post",
+   "instances": 1,
+   "triangles": 748,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "pitch-roller",
+   "instances": 1,
+   "triangles": 608,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "players-tunnel",
+   "instances": 1,
+   "triangles": 1398,
+   "maxExtent": 5.981,
+   "hasBounds": true
+  },
+  {
+   "key": "press-box",
+   "instances": 1,
+   "triangles": 750,
+   "maxExtent": 6,
+   "hasBounds": true
+  },
+  {
+   "key": "referee",
+   "instances": 1,
+   "triangles": 3553,
+   "maxExtent": 1.739,
+   "hasBounds": true
+  },
+  {
+   "key": "refreshment-kiosk",
+   "instances": 1,
+   "triangles": 1471,
+   "maxExtent": 3.44,
+   "hasBounds": true
+  },
+  {
+   "key": "rolled-tarpaulin",
+   "instances": 1,
+   "triangles": 712,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "scaffold-camera-platform",
+   "instances": 1,
+   "triangles": 1584,
+   "maxExtent": 5,
+   "hasBounds": true
+  },
+  {
+   "key": "shot-put-circle",
+   "instances": 1,
+   "triangles": 434,
+   "maxExtent": 2.851,
+   "hasBounds": true
+  },
+  {
+   "key": "sideline-medical-tent",
+   "instances": 1,
+   "triangles": 936,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "stadium-clock-post",
+   "instances": 1,
+   "triangles": 692,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "stadium-terrain",
+   "instances": 1,
+   "triangles": 25328,
+   "maxExtent": 101,
+   "hasBounds": true
+  },
+  {
+   "key": "tactics-board",
+   "instances": 1,
+   "triangles": 533,
+   "maxExtent": 1.52,
+   "hasBounds": true
+  },
+  {
+   "key": "team-mascot",
+   "instances": 1,
+   "triangles": 4031,
+   "maxExtent": 1.809,
+   "hasBounds": true
+  },
+  {
+   "key": "ticket-booth",
+   "instances": 1,
+   "triangles": 1098,
+   "maxExtent": 2.19,
+   "hasBounds": true
+  },
+  {
+   "key": "toilet-block",
+   "instances": 1,
+   "triangles": 1548,
+   "maxExtent": 6,
+   "hasBounds": true
+  },
+  {
+   "key": "touchline-stretcher",
+   "instances": 1,
+   "triangles": 726,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "training-goal",
+   "instances": 1,
+   "triangles": 712,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "turnstile-bank",
+   "instances": 1,
+   "triangles": 1336,
+   "maxExtent": 3.062,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "stadium-terrain",
+   "key": "stadium-terrain",
+   "meshes": 1,
+   "triangles": 25328,
+   "aabb": {
+    "min": [
+     -48,
+     -7.534,
+     -50
+    ],
+    "max": [
+     44,
+     5.042,
+     51
+    ]
+   },
+   "size": [
+    92,
+    12.576,
+    101
+   ]
+  },
+  {
+   "index": 3,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     -17.845
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 5,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     -13.845
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 7,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     -9.845
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 9,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     -5.845
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 11,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     -1.845
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 13,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     2.155
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 15,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     6.155
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 17,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     10.155
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 19,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     14.155
+    ],
+    "max": [
+     -5.825,
+     0.07,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 21,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     -17.845
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 23,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     -13.845
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 25,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     -9.845
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 27,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     -5.845
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 29,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     -1.845
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 31,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     2.155
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 33,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     6.155
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 35,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     10.155
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 37,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     14.155
+    ],
+    "max": [
+     -1.825,
+     0.07,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 39,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 309,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     -17.845
+    ],
+    "max": [
+     2.175,
+     0.07,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 41,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 227,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     -13.845
+    ],
+    "max": [
+     2.175,
+     0.07,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 43,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     -9.845
+    ],
+    "max": [
+     2.175,
+     0.07,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 45,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     -5.845
+    ],
+    "max": [
+     2.175,
+     0.07,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 47,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 138,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     -1.845
+    ],
+    "max": [
+     2.175,
+     0.07,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 49,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     2.155
+    ],
+    "max": [
+     2.175,
+     0.07,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 51,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     6.155
+    ],
+    "max": [
+     2.175,
+     0.07,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 53,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 227,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     10.155
+    ],
+    "max": [
+     2.175,
+     0.07,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 55,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 309,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     14.155
+    ],
+    "max": [
+     2.175,
+     0.07,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 57,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     -17.845
+    ],
+    "max": [
+     6.175,
+     0.07,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 59,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     -13.845
+    ],
+    "max": [
+     6.175,
+     0.07,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 61,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     -9.845
+    ],
+    "max": [
+     6.175,
+     0.07,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 63,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     -5.845
+    ],
+    "max": [
+     6.175,
+     0.07,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 65,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     -1.845
+    ],
+    "max": [
+     6.175,
+     0.07,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 67,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     2.155
+    ],
+    "max": [
+     6.175,
+     0.07,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 69,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     6.155
+    ],
+    "max": [
+     6.175,
+     0.07,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 71,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 100,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     10.155
+    ],
+    "max": [
+     6.175,
+     0.07,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 73,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     14.155
+    ],
+    "max": [
+     6.175,
+     0.07,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 75,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     -17.845
+    ],
+    "max": [
+     10.175,
+     0.07,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 77,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     -13.845
+    ],
+    "max": [
+     10.175,
+     0.07,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 79,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     -9.845
+    ],
+    "max": [
+     10.175,
+     0.07,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 81,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     -5.845
+    ],
+    "max": [
+     10.175,
+     0.07,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 83,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     -1.845
+    ],
+    "max": [
+     10.175,
+     0.07,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 85,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     2.155
+    ],
+    "max": [
+     10.175,
+     0.07,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 87,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     6.155
+    ],
+    "max": [
+     10.175,
+     0.07,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 89,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 110,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     10.155
+    ],
+    "max": [
+     10.175,
+     0.07,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 91,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     14.155
+    ],
+    "max": [
+     10.175,
+     0.07,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 93,
+   "name": "match-goal",
+   "key": "match-goal",
+   "meshes": 2,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     -1.775,
+     0.05,
+     -17.345
+    ],
+    "max": [
+     2.126,
+     2,
+     -15.845
+    ]
+   },
+   "size": [
+    3.9,
+    1.95,
+    1.5
+   ]
+  },
+  {
+   "index": 98,
+   "name": "match-goal",
+   "key": "match-goal",
+   "meshes": 2,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     -1.775,
+     0.05,
+     16.155
+    ],
+    "max": [
+     2.126,
+     2,
+     17.655
+    ]
+   },
+   "size": [
+    3.9,
+    1.95,
+    1.5
+   ]
+  },
+  {
+   "index": 103,
+   "name": "corner-flag",
+   "key": "corner-flag",
+   "meshes": 5,
+   "triangles": 532,
+   "aabb": {
+    "min": [
+     -8.291,
+     0.05,
+     -16.041
+    ],
+    "max": [
+     -7.629,
+     1.55,
+     -15.376
+    ]
+   },
+   "size": [
+    0.662,
+    1.5,
+    0.666
+   ]
+  },
+  {
+   "index": 110,
+   "name": "corner-flag",
+   "key": "corner-flag",
+   "meshes": 5,
+   "triangles": 532,
+   "aabb": {
+    "min": [
+     7.98,
+     0.05,
+     -16.041
+    ],
+    "max": [
+     8.645,
+     1.55,
+     -15.379
+    ]
+   },
+   "size": [
+    0.666,
+    1.5,
+    0.662
+   ]
+  },
+  {
+   "index": 117,
+   "name": "corner-flag",
+   "key": "corner-flag",
+   "meshes": 5,
+   "triangles": 532,
+   "aabb": {
+    "min": [
+     7.98,
+     0.05,
+     15.685
+    ],
+    "max": [
+     8.642,
+     1.55,
+     16.351
+    ]
+   },
+   "size": [
+    0.662,
+    1.5,
+    0.666
+   ]
+  },
+  {
+   "index": 124,
+   "name": "corner-flag",
+   "key": "corner-flag",
+   "meshes": 5,
+   "triangles": 532,
+   "aabb": {
+    "min": [
+     -8.294,
+     0.05,
+     15.689
+    ],
+    "max": [
+     -7.629,
+     1.55,
+     16.351
+    ]
+   },
+   "size": [
+    0.666,
+    1.5,
+    0.662
+   ]
+  },
+  {
+   "index": 131,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     -17.845
+    ],
+    "max": [
+     14.175,
+     0.056,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 133,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     -17.845
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 135,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 124,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     -13.845
+    ],
+    "max": [
+     14.175,
+     0.056,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 137,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     -13.845
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 139,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     -9.845
+    ],
+    "max": [
+     14.175,
+     0.056,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 141,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     -9.845
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 143,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     -5.845
+    ],
+    "max": [
+     14.175,
+     0.056,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 145,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     -5.845
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 147,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     -1.845
+    ],
+    "max": [
+     14.175,
+     0.056,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 149,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     -1.845
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 151,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     2.155
+    ],
+    "max": [
+     14.175,
+     0.056,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 153,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     2.155
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 155,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     6.155
+    ],
+    "max": [
+     14.175,
+     0.056,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 157,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     6.155
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 159,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     10.155
+    ],
+    "max": [
+     14.175,
+     0.056,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 161,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     10.155
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 163,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     14.155
+    ],
+    "max": [
+     14.175,
+     0.056,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 165,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     14.155
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 167,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     -21.845
+    ],
+    "max": [
+     -5.825,
+     0.056,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 169,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     -9.825,
+     0,
+     18.155
+    ],
+    "max": [
+     -5.825,
+     0.056,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 171,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     -21.845
+    ],
+    "max": [
+     -1.825,
+     0.056,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 173,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     -5.825,
+     0,
+     18.155
+    ],
+    "max": [
+     -1.825,
+     0.056,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 175,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     -21.845
+    ],
+    "max": [
+     2.175,
+     0.056,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 177,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     -1.825,
+     0,
+     18.155
+    ],
+    "max": [
+     2.175,
+     0.056,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 179,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     -21.845
+    ],
+    "max": [
+     6.175,
+     0.056,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 181,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     2.175,
+     0,
+     18.155
+    ],
+    "max": [
+     6.175,
+     0.056,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 183,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     -21.845
+    ],
+    "max": [
+     10.175,
+     0.056,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 185,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 72,
+   "aabb": {
+    "min": [
+     6.175,
+     0,
+     18.155
+    ],
+    "max": [
+     10.175,
+     0.056,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 187,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     -21.845
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 189,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     -21.845
+    ],
+    "max": [
+     14.175,
+     0.056,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 191,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     10.175,
+     0,
+     18.155
+    ],
+    "max": [
+     14.175,
+     0.056,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 193,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     -13.825,
+     0,
+     18.155
+    ],
+    "max": [
+     -9.825,
+     0.056,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 195,
+   "name": "starting-blocks",
+   "key": "starting-blocks",
+   "meshes": 1,
+   "triangles": 542,
+   "aabb": {
+    "min": [
+     10.875,
+     0.05,
+     -12.965
+    ],
+    "max": [
+     11.375,
+     0.287,
+     -11.965
+    ]
+   },
+   "size": [
+    0.5,
+    0.237,
+    1
+   ]
+  },
+  {
+   "index": 197,
+   "name": "starting-blocks",
+   "key": "starting-blocks",
+   "meshes": 1,
+   "triangles": 542,
+   "aabb": {
+    "min": [
+     12.095,
+     0.05,
+     -12.965
+    ],
+    "max": [
+     12.595,
+     0.287,
+     -11.965
+    ]
+   },
+   "size": [
+    0.5,
+    0.237,
+    1
+   ]
+  },
+  {
+   "index": 199,
+   "name": "athletics-hurdle",
+   "key": "athletics-hurdle",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     11.756,
+     0.05,
+     -2.214
+    ],
+    "max": [
+     12.935,
+     0.888,
+     -1.477
+    ]
+   },
+   "size": [
+    1.18,
+    0.838,
+    0.737
+   ]
+  },
+  {
+   "index": 203,
+   "name": "athletics-hurdle",
+   "key": "athletics-hurdle",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     11.756,
+     0.05,
+     6.286
+    ],
+    "max": [
+     12.935,
+     0.888,
+     7.023
+    ]
+   },
+   "size": [
+    1.18,
+    0.838,
+    0.737
+   ]
+  },
+  {
+   "index": 207,
+   "name": "athletics-hurdle",
+   "key": "athletics-hurdle",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     12.976,
+     0.05,
+     -2.214
+    ],
+    "max": [
+     14.155,
+     0.812,
+     -1.477
+    ]
+   },
+   "size": [
+    1.18,
+    0.762,
+    0.737
+   ]
+  },
+  {
+   "index": 211,
+   "name": "athletics-hurdle",
+   "key": "athletics-hurdle",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     12.976,
+     0.05,
+     6.286
+    ],
+    "max": [
+     14.155,
+     0.812,
+     7.023
+    ]
+   },
+   "size": [
+    1.18,
+    0.762,
+    0.737
+   ]
+  },
+  {
+   "index": 215,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -13.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -12.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 219,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -12.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -11.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 223,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -11.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -10.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 227,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -10.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -9.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 231,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -9.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -8.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 235,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -8.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -7.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 239,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -7.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -6.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 243,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -6.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -5.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 247,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -5.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -4.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 251,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -4.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -3.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 255,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -3.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -2.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 259,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     -2.845
+    ],
+    "max": [
+     -14,
+     4.812,
+     -1.845
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 263,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     2.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     3.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 267,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     3.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     4.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 271,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     4.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     5.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 275,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     5.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     6.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 279,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     6.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     7.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 283,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     7.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     8.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 287,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     8.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     9.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 291,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     9.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     10.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 295,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     10.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     11.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 299,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     11.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     12.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 303,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     12.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     13.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 307,
+   "name": "grandstand-seating-run",
+   "key": "grandstand-seating-run",
+   "meshes": 2,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     13.155
+    ],
+    "max": [
+     -14,
+     4.812,
+     14.155
+    ]
+   },
+   "size": [
+    8,
+    4.812,
+    1
+   ]
+  },
+  {
+   "index": 311,
+   "name": "players-tunnel",
+   "key": "players-tunnel",
+   "meshes": 5,
+   "triangles": 1398,
+   "aabb": {
+    "min": [
+     -19.985,
+     0,
+     -1.845
+    ],
+    "max": [
+     -14.003,
+     3.45,
+     2.155
+    ]
+   },
+   "size": [
+    5.981,
+    3.45,
+    4
+   ]
+  },
+  {
+   "index": 321,
+   "name": "stand-gable-end",
+   "key": "stand-gable-end",
+   "meshes": 4,
+   "triangles": 1454,
+   "aabb": {
+    "min": [
+     -22.04,
+     0,
+     14.155
+    ],
+    "max": [
+     -13.96,
+     6.7,
+     15.74
+    ]
+   },
+   "size": [
+    8.08,
+    6.7,
+    1.585
+   ]
+  },
+  {
+   "index": 329,
+   "name": "stand-gable-end",
+   "key": "stand-gable-end",
+   "meshes": 4,
+   "triangles": 1454,
+   "aabb": {
+    "min": [
+     -22.04,
+     0,
+     -15.43
+    ],
+    "max": [
+     -13.96,
+     6.7,
+     -13.845
+    ]
+   },
+   "size": [
+    8.08,
+    6.7,
+    1.585
+   ]
+  },
+  {
+   "index": 337,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -13.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -12.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 341,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -12.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -11.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 345,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -11.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -10.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 349,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -10.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -9.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 353,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -9.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -8.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 357,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -8.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -7.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 361,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -7.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -6.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 365,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -6.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -5.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 369,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -5.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -4.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 373,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -4.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -3.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 377,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -3.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -2.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 381,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -2.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -1.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 385,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -1.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     -0.845
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 389,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     -0.845
+    ],
+    "max": [
+     -14,
+     7.857,
+     0.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 393,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     0.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     1.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 397,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     1.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     2.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 401,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     2.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     3.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 405,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     3.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     4.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 409,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     4.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     5.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 413,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     5.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     6.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 417,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     6.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     7.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 421,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     7.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     8.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 425,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     8.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     9.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 429,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     9.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     10.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 433,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     10.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     11.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 437,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     11.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     12.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 441,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     12.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     13.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 445,
+   "name": "stand-roof-run",
+   "key": "stand-roof-run",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -23,
+     0,
+     13.155
+    ],
+    "max": [
+     -14,
+     7.857,
+     14.155
+    ]
+   },
+   "size": [
+    9,
+    7.857,
+    1
+   ]
+  },
+  {
+   "index": 449,
+   "name": "press-box",
+   "key": "press-box",
+   "meshes": 9,
+   "triangles": 750,
+   "aabb": {
+    "min": [
+     -20.5,
+     7.839,
+     -2.845
+    ],
+    "max": [
+     -17.5,
+     11.122,
+     3.155
+    ]
+   },
+   "size": [
+    3,
+    3.283,
+    6
+   ]
+  },
+  {
+   "index": 465,
+   "name": "scaffold-camera-platform",
+   "key": "scaffold-camera-platform",
+   "meshes": 5,
+   "triangles": 1584,
+   "aabb": {
+    "min": [
+     -25.825,
+     3.6,
+     15.755
+    ],
+    "max": [
+     -23.825,
+     8.6,
+     17.755
+    ]
+   },
+   "size": [
+    2,
+    5,
+    2
+   ]
+  },
+  {
+   "index": 475,
+   "name": "inflatable-team-tunnel",
+   "key": "inflatable-team-tunnel",
+   "meshes": 1,
+   "triangles": 772,
+   "aabb": {
+    "min": [
+     -14,
+     0.05,
+     -2.595
+    ],
+    "max": [
+     -7.97,
+     3.25,
+     2.905
+    ]
+   },
+   "size": [
+    6.03,
+    3.2,
+    5.5
+   ]
+  },
+  {
+   "index": 477,
+   "name": "team-dugout",
+   "key": "team-dugout",
+   "meshes": 6,
+   "triangles": 682,
+   "aabb": {
+    "min": [
+     -10.12,
+     0.05,
+     -10.845
+    ],
+    "max": [
+     -8.12,
+     2.268,
+     -6.845
+    ]
+   },
+   "size": [
+    2,
+    2.218,
+    4
+   ]
+  },
+  {
+   "index": 488,
+   "name": "team-dugout",
+   "key": "team-dugout",
+   "meshes": 6,
+   "triangles": 682,
+   "aabb": {
+    "min": [
+     -10.12,
+     0.05,
+     7.155
+    ],
+    "max": [
+     -8.12,
+     2.268,
+     11.155
+    ]
+   },
+   "size": [
+    2,
+    2.218,
+    4
+   ]
+  },
+  {
+   "index": 499,
+   "name": "substitutes-bench",
+   "key": "substitutes-bench",
+   "meshes": 4,
+   "triangles": 642,
+   "aabb": {
+    "min": [
+     -9.65,
+     0.05,
+     -15.295
+    ],
+    "max": [
+     -9.15,
+     0.729,
+     -12.795
+    ]
+   },
+   "size": [
+    0.5,
+    0.679,
+    2.5
+   ]
+  },
+  {
+   "index": 507,
+   "name": "substitutes-bench",
+   "key": "substitutes-bench",
+   "meshes": 4,
+   "triangles": 642,
+   "aabb": {
+    "min": [
+     -9.65,
+     0.05,
+     13.105
+    ],
+    "max": [
+     -9.15,
+     0.729,
+     15.605
+    ]
+   },
+   "size": [
+    0.5,
+    0.679,
+    2.5
+   ]
+  },
+  {
+   "index": 515,
+   "name": "tactics-board",
+   "key": "tactics-board",
+   "meshes": 4,
+   "triangles": 533,
+   "aabb": {
+    "min": [
+     -9.75,
+     0.05,
+     11.705
+    ],
+    "max": [
+     -8.75,
+     1.57,
+     12.705
+    ]
+   },
+   "size": [
+    1,
+    1.52,
+    1
+   ]
+  },
+  {
+   "index": 523,
+   "name": "water-bottle-crate",
+   "key": "water-bottle-crate",
+   "meshes": 3,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -8.647,
+     0.05,
+     5.863
+    ],
+    "max": [
+     -8.289,
+     0.378,
+     6.545
+    ]
+   },
+   "size": [
+    0.358,
+    0.328,
+    0.682
+   ]
+  },
+  {
+   "index": 529,
+   "name": "kit-bag",
+   "key": "kit-bag",
+   "meshes": 4,
+   "triangles": 790,
+   "aabb": {
+    "min": [
+     -9.482,
+     0.05,
+     6.055
+    ],
+    "max": [
+     -9.001,
+     0.475,
+     6.855
+    ]
+   },
+   "size": [
+    0.481,
+    0.425,
+    0.8
+   ]
+  },
+  {
+   "index": 538,
+   "name": "touchline-stretcher",
+   "key": "touchline-stretcher",
+   "meshes": 5,
+   "triangles": 726,
+   "aabb": {
+    "min": [
+     -9.3,
+     0.05,
+     -6.145
+    ],
+    "max": [
+     -8.8,
+     0.625,
+     -4.145
+    ]
+   },
+   "size": [
+    0.5,
+    0.575,
+    2
+   ]
+  },
+  {
+   "index": 549,
+   "name": "first-aid-bag",
+   "key": "first-aid-bag",
+   "meshes": 4,
+   "triangles": 712,
+   "aabb": {
+    "min": [
+     -8.62,
+     0.05,
+     -6.495
+    ],
+    "max": [
+     -8.263,
+     0.492,
+     -5.995
+    ]
+   },
+   "size": [
+    0.357,
+    0.442,
+    0.5
+   ]
+  },
+  {
+   "index": 557,
+   "name": "kit-bag",
+   "key": "kit-bag",
+   "meshes": 4,
+   "triangles": 790,
+   "aabb": {
+    "min": [
+     -9.382,
+     0.05,
+     -12.595
+    ],
+    "max": [
+     -8.901,
+     0.475,
+     -11.795
+    ]
+   },
+   "size": [
+    0.481,
+    0.425,
+    0.8
+   ]
+  },
+  {
+   "index": 566,
+   "name": "marker-cone-set",
+   "key": "marker-cone-set",
+   "meshes": 2,
+   "triangles": 506,
+   "aabb": {
+    "min": [
+     2.278,
+     0.05,
+     7.065
+    ],
+    "max": [
+     2.473,
+     0.1,
+     11.392
+    ]
+   },
+   "size": [
+    0.195,
+    0.05,
+    4.327
+   ]
+  },
+  {
+   "index": 570,
+   "name": "agility-ladder",
+   "key": "agility-ladder",
+   "meshes": 2,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     3.925,
+     0.05,
+     6.155
+    ],
+    "max": [
+     4.425,
+     0.13,
+     10.155
+    ]
+   },
+   "size": [
+    0.5,
+    0.08,
+    4
+   ]
+  },
+  {
+   "index": 574,
+   "name": "ball-cart",
+   "key": "ball-cart",
+   "meshes": 6,
+   "triangles": 1275,
+   "aabb": {
+    "min": [
+     8.974,
+     0.05,
+     4.155
+    ],
+    "max": [
+     9.977,
+     1.201,
+     5.155
+    ]
+   },
+   "size": [
+    1.002,
+    1.151,
+    1
+   ]
+  },
+  {
+   "index": 585,
+   "name": "training-goal",
+   "key": "training-goal",
+   "meshes": 2,
+   "triangles": 712,
+   "aabb": {
+    "min": [
+     9.075,
+     0.05,
+     -7.845
+    ],
+    "max": [
+     10.075,
+     1.12,
+     -4.845
+    ]
+   },
+   "size": [
+    1,
+    1.07,
+    3
+   ]
+  },
+  {
+   "index": 591,
+   "name": "line-marking-cart",
+   "key": "line-marking-cart",
+   "meshes": 6,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     5.674,
+     0.05,
+     -0.095
+    ],
+    "max": [
+     6.677,
+     1.043,
+     0.405
+    ]
+   },
+   "size": [
+    1.002,
+    0.993,
+    0.5
+   ]
+  },
+  {
+   "index": 603,
+   "name": "match-ball",
+   "key": "match-ball",
+   "meshes": 1,
+   "triangles": 649,
+   "aabb": {
+    "min": [
+     -2.435,
+     0.05,
+     9.695
+    ],
+    "max": [
+     -2.214,
+     0.266,
+     9.914
+    ]
+   },
+   "size": [
+    0.22,
+    0.216,
+    0.219
+   ]
+  },
+  {
+   "index": 605,
+   "name": "match-ball",
+   "key": "match-ball",
+   "meshes": 1,
+   "triangles": 649,
+   "aabb": {
+    "min": [
+     -2.935,
+     0.07,
+     -8.605
+    ],
+    "max": [
+     -2.714,
+     0.286,
+     -8.386
+    ]
+   },
+   "size": [
+    0.22,
+    0.216,
+    0.219
+   ]
+  },
+  {
+   "index": 607,
+   "name": "match-ball",
+   "key": "match-ball",
+   "meshes": 1,
+   "triangles": 649,
+   "aabb": {
+    "min": [
+     -0.435,
+     0.05,
+     -14.555
+    ],
+    "max": [
+     -0.214,
+     0.266,
+     -14.336
+    ]
+   },
+   "size": [
+    0.22,
+    0.216,
+    0.219
+   ]
+  },
+  {
+   "index": 609,
+   "name": "match-ball",
+   "key": "match-ball",
+   "meshes": 1,
+   "triangles": 649,
+   "aabb": {
+    "min": [
+     8.765,
+     0.07,
+     -4.555
+    ],
+    "max": [
+     8.986,
+     0.286,
+     -4.336
+    ]
+   },
+   "size": [
+    0.22,
+    0.216,
+    0.219
+   ]
+  },
+  {
+   "index": 611,
+   "name": "match-ball",
+   "key": "match-ball",
+   "meshes": 1,
+   "triangles": 649,
+   "aabb": {
+    "min": [
+     6.465,
+     0.05,
+     -8.955
+    ],
+    "max": [
+     6.686,
+     0.266,
+     -8.736
+    ]
+   },
+   "size": [
+    0.22,
+    0.216,
+    0.219
+   ]
+  },
+  {
+   "index": 613,
+   "name": "match-ball",
+   "key": "match-ball",
+   "meshes": 1,
+   "triangles": 649,
+   "aabb": {
+    "min": [
+     1.265,
+     0.05,
+     4.045
+    ],
+    "max": [
+     1.486,
+     0.266,
+     4.264
+    ]
+   },
+   "size": [
+    0.22,
+    0.216,
+    0.219
+   ]
+  },
+  {
+   "index": 615,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -19.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -18.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 629,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -18.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 645,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 6,
+   "triangles": 586,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -17.845
+    ],
+    "max": [
+     25.175,
+     5.447,
+     -16.845
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 657,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -16.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -15.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 671,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -15.845
+    ],
+    "max": [
+     25.175,
+     5.447,
+     -14.845
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 685,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -14.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -13.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 701,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -13.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -12.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 715,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -12.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -11.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 731,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 6,
+   "triangles": 586,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -11.845
+    ],
+    "max": [
+     25.175,
+     5.447,
+     -10.845
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 743,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 4,
+   "triangles": 440,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -10.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -9.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 751,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -9.845
+    ],
+    "max": [
+     25.175,
+     5.447,
+     -8.845
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 765,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -8.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -7.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 781,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -7.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -6.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 795,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -6.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -5.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 811,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 6,
+   "triangles": 586,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -5.845
+    ],
+    "max": [
+     25.175,
+     5.447,
+     -4.845
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 823,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -4.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -3.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 837,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -3.845
+    ],
+    "max": [
+     25.175,
+     5.447,
+     -2.845
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 851,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -2.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -1.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 867,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -1.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     -0.845
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 881,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 4,
+   "triangles": 440,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     -0.845
+    ],
+    "max": [
+     25.175,
+     6.84,
+     0.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 889,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 6,
+   "triangles": 586,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     0.155
+    ],
+    "max": [
+     25.175,
+     5.447,
+     1.155
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 901,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     1.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     2.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 915,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     2.155
+    ],
+    "max": [
+     25.175,
+     5.447,
+     3.155
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 929,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     3.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     4.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 945,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     4.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     5.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 959,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     5.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     6.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 975,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 6,
+   "triangles": 586,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     6.155
+    ],
+    "max": [
+     25.175,
+     5.447,
+     7.155
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 987,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     7.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     8.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1001,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     8.155
+    ],
+    "max": [
+     25.175,
+     5.447,
+     9.155
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 1015,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 4,
+   "triangles": 440,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     9.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     10.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1023,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     10.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     11.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1037,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     11.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     12.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1053,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 6,
+   "triangles": 586,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     12.155
+    ],
+    "max": [
+     25.175,
+     5.447,
+     13.155
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 1065,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     13.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     14.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1079,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 578,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     14.155
+    ],
+    "max": [
+     25.175,
+     5.447,
+     15.155
+    ]
+   },
+   "size": [
+    4,
+    2.847,
+    1
+   ]
+  },
+  {
+   "index": 1093,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 8,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     15.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     16.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1109,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 7,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     16.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     17.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1123,
+   "name": "terrace-step-run",
+   "key": "terrace-step-run",
+   "meshes": 4,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     21.175,
+     2.6,
+     17.155
+    ],
+    "max": [
+     25.175,
+     6.84,
+     18.155
+    ]
+   },
+   "size": [
+    4,
+    4.24,
+    1
+   ]
+  },
+  {
+   "index": 1131,
+   "name": "pa-horn-post",
+   "key": "pa-horn-post",
+   "meshes": 1,
+   "triangles": 748,
+   "aabb": {
+    "min": [
+     22.564,
+     2.6,
+     18.543
+    ],
+    "max": [
+     23.787,
+     6.6,
+     19.766
+    ]
+   },
+   "size": [
+    1.223,
+    4,
+    1.223
+   ]
+  },
+  {
+   "index": 1133,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -3.825,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     -2.825,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1137,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -3.825,
+     0.05,
+     17.675
+    ],
+    "max": [
+     -2.825,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1141,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -4.825,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     -3.825,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1145,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -4.825,
+     0.05,
+     17.675
+    ],
+    "max": [
+     -3.825,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1149,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -5.825,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     -4.825,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1153,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -5.825,
+     0.05,
+     17.675
+    ],
+    "max": [
+     -4.825,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1157,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -6.825,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     -5.825,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1161,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -6.825,
+     0.05,
+     17.675
+    ],
+    "max": [
+     -5.825,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1165,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     -7.825,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     -6.825,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1169,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     -7.825,
+     0.05,
+     17.675
+    ],
+    "max": [
+     -6.825,
+     1.143,
+     18.28
+    ]
+   },
+   "size": [
+    1,
+    1.093,
+    0.605
+   ]
+  },
+  {
+   "index": 1173,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     3.175,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     4.175,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1177,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     3.175,
+     0.05,
+     17.675
+    ],
+    "max": [
+     4.175,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1181,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     4.175,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     5.175,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1185,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     4.175,
+     0.05,
+     17.675
+    ],
+    "max": [
+     5.175,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1189,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     5.175,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     6.175,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1193,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     5.175,
+     0.05,
+     17.675
+    ],
+    "max": [
+     6.175,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1197,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     6.175,
+     0.05,
+     -17.825
+    ],
+    "max": [
+     7.175,
+     1.096,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1201,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     6.175,
+     0.05,
+     17.675
+    ],
+    "max": [
+     7.175,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1205,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     7.175,
+     0.05,
+     -17.97
+    ],
+    "max": [
+     8.175,
+     1.143,
+     -17.365
+    ]
+   },
+   "size": [
+    1,
+    1.093,
+    0.605
+   ]
+  },
+  {
+   "index": 1209,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     7.175,
+     0.05,
+     17.675
+    ],
+    "max": [
+     8.175,
+     1.096,
+     18.135
+    ]
+   },
+   "size": [
+    1,
+    1.046,
+    0.46
+   ]
+  },
+  {
+   "index": 1213,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     -4.345
+    ],
+    "max": [
+     10.256,
+     1.096,
+     -3.345
+    ]
+   },
+   "size": [
+    0.46,
+    1.046,
+    1
+   ]
+  },
+  {
+   "index": 1217,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     -3.345
+    ],
+    "max": [
+     10.256,
+     1.096,
+     -2.345
+    ]
+   },
+   "size": [
+    0.46,
+    1.046,
+    1
+   ]
+  },
+  {
+   "index": 1221,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     -2.345
+    ],
+    "max": [
+     10.256,
+     1.096,
+     -1.345
+    ]
+   },
+   "size": [
+    0.46,
+    1.046,
+    1
+   ]
+  },
+  {
+   "index": 1225,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     -1.345
+    ],
+    "max": [
+     10.256,
+     1.096,
+     -0.345
+    ]
+   },
+   "size": [
+    0.46,
+    1.046,
+    1
+   ]
+  },
+  {
+   "index": 1229,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     -0.345
+    ],
+    "max": [
+     10.256,
+     1.096,
+     0.655
+    ]
+   },
+   "size": [
+    0.46,
+    1.046,
+    1
+   ]
+  },
+  {
+   "index": 1233,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     0.655
+    ],
+    "max": [
+     10.256,
+     1.096,
+     1.655
+    ]
+   },
+   "size": [
+    0.46,
+    1.046,
+    1
+   ]
+  },
+  {
+   "index": 1237,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 254,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     1.655
+    ],
+    "max": [
+     10.256,
+     1.096,
+     2.655
+    ]
+   },
+   "size": [
+    0.46,
+    1.046,
+    1
+   ]
+  },
+  {
+   "index": 1241,
+   "name": "advertising-hoarding-run",
+   "key": "advertising-hoarding-run",
+   "meshes": 2,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     9.795,
+     0.05,
+     2.655
+    ],
+    "max": [
+     10.4,
+     1.143,
+     3.655
+    ]
+   },
+   "size": [
+    0.605,
+    1.093,
+    1
+   ]
+  },
+  {
+   "index": 1245,
+   "name": "floodlight-mast",
+   "key": "floodlight-mast",
+   "meshes": 2,
+   "triangles": 682,
+   "aabb": {
+    "min": [
+     -26.825,
+     3.61,
+     -21.845
+    ],
+    "max": [
+     -22.825,
+     19.61,
+     -17.845
+    ]
+   },
+   "size": [
+    4,
+    16,
+    4
+   ]
+  },
+  {
+   "index": 1249,
+   "name": "floodlight-mast",
+   "key": "floodlight-mast",
+   "meshes": 2,
+   "triangles": 682,
+   "aabb": {
+    "min": [
+     -26.825,
+     3.61,
+     18.155
+    ],
+    "max": [
+     -22.825,
+     19.61,
+     22.155
+    ]
+   },
+   "size": [
+    4,
+    16,
+    4
+   ]
+  },
+  {
+   "index": 1253,
+   "name": "floodlight-mast",
+   "key": "floodlight-mast",
+   "meshes": 2,
+   "triangles": 682,
+   "aabb": {
+    "min": [
+     21.175,
+     2.61,
+     -24.045
+    ],
+    "max": [
+     25.175,
+     18.61,
+     -20.045
+    ]
+   },
+   "size": [
+    4,
+    16,
+    4
+   ]
+  },
+  {
+   "index": 1257,
+   "name": "floodlight-mast",
+   "key": "floodlight-mast",
+   "meshes": 2,
+   "triangles": 682,
+   "aabb": {
+    "min": [
+     21.175,
+     2.61,
+     20.355
+    ],
+    "max": [
+     25.175,
+     18.61,
+     24.355
+    ]
+   },
+   "size": [
+    4,
+    16,
+    4
+   ]
+  },
+  {
+   "index": 1261,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     -0.82,
+     -1.5,
+     -35.85
+    ],
+    "max": [
+     3.18,
+     -1.424,
+     -31.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1263,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     -0.82,
+     -1.5,
+     -39.85
+    ],
+    "max": [
+     3.18,
+     -1.424,
+     -35.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1265,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     3.18,
+     -1.5,
+     -35.85
+    ],
+    "max": [
+     7.18,
+     -1.424,
+     -31.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1267,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     3.18,
+     -1.5,
+     -39.85
+    ],
+    "max": [
+     7.18,
+     -1.424,
+     -35.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1269,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     7.18,
+     -1.5,
+     -35.85
+    ],
+    "max": [
+     11.18,
+     -1.424,
+     -31.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1271,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     7.18,
+     -1.5,
+     -39.85
+    ],
+    "max": [
+     11.18,
+     -1.424,
+     -35.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1273,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     11.18,
+     -1.5,
+     -35.85
+    ],
+    "max": [
+     15.18,
+     -1.424,
+     -31.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1275,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     11.18,
+     -1.5,
+     -39.85
+    ],
+    "max": [
+     15.18,
+     -1.424,
+     -35.85
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1277,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -12.82,
+     -1.5,
+     -31.85
+    ],
+    "max": [
+     -8.82,
+     -1.409,
+     -27.85
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1281,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -8.82,
+     -1.5,
+     -31.85
+    ],
+    "max": [
+     -4.82,
+     -1.409,
+     -27.85
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1285,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     -4.82,
+     -1.5,
+     -31.85
+    ],
+    "max": [
+     -0.82,
+     -1.409,
+     -27.85
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1289,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -0.82,
+     -1.5,
+     -31.85
+    ],
+    "max": [
+     3.18,
+     -1.409,
+     -27.85
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1293,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 566,
+   "aabb": {
+    "min": [
+     3.18,
+     -1.5,
+     -31.85
+    ],
+    "max": [
+     7.18,
+     -1.409,
+     -27.85
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1297,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     7.18,
+     -1.5,
+     -31.85
+    ],
+    "max": [
+     11.18,
+     -1.409,
+     -27.85
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1301,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     11.18,
+     -1.5,
+     -31.85
+    ],
+    "max": [
+     15.18,
+     -1.409,
+     -27.85
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1305,
+   "name": "clubhouse",
+   "key": "clubhouse",
+   "meshes": 5,
+   "triangles": 1760,
+   "aabb": {
+    "min": [
+     -16.825,
+     -1.5,
+     -39.85
+    ],
+    "max": [
+     -4.825,
+     5.45,
+     -31.85
+    ]
+   },
+   "size": [
+    12,
+    6.95,
+    8
+   ]
+  },
+  {
+   "index": 1315,
+   "name": "first-aid-room-module",
+   "key": "first-aid-room-module",
+   "meshes": 6,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     -4.8,
+     -1.5,
+     -37
+    ],
+    "max": [
+     -1.766,
+     2.05,
+     -33
+    ]
+   },
+   "size": [
+    3.034,
+    3.55,
+    4
+   ]
+  },
+  {
+   "index": 1327,
+   "name": "team-minibus",
+   "key": "team-minibus",
+   "meshes": 6,
+   "triangles": 2468,
+   "aabb": {
+    "min": [
+     7.99,
+     -1.45,
+     -37.75
+    ],
+    "max": [
+     10.37,
+     0.948,
+     -32.25
+    ]
+   },
+   "size": [
+    2.38,
+    2.398,
+    5.5
+   ]
+  },
+  {
+   "index": 1340,
+   "name": "team-minibus",
+   "key": "team-minibus",
+   "meshes": 6,
+   "triangles": 2304,
+   "aabb": {
+    "min": [
+     12.21,
+     -1.45,
+     -37.85
+    ],
+    "max": [
+     14.59,
+     0.948,
+     -33.35
+    ]
+   },
+   "size": [
+    2.38,
+    2.398,
+    4.5
+   ]
+  },
+  {
+   "index": 1353,
+   "name": "match-scoreboard",
+   "key": "match-scoreboard",
+   "meshes": 11,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     5.675,
+     -1.45,
+     -28.65
+    ],
+    "max": [
+     8.675,
+     3.327,
+     -28.15
+    ]
+   },
+   "size": [
+    3,
+    4.777,
+    0.5
+   ]
+  },
+  {
+   "index": 1375,
+   "name": "ground-litter-bin",
+   "key": "ground-litter-bin",
+   "meshes": 3,
+   "triangles": 660,
+   "aabb": {
+    "min": [
+     -0.641,
+     -1.45,
+     -28.841
+    ],
+    "max": [
+     -0.159,
+     -0.73,
+     -28.359
+    ]
+   },
+   "size": [
+    0.483,
+    0.72,
+    0.483
+   ]
+  },
+  {
+   "index": 1382,
+   "name": "flag-pole",
+   "key": "flag-pole",
+   "meshes": 2,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -16.1,
+     -1.51,
+     -29.4
+    ],
+    "max": [
+     -12.396,
+     7.49,
+     -28.4
+    ]
+   },
+   "size": [
+    3.704,
+    9,
+    1
+   ]
+  },
+  {
+   "index": 1390,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 1134,
+   "aabb": {
+    "min": [
+     34.9,
+     0,
+     -12.08
+    ],
+    "max": [
+     36.993,
+     2.4,
+     -10
+    ]
+   },
+   "size": [
+    2.093,
+    2.4,
+    2.08
+   ]
+  },
+  {
+   "index": 1401,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     32.9,
+     0,
+     -12.093
+    ],
+    "max": [
+     34.9,
+     2.4,
+     -11.92
+    ]
+   },
+   "size": [
+    2,
+    2.4,
+    0.173
+   ]
+  },
+  {
+   "index": 1412,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     30.9,
+     0,
+     -12.093
+    ],
+    "max": [
+     32.9,
+     2.4,
+     -11.92
+    ]
+   },
+   "size": [
+    2,
+    2.4,
+    0.173
+   ]
+  },
+  {
+   "index": 1423,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     28.88,
+     0,
+     -12.093
+    ],
+    "max": [
+     30.9,
+     2.4,
+     -11.92
+    ]
+   },
+   "size": [
+    2.02,
+    2.4,
+    0.173
+   ]
+  },
+  {
+   "index": 1434,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     -10
+    ],
+    "max": [
+     36.993,
+     2.4,
+     -8
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1445,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     -8
+    ],
+    "max": [
+     36.993,
+     2.4,
+     -6
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1456,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     -6
+    ],
+    "max": [
+     36.993,
+     2.4,
+     -4
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1467,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     -4
+    ],
+    "max": [
+     36.993,
+     2.4,
+     -2
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1478,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     -2
+    ],
+    "max": [
+     36.993,
+     2.4,
+     0
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1489,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     0
+    ],
+    "max": [
+     36.993,
+     2.4,
+     2
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1500,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     2
+    ],
+    "max": [
+     36.993,
+     2.4,
+     4
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1511,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     4
+    ],
+    "max": [
+     36.993,
+     2.4,
+     6
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1522,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     6
+    ],
+    "max": [
+     36.993,
+     2.4,
+     8
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1533,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     8
+    ],
+    "max": [
+     36.993,
+     2.4,
+     10
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1544,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     10
+    ],
+    "max": [
+     36.993,
+     2.4,
+     12
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1555,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     12
+    ],
+    "max": [
+     36.993,
+     2.4,
+     14
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1566,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     14
+    ],
+    "max": [
+     36.993,
+     2.4,
+     16
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1577,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     16
+    ],
+    "max": [
+     36.993,
+     2.4,
+     18
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1588,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     18
+    ],
+    "max": [
+     36.993,
+     2.4,
+     20
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1599,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     36.82,
+     0,
+     20
+    ],
+    "max": [
+     36.993,
+     2.4,
+     22
+    ]
+   },
+   "size": [
+    0.173,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 1610,
+   "name": "turnstile-bank",
+   "key": "turnstile-bank",
+   "meshes": 7,
+   "triangles": 1336,
+   "aabb": {
+    "min": [
+     35.9,
+     0.033,
+     21.938
+    ],
+    "max": [
+     37.9,
+     2.847,
+     25
+    ]
+   },
+   "size": [
+    2,
+    2.815,
+    3.062
+   ]
+  },
+  {
+   "index": 1623,
+   "name": "main-entrance-gate",
+   "key": "main-entrance-gate",
+   "meshes": 4,
+   "triangles": 1542,
+   "aabb": {
+    "min": [
+     36.355,
+     0,
+     25
+    ],
+    "max": [
+     39.244,
+     4.86,
+     31
+    ]
+   },
+   "size": [
+    2.889,
+    4.86,
+    6
+   ]
+  },
+  {
+   "index": 1631,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 1134,
+   "aabb": {
+    "min": [
+     34.9,
+     0,
+     31
+    ],
+    "max": [
+     36.98,
+     2.4,
+     33.093
+    ]
+   },
+   "size": [
+    2.08,
+    2.4,
+    2.093
+   ]
+  },
+  {
+   "index": 1642,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     32.9,
+     0,
+     32.92
+    ],
+    "max": [
+     34.9,
+     2.4,
+     33.093
+    ]
+   },
+   "size": [
+    2,
+    2.4,
+    0.173
+   ]
+  },
+  {
+   "index": 1653,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     30.9,
+     0,
+     32.92
+    ],
+    "max": [
+     32.9,
+     2.4,
+     33.093
+    ]
+   },
+   "size": [
+    2,
+    2.4,
+    0.173
+   ]
+  },
+  {
+   "index": 1664,
+   "name": "perimeter-wall-run",
+   "key": "perimeter-wall-run",
+   "meshes": 5,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     28.88,
+     0,
+     32.907
+    ],
+    "max": [
+     30.9,
+     2.4,
+     33.08
+    ]
+   },
+   "size": [
+    2.02,
+    2.4,
+    0.173
+   ]
+  },
+  {
+   "index": 1675,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     36.998,
+     0,
+     17
+    ],
+    "max": [
+     40.998,
+     0.078,
+     21
+    ]
+   },
+   "size": [
+    4,
+    0.078,
+    4
+   ]
+  },
+  {
+   "index": 1677,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     36.998,
+     0,
+     21
+    ],
+    "max": [
+     40.998,
+     0.077,
+     25
+    ]
+   },
+   "size": [
+    4,
+    0.077,
+    4
+   ]
+  },
+  {
+   "index": 1679,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     36.998,
+     0,
+     25
+    ],
+    "max": [
+     40.998,
+     0.076,
+     29
+    ]
+   },
+   "size": [
+    4,
+    0.076,
+    4
+   ]
+  },
+  {
+   "index": 1681,
+   "name": "gravel-car-park-tile",
+   "key": "gravel-car-park-tile",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     36.998,
+     0,
+     29
+    ],
+    "max": [
+     40.998,
+     0.078,
+     33
+    ]
+   },
+   "size": [
+    4,
+    0.078,
+    4
+   ]
+  },
+  {
+   "index": 1683,
+   "name": "ticket-booth",
+   "key": "ticket-booth",
+   "meshes": 6,
+   "triangles": 1098,
+   "aabb": {
+    "min": [
+     37,
+     0.05,
+     18
+    ],
+    "max": [
+     39,
+     2.24,
+     20
+    ]
+   },
+   "size": [
+    2,
+    2.19,
+    2
+   ]
+  },
+  {
+   "index": 1694,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 1,
+   "triangles": 438,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     -11.915
+    ],
+    "max": [
+     32.815,
+     0.05,
+     -7.915
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1697,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     -11.915
+    ],
+    "max": [
+     36.815,
+     0.091,
+     -7.915
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1701,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     -7.915
+    ],
+    "max": [
+     32.815,
+     0.091,
+     -3.915
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1705,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     -7.915
+    ],
+    "max": [
+     36.815,
+     0.091,
+     -3.915
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1709,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 1,
+   "triangles": 438,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     -3.915
+    ],
+    "max": [
+     32.815,
+     0.05,
+     0.085
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1712,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     -3.915
+    ],
+    "max": [
+     36.815,
+     0.091,
+     0.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1716,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 1,
+   "triangles": 440,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     0.085
+    ],
+    "max": [
+     32.815,
+     0.05,
+     4.085
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1719,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     0.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     4.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1723,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     4.085
+    ],
+    "max": [
+     32.815,
+     0.091,
+     8.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1727,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 566,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     4.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     8.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1731,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 1,
+   "triangles": 438,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     8.085
+    ],
+    "max": [
+     32.815,
+     0.05,
+     12.085
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1734,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     8.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     12.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1738,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     12.085
+    ],
+    "max": [
+     32.815,
+     0.091,
+     16.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1742,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     12.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     16.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1746,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 566,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     16.085
+    ],
+    "max": [
+     32.815,
+     0.091,
+     20.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1750,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     16.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     20.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1754,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     20.085
+    ],
+    "max": [
+     32.815,
+     0.091,
+     24.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1758,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 566,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     20.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     24.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1762,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 566,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     24.085
+    ],
+    "max": [
+     32.815,
+     0.091,
+     28.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1766,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     24.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     28.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1770,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     28.815,
+     0,
+     28.085
+    ],
+    "max": [
+     32.815,
+     0.091,
+     32.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1774,
+   "name": "concourse-paving-tile",
+   "key": "concourse-paving-tile",
+   "meshes": 2,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     32.815,
+     0,
+     28.085
+    ],
+    "max": [
+     36.815,
+     0.091,
+     32.085
+    ]
+   },
+   "size": [
+    4,
+    0.091,
+    4
+   ]
+  },
+  {
+   "index": 1778,
+   "name": "refreshment-kiosk",
+   "key": "refreshment-kiosk",
+   "meshes": 6,
+   "triangles": 1471,
+   "aabb": {
+    "min": [
+     29.518,
+     0.05,
+     9
+    ],
+    "max": [
+     32.482,
+     3.49,
+     12
+    ]
+   },
+   "size": [
+    2.965,
+    3.44,
+    3
+   ]
+  },
+  {
+   "index": 1790,
+   "name": "toilet-block",
+   "key": "toilet-block",
+   "meshes": 5,
+   "triangles": 1548,
+   "aabb": {
+    "min": [
+     29.5,
+     0.05,
+     -2
+    ],
+    "max": [
+     32.5,
+     4.035,
+     4
+    ]
+   },
+   "size": [
+    3,
+    3.985,
+    6
+   ]
+  },
+  {
+   "index": 1800,
+   "name": "stadium-clock-post",
+   "key": "stadium-clock-post",
+   "meshes": 8,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     34,
+     0.05,
+     16.2
+    ],
+    "max": [
+     35.2,
+     4.05,
+     16.8
+    ]
+   },
+   "size": [
+    1.2,
+    4,
+    0.6
+   ]
+  },
+  {
+   "index": 1817,
+   "name": "ground-litter-bin",
+   "key": "ground-litter-bin",
+   "meshes": 3,
+   "triangles": 660,
+   "aabb": {
+    "min": [
+     33.159,
+     0.05,
+     5.159
+    ],
+    "max": [
+     33.641,
+     0.77,
+     5.641
+    ]
+   },
+   "size": [
+    0.483,
+    0.72,
+    0.483
+   ]
+  },
+  {
+   "index": 1824,
+   "name": "ground-litter-bin",
+   "key": "ground-litter-bin",
+   "meshes": 3,
+   "triangles": 660,
+   "aabb": {
+    "min": [
+     33.159,
+     0.05,
+     12.959
+    ],
+    "max": [
+     33.641,
+     0.77,
+     13.441
+    ]
+   },
+   "size": [
+    0.483,
+    0.72,
+    0.483
+   ]
+  },
+  {
+   "index": 1831,
+   "name": "groundsmans-store-shed",
+   "key": "groundsmans-store-shed",
+   "meshes": 6,
+   "triangles": 1571,
+   "aabb": {
+    "min": [
+     29.5,
+     0.05,
+     -10.3
+    ],
+    "max": [
+     32.496,
+     3.05,
+     -6.3
+    ]
+   },
+   "size": [
+    2.996,
+    3,
+    4
+   ]
+  },
+  {
+   "index": 1843,
+   "name": "pitch-roller",
+   "key": "pitch-roller",
+   "meshes": 3,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     33.6,
+     0.05,
+     -9.75
+    ],
+    "max": [
+     35.6,
+     1.864,
+     -8.142
+    ]
+   },
+   "size": [
+    2,
+    1.814,
+    1.608
+   ]
+  },
+  {
+   "index": 1849,
+   "name": "rolled-tarpaulin",
+   "key": "rolled-tarpaulin",
+   "meshes": 3,
+   "triangles": 712,
+   "aabb": {
+    "min": [
+     34.3,
+     0.05,
+     -6
+    ],
+    "max": [
+     35.3,
+     0.699,
+     -4
+    ]
+   },
+   "size": [
+    1,
+    0.649,
+    2
+   ]
+  },
+  {
+   "index": 1855,
+   "name": "goal-net-trolley",
+   "key": "goal-net-trolley",
+   "meshes": 11,
+   "triangles": 418,
+   "aabb": {
+    "min": [
+     32.25,
+     0.05,
+     -3.799
+    ],
+    "max": [
+     33.75,
+     1.25,
+     -2.801
+    ]
+   },
+   "size": [
+    1.5,
+    1.2,
+    0.999
+   ]
+  },
+  {
+   "index": 1878,
+   "name": "discus-cage",
+   "key": "discus-cage",
+   "meshes": 2,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -13,
+     1.38,
+     36
+    ],
+    "max": [
+     -5,
+     6.38,
+     44
+    ]
+   },
+   "size": [
+    8,
+    5,
+    8
+   ]
+  },
+  {
+   "index": 1882,
+   "name": "shot-put-circle",
+   "key": "shot-put-circle",
+   "meshes": 2,
+   "triangles": 434,
+   "aabb": {
+    "min": [
+     -4.007,
+     1.38,
+     34.593
+    ],
+    "max": [
+     -1.593,
+     1.621,
+     37.443
+    ]
+   },
+   "size": [
+    2.414,
+    0.241,
+    2.851
+   ]
+  },
+  {
+   "index": 1886,
+   "name": "high-jump-apparatus",
+   "key": "high-jump-apparatus",
+   "meshes": 3,
+   "triangles": 590,
+   "aabb": {
+    "min": [
+     -4.7,
+     1.38,
+     40
+    ],
+    "max": [
+     0.3,
+     3.58,
+     44
+    ]
+   },
+   "size": [
+    5,
+    2.2,
+    4
+   ]
+  },
+  {
+   "index": 1892,
+   "name": "long-jump-pit",
+   "key": "long-jump-pit",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -12.75,
+     1.4,
+     29.4
+    ],
+    "max": [
+     -5.25,
+     1.464,
+     32.4
+    ]
+   },
+   "size": [
+    7.5,
+    0.064,
+    3
+   ]
+  },
+  {
+   "index": 1894,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 52,
+   "aabb": {
+    "min": [
+     -5.25,
+     1.4,
+     28.9
+    ],
+    "max": [
+     -1.25,
+     1.456,
+     32.9
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 1896,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 52,
+   "aabb": {
+    "min": [
+     -1.25,
+     1.4,
+     28.9
+    ],
+    "max": [
+     2.75,
+     1.456,
+     32.9
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 1898,
+   "name": "running-track-tile",
+   "key": "running-track-tile",
+   "meshes": 1,
+   "triangles": 52,
+   "aabb": {
+    "min": [
+     2.75,
+     1.4,
+     28.9
+    ],
+    "max": [
+     6.75,
+     1.456,
+     32.9
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 1900,
+   "name": "agility-bag-set",
+   "key": "agility-bag-set",
+   "meshes": 1,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     1.798,
+     1.38,
+     36.352
+    ],
+    "max": [
+     3.402,
+     1.63,
+     39.648
+    ]
+   },
+   "size": [
+    1.603,
+    0.25,
+    3.296
+   ]
+  },
+  {
+   "index": 1902,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 160,
+   "aabb": {
+    "min": [
+     4,
+     1.4,
+     34
+    ],
+    "max": [
+     8,
+     1.47,
+     38
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 1904,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 219,
+   "aabb": {
+    "min": [
+     4,
+     1.4,
+     38
+    ],
+    "max": [
+     8,
+     1.456,
+     42
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 1906,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 160,
+   "aabb": {
+    "min": [
+     8,
+     1.4,
+     34
+    ],
+    "max": [
+     12,
+     1.47,
+     38
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 1908,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     8,
+     1.4,
+     38
+    ],
+    "max": [
+     12,
+     1.47,
+     42
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 1910,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 160,
+   "aabb": {
+    "min": [
+     12,
+     1.4,
+     34
+    ],
+    "max": [
+     16,
+     1.47,
+     38
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 1912,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 237,
+   "aabb": {
+    "min": [
+     12,
+     1.4,
+     38
+    ],
+    "max": [
+     16,
+     1.456,
+     42
+    ]
+   },
+   "size": [
+    4,
+    0.056,
+    4
+   ]
+  },
+  {
+   "index": 1914,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 160,
+   "aabb": {
+    "min": [
+     16,
+     1.4,
+     34
+    ],
+    "max": [
+     20,
+     1.47,
+     38
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 1916,
+   "name": "turf-pitch-tile",
+   "key": "turf-pitch-tile",
+   "meshes": 1,
+   "triangles": 120,
+   "aabb": {
+    "min": [
+     16,
+     1.4,
+     38
+    ],
+    "max": [
+     20,
+     1.47,
+     42
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 1918,
+   "name": "blocking-sled",
+   "key": "blocking-sled",
+   "meshes": 3,
+   "triangles": 604,
+   "aabb": {
+    "min": [
+     9,
+     1.45,
+     36.9
+    ],
+    "max": [
+     11,
+     3.13,
+     37.9
+    ]
+   },
+   "size": [
+    2,
+    1.68,
+    1
+   ]
+  },
+  {
+   "index": 1925,
+   "name": "tackle-dummy",
+   "key": "tackle-dummy",
+   "meshes": 1,
+   "triangles": 584,
+   "aabb": {
+    "min": [
+     14.634,
+     1.45,
+     36.667
+    ],
+    "max": [
+     15.366,
+     3.15,
+     37.333
+    ]
+   },
+   "size": [
+    0.731,
+    1.7,
+    0.666
+   ]
+  },
+  {
+   "index": 1927,
+   "name": "tackle-dummy",
+   "key": "tackle-dummy",
+   "meshes": 1,
+   "triangles": 584,
+   "aabb": {
+    "min": [
+     16.234,
+     1.45,
+     37.967
+    ],
+    "max": [
+     16.966,
+     3.15,
+     38.633
+    ]
+   },
+   "size": [
+    0.731,
+    1.7,
+    0.666
+   ]
+  },
+  {
+   "index": 1929,
+   "name": "chain-crew-set",
+   "key": "chain-crew-set",
+   "meshes": 2,
+   "triangles": 944,
+   "aabb": {
+    "min": [
+     7.5,
+     1.4,
+     42.55
+    ],
+    "max": [
+     16.5,
+     3.788,
+     43.05
+    ]
+   },
+   "size": [
+    9,
+    2.388,
+    0.5
+   ]
+  },
+  {
+   "index": 1933,
+   "name": "sideline-yard-marker",
+   "key": "sideline-yard-marker",
+   "meshes": 3,
+   "triangles": 574,
+   "aabb": {
+    "min": [
+     7.842,
+     1.4,
+     33.169
+    ],
+    "max": [
+     8.15,
+     1.855,
+     33.516
+    ]
+   },
+   "size": [
+    0.308,
+    0.455,
+    0.347
+   ]
+  },
+  {
+   "index": 1939,
+   "name": "sideline-yard-marker",
+   "key": "sideline-yard-marker",
+   "meshes": 3,
+   "triangles": 574,
+   "aabb": {
+    "min": [
+     15.842,
+     1.4,
+     33.169
+    ],
+    "max": [
+     16.15,
+     1.855,
+     33.516
+    ]
+   },
+   "size": [
+    0.308,
+    0.455,
+    0.347
+   ]
+  },
+  {
+   "index": 1945,
+   "name": "football-equipment-rack",
+   "key": "football-equipment-rack",
+   "meshes": 7,
+   "triangles": 6970,
+   "aabb": {
+    "min": [
+     21.25,
+     1.4,
+     36
+    ],
+    "max": [
+     21.75,
+     2.878,
+     38
+    ]
+   },
+   "size": [
+    0.5,
+    1.478,
+    2
+   ]
+  },
+  {
+   "index": 1959,
+   "name": "water-bottle-crate",
+   "key": "water-bottle-crate",
+   "meshes": 3,
+   "triangles": 728,
+   "aabb": {
+    "min": [
+     21.15,
+     1.4,
+     39.9
+    ],
+    "max": [
+     21.65,
+     2.62,
+     40.9
+    ]
+   },
+   "size": [
+    0.5,
+    1.22,
+    1
+   ]
+  },
+  {
+   "index": 1965,
+   "name": "sideline-medical-tent",
+   "key": "sideline-medical-tent",
+   "meshes": 4,
+   "triangles": 936,
+   "aabb": {
+    "min": [
+     17.75,
+     1.4,
+     29
+    ],
+    "max": [
+     21.25,
+     4.412,
+     33
+    ]
+   },
+   "size": [
+    3.5,
+    3.012,
+    4
+   ]
+  },
+  {
+   "index": 1973,
+   "name": "ground-litter-bin",
+   "key": "ground-litter-bin",
+   "meshes": 3,
+   "triangles": 660,
+   "aabb": {
+    "min": [
+     1.759,
+     1.4,
+     33.359
+    ],
+    "max": [
+     2.242,
+     2.12,
+     33.841
+    ]
+   },
+   "size": [
+    0.484,
+    0.72,
+    0.483
+   ]
+  },
+  {
+   "index": 1980,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 323,
+   "aabb": {
+    "min": [
+     22.925,
+     1.4,
+     28.5
+    ],
+    "max": [
+     23.078,
+     3.8,
+     29.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 1982,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     29.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     30.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 1984,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 4,
+   "triangles": 476,
+   "aabb": {
+    "min": [
+     22.91,
+     1.4,
+     30.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     31.5
+    ]
+   },
+   "size": [
+    0.165,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 1992,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 580,
+   "aabb": {
+    "min": [
+     22.909,
+     1.4,
+     31.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     32.5
+    ]
+   },
+   "size": [
+    0.166,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 1994,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 2,
+   "triangles": 348,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     32.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     33.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 1998,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 280,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     33.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     34.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2000,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 4,
+   "triangles": 812,
+   "aabb": {
+    "min": [
+     22.909,
+     1.4,
+     34.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     35.5
+    ]
+   },
+   "size": [
+    0.166,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2008,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     35.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     36.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2010,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 2,
+   "triangles": 348,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     36.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     37.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2014,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 5,
+   "triangles": 825,
+   "aabb": {
+    "min": [
+     22.91,
+     1.4,
+     37.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     39.5
+    ]
+   },
+   "size": [
+    0.165,
+    2.4,
+    2
+   ]
+  },
+  {
+   "index": 2024,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 580,
+   "aabb": {
+    "min": [
+     22.909,
+     1.4,
+     39.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     40.5
+    ]
+   },
+   "size": [
+    0.166,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2026,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 2,
+   "triangles": 348,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     40.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     41.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2030,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 280,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     41.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     42.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2032,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 4,
+   "triangles": 812,
+   "aabb": {
+    "min": [
+     22.909,
+     1.4,
+     42.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     43.5
+    ]
+   },
+   "size": [
+    0.166,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2040,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 1,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     43.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     44.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2042,
+   "name": "mesh-perimeter-fence-run",
+   "key": "mesh-perimeter-fence-run",
+   "meshes": 2,
+   "triangles": 391,
+   "aabb": {
+    "min": [
+     22.922,
+     1.4,
+     44.5
+    ],
+    "max": [
+     23.075,
+     3.8,
+     45.5
+    ]
+   },
+   "size": [
+    0.153,
+    2.4,
+    1
+   ]
+  },
+  {
+   "index": 2046,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     2.339,
+     0.07,
+     6.951
+    ],
+    "max": [
+     4.012,
+     1.797,
+     7.305
+    ]
+   },
+   "size": [
+    1.674,
+    1.727,
+    0.354
+   ]
+  },
+  {
+   "index": 2089,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     2.339,
+     0.05,
+     10.151
+    ],
+    "max": [
+     4.012,
+     1.777,
+     10.508
+    ]
+   },
+   "size": [
+    1.674,
+    1.727,
+    0.357
+   ]
+  },
+  {
+   "index": 2132,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     -3.161,
+     0.05,
+     9.005
+    ],
+    "max": [
+     -1.488,
+     1.777,
+     9.359
+    ]
+   },
+   "size": [
+    1.674,
+    1.727,
+    0.354
+   ]
+  },
+  {
+   "index": 2175,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3083,
+   "aabb": {
+    "min": [
+     6.593,
+     0.07,
+     12.031
+    ],
+    "max": [
+     6.911,
+     1.619,
+     13.479
+    ]
+   },
+   "size": [
+    0.318,
+    1.549,
+    1.448
+   ]
+  },
+  {
+   "index": 2218,
+   "name": "goalkeeper",
+   "key": "goalkeeper",
+   "meshes": 7,
+   "triangles": 3591,
+   "aabb": {
+    "min": [
+     -0.35,
+     0.05,
+     15.137
+    ],
+    "max": [
+     1.301,
+     1.807,
+     15.508
+    ]
+   },
+   "size": [
+    1.651,
+    1.757,
+    0.371
+   ]
+  },
+  {
+   "index": 2265,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     -3.661,
+     0.05,
+     -8.049
+    ],
+    "max": [
+     -1.988,
+     1.777,
+     -7.694
+    ]
+   },
+   "size": [
+    1.674,
+    1.727,
+    0.355
+   ]
+  },
+  {
+   "index": 2308,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3243,
+   "aabb": {
+    "min": [
+     2.572,
+     0.05,
+     -6.262
+    ],
+    "max": [
+     2.92,
+     1.777,
+     -4.628
+    ]
+   },
+   "size": [
+    0.349,
+    1.727,
+    1.634
+   ]
+  },
+  {
+   "index": 2351,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     -5.603,
+     0.05,
+     -3.957
+    ],
+    "max": [
+     -4.032,
+     1.777,
+     -2.909
+    ]
+   },
+   "size": [
+    1.571,
+    1.727,
+    1.048
+   ]
+  },
+  {
+   "index": 2394,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3083,
+   "aabb": {
+    "min": [
+     4.739,
+     0.07,
+     -11.315
+    ],
+    "max": [
+     5.654,
+     1.619,
+     -9.951
+    ]
+   },
+   "size": [
+    0.914,
+    1.549,
+    1.364
+   ]
+  },
+  {
+   "index": 2437,
+   "name": "goalkeeper",
+   "key": "goalkeeper",
+   "meshes": 7,
+   "triangles": 3407,
+   "aabb": {
+    "min": [
+     -1.17,
+     0.05,
+     -15.004
+    ],
+    "max": [
+     0.521,
+     1.807,
+     -14.627
+    ]
+   },
+   "size": [
+    1.691,
+    1.757,
+    0.377
+   ]
+  },
+  {
+   "index": 2484,
+   "name": "referee",
+   "key": "referee",
+   "meshes": 9,
+   "triangles": 3553,
+   "aabb": {
+    "min": [
+     4.172,
+     0.05,
+     0.853
+    ],
+    "max": [
+     4.513,
+     1.784,
+     2.592
+    ]
+   },
+   "size": [
+    0.341,
+    1.734,
+    1.739
+   ]
+  },
+  {
+   "index": 2535,
+   "name": "groundskeeper",
+   "key": "groundskeeper",
+   "meshes": 8,
+   "triangles": 3795,
+   "aabb": {
+    "min": [
+     6.92,
+     0.05,
+     -0.647
+    ],
+    "max": [
+     7.279,
+     1.715,
+     0.956
+    ]
+   },
+   "size": [
+    0.36,
+    1.665,
+    1.603
+   ]
+  },
+  {
+   "index": 2584,
+   "name": "manager",
+   "key": "manager",
+   "meshes": 7,
+   "triangles": 3833,
+   "aabb": {
+    "min": [
+     -8.526,
+     0.05,
+     11.313
+    ],
+    "max": [
+     -7.971,
+     1.79,
+     12.972
+    ]
+   },
+   "size": [
+    0.554,
+    1.74,
+    1.659
+   ]
+  },
+  {
+   "index": 2631,
+   "name": "manager",
+   "key": "manager",
+   "meshes": 7,
+   "triangles": 3705,
+   "aabb": {
+    "min": [
+     -8.774,
+     0.05,
+     -12.95
+    ],
+    "max": [
+     -7.824,
+     1.733,
+     -11.346
+    ]
+   },
+   "size": [
+    0.95,
+    1.683,
+    1.604
+   ]
+  },
+  {
+   "index": 2678,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     -9.265,
+     0.05,
+     12.918
+    ],
+    "max": [
+     -8.906,
+     1.777,
+     14.592
+    ]
+   },
+   "size": [
+    0.359,
+    1.727,
+    1.674
+   ]
+  },
+  {
+   "index": 2721,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3243,
+   "aabb": {
+    "min": [
+     -9.249,
+     0.05,
+     14.138
+    ],
+    "max": [
+     -8.906,
+     1.777,
+     15.772
+    ]
+   },
+   "size": [
+    0.343,
+    1.727,
+    1.634
+   ]
+  },
+  {
+   "index": 2764,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     -9.261,
+     0.05,
+     -15.182
+    ],
+    "max": [
+     -8.906,
+     1.777,
+     -13.508
+    ]
+   },
+   "size": [
+    0.355,
+    1.727,
+    1.674
+   ]
+  },
+  {
+   "index": 2807,
+   "name": "team-mascot",
+   "key": "team-mascot",
+   "meshes": 6,
+   "triangles": 4031,
+   "aabb": {
+    "min": [
+     -7.16,
+     0.07,
+     -0.091
+    ],
+    "max": [
+     -6.745,
+     1.879,
+     1.589
+    ]
+   },
+   "size": [
+    0.415,
+    1.809,
+    1.68
+   ]
+  },
+  {
+   "index": 2852,
+   "name": "cheerleader",
+   "key": "cheerleader",
+   "meshes": 7,
+   "triangles": 4659,
+   "aabb": {
+    "min": [
+     -8.969,
+     0.05,
+     -4.562
+    ],
+    "max": [
+     -8.384,
+     1.784,
+     -2.536
+    ]
+   },
+   "size": [
+    0.586,
+    1.734,
+    2.026
+   ]
+  },
+  {
+   "index": 2899,
+   "name": "cheerleader",
+   "key": "cheerleader",
+   "meshes": 7,
+   "triangles": 4659,
+   "aabb": {
+    "min": [
+     -9.023,
+     0.05,
+     3.056
+    ],
+    "max": [
+     -8.329,
+     1.784,
+     5.062
+    ]
+   },
+   "size": [
+    0.695,
+    1.734,
+    2.007
+   ]
+  },
+  {
+   "index": 2946,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     -16.427,
+     1.35,
+     2.568
+    ],
+    "max": [
+     -16.039,
+     3.223,
+     4.242
+    ]
+   },
+   "size": [
+    0.388,
+    1.873,
+    1.674
+   ]
+  },
+  {
+   "index": 2993,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     -16.408,
+     1.35,
+     3.103
+    ],
+    "max": [
+     -16.053,
+     3.166,
+     4.706
+    ]
+   },
+   "size": [
+    0.355,
+    1.816,
+    1.603
+   ]
+  },
+  {
+   "index": 3040,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     -18.443,
+     2.25,
+     5.588
+    ],
+    "max": [
+     -18.006,
+     4.121,
+     7.222
+    ]
+   },
+   "size": [
+    0.437,
+    1.871,
+    1.634
+   ]
+  },
+  {
+   "index": 3087,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3785,
+   "aabb": {
+    "min": [
+     -17.393,
+     1.8,
+     9.181
+    ],
+    "max": [
+     -17.067,
+     3.493,
+     10.629
+    ]
+   },
+   "size": [
+    0.325,
+    1.693,
+    1.448
+   ]
+  },
+  {
+   "index": 3134,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     -17.416,
+     1.8,
+     8.568
+    ],
+    "max": [
+     -17.046,
+     3.673,
+     10.242
+    ]
+   },
+   "size": [
+    0.37,
+    1.873,
+    1.674
+   ]
+  },
+  {
+   "index": 3181,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3785,
+   "aabb": {
+    "min": [
+     -20.42,
+     3.15,
+     11.699
+    ],
+    "max": [
+     -20.052,
+     4.841,
+     13.111
+    ]
+   },
+   "size": [
+    0.368,
+    1.691,
+    1.412
+   ]
+  },
+  {
+   "index": 3228,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     -17.413,
+     1.8,
+     -4.932
+    ],
+    "max": [
+     -17.046,
+     3.673,
+     -3.258
+    ]
+   },
+   "size": [
+    0.366,
+    1.873,
+    1.674
+   ]
+  },
+  {
+   "index": 3275,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     -17.41,
+     1.8,
+     -5.397
+    ],
+    "max": [
+     -17.053,
+     3.616,
+     -3.794
+    ]
+   },
+   "size": [
+    0.357,
+    1.816,
+    1.603
+   ]
+  },
+  {
+   "index": 3322,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     -19.446,
+     2.7,
+     -9.412
+    ],
+    "max": [
+     -19.001,
+     4.571,
+     -7.778
+    ]
+   },
+   "size": [
+    0.445,
+    1.871,
+    1.634
+   ]
+  },
+  {
+   "index": 3369,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     -16.413,
+     1.35,
+     -11.932
+    ],
+    "max": [
+     -16.046,
+     3.223,
+     -10.258
+    ]
+   },
+   "size": [
+    0.366,
+    1.873,
+    1.674
+   ]
+  },
+  {
+   "index": 3416,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3785,
+   "aabb": {
+    "min": [
+     -16.398,
+     1.35,
+     -12.319
+    ],
+    "max": [
+     -16.067,
+     3.043,
+     -10.871
+    ]
+   },
+   "size": [
+    0.33,
+    1.693,
+    1.448
+   ]
+  },
+  {
+   "index": 3463,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     22.474,
+     3.4,
+     -16.162
+    ],
+    "max": [
+     22.923,
+     5.271,
+     -14.528
+    ]
+   },
+   "size": [
+    0.449,
+    1.871,
+    1.634
+   ]
+  },
+  {
+   "index": 3510,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     22.528,
+     3.4,
+     -15.147
+    ],
+    "max": [
+     22.882,
+     5.216,
+     -13.544
+    ]
+   },
+   "size": [
+    0.354,
+    1.816,
+    1.603
+   ]
+  },
+  {
+   "index": 3557,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     24.422,
+     4.2,
+     -7.182
+    ],
+    "max": [
+     24.795,
+     6.073,
+     -5.508
+    ]
+   },
+   "size": [
+    0.374,
+    1.873,
+    1.674
+   ]
+  },
+  {
+   "index": 3604,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     22.472,
+     3.4,
+     0.838
+    ],
+    "max": [
+     22.925,
+     5.271,
+     2.472
+    ]
+   },
+   "size": [
+    0.453,
+    1.871,
+    1.634
+   ]
+  },
+  {
+   "index": 3651,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3785,
+   "aabb": {
+    "min": [
+     22.543,
+     3.4,
+     1.931
+    ],
+    "max": [
+     22.87,
+     5.093,
+     3.379
+    ]
+   },
+   "size": [
+    0.327,
+    1.693,
+    1.448
+   ]
+  },
+  {
+   "index": 3698,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     24.422,
+     4.2,
+     5.818
+    ],
+    "max": [
+     24.796,
+     6.073,
+     7.492
+    ]
+   },
+   "size": [
+    0.375,
+    1.873,
+    1.674
+   ]
+  },
+  {
+   "index": 3745,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     22.513,
+     3.4,
+     12.872
+    ],
+    "max": [
+     22.9,
+     5.213,
+     14.437
+    ]
+   },
+   "size": [
+    0.387,
+    1.813,
+    1.564
+   ]
+  },
+  {
+   "index": 3792,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     24.422,
+     4.2,
+     13.818
+    ],
+    "max": [
+     24.792,
+     6.073,
+     15.492
+    ]
+   },
+   "size": [
+    0.37,
+    1.873,
+    1.674
+   ]
+  },
+  {
+   "index": 3839,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     32.954,
+     0.05,
+     9.683
+    ],
+    "max": [
+     33.395,
+     1.921,
+     11.317
+    ]
+   },
+   "size": [
+    0.441,
+    1.871,
+    1.634
+   ]
+  },
+  {
+   "index": 3886,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     33.791,
+     0.05,
+     7.579
+    ],
+    "max": [
+     34.766,
+     1.863,
+     9.045
+    ]
+   },
+   "size": [
+    0.974,
+    1.813,
+    1.466
+   ]
+  },
+  {
+   "index": 3933,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     34.064,
+     0.05,
+     11.407
+    ],
+    "max": [
+     35.093,
+     1.923,
+     12.968
+    ]
+   },
+   "size": [
+    1.029,
+    1.873,
+    1.561
+   ]
+  },
+  {
+   "index": 3980,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3897,
+   "aabb": {
+    "min": [
+     35.096,
+     0.05,
+     26.75
+    ],
+    "max": [
+     35.492,
+     1.345,
+     27.844
+    ]
+   },
+   "size": [
+    0.397,
+    1.295,
+    1.094
+   ]
+  },
+  {
+   "index": 4027,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     35.458,
+     0.05,
+     27.874
+    ],
+    "max": [
+     35.897,
+     1.921,
+     29.521
+    ]
+   },
+   "size": [
+    0.439,
+    1.871,
+    1.647
+   ]
+  },
+  {
+   "index": 4074,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     36.933,
+     0.05,
+     20.361
+    ],
+    "max": [
+     38.567,
+     1.921,
+     20.79
+    ]
+   },
+   "size": [
+    1.634,
+    1.871,
+    0.429
+   ]
+  },
+  {
+   "index": 4121,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     38.301,
+     0.05,
+     21.798
+    ],
+    "max": [
+     38.667,
+     1.866,
+     23.402
+    ]
+   },
+   "size": [
+    0.365,
+    1.816,
+    1.603
+   ]
+  },
+  {
+   "index": 4168,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3785,
+   "aabb": {
+    "min": [
+     39.415,
+     0.05,
+     22.494
+    ],
+    "max": [
+     39.761,
+     1.741,
+     23.906
+    ]
+   },
+   "size": [
+    0.346,
+    1.691,
+    1.412
+   ]
+  },
+  {
+   "index": 4215,
+   "name": "groundskeeper",
+   "key": "groundskeeper",
+   "meshes": 7,
+   "triangles": 3723,
+   "aabb": {
+    "min": [
+     32.793,
+     0.05,
+     -9.417
+    ],
+    "max": [
+     33.149,
+     1.772,
+     -7.783
+    ]
+   },
+   "size": [
+    0.356,
+    1.722,
+    1.634
+   ]
+  },
+  {
+   "index": 4262,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3059,
+   "aabb": {
+    "min": [
+     5.921,
+     -1.45,
+     -31.841
+    ],
+    "max": [
+     6.442,
+     0.277,
+     -30.152
+    ]
+   },
+   "size": [
+    0.522,
+    1.727,
+    1.689
+   ]
+  },
+  {
+   "index": 4305,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3689,
+   "aabb": {
+    "min": [
+     10.822,
+     -1.45,
+     -34.162
+    ],
+    "max": [
+     11.818,
+     0.366,
+     -32.661
+    ]
+   },
+   "size": [
+    0.996,
+    1.816,
+    1.501
+   ]
+  },
+  {
+   "index": 4352,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3641,
+   "aabb": {
+    "min": [
+     14.594,
+     -1.45,
+     -31.511
+    ],
+    "max": [
+     15.243,
+     0.421,
+     -29.876
+    ]
+   },
+   "size": [
+    0.648,
+    1.871,
+    1.636
+   ]
+  },
+  {
+   "index": 4399,
+   "name": "spectator",
+   "key": "spectator",
+   "meshes": 7,
+   "triangles": 3897,
+   "aabb": {
+    "min": [
+     14.41,
+     -1.45,
+     -30.144
+    ],
+    "max": [
+     14.804,
+     -0.155,
+     -29.05
+    ]
+   },
+   "size": [
+    0.394,
+    1.295,
+    1.094
+   ]
+  },
+  {
+   "index": 4446,
+   "name": "outfield-player",
+   "key": "outfield-player",
+   "meshes": 5,
+   "triangles": 3243,
+   "aabb": {
+    "min": [
+     12.602,
+     0.05,
+     -13.562
+    ],
+    "max": [
+     12.944,
+     1.777,
+     -11.928
+    ]
+   },
+   "size": [
+    0.343,
+    1.727,
+    1.634
+   ]
+  },
+  {
+   "index": 4489,
+   "name": "gridiron-player",
+   "key": "gridiron-player",
+   "meshes": 5,
+   "triangles": 3985,
+   "aabb": {
+    "min": [
+     8.619,
+     1.45,
+     38.346
+    ],
+    "max": [
+     10.281,
+     3.221,
+     38.727
+    ]
+   },
+   "size": [
+    1.663,
+    1.771,
+    0.381
+   ]
+  },
+  {
+   "index": 4532,
+   "name": "gridiron-player",
+   "key": "gridiron-player",
+   "meshes": 5,
+   "triangles": 4033,
+   "aabb": {
+    "min": [
+     9.719,
+     1.45,
+     38.346
+    ],
+    "max": [
+     11.381,
+     3.221,
+     38.727
+    ]
+   },
+   "size": [
+    1.663,
+    1.771,
+    0.381
+   ]
+  },
+  {
+   "index": 4575,
+   "name": "gridiron-player",
+   "key": "gridiron-player",
+   "meshes": 6,
+   "triangles": 4345,
+   "aabb": {
+    "min": [
+     13.193,
+     1.45,
+     39.196
+    ],
+    "max": [
+     14.805,
+     3.221,
+     39.979
+    ]
+   },
+   "size": [
+    1.612,
+    1.771,
+    0.784
+   ]
+  },
+  {
+   "index": 4620,
+   "name": "gridiron-player",
+   "key": "gridiron-player",
+   "meshes": 6,
+   "triangles": 3995,
+   "aabb": {
+    "min": [
+     6.121,
+     1.45,
+     39.031
+    ],
+    "max": [
+     7.186,
+     3.221,
+     40.626
+    ]
+   },
+   "size": [
+    1.065,
+    1.771,
+    1.595
+   ]
+  },
+  {
+   "index": 4665,
+   "name": "manager",
+   "key": "manager",
+   "meshes": 9,
+   "triangles": 2973,
+   "aabb": {
+    "min": [
+     11.363,
+     1.4,
+     34.445
+    ],
+    "max": [
+     13.025,
+     3.168,
+     34.805
+    ]
+   },
+   "size": [
+    1.662,
+    1.768,
+    0.359
+   ]
+  }
+ ],
+ "id": "stadium",
+ "label": "Stadium",
+ "sourceBytes": 65397732,
+ "spawn": {
+  "x": 12.18,
+  "y": 0.5,
+  "z": -3.84,
+  "on": "133 floor pieces at y=0"
+ }
+}

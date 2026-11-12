@@ -1,0 +1,2125 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<style>/* =========================================================================
+   ODD OBJECTS — interface stylesheet
+
+   The look is a printed field guide: cream paper, warm black ink, one rust
+   accent, serif headings over uppercase micro-labels. Everything is flat.
+   There is deliberately not a single gradient in this file — a gradient is the
+   first thing that makes an interface look machine-made, and paper does not
+   shade into itself.
+
+   Depth comes from hard offset shadows (ink at low opacity) rather than blur,
+   the way a card lifted off a table casts one. Nothing glows, nothing fades to
+   transparent, nothing is frosted.
+   ========================================================================= */
+
+:root {
+  /* Ink */
+  --ink: #191510;
+  --ink-soft: #4c4237;
+  --ink-faint: #8a7d69;
+  --ink-rule: rgba(25, 21, 16, 0.16);
+
+  /* Paper */
+  --paper: #f4ecd9;
+  --paper-deep: #e6dac0;
+  --paper-hi: #fdf8ec;
+
+  /* Accents — one primary, two for state. */
+  --rust: #b0472a;
+  --rust-dark: #8a3520;
+  --moss: #4f6b4e;
+  --clay: #a2593b;
+
+  /* Type */
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia,
+    'Times New Roman', serif;
+  --font-ui: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Consolas', 'SF Mono', 'Roboto Mono', ui-monospace, monospace;
+
+  /* Hard shadows, no blur radius anywhere. */
+  --lift-1: 3px 3px 0 rgba(25, 21, 16, 0.2);
+  --lift-2: 6px 6px 0 rgba(25, 21, 16, 0.22);
+  --lift-3: 10px 10px 0 rgba(25, 21, 16, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--ink);
+  font-family: var(--font-ui);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  position: absolute;
+  inset: 0;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Every interactive element opts back into pointer events; the HUD layers that
+   sit over the world are pointer-transparent by default. */
+.interactive-ui {
+  pointer-events: auto;
+}
+
+/* =========================================================================
+   SHARED TYPE
+   ========================================================================= */
+
+/* The small uppercase label that sits above a heading. It is the one element
+   that makes a layout read as *edited* rather than assembled. */
+.kicker {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* =========================================================================
+   BOOT LOADING SCREEN
+   ========================================================================= */
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: opacity 0.45s ease-out;
+}
+
+.loading-content {
+  text-align: center;
+  width: min(340px, 80vw);
+}
+
+/* A two-pixel ink rule that draws itself. It replaces the emoji camera that
+   used to sit here: a printed page does not need an icon to say "loading". */
+.loading-icon {
+  width: 100%;
+  height: 2px;
+  background: var(--ink-rule);
+  margin: 0 0 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 38%;
+  background: var(--rust);
+  animation: ruleSweep 1.6s ease-in-out infinite;
+}
+
+@keyframes ruleSweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(360%); }
+}
+
+.loading-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.loading-progress {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* =========================================================================
+   OVERLAYS
+   ========================================================================= */
+
+.screen-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(25, 21, 16, 0.66);
+  backdrop-filter: blur(3px);
+  z-index: 500;
+  padding: 24px;
+}
+
+.screen-overlay.hidden {
+  display: none;
+}
+
+/* =========================================================================
+   PANELS & CARDS
+   ========================================================================= */
+
+.menu-card {
+  position: relative;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-3);
+  padding: 34px 34px 26px;
+  width: min(430px, 92vw);
+  text-align: left;
+  /* On a short window the results card is taller than the screen, and without
+     this the last button — "Main menu" — is simply unreachable. Every card
+     scrolls rather than clipping. */
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(25, 21, 16, 0.3) transparent;
+}
+
+.menu-card::-webkit-scrollbar {
+  width: 7px;
+}
+
+.menu-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menu-card::-webkit-scrollbar-thumb {
+  background: rgba(25, 21, 16, 0.24);
+}
+
+.game-title {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 10px 0 8px;
+}
+
+.game-subtitle {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  margin-bottom: 26px;
+}
+
+.menu-title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.menu-hint {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+}
+
+.menu-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  /* A rule between the title block and the buttons. Without it the card is one
+     undifferentiated stack, which is what made it read as a template. */
+  padding-top: 20px;
+  border-top: 1.5px solid var(--ink);
+}
+
+.menu-footer {
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px solid var(--ink-rule);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* =========================================================================
+   BUTTONS
+   ========================================================================= */
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px 18px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper-hi);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: var(--lift-1);
+  transition: transform 90ms ease, box-shadow 90ms ease, background 120ms ease;
+}
+
+.btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(25, 21, 16, 0.26);
+}
+
+/* The press pushes the button *into* the page: the shadow collapses and the
+   face moves down-right. That is the whole feedback loop — no scale, no glow. */
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 rgba(25, 21, 16, 0.26);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--rust);
+  border-color: var(--ink);
+  color: var(--paper-hi);
+}
+
+.btn-primary:hover {
+  background: var(--rust-dark);
+}
+
+/* Three levels, and they have to be unmistakable at a glance: rust means
+   "this is the thing", ink means "this is the other thing", no fill means
+   "this leaves the screen". Two creams 8% apart is not a hierarchy. */
+.btn-secondary {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.btn-secondary:hover {
+  background: #2f2a22;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink-soft);
+  box-shadow: none;
+  border-color: rgba(25, 21, 16, 0.35);
+}
+
+.btn-outline:hover {
+  background: var(--paper-hi);
+  border-color: var(--ink);
+  color: var(--ink);
+  transform: none;
+  box-shadow: var(--lift-1);
+}
+
+.btn-outline:active {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
+/* The quietest thing on a card: a word, not a button. Leaving a game is not an
+   action worth a filled block competing with the one the player came for. */
+.btn-quiet {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--ink-faint);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  padding: 10px 18px;
+}
+
+.btn-quiet:hover {
+  background: var(--paper-deep);
+  color: var(--ink);
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-quiet:active {
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-small {
+  padding: 9px 16px;
+  font-size: 10.5px;
+  align-self: flex-start;
+  margin-top: 16px;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: none;
+}
+
+.btn-small:hover {
+  background: var(--rust);
+  transform: none;
+  box-shadow: none;
+}
+
+/* The leading glyph on a button is a typographic mark, not an emoji. */
+.btn-icon {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+.btn-primary .btn-icon {
+  opacity: 0.9;
+}
+
+/* =========================================================================
+   HOW TO PLAY — a real modal, not an inline panel
+   ========================================================================= */
+
+.controls-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(25, 21, 16, 0.72);
+  backdrop-filter: blur(3px);
+}
+
+.controls-modal.hidden {
+  display: none;
+}
+
+.controls-sheet {
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-3);
+  padding: 28px 30px 22px;
+  width: min(460px, 92vw);
+  max-height: 88vh;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.controls-sheet h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.controls-sheet .kicker {
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Key/description pairs as a definition list: the key column is fixed, so the
+   descriptions line up in a column the way a manual's would. */
+.controls-list {
+  list-style: none;
+  border-top: 1px solid var(--ink-rule);
+}
+
+.controls-list li {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--ink-rule);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+.controls-list strong {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.mission-hint {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: var(--paper-deep);
+  border-left: 2px solid var(--rust);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.mission-hint em {
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-style: italic;
+}
+
+/* =========================================================================
+   IN-GAME HUD
+   ========================================================================= */
+
+.hud-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+#game-hud.hidden {
+  display: none;
+}
+
+.hud-panel {
+  position: absolute;
+  pointer-events: auto;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 rgba(25, 21, 16, 0.2);
+}
+
+/* Top left: the five slots ------------------------------------------------ */
+
+.hud-top-left {
+  top: 22px;
+  left: 22px;
+  width: 292px;
+  padding: 13px 15px 14px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.panel-title {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.panel-counter {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--rust);
+}
+
+.panel-brief {
+  margin: 9px 0 10px;
+  font-family: var(--font-display);
+  font-size: 12.5px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.objectives-list {
+  list-style: none;
+}
+
+/* Numbered rows with a hairline between them. The number is the slot's
+   identity, so five rows of "???" still read as five distinct things. */
+.objective-item {
+  display: grid;
+  grid-template-columns: 22px 1fr 14px;
+  align-items: baseline;
+  gap: 6px;
+  padding: 7px 0;
+  border-top: 1px solid var(--ink-rule);
+  font-size: 13px;
+  line-height: 1.35;
+  transition: color 140ms ease;
+}
+
+.objective-item .obj-index {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+.objective-item.pending .obj-text {
+  color: var(--ink-faint);
+  letter-spacing: 0.22em;
+  font-size: 12px;
+}
+
+/* The free-roam line is a sentence, not a slot: no slot number, no tracking. */
+.objective-item.note {
+  grid-template-columns: 22px 1fr;
+}
+
+.objective-item.note .obj-text {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.objective-item.completed .obj-text {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.objective-item.completed .obj-index {
+  color: var(--rust);
+}
+
+.obj-check {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+  color: var(--rust);
+}
+
+.objective-item.pending .obj-check {
+  color: transparent;
+}
+
+/* The five-minute nudge, set apart by a rust edge rather than a coloured box. */
+.hud-hint {
+  margin-top: 11px;
+  padding: 9px 0 0 11px;
+  border-top: 1px solid var(--ink-rule);
+  border-left: 2px solid var(--rust);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.hud-hint.hidden {
+  display: none;
+}
+
+.hud-hint .hint-label {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 5px 2px;
+  font-family: var(--font-ui);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--paper-hi);
+  background: var(--rust);
+  border-radius: 1px;
+  vertical-align: 1px;
+}
+
+/* Top centre: clock and mistakes ----------------------------------------- */
+
+.hud-top-center {
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 9px 18px 8px;
+  min-width: 132px;
+  text-align: center;
+}
+
+.timer-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-value {
+  font-family: var(--font-mono);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.timer-warning {
+  color: var(--clay);
+}
+
+.timer-critical {
+  color: var(--rust);
+}
+
+/* Mistakes: three small squares, flat, filled while a mistake is still
+   available. No glow — a spent pip is simply an empty outline. */
+.strikes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid var(--ink-rule);
+}
+
+.strikes.hidden {
+  display: none;
+}
+
+.strikes-label {
+  font-family: var(--font-ui);
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+}
+
+.strikes-pips {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.strike-pip {
+  width: 7px;
+  height: 7px;
+  border-radius: 1px;
+  background: var(--rust);
+  border: 1px solid var(--rust-dark);
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.strike-pip.spent {
+  background: transparent;
+  border-color: rgba(25, 21, 16, 0.3);
+}
+
+.strikes.critical .strike-pip:not(.spent) {
+  animation: strikePulse 1000ms steps(2, end) infinite;
+}
+
+@keyframes strikePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* Top right: view and pause ---------------------------------------------- */
+
+.hud-top-right {
+  top: 22px;
+  right: 22px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.btn-icon-pause {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 32px;
+  background: var(--paper-hi);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.btn-icon-pause:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* The view toggle reads `3P` / `1P`, so it needs the label's type scale. */
+.view-toggle {
+  width: 38px;
+  font-family: var(--font-ui);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.view-toggle.is-first {
+  background: var(--rust);
+  color: var(--paper-hi);
+}
+
+.view-toggle.is-first:hover {
+  background: var(--rust-dark);
+  color: var(--paper-hi);
+}
+
+/* Reticle ---------------------------------------------------------------- */
+
+/* Drawn as a light line over a dark one, so it stays legible on a snowfield and
+   in a cellar without a blend mode or a glow.
+
+   Small on purpose: in third person the boom puts the body's head near the
+   centre of the screen, and a large crosshair there reads as a crosshair on the
+   player's own hat. The active state below is what carries the information. */
+.aim-reticle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  transition: transform 120ms ease;
+}
+
+.aim-reticle .ch-line-h,
+.aim-reticle .ch-line-v {
+  position: absolute;
+  background: rgba(20, 16, 12, 0.45);
+}
+
+.aim-reticle .ch-line-h {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.aim-reticle .ch-line-v {
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  margin-left: -1px;
+}
+
+.aim-reticle .ch-line-h::after,
+.aim-reticle .ch-line-v::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+}
+
+.aim-reticle .ch-line-h::after {
+  inset: 0.5px 0;
+}
+
+.aim-reticle .ch-line-v::after {
+  inset: 0 0.5px;
+}
+
+.aim-reticle .ch-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid rgba(20, 16, 12, 0.6);
+}
+
+/* Something is in reach: the reticle opens up and turns rust. That is the only
+   "you are on target" signal the player gets, and it arrives before the label
+   is read. */
+.aim-reticle.is-active {
+  transform: translate(-50%, -50%) scale(1.35);
+}
+
+.aim-reticle.is-active .ch-line-h,
+.aim-reticle.is-active .ch-line-v {
+  background: var(--rust-dark);
+}
+
+.aim-reticle.is-active .ch-dot {
+  background: var(--rust);
+  border-color: var(--paper-hi);
+}
+
+/* Target frame ----------------------------------------------------------- */
+
+/* Four corner marks around whatever is in reach.
+ *
+ * This replaced a GPU outline pass, which could paint the whole frame white on
+ * a driver that dithered the depth compare, and which allocated tens of
+ * megabytes of off-screen targets the first time the player walked up to a
+ * chair. Corner marks cannot do either, and they belong to a screen made of
+ * ruled paper in a way a bloomed glow never did.
+ *
+ * No transition on position or size: the frame is re-placed every frame from a
+ * projection, so animating it would fight the camera. Only the appearance
+ * fades. */
+.target-frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 110ms ease-out;
+}
+
+.target-frame.is-shown {
+  opacity: 1;
+}
+
+.tf-corner {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+}
+
+.tf-corner::before,
+.tf-corner::after {
+  content: '';
+  position: absolute;
+  background: var(--rust-dark);
+  /* A 1px paper ring, hard-edged. The same idea as the reticle's light core:
+     the mark has to survive a snowfield and a cellar, and a blur would turn it
+     into the glow this whole component exists to avoid. */
+  box-shadow: 0 0 0 1px rgba(244, 236, 217, 0.5);
+}
+
+.tf-corner::before {
+  width: 13px;
+  height: 2px;
+}
+
+.tf-corner::after {
+  width: 2px;
+  height: 13px;
+}
+
+.tf-tl { left: 0; top: 0; }
+.tf-tr { right: 0; top: 0; }
+.tf-bl { left: 0; bottom: 0; }
+.tf-br { right: 0; bottom: 0; }
+
+.tf-tl::before { left: 0; top: 0; }
+.tf-tl::after { left: 0; top: 0; }
+.tf-tr::before { right: 0; top: 0; }
+.tf-tr::after { right: 0; top: 0; }
+.tf-bl::before { left: 0; bottom: 0; }
+.tf-bl::after { left: 0; bottom: 0; }
+.tf-br::before { right: 0; bottom: 0; }
+.tf-br::after { right: 0; bottom: 0; }
+
+/* Pickup prompt ---------------------------------------------------------- */
+
+/* Sits below the body, not on it: the boom frames the character across the
+   middle of the screen, and a prompt at +40 px landed on their knees. */
+.pickup-prompt {
+  position: absolute;
+  top: calc(50% + 74px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 13px 7px 7px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 rgba(25, 21, 16, 0.22);
+  pointer-events: none;
+  animation: pickupIn 140ms ease-out;
+}
+
+.pickup-prompt.hidden {
+  display: none;
+}
+
+/* The key cap is an ink block with a paper letter — a key, not a pill. */
+.key-cap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 21px;
+  height: 21px;
+  padding: 0 5px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 1px;
+}
+
+.pickup-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.pickup-alt {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+.pickup-cycle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 1px;
+  padding-left: 9px;
+  border-left: 1px solid var(--ink-rule);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.pickup-cycle.hidden {
+  display: none;
+}
+
+.key-cap-small {
+  min-width: 26px;
+  height: 16px;
+  padding: 0 4px;
+  font-size: 8.5px;
+  background: var(--paper-deep);
+  color: var(--ink-soft);
+  border: 1px solid rgba(25, 21, 16, 0.28);
+}
+
+@keyframes pickupIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Bottom bar ------------------------------------------------------------- */
+
+.hud-bottom-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 22px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls-hint {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 6px 4px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 rgba(25, 21, 16, 0.18);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* Each item is a key word plus its action, separated by a hairline instead of
+   a bullet dot — a dot between every pair is what made this read as a legend
+   glued to the bottom of the screen. */
+.controls-hint > span {
+  padding: 0 10px;
+  border-right: 1px solid var(--ink-rule);
+  white-space: nowrap;
+}
+
+.controls-hint > span:last-child {
+  border-right: none;
+}
+
+.controls-hint strong {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  margin-right: 4px;
+}
+
+/* Feedback banner -------------------------------------------------------- */
+
+/* A strip of paper slapped over the scene: flat fill, ink border, hard shadow.
+ *
+ * Centred with auto margins and a max-width rather than a translate, so a long
+ * message wraps inside the screen instead of growing past its edges — the
+ * "THAT BELONGS HERE — 2 MISTAKES LEFT" banner is twice the width of the short
+ * ones and used to run off the side on a narrow window. */
+.feedback-banner {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  width: max-content;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 10px 22px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 rgba(25, 21, 16, 0.24);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ink);
+  pointer-events: none;
+}
+
+/* The state is carried by the left edge, not by the whole banner glowing. */
+.feedback-banner.success {
+  border-left: 5px solid var(--moss);
+}
+
+.feedback-banner.failure {
+  border-left: 5px solid var(--rust);
+}
+
+.feedback-banner.hidden {
+  display: none;
+}
+
+/* =========================================================================
+   RESULTS
+   ========================================================================= */
+
+.results-card {
+  width: min(470px, 92vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px 32px 24px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(25, 21, 16, 0.3) transparent;
+}
+
+.results-card::-webkit-scrollbar {
+  width: 7px;
+}
+
+.results-card::-webkit-scrollbar-thumb {
+  background: rgba(25, 21, 16, 0.26);
+}
+
+/* The old emoji badge (a trophy, a magnifier) is replaced by a rust rule and a
+   line of type — the card already says everything a picture could. */
+.results-badge {
+  display: none;
+}
+
+.results-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  color: var(--ink);
+  margin: 6px 0 8px;
+}
+
+.stars-large {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  letter-spacing: 0.34em;
+  color: var(--rust);
+  margin: 0 0 12px;
+}
+
+.results-summary {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--ink-rule);
+}
+
+.results-stats {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.stat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 12px;
+  background: var(--paper-deep);
+  border: 1px solid rgba(25, 21, 16, 0.25);
+  border-radius: 1px;
+}
+
+.stat-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.stat-val {
+  font-family: var(--font-mono);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+/* "New best" sits under the stats as a small moss tag — the same green the map
+   picker uses for a cleared place, so the two read as the same idea. */
+.best-chip {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 14px;
+  padding: 3px 7px 4px;
+  background: var(--moss);
+  color: var(--paper-hi);
+  font-family: var(--font-ui);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-radius: 1px;
+}
+
+.best-chip.hidden {
+  display: none;
+}
+
+/* The results card is the one card that can outgrow a short window. Instead of
+   scrolling the whole thing — which pushes the buttons off the bottom, where
+   they cannot be found without knowing to scroll — the list of five objects
+   gives up its height and the actions stay pinned. */
+.results-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.results-card .results-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(25, 21, 16, 0.3) transparent;
+}
+
+.results-card .results-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.results-card .results-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.results-card .results-list::-webkit-scrollbar-thumb {
+  background: rgba(25, 21, 16, 0.24);
+}
+
+.results-card .menu-actions {
+  flex: 0 0 auto;
+}
+
+.results-list {
+  list-style: none;
+  margin-bottom: 18px;
+  border-top: 1px solid var(--ink-rule);
+}
+
+.result-item {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 8px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--ink-rule);
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+
+.result-item.completed {
+  color: var(--ink);
+}
+
+.result-item.completed span:first-child {
+  color: var(--moss);
+  font-weight: 700;
+}
+
+.result-item.missed {
+  color: var(--ink-faint);
+}
+
+.result-item.missed span:first-child {
+  color: var(--rust);
+}
+
+/* =========================================================================
+   MAP SELECT
+   ========================================================================= */
+
+/* The map button on the main menu: two lines, because "start" alone does not
+   say where you are starting. */
+.btn-map {
+  justify-content: flex-start;
+  text-align: left;
+  padding: 11px 14px;
+  background: var(--paper-hi);
+  gap: 11px;
+}
+
+.btn-map:hover {
+  background: var(--paper-deep);
+}
+
+.btn-map-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.btn-map-label {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.btn-map-value {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+}
+
+.btn-map-chevron {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1;
+  color: var(--ink-faint);
+}
+
+.map-panel {
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-3);
+  padding: 22px 22px 16px;
+  /* Narrower than it was. At 1060 px the cards were 330 px wide, which made two
+     rows taller than the panel on a 800 px-tall window — the catalogue then
+     scrolled, which is the thing paging exists to avoid. */
+  width: min(940px, 92vw);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-panel-head {
+  text-align: left;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.map-panel-head .menu-hint {
+  margin-bottom: 0;
+}
+
+.map-grid {
+  display: grid;
+  /* Three across, two down, always. `auto-fill` made the catalogue reflow into
+     a single ragged column on a narrow window, which is the list this picker
+     stopped being. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: start;
+  gap: 12px;
+  /* `min-height: 0` is what lets a grid child of a flex column actually
+     shrink. Without it the automatic minimum is the content height, so the
+     grid pushes the footer off the bottom of the panel instead of scrolling
+     inside it. */
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 2px 6px 2px 2px;
+  margin-right: -6px;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(25, 21, 16, 0.3) transparent;
+}
+
+.map-grid::-webkit-scrollbar {
+  width: 7px;
+}
+
+.map-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.map-grid::-webkit-scrollbar-thumb {
+  background: rgba(25, 21, 16, 0.24);
+}
+
+.map-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: stretch;
+  text-align: left;
+  padding: 0;
+  overflow: hidden;
+  background: var(--paper-hi);
+  border: 1.5px solid rgba(25, 21, 16, 0.4);
+  border-radius: 2px;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 120ms ease, box-shadow 120ms ease,
+    transform 120ms ease, background 120ms ease;
+}
+
+.map-card:hover:not(:disabled) {
+  border-color: var(--ink);
+  background: var(--paper);
+  box-shadow: var(--lift-1);
+  transform: translate(-1px, -1px);
+}
+
+.map-card:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
+.map-card:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+
+.map-card:disabled {
+  opacity: 0.45;
+  cursor: progress;
+}
+
+.map-card.is-current {
+  border-color: var(--ink);
+  background: var(--paper);
+  box-shadow: inset 3px 0 0 var(--rust);
+}
+
+.map-card-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+}
+
+.map-card-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  /* Two rows have to fit a 800 px window without the grid scrolling. The
+     aspect ratio sets the shape and this caps the height on a short viewport;
+     the picture is cropped by `object-fit`, never squashed. */
+  max-height: 23vh;
+  overflow: hidden;
+  background: var(--paper-deep);
+  border-bottom: 1.5px solid rgba(25, 21, 16, 0.28);
+}
+
+.map-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 260ms ease-out;
+}
+
+.map-card:hover:not(:disabled) .map-card-image {
+  transform: scale(1.035);
+}
+
+/* No capture for this map: a ruled plate with the place's initial on it. A
+   broken-image icon in a catalogue reads as a bug in the catalogue. */
+.map-card-frame.is-blank::after {
+  content: attr(data-mark);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 58px;
+  line-height: 1;
+  color: rgba(25, 21, 16, 0.16);
+}
+
+.map-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 13px 12px;
+}
+
+.map-card-filler {
+  display: block;
+}
+
+.map-card-meta {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--ink-faint);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Progress line: what this place still owes you. Mono and small, because it is
+   a record, not a selling point — and moss once it is cleared, the one place
+   in the interface that colour means "done". */
+.map-card-record {
+  margin-top: 2px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.map-card.is-cleared .map-card-record {
+  color: var(--moss);
+}
+
+.map-card-chip {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  border: 1px solid rgba(25, 21, 16, 0.5);
+  padding: 2px 6px 3px;
+  background: var(--rust);
+  color: var(--paper-hi);
+  font-family: var(--font-ui);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  border-radius: 1px;
+}
+
+.map-panel-foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--ink-rule);
+}
+
+.map-panel-foot .btn {
+  min-width: 120px;
+}
+
+/* Pager: two square keys and a counter. Square because every other control in
+   this interface is square; a round pager button would be the only circle on a
+   screen made of ruled paper. */
+.map-pager {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.pager-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0 0 3px;
+  font-family: var(--font-display);
+  font-size: 21px;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--paper-hi);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 rgba(25, 21, 16, 0.2);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.pager-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(25, 21, 16, 0.26);
+}
+
+.pager-btn:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
+.pager-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+  box-shadow: none;
+}
+
+.pager-btn:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+
+.map-pager-label {
+  min-width: 46px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+
+/* Loading card shown while a map is swapped in. */
+.map-loading-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 28px 40px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-3);
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Three flat squares that step through in sequence — a progress mark with no
+   blur and no spin. The two extra squares are solid-colour box shadows, which
+   stay crisp at any size. */
+.map-loading-spinner {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 0;
+  background: var(--ink);
+  box-shadow: 14px 0 0 rgba(25, 21, 16, 0.32), 28px 0 0 rgba(25, 21, 16, 0.16);
+  margin-right: 28px;
+  animation: dotStep 1.2s steps(1, end) infinite;
+}
+
+@keyframes dotStep {
+  0% { background: var(--ink); }
+  33% { background: rgba(25, 21, 16, 0.16); }
+  66% { background: rgba(25, 21, 16, 0.32); }
+}
+
+.map-loading-text {
+  font-family: var(--font-ui);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* =========================================================================
+   SETTINGS
+   ========================================================================= */
+
+.settings-card {
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-3);
+  padding: 30px 30px 20px;
+  width: min(580px, 94vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: left;
+  /* The default scrollbar is a grey rounded trough with a gradient thumb —
+     the two things this interface never uses. Thin and ink, like the map
+     grid's. */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(25, 21, 16, 0.3) transparent;
+}
+
+.settings-card::-webkit-scrollbar {
+  width: 7px;
+}
+
+.settings-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.settings-card::-webkit-scrollbar-thumb {
+  background: rgba(25, 21, 16, 0.24);
+}
+
+.settings-card .kicker {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.settings-card .menu-hint {
+  margin-bottom: 16px;
+}
+
+/* One row per setting: the name and its explanation on the left, the control
+   on the right, a hairline between rows. The hairline is what makes six
+   unrelated controls read as one list instead of six floating widgets. */
+.settings-rows {
+  border-top: 1.5px solid var(--ink);
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--ink-rule);
+}
+
+.settings-label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.settings-name {
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.settings-note {
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: var(--ink-faint);
+}
+
+/* Segmented control — four states in a row, the chosen one filled with ink.
+   No pill, no glow: the same rectangle as every other control, inverted. */
+.segmented {
+  display: flex;
+  flex-shrink: 0;
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.seg {
+  padding: 8px 11px;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--paper-hi);
+  border: none;
+  border-left: 1px solid var(--ink-rule);
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.seg:first-child {
+  border-left: none;
+}
+
+.seg:hover {
+  background: var(--paper-deep);
+  color: var(--ink);
+}
+
+.seg.is-active,
+.seg.is-active:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* Switch: a square knob in a square track. A rounded pill would be the one
+   curved object on a screen made of ruled paper. */
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.switch-track {
+  position: relative;
+  width: 38px;
+  height: 20px;
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  background: var(--paper-deep);
+}
+
+.switch-track::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  background: var(--ink-faint);
+  border-radius: 1px;
+  transition: transform 120ms ease, background 120ms ease;
+}
+
+.switch.is-on .switch-track {
+  background: var(--paper-hi);
+}
+
+.switch.is-on .switch-track::after {
+  transform: translateX(18px);
+  background: var(--rust);
+}
+
+.switch-word {
+  width: 22px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--ink-soft);
+}
+
+.settings-slider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  width: 210px;
+}
+
+/* Native range input, stripped back to a hairline and a square thumb. The
+   default track is a rounded gradient bar, which is exactly the shape this
+   interface does not have anywhere else. */
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  height: 16px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.range::-webkit-slider-runnable-track {
+  height: 2px;
+  background: var(--ink-rule);
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  margin-top: -5px;
+  background: var(--ink);
+  border: none;
+  border-radius: 1px;
+}
+
+.range:hover::-webkit-slider-thumb {
+  background: var(--rust);
+}
+
+.range::-moz-range-track {
+  height: 2px;
+  background: var(--ink-rule);
+}
+
+.range::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--ink);
+  border: none;
+  border-radius: 1px;
+}
+
+.settings-value {
+  flex-shrink: 0;
+  width: 42px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink);
+  text-align: right;
+}
+
+.settings-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1.5px solid var(--ink);
+}
+
+/* Armed: the same word, in rust, underlined. The button does not change size,
+   so the row does not jump the moment it becomes dangerous. */
+#btn-settings-reset.is-armed {
+  color: var(--rust-dark);
+  text-decoration: underline;
+}
+
+/* =========================================================================
+   FRAME COUNTER
+   ========================================================================= */
+
+/* Sits in the corner as a chip of paper, the same object as the controls
+   hint — a readout, not a debug overlay. */
+.hud-fps {
+  position: absolute;
+  right: 22px;
+  bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 5px 8px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 rgba(25, 21, 16, 0.18);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  pointer-events: none;
+}
+
+.hud-fps.hidden {
+  display: none;
+}
+
+.hud-fps-unit {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* A steady 60 does not need to be read; a struggling frame rate does. */
+.hud-fps.is-low {
+  border-color: var(--rust);
+  color: var(--rust-dark);
+}
+
+/* =========================================================================
+   MOTION
+   ========================================================================= */
+
+.animate-pop {
+  animation: popIn 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Narrow windows: the objectives panel would otherwise cover the reticle. */
+@media (max-width: 780px) {
+  .hud-top-left {
+    width: 240px;
+    padding: 10px 12px 11px;
+  }
+
+  .hud-bottom-bar {
+    display: none;
+  }
+
+  .controls-hint > span:nth-child(n + 5) {
+    display: none;
+  }
+}
+</style>
+<style>body{background:var(--paper-deep);margin:0}
+.screen-overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}</style>
+</head><body>
+<div class="screen-overlay">
+  <div class="map-panel">
+    <div class="map-panel-head">
+      <span class="kicker">21 places</span>
+      <h2 class="menu-title">Choose a map</h2>
+      <p class="menu-hint">Every map is walkable &mdash; collision is built from its own geometry.</p>
+    </div>
+    <div class="map-grid">
+    <button class="map-card interactive-ui is-current is-cleared">
+      <span class="map-card-frame">
+        <img class="map-card-image" src="public/maps/campground-lake.jpg" alt="">
+      </span>
+      <span class="map-card-body">
+        <span class="map-card-name">Campground & Lake</span>
+        <span class="map-card-meta">Six campers, one lake, and five things that were never packed.</span>
+        <span class="map-card-record">Cleared · 2:14</span>
+      </span>
+      <span class="map-card-chip">PLAYING</span>
+    </button>
+    <button class="map-card interactive-ui">
+      <span class="map-card-frame">
+        <img class="map-card-image" src="public/maps/cozy-farm.jpg" alt="">
+      </span>
+      <span class="map-card-body">
+        <span class="map-card-name">Cozy Farm</span>
+        <span class="map-card-meta">Eggs, hay and a tractor that has not moved in years.</span>
+        <span class="map-card-record">3 of 5 found</span>
+      </span>
+      
+    </button>
+    <button class="map-card interactive-ui">
+      <span class="map-card-frame">
+        <img class="map-card-image" src="public/maps/office.jpg" alt="">
+      </span>
+      <span class="map-card-body">
+        <span class="map-card-name">Office</span>
+        <span class="map-card-meta">Fluorescent light, dead plants, and a desk nobody clears.</span>
+        
+      </span>
+      
+    </button>
+    <button class="map-card interactive-ui is-cleared">
+      <span class="map-card-frame">
+        <img class="map-card-image" src="public/maps/pirate-cove.jpg" alt="">
+      </span>
+      <span class="map-card-body">
+        <span class="map-card-name">Pirate Cove</span>
+        <span class="map-card-meta">Salt, rope and a chest that is already open.</span>
+        <span class="map-card-record">Cleared · 1:48</span>
+      </span>
+      
+    </button>
+    <button class="map-card interactive-ui">
+      <span class="map-card-frame">
+        <img class="map-card-image" src="public/maps/space-base.jpg" alt="">
+      </span>
+      <span class="map-card-body">
+        <span class="map-card-name">Space Base</span>
+        <span class="map-card-meta">Grey corridors, colder airlocks, one very lost toolbox.</span>
+        
+      </span>
+      
+    </button>
+    <button class="map-card interactive-ui">
+      <span class="map-card-frame">
+        <img class="map-card-image" src="public/maps/stadium.jpg" alt="">
+      </span>
+      <span class="map-card-body">
+        <span class="map-card-name">Stadium</span>
+        <span class="map-card-meta">Forty thousand empty seats and five wrong ones.</span>
+        <span class="map-card-record">1 of 5 found</span>
+      </span>
+      
+    </button></div>
+    <div class="map-panel-foot">
+      <button class="btn btn-outline interactive-ui"><span class="btn-icon">&larr;</span> Back</button>
+      <div class="map-pager">
+        <button class="pager-btn interactive-ui" disabled>&lsaquo;</button>
+        <span class="map-pager-label">1 / 4</span>
+        <button class="pager-btn interactive-ui">&rsaquo;</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

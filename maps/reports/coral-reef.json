@@ -1,0 +1,5077 @@
+{
+ "file": "/assets/maps/coral-reef.glb",
+ "bytes": 1465708,
+ "generatedAt": "2026-11-10T03:50:01.945Z",
+ "structure": {
+  "nodes": 1735,
+  "meshes": 383,
+  "materials": 195,
+  "images": 0,
+  "partContainer": "coral-reef-a7128a",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 195,
+  "keys": 52,
+  "triangles": 168914,
+  "meshes": 383,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "reef-fish",
+   "instances": 54,
+   "triangles": 41844,
+   "maxExtent": 0.274,
+   "hasBounds": true
+  },
+  {
+   "key": "seagrass-tuft",
+   "instances": 12,
+   "triangles": 4380,
+   "maxExtent": 0.789,
+   "hasBounds": true
+  },
+  {
+   "key": "small-reef-rock",
+   "instances": 8,
+   "triangles": 3440,
+   "maxExtent": 0.905,
+   "hasBounds": true
+  },
+  {
+   "key": "sea-fan",
+   "instances": 6,
+   "triangles": 4471,
+   "maxExtent": 1.715,
+   "hasBounds": true
+  },
+  {
+   "key": "mushroom-coral",
+   "instances": 5,
+   "triangles": 2640,
+   "maxExtent": 0.646,
+   "hasBounds": true
+  },
+  {
+   "key": "sea-urchin",
+   "instances": 5,
+   "triangles": 2530,
+   "maxExtent": 0.481,
+   "hasBounds": true
+  },
+  {
+   "key": "algae-frond",
+   "instances": 4,
+   "triangles": 2134,
+   "maxExtent": 0.918,
+   "hasBounds": true
+  },
+  {
+   "key": "encrusted-reef-boulder",
+   "instances": 4,
+   "triangles": 2896,
+   "maxExtent": 4.643,
+   "hasBounds": true
+  },
+  {
+   "key": "moon-jellyfish",
+   "instances": 4,
+   "triangles": 5272,
+   "maxExtent": 0.926,
+   "hasBounds": true
+  },
+  {
+   "key": "sea-anemone",
+   "instances": 4,
+   "triangles": 2976,
+   "maxExtent": 0.993,
+   "hasBounds": true
+  },
+  {
+   "key": "sea-whip",
+   "instances": 4,
+   "triangles": 2272,
+   "maxExtent": 1.603,
+   "hasBounds": true
+  },
+  {
+   "key": "soft-coral-tree",
+   "instances": 4,
+   "triangles": 2964,
+   "maxExtent": 1.093,
+   "hasBounds": true
+  },
+  {
+   "key": "anchor-chain-run",
+   "instances": 3,
+   "triangles": 2220,
+   "maxExtent": 3.753,
+   "hasBounds": true
+  },
+  {
+   "key": "barrel-sponge",
+   "instances": 3,
+   "triangles": 2070,
+   "maxExtent": 1.544,
+   "hasBounds": true
+  },
+  {
+   "key": "brain-coral-head",
+   "instances": 3,
+   "triangles": 2100,
+   "maxExtent": 1.704,
+   "hasBounds": true
+  },
+  {
+   "key": "coral-rubble-seabed-tile",
+   "instances": 3,
+   "triangles": 1560,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "giant-clam",
+   "instances": 3,
+   "triangles": 2022,
+   "maxExtent": 1.162,
+   "hasBounds": true
+  },
+  {
+   "key": "lettuce-coral",
+   "instances": 3,
+   "triangles": 1932,
+   "maxExtent": 1.679,
+   "hasBounds": true
+  },
+  {
+   "key": "moray-eel",
+   "instances": 3,
+   "triangles": 3402,
+   "maxExtent": 0.985,
+   "hasBounds": true
+  },
+  {
+   "key": "pillar-coral",
+   "instances": 3,
+   "triangles": 1602,
+   "maxExtent": 1.8,
+   "hasBounds": true
+  },
+  {
+   "key": "reef-crab",
+   "instances": 3,
+   "triangles": 3876,
+   "maxExtent": 0.933,
+   "hasBounds": true
+  },
+  {
+   "key": "reef-rubble-terrain-blob",
+   "instances": 3,
+   "triangles": 2016,
+   "maxExtent": 8.803,
+   "hasBounds": true
+  },
+  {
+   "key": "staghorn-coral",
+   "instances": 3,
+   "triangles": 1656,
+   "maxExtent": 1.518,
+   "hasBounds": true
+  },
+  {
+   "key": "starfish",
+   "instances": 3,
+   "triangles": 3288,
+   "maxExtent": 0.56,
+   "hasBounds": true
+  },
+  {
+   "key": "table-coral",
+   "instances": 3,
+   "triangles": 1188,
+   "maxExtent": 2.095,
+   "hasBounds": true
+  },
+  {
+   "key": "tube-sponge",
+   "instances": 3,
+   "triangles": 1815,
+   "maxExtent": 1.003,
+   "hasBounds": true
+  },
+  {
+   "key": "barracuda",
+   "instances": 2,
+   "triangles": 1992,
+   "maxExtent": 1.496,
+   "hasBounds": true
+  },
+  {
+   "key": "bubble-vent",
+   "instances": 2,
+   "triangles": 1502,
+   "maxExtent": 1.492,
+   "hasBounds": true
+  },
+  {
+   "key": "clay-amphora",
+   "instances": 2,
+   "triangles": 1144,
+   "maxExtent": 0.8,
+   "hasBounds": true
+  },
+  {
+   "key": "coral-bommie",
+   "instances": 2,
+   "triangles": 1316,
+   "maxExtent": 5.381,
+   "hasBounds": true
+  },
+  {
+   "key": "coral-pinnacle",
+   "instances": 2,
+   "triangles": 1309,
+   "maxExtent": 4.506,
+   "hasBounds": true
+  },
+  {
+   "key": "dive-marker-buoy",
+   "instances": 2,
+   "triangles": 1028,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "diver",
+   "instances": 2,
+   "triangles": 2660,
+   "maxExtent": 1.8,
+   "hasBounds": true
+  },
+  {
+   "key": "encrusted-cargo-crate",
+   "instances": 2,
+   "triangles": 1488,
+   "maxExtent": 1.704,
+   "hasBounds": true
+  },
+  {
+   "key": "ghost-net-drape",
+   "instances": 2,
+   "triangles": 1576,
+   "maxExtent": 2.477,
+   "hasBounds": true
+  },
+  {
+   "key": "lobster-trap",
+   "instances": 2,
+   "triangles": 1356,
+   "maxExtent": 1.213,
+   "hasBounds": true
+  },
+  {
+   "key": "octopus",
+   "instances": 2,
+   "triangles": 2832,
+   "maxExtent": 1.28,
+   "hasBounds": true
+  },
+  {
+   "key": "reef-swim-through-arch",
+   "instances": 2,
+   "triangles": 1434,
+   "maxExtent": 4.9,
+   "hasBounds": true
+  },
+  {
+   "key": "wooden-wreck-stern",
+   "instances": 2,
+   "triangles": 1444,
+   "maxExtent": 13.581,
+   "hasBounds": true
+  },
+  {
+   "key": "admiralty-anchor",
+   "instances": 1,
+   "triangles": 560,
+   "maxExtent": 2.358,
+   "hasBounds": true
+  },
+  {
+   "key": "coral-reef-terrain",
+   "instances": 1,
+   "triangles": 25328,
+   "maxExtent": 50.5,
+   "hasBounds": true
+  },
+  {
+   "key": "corroded-drum",
+   "instances": 1,
+   "triangles": 784,
+   "maxExtent": 1.473,
+   "hasBounds": true
+  },
+  {
+   "key": "diver-propulsion-vehicle",
+   "instances": 1,
+   "triangles": 1204,
+   "maxExtent": 1.139,
+   "hasBounds": true
+  },
+  {
+   "key": "grouper",
+   "instances": 1,
+   "triangles": 876,
+   "maxExtent": 1.169,
+   "hasBounds": true
+  },
+  {
+   "key": "mooring-block",
+   "instances": 1,
+   "triangles": 568,
+   "maxExtent": 1.507,
+   "hasBounds": true
+  },
+  {
+   "key": "reef-shark",
+   "instances": 1,
+   "triangles": 1248,
+   "maxExtent": 1.825,
+   "hasBounds": true
+  },
+  {
+   "key": "sea-turtle",
+   "instances": 1,
+   "triangles": 1064,
+   "maxExtent": 1.671,
+   "hasBounds": true
+  },
+  {
+   "key": "steel-wreck-hull-section",
+   "instances": 1,
+   "triangles": 744,
+   "maxExtent": 6.699,
+   "hasBounds": true
+  },
+  {
+   "key": "stingray",
+   "instances": 1,
+   "triangles": 1244,
+   "maxExtent": 2.494,
+   "hasBounds": true
+  },
+  {
+   "key": "submarine",
+   "instances": 1,
+   "triangles": 2590,
+   "maxExtent": 3.655,
+   "hasBounds": true
+  },
+  {
+   "key": "sunken-fishing-boat",
+   "instances": 1,
+   "triangles": 1192,
+   "maxExtent": 7.531,
+   "hasBounds": true
+  },
+  {
+   "key": "underwater-research-habitat",
+   "instances": 1,
+   "triangles": 1865,
+   "maxExtent": 7.099,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "underwater-research-habitat",
+   "key": "underwater-research-habitat",
+   "meshes": 5,
+   "triangles": 1865,
+   "aabb": {
+    "min": [
+     -6.529,
+     -0.33,
+     -9.75
+    ],
+    "max": [
+     0.569,
+     5.784,
+     -2.652
+    ]
+   },
+   "size": [
+    7.099,
+    6.114,
+    7.099
+   ]
+  },
+  {
+   "index": 11,
+   "name": "reef-swim-through-arch",
+   "key": "reef-swim-through-arch",
+   "meshes": 4,
+   "triangles": 768,
+   "aabb": {
+    "min": [
+     -7.291,
+     -0.348,
+     -0.081
+    ],
+    "max": [
+     -3.114,
+     3.882,
+     4.819
+    ]
+   },
+   "size": [
+    4.177,
+    4.23,
+    4.9
+   ]
+  },
+  {
+   "index": 19,
+   "name": "coral-bommie",
+   "key": "coral-bommie",
+   "meshes": 1,
+   "triangles": 626,
+   "aabb": {
+    "min": [
+     6.995,
+     -0.195,
+     3.675
+    ],
+    "max": [
+     12.375,
+     4.393,
+     7.525
+    ]
+   },
+   "size": [
+    5.381,
+    4.588,
+    3.85
+   ]
+  },
+  {
+   "index": 21,
+   "name": "giant-clam",
+   "key": "giant-clam",
+   "meshes": 3,
+   "triangles": 674,
+   "aabb": {
+    "min": [
+     -9.058,
+     -0.301,
+     5.755
+    ],
+    "max": [
+     -7.897,
+     0.518,
+     6.9
+    ]
+   },
+   "size": [
+    1.162,
+    0.819,
+    1.145
+   ]
+  },
+  {
+   "index": 27,
+   "name": "bubble-vent",
+   "key": "bubble-vent",
+   "meshes": 16,
+   "triangles": 751,
+   "aabb": {
+    "min": [
+     -10.612,
+     -1.471,
+     7.08
+    ],
+    "max": [
+     -9.9,
+     0.021,
+     7.802
+    ]
+   },
+   "size": [
+    0.712,
+    1.492,
+    0.722
+   ]
+  },
+  {
+   "index": 45,
+   "name": "starfish",
+   "key": "starfish",
+   "meshes": 1,
+   "triangles": 1096,
+   "aabb": {
+    "min": [
+     2.723,
+     0,
+     -1.674
+    ],
+    "max": [
+     3.277,
+     0.145,
+     -1.126
+    ]
+   },
+   "size": [
+    0.554,
+    0.145,
+    0.548
+   ]
+  },
+  {
+   "index": 63,
+   "name": "coral-pinnacle",
+   "key": "coral-pinnacle",
+   "meshes": 3,
+   "triangles": 630,
+   "aabb": {
+    "min": [
+     12.037,
+     0.798,
+     -11.956
+    ],
+    "max": [
+     13.963,
+     5.304,
+     -10.044
+    ]
+   },
+   "size": [
+    1.927,
+    4.506,
+    1.912
+   ]
+  },
+  {
+   "index": 69,
+   "name": "staghorn-coral",
+   "key": "staghorn-coral",
+   "meshes": 1,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     16.944,
+     0.61,
+     -6.755
+    ],
+    "max": [
+     18.256,
+     2.02,
+     -5.245
+    ]
+   },
+   "size": [
+    1.312,
+    1.41,
+    1.51
+   ]
+  },
+  {
+   "index": 71,
+   "name": "brain-coral-head",
+   "key": "brain-coral-head",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     14.981,
+     0.645,
+     -6.852
+    ],
+    "max": [
+     16.619,
+     1.261,
+     -5.148
+    ]
+   },
+   "size": [
+    1.639,
+    0.616,
+    1.704
+   ]
+  },
+  {
+   "index": 73,
+   "name": "sea-whip",
+   "key": "sea-whip",
+   "meshes": 2,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     13.166,
+     -0.408,
+     -7.798
+    ],
+    "max": [
+     14.464,
+     1.195,
+     -6.909
+    ]
+   },
+   "size": [
+    1.299,
+    1.603,
+    0.889
+   ]
+  },
+  {
+   "index": 79,
+   "name": "table-coral",
+   "key": "table-coral",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     15.355,
+     0.256,
+     -10.247
+    ],
+    "max": [
+     17.445,
+     0.946,
+     -8.153
+    ]
+   },
+   "size": [
+    2.09,
+    0.69,
+    2.095
+   ]
+  },
+  {
+   "index": 81,
+   "name": "lettuce-coral",
+   "key": "lettuce-coral",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     18.76,
+     0.776,
+     -8.64
+    ],
+    "max": [
+     20.44,
+     1.42,
+     -6.96
+    ]
+   },
+   "size": [
+    1.679,
+    0.644,
+    1.679
+   ]
+  },
+  {
+   "index": 83,
+   "name": "pillar-coral",
+   "key": "pillar-coral",
+   "meshes": 1,
+   "triangles": 534,
+   "aabb": {
+    "min": [
+     17.424,
+     0.899,
+     -9.765
+    ],
+    "max": [
+     18.576,
+     2.699,
+     -8.635
+    ]
+   },
+   "size": [
+    1.151,
+    1.8,
+    1.13
+   ]
+  },
+  {
+   "index": 85,
+   "name": "sea-fan",
+   "key": "sea-fan",
+   "meshes": 3,
+   "triangles": 731,
+   "aabb": {
+    "min": [
+     8.173,
+     0.302,
+     -12.755
+    ],
+    "max": [
+     8.871,
+     1.604,
+     -12.482
+    ]
+   },
+   "size": [
+    0.697,
+    1.302,
+    0.274
+   ]
+  },
+  {
+   "index": 93,
+   "name": "sea-urchin",
+   "key": "sea-urchin",
+   "meshes": 1,
+   "triangles": 506,
+   "aabb": {
+    "min": [
+     14.961,
+     0.025,
+     -8.039
+    ],
+    "max": [
+     15.439,
+     0.323,
+     -7.561
+    ]
+   },
+   "size": [
+    0.477,
+    0.298,
+    0.478
+   ]
+  },
+  {
+   "index": 95,
+   "name": "sea-urchin",
+   "key": "sea-urchin",
+   "meshes": 1,
+   "triangles": 506,
+   "aabb": {
+    "min": [
+     12.759,
+     -0.251,
+     -6.641
+    ],
+    "max": [
+     13.241,
+     0.047,
+     -6.159
+    ]
+   },
+   "size": [
+    0.481,
+    0.298,
+    0.481
+   ]
+  },
+  {
+   "index": 97,
+   "name": "algae-frond",
+   "key": "algae-frond",
+   "meshes": 6,
+   "triangles": 521,
+   "aabb": {
+    "min": [
+     17.18,
+     0.42,
+     -10.897
+    ],
+    "max": [
+     17.618,
+     1.226,
+     -10.304
+    ]
+   },
+   "size": [
+    0.438,
+    0.806,
+    0.593
+   ]
+  },
+  {
+   "index": 109,
+   "name": "algae-frond",
+   "key": "algae-frond",
+   "meshes": 6,
+   "triangles": 521,
+   "aabb": {
+    "min": [
+     13.47,
+     1.5,
+     -13.045
+    ],
+    "max": [
+     14.101,
+     2.306,
+     -12.499
+    ]
+   },
+   "size": [
+    0.631,
+    0.806,
+    0.546
+   ]
+  },
+  {
+   "index": 121,
+   "name": "encrusted-reef-boulder",
+   "key": "encrusted-reef-boulder",
+   "meshes": 1,
+   "triangles": 724,
+   "aabb": {
+    "min": [
+     8.605,
+     0.126,
+     -15.402
+    ],
+    "max": [
+     12.195,
+     1.742,
+     -11.798
+    ]
+   },
+   "size": [
+    3.589,
+    1.616,
+    3.604
+   ]
+  },
+  {
+   "index": 123,
+   "name": "moray-eel",
+   "key": "moray-eel",
+   "meshes": 1,
+   "triangles": 1134,
+   "aabb": {
+    "min": [
+     11.518,
+     1.124,
+     -14.697
+    ],
+    "max": [
+     12.082,
+     1.771,
+     -14.103
+    ]
+   },
+   "size": [
+    0.563,
+    0.647,
+    0.594
+   ]
+  },
+  {
+   "index": 135,
+   "name": "barrel-sponge",
+   "key": "barrel-sponge",
+   "meshes": 1,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     -14.947,
+     0.684,
+     -5.747
+    ],
+    "max": [
+     -13.405,
+     1.864,
+     -4.203
+    ]
+   },
+   "size": [
+    1.541,
+    1.18,
+    1.544
+   ]
+  },
+  {
+   "index": 137,
+   "name": "tube-sponge",
+   "key": "tube-sponge",
+   "meshes": 1,
+   "triangles": 605,
+   "aabb": {
+    "min": [
+     -13.162,
+     0.341,
+     -3.985
+    ],
+    "max": [
+     -12.395,
+     1.344,
+     -3.209
+    ]
+   },
+   "size": [
+    0.767,
+    1.003,
+    0.776
+   ]
+  },
+  {
+   "index": 139,
+   "name": "soft-coral-tree",
+   "key": "soft-coral-tree",
+   "meshes": 2,
+   "triangles": 741,
+   "aabb": {
+    "min": [
+     -16.25,
+     0.872,
+     -4.397
+    ],
+    "max": [
+     -15.35,
+     1.965,
+     -3.403
+    ]
+   },
+   "size": [
+    0.901,
+    1.093,
+    0.993
+   ]
+  },
+  {
+   "index": 145,
+   "name": "starfish",
+   "key": "starfish",
+   "meshes": 1,
+   "triangles": 1096,
+   "aabb": {
+    "min": [
+     -16.465,
+     0.555,
+     -3.47
+    ],
+    "max": [
+     -15.935,
+     0.7,
+     -2.93
+    ]
+   },
+   "size": [
+    0.531,
+    0.145,
+    0.54
+   ]
+  },
+  {
+   "index": 163,
+   "name": "octopus",
+   "key": "octopus",
+   "meshes": 1,
+   "triangles": 1416,
+   "aabb": {
+    "min": [
+     -11.64,
+     0.126,
+     -2.64
+    ],
+    "max": [
+     -10.36,
+     0.84,
+     -1.36
+    ]
+   },
+   "size": [
+    1.28,
+    0.714,
+    1.28
+   ]
+  },
+  {
+   "index": 190,
+   "name": "sea-urchin",
+   "key": "sea-urchin",
+   "meshes": 1,
+   "triangles": 506,
+   "aabb": {
+    "min": [
+     -10.802,
+     0.441,
+     -7.002
+    ],
+    "max": [
+     -10.398,
+     0.739,
+     -6.598
+    ]
+   },
+   "size": [
+    0.405,
+    0.298,
+    0.404
+   ]
+  },
+  {
+   "index": 192,
+   "name": "sea-anemone",
+   "key": "sea-anemone",
+   "meshes": 3,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     -12.788,
+     1.874,
+     -10.192
+    ],
+    "max": [
+     -12.021,
+     2.45,
+     -9.407
+    ]
+   },
+   "size": [
+    0.766,
+    0.576,
+    0.785
+   ]
+  },
+  {
+   "index": 200,
+   "name": "pillar-coral",
+   "key": "pillar-coral",
+   "meshes": 1,
+   "triangles": 534,
+   "aabb": {
+    "min": [
+     -13.977,
+     2.031,
+     -11.967
+    ],
+    "max": [
+     -12.823,
+     3.831,
+     -10.833
+    ]
+   },
+   "size": [
+    1.155,
+    1.8,
+    1.134
+   ]
+  },
+  {
+   "index": 202,
+   "name": "sea-whip",
+   "key": "sea-whip",
+   "meshes": 2,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     -15.816,
+     1.664,
+     -11.007
+    ],
+    "max": [
+     -14.527,
+     3.267,
+     -9.874
+    ]
+   },
+   "size": [
+    1.289,
+    1.603,
+    1.133
+   ]
+  },
+  {
+   "index": 208,
+   "name": "algae-frond",
+   "key": "algae-frond",
+   "meshes": 6,
+   "triangles": 521,
+   "aabb": {
+    "min": [
+     -14.206,
+     1.923,
+     -10.405
+    ],
+    "max": [
+     -13.585,
+     2.729,
+     -9.976
+    ]
+   },
+   "size": [
+    0.622,
+    0.806,
+    0.429
+   ]
+  },
+  {
+   "index": 220,
+   "name": "encrusted-reef-boulder",
+   "key": "encrusted-reef-boulder",
+   "meshes": 1,
+   "triangles": 724,
+   "aabb": {
+    "min": [
+     3.495,
+     1.297,
+     -22.751
+    ],
+    "max": [
+     6.905,
+     2.913,
+     -19.249
+    ]
+   },
+   "size": [
+    3.409,
+    1.616,
+    3.502
+   ]
+  },
+  {
+   "index": 222,
+   "name": "staghorn-coral",
+   "key": "staghorn-coral",
+   "meshes": 1,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     6.866,
+     2.002,
+     -23.559
+    ],
+    "max": [
+     8.334,
+     3.412,
+     -22.041
+    ]
+   },
+   "size": [
+    1.468,
+    1.41,
+    1.518
+   ]
+  },
+  {
+   "index": 224,
+   "name": "table-coral",
+   "key": "table-coral",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     1.362,
+     1.381,
+     -19.236
+    ],
+    "max": [
+     3.438,
+     2.071,
+     -17.164
+    ]
+   },
+   "size": [
+    2.077,
+    0.69,
+    2.072
+   ]
+  },
+  {
+   "index": 226,
+   "name": "brain-coral-head",
+   "key": "brain-coral-head",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     7.639,
+     1.465,
+     -20.005
+    ],
+    "max": [
+     9.161,
+     2.081,
+     -18.395
+    ]
+   },
+   "size": [
+    1.522,
+    0.616,
+    1.611
+   ]
+  },
+  {
+   "index": 228,
+   "name": "sea-fan",
+   "key": "sea-fan",
+   "meshes": 3,
+   "triangles": 750,
+   "aabb": {
+    "min": [
+     2.493,
+     2.47,
+     -22.691
+    ],
+    "max": [
+     3.101,
+     4.175,
+     -22.109
+    ]
+   },
+   "size": [
+    0.608,
+    1.705,
+    0.582
+   ]
+  },
+  {
+   "index": 236,
+   "name": "barrel-sponge",
+   "key": "barrel-sponge",
+   "meshes": 1,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     4.833,
+     0.96,
+     -19.343
+    ],
+    "max": [
+     6.259,
+     2.14,
+     -17.958
+    ]
+   },
+   "size": [
+    1.426,
+    1.18,
+    1.385
+   ]
+  },
+  {
+   "index": 238,
+   "name": "soft-coral-tree",
+   "key": "soft-coral-tree",
+   "meshes": 2,
+   "triangles": 741,
+   "aabb": {
+    "min": [
+     3.871,
+     2.014,
+     -23.908
+    ],
+    "max": [
+     4.929,
+     3.107,
+     -22.892
+    ]
+   },
+   "size": [
+    1.058,
+    1.093,
+    1.015
+   ]
+  },
+  {
+   "index": 244,
+   "name": "sea-anemone",
+   "key": "sea-anemone",
+   "meshes": 3,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     8.412,
+     2.147,
+     -21.435
+    ],
+    "max": [
+     9.405,
+     2.883,
+     -20.47
+    ]
+   },
+   "size": [
+    0.993,
+    0.736,
+    0.965
+   ]
+  },
+  {
+   "index": 252,
+   "name": "sea-urchin",
+   "key": "sea-urchin",
+   "meshes": 1,
+   "triangles": 506,
+   "aabb": {
+    "min": [
+     6.997,
+     1.458,
+     -20.604
+    ],
+    "max": [
+     7.403,
+     1.756,
+     -20.196
+    ]
+   },
+   "size": [
+    0.407,
+    0.298,
+    0.408
+   ]
+  },
+  {
+   "index": 254,
+   "name": "mushroom-coral",
+   "key": "mushroom-coral",
+   "meshes": 1,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     2.726,
+     1.811,
+     -20.874
+    ],
+    "max": [
+     3.274,
+     1.93,
+     -20.326
+    ]
+   },
+   "size": [
+    0.547,
+    0.119,
+    0.549
+   ]
+  },
+  {
+   "index": 256,
+   "name": "anchor-chain-run",
+   "key": "anchor-chain-run",
+   "meshes": 7,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     8.905,
+     -0.159,
+     0.039
+    ],
+    "max": [
+     12.658,
+     0.232,
+     2.519
+    ]
+   },
+   "size": [
+    3.753,
+    0.391,
+    2.48
+   ]
+  },
+  {
+   "index": 270,
+   "name": "anchor-chain-run",
+   "key": "anchor-chain-run",
+   "meshes": 7,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     12.376,
+     -0.159,
+     -1.949
+    ],
+    "max": [
+     16.129,
+     0.232,
+     0.531
+    ]
+   },
+   "size": [
+    3.753,
+    0.391,
+    2.48
+   ]
+  },
+  {
+   "index": 284,
+   "name": "anchor-chain-run",
+   "key": "anchor-chain-run",
+   "meshes": 7,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     15.847,
+     -0.159,
+     -3.937
+    ],
+    "max": [
+     19.6,
+     0.232,
+     -1.457
+    ]
+   },
+   "size": [
+    3.753,
+    0.391,
+    2.48
+   ]
+  },
+  {
+   "index": 298,
+   "name": "mooring-block",
+   "key": "mooring-block",
+   "meshes": 2,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     7.719,
+     -0.189,
+     1.726
+    ],
+    "max": [
+     9.226,
+     1.061,
+     3.233
+    ]
+   },
+   "size": [
+    1.507,
+    1.25,
+    1.507
+   ]
+  },
+  {
+   "index": 302,
+   "name": "admiralty-anchor",
+   "key": "admiralty-anchor",
+   "meshes": 5,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     19.066,
+     -0.179,
+     -5.123
+    ],
+    "max": [
+     20.79,
+     2.179,
+     -3.035
+    ]
+   },
+   "size": [
+    1.725,
+    2.358,
+    2.088
+   ]
+  },
+  {
+   "index": 316,
+   "name": "submarine",
+   "key": "submarine",
+   "meshes": 9,
+   "triangles": 2590,
+   "aabb": {
+    "min": [
+     2.264,
+     -0.055,
+     3.008
+    ],
+    "max": [
+     5.341,
+     2.45,
+     6.663
+    ]
+   },
+   "size": [
+    3.077,
+    2.505,
+    3.655
+   ]
+  },
+  {
+   "index": 334,
+   "name": "diver-propulsion-vehicle",
+   "key": "diver-propulsion-vehicle",
+   "meshes": 3,
+   "triangles": 1204,
+   "aabb": {
+    "min": [
+     -2.26,
+     0.004,
+     -3.711
+    ],
+    "max": [
+     -1.4,
+     0.301,
+     -2.571
+    ]
+   },
+   "size": [
+    0.859,
+    0.297,
+    1.139
+   ]
+  },
+  {
+   "index": 340,
+   "name": "dive-marker-buoy",
+   "key": "dive-marker-buoy",
+   "meshes": 2,
+   "triangles": 514,
+   "aabb": {
+    "min": [
+     14.43,
+     -0.65,
+     5.21
+    ],
+    "max": [
+     14.77,
+     2.35,
+     5.59
+    ]
+   },
+   "size": [
+    0.34,
+    3,
+    0.38
+   ]
+  },
+  {
+   "index": 344,
+   "name": "steel-wreck-hull-section",
+   "key": "steel-wreck-hull-section",
+   "meshes": 1,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     13.302,
+     -1.903,
+     11.936
+    ],
+    "max": [
+     20.001,
+     0.629,
+     17.812
+    ]
+   },
+   "size": [
+    6.699,
+    2.532,
+    5.876
+   ]
+  },
+  {
+   "index": 346,
+   "name": "wooden-wreck-stern",
+   "key": "wooden-wreck-stern",
+   "meshes": 4,
+   "triangles": 726,
+   "aabb": {
+    "min": [
+     8.07,
+     -1.903,
+     14.95
+    ],
+    "max": [
+     15.152,
+     1.69,
+     20.981
+    ]
+   },
+   "size": [
+    7.082,
+    3.593,
+    6.032
+   ]
+  },
+  {
+   "index": 354,
+   "name": "ghost-net-drape",
+   "key": "ghost-net-drape",
+   "meshes": 8,
+   "triangles": 788,
+   "aabb": {
+    "min": [
+     14.961,
+     -1.054,
+     18.603
+    ],
+    "max": [
+     17.439,
+     -0.292,
+     20.997
+    ]
+   },
+   "size": [
+    2.477,
+    0.762,
+    2.394
+   ]
+  },
+  {
+   "index": 372,
+   "name": "encrusted-cargo-crate",
+   "key": "encrusted-cargo-crate",
+   "meshes": 2,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     9.551,
+     -1.487,
+     19.751
+    ],
+    "max": [
+     11.255,
+     -0.728,
+     21.455
+    ]
+   },
+   "size": [
+    1.704,
+    0.76,
+    1.703
+   ]
+  },
+  {
+   "index": 376,
+   "name": "corroded-drum",
+   "key": "corroded-drum",
+   "meshes": 2,
+   "triangles": 784,
+   "aabb": {
+    "min": [
+     7.022,
+     -1.92,
+     13.744
+    ],
+    "max": [
+     8.494,
+     -0.481,
+     14.99
+    ]
+   },
+   "size": [
+    1.473,
+    1.44,
+    1.246
+   ]
+  },
+  {
+   "index": 381,
+   "name": "lobster-trap",
+   "key": "lobster-trap",
+   "meshes": 7,
+   "triangles": 678,
+   "aabb": {
+    "min": [
+     17.593,
+     -0.963,
+     11.803
+    ],
+    "max": [
+     18.807,
+     -0.452,
+     12.997
+    ]
+   },
+   "size": [
+    1.213,
+    0.511,
+    1.194
+   ]
+  },
+  {
+   "index": 395,
+   "name": "clay-amphora",
+   "key": "clay-amphora",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     12.089,
+     -1.264,
+     21.28
+    ],
+    "max": [
+     12.711,
+     -0.464,
+     21.92
+    ]
+   },
+   "size": [
+    0.621,
+    0.8,
+    0.641
+   ]
+  },
+  {
+   "index": 397,
+   "name": "reef-crab",
+   "key": "reef-crab",
+   "meshes": 1,
+   "triangles": 1276,
+   "aabb": {
+    "min": [
+     7.548,
+     -1.689,
+     17.238
+    ],
+    "max": [
+     8.452,
+     -1.065,
+     17.962
+    ]
+   },
+   "size": [
+    0.903,
+    0.624,
+    0.725
+   ]
+  },
+  {
+   "index": 434,
+   "name": "sunken-fishing-boat",
+   "key": "sunken-fishing-boat",
+   "meshes": 3,
+   "triangles": 1192,
+   "aabb": {
+    "min": [
+     -14.599,
+     -3.281,
+     10.072
+    ],
+    "max": [
+     -7.069,
+     0.026,
+     14.598
+    ]
+   },
+   "size": [
+    7.531,
+    3.308,
+    4.527
+   ]
+  },
+  {
+   "index": 440,
+   "name": "tube-sponge",
+   "key": "tube-sponge",
+   "meshes": 1,
+   "triangles": 605,
+   "aabb": {
+    "min": [
+     -15.158,
+     -1.517,
+     7.643
+    ],
+    "max": [
+     -14.419,
+     -0.514,
+     8.394
+    ]
+   },
+   "size": [
+    0.739,
+    1.003,
+    0.751
+   ]
+  },
+  {
+   "index": 442,
+   "name": "barrel-sponge",
+   "key": "barrel-sponge",
+   "meshes": 1,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     -13.737,
+     -1.745,
+     9.663
+    ],
+    "max": [
+     -12.223,
+     -0.565,
+     11.194
+    ]
+   },
+   "size": [
+    1.514,
+    1.18,
+    1.53
+   ]
+  },
+  {
+   "index": 444,
+   "name": "staghorn-coral",
+   "key": "staghorn-coral",
+   "meshes": 1,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     -13.529,
+     -1.457,
+     8.411
+    ],
+    "max": [
+     -12.071,
+     -0.047,
+     9.589
+    ]
+   },
+   "size": [
+    1.458,
+    1.41,
+    1.179
+   ]
+  },
+  {
+   "index": 446,
+   "name": "mushroom-coral",
+   "key": "mushroom-coral",
+   "meshes": 1,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     -12.398,
+     -1.998,
+     11.391
+    ],
+    "max": [
+     -12.002,
+     -1.879,
+     11.809
+    ]
+   },
+   "size": [
+    0.395,
+    0.119,
+    0.418
+   ]
+  },
+  {
+   "index": 448,
+   "name": "soft-coral-tree",
+   "key": "soft-coral-tree",
+   "meshes": 2,
+   "triangles": 741,
+   "aabb": {
+    "min": [
+     -10.089,
+     -2.198,
+     15.279
+    ],
+    "max": [
+     -9.111,
+     -1.105,
+     16.321
+    ]
+   },
+   "size": [
+    0.979,
+    1.093,
+    1.041
+   ]
+  },
+  {
+   "index": 454,
+   "name": "sea-urchin",
+   "key": "sea-urchin",
+   "meshes": 1,
+   "triangles": 506,
+   "aabb": {
+    "min": [
+     -10.232,
+     -2.063,
+     16.768
+    ],
+    "max": [
+     -9.768,
+     -1.765,
+     17.232
+    ]
+   },
+   "size": [
+    0.464,
+    0.298,
+    0.463
+   ]
+  },
+  {
+   "index": 456,
+   "name": "lettuce-coral",
+   "key": "lettuce-coral",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     -9.625,
+     -2.036,
+     16.975
+    ],
+    "max": [
+     -7.975,
+     -1.392,
+     18.625
+    ]
+   },
+   "size": [
+    1.649,
+    0.644,
+    1.65
+   ]
+  },
+  {
+   "index": 458,
+   "name": "sea-anemone",
+   "key": "sea-anemone",
+   "meshes": 3,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     -8.68,
+     -1.841,
+     18.719
+    ],
+    "max": [
+     -7.728,
+     -1.265,
+     19.676
+    ]
+   },
+   "size": [
+    0.952,
+    0.576,
+    0.958
+   ]
+  },
+  {
+   "index": 466,
+   "name": "diver",
+   "key": "diver",
+   "meshes": 4,
+   "triangles": 1330,
+   "aabb": {
+    "min": [
+     -1.6,
+     3,
+     -0.231
+    ],
+    "max": [
+     -0.321,
+     4.8,
+     1.274
+    ]
+   },
+   "size": [
+    1.279,
+    1.8,
+    1.505
+   ]
+  },
+  {
+   "index": 496,
+   "name": "reef-shark",
+   "key": "reef-shark",
+   "meshes": 1,
+   "triangles": 1248,
+   "aabb": {
+    "min": [
+     10.527,
+     2.207,
+     14.934
+    ],
+    "max": [
+     12.345,
+     2.745,
+     16.76
+    ]
+   },
+   "size": [
+    1.819,
+    0.538,
+    1.825
+   ]
+  },
+  {
+   "index": 512,
+   "name": "barracuda",
+   "key": "barracuda",
+   "meshes": 1,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -7.948,
+     2.9,
+     -1.055
+    ],
+    "max": [
+     -6.452,
+     3.357,
+     -0.145
+    ]
+   },
+   "size": [
+    1.496,
+    0.457,
+    0.91
+   ]
+  },
+  {
+   "index": 528,
+   "name": "sea-turtle",
+   "key": "sea-turtle",
+   "meshes": 1,
+   "triangles": 1064,
+   "aabb": {
+    "min": [
+     3.164,
+     4.4,
+     5.697
+    ],
+    "max": [
+     4.836,
+     4.721,
+     7.303
+    ]
+   },
+   "size": [
+    1.671,
+    0.321,
+    1.606
+   ]
+  },
+  {
+   "index": 544,
+   "name": "grouper",
+   "key": "grouper",
+   "meshes": 1,
+   "triangles": 876,
+   "aabb": {
+    "min": [
+     10.973,
+     -0.046,
+     14.615
+    ],
+    "max": [
+     11.827,
+     0.453,
+     15.785
+    ]
+   },
+   "size": [
+    0.853,
+    0.499,
+    1.169
+   ]
+  },
+  {
+   "index": 563,
+   "name": "stingray",
+   "key": "stingray",
+   "meshes": 1,
+   "triangles": 1244,
+   "aabb": {
+    "min": [
+     17.153,
+     -0.982,
+     15.685
+    ],
+    "max": [
+     19.647,
+     -0.768,
+     17.915
+    ]
+   },
+   "size": [
+    2.494,
+    0.214,
+    2.23
+   ]
+  },
+  {
+   "index": 574,
+   "name": "moon-jellyfish",
+   "key": "moon-jellyfish",
+   "meshes": 1,
+   "triangles": 1318,
+   "aabb": {
+    "min": [
+     -10.619,
+     2.174,
+     8.75
+    ],
+    "max": [
+     -10.119,
+     3.1,
+     9.25
+    ]
+   },
+   "size": [
+    0.5,
+    0.926,
+    0.5
+   ]
+  },
+  {
+   "index": 589,
+   "name": "moon-jellyfish",
+   "key": "moon-jellyfish",
+   "meshes": 1,
+   "triangles": 1318,
+   "aabb": {
+    "min": [
+     -13.25,
+     0.537,
+     12.25
+    ],
+    "max": [
+     -12.75,
+     1.463,
+     12.75
+    ]
+   },
+   "size": [
+    0.5,
+    0.926,
+    0.5
+   ]
+  },
+  {
+   "index": 604,
+   "name": "moon-jellyfish",
+   "key": "moon-jellyfish",
+   "meshes": 1,
+   "triangles": 1318,
+   "aabb": {
+    "min": [
+     -8.25,
+     3.993,
+     5.75
+    ],
+    "max": [
+     -7.75,
+     4.919,
+     6.25
+    ]
+   },
+   "size": [
+    0.5,
+    0.926,
+    0.5
+   ]
+  },
+  {
+   "index": 619,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 802,
+   "aabb": {
+    "min": [
+     15.409,
+     2.725,
+     -9.091
+    ],
+    "max": [
+     15.591,
+     2.892,
+     -8.909
+    ]
+   },
+   "size": [
+    0.181,
+    0.167,
+    0.182
+   ]
+  },
+  {
+   "index": 631,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     16.612,
+     3.251,
+     -9.568
+    ],
+    "max": [
+     16.806,
+     3.424,
+     -9.408
+    ]
+   },
+   "size": [
+    0.193,
+    0.173,
+    0.159
+   ]
+  },
+  {
+   "index": 643,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 766,
+   "aabb": {
+    "min": [
+     15.685,
+     2.755,
+     -7.755
+    ],
+    "max": [
+     15.895,
+     2.864,
+     -7.617
+    ]
+   },
+   "size": [
+    0.21,
+    0.109,
+    0.139
+   ]
+  },
+  {
+   "index": 655,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 786,
+   "aabb": {
+    "min": [
+     17.35,
+     3.955,
+     -8.195
+    ],
+    "max": [
+     17.532,
+     4.101,
+     -8.013
+    ]
+   },
+   "size": [
+    0.181,
+    0.146,
+    0.182
+   ]
+  },
+  {
+   "index": 667,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 802,
+   "aabb": {
+    "min": [
+     16.342,
+     3.393,
+     -6.443
+    ],
+    "max": [
+     16.538,
+     3.56,
+     -6.279
+    ]
+   },
+   "size": [
+    0.196,
+    0.167,
+    0.163
+   ]
+  },
+  {
+   "index": 679,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     18.746,
+     3.331,
+     -8.763
+    ],
+    "max": [
+     18.95,
+     3.504,
+     -8.629
+    ]
+   },
+   "size": [
+    0.203,
+    0.173,
+    0.135
+   ]
+  },
+  {
+   "index": 691,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 766,
+   "aabb": {
+    "min": [
+     18.162,
+     3.666,
+     -6.755
+    ],
+    "max": [
+     18.346,
+     3.775,
+     -6.569
+    ]
+   },
+   "size": [
+    0.184,
+    0.109,
+    0.185
+   ]
+  },
+  {
+   "index": 703,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 786,
+   "aabb": {
+    "min": [
+     19.563,
+     3.404,
+     -7.335
+    ],
+    "max": [
+     19.759,
+     3.55,
+     -7.173
+    ]
+   },
+   "size": [
+    0.196,
+    0.146,
+    0.163
+   ]
+  },
+  {
+   "index": 715,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 786,
+   "aabb": {
+    "min": [
+     -13.297,
+     3.701,
+     -6.282
+    ],
+    "max": [
+     -13.103,
+     3.847,
+     -6.118
+    ]
+   },
+   "size": [
+    0.195,
+    0.146,
+    0.165
+   ]
+  },
+  {
+   "index": 727,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 802,
+   "aabb": {
+    "min": [
+     -13.603,
+     4.435,
+     -7.558
+    ],
+    "max": [
+     -13.423,
+     4.602,
+     -7.374
+    ]
+   },
+   "size": [
+    0.179,
+    0.167,
+    0.184
+   ]
+  },
+  {
+   "index": 739,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     -11.937,
+     3.256,
+     -6.401
+    ],
+    "max": [
+     -11.781,
+     3.429,
+     -6.205
+    ]
+   },
+   "size": [
+    0.155,
+    0.173,
+    0.195
+   ]
+  },
+  {
+   "index": 751,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 766,
+   "aabb": {
+    "min": [
+     -12.139,
+     4.525,
+     -8.079
+    ],
+    "max": [
+     -11.941,
+     4.634,
+     -7.913
+    ]
+   },
+   "size": [
+    0.199,
+    0.109,
+    0.167
+   ]
+  },
+  {
+   "index": 763,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 786,
+   "aabb": {
+    "min": [
+     -10.545,
+     3.392,
+     -6.852
+    ],
+    "max": [
+     -10.365,
+     3.538,
+     -6.668
+    ]
+   },
+   "size": [
+    0.179,
+    0.146,
+    0.184
+   ]
+  },
+  {
+   "index": 775,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 802,
+   "aabb": {
+    "min": [
+     -12.509,
+     4.357,
+     -9.571
+    ],
+    "max": [
+     -12.349,
+     4.524,
+     -9.373
+    ]
+   },
+   "size": [
+    0.159,
+    0.167,
+    0.198
+   ]
+  },
+  {
+   "index": 787,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     -10.595,
+     4.307,
+     -8.679
+    ],
+    "max": [
+     -10.403,
+     4.48,
+     -8.517
+    ]
+   },
+   "size": [
+    0.192,
+    0.173,
+    0.162
+   ]
+  },
+  {
+   "index": 799,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 766,
+   "aabb": {
+    "min": [
+     -10.978,
+     4.671,
+     -10.169
+    ],
+    "max": [
+     -10.796,
+     4.78,
+     -9.981
+    ]
+   },
+   "size": [
+    0.182,
+    0.109,
+    0.187
+   ]
+  },
+  {
+   "index": 811,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     10.877,
+     -0.664,
+     8.085
+    ],
+    "max": [
+     11.239,
+     -0.37,
+     8.477
+    ]
+   },
+   "size": [
+    0.362,
+    0.294,
+    0.391
+   ]
+  },
+  {
+   "index": 813,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -14.429,
+     0.539,
+     -3.861
+    ],
+    "max": [
+     -14.105,
+     0.804,
+     -3.511
+    ]
+   },
+   "size": [
+    0.324,
+    0.265,
+    0.35
+   ]
+  },
+  {
+   "index": 815,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -9.902,
+     0.087,
+     -5.935
+    ],
+    "max": [
+     -9.04,
+     0.649,
+     -5.039
+    ]
+   },
+   "size": [
+    0.861,
+    0.562,
+    0.897
+   ]
+  },
+  {
+   "index": 817,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     1.538,
+     1.082,
+     -15.944
+    ],
+    "max": [
+     2.186,
+     1.585,
+     -15.348
+    ]
+   },
+   "size": [
+    0.648,
+    0.503,
+    0.596
+   ]
+  },
+  {
+   "index": 819,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -1.97,
+     -1.299,
+     18.852
+    ],
+    "max": [
+     -1.372,
+     -0.954,
+     19.452
+    ]
+   },
+   "size": [
+    0.598,
+    0.345,
+    0.6
+   ]
+  },
+  {
+   "index": 821,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -0.193,
+     -0.253,
+     10.982
+    ],
+    "max": [
+     0.711,
+     0.32,
+     11.848
+    ]
+   },
+   "size": [
+    0.905,
+    0.573,
+    0.866
+   ]
+  },
+  {
+   "index": 823,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -9.892,
+     -0.095,
+     4.493
+    ],
+    "max": [
+     -9.64,
+     0.252,
+     4.791
+    ]
+   },
+   "size": [
+    0.253,
+    0.347,
+    0.299
+   ]
+  },
+  {
+   "index": 827,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     2.23,
+     0.543,
+     -13.414
+    ],
+    "max": [
+     2.776,
+     1.179,
+     -12.95
+    ]
+   },
+   "size": [
+    0.546,
+    0.636,
+    0.463
+   ]
+  },
+  {
+   "index": 831,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -15.362,
+     0.136,
+     1.262
+    ],
+    "max": [
+     -15.014,
+     0.572,
+     1.622
+    ]
+   },
+   "size": [
+    0.348,
+    0.436,
+    0.359
+   ]
+  },
+  {
+   "index": 835,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -0.17,
+     0,
+     8.846
+    ],
+    "max": [
+     0.06,
+     0.561,
+     9.306
+    ]
+   },
+   "size": [
+    0.23,
+    0.561,
+    0.461
+   ]
+  },
+  {
+   "index": 839,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -10.724,
+     0.259,
+     -5.924
+    ],
+    "max": [
+     -10.412,
+     0.946,
+     -5.35
+    ]
+   },
+   "size": [
+    0.311,
+    0.687,
+    0.574
+   ]
+  },
+  {
+   "index": 843,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -13.921,
+     0.533,
+     -1.68
+    ],
+    "max": [
+     -13.653,
+     1.108,
+     -1.196
+    ]
+   },
+   "size": [
+    0.267,
+    0.575,
+    0.483
+   ]
+  },
+  {
+   "index": 847,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     2.778,
+     0.812,
+     -14.374
+    ],
+    "max": [
+     3.136,
+     1.224,
+     -14.086
+    ]
+   },
+   "size": [
+    0.357,
+    0.412,
+    0.288
+   ]
+  },
+  {
+   "index": 851,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     6.842,
+     0,
+     4.124
+    ],
+    "max": [
+     7.402,
+     0.664,
+     4.636
+    ]
+   },
+   "size": [
+    0.559,
+    0.664,
+    0.512
+   ]
+  },
+  {
+   "index": 855,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -18.096,
+     -0.423,
+     -0.349
+    ],
+    "max": [
+     -17.632,
+     0.366,
+     0.335
+    ]
+   },
+   "size": [
+    0.464,
+    0.789,
+    0.685
+   ]
+  },
+  {
+   "index": 859,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -10.726,
+     -0.043,
+     2.355
+    ],
+    "max": [
+     -10.274,
+     0.547,
+     2.851
+    ]
+   },
+   "size": [
+    0.453,
+    0.59,
+    0.497
+   ]
+  },
+  {
+   "index": 863,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -13.663,
+     0.385,
+     -2.54
+    ],
+    "max": [
+     -13.339,
+     0.811,
+     -2.18
+    ]
+   },
+   "size": [
+    0.324,
+    0.426,
+    0.361
+   ]
+  },
+  {
+   "index": 867,
+   "name": "seagrass-tuft",
+   "key": "seagrass-tuft",
+   "meshes": 2,
+   "triangles": 365,
+   "aabb": {
+    "min": [
+     -8.599,
+     0,
+     -4.208
+    ],
+    "max": [
+     -7.991,
+     0.715,
+     -3.848
+    ]
+   },
+   "size": [
+    0.608,
+    0.715,
+    0.359
+   ]
+  },
+  {
+   "index": 871,
+   "name": "mushroom-coral",
+   "key": "mushroom-coral",
+   "meshes": 1,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     12.078,
+     -0.854,
+     8.387
+    ],
+    "max": [
+     12.708,
+     -0.705,
+     9.033
+    ]
+   },
+   "size": [
+    0.63,
+    0.149,
+    0.646
+   ]
+  },
+  {
+   "index": 873,
+   "name": "mushroom-coral",
+   "key": "mushroom-coral",
+   "meshes": 1,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     -9.904,
+     -1.113,
+     8.425
+    ],
+    "max": [
+     -9.44,
+     -0.994,
+     8.905
+    ]
+   },
+   "size": [
+    0.463,
+    0.119,
+    0.48
+   ]
+  },
+  {
+   "index": 875,
+   "name": "mushroom-coral",
+   "key": "mushroom-coral",
+   "meshes": 1,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     6.853,
+     0,
+     -0.402
+    ],
+    "max": [
+     7.469,
+     0.166,
+     0.24
+    ]
+   },
+   "size": [
+    0.616,
+    0.166,
+    0.642
+   ]
+  },
+  {
+   "index": 877,
+   "name": "moon-jellyfish",
+   "key": "moon-jellyfish",
+   "meshes": 1,
+   "triangles": 1318,
+   "aabb": {
+    "min": [
+     -8.921,
+     2.779,
+     7.788
+    ],
+    "max": [
+     -8.421,
+     3.705,
+     8.288
+    ]
+   },
+   "size": [
+    0.5,
+    0.926,
+    0.5
+   ]
+  },
+  {
+   "index": 892,
+   "name": "octopus",
+   "key": "octopus",
+   "meshes": 1,
+   "triangles": 1416,
+   "aabb": {
+    "min": [
+     16.135,
+     0.696,
+     -9.266
+    ],
+    "max": [
+     17.415,
+     1.41,
+     -7.986
+    ]
+   },
+   "size": [
+    1.28,
+    0.714,
+    1.28
+   ]
+  },
+  {
+   "index": 919,
+   "name": "coral-pinnacle",
+   "key": "coral-pinnacle",
+   "meshes": 3,
+   "triangles": 679,
+   "aabb": {
+    "min": [
+     15.13,
+     -1.507,
+     5.31
+    ],
+    "max": [
+     16.87,
+     2.739,
+     7.076
+    ]
+   },
+   "size": [
+    1.739,
+    4.246,
+    1.766
+   ]
+  },
+  {
+   "index": 925,
+   "name": "brain-coral-head",
+   "key": "brain-coral-head",
+   "meshes": 1,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     16.854,
+     0.889,
+     -8.042
+    ],
+    "max": [
+     18.372,
+     1.513,
+     -6.65
+    ]
+   },
+   "size": [
+    1.517,
+    0.624,
+    1.392
+   ]
+  },
+  {
+   "index": 927,
+   "name": "lettuce-coral",
+   "key": "lettuce-coral",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     12.854,
+     0.521,
+     -10.558
+    ],
+    "max": [
+     14.342,
+     1.545,
+     -9.049
+    ]
+   },
+   "size": [
+    1.488,
+    1.023,
+    1.509
+   ]
+  },
+  {
+   "index": 929,
+   "name": "sea-whip",
+   "key": "sea-whip",
+   "meshes": 2,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     14.542,
+     0.603,
+     -10.054
+    ],
+    "max": [
+     15.84,
+     2.206,
+     -9.165
+    ]
+   },
+   "size": [
+    1.299,
+    1.603,
+    0.889
+   ]
+  },
+  {
+   "index": 935,
+   "name": "tube-sponge",
+   "key": "tube-sponge",
+   "meshes": 1,
+   "triangles": 605,
+   "aabb": {
+    "min": [
+     3.937,
+     0.706,
+     -14.352
+    ],
+    "max": [
+     4.518,
+     1.709,
+     -13.793
+    ]
+   },
+   "size": [
+    0.582,
+    1.003,
+    0.559
+   ]
+  },
+  {
+   "index": 937,
+   "name": "sea-anemone",
+   "key": "sea-anemone",
+   "meshes": 3,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     8.381,
+     0.851,
+     -15.201
+    ],
+    "max": [
+     9.119,
+     1.528,
+     -14.486
+    ]
+   },
+   "size": [
+    0.738,
+    0.677,
+    0.715
+   ]
+  },
+  {
+   "index": 945,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     7.42,
+     1.016,
+     -17.99
+    ],
+    "max": [
+     7.92,
+     1.407,
+     -17.53
+    ]
+   },
+   "size": [
+    0.5,
+    0.391,
+    0.459
+   ]
+  },
+  {
+   "index": 947,
+   "name": "soft-coral-tree",
+   "key": "soft-coral-tree",
+   "meshes": 2,
+   "triangles": 741,
+   "aabb": {
+    "min": [
+     3.444,
+     1.574,
+     -19.191
+    ],
+    "max": [
+     4.266,
+     2.667,
+     -18.515
+    ]
+   },
+   "size": [
+    0.822,
+    1.093,
+    0.676
+   ]
+  },
+  {
+   "index": 953,
+   "name": "sea-fan",
+   "key": "sea-fan",
+   "meshes": 3,
+   "triangles": 740,
+   "aabb": {
+    "min": [
+     7.971,
+     0.232,
+     -15.074
+    ],
+    "max": [
+     8.669,
+     1.945,
+     -14.946
+    ]
+   },
+   "size": [
+    0.698,
+    1.713,
+    0.128
+   ]
+  },
+  {
+   "index": 961,
+   "name": "sea-fan",
+   "key": "sea-fan",
+   "meshes": 3,
+   "triangles": 750,
+   "aabb": {
+    "min": [
+     8.081,
+     0.445,
+     -14.284
+    ],
+    "max": [
+     8.959,
+     2.16,
+     -14.14
+    ]
+   },
+   "size": [
+    0.878,
+    1.715,
+    0.144
+   ]
+  },
+  {
+   "index": 969,
+   "name": "sea-fan",
+   "key": "sea-fan",
+   "meshes": 3,
+   "triangles": 750,
+   "aabb": {
+    "min": [
+     8.127,
+     0.335,
+     -13.503
+    ],
+    "max": [
+     8.853,
+     2.04,
+     -13.377
+    ]
+   },
+   "size": [
+    0.725,
+    1.705,
+    0.126
+   ]
+  },
+  {
+   "index": 977,
+   "name": "encrusted-reef-boulder",
+   "key": "encrusted-reef-boulder",
+   "meshes": 1,
+   "triangles": 724,
+   "aabb": {
+    "min": [
+     2.716,
+     0.251,
+     -19.284
+    ],
+    "max": [
+     5.38,
+     1.867,
+     -14.64
+    ]
+   },
+   "size": [
+    2.663,
+    1.616,
+    4.643
+   ]
+  },
+  {
+   "index": 979,
+   "name": "starfish",
+   "key": "starfish",
+   "meshes": 1,
+   "triangles": 1096,
+   "aabb": {
+    "min": [
+     4.35,
+     1.47,
+     -16.811
+    ],
+    "max": [
+     4.91,
+     1.823,
+     -16.253
+    ]
+   },
+   "size": [
+    0.56,
+    0.353,
+    0.558
+   ]
+  },
+  {
+   "index": 997,
+   "name": "moray-eel",
+   "key": "moray-eel",
+   "meshes": 1,
+   "triangles": 1134,
+   "aabb": {
+    "min": [
+     5.37,
+     1.696,
+     -18.831
+    ],
+    "max": [
+     5.91,
+     2.343,
+     -18.241
+    ]
+   },
+   "size": [
+    0.54,
+    0.647,
+    0.589
+   ]
+  },
+  {
+   "index": 1009,
+   "name": "algae-frond",
+   "key": "algae-frond",
+   "meshes": 6,
+   "triangles": 571,
+   "aabb": {
+    "min": [
+     6.466,
+     1.124,
+     -18.736
+    ],
+    "max": [
+     7.151,
+     2.042,
+     -18.234
+    ]
+   },
+   "size": [
+    0.685,
+    0.918,
+    0.502
+   ]
+  },
+  {
+   "index": 1021,
+   "name": "giant-clam",
+   "key": "giant-clam",
+   "meshes": 3,
+   "triangles": 674,
+   "aabb": {
+    "min": [
+     4.463,
+     -2.696,
+     21.683
+    ],
+    "max": [
+     5.582,
+     -1.877,
+     22.842
+    ]
+   },
+   "size": [
+    1.118,
+    0.819,
+    1.159
+   ]
+  },
+  {
+   "index": 1027,
+   "name": "ghost-net-drape",
+   "key": "ghost-net-drape",
+   "meshes": 8,
+   "triangles": 788,
+   "aabb": {
+    "min": [
+     -9.928,
+     -3.243,
+     13.757
+    ],
+    "max": [
+     -7.717,
+     -1.842,
+     15.739
+    ]
+   },
+   "size": [
+    2.211,
+    1.401,
+    1.983
+   ]
+  },
+  {
+   "index": 1045,
+   "name": "coral-bommie",
+   "key": "coral-bommie",
+   "meshes": 1,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     4.768,
+     0.376,
+     -23.954
+    ],
+    "max": [
+     8.914,
+     2.959,
+     -19.836
+    ]
+   },
+   "size": [
+    4.146,
+    2.582,
+    4.118
+   ]
+  },
+  {
+   "index": 1047,
+   "name": "giant-clam",
+   "key": "giant-clam",
+   "meshes": 3,
+   "triangles": 674,
+   "aabb": {
+    "min": [
+     8.362,
+     0.919,
+     -17.895
+    ],
+    "max": [
+     9.498,
+     1.567,
+     -16.817
+    ]
+   },
+   "size": [
+    1.136,
+    0.648,
+    1.078
+   ]
+  },
+  {
+   "index": 1053,
+   "name": "pillar-coral",
+   "key": "pillar-coral",
+   "meshes": 1,
+   "triangles": 534,
+   "aabb": {
+    "min": [
+     6.225,
+     1.089,
+     -19.847
+    ],
+    "max": [
+     7.095,
+     2.889,
+     -19.027
+    ]
+   },
+   "size": [
+    0.871,
+    1.8,
+    0.82
+   ]
+  },
+  {
+   "index": 1055,
+   "name": "sea-whip",
+   "key": "sea-whip",
+   "meshes": 2,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     6.207,
+     2.664,
+     -22.263
+    ],
+    "max": [
+     7.393,
+     4.267,
+     -21.613
+    ]
+   },
+   "size": [
+    1.187,
+    1.603,
+    0.65
+   ]
+  },
+  {
+   "index": 1061,
+   "name": "reef-rubble-terrain-blob",
+   "key": "reef-rubble-terrain-blob",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     -3.505,
+     0.748,
+     -22.208
+    ],
+    "max": [
+     4.495,
+     1.954,
+     -14.914
+    ]
+   },
+   "size": [
+    8,
+    1.206,
+    7.294
+   ]
+  },
+  {
+   "index": 1063,
+   "name": "reef-rubble-terrain-blob",
+   "key": "reef-rubble-terrain-blob",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     -17.374,
+     -0.57,
+     -10.739
+    ],
+    "max": [
+     -8.971,
+     2.301,
+     -2.904
+    ]
+   },
+   "size": [
+    8.403,
+    2.871,
+    7.835
+   ]
+  },
+  {
+   "index": 1065,
+   "name": "sea-fan",
+   "key": "sea-fan",
+   "meshes": 3,
+   "triangles": 750,
+   "aabb": {
+    "min": [
+     -14.14,
+     0.575,
+     -3.963
+    ],
+    "max": [
+     -13.414,
+     2.28,
+     -3.837
+    ]
+   },
+   "size": [
+    0.725,
+    1.705,
+    0.126
+   ]
+  },
+  {
+   "index": 1073,
+   "name": "encrusted-reef-boulder",
+   "key": "encrusted-reef-boulder",
+   "meshes": 1,
+   "triangles": 724,
+   "aabb": {
+    "min": [
+     -14.188,
+     -0.749,
+     -3.154
+    ],
+    "max": [
+     -11.173,
+     1.565,
+     -0.726
+    ]
+   },
+   "size": [
+    3.015,
+    2.313,
+    2.429
+   ]
+  },
+  {
+   "index": 1075,
+   "name": "table-coral",
+   "key": "table-coral",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -13.64,
+     0.591,
+     -6.341
+    ],
+    "max": [
+     -11.936,
+     1.648,
+     -4.604
+    ]
+   },
+   "size": [
+    1.704,
+    1.057,
+    1.737
+   ]
+  },
+  {
+   "index": 1077,
+   "name": "reef-swim-through-arch",
+   "key": "reef-swim-through-arch",
+   "meshes": 4,
+   "triangles": 666,
+   "aabb": {
+    "min": [
+     -2.224,
+     0.025,
+     -15.111
+    ],
+    "max": [
+     2.014,
+     2.682,
+     -12.708
+    ]
+   },
+   "size": [
+    4.237,
+    2.657,
+    2.403
+   ]
+  },
+  {
+   "index": 1085,
+   "name": "reef-crab",
+   "key": "reef-crab",
+   "meshes": 1,
+   "triangles": 1324,
+   "aabb": {
+    "min": [
+     8.077,
+     -1.671,
+     20.133
+    ],
+    "max": [
+     8.863,
+     -1.074,
+     21.067
+    ]
+   },
+   "size": [
+    0.786,
+    0.597,
+    0.933
+   ]
+  },
+  {
+   "index": 1122,
+   "name": "wooden-wreck-stern",
+   "key": "wooden-wreck-stern",
+   "meshes": 4,
+   "triangles": 718,
+   "aabb": {
+    "min": [
+     -13.884,
+     1.629,
+     -23.299
+    ],
+    "max": [
+     -0.303,
+     9.412,
+     -10.155
+    ]
+   },
+   "size": [
+    13.581,
+    7.784,
+    13.144
+   ]
+  },
+  {
+   "index": 1130,
+   "name": "encrusted-cargo-crate",
+   "key": "encrusted-cargo-crate",
+   "meshes": 2,
+   "triangles": 744,
+   "aabb": {
+    "min": [
+     15.999,
+     -1.2,
+     14.347
+    ],
+    "max": [
+     16.961,
+     -0.595,
+     15.302
+    ]
+   },
+   "size": [
+    0.961,
+    0.605,
+    0.955
+   ]
+  },
+  {
+   "index": 1134,
+   "name": "clay-amphora",
+   "key": "clay-amphora",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     -3.907,
+     -0.138,
+     2.245
+    ],
+    "max": [
+     -3.411,
+     0.662,
+     2.701
+    ]
+   },
+   "size": [
+    0.496,
+    0.8,
+    0.456
+   ]
+  },
+  {
+   "index": 1136,
+   "name": "bubble-vent",
+   "key": "bubble-vent",
+   "meshes": 16,
+   "triangles": 751,
+   "aabb": {
+    "min": [
+     5.412,
+     -2.946,
+     20.124
+    ],
+    "max": [
+     6.124,
+     -1.454,
+     20.846
+    ]
+   },
+   "size": [
+    0.712,
+    1.492,
+    0.722
+   ]
+  },
+  {
+   "index": 1154,
+   "name": "dive-marker-buoy",
+   "key": "dive-marker-buoy",
+   "meshes": 2,
+   "triangles": 514,
+   "aabb": {
+    "min": [
+     -4.129,
+     -0.091,
+     -2.31
+    ],
+    "max": [
+     -3.789,
+     2.909,
+     -1.93
+    ]
+   },
+   "size": [
+    0.34,
+    3,
+    0.38
+   ]
+  },
+  {
+   "index": 1158,
+   "name": "coral-rubble-seabed-tile",
+   "key": "coral-rubble-seabed-tile",
+   "meshes": 1,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     -2.691,
+     -0.071,
+     -5.065
+    ],
+    "max": [
+     1.309,
+     0.027,
+     -1.065
+    ]
+   },
+   "size": [
+    4,
+    0.098,
+    4
+   ]
+  },
+  {
+   "index": 1160,
+   "name": "coral-rubble-seabed-tile",
+   "key": "coral-rubble-seabed-tile",
+   "meshes": 1,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     7.31,
+     -0.086,
+     -2.77
+    ],
+    "max": [
+     11.31,
+     0.012,
+     1.23
+    ]
+   },
+   "size": [
+    4,
+    0.098,
+    4
+   ]
+  },
+  {
+   "index": 1162,
+   "name": "coral-rubble-seabed-tile",
+   "key": "coral-rubble-seabed-tile",
+   "meshes": 1,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     2.802,
+     -0.06,
+     -9.048
+    ],
+    "max": [
+     6.802,
+     0.038,
+     -5.048
+    ]
+   },
+   "size": [
+    4,
+    0.098,
+    4
+   ]
+  },
+  {
+   "index": 1164,
+   "name": "barracuda",
+   "key": "barracuda",
+   "meshes": 1,
+   "triangles": 996,
+   "aabb": {
+    "min": [
+     -5.248,
+     0.736,
+     16.66
+    ],
+    "max": [
+     -4.9,
+     1.193,
+     18.14
+    ]
+   },
+   "size": [
+    0.348,
+    0.457,
+    1.48
+   ]
+  },
+  {
+   "index": 1180,
+   "name": "lobster-trap",
+   "key": "lobster-trap",
+   "meshes": 7,
+   "triangles": 678,
+   "aabb": {
+    "min": [
+     4.754,
+     -0.31,
+     8.964
+    ],
+    "max": [
+     5.595,
+     0.201,
+     9.975
+    ]
+   },
+   "size": [
+    0.841,
+    0.511,
+    1.011
+   ]
+  },
+  {
+   "index": 1194,
+   "name": "reef-rubble-terrain-blob",
+   "key": "reef-rubble-terrain-blob",
+   "meshes": 1,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     4.653,
+     -1.908,
+     2.16
+    ],
+    "max": [
+     13.456,
+     1.63,
+     10.221
+    ]
+   },
+   "size": [
+    8.803,
+    3.539,
+    8.061
+   ]
+  },
+  {
+   "index": 1196,
+   "name": "diver",
+   "key": "diver",
+   "meshes": 4,
+   "triangles": 1330,
+   "aabb": {
+    "min": [
+     7.55,
+     2.739,
+     -18.497
+    ],
+    "max": [
+     8.986,
+     4.539,
+     -17.148
+    ]
+   },
+   "size": [
+    1.435,
+    1.8,
+    1.348
+   ]
+  },
+  {
+   "index": 1226,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     4.612,
+     4.711,
+     8.061
+    ],
+    "max": [
+     4.688,
+     4.906,
+     8.291
+    ]
+   },
+   "size": [
+    0.076,
+    0.195,
+    0.229
+   ]
+  },
+  {
+   "index": 1238,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     9.692,
+     5.962,
+     8.037
+    ],
+    "max": [
+     9.82,
+     6.173,
+     8.291
+    ]
+   },
+   "size": [
+    0.128,
+    0.211,
+    0.253
+   ]
+  },
+  {
+   "index": 1250,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     9.619,
+     4.947,
+     5.647
+    ],
+    "max": [
+     9.681,
+     5.133,
+     5.865
+    ]
+   },
+   "size": [
+    0.062,
+    0.186,
+    0.217
+   ]
+  },
+  {
+   "index": 1262,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     4.217,
+     4.518,
+     5.507
+    ],
+    "max": [
+     4.269,
+     4.671,
+     5.685
+    ]
+   },
+   "size": [
+    0.051,
+    0.153,
+    0.179
+   ]
+  },
+  {
+   "index": 1274,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     9.719,
+     5.46,
+     2.287
+    ],
+    "max": [
+     9.863,
+     5.673,
+     2.541
+    ]
+   },
+   "size": [
+    0.144,
+    0.213,
+    0.254
+   ]
+  },
+  {
+   "index": 1286,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     7.065,
+     5.911,
+     1.875
+    ],
+    "max": [
+     7.157,
+     6.07,
+     2.065
+    ]
+   },
+   "size": [
+    0.093,
+    0.159,
+    0.191
+   ]
+  },
+  {
+   "index": 1298,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     8.434,
+     5.936,
+     4.458
+    ],
+    "max": [
+     8.512,
+     6.092,
+     4.644
+    ]
+   },
+   "size": [
+    0.077,
+    0.156,
+    0.186
+   ]
+  },
+  {
+   "index": 1310,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     9.816,
+     5.964,
+     5.718
+    ],
+    "max": [
+     9.908,
+     6.181,
+     5.974
+    ]
+   },
+   "size": [
+    0.092,
+    0.217,
+    0.257
+   ]
+  },
+  {
+   "index": 1322,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     5.378,
+     5.833,
+     5.666
+    ],
+    "max": [
+     5.502,
+     6.03,
+     5.902
+    ]
+   },
+   "size": [
+    0.124,
+    0.197,
+    0.236
+   ]
+  },
+  {
+   "index": 1334,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     2.934,
+     5.863,
+     4.01
+    ],
+    "max": [
+     3.018,
+     6.094,
+     4.28
+    ]
+   },
+   "size": [
+    0.084,
+    0.231,
+    0.271
+   ]
+  },
+  {
+   "index": 1346,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     9.359,
+     4.643,
+     3.668
+    ],
+    "max": [
+     9.465,
+     4.867,
+     3.934
+    ]
+   },
+   "size": [
+    0.106,
+    0.224,
+    0.267
+   ]
+  },
+  {
+   "index": 1358,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     8.13,
+     4.834,
+     6.355
+    ],
+    "max": [
+     8.22,
+     5.004,
+     6.559
+    ]
+   },
+   "size": [
+    0.09,
+    0.17,
+    0.204
+   ]
+  },
+  {
+   "index": 1370,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     10.221,
+     5.288,
+     5.102
+    ],
+    "max": [
+     10.341,
+     5.483,
+     5.336
+    ]
+   },
+   "size": [
+    0.12,
+    0.195,
+    0.233
+   ]
+  },
+  {
+   "index": 1382,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     5.314,
+     5.144,
+     3.164
+    ],
+    "max": [
+     5.37,
+     5.3,
+     3.346
+    ]
+   },
+   "size": [
+    0.057,
+    0.156,
+    0.183
+   ]
+  },
+  {
+   "index": 1394,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     8.264,
+     5.205,
+     6.942
+    ],
+    "max": [
+     8.378,
+     5.388,
+     7.162
+    ]
+   },
+   "size": [
+    0.114,
+    0.183,
+    0.219
+   ]
+  },
+  {
+   "index": 1406,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     7.791,
+     5.318,
+     2.322
+    ],
+    "max": [
+     7.917,
+     5.505,
+     2.546
+    ]
+   },
+   "size": [
+    0.126,
+    0.187,
+    0.223
+   ]
+  },
+  {
+   "index": 1418,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     10.833,
+     5.52,
+     6.984
+    ],
+    "max": [
+     10.913,
+     5.683,
+     7.178
+    ]
+   },
+   "size": [
+    0.081,
+    0.163,
+    0.194
+   ]
+  },
+  {
+   "index": 1430,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     6.531,
+     5.451,
+     2.179
+    ],
+    "max": [
+     6.585,
+     5.602,
+     2.355
+    ]
+   },
+   "size": [
+    0.055,
+    0.151,
+    0.177
+   ]
+  },
+  {
+   "index": 1442,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     5.638,
+     4.71,
+     8.969
+    ],
+    "max": [
+     5.712,
+     4.894,
+     9.187
+    ]
+   },
+   "size": [
+    0.074,
+    0.184,
+    0.217
+   ]
+  },
+  {
+   "index": 1454,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     5.851,
+     4.907,
+     2.227
+    ],
+    "max": [
+     5.903,
+     5.055,
+     2.401
+    ]
+   },
+   "size": [
+    0.053,
+    0.148,
+    0.174
+   ]
+  },
+  {
+   "index": 1466,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     6.047,
+     4.976,
+     6.333
+    ],
+    "max": [
+     6.117,
+     5.166,
+     6.555
+    ]
+   },
+   "size": [
+    0.071,
+    0.19,
+    0.223
+   ]
+  },
+  {
+   "index": 1478,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     3.732,
+     5.45,
+     3.63
+    ],
+    "max": [
+     3.844,
+     5.663,
+     3.884
+    ]
+   },
+   "size": [
+    0.111,
+    0.213,
+    0.255
+   ]
+  },
+  {
+   "index": 1490,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     11.539,
+     5.427,
+     4.158
+    ],
+    "max": [
+     11.591,
+     5.576,
+     4.332
+    ]
+   },
+   "size": [
+    0.052,
+    0.149,
+    0.174
+   ]
+  },
+  {
+   "index": 1502,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     5.627,
+     5.344,
+     2.384
+    ],
+    "max": [
+     5.739,
+     5.547,
+     2.626
+    ]
+   },
+   "size": [
+    0.112,
+    0.203,
+    0.242
+   ]
+  },
+  {
+   "index": 1514,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     3.604,
+     5.598,
+     3.836
+    ],
+    "max": [
+     3.664,
+     5.781,
+     4.048
+    ]
+   },
+   "size": [
+    0.059,
+    0.183,
+    0.213
+   ]
+  },
+  {
+   "index": 1526,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     9.296,
+     5.465,
+     5.784
+    ],
+    "max": [
+     9.36,
+     5.615,
+     5.962
+    ]
+   },
+   "size": [
+    0.065,
+    0.15,
+    0.178
+   ]
+  },
+  {
+   "index": 1538,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     10.461,
+     5.315,
+     8.19
+    ],
+    "max": [
+     10.547,
+     5.538,
+     8.452
+    ]
+   },
+   "size": [
+    0.086,
+    0.223,
+    0.262
+   ]
+  },
+  {
+   "index": 1550,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     9.681,
+     5.48,
+     3.058
+    ],
+    "max": [
+     9.781,
+     5.63,
+     3.238
+    ]
+   },
+   "size": [
+    0.1,
+    0.15,
+    0.18
+   ]
+  },
+  {
+   "index": 1562,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     4.847,
+     5.207,
+     2.49
+    ],
+    "max": [
+     4.943,
+     5.439,
+     2.764
+    ]
+   },
+   "size": [
+    0.095,
+    0.232,
+    0.274
+   ]
+  },
+  {
+   "index": 1574,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     3.429,
+     5.177,
+     4.992
+    ],
+    "max": [
+     3.535,
+     5.362,
+     5.214
+    ]
+   },
+   "size": [
+    0.107,
+    0.185,
+    0.222
+   ]
+  },
+  {
+   "index": 1586,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 786,
+   "aabb": {
+    "min": [
+     19.742,
+     4.037,
+     -6.322
+    ],
+    "max": [
+     19.938,
+     4.183,
+     -6.16
+    ]
+   },
+   "size": [
+    0.196,
+    0.146,
+    0.163
+   ]
+  },
+  {
+   "index": 1598,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 802,
+   "aabb": {
+    "min": [
+     15.588,
+     3.358,
+     -8.078
+    ],
+    "max": [
+     15.77,
+     3.525,
+     -7.896
+    ]
+   },
+   "size": [
+    0.181,
+    0.167,
+    0.182
+   ]
+  },
+  {
+   "index": 1610,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     16.791,
+     3.884,
+     -8.555
+    ],
+    "max": [
+     16.985,
+     4.057,
+     -8.395
+    ]
+   },
+   "size": [
+    0.193,
+    0.173,
+    0.159
+   ]
+  },
+  {
+   "index": 1622,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 766,
+   "aabb": {
+    "min": [
+     15.864,
+     3.388,
+     -6.742
+    ],
+    "max": [
+     16.074,
+     3.497,
+     -6.604
+    ]
+   },
+   "size": [
+    0.21,
+    0.109,
+    0.139
+   ]
+  },
+  {
+   "index": 1634,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 786,
+   "aabb": {
+    "min": [
+     17.529,
+     4.588,
+     -7.182
+    ],
+    "max": [
+     17.711,
+     4.734,
+     -7
+    ]
+   },
+   "size": [
+    0.181,
+    0.146,
+    0.182
+   ]
+  },
+  {
+   "index": 1646,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 802,
+   "aabb": {
+    "min": [
+     16.521,
+     4.026,
+     -5.43
+    ],
+    "max": [
+     16.717,
+     4.193,
+     -5.266
+    ]
+   },
+   "size": [
+    0.196,
+    0.167,
+    0.163
+   ]
+  },
+  {
+   "index": 1658,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 770,
+   "aabb": {
+    "min": [
+     18.925,
+     3.964,
+     -7.75
+    ],
+    "max": [
+     19.129,
+     4.137,
+     -7.616
+    ]
+   },
+   "size": [
+    0.203,
+    0.173,
+    0.135
+   ]
+  },
+  {
+   "index": 1670,
+   "name": "reef-fish",
+   "key": "reef-fish",
+   "meshes": 1,
+   "triangles": 766,
+   "aabb": {
+    "min": [
+     18.341,
+     4.299,
+     -5.742
+    ],
+    "max": [
+     18.525,
+     4.408,
+     -5.556
+    ]
+   },
+   "size": [
+    0.184,
+    0.109,
+    0.185
+   ]
+  },
+  {
+   "index": 1682,
+   "name": "reef-crab",
+   "key": "reef-crab",
+   "meshes": 1,
+   "triangles": 1276,
+   "aabb": {
+    "min": [
+     -9.178,
+     1.964,
+     -18.315
+    ],
+    "max": [
+     -8.366,
+     2.537,
+     -17.655
+    ]
+   },
+   "size": [
+    0.812,
+    0.573,
+    0.661
+   ]
+  },
+  {
+   "index": 1719,
+   "name": "moray-eel",
+   "key": "moray-eel",
+   "meshes": 1,
+   "triangles": 1134,
+   "aabb": {
+    "min": [
+     -5.882,
+     3.915,
+     -20.438
+    ],
+    "max": [
+     -5.02,
+     4.9,
+     -19.534
+    ]
+   },
+   "size": [
+    0.862,
+    0.985,
+    0.904
+   ]
+  },
+  {
+   "index": 1731,
+   "name": "small-reef-rock",
+   "key": "small-reef-rock",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -9.797,
+     2.19,
+     -18.676
+    ],
+    "max": [
+     -9.297,
+     2.581,
+     -18.216
+    ]
+   },
+   "size": [
+    0.5,
+    0.391,
+    0.459
+   ]
+  },
+  {
+   "index": 1733,
+   "name": "coral-reef-terrain",
+   "key": "coral-reef-terrain",
+   "meshes": 1,
+   "triangles": 25328,
+   "aabb": {
+    "min": [
+     -24,
+     -5.084,
+     -25
+    ],
+    "max": [
+     22,
+     3.982,
+     25.5
+    ]
+   },
+   "size": [
+    46,
+    9.065,
+    50.5
+   ]
+  }
+ ],
+ "id": "coral-reef",
+ "label": "Coral Reef",
+ "sourceBytes": 24260236,
+ "spawn": {
+  "x": -0.06,
+  "y": 0.5,
+  "z": 9.08,
+  "on": "40 floor pieces at y=0"
+ }
+}

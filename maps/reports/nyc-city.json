@@ -1,0 +1,5426 @@
+{
+ "file": "/assets/maps/nyc-city.glb",
+ "bytes": 733504,
+ "generatedAt": "2026-11-10T03:50:40.981Z",
+ "structure": {
+  "nodes": 774,
+  "meshes": 329,
+  "materials": 206,
+  "images": 0,
+  "partContainer": "nyc-city-kit-fbca88",
+  "extensions": [
+   "KHR_materials_emissive_strength"
+  ]
+ },
+ "totals": {
+  "objects": 208,
+  "keys": 57,
+  "triangles": 95077,
+  "meshes": 344,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "curb-strip",
+   "instances": 40,
+   "triangles": 6152,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "tile-sidewalk",
+   "instances": 40,
+   "triangles": 11360,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "tile-plaza",
+   "instances": 11,
+   "triangles": 3234,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "tile-street",
+   "instances": 11,
+   "triangles": 2712,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-roof-ac",
+   "instances": 6,
+   "triangles": 3840,
+   "maxExtent": 1.909,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-traffic-cone",
+   "instances": 6,
+   "triangles": 1200,
+   "maxExtent": 0.776,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-fire-escape",
+   "instances": 5,
+   "triangles": 2940,
+   "maxExtent": 4.132,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-street-tree",
+   "instances": 5,
+   "triangles": 1360,
+   "maxExtent": 6,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-area-railing",
+   "instances": 4,
+   "triangles": 2096,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-globe-lamp",
+   "instances": 4,
+   "triangles": 1944,
+   "maxExtent": 3.98,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-street-lamp",
+   "instances": 4,
+   "triangles": 1376,
+   "maxExtent": 5.996,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-awning",
+   "instances": 3,
+   "triangles": 540,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-bench",
+   "instances": 3,
+   "triangles": 2268,
+   "maxExtent": 1.8,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-hoarding-panel",
+   "instances": 3,
+   "triangles": 1800,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-hydrant",
+   "instances": 3,
+   "triangles": 1575,
+   "maxExtent": 0.812,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-manhole-cover",
+   "instances": 3,
+   "triangles": 1956,
+   "maxExtent": 1.148,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-parking-meter",
+   "instances": 3,
+   "triangles": 1158,
+   "maxExtent": 1.3,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-scaffold",
+   "instances": 3,
+   "triangles": 1614,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-trash-basket",
+   "instances": 3,
+   "triangles": 1932,
+   "maxExtent": 0.9,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-barricade",
+   "instances": 2,
+   "triangles": 1104,
+   "maxExtent": 2.492,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-bike-rack",
+   "instances": 2,
+   "triangles": 960,
+   "maxExtent": 3.586,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-blade-sign",
+   "instances": 2,
+   "triangles": 928,
+   "maxExtent": 2.4,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-cellar-hatch",
+   "instances": 2,
+   "triangles": 1016,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-roof-bulkhead",
+   "instances": 2,
+   "triangles": 672,
+   "maxExtent": 4.182,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-steam-stack",
+   "instances": 2,
+   "triangles": 512,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-street-sign",
+   "instances": 2,
+   "triangles": 706,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-traffic-light",
+   "instances": 2,
+   "triangles": 1428,
+   "maxExtent": 5.283,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-water-tower",
+   "instances": 2,
+   "triangles": 1216,
+   "maxExtent": 5.06,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-taxi",
+   "instances": 2,
+   "triangles": 3852,
+   "maxExtent": 4.62,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-brick-church",
+   "instances": 1,
+   "triangles": 925,
+   "maxExtent": 15,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-brownstone",
+   "instances": 1,
+   "triangles": 1756,
+   "maxExtent": 13,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-corner-shop",
+   "instances": 1,
+   "triangles": 1324,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-diner",
+   "instances": 1,
+   "triangles": 1374,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-firehouse",
+   "instances": 1,
+   "triangles": 838,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-loft-warehouse",
+   "instances": 1,
+   "triangles": 1394,
+   "maxExtent": 16,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-movie-palace",
+   "instances": 1,
+   "triangles": 822,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-office-tower",
+   "instances": 1,
+   "triangles": 1262,
+   "maxExtent": 27.9,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-parking-garage",
+   "instances": 1,
+   "triangles": 1520,
+   "maxExtent": 12.95,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-subway",
+   "instances": 1,
+   "triangles": 952,
+   "maxExtent": 5.25,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-tenement",
+   "instances": 1,
+   "triangles": 1162,
+   "maxExtent": 19,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-walkup-infill",
+   "instances": 1,
+   "triangles": 764,
+   "maxExtent": 13,
+   "hasBounds": true
+  },
+  {
+   "key": "char-commuter",
+   "instances": 1,
+   "triangles": 1296,
+   "maxExtent": 1.941,
+   "hasBounds": true
+  },
+  {
+   "key": "char-construction-worker",
+   "instances": 1,
+   "triangles": 1452,
+   "maxExtent": 1.862,
+   "hasBounds": true
+  },
+  {
+   "key": "char-police-officer",
+   "instances": 1,
+   "triangles": 1193,
+   "maxExtent": 1.851,
+   "hasBounds": true
+  },
+  {
+   "key": "char-vendor",
+   "instances": 1,
+   "triangles": 1060,
+   "maxExtent": 1.843,
+   "hasBounds": true
+  },
+  {
+   "key": "island",
+   "instances": 1,
+   "triangles": 42,
+   "maxExtent": 67.484,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-bus-shelter",
+   "instances": 1,
+   "triangles": 308,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-dumpster",
+   "instances": 1,
+   "triangles": 516,
+   "maxExtent": 3.207,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-hotdog-cart",
+   "instances": 1,
+   "triangles": 764,
+   "maxExtent": 2.33,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-mailbox",
+   "instances": 1,
+   "triangles": 450,
+   "maxExtent": 1.2,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-newsstand",
+   "instances": 1,
+   "triangles": 560,
+   "maxExtent": 2.773,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-payphone",
+   "instances": 1,
+   "triangles": 420,
+   "maxExtent": 2.2,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-box-truck",
+   "instances": 1,
+   "triangles": 1528,
+   "maxExtent": 6.206,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-bus",
+   "instances": 1,
+   "triangles": 2008,
+   "maxExtent": 11,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-garbage-truck",
+   "instances": 1,
+   "triangles": 2036,
+   "maxExtent": 7.995,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-police-cruiser",
+   "instances": 1,
+   "triangles": 2130,
+   "maxExtent": 4.809,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-town-car",
+   "instances": 1,
+   "triangles": 1770,
+   "maxExtent": 5.268,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     -28.5,
+     -0.05,
+     -10.25
+    ],
+    "max": [
+     -20.5,
+     0.002,
+     -2.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 3,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     -20.5,
+     -0.05,
+     -10.25
+    ],
+    "max": [
+     -12.5,
+     0.002,
+     -2.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 5,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     -12.5,
+     -0.05,
+     -10.25
+    ],
+    "max": [
+     -4.5,
+     0.002,
+     -2.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 7,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     -10.25
+    ],
+    "max": [
+     11.5,
+     0.002,
+     -2.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 9,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     11.5,
+     -0.05,
+     -10.25
+    ],
+    "max": [
+     19.5,
+     0.002,
+     -2.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 11,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     19.5,
+     -0.05,
+     -10.25
+    ],
+    "max": [
+     27.5,
+     0.002,
+     -2.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 13,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     -26.25
+    ],
+    "max": [
+     3.5,
+     0.002,
+     -18.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 15,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     -18.25
+    ],
+    "max": [
+     3.5,
+     0.002,
+     -10.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 17,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     3.5,
+     0.002,
+     5.75
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 19,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 218,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     5.75
+    ],
+    "max": [
+     3.5,
+     0.002,
+     13.75
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 21,
+   "name": "tile-street",
+   "key": "tile-street",
+   "meshes": 1,
+   "triangles": 532,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     -10.25
+    ],
+    "max": [
+     3.5,
+     0.002,
+     -2.25
+    ]
+   },
+   "size": [
+    8,
+    0.052,
+    8
+   ]
+  },
+  {
+   "index": 23,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -28.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     -24.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 25,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -28.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     -24.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 27,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -24.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     -20.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 29,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -24.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     -20.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 31,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -20.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     -16.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 33,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -20.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     -16.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 35,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -16.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     -12.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 37,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -16.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     -12.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 39,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -12.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     -8.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 41,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -12.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     -8.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 43,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     -4.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 45,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     -4.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 47,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     7.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 49,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     7.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 51,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     7.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     11.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 53,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     7.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     11.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 55,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     11.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     15.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 57,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     11.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     15.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 59,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     15.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     19.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 61,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     15.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     19.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 63,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     19.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     23.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 65,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     19.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     23.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 67,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     23.5,
+     -0.05,
+     -2.25
+    ],
+    "max": [
+     27.5,
+     0,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 69,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     23.5,
+     -0.05,
+     -14.25
+    ],
+    "max": [
+     27.5,
+     0,
+     -10.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 71,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     -26.25
+    ],
+    "max": [
+     7.5,
+     0,
+     -22.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 73,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     -26.25
+    ],
+    "max": [
+     -4.5,
+     0,
+     -22.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 75,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     -22.25
+    ],
+    "max": [
+     7.5,
+     0,
+     -18.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 77,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     -22.25
+    ],
+    "max": [
+     -4.5,
+     0,
+     -18.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 79,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     -18.25
+    ],
+    "max": [
+     7.5,
+     0,
+     -14.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 81,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     -18.25
+    ],
+    "max": [
+     -4.5,
+     0,
+     -14.25
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 83,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     1.75
+    ],
+    "max": [
+     7.5,
+     0,
+     5.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 85,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     1.75
+    ],
+    "max": [
+     -4.5,
+     0,
+     5.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 87,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     5.75
+    ],
+    "max": [
+     7.5,
+     0,
+     9.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 89,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     5.75
+    ],
+    "max": [
+     -4.5,
+     0,
+     9.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 91,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     9.75
+    ],
+    "max": [
+     7.5,
+     0,
+     13.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 93,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     9.75
+    ],
+    "max": [
+     -4.5,
+     0,
+     13.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 95,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     13.75
+    ],
+    "max": [
+     -4.5,
+     0,
+     17.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 97,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     17.75
+    ],
+    "max": [
+     -4.5,
+     0,
+     21.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 99,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     21.75
+    ],
+    "max": [
+     -4.5,
+     0,
+     25.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 101,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     -8.5,
+     -0.05,
+     25.75
+    ],
+    "max": [
+     -4.5,
+     0,
+     29.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 103,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     13.75
+    ],
+    "max": [
+     -0.5,
+     0,
+     17.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 105,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     21.75
+    ],
+    "max": [
+     -0.5,
+     0,
+     25.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 107,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     -4.5,
+     -0.05,
+     25.75
+    ],
+    "max": [
+     -0.5,
+     0,
+     29.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 109,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     -0.5,
+     -0.05,
+     13.75
+    ],
+    "max": [
+     3.5,
+     0,
+     17.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 111,
+   "name": "tile-sidewalk",
+   "key": "tile-sidewalk",
+   "meshes": 1,
+   "triangles": 284,
+   "aabb": {
+    "min": [
+     -0.5,
+     -0.05,
+     17.75
+    ],
+    "max": [
+     3.5,
+     0,
+     21.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 113,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     -0.5,
+     -0.05,
+     21.75
+    ],
+    "max": [
+     3.5,
+     0,
+     25.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 115,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     -0.5,
+     -0.05,
+     25.75
+    ],
+    "max": [
+     3.5,
+     0,
+     29.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 117,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     13.75
+    ],
+    "max": [
+     7.5,
+     0,
+     17.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 119,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     17.75
+    ],
+    "max": [
+     7.5,
+     0,
+     21.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 121,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     21.75
+    ],
+    "max": [
+     7.5,
+     0,
+     25.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 123,
+   "name": "tile-plaza",
+   "key": "tile-plaza",
+   "meshes": 1,
+   "triangles": 294,
+   "aabb": {
+    "min": [
+     3.5,
+     -0.05,
+     25.75
+    ],
+    "max": [
+     7.5,
+     0,
+     29.75
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 125,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -26.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     -22.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 127,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -26.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     -22.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 129,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -22.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     -18.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 131,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -22.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     -18.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 133,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     -14.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 135,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -18.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     -14.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 137,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     -10.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 139,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -14.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     -10.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 141,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     9.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     13.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 143,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     9.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     13.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 145,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     13.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     17.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 147,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     13.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     17.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 149,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     17.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     21.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 151,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     17.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     21.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 153,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     21.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     25.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 155,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     21.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     25.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 157,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     -10.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     -6.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 159,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     -10.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     -6.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 161,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     5.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     9.5,
+     0.12,
+     -2.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 163,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     5.5,
+     0,
+     -10.4
+    ],
+    "max": [
+     9.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 165,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     -24.25
+    ],
+    "max": [
+     3.65,
+     0.12,
+     -20.25
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 167,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.65,
+     0,
+     -24.25
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     -20.25
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 169,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     -20.25
+    ],
+    "max": [
+     3.65,
+     0.12,
+     -16.25
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 171,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.65,
+     0,
+     -20.25
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     -16.25
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 173,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     -16.25
+    ],
+    "max": [
+     3.65,
+     0.12,
+     -12.25
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 175,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.65,
+     0,
+     -16.25
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     -12.25
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 177,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     -0.25
+    ],
+    "max": [
+     3.65,
+     0.12,
+     3.75
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 179,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.65,
+     0,
+     -0.25
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     3.75
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 181,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     3.75
+    ],
+    "max": [
+     3.65,
+     0.12,
+     7.75
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 183,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.65,
+     0,
+     3.75
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     7.75
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 185,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     7.75
+    ],
+    "max": [
+     3.65,
+     0.12,
+     11.75
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 187,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 140,
+   "aabb": {
+    "min": [
+     -4.65,
+     0,
+     7.75
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     11.75
+    ]
+   },
+   "size": [
+    0.3,
+    0.12,
+    4
+   ]
+  },
+  {
+   "index": 189,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 192,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     -2.4
+    ],
+    "max": [
+     5.5,
+     0.12,
+     -0.25
+    ]
+   },
+   "size": [
+    2.15,
+    0.12,
+    2.15
+   ]
+  },
+  {
+   "index": 191,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 192,
+   "aabb": {
+    "min": [
+     -6.5,
+     0,
+     -2.4
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     -0.25
+    ]
+   },
+   "size": [
+    2.15,
+    0.12,
+    2.15
+   ]
+  },
+  {
+   "index": 193,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 192,
+   "aabb": {
+    "min": [
+     3.35,
+     0,
+     -12.25
+    ],
+    "max": [
+     5.5,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    2.15,
+    0.12,
+    2.15
+   ]
+  },
+  {
+   "index": 195,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 192,
+   "aabb": {
+    "min": [
+     -6.5,
+     0,
+     -12.25
+    ],
+    "max": [
+     -4.35,
+     0.12,
+     -10.1
+    ]
+   },
+   "size": [
+    2.15,
+    0.12,
+    2.15
+   ]
+  },
+  {
+   "index": 197,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 192,
+   "aabb": {
+    "min": [
+     1.5,
+     0,
+     11.75
+    ],
+    "max": [
+     3.65,
+     0.12,
+     13.9
+    ]
+   },
+   "size": [
+    2.15,
+    0.12,
+    2.15
+   ]
+  },
+  {
+   "index": 199,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 192,
+   "aabb": {
+    "min": [
+     -4.65,
+     0,
+     11.75
+    ],
+    "max": [
+     -2.5,
+     0.12,
+     13.9
+    ]
+   },
+   "size": [
+    2.15,
+    0.12,
+    2.15
+   ]
+  },
+  {
+   "index": 201,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     -4.5,
+     0,
+     13.6
+    ],
+    "max": [
+     -0.5,
+     0.12,
+     13.9
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 203,
+   "name": "curb-strip",
+   "key": "curb-strip",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     -0.5,
+     0,
+     13.6
+    ],
+    "max": [
+     3.5,
+     0.12,
+     13.9
+    ]
+   },
+   "size": [
+    4,
+    0.12,
+    0.3
+   ]
+  },
+  {
+   "index": 205,
+   "name": "bldg-office-tower",
+   "key": "bldg-office-tower",
+   "meshes": 4,
+   "triangles": 1262,
+   "aabb": {
+    "min": [
+     7.5,
+     -0.05,
+     1.75
+    ],
+    "max": [
+     15.5,
+     27.85,
+     9.75
+    ]
+   },
+   "size": [
+    8,
+    27.9,
+    8
+   ]
+  },
+  {
+   "index": 212,
+   "name": "bldg-brownstone",
+   "key": "bldg-brownstone",
+   "meshes": 3,
+   "triangles": 1756,
+   "aabb": {
+    "min": [
+     15.5,
+     -0.05,
+     1.75
+    ],
+    "max": [
+     23.5,
+     12.95,
+     9.75
+    ]
+   },
+   "size": [
+    8,
+    13,
+    8
+   ]
+  },
+  {
+   "index": 218,
+   "name": "bldg-walkup-infill",
+   "key": "bldg-walkup-infill",
+   "meshes": 3,
+   "triangles": 764,
+   "aabb": {
+    "min": [
+     23.5,
+     -0.05,
+     1.75
+    ],
+    "max": [
+     27.5,
+     12.95,
+     9.75
+    ]
+   },
+   "size": [
+    4,
+    13,
+    8
+   ]
+  },
+  {
+   "index": 224,
+   "name": "bldg-corner-shop",
+   "key": "bldg-corner-shop",
+   "meshes": 2,
+   "triangles": 1324,
+   "aabb": {
+    "min": [
+     -16.5,
+     -0.05,
+     1.75
+    ],
+    "max": [
+     -8.5,
+     6.95,
+     9.75
+    ]
+   },
+   "size": [
+    8,
+    7,
+    8
+   ]
+  },
+  {
+   "index": 228,
+   "name": "bldg-movie-palace",
+   "key": "bldg-movie-palace",
+   "meshes": 3,
+   "triangles": 822,
+   "aabb": {
+    "min": [
+     -28.5,
+     -0.05,
+     1.75
+    ],
+    "max": [
+     -16.5,
+     7.1,
+     9.75
+    ]
+   },
+   "size": [
+    12,
+    7.15,
+    8
+   ]
+  },
+  {
+   "index": 234,
+   "name": "bldg-firehouse",
+   "key": "bldg-firehouse",
+   "meshes": 2,
+   "triangles": 838,
+   "aabb": {
+    "min": [
+     -16.5,
+     -0.05,
+     9.75
+    ],
+    "max": [
+     -8.5,
+     6.95,
+     17.75
+    ]
+   },
+   "size": [
+    8,
+    7,
+    8
+   ]
+  },
+  {
+   "index": 238,
+   "name": "bldg-tenement",
+   "key": "bldg-tenement",
+   "meshes": 3,
+   "triangles": 1162,
+   "aabb": {
+    "min": [
+     -16.5,
+     -0.05,
+     -22.25
+    ],
+    "max": [
+     -8.5,
+     18.95,
+     -14.25
+    ]
+   },
+   "size": [
+    8,
+    19,
+    8
+   ]
+  },
+  {
+   "index": 244,
+   "name": "bldg-brick-church",
+   "key": "bldg-brick-church",
+   "meshes": 1,
+   "triangles": 925,
+   "aabb": {
+    "min": [
+     -20.5,
+     -0.05,
+     -30.25
+    ],
+    "max": [
+     -8.5,
+     14.95,
+     -22.25
+    ]
+   },
+   "size": [
+    12,
+    15,
+    8
+   ]
+  },
+  {
+   "index": 246,
+   "name": "bldg-loft-warehouse",
+   "key": "bldg-loft-warehouse",
+   "meshes": 4,
+   "triangles": 1394,
+   "aabb": {
+    "min": [
+     7.5,
+     -0.05,
+     -26.25
+    ],
+    "max": [
+     15.5,
+     15.95,
+     -14.25
+    ]
+   },
+   "size": [
+    8,
+    16,
+    12
+   ]
+  },
+  {
+   "index": 254,
+   "name": "bldg-parking-garage",
+   "key": "bldg-parking-garage",
+   "meshes": 2,
+   "triangles": 1520,
+   "aabb": {
+    "min": [
+     15.5,
+     -0.05,
+     -26.25
+    ],
+    "max": [
+     27.5,
+     12.9,
+     -14.25
+    ]
+   },
+   "size": [
+    12,
+    12.95,
+    12
+   ]
+  },
+  {
+   "index": 258,
+   "name": "bldg-subway",
+   "key": "bldg-subway",
+   "meshes": 1,
+   "triangles": 952,
+   "aabb": {
+    "min": [
+     -4.5,
+     -1.42,
+     17.75
+    ],
+    "max": [
+     -0.5,
+     3.83,
+     21.75
+    ]
+   },
+   "size": [
+    4,
+    5.25,
+    4
+   ]
+  },
+  {
+   "index": 260,
+   "name": "bldg-diner",
+   "key": "bldg-diner",
+   "meshes": 3,
+   "triangles": 1374,
+   "aabb": {
+    "min": [
+     -2.5,
+     0,
+     25.75
+    ],
+    "max": [
+     5.5,
+     3.83,
+     29.75
+    ]
+   },
+   "size": [
+    8,
+    3.83,
+    4
+   ]
+  },
+  {
+   "index": 266,
+   "name": "prop-fire-escape",
+   "key": "prop-fire-escape",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -8.55,
+     1.818,
+     -20.25
+    ],
+    "max": [
+     -7.15,
+     5.95,
+     -16.25
+    ]
+   },
+   "size": [
+    1.4,
+    4.132,
+    4
+   ]
+  },
+  {
+   "index": 268,
+   "name": "prop-fire-escape",
+   "key": "prop-fire-escape",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -8.55,
+     4.818,
+     -20.25
+    ],
+    "max": [
+     -7.15,
+     8.95,
+     -16.25
+    ]
+   },
+   "size": [
+    1.4,
+    4.132,
+    4
+   ]
+  },
+  {
+   "index": 270,
+   "name": "prop-fire-escape",
+   "key": "prop-fire-escape",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -8.55,
+     7.818,
+     -20.25
+    ],
+    "max": [
+     -7.15,
+     11.95,
+     -16.25
+    ]
+   },
+   "size": [
+    1.4,
+    4.132,
+    4
+   ]
+  },
+  {
+   "index": 272,
+   "name": "prop-fire-escape",
+   "key": "prop-fire-escape",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -8.55,
+     10.818,
+     -20.25
+    ],
+    "max": [
+     -7.15,
+     14.95,
+     -16.25
+    ]
+   },
+   "size": [
+    1.4,
+    4.132,
+    4
+   ]
+  },
+  {
+   "index": 274,
+   "name": "prop-fire-escape",
+   "key": "prop-fire-escape",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -8.55,
+     13.818,
+     -20.25
+    ],
+    "max": [
+     -7.15,
+     17.95,
+     -16.25
+    ]
+   },
+   "size": [
+    1.4,
+    4.132,
+    4
+   ]
+  },
+  {
+   "index": 276,
+   "name": "prop-scaffold",
+   "key": "prop-scaffold",
+   "meshes": 1,
+   "triangles": 538,
+   "aabb": {
+    "min": [
+     7.5,
+     0,
+     -0.25
+    ],
+    "max": [
+     11.5,
+     3,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 278,
+   "name": "prop-scaffold",
+   "key": "prop-scaffold",
+   "meshes": 1,
+   "triangles": 538,
+   "aabb": {
+    "min": [
+     11.5,
+     0,
+     -0.25
+    ],
+    "max": [
+     15.5,
+     3,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 280,
+   "name": "prop-scaffold",
+   "key": "prop-scaffold",
+   "meshes": 1,
+   "triangles": 538,
+   "aabb": {
+    "min": [
+     15.5,
+     0,
+     -0.25
+    ],
+    "max": [
+     19.5,
+     3,
+     1.75
+    ]
+   },
+   "size": [
+    4,
+    3,
+    2
+   ]
+  },
+  {
+   "index": 282,
+   "name": "prop-hoarding-panel",
+   "key": "prop-hoarding-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     -20.5,
+     0,
+     -14.205
+    ],
+    "max": [
+     -16.5,
+     2.4,
+     -13.495
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.71
+   ]
+  },
+  {
+   "index": 284,
+   "name": "prop-hoarding-panel",
+   "key": "prop-hoarding-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     -24.5,
+     0,
+     -14.205
+    ],
+    "max": [
+     -20.5,
+     2.4,
+     -13.495
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.71
+   ]
+  },
+  {
+   "index": 286,
+   "name": "prop-hoarding-panel",
+   "key": "prop-hoarding-panel",
+   "meshes": 1,
+   "triangles": 600,
+   "aabb": {
+    "min": [
+     -28.5,
+     0,
+     -14.205
+    ],
+    "max": [
+     -24.5,
+     2.4,
+     -13.495
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.71
+   ]
+  },
+  {
+   "index": 288,
+   "name": "prop-area-railing",
+   "key": "prop-area-railing",
+   "meshes": 1,
+   "triangles": 524,
+   "aabb": {
+    "min": [
+     -8.162,
+     0,
+     -18.25
+    ],
+    "max": [
+     -8.038,
+     0.9,
+     -14.25
+    ]
+   },
+   "size": [
+    0.124,
+    0.9,
+    4
+   ]
+  },
+  {
+   "index": 290,
+   "name": "prop-area-railing",
+   "key": "prop-area-railing",
+   "meshes": 1,
+   "triangles": 524,
+   "aabb": {
+    "min": [
+     -8.162,
+     0,
+     -22.25
+    ],
+    "max": [
+     -8.038,
+     0.9,
+     -18.25
+    ]
+   },
+   "size": [
+    0.124,
+    0.9,
+    4
+   ]
+  },
+  {
+   "index": 292,
+   "name": "prop-area-railing",
+   "key": "prop-area-railing",
+   "meshes": 1,
+   "triangles": 524,
+   "aabb": {
+    "min": [
+     -8.162,
+     0,
+     -26.25
+    ],
+    "max": [
+     -8.038,
+     0.9,
+     -22.25
+    ]
+   },
+   "size": [
+    0.124,
+    0.9,
+    4
+   ]
+  },
+  {
+   "index": 294,
+   "name": "prop-area-railing",
+   "key": "prop-area-railing",
+   "meshes": 1,
+   "triangles": 524,
+   "aabb": {
+    "min": [
+     -8.162,
+     0,
+     -30.25
+    ],
+    "max": [
+     -8.038,
+     0.9,
+     -26.25
+    ]
+   },
+   "size": [
+    0.124,
+    0.9,
+    4
+   ]
+  },
+  {
+   "index": 296,
+   "name": "prop-awning",
+   "key": "prop-awning",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     -16.5,
+     2.65,
+     0.9
+    ],
+    "max": [
+     -12.5,
+     3.92,
+     1.9
+    ]
+   },
+   "size": [
+    4,
+    1.27,
+    1
+   ]
+  },
+  {
+   "index": 298,
+   "name": "prop-awning",
+   "key": "prop-awning",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     -12.5,
+     2.65,
+     0.9
+    ],
+    "max": [
+     -8.5,
+     3.92,
+     1.9
+    ]
+   },
+   "size": [
+    4,
+    1.27,
+    1
+   ]
+  },
+  {
+   "index": 300,
+   "name": "prop-awning",
+   "key": "prop-awning",
+   "meshes": 1,
+   "triangles": 180,
+   "aabb": {
+    "min": [
+     -8.75,
+     2.65,
+     3.75
+    ],
+    "max": [
+     -7.75,
+     3.92,
+     7.75
+    ]
+   },
+   "size": [
+    1,
+    1.27,
+    4
+   ]
+  },
+  {
+   "index": 302,
+   "name": "prop-blade-sign",
+   "key": "prop-blade-sign",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     -15.255,
+     4.1,
+     0.888
+    ],
+    "max": [
+     -14.745,
+     6.5,
+     1.912
+    ]
+   },
+   "size": [
+    0.51,
+    2.4,
+    1.025
+   ]
+  },
+  {
+   "index": 304,
+   "name": "prop-blade-sign",
+   "key": "prop-blade-sign",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     26.245,
+     3.2,
+     0.918
+    ],
+    "max": [
+     26.755,
+     5.6,
+     1.942
+    ]
+   },
+   "size": [
+    0.51,
+    2.4,
+    1.025
+   ]
+  },
+  {
+   "index": 306,
+   "name": "prop-roof-bulkhead",
+   "key": "prop-roof-bulkhead",
+   "meshes": 2,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     11.52,
+     27.16,
+     5.259
+    ],
+    "max": [
+     15.08,
+     30.05,
+     9.441
+    ]
+   },
+   "size": [
+    3.56,
+    2.89,
+    4.182
+   ]
+  },
+  {
+   "index": 310,
+   "name": "prop-roof-ac",
+   "key": "prop-roof-ac",
+   "meshes": 2,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     8.607,
+     27.16,
+     3.128
+    ],
+    "max": [
+     10.393,
+     28.218,
+     4.772
+    ]
+   },
+   "size": [
+    1.785,
+    1.058,
+    1.644
+   ]
+  },
+  {
+   "index": 314,
+   "name": "prop-roof-ac",
+   "key": "prop-roof-ac",
+   "meshes": 2,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     12.746,
+     27.16,
+     2.644
+    ],
+    "max": [
+     14.654,
+     28.218,
+     4.456
+    ]
+   },
+   "size": [
+    1.909,
+    1.058,
+    1.812
+   ]
+  },
+  {
+   "index": 318,
+   "name": "prop-water-tower",
+   "key": "prop-water-tower",
+   "meshes": 3,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     -16.327,
+     17.96,
+     -22.125
+    ],
+    "max": [
+     -12.273,
+     23.02,
+     -17.975
+    ]
+   },
+   "size": [
+    4.053,
+    5.06,
+    4.149
+   ]
+  },
+  {
+   "index": 324,
+   "name": "prop-roof-ac",
+   "key": "prop-roof-ac",
+   "meshes": 2,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     -11.151,
+     17.96,
+     -17.02
+    ],
+    "max": [
+     -9.449,
+     19.018,
+     -15.48
+    ]
+   },
+   "size": [
+    1.703,
+    1.058,
+    1.541
+   ]
+  },
+  {
+   "index": 328,
+   "name": "prop-water-tower",
+   "key": "prop-water-tower",
+   "meshes": 3,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     18.993,
+     12.06,
+     5.451
+    ],
+    "max": [
+     23.207,
+     17.12,
+     9.743
+    ]
+   },
+   "size": [
+    4.213,
+    5.06,
+    4.291
+   ]
+  },
+  {
+   "index": 334,
+   "name": "prop-roof-ac",
+   "key": "prop-roof-ac",
+   "meshes": 2,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     16.507,
+     12.06,
+     6.853
+    ],
+    "max": [
+     18.293,
+     13.118,
+     8.497
+    ]
+   },
+   "size": [
+    1.785,
+    1.058,
+    1.644
+   ]
+  },
+  {
+   "index": 338,
+   "name": "prop-roof-bulkhead",
+   "key": "prop-roof-bulkhead",
+   "meshes": 2,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     11.32,
+     14.96,
+     -25.941
+    ],
+    "max": [
+     14.88,
+     17.85,
+     -21.759
+    ]
+   },
+   "size": [
+    3.56,
+    2.89,
+    4.182
+   ]
+  },
+  {
+   "index": 342,
+   "name": "prop-roof-ac",
+   "key": "prop-roof-ac",
+   "meshes": 2,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     8.567,
+     14.96,
+     -17.598
+    ],
+    "max": [
+     10.233,
+     16.018,
+     -16.102
+    ]
+   },
+   "size": [
+    1.666,
+    1.058,
+    1.496
+   ]
+  },
+  {
+   "index": 346,
+   "name": "prop-roof-ac",
+   "key": "prop-roof-ac",
+   "meshes": 2,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     24.667,
+     11.96,
+     6.402
+    ],
+    "max": [
+     26.333,
+     13.018,
+     7.898
+    ]
+   },
+   "size": [
+    1.666,
+    1.058,
+    1.496
+   ]
+  },
+  {
+   "index": 350,
+   "name": "prop-traffic-light",
+   "key": "prop-traffic-light",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     4.539,
+     0,
+     -2.192
+    ],
+    "max": [
+     5.261,
+     5.283,
+     0.492
+    ]
+   },
+   "size": [
+    0.722,
+    5.283,
+    2.684
+   ]
+  },
+  {
+   "index": 352,
+   "name": "prop-traffic-light",
+   "key": "prop-traffic-light",
+   "meshes": 1,
+   "triangles": 714,
+   "aabb": {
+    "min": [
+     -6.261,
+     0,
+     -12.992
+    ],
+    "max": [
+     -5.539,
+     5.283,
+     -10.308
+    ]
+   },
+   "size": [
+    0.722,
+    5.283,
+    2.684
+   ]
+  },
+  {
+   "index": 354,
+   "name": "prop-street-sign",
+   "key": "prop-street-sign",
+   "meshes": 2,
+   "triangles": 353,
+   "aabb": {
+    "min": [
+     -6.47,
+     0,
+     -1.568
+    ],
+    "max": [
+     -5.13,
+     3,
+     -0.332
+    ]
+   },
+   "size": [
+    1.34,
+    3,
+    1.237
+   ]
+  },
+  {
+   "index": 358,
+   "name": "prop-street-sign",
+   "key": "prop-street-sign",
+   "meshes": 2,
+   "triangles": 353,
+   "aabb": {
+    "min": [
+     4.13,
+     0,
+     -12.168
+    ],
+    "max": [
+     5.47,
+     3,
+     -10.932
+    ]
+   },
+   "size": [
+    1.34,
+    3,
+    1.237
+   ]
+  },
+  {
+   "index": 362,
+   "name": "prop-street-lamp",
+   "key": "prop-street-lamp",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     -6.68,
+     0,
+     7.3
+    ],
+    "max": [
+     -4.12,
+     5.996,
+     8.2
+    ]
+   },
+   "size": [
+    2.56,
+    5.996,
+    0.9
+   ]
+  },
+  {
+   "index": 364,
+   "name": "prop-street-lamp",
+   "key": "prop-street-lamp",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     3.12,
+     0,
+     -20.7
+    ],
+    "max": [
+     5.68,
+     5.996,
+     -19.8
+    ]
+   },
+   "size": [
+    2.56,
+    5.996,
+    0.9
+   ]
+  },
+  {
+   "index": 366,
+   "name": "prop-street-lamp",
+   "key": "prop-street-lamp",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     -14.95,
+     0,
+     -2.63
+    ],
+    "max": [
+     -14.05,
+     5.996,
+     -0.07
+    ]
+   },
+   "size": [
+    0.9,
+    5.996,
+    2.56
+   ]
+  },
+  {
+   "index": 368,
+   "name": "prop-street-lamp",
+   "key": "prop-street-lamp",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     17.05,
+     0,
+     -12.43
+    ],
+    "max": [
+     17.95,
+     5.996,
+     -9.87
+    ]
+   },
+   "size": [
+    0.9,
+    5.996,
+    2.56
+   ]
+  },
+  {
+   "index": 370,
+   "name": "prop-hydrant",
+   "key": "prop-hydrant",
+   "meshes": 5,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     -11.754,
+     0,
+     -1.872
+    ],
+    "max": [
+     -11.246,
+     0.812,
+     -1.37
+    ]
+   },
+   "size": [
+    0.508,
+    0.812,
+    0.502
+   ]
+  },
+  {
+   "index": 380,
+   "name": "prop-hydrant",
+   "key": "prop-hydrant",
+   "meshes": 5,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     24.246,
+     0,
+     -11.13
+    ],
+    "max": [
+     24.754,
+     0.812,
+     -10.628
+    ]
+   },
+   "size": [
+    0.508,
+    0.812,
+    0.502
+   ]
+  },
+  {
+   "index": 390,
+   "name": "prop-hydrant",
+   "key": "prop-hydrant",
+   "meshes": 5,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     -5.38,
+     0,
+     -16.504
+    ],
+    "max": [
+     -4.878,
+     0.812,
+     -15.996
+    ]
+   },
+   "size": [
+    0.502,
+    0.812,
+    0.508
+   ]
+  },
+  {
+   "index": 400,
+   "name": "prop-parking-meter",
+   "key": "prop-parking-meter",
+   "meshes": 4,
+   "triangles": 386,
+   "aabb": {
+    "min": [
+     16.295,
+     0,
+     -1.741
+    ],
+    "max": [
+     16.705,
+     1.3,
+     -1.4
+    ]
+   },
+   "size": [
+    0.41,
+    1.3,
+    0.341
+   ]
+  },
+  {
+   "index": 408,
+   "name": "prop-parking-meter",
+   "key": "prop-parking-meter",
+   "meshes": 4,
+   "triangles": 386,
+   "aabb": {
+    "min": [
+     20.295,
+     0,
+     -1.741
+    ],
+    "max": [
+     20.705,
+     1.3,
+     -1.4
+    ]
+   },
+   "size": [
+    0.41,
+    1.3,
+    0.341
+   ]
+  },
+  {
+   "index": 416,
+   "name": "prop-parking-meter",
+   "key": "prop-parking-meter",
+   "meshes": 4,
+   "triangles": 386,
+   "aabb": {
+    "min": [
+     24.295,
+     0,
+     -1.741
+    ],
+    "max": [
+     24.705,
+     1.3,
+     -1.4
+    ]
+   },
+   "size": [
+    0.41,
+    1.3,
+    0.341
+   ]
+  },
+  {
+   "index": 424,
+   "name": "prop-bus-shelter",
+   "key": "prop-bus-shelter",
+   "meshes": 1,
+   "triangles": 308,
+   "aabb": {
+    "min": [
+     10.5,
+     0,
+     -12.8
+    ],
+    "max": [
+     14.5,
+     2.6,
+     -10.9
+    ]
+   },
+   "size": [
+    4,
+    2.6,
+    1.9
+   ]
+  },
+  {
+   "index": 426,
+   "name": "prop-mailbox",
+   "key": "prop-mailbox",
+   "meshes": 2,
+   "triangles": 450,
+   "aabb": {
+    "min": [
+     3.935,
+     0,
+     10.395
+    ],
+    "max": [
+     4.622,
+     1.2,
+     11.105
+    ]
+   },
+   "size": [
+    0.687,
+    1.2,
+    0.71
+   ]
+  },
+  {
+   "index": 430,
+   "name": "prop-payphone",
+   "key": "prop-payphone",
+   "meshes": 1,
+   "triangles": 420,
+   "aabb": {
+    "min": [
+     -7.975,
+     0,
+     4.775
+    ],
+    "max": [
+     -7.425,
+     2.2,
+     5.725
+    ]
+   },
+   "size": [
+    0.55,
+    2.2,
+    0.95
+   ]
+  },
+  {
+   "index": 432,
+   "name": "prop-trash-basket",
+   "key": "prop-trash-basket",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     -6.214,
+     0,
+     -0.21
+    ],
+    "max": [
+     -5.494,
+     0.9,
+     0.51
+    ]
+   },
+   "size": [
+    0.719,
+    0.9,
+    0.719
+   ]
+  },
+  {
+   "index": 434,
+   "name": "prop-trash-basket",
+   "key": "prop-trash-basket",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     4.54,
+     0,
+     -13.41
+    ],
+    "max": [
+     5.26,
+     0.9,
+     -12.69
+    ]
+   },
+   "size": [
+    0.719,
+    0.9,
+    0.719
+   ]
+  },
+  {
+   "index": 436,
+   "name": "prop-trash-basket",
+   "key": "prop-trash-basket",
+   "meshes": 1,
+   "triangles": 644,
+   "aabb": {
+    "min": [
+     -4.06,
+     0,
+     15.79
+    ],
+    "max": [
+     -3.34,
+     0.9,
+     16.51
+    ]
+   },
+   "size": [
+    0.719,
+    0.9,
+    0.719
+   ]
+  },
+  {
+   "index": 438,
+   "name": "prop-bench",
+   "key": "prop-bench",
+   "meshes": 1,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     25.1,
+     0,
+     -0.215
+    ],
+    "max": [
+     26.9,
+     0.935,
+     0.515
+    ]
+   },
+   "size": [
+    1.8,
+    0.935,
+    0.729
+   ]
+  },
+  {
+   "index": 440,
+   "name": "prop-bike-rack",
+   "key": "prop-bike-rack",
+   "meshes": 1,
+   "triangles": 480,
+   "aabb": {
+    "min": [
+     -16.293,
+     0,
+     -11.345
+    ],
+    "max": [
+     -12.707,
+     0.9,
+     -11.155
+    ]
+   },
+   "size": [
+    3.586,
+    0.9,
+    0.19
+   ]
+  },
+  {
+   "index": 442,
+   "name": "prop-cellar-hatch",
+   "key": "prop-cellar-hatch",
+   "meshes": 3,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     -14.5,
+     0,
+     0.05
+    ],
+    "max": [
+     -12.5,
+     0.143,
+     1.65
+    ]
+   },
+   "size": [
+    2,
+    0.143,
+    1.6
+   ]
+  },
+  {
+   "index": 448,
+   "name": "prop-cellar-hatch",
+   "key": "prop-cellar-hatch",
+   "meshes": 3,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     18.7,
+     0,
+     -13.65
+    ],
+    "max": [
+     20.3,
+     0.143,
+     -11.65
+    ]
+   },
+   "size": [
+    1.6,
+    0.143,
+    2
+   ]
+  },
+  {
+   "index": 454,
+   "name": "prop-street-tree",
+   "key": "prop-street-tree",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -22.309,
+     0,
+     -2.059
+    ],
+    "max": [
+     -18.691,
+     6,
+     1.559
+    ]
+   },
+   "size": [
+    3.617,
+    6,
+    3.617
+   ]
+  },
+  {
+   "index": 456,
+   "name": "prop-street-tree",
+   "key": "prop-street-tree",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -11.309,
+     0,
+     -14.059
+    ],
+    "max": [
+     -7.691,
+     6,
+     -10.441
+    ]
+   },
+   "size": [
+    3.617,
+    6,
+    3.617
+   ]
+  },
+  {
+   "index": 458,
+   "name": "prop-street-tree",
+   "key": "prop-street-tree",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     6.132,
+     0,
+     -14.018
+    ],
+    "max": [
+     9.868,
+     6,
+     -10.282
+    ]
+   },
+   "size": [
+    3.735,
+    6,
+    3.735
+   ]
+  },
+  {
+   "index": 460,
+   "name": "prop-street-tree",
+   "key": "prop-street-tree",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -8.251,
+     0,
+     8.699
+    ],
+    "max": [
+     -4.149,
+     6,
+     12.801
+    ]
+   },
+   "size": [
+    4.102,
+    6,
+    4.102
+   ]
+  },
+  {
+   "index": 462,
+   "name": "prop-street-tree",
+   "key": "prop-street-tree",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -8.822,
+     0,
+     18.828
+    ],
+    "max": [
+     -4.978,
+     6,
+     22.672
+    ]
+   },
+   "size": [
+    3.843,
+    6,
+    3.843
+   ]
+  },
+  {
+   "index": 464,
+   "name": "prop-steam-stack",
+   "key": "prop-steam-stack",
+   "meshes": 1,
+   "triangles": 256,
+   "aabb": {
+    "min": [
+     -3.47,
+     0,
+     2.88
+    ],
+    "max": [
+     -2.73,
+     3,
+     3.62
+    ]
+   },
+   "size": [
+    0.739,
+    3,
+    0.739
+   ]
+  },
+  {
+   "index": 466,
+   "name": "prop-steam-stack",
+   "key": "prop-steam-stack",
+   "meshes": 1,
+   "triangles": 256,
+   "aabb": {
+    "min": [
+     3.895,
+     0,
+     0.265
+    ],
+    "max": [
+     4.635,
+     3,
+     1.005
+    ]
+   },
+   "size": [
+    0.739,
+    3,
+    0.739
+   ]
+  },
+  {
+   "index": 468,
+   "name": "prop-manhole-cover",
+   "key": "prop-manhole-cover",
+   "meshes": 8,
+   "triangles": 652,
+   "aabb": {
+    "min": [
+     -10.534,
+     0,
+     -4.584
+    ],
+    "max": [
+     -9.466,
+     0.326,
+     -3.516
+    ]
+   },
+   "size": [
+    1.067,
+    0.326,
+    1.067
+   ]
+  },
+  {
+   "index": 479,
+   "name": "prop-manhole-cover",
+   "key": "prop-manhole-cover",
+   "meshes": 8,
+   "triangles": 652,
+   "aabb": {
+    "min": [
+     20.926,
+     0,
+     -9.224
+    ],
+    "max": [
+     22.074,
+     0.285,
+     -8.076
+    ]
+   },
+   "size": [
+    1.148,
+    0.285,
+    1.148
+   ]
+  },
+  {
+   "index": 490,
+   "name": "prop-manhole-cover",
+   "key": "prop-manhole-cover",
+   "meshes": 8,
+   "triangles": 652,
+   "aabb": {
+    "min": [
+     -2.234,
+     0,
+     -17.284
+    ],
+    "max": [
+     -1.166,
+     0.285,
+     -16.216
+    ]
+   },
+   "size": [
+    1.067,
+    0.285,
+    1.067
+   ]
+  },
+  {
+   "index": 501,
+   "name": "prop-traffic-cone",
+   "key": "prop-traffic-cone",
+   "meshes": 1,
+   "triangles": 200,
+   "aabb": {
+    "min": [
+     -4.38,
+     0,
+     2.07
+    ],
+    "max": [
+     -3.82,
+     0.7,
+     2.63
+    ]
+   },
+   "size": [
+    0.56,
+    0.7,
+    0.56
+   ]
+  },
+  {
+   "index": 503,
+   "name": "prop-traffic-cone",
+   "key": "prop-traffic-cone",
+   "meshes": 1,
+   "triangles": 200,
+   "aabb": {
+    "min": [
+     -2.38,
+     0,
+     3.87
+    ],
+    "max": [
+     -1.82,
+     0.7,
+     4.43
+    ]
+   },
+   "size": [
+    0.56,
+    0.7,
+    0.56
+   ]
+  },
+  {
+   "index": 505,
+   "name": "prop-traffic-cone",
+   "key": "prop-traffic-cone",
+   "meshes": 1,
+   "triangles": 200,
+   "aabb": {
+    "min": [
+     -18.98,
+     0,
+     -12.93
+    ],
+    "max": [
+     -18.42,
+     0.7,
+     -12.37
+    ]
+   },
+   "size": [
+    0.56,
+    0.7,
+    0.56
+   ]
+  },
+  {
+   "index": 507,
+   "name": "prop-traffic-cone",
+   "key": "prop-traffic-cone",
+   "meshes": 1,
+   "triangles": 200,
+   "aabb": {
+    "min": [
+     -20.28,
+     0,
+     -11.93
+    ],
+    "max": [
+     -19.72,
+     0.7,
+     -11.37
+    ]
+   },
+   "size": [
+    0.56,
+    0.7,
+    0.56
+   ]
+  },
+  {
+   "index": 509,
+   "name": "prop-traffic-cone",
+   "key": "prop-traffic-cone",
+   "meshes": 1,
+   "triangles": 200,
+   "aabb": {
+    "min": [
+     -24.98,
+     0,
+     -11.53
+    ],
+    "max": [
+     -24.42,
+     0.7,
+     -10.97
+    ]
+   },
+   "size": [
+    0.56,
+    0.7,
+    0.56
+   ]
+  },
+  {
+   "index": 511,
+   "name": "prop-barricade",
+   "key": "prop-barricade",
+   "meshes": 1,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     -22.735,
+     0,
+     -12.351
+    ],
+    "max": [
+     -20.265,
+     1.115,
+     -11.349
+    ]
+   },
+   "size": [
+    2.471,
+    1.115,
+    1.002
+   ]
+  },
+  {
+   "index": 513,
+   "name": "prop-barricade",
+   "key": "prop-barricade",
+   "meshes": 1,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     -27.246,
+     0,
+     -13.268
+    ],
+    "max": [
+     -24.754,
+     1.115,
+     -12.032
+    ]
+   },
+   "size": [
+    2.492,
+    1.115,
+    1.236
+   ]
+  },
+  {
+   "index": 515,
+   "name": "prop-dumpster",
+   "key": "prop-dumpster",
+   "meshes": 3,
+   "triangles": 516,
+   "aabb": {
+    "min": [
+     -24.104,
+     -0.05,
+     -18.3
+    ],
+    "max": [
+     -20.896,
+     1.35,
+     -16.2
+    ]
+   },
+   "size": [
+    3.207,
+    1.4,
+    2.101
+   ]
+  },
+  {
+   "index": 521,
+   "name": "prop-hotdog-cart",
+   "key": "prop-hotdog-cart",
+   "meshes": 5,
+   "triangles": 764,
+   "aabb": {
+    "min": [
+     -0.592,
+     0,
+     14.066
+    ],
+    "max": [
+     1.592,
+     2.33,
+     16.305
+    ]
+   },
+   "size": [
+    2.185,
+    2.33,
+    2.239
+   ]
+  },
+  {
+   "index": 531,
+   "name": "prop-newsstand",
+   "key": "prop-newsstand",
+   "meshes": 3,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     4.414,
+     0,
+     14.593
+    ],
+    "max": [
+     7.186,
+     2.3,
+     17.022
+    ]
+   },
+   "size": [
+    2.773,
+    2.3,
+    2.429
+   ]
+  },
+  {
+   "index": 537,
+   "name": "prop-bike-rack",
+   "key": "prop-bike-rack",
+   "meshes": 1,
+   "triangles": 480,
+   "aabb": {
+    "min": [
+     -8.293,
+     0,
+     16.255
+    ],
+    "max": [
+     -4.707,
+     0.9,
+     16.445
+    ]
+   },
+   "size": [
+    3.586,
+    0.9,
+    0.19
+   ]
+  },
+  {
+   "index": 539,
+   "name": "prop-bench",
+   "key": "prop-bench",
+   "meshes": 1,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     4.635,
+     0,
+     21.85
+    ],
+    "max": [
+     5.365,
+     0.935,
+     23.65
+    ]
+   },
+   "size": [
+    0.729,
+    0.935,
+    1.8
+   ]
+  },
+  {
+   "index": 541,
+   "name": "prop-bench",
+   "key": "prop-bench",
+   "meshes": 1,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     -6.865,
+     0,
+     22.85
+    ],
+    "max": [
+     -6.135,
+     0.935,
+     24.65
+    ]
+   },
+   "size": [
+    0.729,
+    0.935,
+    1.8
+   ]
+  },
+  {
+   "index": 543,
+   "name": "prop-globe-lamp",
+   "key": "prop-globe-lamp",
+   "meshes": 2,
+   "triangles": 486,
+   "aabb": {
+    "min": [
+     -7.94,
+     0,
+     14.83
+    ],
+    "max": [
+     -7.06,
+     3.98,
+     15.67
+    ]
+   },
+   "size": [
+    0.88,
+    3.98,
+    0.841
+   ]
+  },
+  {
+   "index": 546,
+   "name": "prop-globe-lamp",
+   "key": "prop-globe-lamp",
+   "meshes": 2,
+   "triangles": 486,
+   "aabb": {
+    "min": [
+     6.26,
+     0,
+     19.83
+    ],
+    "max": [
+     7.14,
+     3.98,
+     20.67
+    ]
+   },
+   "size": [
+    0.88,
+    3.98,
+    0.841
+   ]
+  },
+  {
+   "index": 549,
+   "name": "prop-globe-lamp",
+   "key": "prop-globe-lamp",
+   "meshes": 2,
+   "triangles": 486,
+   "aabb": {
+    "min": [
+     -7.74,
+     0,
+     27.83
+    ],
+    "max": [
+     -6.86,
+     3.98,
+     28.67
+    ]
+   },
+   "size": [
+    0.88,
+    3.98,
+    0.841
+   ]
+  },
+  {
+   "index": 552,
+   "name": "prop-globe-lamp",
+   "key": "prop-globe-lamp",
+   "meshes": 2,
+   "triangles": 486,
+   "aabb": {
+    "min": [
+     1.06,
+     0,
+     23.33
+    ],
+    "max": [
+     1.94,
+     3.98,
+     24.17
+    ]
+   },
+   "size": [
+    0.88,
+    3.98,
+    0.841
+   ]
+  },
+  {
+   "index": 555,
+   "name": "char-vendor",
+   "key": "char-vendor",
+   "meshes": 5,
+   "triangles": 1060,
+   "aabb": {
+    "min": [
+     -0.325,
+     0,
+     16.382
+    ],
+    "max": [
+     1.325,
+     1.843,
+     16.907
+    ]
+   },
+   "size": [
+    1.65,
+    1.843,
+    0.526
+   ]
+  },
+  {
+   "index": 588,
+   "name": "char-commuter",
+   "key": "char-commuter",
+   "meshes": 6,
+   "triangles": 1296,
+   "aabb": {
+    "min": [
+     -3.1,
+     0,
+     16.217
+    ],
+    "max": [
+     -1.159,
+     1.812,
+     16.949
+    ]
+   },
+   "size": [
+    1.941,
+    1.812,
+    0.732
+   ]
+  },
+  {
+   "index": 624,
+   "name": "char-police-officer",
+   "key": "char-police-officer",
+   "meshes": 4,
+   "triangles": 1193,
+   "aabb": {
+    "min": [
+     4.139,
+     0,
+     3.183
+    ],
+    "max": [
+     4.786,
+     1.851,
+     4.904
+    ]
+   },
+   "size": [
+    0.647,
+    1.851,
+    1.721
+   ]
+  },
+  {
+   "index": 654,
+   "name": "char-construction-worker",
+   "key": "char-construction-worker",
+   "meshes": 5,
+   "triangles": 1452,
+   "aabb": {
+    "min": [
+     -17.957,
+     0,
+     -12.976
+    ],
+    "max": [
+     -16.259,
+     1.862,
+     -11.901
+    ]
+   },
+   "size": [
+    1.698,
+    1.862,
+    1.075
+   ]
+  },
+  {
+   "index": 687,
+   "name": "veh-taxi",
+   "key": "veh-taxi",
+   "meshes": 5,
+   "triangles": 1926,
+   "aabb": {
+    "min": [
+     7.185,
+     0,
+     -5.206
+    ],
+    "max": [
+     11.805,
+     1.665,
+     -3.294
+    ]
+   },
+   "size": [
+    4.62,
+    1.665,
+    1.912
+   ]
+  },
+  {
+   "index": 699,
+   "name": "veh-taxi",
+   "key": "veh-taxi",
+   "meshes": 5,
+   "triangles": 1926,
+   "aabb": {
+    "min": [
+     -18.815,
+     0,
+     -5.206
+    ],
+    "max": [
+     -14.195,
+     1.665,
+     -3.294
+    ]
+   },
+   "size": [
+    4.62,
+    1.665,
+    1.912
+   ]
+  },
+  {
+   "index": 711,
+   "name": "veh-bus",
+   "key": "veh-bus",
+   "meshes": 5,
+   "triangles": 2008,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -9.349
+    ],
+    "max": [
+     19,
+     3.2,
+     -7.171
+    ]
+   },
+   "size": [
+    11,
+    3.2,
+    2.178
+   ]
+  },
+  {
+   "index": 723,
+   "name": "veh-garbage-truck",
+   "key": "veh-garbage-truck",
+   "meshes": 5,
+   "triangles": 2036,
+   "aabb": {
+    "min": [
+     -23.495,
+     0,
+     -9.688
+    ],
+    "max": [
+     -15.5,
+     3.49,
+     -6.812
+    ]
+   },
+   "size": [
+    7.995,
+    3.49,
+    2.876
+   ]
+  },
+  {
+   "index": 735,
+   "name": "veh-police-cruiser",
+   "key": "veh-police-cruiser",
+   "meshes": 5,
+   "triangles": 2130,
+   "aabb": {
+    "min": [
+     0.523,
+     0,
+     2.34
+    ],
+    "max": [
+     2.477,
+     1.688,
+     7.149
+    ]
+   },
+   "size": [
+    1.955,
+    1.688,
+    4.809
+   ]
+  },
+  {
+   "index": 747,
+   "name": "veh-box-truck",
+   "key": "veh-box-truck",
+   "meshes": 5,
+   "triangles": 1528,
+   "aabb": {
+    "min": [
+     22.434,
+     0,
+     -10.153
+    ],
+    "max": [
+     25.566,
+     2.7,
+     -3.947
+    ]
+   },
+   "size": [
+    3.133,
+    2.7,
+    6.206
+   ]
+  },
+  {
+   "index": 759,
+   "name": "veh-town-car",
+   "key": "veh-town-car",
+   "meshes": 5,
+   "triangles": 1770,
+   "aabb": {
+    "min": [
+     15.866,
+     12.06,
+     -21.659
+    ],
+    "max": [
+     21.134,
+     13.56,
+     -18.841
+    ]
+   },
+   "size": [
+    5.268,
+    1.5,
+    2.818
+   ]
+  },
+  {
+   "index": 771,
+   "name": "prop-traffic-cone",
+   "key": "prop-traffic-cone",
+   "meshes": 1,
+   "triangles": 200,
+   "aabb": {
+    "min": [
+     -3.118,
+     0,
+     1.693
+    ],
+    "max": [
+     -2.342,
+     0.7,
+     2.469
+    ]
+   },
+   "size": [
+    0.776,
+    0.7,
+    0.776
+   ]
+  },
+  {
+   "index": 773,
+   "name": "island",
+   "key": "island",
+   "meshes": 1,
+   "triangles": 42,
+   "aabb": {
+    "min": [
+     -33.012,
+     -0.767,
+     -34.607
+    ],
+    "max": [
+     32.88,
+     -0.14,
+     32.878
+    ]
+   },
+   "size": [
+    65.892,
+    0.627,
+    67.484
+   ]
+  }
+ ],
+ "id": "nyc-city",
+ "label": "Nyc City",
+ "sourceBytes": 11007188,
+ "spawn": {
+  "x": -0.07,
+  "y": 0.5,
+  "z": -0.86,
+  "on": "108 floor pieces at y=0"
+ }
+}

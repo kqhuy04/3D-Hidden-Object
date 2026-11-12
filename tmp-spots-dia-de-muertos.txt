@@ -1,0 +1,30 @@
+# dia-de-muertos  bounds -44,-8,-46 .. 42,19,49  spawn 4,3.9
+# 34 surfaces, 13 spread, showing 13
+  T  x      17  z       5  top   9.25  d    13  stand (15.4, 6.5) gap 2.19
+  T  x    12.5  z    -8.5  top    9.8  d    15  stand (13.4, -6) gap 2.64
+  T  x    12.5  z      17  top    3.8  d  15.6  stand (9.5, 18.2) gap 3.27
+  T  x    12.5  z   -14.5  top    9.8  d  20.3  stand (13.6, -13) gap 1.87
+  T  x    -5.5  z    30.5  top   3.65  d  28.2  stand (-6.4, 31.4) gap 1.3
+  T  x     6.5  z      32  top    4.5  d  28.2  stand (7.1, 34.4) gap 2.45
+  T  x    24.5  z     -16  top    9.8  d  28.6  stand (22.6, -15.8) gap 1.87
+  T  x       2  z      38  top   4.15  d  34.1  stand (1.6, 39.2) gap 1.23
+  T  x      14  z    36.5  top   3.95  d  34.1  stand (12.6, 34.5) gap 2.37
+  T  x    -2.5  z    39.5  top   4.15  d  36.2  stand (-3.4, 37) gap 2.64
+  T  x    18.5  z    39.5  top    4.2  d  38.4  stand (16.2, 39.2) gap 2.29
+  T  x     0.5  z    42.5  top   4.15  d  38.7  stand (1.5, 41) gap 1.75
+  T  x      32  z    36.5  top    4.3  d    43  stand (31.6, 34.9) gap 1.63
+# 107 open ground spots
+  G  x     4.5  z       4  y   0.78  d   0.5
+  G  x    -0.5  z      -1  y   0.07  d   6.7
+  G  x    -0.5  z       9  y  -1.74  d   6.8
+  G  x     9.5  z       9  y   3.19  d   7.5
+  G  x      12  z     1.5  y   7.19  d   8.3
+  G  x    -5.5  z       4  y  -3.36  d   9.5
+  G  x     4.5  z      -6  y   5.19  d   9.9
+  G  x     4.5  z    16.5  y   3.19  d  12.6
+  G  x      12  z      -6  y   9.19  d  12.7
+  G  x    -5.5  z      -6  y   -1.7  d  13.7
+  G  x      -3  z    16.5  y   3.19  d  14.4
+  G  x   -10.5  z      -1  y  -4.79  d  15.3
+  G  x   -10.5  z       9  y  -3.52  d  15.4
+  G  x    19.5  z       4  y   9.19  d  15.5

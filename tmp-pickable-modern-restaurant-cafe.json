@@ -1,0 +1,102 @@
+[
+  {
+    "id": "cafe-bale",
+    "name": "Straw bale",
+    "centre": [
+      12.5,
+      0.55,
+      6
+    ],
+    "ok": true,
+    "from": {
+      "angle": 3.93,
+      "px": 12.37,
+      "pz": 6.12,
+      "pitch": 1.35,
+      "hit": "cafe-bale",
+      "bodyToItem": 0.62,
+      "camToItem": 9.02,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cafe-anvil",
+    "name": "Anvil",
+    "centre": [
+      9.02,
+      1.35,
+      -3.01
+    ],
+    "ok": true,
+    "from": {
+      "angle": 1.57,
+      "px": 9.58,
+      "pz": -4.18,
+      "pitch": 0.56,
+      "hit": "cafe-anvil",
+      "bodyToItem": 1.32,
+      "camToItem": 9.22,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cafe-scarecrow",
+    "name": "Scarecrow",
+    "centre": [
+      -7.5,
+      1,
+      3.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 1.57,
+      "px": -4.5,
+      "pz": 3.5,
+      "pitch": 0.24,
+      "hit": "cafe-scarecrow",
+      "bodyToItem": 3,
+      "camToItem": 11.04,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cafe-rowboat",
+    "name": "Rowboat",
+    "centre": [
+      0,
+      0.41,
+      -4
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -0.33,
+      "pz": -1.04,
+      "pitch": 0.35,
+      "hit": "cafe-rowboat",
+      "bodyToItem": 3.07,
+      "camToItem": 11.19,
+      "prompt": true
+    }
+  },
+  {
+    "id": "cafe-tractor",
+    "name": "Riding mower",
+    "centre": [
+      -7.48,
+      0.7,
+      -3.96
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -7.15,
+      "pz": -0.02,
+      "pitch": 0.23,
+      "hit": "cafe-tractor",
+      "bodyToItem": 3.98,
+      "camToItem": 12.05,
+      "prompt": true
+    }
+  }
+]

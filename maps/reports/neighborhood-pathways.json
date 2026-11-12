@@ -1,0 +1,7468 @@
+{
+ "file": "/assets/maps/neighborhood-pathways.glb",
+ "bytes": 1341224,
+ "generatedAt": "2026-11-10T03:50:35.420Z",
+ "structure": {
+  "nodes": 1210,
+  "meshes": 475,
+  "materials": 282,
+  "images": 0,
+  "partContainer": "kit-composition",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 292,
+  "keys": 61,
+  "triangles": 183517,
+  "meshes": 481,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "rolled-kerb-run",
+   "instances": 38,
+   "triangles": 5932,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "sidewalk-slab-tile",
+   "instances": 34,
+   "triangles": 13030,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "residential-street-tile",
+   "instances": 28,
+   "triangles": 6144,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "front-walk-path-run",
+   "instances": 18,
+   "triangles": 5472,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "ornamental-front-yard-tree",
+   "instances": 16,
+   "triangles": 8256,
+   "maxExtent": 4.5,
+   "hasBounds": true
+  },
+  {
+   "key": "driveway-slab-tile",
+   "instances": 13,
+   "triangles": 3926,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "trimmed-foundation-shrub",
+   "instances": 12,
+   "triangles": 6250,
+   "maxExtent": 1.377,
+   "hasBounds": true
+  },
+  {
+   "key": "broad-canopy-shade-tree",
+   "instances": 11,
+   "triangles": 4299,
+   "maxExtent": 9.882,
+   "hasBounds": true
+  },
+  {
+   "key": "columnar-evergreen-shrub",
+   "instances": 11,
+   "triangles": 4119,
+   "maxExtent": 2.8,
+   "hasBounds": true
+  },
+  {
+   "key": "clipped-boundary-hedge-run",
+   "instances": 8,
+   "triangles": 4112,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "chain-link-fence-run",
+   "instances": 6,
+   "triangles": 3580,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "board-privacy-fence-run",
+   "instances": 5,
+   "triangles": 2648,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "timber-utility-pole",
+   "instances": 5,
+   "triangles": 2860,
+   "maxExtent": 9,
+   "hasBounds": true
+  },
+  {
+   "key": "cobra-head-street-light",
+   "instances": 4,
+   "triangles": 1856,
+   "maxExtent": 8.012,
+   "hasBounds": true
+  },
+  {
+   "key": "curbside-mailbox",
+   "instances": 4,
+   "triangles": 1496,
+   "maxExtent": 1.265,
+   "hasBounds": true
+  },
+  {
+   "key": "folding-lawn-chair",
+   "instances": 4,
+   "triangles": 2504,
+   "maxExtent": 0.913,
+   "hasBounds": true
+  },
+  {
+   "key": "picket-fence-run",
+   "instances": 4,
+   "triangles": 1720,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "suburban-resident",
+   "instances": 4,
+   "triangles": 12092,
+   "maxExtent": 1.729,
+   "hasBounds": true
+  },
+  {
+   "key": "backyard-deck-module",
+   "instances": 3,
+   "triangles": 3650,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "front-porch-bay-module",
+   "instances": 3,
+   "triangles": 4624,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "landscape-block-retaining-wall",
+   "instances": 3,
+   "triangles": 528,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "neighborhood-child",
+   "instances": 3,
+   "triangles": 7671,
+   "maxExtent": 1.172,
+   "hasBounds": true
+  },
+  {
+   "key": "raked-leaf-pile",
+   "instances": 3,
+   "triangles": 1744,
+   "maxExtent": 1.784,
+   "hasBounds": true
+  },
+  {
+   "key": "roll-out-wheelie-bin",
+   "instances": 3,
+   "triangles": 1764,
+   "maxExtent": 1.547,
+   "hasBounds": true
+  },
+  {
+   "key": "street-sign-post",
+   "instances": 3,
+   "triangles": 784,
+   "maxExtent": 2.4,
+   "hasBounds": true
+  },
+  {
+   "key": "townhouse-row-unit",
+   "instances": 3,
+   "triangles": 2510,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "backyard-doghouse",
+   "instances": 2,
+   "triangles": 1190,
+   "maxExtent": 1.571,
+   "hasBounds": true
+  },
+  {
+   "key": "backyard-garden-shed",
+   "instances": 2,
+   "triangles": 2262,
+   "maxExtent": 4.852,
+   "hasBounds": true
+  },
+  {
+   "key": "backyard-trampoline",
+   "instances": 2,
+   "triangles": 1318,
+   "maxExtent": 4.962,
+   "hasBounds": true
+  },
+  {
+   "key": "family-crossover-suv",
+   "instances": 2,
+   "triangles": 5166,
+   "maxExtent": 4.58,
+   "hasBounds": true
+  },
+  {
+   "key": "open-carport",
+   "instances": 2,
+   "triangles": 908,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "porch-front-cottage",
+   "instances": 2,
+   "triangles": 3232,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "spring-rider",
+   "instances": 2,
+   "triangles": 1338,
+   "maxExtent": 1.04,
+   "hasBounds": true
+  },
+  {
+   "key": "yard-fence-gate-bay",
+   "instances": 2,
+   "triangles": 1090,
+   "maxExtent": 4.013,
+   "hasBounds": true
+  },
+  {
+   "key": "above-ground-pool",
+   "instances": 1,
+   "triangles": 776,
+   "maxExtent": 4.925,
+   "hasBounds": true
+  },
+  {
+   "key": "backyard-barbecue-grill",
+   "instances": 1,
+   "triangles": 756,
+   "maxExtent": 1.405,
+   "hasBounds": true
+  },
+  {
+   "key": "backyard-swing-set",
+   "instances": 1,
+   "triangles": 584,
+   "maxExtent": 3.885,
+   "hasBounds": true
+  },
+  {
+   "key": "detached-garage",
+   "instances": 1,
+   "triangles": 696,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "driveway-basketball-hoop",
+   "instances": 1,
+   "triangles": 606,
+   "maxExtent": 3.28,
+   "hasBounds": true
+  },
+  {
+   "key": "family-minivan",
+   "instances": 1,
+   "triangles": 2416,
+   "maxExtent": 4.99,
+   "hasBounds": true
+  },
+  {
+   "key": "garden-birdbath",
+   "instances": 1,
+   "triangles": 560,
+   "maxExtent": 0.93,
+   "hasBounds": true
+  },
+  {
+   "key": "hvac-condenser-unit",
+   "instances": 1,
+   "triangles": 494,
+   "maxExtent": 1.049,
+   "hasBounds": true
+  },
+  {
+   "key": "kerb-storm-drain-inlet",
+   "instances": 1,
+   "triangles": 535,
+   "maxExtent": 1.01,
+   "hasBounds": true
+  },
+  {
+   "key": "kids-bmx-bike",
+   "instances": 1,
+   "triangles": 2146,
+   "maxExtent": 1.431,
+   "hasBounds": true
+  },
+  {
+   "key": "little-free-library-post",
+   "instances": 1,
+   "triangles": 370,
+   "maxExtent": 1.859,
+   "hasBounds": true
+  },
+  {
+   "key": "neighborhood-pathways-terrain",
+   "instances": 1,
+   "triangles": 25328,
+   "maxExtent": 101,
+   "hasBounds": true
+  },
+  {
+   "key": "park-drinking-fountain",
+   "instances": 1,
+   "triangles": 742,
+   "maxExtent": 1.1,
+   "hasBounds": true
+  },
+  {
+   "key": "park-picnic-shelter",
+   "instances": 1,
+   "triangles": 832,
+   "maxExtent": 8.539,
+   "hasBounds": true
+  },
+  {
+   "key": "playground-roundabout",
+   "instances": 1,
+   "triangles": 608,
+   "maxExtent": 3.254,
+   "hasBounds": true
+  },
+  {
+   "key": "playground-slide",
+   "instances": 1,
+   "triangles": 750,
+   "maxExtent": 3.164,
+   "hasBounds": true
+  },
+  {
+   "key": "push-lawn-mower",
+   "instances": 1,
+   "triangles": 694,
+   "maxExtent": 1.206,
+   "hasBounds": true
+  },
+  {
+   "key": "riding-lawn-tractor",
+   "instances": 1,
+   "triangles": 2136,
+   "maxExtent": 2.462,
+   "hasBounds": true
+  },
+  {
+   "key": "sandbox",
+   "instances": 1,
+   "triangles": 686,
+   "maxExtent": 2.552,
+   "hasBounds": true
+  },
+  {
+   "key": "single-storey-ranch-house",
+   "instances": 1,
+   "triangles": 1160,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "skateboard",
+   "instances": 1,
+   "triangles": 1592,
+   "maxExtent": 0.851,
+   "hasBounds": true
+  },
+  {
+   "key": "split-level-house",
+   "instances": 1,
+   "triangles": 1754,
+   "maxExtent": 12,
+   "hasBounds": true
+  },
+  {
+   "key": "suburban-pickup-truck",
+   "instances": 1,
+   "triangles": 2435,
+   "maxExtent": 5.6,
+   "hasBounds": true
+  },
+  {
+   "key": "teeter-totter",
+   "instances": 1,
+   "triangles": 548,
+   "maxExtent": 2.629,
+   "hasBounds": true
+  },
+  {
+   "key": "two-storey-family-house",
+   "instances": 1,
+   "triangles": 1027,
+   "maxExtent": 11.2,
+   "hasBounds": true
+  },
+  {
+   "key": "yard-sign",
+   "instances": 1,
+   "triangles": 330,
+   "maxExtent": 1.126,
+   "hasBounds": true
+  },
+  {
+   "key": "yellow-school-bus",
+   "instances": 1,
+   "triangles": 2881,
+   "maxExtent": 8.11,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "neighborhood-pathways-terrain",
+   "key": "neighborhood-pathways-terrain",
+   "meshes": 1,
+   "triangles": 25328,
+   "aabb": {
+    "min": [
+     -48,
+     -4.76,
+     -50
+    ],
+    "max": [
+     44,
+     2.241,
+     51
+    ]
+   },
+   "size": [
+    92,
+    7.001,
+    101
+   ]
+  },
+  {
+   "index": 3,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -40,
+     0,
+     0
+    ],
+    "max": [
+     -36,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 5,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     0
+    ],
+    "max": [
+     -32,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 7,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -32,
+     0,
+     0
+    ],
+    "max": [
+     -28,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 9,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     0
+    ],
+    "max": [
+     -24,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 11,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -24,
+     0,
+     0
+    ],
+    "max": [
+     -20,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 13,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 182,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     0
+    ],
+    "max": [
+     -16,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 15,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 182,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     0
+    ],
+    "max": [
+     -12,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 17,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     0
+    ],
+    "max": [
+     -8,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 19,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     0
+    ],
+    "max": [
+     -4,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 21,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     0
+    ],
+    "max": [
+     0,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 23,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 262,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     0
+    ],
+    "max": [
+     4,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 25,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     0
+    ],
+    "max": [
+     12,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 27,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     0
+    ],
+    "max": [
+     16,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 29,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     0
+    ],
+    "max": [
+     20,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 31,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     0
+    ],
+    "max": [
+     24,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 33,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     0
+    ],
+    "max": [
+     28,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 35,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     0
+    ],
+    "max": [
+     32,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 37,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     0
+    ],
+    "max": [
+     36,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 39,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 234,
+   "aabb": {
+    "min": [
+     36,
+     0,
+     0
+    ],
+    "max": [
+     40,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 41,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 304,
+   "aabb": {
+    "min": [
+     -44,
+     0,
+     0
+    ],
+    "max": [
+     -40,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 43,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 262,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     0
+    ],
+    "max": [
+     8,
+     0.07,
+     4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 45,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 194,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -4
+    ],
+    "max": [
+     8,
+     0.07,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 47,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 142,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -8
+    ],
+    "max": [
+     8,
+     0.07,
+     -4
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 49,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 142,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     4
+    ],
+    "max": [
+     8,
+     0.07,
+     8
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 51,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 142,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     8
+    ],
+    "max": [
+     8,
+     0.07,
+     12
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 53,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 142,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     12
+    ],
+    "max": [
+     8,
+     0.07,
+     16
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 55,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 142,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     16
+    ],
+    "max": [
+     8,
+     0.07,
+     20
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 57,
+   "name": "residential-street-tile",
+   "key": "residential-street-tile",
+   "meshes": 1,
+   "triangles": 304,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     20
+    ],
+    "max": [
+     8,
+     0.07,
+     24
+    ]
+   },
+   "size": [
+    4,
+    0.07,
+    4
+   ]
+  },
+  {
+   "index": 59,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     -0.56
+    ],
+    "max": [
+     -32,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 61,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -32,
+     0,
+     -0.56
+    ],
+    "max": [
+     -28,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 63,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -0.56
+    ],
+    "max": [
+     -24,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 65,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -24,
+     0,
+     -0.56
+    ],
+    "max": [
+     -20,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 67,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     -0.56
+    ],
+    "max": [
+     -16,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 69,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -0.56
+    ],
+    "max": [
+     -12,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 71,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -0.56
+    ],
+    "max": [
+     -8,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 73,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -0.56
+    ],
+    "max": [
+     -4,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 75,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -0.56
+    ],
+    "max": [
+     0,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 77,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -0.56
+    ],
+    "max": [
+     4,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 79,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -0.56
+    ],
+    "max": [
+     12,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 81,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -0.56
+    ],
+    "max": [
+     16,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 83,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -0.56
+    ],
+    "max": [
+     20,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 85,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     -0.56
+    ],
+    "max": [
+     24,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 87,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     -0.56
+    ],
+    "max": [
+     28,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 89,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 302,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     -0.56
+    ],
+    "max": [
+     32,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 91,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     -0.56
+    ],
+    "max": [
+     36,
+     0.21,
+     0
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 93,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     4
+    ],
+    "max": [
+     -32,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 95,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -32,
+     0,
+     4
+    ],
+    "max": [
+     -28,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 97,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     4
+    ],
+    "max": [
+     -24,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 99,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -24,
+     0,
+     4
+    ],
+    "max": [
+     -20,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 101,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     4
+    ],
+    "max": [
+     -16,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 103,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     4
+    ],
+    "max": [
+     -12,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 105,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     4
+    ],
+    "max": [
+     -8,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 107,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     4
+    ],
+    "max": [
+     -4,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 109,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     4
+    ],
+    "max": [
+     0,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 111,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     4
+    ],
+    "max": [
+     4,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 113,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     4
+    ],
+    "max": [
+     12,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 115,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     4
+    ],
+    "max": [
+     16,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 117,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     4
+    ],
+    "max": [
+     20,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 119,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     4
+    ],
+    "max": [
+     24,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 121,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     4
+    ],
+    "max": [
+     28,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 123,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 302,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     4
+    ],
+    "max": [
+     32,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 125,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     4
+    ],
+    "max": [
+     36,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    4,
+    0.21,
+    0.56
+   ]
+  },
+  {
+   "index": 127,
+   "name": "kerb-storm-drain-inlet",
+   "key": "kerb-storm-drain-inlet",
+   "meshes": 2,
+   "triangles": 535,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     3.55
+    ],
+    "max": [
+     5,
+     0.21,
+     4.56
+    ]
+   },
+   "size": [
+    1,
+    0.21,
+    1.01
+   ]
+  },
+  {
+   "index": 131,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     3.44,
+     0,
+     10
+    ],
+    "max": [
+     4,
+     0.21,
+     14
+    ]
+   },
+   "size": [
+    0.56,
+    0.21,
+    4
+   ]
+  },
+  {
+   "index": 133,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     10
+    ],
+    "max": [
+     8.56,
+     0.21,
+     14
+    ]
+   },
+   "size": [
+    0.56,
+    0.21,
+    4
+   ]
+  },
+  {
+   "index": 135,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     3.44,
+     0,
+     14
+    ],
+    "max": [
+     4,
+     0.21,
+     18
+    ]
+   },
+   "size": [
+    0.56,
+    0.21,
+    4
+   ]
+  },
+  {
+   "index": 137,
+   "name": "rolled-kerb-run",
+   "key": "rolled-kerb-run",
+   "meshes": 1,
+   "triangles": 148,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     14
+    ],
+    "max": [
+     8.56,
+     0.21,
+     18
+    ]
+   },
+   "size": [
+    0.56,
+    0.21,
+    4
+   ]
+  },
+  {
+   "index": 139,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     -4.56
+    ],
+    "max": [
+     -32,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 141,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -32,
+     0,
+     -4.56
+    ],
+    "max": [
+     -28,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 143,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     -4.56
+    ],
+    "max": [
+     -24,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 145,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     -24,
+     0,
+     -4.56
+    ],
+    "max": [
+     -20,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 147,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     -4.56
+    ],
+    "max": [
+     -16,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 149,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -4.56
+    ],
+    "max": [
+     -12,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 151,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -4.56
+    ],
+    "max": [
+     -8,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 153,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -4.56
+    ],
+    "max": [
+     -4,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 155,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 694,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -4.56
+    ],
+    "max": [
+     0,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 157,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -4.56
+    ],
+    "max": [
+     4,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 159,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     -4.56
+    ],
+    "max": [
+     12,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 161,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     -4.56
+    ],
+    "max": [
+     16,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 163,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     -4.56
+    ],
+    "max": [
+     20,
+     0.104,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.104,
+    4
+   ]
+  },
+  {
+   "index": 165,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     -4.56
+    ],
+    "max": [
+     24,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 167,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     -4.56
+    ],
+    "max": [
+     28,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 169,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     -4.56
+    ],
+    "max": [
+     32,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 171,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     -4.56
+    ],
+    "max": [
+     36,
+     0.05,
+     -0.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 173,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -36,
+     0,
+     4.56
+    ],
+    "max": [
+     -32,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 175,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -32,
+     0,
+     4.56
+    ],
+    "max": [
+     -28,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 177,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -28,
+     0,
+     4.56
+    ],
+    "max": [
+     -24,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 179,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -24,
+     0,
+     4.56
+    ],
+    "max": [
+     -20,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 181,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     4.56
+    ],
+    "max": [
+     -16,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 183,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     4.56
+    ],
+    "max": [
+     -12,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 185,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     4.56
+    ],
+    "max": [
+     -8,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 187,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     4.56
+    ],
+    "max": [
+     -4,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 189,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     4.56
+    ],
+    "max": [
+     0,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 191,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     4.56
+    ],
+    "max": [
+     4,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 193,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     4.56
+    ],
+    "max": [
+     12,
+     0.104,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.104,
+    4
+   ]
+  },
+  {
+   "index": 195,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     4.56
+    ],
+    "max": [
+     16,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 197,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     4.56
+    ],
+    "max": [
+     20,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 199,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 356,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     4.56
+    ],
+    "max": [
+     24,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 201,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     4.56
+    ],
+    "max": [
+     28,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 203,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 304,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     4.56
+    ],
+    "max": [
+     32,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 205,
+   "name": "sidewalk-slab-tile",
+   "key": "sidewalk-slab-tile",
+   "meshes": 1,
+   "triangles": 372,
+   "aabb": {
+    "min": [
+     32,
+     0,
+     4.56
+    ],
+    "max": [
+     36,
+     0.05,
+     8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 207,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 150,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -8.56
+    ],
+    "max": [
+     -10,
+     0.05,
+     -4.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 209,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 150,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -12.56
+    ],
+    "max": [
+     -10,
+     0.05,
+     -8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 211,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 150,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -16.56
+    ],
+    "max": [
+     -10,
+     0.05,
+     -12.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 213,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 150,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -20.56
+    ],
+    "max": [
+     -10,
+     0.05,
+     -16.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 215,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 150,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -24.56
+    ],
+    "max": [
+     -10,
+     0.05,
+     -20.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 217,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 434,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -8.56
+    ],
+    "max": [
+     30,
+     0.05,
+     -4.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 219,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 434,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -12.56
+    ],
+    "max": [
+     30,
+     0.05,
+     -8.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 221,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 134,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -12
+    ],
+    "max": [
+     8,
+     0.05,
+     -8
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 223,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 134,
+   "aabb": {
+    "min": [
+     4,
+     0,
+     -16
+    ],
+    "max": [
+     8,
+     0.05,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 225,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     8.56
+    ],
+    "max": [
+     32,
+     0.05,
+     12.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 227,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     28,
+     0,
+     12.56
+    ],
+    "max": [
+     32,
+     0.05,
+     16.56
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 229,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     24
+    ],
+    "max": [
+     4,
+     0.05,
+     28
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 231,
+   "name": "driveway-slab-tile",
+   "key": "driveway-slab-tile",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     24
+    ],
+    "max": [
+     0,
+     0.05,
+     28
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 233,
+   "name": "porch-front-cottage",
+   "key": "porch-front-cottage",
+   "meshes": 2,
+   "triangles": 1672,
+   "aabb": {
+    "min": [
+     -26,
+     0,
+     -22.54
+    ],
+    "max": [
+     -18,
+     7.72,
+     -14.54
+    ]
+   },
+   "size": [
+    8,
+    7.72,
+    8
+   ]
+  },
+  {
+   "index": 237,
+   "name": "front-porch-bay-module",
+   "key": "front-porch-bay-module",
+   "meshes": 1,
+   "triangles": 1716,
+   "aabb": {
+    "min": [
+     -25.5,
+     0,
+     -14.54
+    ],
+    "max": [
+     -21.5,
+     2.6,
+     -12.56
+    ]
+   },
+   "size": [
+    4,
+    2.6,
+    1.98
+   ]
+  },
+  {
+   "index": 239,
+   "name": "two-storey-family-house",
+   "key": "two-storey-family-house",
+   "meshes": 2,
+   "triangles": 1027,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -22.54
+    ],
+    "max": [
+     -2,
+     11.2,
+     -14.54
+    ]
+   },
+   "size": [
+    8,
+    11.2,
+    8
+   ]
+  },
+  {
+   "index": 243,
+   "name": "front-porch-bay-module",
+   "key": "front-porch-bay-module",
+   "meshes": 1,
+   "triangles": 1212,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -14.54
+    ],
+    "max": [
+     -4,
+     2.6,
+     -12.56
+    ]
+   },
+   "size": [
+    4,
+    2.6,
+    1.98
+   ]
+  },
+  {
+   "index": 245,
+   "name": "single-storey-ranch-house",
+   "key": "single-storey-ranch-house",
+   "meshes": 2,
+   "triangles": 1160,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     -20.56
+    ],
+    "max": [
+     26,
+     5.9,
+     -12.56
+    ]
+   },
+   "size": [
+    12,
+    5.9,
+    8
+   ]
+  },
+  {
+   "index": 249,
+   "name": "open-carport",
+   "key": "open-carport",
+   "meshes": 1,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     -22.54
+    ],
+    "max": [
+     -10,
+     3.816,
+     -14.54
+    ]
+   },
+   "size": [
+    4,
+    3.816,
+    8
+   ]
+  },
+  {
+   "index": 251,
+   "name": "detached-garage",
+   "key": "detached-garage",
+   "meshes": 2,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -20
+    ],
+    "max": [
+     10,
+     4.641,
+     -16
+    ]
+   },
+   "size": [
+    8,
+    4.641,
+    4
+   ]
+  },
+  {
+   "index": 255,
+   "name": "townhouse-row-unit",
+   "key": "townhouse-row-unit",
+   "meshes": 2,
+   "triangles": 844,
+   "aabb": {
+    "min": [
+     12.56,
+     0,
+     9
+    ],
+    "max": [
+     20.56,
+     7.46,
+     13
+    ]
+   },
+   "size": [
+    8,
+    7.46,
+    4
+   ]
+  },
+  {
+   "index": 259,
+   "name": "townhouse-row-unit",
+   "key": "townhouse-row-unit",
+   "meshes": 2,
+   "triangles": 822,
+   "aabb": {
+    "min": [
+     12.56,
+     0,
+     13
+    ],
+    "max": [
+     20.56,
+     7.46,
+     17
+    ]
+   },
+   "size": [
+    8,
+    7.46,
+    4
+   ]
+  },
+  {
+   "index": 263,
+   "name": "townhouse-row-unit",
+   "key": "townhouse-row-unit",
+   "meshes": 2,
+   "triangles": 844,
+   "aabb": {
+    "min": [
+     12.56,
+     0,
+     17
+    ],
+    "max": [
+     20.56,
+     7.46,
+     21
+    ]
+   },
+   "size": [
+    8,
+    7.46,
+    4
+   ]
+  },
+  {
+   "index": 267,
+   "name": "split-level-house",
+   "key": "split-level-house",
+   "meshes": 2,
+   "triangles": 1754,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     28
+    ],
+    "max": [
+     12,
+     7.277,
+     36
+    ]
+   },
+   "size": [
+    12,
+    7.277,
+    8
+   ]
+  },
+  {
+   "index": 271,
+   "name": "open-carport",
+   "key": "open-carport",
+   "meshes": 1,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     28
+    ],
+    "max": [
+     0,
+     3.816,
+     36
+    ]
+   },
+   "size": [
+    4,
+    3.816,
+    8
+   ]
+  },
+  {
+   "index": 273,
+   "name": "porch-front-cottage",
+   "key": "porch-front-cottage",
+   "meshes": 2,
+   "triangles": 1560,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     18.54
+    ],
+    "max": [
+     34,
+     7.72,
+     26.54
+    ]
+   },
+   "size": [
+    8,
+    7.72,
+    8
+   ]
+  },
+  {
+   "index": 277,
+   "name": "front-porch-bay-module",
+   "key": "front-porch-bay-module",
+   "meshes": 1,
+   "triangles": 1696,
+   "aabb": {
+    "min": [
+     29.55,
+     0,
+     16.56
+    ],
+    "max": [
+     33.55,
+     2.6,
+     18.54
+    ]
+   },
+   "size": [
+    4,
+    2.6,
+    1.98
+   ]
+  },
+  {
+   "index": 279,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -24.55,
+     0,
+     -8.56
+    ],
+    "max": [
+     -22.45,
+     0.22,
+     -4.56
+    ]
+   },
+   "size": [
+    2.1,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 281,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 308,
+   "aabb": {
+    "min": [
+     -24.12,
+     0,
+     -12.56
+    ],
+    "max": [
+     -22.88,
+     0.22,
+     -8.56
+    ]
+   },
+   "size": [
+    1.24,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 283,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 332,
+   "aabb": {
+    "min": [
+     -7.05,
+     0,
+     -8.56
+    ],
+    "max": [
+     -4.95,
+     0.22,
+     -4.56
+    ]
+   },
+   "size": [
+    2.1,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 285,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -6.62,
+     0,
+     -12.56
+    ],
+    "max": [
+     -5.38,
+     0.22,
+     -8.56
+    ]
+   },
+   "size": [
+    1.24,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 287,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 382,
+   "aabb": {
+    "min": [
+     19.5,
+     0,
+     -8.56
+    ],
+    "max": [
+     21.6,
+     0.22,
+     -4.56
+    ]
+   },
+   "size": [
+    2.1,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 289,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 298,
+   "aabb": {
+    "min": [
+     19.93,
+     0,
+     -12.56
+    ],
+    "max": [
+     21.17,
+     0.22,
+     -8.56
+    ]
+   },
+   "size": [
+    1.24,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 291,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 332,
+   "aabb": {
+    "min": [
+     30.5,
+     0,
+     8.56
+    ],
+    "max": [
+     32.6,
+     0.22,
+     12.56
+    ]
+   },
+   "size": [
+    2.1,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 293,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     30.93,
+     0,
+     12.56
+    ],
+    "max": [
+     32.17,
+     0.22,
+     16.56
+    ]
+   },
+   "size": [
+    1.24,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 295,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     5.38,
+     0,
+     24
+    ],
+    "max": [
+     6.62,
+     0.22,
+     28
+    ]
+   },
+   "size": [
+    1.24,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 297,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 244,
+   "aabb": {
+    "min": [
+     8.56,
+     0,
+     10.5
+    ],
+    "max": [
+     12.56,
+     0.06,
+     11.5
+    ]
+   },
+   "size": [
+    4,
+    0.06,
+    1
+   ]
+  },
+  {
+   "index": 299,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 244,
+   "aabb": {
+    "min": [
+     8.56,
+     0,
+     14.5
+    ],
+    "max": [
+     12.56,
+     0.06,
+     15.5
+    ]
+   },
+   "size": [
+    4,
+    0.06,
+    1
+   ]
+  },
+  {
+   "index": 301,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 244,
+   "aabb": {
+    "min": [
+     8.56,
+     0,
+     18.5
+    ],
+    "max": [
+     12.56,
+     0.06,
+     19.5
+    ]
+   },
+   "size": [
+    4,
+    0.06,
+    1
+   ]
+  },
+  {
+   "index": 303,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 332,
+   "aabb": {
+    "min": [
+     -23.05,
+     0,
+     8.56
+    ],
+    "max": [
+     -20.95,
+     0.22,
+     12.56
+    ]
+   },
+   "size": [
+    2.1,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 305,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 480,
+   "aabb": {
+    "min": [
+     -22.62,
+     0,
+     12.56
+    ],
+    "max": [
+     -20,
+     0.22,
+     16.56
+    ]
+   },
+   "size": [
+    2.62,
+    0.22,
+    4
+   ]
+  },
+  {
+   "index": 307,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 244,
+   "aabb": {
+    "min": [
+     -20,
+     0,
+     14.06
+    ],
+    "max": [
+     -16,
+     0.06,
+     15.06
+    ]
+   },
+   "size": [
+    4,
+    0.06,
+    1
+   ]
+  },
+  {
+   "index": 309,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 244,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     14.06
+    ],
+    "max": [
+     -12,
+     0.06,
+     15.06
+    ]
+   },
+   "size": [
+    4,
+    0.06,
+    1
+   ]
+  },
+  {
+   "index": 311,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 244,
+   "aabb": {
+    "min": [
+     -19.5,
+     0,
+     24.56
+    ],
+    "max": [
+     -18.5,
+     0.06,
+     28.56
+    ]
+   },
+   "size": [
+    1,
+    0.06,
+    4
+   ]
+  },
+  {
+   "index": 313,
+   "name": "front-walk-path-run",
+   "key": "front-walk-path-run",
+   "meshes": 1,
+   "triangles": 392,
+   "aabb": {
+    "min": [
+     -4.62,
+     0,
+     -30.54
+    ],
+    "max": [
+     -3.38,
+     0.45,
+     -26.54
+    ]
+   },
+   "size": [
+    1.24,
+    0.45,
+    4
+   ]
+  },
+  {
+   "index": 315,
+   "name": "picket-fence-run",
+   "key": "picket-fence-run",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -33.5,
+     0,
+     -5.578
+    ],
+    "max": [
+     -29.5,
+     1.1,
+     -5.339
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.239
+   ]
+  },
+  {
+   "index": 317,
+   "name": "picket-fence-run",
+   "key": "picket-fence-run",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -29.5,
+     0,
+     -5.578
+    ],
+    "max": [
+     -25.5,
+     1.1,
+     -5.339
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.239
+   ]
+  },
+  {
+   "index": 319,
+   "name": "picket-fence-run",
+   "key": "picket-fence-run",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -21.5,
+     0,
+     -5.578
+    ],
+    "max": [
+     -17.5,
+     1.1,
+     -5.339
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.239
+   ]
+  },
+  {
+   "index": 321,
+   "name": "picket-fence-run",
+   "key": "picket-fence-run",
+   "meshes": 1,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     -17.5,
+     0,
+     -5.578
+    ],
+    "max": [
+     -13.5,
+     1.1,
+     -5.339
+    ]
+   },
+   "size": [
+    4,
+    1.1,
+    0.239
+   ]
+  },
+  {
+   "index": 323,
+   "name": "yard-fence-gate-bay",
+   "key": "yard-fence-gate-bay",
+   "meshes": 2,
+   "triangles": 574,
+   "aabb": {
+    "min": [
+     -25.5,
+     0,
+     -6.842
+    ],
+    "max": [
+     -21.5,
+     1.2,
+     -5.394
+    ]
+   },
+   "size": [
+    4,
+    1.2,
+    1.448
+   ]
+  },
+  {
+   "index": 327,
+   "name": "board-privacy-fence-run",
+   "key": "board-privacy-fence-run",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -16,
+     0,
+     -30.582
+    ],
+    "max": [
+     -12,
+     1.8,
+     -30.418
+    ]
+   },
+   "size": [
+    4,
+    1.8,
+    0.164
+   ]
+  },
+  {
+   "index": 329,
+   "name": "board-privacy-fence-run",
+   "key": "board-privacy-fence-run",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -12,
+     0,
+     -30.582
+    ],
+    "max": [
+     -8,
+     1.8,
+     -30.418
+    ]
+   },
+   "size": [
+    4,
+    1.8,
+    0.164
+   ]
+  },
+  {
+   "index": 331,
+   "name": "board-privacy-fence-run",
+   "key": "board-privacy-fence-run",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     -30.582
+    ],
+    "max": [
+     0,
+     1.8,
+     -30.418
+    ]
+   },
+   "size": [
+    4,
+    1.8,
+    0.164
+   ]
+  },
+  {
+   "index": 333,
+   "name": "board-privacy-fence-run",
+   "key": "board-privacy-fence-run",
+   "meshes": 1,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     0,
+     0,
+     -30.582
+    ],
+    "max": [
+     4,
+     1.8,
+     -30.418
+    ]
+   },
+   "size": [
+    4,
+    1.8,
+    0.164
+   ]
+  },
+  {
+   "index": 335,
+   "name": "board-privacy-fence-run",
+   "key": "board-privacy-fence-run",
+   "meshes": 2,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     -8,
+     0,
+     -30.582
+    ],
+    "max": [
+     -4,
+     1.8,
+     -30.418
+    ]
+   },
+   "size": [
+    4,
+    1.8,
+    0.164
+   ]
+  },
+  {
+   "index": 339,
+   "name": "chain-link-fence-run",
+   "key": "chain-link-fence-run",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     -25.07
+    ],
+    "max": [
+     14,
+     1.75,
+     -24.93
+    ]
+   },
+   "size": [
+    4,
+    1.75,
+    0.14
+   ]
+  },
+  {
+   "index": 341,
+   "name": "chain-link-fence-run",
+   "key": "chain-link-fence-run",
+   "meshes": 1,
+   "triangles": 680,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     -25.07
+    ],
+    "max": [
+     18,
+     1.751,
+     -24.878
+    ]
+   },
+   "size": [
+    4,
+    1.751,
+    0.192
+   ]
+  },
+  {
+   "index": 343,
+   "name": "chain-link-fence-run",
+   "key": "chain-link-fence-run",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -25.07
+    ],
+    "max": [
+     26,
+     1.75,
+     -24.93
+    ]
+   },
+   "size": [
+    4,
+    1.75,
+    0.14
+   ]
+  },
+  {
+   "index": 345,
+   "name": "yard-fence-gate-bay",
+   "key": "yard-fence-gate-bay",
+   "meshes": 2,
+   "triangles": 516,
+   "aabb": {
+    "min": [
+     17.993,
+     0,
+     -25.869
+    ],
+    "max": [
+     22.007,
+     1.62,
+     -24.932
+    ]
+   },
+   "size": [
+    4.013,
+    1.62,
+    0.937
+   ]
+  },
+  {
+   "index": 349,
+   "name": "chain-link-fence-run",
+   "key": "chain-link-fence-run",
+   "meshes": 1,
+   "triangles": 612,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -27
+    ],
+    "max": [
+     28.07,
+     1.75,
+     -24.93
+    ]
+   },
+   "size": [
+    2.07,
+    1.75,
+    2.07
+   ]
+  },
+  {
+   "index": 351,
+   "name": "chain-link-fence-run",
+   "key": "chain-link-fence-run",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     29.86,
+     0,
+     -23
+    ],
+    "max": [
+     30,
+     1.75,
+     -19
+    ]
+   },
+   "size": [
+    0.14,
+    1.75,
+    4
+   ]
+  },
+  {
+   "index": 353,
+   "name": "chain-link-fence-run",
+   "key": "chain-link-fence-run",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     29.86,
+     0,
+     -19
+    ],
+    "max": [
+     30,
+     1.75,
+     -15
+    ]
+   },
+   "size": [
+    0.14,
+    1.75,
+    4
+   ]
+  },
+  {
+   "index": 355,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     -8.4,
+     0,
+     8
+    ],
+    "max": [
+     -7.6,
+     1.646,
+     12
+    ]
+   },
+   "size": [
+    0.8,
+    1.646,
+    4
+   ]
+  },
+  {
+   "index": 359,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     -8.4,
+     0,
+     12
+    ],
+    "max": [
+     -7.6,
+     1.646,
+     16
+    ]
+   },
+   "size": [
+    0.8,
+    1.646,
+    4
+   ]
+  },
+  {
+   "index": 363,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     -8.4,
+     0,
+     16
+    ],
+    "max": [
+     -7.6,
+     1.646,
+     20
+    ]
+   },
+   "size": [
+    0.8,
+    1.646,
+    4
+   ]
+  },
+  {
+   "index": 367,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 468,
+   "aabb": {
+    "min": [
+     -8.4,
+     0,
+     20
+    ],
+    "max": [
+     -7.6,
+     1.646,
+     24
+    ]
+   },
+   "size": [
+    0.8,
+    1.646,
+    4
+   ]
+  },
+  {
+   "index": 371,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     22.547,
+     0,
+     10
+    ],
+    "max": [
+     23.469,
+     1.708,
+     14
+    ]
+   },
+   "size": [
+    0.921,
+    1.708,
+    4
+   ]
+  },
+  {
+   "index": 375,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     22.547,
+     0,
+     14
+    ],
+    "max": [
+     23.469,
+     1.708,
+     18
+    ]
+   },
+   "size": [
+    0.921,
+    1.708,
+    4
+   ]
+  },
+  {
+   "index": 379,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     22.547,
+     0,
+     18
+    ],
+    "max": [
+     23.469,
+     1.708,
+     22
+    ]
+   },
+   "size": [
+    0.921,
+    1.708,
+    4
+   ]
+  },
+  {
+   "index": 383,
+   "name": "clipped-boundary-hedge-run",
+   "key": "clipped-boundary-hedge-run",
+   "meshes": 2,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     22.547,
+     0,
+     22
+    ],
+    "max": [
+     23.469,
+     1.692,
+     26
+    ]
+   },
+   "size": [
+    0.921,
+    1.692,
+    4
+   ]
+  },
+  {
+   "index": 387,
+   "name": "landscape-block-retaining-wall",
+   "key": "landscape-block-retaining-wall",
+   "meshes": 1,
+   "triangles": 176,
+   "aabb": {
+    "min": [
+     -14.502,
+     0,
+     -8.56
+    ],
+    "max": [
+     -14.192,
+     0.4,
+     -4.56
+    ]
+   },
+   "size": [
+    0.31,
+    0.4,
+    4
+   ]
+  },
+  {
+   "index": 389,
+   "name": "landscape-block-retaining-wall",
+   "key": "landscape-block-retaining-wall",
+   "meshes": 1,
+   "triangles": 176,
+   "aabb": {
+    "min": [
+     -14.502,
+     0,
+     -12.56
+    ],
+    "max": [
+     -14.192,
+     0.4,
+     -8.56
+    ]
+   },
+   "size": [
+    0.31,
+    0.4,
+    4
+   ]
+  },
+  {
+   "index": 391,
+   "name": "landscape-block-retaining-wall",
+   "key": "landscape-block-retaining-wall",
+   "meshes": 1,
+   "triangles": 176,
+   "aabb": {
+    "min": [
+     -14.502,
+     0,
+     -16.56
+    ],
+    "max": [
+     -14.192,
+     0.4,
+     -12.56
+    ]
+   },
+   "size": [
+    0.31,
+    0.4,
+    4
+   ]
+  },
+  {
+   "index": 393,
+   "name": "park-picnic-shelter",
+   "key": "park-picnic-shelter",
+   "meshes": 1,
+   "triangles": 832,
+   "aabb": {
+    "min": [
+     -26.269,
+     0,
+     16.291
+    ],
+    "max": [
+     -17.731,
+     6.299,
+     24.829
+    ]
+   },
+   "size": [
+    8.539,
+    6.299,
+    8.539
+   ]
+  },
+  {
+   "index": 395,
+   "name": "backyard-swing-set",
+   "key": "backyard-swing-set",
+   "meshes": 3,
+   "triangles": 584,
+   "aabb": {
+    "min": [
+     -14.442,
+     0,
+     14.103
+    ],
+    "max": [
+     -10.558,
+     2.4,
+     16.897
+    ]
+   },
+   "size": [
+    3.885,
+    2.4,
+    2.793
+   ]
+  },
+  {
+   "index": 401,
+   "name": "playground-slide",
+   "key": "playground-slide",
+   "meshes": 1,
+   "triangles": 750,
+   "aabb": {
+    "min": [
+     -11.082,
+     0,
+     17.908
+    ],
+    "max": [
+     -7.918,
+     1.95,
+     20.092
+    ]
+   },
+   "size": [
+    3.164,
+    1.95,
+    2.185
+   ]
+  },
+  {
+   "index": 403,
+   "name": "teeter-totter",
+   "key": "teeter-totter",
+   "meshes": 2,
+   "triangles": 548,
+   "aabb": {
+    "min": [
+     -14.813,
+     0,
+     20.528
+    ],
+    "max": [
+     -12.183,
+     0.928,
+     22.469
+    ]
+   },
+   "size": [
+    2.629,
+    0.928,
+    1.941
+   ]
+  },
+  {
+   "index": 407,
+   "name": "sandbox",
+   "key": "sandbox",
+   "meshes": 1,
+   "triangles": 686,
+   "aabb": {
+    "min": [
+     -21.276,
+     0,
+     26.224
+    ],
+    "max": [
+     -18.724,
+     0.454,
+     28.776
+    ]
+   },
+   "size": [
+    2.552,
+    0.454,
+    2.552
+   ]
+  },
+  {
+   "index": 409,
+   "name": "playground-roundabout",
+   "key": "playground-roundabout",
+   "meshes": 2,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     -18.127,
+     0,
+     23.873
+    ],
+    "max": [
+     -14.873,
+     0.955,
+     27.127
+    ]
+   },
+   "size": [
+    3.254,
+    0.955,
+    3.254
+   ]
+  },
+  {
+   "index": 413,
+   "name": "spring-rider",
+   "key": "spring-rider",
+   "meshes": 2,
+   "triangles": 631,
+   "aabb": {
+    "min": [
+     -22.938,
+     0,
+     26.916
+    ],
+    "max": [
+     -21.955,
+     0.942,
+     27.956
+    ]
+   },
+   "size": [
+    0.982,
+    0.942,
+    1.04
+   ]
+  },
+  {
+   "index": 417,
+   "name": "spring-rider",
+   "key": "spring-rider",
+   "meshes": 2,
+   "triangles": 707,
+   "aabb": {
+    "min": [
+     -13.966,
+     0,
+     28.955
+    ],
+    "max": [
+     -12.988,
+     1.001,
+     29.99
+    ]
+   },
+   "size": [
+    0.978,
+    1.001,
+    1.035
+   ]
+  },
+  {
+   "index": 421,
+   "name": "park-drinking-fountain",
+   "key": "park-drinking-fountain",
+   "meshes": 2,
+   "triangles": 742,
+   "aabb": {
+    "min": [
+     -10.924,
+     0,
+     10.586
+    ],
+    "max": [
+     -10.076,
+     1.1,
+     11.414
+    ]
+   },
+   "size": [
+    0.848,
+    1.1,
+    0.828
+   ]
+  },
+  {
+   "index": 425,
+   "name": "little-free-library-post",
+   "key": "little-free-library-post",
+   "meshes": 3,
+   "triangles": 370,
+   "aabb": {
+    "min": [
+     -12.831,
+     0,
+     8.82
+    ],
+    "max": [
+     -12.102,
+     1.859,
+     9.62
+    ]
+   },
+   "size": [
+    0.729,
+    1.859,
+    0.8
+   ]
+  },
+  {
+   "index": 430,
+   "name": "folding-lawn-chair",
+   "key": "folding-lawn-chair",
+   "meshes": 2,
+   "triangles": 626,
+   "aabb": {
+    "min": [
+     -23.781,
+     0,
+     18.991
+    ],
+    "max": [
+     -22.988,
+     0.913,
+     19.788
+    ]
+   },
+   "size": [
+    0.793,
+    0.913,
+    0.797
+   ]
+  },
+  {
+   "index": 434,
+   "name": "folding-lawn-chair",
+   "key": "folding-lawn-chair",
+   "meshes": 2,
+   "triangles": 626,
+   "aabb": {
+    "min": [
+     -21.624,
+     0,
+     21.205
+    ],
+    "max": [
+     -20.809,
+     0.913,
+     22.023
+    ]
+   },
+   "size": [
+    0.815,
+    0.913,
+    0.818
+   ]
+  },
+  {
+   "index": 438,
+   "name": "backyard-deck-module",
+   "key": "backyard-deck-module",
+   "meshes": 1,
+   "triangles": 1352,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     -26.54
+    ],
+    "max": [
+     -6,
+     1.4,
+     -22.54
+    ]
+   },
+   "size": [
+    4,
+    1.4,
+    4
+   ]
+  },
+  {
+   "index": 440,
+   "name": "backyard-deck-module",
+   "key": "backyard-deck-module",
+   "meshes": 1,
+   "triangles": 960,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     -26.54
+    ],
+    "max": [
+     -2,
+     0.45,
+     -22.54
+    ]
+   },
+   "size": [
+    4,
+    0.45,
+    4
+   ]
+  },
+  {
+   "index": 442,
+   "name": "backyard-deck-module",
+   "key": "backyard-deck-module",
+   "meshes": 1,
+   "triangles": 1338,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     -26.54
+    ],
+    "max": [
+     2,
+     0.45,
+     -22.54
+    ]
+   },
+   "size": [
+    4,
+    0.45,
+    4
+   ]
+  },
+  {
+   "index": 444,
+   "name": "backyard-barbecue-grill",
+   "key": "backyard-barbecue-grill",
+   "meshes": 5,
+   "triangles": 756,
+   "aabb": {
+    "min": [
+     -7.658,
+     0.45,
+     -26.151
+    ],
+    "max": [
+     -6.477,
+     1.855,
+     -24.788
+    ]
+   },
+   "size": [
+    1.181,
+    1.405,
+    1.363
+   ]
+  },
+  {
+   "index": 454,
+   "name": "folding-lawn-chair",
+   "key": "folding-lawn-chair",
+   "meshes": 2,
+   "triangles": 626,
+   "aabb": {
+    "min": [
+     -1.793,
+     0.45,
+     -25.984
+    ],
+    "max": [
+     -0.982,
+     1.363,
+     -25.18
+    ]
+   },
+   "size": [
+    0.811,
+    0.913,
+    0.804
+   ]
+  },
+  {
+   "index": 458,
+   "name": "above-ground-pool",
+   "key": "above-ground-pool",
+   "meshes": 2,
+   "triangles": 776,
+   "aabb": {
+    "min": [
+     -11.962,
+     -0.007,
+     -31.962
+    ],
+    "max": [
+     -7.038,
+     1.27,
+     -27.038
+    ]
+   },
+   "size": [
+    4.925,
+    1.277,
+    4.925
+   ]
+  },
+  {
+   "index": 462,
+   "name": "folding-lawn-chair",
+   "key": "folding-lawn-chair",
+   "meshes": 2,
+   "triangles": 626,
+   "aabb": {
+    "min": [
+     -13.203,
+     0,
+     -28.955
+    ],
+    "max": [
+     -12.375,
+     0.882,
+     -28.203
+    ]
+   },
+   "size": [
+    0.829,
+    0.882,
+    0.751
+   ]
+  },
+  {
+   "index": 466,
+   "name": "backyard-trampoline",
+   "key": "backyard-trampoline",
+   "meshes": 2,
+   "triangles": 730,
+   "aabb": {
+    "min": [
+     -27.326,
+     0,
+     -29.301
+    ],
+    "max": [
+     -22.674,
+     2.75,
+     -24.699
+    ]
+   },
+   "size": [
+    4.653,
+    2.75,
+    4.603
+   ]
+  },
+  {
+   "index": 469,
+   "name": "backyard-garden-shed",
+   "key": "backyard-garden-shed",
+   "meshes": 2,
+   "triangles": 1278,
+   "aabb": {
+    "min": [
+     -22.872,
+     0,
+     -28.872
+    ],
+    "max": [
+     -18.128,
+     4.115,
+     -24.02
+    ]
+   },
+   "size": [
+    4.744,
+    4.115,
+    4.852
+   ]
+  },
+  {
+   "index": 473,
+   "name": "backyard-doghouse",
+   "key": "backyard-doghouse",
+   "meshes": 1,
+   "triangles": 634,
+   "aabb": {
+    "min": [
+     -29.784,
+     0,
+     -24.785
+    ],
+    "max": [
+     -28.216,
+     1.185,
+     -23.215
+    ]
+   },
+   "size": [
+    1.568,
+    1.185,
+    1.571
+   ]
+  },
+  {
+   "index": 475,
+   "name": "riding-lawn-tractor",
+   "key": "riding-lawn-tractor",
+   "meshes": 5,
+   "triangles": 2136,
+   "aabb": {
+    "min": [
+     -17.324,
+     0,
+     -25.547
+    ],
+    "max": [
+     -15.573,
+     1.306,
+     -23.085
+    ]
+   },
+   "size": [
+    1.75,
+    1.306,
+    2.462
+   ]
+  },
+  {
+   "index": 487,
+   "name": "push-lawn-mower",
+   "key": "push-lawn-mower",
+   "meshes": 6,
+   "triangles": 694,
+   "aabb": {
+    "min": [
+     21.404,
+     0,
+     -22.928
+    ],
+    "max": [
+     22.61,
+     0.867,
+     -22.032
+    ]
+   },
+   "size": [
+    1.206,
+    0.867,
+    0.896
+   ]
+  },
+  {
+   "index": 499,
+   "name": "raked-leaf-pile",
+   "key": "raked-leaf-pile",
+   "meshes": 2,
+   "triangles": 583,
+   "aabb": {
+    "min": [
+     24.508,
+     0,
+     -23.067
+    ],
+    "max": [
+     26.292,
+     0.451,
+     -21.333
+    ]
+   },
+   "size": [
+    1.784,
+    0.451,
+    1.734
+   ]
+  },
+  {
+   "index": 503,
+   "name": "backyard-garden-shed",
+   "key": "backyard-garden-shed",
+   "meshes": 2,
+   "triangles": 984,
+   "aabb": {
+    "min": [
+     24.302,
+     0,
+     -21.198
+    ],
+    "max": [
+     28.698,
+     4.115,
+     -16.802
+    ]
+   },
+   "size": [
+    4.396,
+    4.115,
+    4.396
+   ]
+  },
+  {
+   "index": 507,
+   "name": "backyard-trampoline",
+   "key": "backyard-trampoline",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     30.519,
+     0.026,
+     28.03
+    ],
+    "max": [
+     35.481,
+     1.026,
+     32.97
+    ]
+   },
+   "size": [
+    4.962,
+    1,
+    4.94
+   ]
+  },
+  {
+   "index": 509,
+   "name": "backyard-doghouse",
+   "key": "backyard-doghouse",
+   "meshes": 1,
+   "triangles": 556,
+   "aabb": {
+    "min": [
+     26.682,
+     0,
+     27.894
+    ],
+    "max": [
+     28.118,
+     1.154,
+     29.306
+    ]
+   },
+   "size": [
+    1.437,
+    1.154,
+    1.412
+   ]
+  },
+  {
+   "index": 511,
+   "name": "garden-birdbath",
+   "key": "garden-birdbath",
+   "meshes": 3,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     -29.416,
+     0,
+     -9.912
+    ],
+    "max": [
+     -28.584,
+     0.93,
+     -9.088
+    ]
+   },
+   "size": [
+    0.832,
+    0.93,
+    0.824
+   ]
+  },
+  {
+   "index": 517,
+   "name": "hvac-condenser-unit",
+   "key": "hvac-condenser-unit",
+   "meshes": 2,
+   "triangles": 494,
+   "aabb": {
+    "min": [
+     -1.945,
+     0,
+     -20.52
+    ],
+    "max": [
+     -0.955,
+     1.049,
+     -19.48
+    ]
+   },
+   "size": [
+    0.99,
+    1.049,
+    1.04
+   ]
+  },
+  {
+   "index": 521,
+   "name": "yard-sign",
+   "key": "yard-sign",
+   "meshes": 2,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     15.126,
+     0,
+     -8.702
+    ],
+    "max": [
+     15.874,
+     1.126,
+     -8.298
+    ]
+   },
+   "size": [
+    0.747,
+    1.126,
+    0.405
+   ]
+  },
+  {
+   "index": 525,
+   "name": "kids-bmx-bike",
+   "key": "kids-bmx-bike",
+   "meshes": 4,
+   "triangles": 2146,
+   "aabb": {
+    "min": [
+     -3.353,
+     -0.119,
+     -8.833
+    ],
+    "max": [
+     -1.922,
+     0.595,
+     -7.739
+    ]
+   },
+   "size": [
+    1.431,
+    0.713,
+    1.094
+   ]
+  },
+  {
+   "index": 540,
+   "name": "skateboard",
+   "key": "skateboard",
+   "meshes": 7,
+   "triangles": 1592,
+   "aabb": {
+    "min": [
+     9.379,
+     0.05,
+     -3.826
+    ],
+    "max": [
+     9.821,
+     0.232,
+     -2.975
+    ]
+   },
+   "size": [
+    0.441,
+    0.182,
+    0.851
+   ]
+  },
+  {
+   "index": 554,
+   "name": "driveway-basketball-hoop",
+   "key": "driveway-basketball-hoop",
+   "meshes": 4,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     27.425,
+     0,
+     -14.037
+    ],
+    "max": [
+     28.575,
+     3.28,
+     -12.684
+    ]
+   },
+   "size": [
+    1.15,
+    3.28,
+    1.353
+   ]
+  },
+  {
+   "index": 562,
+   "name": "roll-out-wheelie-bin",
+   "key": "roll-out-wheelie-bin",
+   "meshes": 4,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     -16.777,
+     0.05,
+     -1.686
+    ],
+    "max": [
+     -16.023,
+     1.159,
+     -0.914
+    ]
+   },
+   "size": [
+    0.754,
+    1.109,
+    0.772
+   ]
+  },
+  {
+   "index": 570,
+   "name": "roll-out-wheelie-bin",
+   "key": "roll-out-wheelie-bin",
+   "meshes": 4,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     -15.506,
+     0.05,
+     -1.835
+    ],
+    "max": [
+     -14.694,
+     1.597,
+     -0.987
+    ]
+   },
+   "size": [
+    0.811,
+    1.547,
+    0.848
+   ]
+  },
+  {
+   "index": 578,
+   "name": "roll-out-wheelie-bin",
+   "key": "roll-out-wheelie-bin",
+   "meshes": 5,
+   "triangles": 628,
+   "aabb": {
+    "min": [
+     2.757,
+     0,
+     -9.049
+    ],
+    "max": [
+     3.643,
+     1.109,
+     -8.151
+    ]
+   },
+   "size": [
+    0.887,
+    1.109,
+    0.897
+   ]
+  },
+  {
+   "index": 587,
+   "name": "curbside-mailbox",
+   "key": "curbside-mailbox",
+   "meshes": 3,
+   "triangles": 374,
+   "aabb": {
+    "min": [
+     -20.753,
+     0.05,
+     -1.614
+    ],
+    "max": [
+     -20.447,
+     1.315,
+     -0.986
+    ]
+   },
+   "size": [
+    0.306,
+    1.265,
+    0.627
+   ]
+  },
+  {
+   "index": 595,
+   "name": "curbside-mailbox",
+   "key": "curbside-mailbox",
+   "meshes": 3,
+   "triangles": 374,
+   "aabb": {
+    "min": [
+     -3.358,
+     0.05,
+     -1.735
+    ],
+    "max": [
+     -3.042,
+     1.235,
+     -0.865
+    ]
+   },
+   "size": [
+    0.317,
+    1.185,
+    0.871
+   ]
+  },
+  {
+   "index": 603,
+   "name": "curbside-mailbox",
+   "key": "curbside-mailbox",
+   "meshes": 3,
+   "triangles": 374,
+   "aabb": {
+    "min": [
+     23.447,
+     0.05,
+     -1.614
+    ],
+    "max": [
+     23.753,
+     1.315,
+     -0.986
+    ]
+   },
+   "size": [
+    0.306,
+    1.265,
+    0.627
+   ]
+  },
+  {
+   "index": 611,
+   "name": "curbside-mailbox",
+   "key": "curbside-mailbox",
+   "meshes": 3,
+   "triangles": 374,
+   "aabb": {
+    "min": [
+     33.247,
+     0.05,
+     4.986
+    ],
+    "max": [
+     33.553,
+     1.315,
+     5.614
+    ]
+   },
+   "size": [
+    0.306,
+    1.265,
+    0.627
+   ]
+  },
+  {
+   "index": 619,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     -25.822,
+     0,
+     -14.725
+    ],
+    "max": [
+     -24.585,
+     0.99,
+     -13.494
+    ]
+   },
+   "size": [
+    1.237,
+    0.99,
+    1.232
+   ]
+  },
+  {
+   "index": 623,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 512,
+   "aabb": {
+    "min": [
+     -19.977,
+     0,
+     -14.663
+    ],
+    "max": [
+     -18.838,
+     0.778,
+     -13.52
+    ]
+   },
+   "size": [
+    1.139,
+    0.778,
+    1.143
+   ]
+  },
+  {
+   "index": 627,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     -9.778,
+     0,
+     -14.678
+    ],
+    "max": [
+     -8.562,
+     0.9,
+     -13.511
+    ]
+   },
+   "size": [
+    1.216,
+    0.9,
+    1.167
+   ]
+  },
+  {
+   "index": 631,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     -3.712,
+     0,
+     -14.69
+    ],
+    "max": [
+     -2.486,
+     0.994,
+     -13.519
+    ]
+   },
+   "size": [
+    1.226,
+    0.994,
+    1.171
+   ]
+  },
+  {
+   "index": 635,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     14.886,
+     0,
+     -12.605
+    ],
+    "max": [
+     15.901,
+     0.765,
+     -11.587
+    ]
+   },
+   "size": [
+    1.015,
+    0.765,
+    1.018
+   ]
+  },
+  {
+   "index": 639,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     17.659,
+     0,
+     -12.662
+    ],
+    "max": [
+     18.748,
+     0.828,
+     -11.54
+    ]
+   },
+   "size": [
+    1.088,
+    0.828,
+    1.122
+   ]
+  },
+  {
+   "index": 643,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     24.106,
+     0,
+     -12.796
+    ],
+    "max": [
+     25.483,
+     1.035,
+     -11.422
+    ]
+   },
+   "size": [
+    1.377,
+    1.035,
+    1.374
+   ]
+  },
+  {
+   "index": 647,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 512,
+   "aabb": {
+    "min": [
+     2.571,
+     0,
+     26.979
+    ],
+    "max": [
+     3.818,
+     0.907,
+     28.245
+    ]
+   },
+   "size": [
+    1.247,
+    0.907,
+    1.265
+   ]
+  },
+  {
+   "index": 651,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     9.887,
+     0,
+     27.084
+    ],
+    "max": [
+     10.908,
+     0.855,
+     28.1
+    ]
+   },
+   "size": [
+    1.021,
+    0.855,
+    1.016
+   ]
+  },
+  {
+   "index": 655,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     12.849,
+     0,
+     8.049
+    ],
+    "max": [
+     13.991,
+     0.81,
+     9.18
+    ]
+   },
+   "size": [
+    1.142,
+    0.81,
+    1.131
+   ]
+  },
+  {
+   "index": 659,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     26.511,
+     0,
+     18.002
+    ],
+    "max": [
+     27.694,
+     0.99,
+     19.178
+    ]
+   },
+   "size": [
+    1.182,
+    0.99,
+    1.176
+   ]
+  },
+  {
+   "index": 663,
+   "name": "trimmed-foundation-shrub",
+   "key": "trimmed-foundation-shrub",
+   "meshes": 2,
+   "triangles": 540,
+   "aabb": {
+    "min": [
+     32.68,
+     0,
+     18.066
+    ],
+    "max": [
+     33.714,
+     0.787,
+     19.132
+    ]
+   },
+   "size": [
+    1.034,
+    0.787,
+    1.066
+   ]
+  },
+  {
+   "index": 667,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     -27.254,
+     0,
+     -15.559
+    ],
+    "max": [
+     -25.942,
+     2.6,
+     -14.234
+    ]
+   },
+   "size": [
+    1.312,
+    2.6,
+    1.325
+   ]
+  },
+  {
+   "index": 671,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 309,
+   "aabb": {
+    "min": [
+     -18.073,
+     0,
+     -15.879
+    ],
+    "max": [
+     -17.129,
+     2.1,
+     -14.914
+    ]
+   },
+   "size": [
+    0.945,
+    2.1,
+    0.965
+   ]
+  },
+  {
+   "index": 675,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     -11.172,
+     0,
+     -15.765
+    ],
+    "max": [
+     -10.02,
+     2.4,
+     -14.633
+    ]
+   },
+   "size": [
+    1.152,
+    2.4,
+    1.132
+   ]
+  },
+  {
+   "index": 679,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 453,
+   "aabb": {
+    "min": [
+     12.65,
+     0,
+     -13.946
+    ],
+    "max": [
+     14.15,
+     2.8,
+     -12.454
+    ]
+   },
+   "size": [
+    1.5,
+    2.8,
+    1.493
+   ]
+  },
+  {
+   "index": 683,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     12.862,
+     0,
+     20.857
+    ],
+    "max": [
+     13.941,
+     2.2,
+     21.95
+    ]
+   },
+   "size": [
+    1.078,
+    2.2,
+    1.093
+   ]
+  },
+  {
+   "index": 687,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     34.153,
+     0,
+     18.755
+    ],
+    "max": [
+     35.442,
+     2.5,
+     20.052
+    ]
+   },
+   "size": [
+    1.289,
+    2.5,
+    1.297
+   ]
+  },
+  {
+   "index": 691,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -24.071,
+     0,
+     -4.512
+    ],
+    "max": [
+     -19.962,
+     4.5,
+     -0.502
+    ]
+   },
+   "size": [
+    4.109,
+    4.5,
+    4.009
+   ]
+  },
+  {
+   "index": 695,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 498,
+   "aabb": {
+    "min": [
+     12.019,
+     0,
+     -4.35
+    ],
+    "max": [
+     15.875,
+     4.5,
+     -0.736
+    ]
+   },
+   "size": [
+    3.857,
+    4.5,
+    3.614
+   ]
+  },
+  {
+   "index": 699,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -19.875,
+     0,
+     4.629
+    ],
+    "max": [
+     -16.1,
+     4.5,
+     8.6
+    ]
+   },
+   "size": [
+    3.775,
+    4.5,
+    3.971
+   ]
+  },
+  {
+   "index": 703,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 481,
+   "aabb": {
+    "min": [
+     19.905,
+     0,
+     4.483
+    ],
+    "max": [
+     23.986,
+     4.5,
+     8.614
+    ]
+   },
+   "size": [
+    4.081,
+    4.5,
+    4.131
+   ]
+  },
+  {
+   "index": 707,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -18.257,
+     0,
+     -11.39
+    ],
+    "max": [
+     -14.831,
+     4.5,
+     -7.677
+    ]
+   },
+   "size": [
+    3.426,
+    4.5,
+    3.713
+   ]
+  },
+  {
+   "index": 711,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 498,
+   "aabb": {
+    "min": [
+     34.098,
+     0,
+     10.493
+    ],
+    "max": [
+     38.005,
+     4.5,
+     14.549
+    ]
+   },
+   "size": [
+    3.907,
+    4.5,
+    4.055
+   ]
+  },
+  {
+   "index": 715,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 512,
+   "aabb": {
+    "min": [
+     -28.58,
+     0,
+     13.779
+    ],
+    "max": [
+     -25.368,
+     4.5,
+     17.319
+    ]
+   },
+   "size": [
+    3.212,
+    4.5,
+    3.541
+   ]
+  },
+  {
+   "index": 719,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -27.408,
+     0,
+     21.809
+    ],
+    "max": [
+     -23.695,
+     4.5,
+     25.235
+    ]
+   },
+   "size": [
+    3.713,
+    4.5,
+    3.426
+   ]
+  },
+  {
+   "index": 723,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 481,
+   "aabb": {
+    "min": [
+     -17.949,
+     0,
+     32.37
+    ],
+    "max": [
+     -14.976,
+     4.5,
+     35.712
+    ]
+   },
+   "size": [
+    2.973,
+    4.5,
+    3.342
+   ]
+  },
+  {
+   "index": 727,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     17.96,
+     0,
+     28.625
+    ],
+    "max": [
+     21.931,
+     4.5,
+     32.4
+    ]
+   },
+   "size": [
+    3.971,
+    4.5,
+    3.775
+   ]
+  },
+  {
+   "index": 731,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     30.989,
+     0,
+     -21.838
+    ],
+    "max": [
+     34.96,
+     4.5,
+     -18.063
+    ]
+   },
+   "size": [
+    3.971,
+    4.5,
+    3.775
+   ]
+  },
+  {
+   "index": 735,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 394,
+   "aabb": {
+    "min": [
+     13.153,
+     0,
+     -11.858
+    ],
+    "max": [
+     22.606,
+     8.536,
+     -2.751
+    ]
+   },
+   "size": [
+    9.453,
+    8.536,
+    9.108
+   ]
+  },
+  {
+   "index": 739,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 394,
+   "aabb": {
+    "min": [
+     -35.169,
+     0,
+     7.576
+    ],
+    "max": [
+     -25.287,
+     8.536,
+     17.37
+    ]
+   },
+   "size": [
+    9.882,
+    8.536,
+    9.794
+   ]
+  },
+  {
+   "index": 743,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 394,
+   "aabb": {
+    "min": [
+     -14.316,
+     0,
+     25.642
+    ],
+    "max": [
+     -5.578,
+     8.536,
+     34.806
+    ]
+   },
+   "size": [
+    8.737,
+    8.536,
+    9.164
+   ]
+  },
+  {
+   "index": 747,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 394,
+   "aabb": {
+    "min": [
+     0.379,
+     0,
+     -31.078
+    ],
+    "max": [
+     9.185,
+     8.536,
+     -22.778
+    ]
+   },
+   "size": [
+    8.805,
+    8.536,
+    8.3
+   ]
+  },
+  {
+   "index": 751,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 394,
+   "aabb": {
+    "min": [
+     28.576,
+     0,
+     -5.713
+    ],
+    "max": [
+     38.37,
+     8.536,
+     4.169
+    ]
+   },
+   "size": [
+    9.794,
+    8.536,
+    9.882
+   ]
+  },
+  {
+   "index": 755,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 394,
+   "aabb": {
+    "min": [
+     -32.41,
+     0,
+     -12.938
+    ],
+    "max": [
+     -23.001,
+     8.536,
+     -3.268
+    ]
+   },
+   "size": [
+    9.409,
+    8.536,
+    9.67
+   ]
+  },
+  {
+   "index": 759,
+   "name": "raked-leaf-pile",
+   "key": "raked-leaf-pile",
+   "meshes": 2,
+   "triangles": 609,
+   "aabb": {
+    "min": [
+     -20.075,
+     0,
+     -8.463
+    ],
+    "max": [
+     -18.325,
+     0.574,
+     -6.737
+    ]
+   },
+   "size": [
+    1.749,
+    0.574,
+    1.727
+   ]
+  },
+  {
+   "index": 763,
+   "name": "raked-leaf-pile",
+   "key": "raked-leaf-pile",
+   "meshes": 2,
+   "triangles": 552,
+   "aabb": {
+    "min": [
+     -18.747,
+     0,
+     -9.248
+    ],
+    "max": [
+     -17.453,
+     0.345,
+     -7.952
+    ]
+   },
+   "size": [
+    1.294,
+    0.345,
+    1.296
+   ]
+  },
+  {
+   "index": 767,
+   "name": "cobra-head-street-light",
+   "key": "cobra-head-street-light",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     -30.525,
+     0.05,
+     -1.632
+    ],
+    "max": [
+     -29.475,
+     8.062,
+     0.493
+    ]
+   },
+   "size": [
+    1.05,
+    8.012,
+    2.125
+   ]
+  },
+  {
+   "index": 769,
+   "name": "cobra-head-street-light",
+   "key": "cobra-head-street-light",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     -8.525,
+     0.05,
+     -1.632
+    ],
+    "max": [
+     -7.475,
+     8.062,
+     0.493
+    ]
+   },
+   "size": [
+    1.05,
+    8.012,
+    2.125
+   ]
+  },
+  {
+   "index": 771,
+   "name": "cobra-head-street-light",
+   "key": "cobra-head-street-light",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     15.475,
+     0.05,
+     -1.632
+    ],
+    "max": [
+     16.525,
+     8.062,
+     0.493
+    ]
+   },
+   "size": [
+    1.05,
+    8.012,
+    2.125
+   ]
+  },
+  {
+   "index": 773,
+   "name": "cobra-head-street-light",
+   "key": "cobra-head-street-light",
+   "meshes": 1,
+   "triangles": 464,
+   "aabb": {
+    "min": [
+     33.475,
+     0.05,
+     -1.632
+    ],
+    "max": [
+     34.525,
+     8.062,
+     0.493
+    ]
+   },
+   "size": [
+    1.05,
+    8.012,
+    2.125
+   ]
+  },
+  {
+   "index": 775,
+   "name": "timber-utility-pole",
+   "key": "timber-utility-pole",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -32.097,
+     0,
+     -9.095
+    ],
+    "max": [
+     -24,
+     9,
+     -5.1
+    ]
+   },
+   "size": [
+    8.097,
+    9,
+    3.995
+   ]
+  },
+  {
+   "index": 777,
+   "name": "timber-utility-pole",
+   "key": "timber-utility-pole",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -24.097,
+     0,
+     -9.095
+    ],
+    "max": [
+     -16,
+     9,
+     -5.1
+    ]
+   },
+   "size": [
+    8.097,
+    9,
+    3.995
+   ]
+  },
+  {
+   "index": 779,
+   "name": "timber-utility-pole",
+   "key": "timber-utility-pole",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -16.097,
+     0,
+     -9.095
+    ],
+    "max": [
+     -8,
+     9,
+     -5.1
+    ]
+   },
+   "size": [
+    8.097,
+    9,
+    3.995
+   ]
+  },
+  {
+   "index": 781,
+   "name": "timber-utility-pole",
+   "key": "timber-utility-pole",
+   "meshes": 1,
+   "triangles": 588,
+   "aabb": {
+    "min": [
+     -8.097,
+     0,
+     -9.095
+    ],
+    "max": [
+     0,
+     9,
+     -5.1
+    ]
+   },
+   "size": [
+    8.097,
+    9,
+    3.995
+   ]
+  },
+  {
+   "index": 783,
+   "name": "timber-utility-pole",
+   "key": "timber-utility-pole",
+   "meshes": 1,
+   "triangles": 508,
+   "aabb": {
+    "min": [
+     -0.354,
+     0,
+     -9.095
+    ],
+    "max": [
+     0.94,
+     9,
+     -5.1
+    ]
+   },
+   "size": [
+    1.295,
+    9,
+    3.995
+   ]
+  },
+  {
+   "index": 785,
+   "name": "street-sign-post",
+   "key": "street-sign-post",
+   "meshes": 2,
+   "triangles": 242,
+   "aabb": {
+    "min": [
+     3.04,
+     0.05,
+     -1.8
+    ],
+    "max": [
+     3.76,
+     2.45,
+     -1.4
+    ]
+   },
+   "size": [
+    0.72,
+    2.4,
+    0.4
+   ]
+  },
+  {
+   "index": 789,
+   "name": "street-sign-post",
+   "key": "street-sign-post",
+   "meshes": 2,
+   "triangles": 264,
+   "aabb": {
+    "min": [
+     -11,
+     0,
+     5.1
+    ],
+    "max": [
+     -10.6,
+     2.4,
+     5.9
+    ]
+   },
+   "size": [
+    0.4,
+    2.4,
+    0.8
+   ]
+  },
+  {
+   "index": 793,
+   "name": "street-sign-post",
+   "key": "street-sign-post",
+   "meshes": 2,
+   "triangles": 278,
+   "aabb": {
+    "min": [
+     8.724,
+     0,
+     4.885
+    ],
+    "max": [
+     9.636,
+     2.39,
+     5.915
+    ]
+   },
+   "size": [
+    0.912,
+    2.39,
+    1.03
+   ]
+  },
+  {
+   "index": 797,
+   "name": "family-crossover-suv",
+   "key": "family-crossover-suv",
+   "meshes": 5,
+   "triangles": 2565,
+   "aabb": {
+    "min": [
+     -13.175,
+     0.05,
+     -11.29
+    ],
+    "max": [
+     -10.825,
+     2.33,
+     -6.71
+    ]
+   },
+   "size": [
+    2.35,
+    2.28,
+    4.58
+   ]
+  },
+  {
+   "index": 809,
+   "name": "suburban-pickup-truck",
+   "key": "suburban-pickup-truck",
+   "meshes": 5,
+   "triangles": 2435,
+   "aabb": {
+    "min": [
+     27,
+     0.05,
+     -11
+    ],
+    "max": [
+     29,
+     1.95,
+     -5.4
+    ]
+   },
+   "size": [
+    2,
+    1.9,
+    5.6
+   ]
+  },
+  {
+   "index": 821,
+   "name": "family-minivan",
+   "key": "family-minivan",
+   "meshes": 5,
+   "triangles": 2416,
+   "aabb": {
+    "min": [
+     17.51,
+     0.07,
+     0.393
+    ],
+    "max": [
+     22.5,
+     1.91,
+     2.807
+    ]
+   },
+   "size": [
+    4.99,
+    1.84,
+    2.414
+   ]
+  },
+  {
+   "index": 833,
+   "name": "family-crossover-suv",
+   "key": "family-crossover-suv",
+   "meshes": 5,
+   "triangles": 2601,
+   "aabb": {
+    "min": [
+     5.425,
+     0.07,
+     11.71
+    ],
+    "max": [
+     7.775,
+     2.395,
+     16.29
+    ]
+   },
+   "size": [
+    2.35,
+    2.325,
+    4.58
+   ]
+  },
+  {
+   "index": 845,
+   "name": "yellow-school-bus",
+   "key": "yellow-school-bus",
+   "meshes": 5,
+   "triangles": 2881,
+   "aabb": {
+    "min": [
+     -18.055,
+     0.07,
+     0.324
+    ],
+    "max": [
+     -9.945,
+     2.88,
+     3.482
+    ]
+   },
+   "size": [
+    8.11,
+    2.81,
+    3.158
+   ]
+  },
+  {
+   "index": 857,
+   "name": "suburban-resident",
+   "key": "suburban-resident",
+   "meshes": 5,
+   "triangles": 2935,
+   "aabb": {
+    "min": [
+     -4.207,
+     0,
+     -6.604
+    ],
+    "max": [
+     -2.606,
+     1.729,
+     -5.831
+    ]
+   },
+   "size": [
+    1.601,
+    1.729,
+    0.774
+   ]
+  },
+  {
+   "index": 898,
+   "name": "suburban-resident",
+   "key": "suburban-resident",
+   "meshes": 5,
+   "triangles": 3111,
+   "aabb": {
+    "min": [
+     1.199,
+     0.07,
+     2.129
+    ],
+    "max": [
+     2.793,
+     1.799,
+     2.642
+    ]
+   },
+   "size": [
+    1.594,
+    1.729,
+    0.513
+   ]
+  },
+  {
+   "index": 939,
+   "name": "suburban-resident",
+   "key": "suburban-resident",
+   "meshes": 5,
+   "triangles": 3111,
+   "aabb": {
+    "min": [
+     -24.044,
+     0,
+     18.332
+    ],
+    "max": [
+     -22.996,
+     1.671,
+     19.697
+    ]
+   },
+   "size": [
+    1.048,
+    1.671,
+    1.365
+   ]
+  },
+  {
+   "index": 980,
+   "name": "suburban-resident",
+   "key": "suburban-resident",
+   "meshes": 5,
+   "triangles": 2935,
+   "aabb": {
+    "min": [
+     27.59,
+     0.05,
+     -7.197
+    ],
+    "max": [
+     28.172,
+     1.601,
+     -5.79
+    ]
+   },
+   "size": [
+    0.583,
+    1.551,
+    1.407
+   ]
+  },
+  {
+   "index": 1021,
+   "name": "neighborhood-child",
+   "key": "neighborhood-child",
+   "meshes": 5,
+   "triangles": 2557,
+   "aabb": {
+    "min": [
+     -13.304,
+     0.05,
+     5.395
+    ],
+    "max": [
+     -12.289,
+     1.222,
+     5.832
+    ]
+   },
+   "size": [
+    1.015,
+    1.172,
+    0.437
+   ]
+  },
+  {
+   "index": 1064,
+   "name": "neighborhood-child",
+   "key": "neighborhood-child",
+   "meshes": 5,
+   "triangles": 2557,
+   "aabb": {
+    "min": [
+     -14.085,
+     0,
+     14.275
+    ],
+    "max": [
+     -13.102,
+     1.172,
+     14.949
+    ]
+   },
+   "size": [
+    0.983,
+    1.172,
+    0.674
+   ]
+  },
+  {
+   "index": 1107,
+   "name": "neighborhood-child",
+   "key": "neighborhood-child",
+   "meshes": 5,
+   "triangles": 2557,
+   "aabb": {
+    "min": [
+     8.45,
+     0.05,
+     -3.722
+    ],
+    "max": [
+     8.739,
+     1.222,
+     -2.681
+    ]
+   },
+   "size": [
+    0.289,
+    1.172,
+    1.041
+   ]
+  },
+  {
+   "index": 1150,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 387,
+   "aabb": {
+    "min": [
+     7.712,
+     0.194,
+     41.785
+    ],
+    "max": [
+     14.768,
+     7.876,
+     48.212
+    ]
+   },
+   "size": [
+    7.056,
+    7.683,
+    6.427
+   ]
+  },
+  {
+   "index": 1154,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     2.38,
+     0.04,
+     -39.318
+    ],
+    "max": [
+     6.49,
+     4.54,
+     -35.189
+    ]
+   },
+   "size": [
+    4.109,
+    4.5,
+    4.129
+   ]
+  },
+  {
+   "index": 1158,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     14.444,
+     0.04,
+     -39.963
+    ],
+    "max": [
+     15.411,
+     2.44,
+     -39.028
+    ]
+   },
+   "size": [
+    0.967,
+    2.4,
+    0.936
+   ]
+  },
+  {
+   "index": 1162,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 387,
+   "aabb": {
+    "min": [
+     -1.989,
+     0.04,
+     -45.463
+    ],
+    "max": [
+     7.539,
+     7.723,
+     -36.028
+    ]
+   },
+   "size": [
+    9.528,
+    7.683,
+    9.435
+   ]
+  },
+  {
+   "index": 1166,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     3.797,
+     0.067,
+     42.896
+    ],
+    "max": [
+     7.262,
+     4.568,
+     46.015
+    ]
+   },
+   "size": [
+    3.464,
+    4.5,
+    3.119
+   ]
+  },
+  {
+   "index": 1170,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     37.796,
+     0.04,
+     -15.096
+    ],
+    "max": [
+     38.938,
+     2.24,
+     -13.962
+    ]
+   },
+   "size": [
+    1.141,
+    2.2,
+    1.134
+   ]
+  },
+  {
+   "index": 1174,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 387,
+   "aabb": {
+    "min": [
+     -16.418,
+     0.04,
+     -44.075
+    ],
+    "max": [
+     -8.665,
+     7.723,
+     -35.836
+    ]
+   },
+   "size": [
+    7.754,
+    7.683,
+    8.238
+   ]
+  },
+  {
+   "index": 1178,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     12.448,
+     0.17,
+     42.133
+    ],
+    "max": [
+     16.516,
+     4.67,
+     46.063
+    ]
+   },
+   "size": [
+    4.069,
+    4.5,
+    3.93
+   ]
+  },
+  {
+   "index": 1182,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 309,
+   "aabb": {
+    "min": [
+     21.99,
+     0.187,
+     41.141
+    ],
+    "max": [
+     22.899,
+     2.187,
+     42.069
+    ]
+   },
+   "size": [
+    0.909,
+    2,
+    0.928
+   ]
+  },
+  {
+   "index": 1186,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 387,
+   "aabb": {
+    "min": [
+     12.723,
+     0.105,
+     38.15
+    ],
+    "max": [
+     21.653,
+     7.788,
+     47.355
+    ]
+   },
+   "size": [
+    8.93,
+    7.683,
+    9.205
+   ]
+  },
+  {
+   "index": 1190,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -1.531,
+     0.106,
+     40.994
+    ],
+    "max": [
+     2.084,
+     4.606,
+     44.851
+    ]
+   },
+   "size": [
+    3.614,
+    4.5,
+    3.857
+   ]
+  },
+  {
+   "index": 1194,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     2.96,
+     0.039,
+     -45.127
+    ],
+    "max": [
+     4.216,
+     2.639,
+     -43.852
+    ]
+   },
+   "size": [
+    1.256,
+    2.6,
+    1.275
+   ]
+  },
+  {
+   "index": 1198,
+   "name": "broad-canopy-shade-tree",
+   "key": "broad-canopy-shade-tree",
+   "meshes": 2,
+   "triangles": 387,
+   "aabb": {
+    "min": [
+     12.572,
+     0.04,
+     -40.527
+    ],
+    "max": [
+     21.632,
+     7.723,
+     -31.785
+    ]
+   },
+   "size": [
+    9.06,
+    7.683,
+    8.741
+   ]
+  },
+  {
+   "index": 1202,
+   "name": "ornamental-front-yard-tree",
+   "key": "ornamental-front-yard-tree",
+   "meshes": 2,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -8.952,
+     0.04,
+     -42.952
+    ],
+    "max": [
+     -5.373,
+     4.54,
+     -39.122
+    ]
+   },
+   "size": [
+    3.579,
+    4.5,
+    3.83
+   ]
+  },
+  {
+   "index": 1206,
+   "name": "columnar-evergreen-shrub",
+   "key": "columnar-evergreen-shrub",
+   "meshes": 2,
+   "triangles": 381,
+   "aabb": {
+    "min": [
+     16.405,
+     0.04,
+     39.164
+    ],
+    "max": [
+     17.617,
+     2.44,
+     40.363
+    ]
+   },
+   "size": [
+    1.212,
+    2.4,
+    1.198
+   ]
+  }
+ ],
+ "id": "neighborhood-pathways",
+ "label": "Neighborhood Pathways",
+ "sourceBytes": 22126580,
+ "spawn": {
+  "x": -2,
+  "y": 0.5,
+  "z": -0.28,
+  "on": "143 floor pieces at y=0"
+ }
+}

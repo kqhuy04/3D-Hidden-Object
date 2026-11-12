@@ -1,0 +1,31 @@
+# countryside-railway  bounds -47,-6,-50 .. 46,11,48  spawn 7.1,3.2
+# 175 surfaces, 36 spread, showing 14
+  T  x      10  z       4  top   1.17  d     3  stand (10.6, 1.6) gap 2.45
+  T  x      10  z     8.5  top   1.07  d   6.1  stand (7.3, 9.2) gap 2.73
+  T  x      -5  z      -8  top   1.17  d  16.5  stand (-5.4, -6.8) gap 1.23
+  T  x    23.5  z    11.5  top    0.7  d  18.4  stand (25.9, 12.4) gap 2.59
+  T  x      -5  z   -12.5  top   1.17  d  19.8  stand (-3.3, -12.5) gap 1.7
+  T  x     8.5  z   -18.5  top   1.21  d  21.7  stand (8.5, -19.8) gap 1.3
+  T  x      -8  z      19  top  -4.36  d  21.9  stand (-9.4, 17) gap 2.37
+  T  x      13  z   -18.5  top   1.21  d  22.5  stand (13.9, -16.4) gap 2.27
+  T  x    23.5  z      19  top   0.62  d  22.8  stand (21.6, 19.2) gap 1.87
+  T  x      -8  z   -15.5  top    1.2  d    24  stand (-9.9, -15.3) gap 1.87
+  T  x     -17  z     2.5  top   1.17  d  24.1  stand (-17.6, 2) gap 0.8
+  T  x     -17  z      -2  top   1.17  d  24.6  stand (-16.8, -2) gap 0.2
+  T  x     -17  z    -6.5  top   1.17  d  25.9  stand (-17.2, -6.5) gap 0.2
+  T  x   -12.5  z    20.5  top  -4.36  d  26.1  stand (-14.4, 20.7) gap 1.87
+# 117 open ground spots
+  G  x       8  z     2.5  y   0.03  d   1.1
+  G  x       3  z     7.5  y      0  d   5.9
+  G  x       3  z    -2.5  y      0  d     7
+  G  x      13  z     7.5  y   0.06  d   7.3
+  G  x      13  z    -2.5  y   0.09  d   8.2
+  G  x      -2  z     2.5  y      0  d   9.1
+  G  x       8  z    12.5  y      0  d   9.4
+  G  x      18  z     2.5  y   0.05  d  10.9
+  G  x      -2  z    12.5  y      0  d    13
+  G  x     5.5  z     -10  y   0.06  d  13.3
+  G  x      -2  z    -7.5  y      0  d    14
+  G  x      13  z     -10  y      0  d  14.4
+  G  x      18  z    12.5  y   0.05  d  14.4
+  G  x      -7  z     7.5  y      0  d  14.7

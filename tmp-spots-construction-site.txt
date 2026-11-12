@@ -1,0 +1,31 @@
+# construction-site  bounds -31,-6,-35 .. 36,35,45  spawn 7.1,12
+# 41 surfaces, 16 spread, showing 14
+  T  x       9  z    15.5  top   0.48  d     4  stand (9.3, 15.7) gap 0.37
+  T  x       3  z    15.5  top   1.24  d   5.4  stand (5.8, 15.5) gap 2.8
+  T  x      15  z      14  top   0.85  d   8.2  stand (15.3, 13.8) gap 0.37
+  T  x       3  z      23  top    1.1  d  11.8  stand (5.1, 23.9) gap 2.27
+  T  x    19.5  z      14  top   0.85  d  12.6  stand (18.9, 14.9) gap 1.09
+  T  x     -12  z      23  top   1.11  d    22  stand (-14.3, 22.7) gap 2.29
+  T  x      -3  z      32  top   0.06  d  22.4  stand (-2.4, 31.5) gap 0.8
+  T  x    28.5  z    -2.5  top    0.4  d  25.9  stand (29.1, -3.4) gap 1.09
+  T  x    19.5  z      35  top   0.85  d  26.2  stand (20.8, 35) gap 1.3
+  T  x      24  z      35  top   0.85  d  28.6  stand (22.7, 35) gap 1.3
+  T  x    28.5  z      -7  top   0.38  d  28.6  stand (29.1, -7.9) gap 1.09
+  T  x     7.5  z      41  top   0.85  d    29  stand (8.1, 40.5) gap 0.8
+  T  x      12  z      41  top   0.85  d  29.4  stand (11.9, 40.3) gap 0.65
+  T  x    16.5  z      41  top   0.85  d  30.5  stand (17.1, 40.5) gap 0.8
+# 86 open ground spots
+  G  x     7.5  z      11  y      0  d   1.1
+  G  x     7.5  z    18.5  y   0.05  d   6.5
+  G  x       0  z      11  y      0  d   7.1
+  G  x      15  z      11  y      0  d     8
+  G  x       5  z     3.5  y  -4.44  d   8.7
+  G  x       0  z    18.5  y   0.05  d   9.6
+  G  x    12.5  z     3.5  y  -2.57  d  10.1
+  G  x      15  z    18.5  y   0.05  d  10.3
+  G  x    -2.5  z     3.5  y  -5.72  d  12.8
+  G  x     7.5  z      26  y   0.05  d    14
+  G  x      20  z       6  y  -0.34  d  14.2
+  G  x    -7.5  z      11  y      0  d  14.6
+  G  x    22.5  z    13.5  y   0.05  d  15.5
+  G  x       0  z      26  y   0.05  d  15.7

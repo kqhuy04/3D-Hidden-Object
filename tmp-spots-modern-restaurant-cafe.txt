@@ -1,0 +1,13 @@
+# modern-restaurant-cafe  bounds -15,0,-9 .. 15,4,9  spawn 5.3,10.8
+# 1 surfaces, 1 spread, showing 1
+  T  x       9  z      -3  top   1.13  d  14.3  stand (7.5, -4.1) gap 1.87
+# 9 open ground spots
+  G  x       5  z     8.5  y   0.05  d   2.3
+  G  x    -2.5  z     8.5  y   0.05  d   8.1
+  G  x    12.5  z       6  y   0.05  d   8.7
+  G  x       5  z       1  y   0.05  d   9.8
+  G  x    -7.5  z     3.5  y   0.05  d  14.7
+  G  x      10  z      -4  y   0.03  d  15.5
+  G  x       0  z      -4  y   0.05  d  15.7
+  G  x    -7.5  z      -4  y   0.05  d  19.6
+  G  x      15  z      -9  y      0  d  22.1

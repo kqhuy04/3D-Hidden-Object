@@ -1,0 +1,14596 @@
+{
+ "file": "/assets/maps/frontier-town.glb",
+ "bytes": 5584388,
+ "generatedAt": "2026-11-09T17:05:51.742Z",
+ "structure": {
+  "nodes": 5671,
+  "meshes": 2088,
+  "materials": 599,
+  "images": 0,
+  "partContainer": "kit-composition",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 589,
+  "keys": 61,
+  "triangles": 430954,
+  "meshes": 2103,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "dirt-street-tile",
+   "instances": 206,
+   "triangles": 35570,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "sagebrush",
+   "instances": 85,
+   "triangles": 55893,
+   "maxExtent": 2.712,
+   "hasBounds": true
+  },
+  {
+   "key": "boardwalk-run",
+   "instances": 49,
+   "triangles": 18409,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "split-rail-fence-run",
+   "instances": 45,
+   "triangles": 16688,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "saguaro-cactus",
+   "instances": 16,
+   "triangles": 10478,
+   "maxExtent": 5.2,
+   "hasBounds": true
+  },
+  {
+   "key": "corral-fence-run",
+   "instances": 14,
+   "triangles": 7200,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "whiskey-barrel",
+   "instances": 13,
+   "triangles": 10470,
+   "maxExtent": 0.936,
+   "hasBounds": true
+  },
+  {
+   "key": "boardwalk-plank-tile",
+   "instances": 12,
+   "triangles": 3504,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "saddled-horse",
+   "instances": 11,
+   "triangles": 26526,
+   "maxExtent": 2.415,
+   "hasBounds": true
+  },
+  {
+   "key": "street-oil-lamp",
+   "instances": 10,
+   "triangles": 4600,
+   "maxExtent": 3.2,
+   "hasBounds": true
+  },
+  {
+   "key": "townswoman-character",
+   "instances": 9,
+   "triangles": 35457,
+   "maxExtent": 1.992,
+   "hasBounds": true
+  },
+  {
+   "key": "tumbleweed",
+   "instances": 7,
+   "triangles": 5194,
+   "maxExtent": 1.034,
+   "hasBounds": true
+  },
+  {
+   "key": "freight-crate-sack-stack",
+   "instances": 6,
+   "triangles": 2587,
+   "maxExtent": 1.5,
+   "hasBounds": true
+  },
+  {
+   "key": "mine-spoil-tile",
+   "instances": 6,
+   "triangles": 4355,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "outlaw-character",
+   "instances": 6,
+   "triangles": 21922,
+   "maxExtent": 1.753,
+   "hasBounds": true
+  },
+  {
+   "key": "plank-trough",
+   "instances": 6,
+   "triangles": 3793,
+   "maxExtent": 2.488,
+   "hasBounds": true
+  },
+  {
+   "key": "sheriff-character",
+   "instances": 6,
+   "triangles": 19034,
+   "maxExtent": 1.891,
+   "hasBounds": true
+  },
+  {
+   "key": "buckboard-wagon",
+   "instances": 5,
+   "triangles": 14064,
+   "maxExtent": 5.5,
+   "hasBounds": true
+  },
+  {
+   "key": "hitching-rail-run",
+   "instances": 5,
+   "triangles": 2794,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "mine-rail-run",
+   "instances": 5,
+   "triangles": 1883,
+   "maxExtent": 2,
+   "hasBounds": true
+  },
+  {
+   "key": "porch-awning-run",
+   "instances": 5,
+   "triangles": 2542,
+   "maxExtent": 2.658,
+   "hasBounds": true
+  },
+  {
+   "key": "preacher-character",
+   "instances": 5,
+   "triangles": 15095,
+   "maxExtent": 2.045,
+   "hasBounds": true
+  },
+  {
+   "key": "saloon-keeper-character",
+   "instances": 5,
+   "triangles": 18869,
+   "maxExtent": 1.73,
+   "hasBounds": true
+  },
+  {
+   "key": "miners-shack",
+   "instances": 4,
+   "triangles": 6571,
+   "maxExtent": 5.517,
+   "hasBounds": true
+  },
+  {
+   "key": "prospector-character",
+   "instances": 3,
+   "triangles": 11885,
+   "maxExtent": 2.137,
+   "hasBounds": true
+  },
+  {
+   "key": "saddle-rack",
+   "instances": 3,
+   "triangles": 2120,
+   "maxExtent": 1.373,
+   "hasBounds": true
+  },
+  {
+   "key": "bar-counter-run",
+   "instances": 2,
+   "triangles": 1122,
+   "maxExtent": 1.9,
+   "hasBounds": true
+  },
+  {
+   "key": "brass-spittoon",
+   "instances": 2,
+   "triangles": 970,
+   "maxExtent": 0.336,
+   "hasBounds": true
+  },
+  {
+   "key": "hanging-shop-sign",
+   "instances": 2,
+   "triangles": 1504,
+   "maxExtent": 1.6,
+   "hasBounds": true
+  },
+  {
+   "key": "pack-mule",
+   "instances": 2,
+   "triangles": 5452,
+   "maxExtent": 2.052,
+   "hasBounds": true
+  },
+  {
+   "key": "porch-rocking-chair",
+   "instances": 2,
+   "triangles": 1434,
+   "maxExtent": 1.036,
+   "hasBounds": true
+  },
+  {
+   "key": "telegraph-pole-line",
+   "instances": 2,
+   "triangles": 968,
+   "maxExtent": 8.254,
+   "hasBounds": true
+  },
+  {
+   "key": "whiskey-bottle-glass-set",
+   "instances": 2,
+   "triangles": 1264,
+   "maxExtent": 0.384,
+   "hasBounds": true
+  },
+  {
+   "key": "back-bar-shelf",
+   "instances": 1,
+   "triangles": 760,
+   "maxExtent": 2.6,
+   "hasBounds": true
+  },
+  {
+   "key": "barber-bath-house",
+   "instances": 1,
+   "triangles": 1588,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "blacksmith-shop",
+   "instances": 1,
+   "triangles": 1389,
+   "maxExtent": 6.2,
+   "hasBounds": true
+  },
+  {
+   "key": "clapboard-church",
+   "instances": 1,
+   "triangles": 1602,
+   "maxExtent": 10,
+   "hasBounds": true
+  },
+  {
+   "key": "dead-cottonwood",
+   "instances": 1,
+   "triangles": 1191,
+   "maxExtent": 7.789,
+   "hasBounds": true
+  },
+  {
+   "key": "frontier-hotel",
+   "instances": 1,
+   "triangles": 1461,
+   "maxExtent": 10,
+   "hasBounds": true
+  },
+  {
+   "key": "frontier-town-terrain",
+   "instances": 1,
+   "triangles": 25328,
+   "maxExtent": 101,
+   "hasBounds": true
+  },
+  {
+   "key": "general-store",
+   "instances": 1,
+   "triangles": 1584,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "gold-pan-stand",
+   "instances": 1,
+   "triangles": 767,
+   "maxExtent": 0.801,
+   "hasBounds": true
+  },
+  {
+   "key": "livery-stable",
+   "instances": 1,
+   "triangles": 1705,
+   "maxExtent": 10,
+   "hasBounds": true
+  },
+  {
+   "key": "mine-cart",
+   "instances": 1,
+   "triangles": 2202,
+   "maxExtent": 1.818,
+   "hasBounds": true
+  },
+  {
+   "key": "mine-headframe",
+   "instances": 1,
+   "triangles": 1721,
+   "maxExtent": 8.999,
+   "hasBounds": true
+  },
+  {
+   "key": "one-room-schoolhouse",
+   "instances": 1,
+   "triangles": 1542,
+   "maxExtent": 8.112,
+   "hasBounds": true
+  },
+  {
+   "key": "ore-barrow",
+   "instances": 1,
+   "triangles": 607,
+   "maxExtent": 1.442,
+   "hasBounds": true
+  },
+  {
+   "key": "ore-chute-bin",
+   "instances": 1,
+   "triangles": 674,
+   "maxExtent": 4.321,
+   "hasBounds": true
+  },
+  {
+   "key": "poker-table",
+   "instances": 1,
+   "triangles": 712,
+   "maxExtent": 2.599,
+   "hasBounds": true
+  },
+  {
+   "key": "saloon-front",
+   "instances": 1,
+   "triangles": 1676,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "sheriff-office-jail",
+   "instances": 1,
+   "triangles": 1803,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "sluice-box",
+   "instances": 1,
+   "triangles": 668,
+   "maxExtent": 4.019,
+   "hasBounds": true
+  },
+  {
+   "key": "stage-freight-office",
+   "instances": 1,
+   "triangles": 1618,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "stagecoach",
+   "instances": 1,
+   "triangles": 2998,
+   "maxExtent": 4.5,
+   "hasBounds": true
+  },
+  {
+   "key": "telegraph-post-office",
+   "instances": 1,
+   "triangles": 1424,
+   "maxExtent": 6.47,
+   "hasBounds": true
+  },
+  {
+   "key": "town-bank",
+   "instances": 1,
+   "triangles": 1789,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "undertakers-shop",
+   "instances": 1,
+   "triangles": 950,
+   "maxExtent": 8,
+   "hasBounds": true
+  },
+  {
+   "key": "upright-piano",
+   "instances": 1,
+   "triangles": 698,
+   "maxExtent": 1.5,
+   "hasBounds": true
+  },
+  {
+   "key": "wanted-poster-board",
+   "instances": 1,
+   "triangles": 737,
+   "maxExtent": 2.4,
+   "hasBounds": true
+  },
+  {
+   "key": "water-tower-trestle",
+   "instances": 1,
+   "triangles": 795,
+   "maxExtent": 11.46,
+   "hasBounds": true
+  },
+  {
+   "key": "windmill-pump",
+   "instances": 1,
+   "triangles": 748,
+   "maxExtent": 7.261,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "frontier-town-terrain",
+   "key": "frontier-town-terrain",
+   "meshes": 1,
+   "triangles": 25328,
+   "aabb": {
+    "min": [
+     -48,
+     -5.977,
+     -50
+    ],
+    "max": [
+     44,
+     13.06,
+     51
+    ]
+   },
+   "size": [
+    92,
+    19.037,
+    101
+   ]
+  },
+  {
+   "index": 3,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -21
+    ],
+    "max": [
+     -5,
+     0.054,
+     -19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 5,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -21
+    ],
+    "max": [
+     -3,
+     0.054,
+     -19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 7,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 360,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -21
+    ],
+    "max": [
+     -1,
+     0.087,
+     -19
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 9,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -21
+    ],
+    "max": [
+     1,
+     0.064,
+     -19
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 11,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -21
+    ],
+    "max": [
+     3,
+     0.083,
+     -19
+    ]
+   },
+   "size": [
+    2,
+    0.079,
+    2
+   ]
+  },
+  {
+   "index": 13,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -21
+    ],
+    "max": [
+     5,
+     0.054,
+     -19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 15,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -21
+    ],
+    "max": [
+     7,
+     0.054,
+     -19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 17,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -19
+    ],
+    "max": [
+     -5,
+     0.054,
+     -17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 19,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -19
+    ],
+    "max": [
+     -3,
+     0.054,
+     -17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 21,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 424,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -19
+    ],
+    "max": [
+     -1,
+     0.101,
+     -17
+    ]
+   },
+   "size": [
+    2,
+    0.097,
+    2
+   ]
+  },
+  {
+   "index": 23,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -19
+    ],
+    "max": [
+     1,
+     0.064,
+     -17
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 25,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -19
+    ],
+    "max": [
+     3,
+     0.054,
+     -17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 27,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -19
+    ],
+    "max": [
+     5,
+     0.054,
+     -17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 29,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -19
+    ],
+    "max": [
+     7,
+     0.054,
+     -17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 31,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -17
+    ],
+    "max": [
+     -5,
+     0.054,
+     -15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 33,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -17
+    ],
+    "max": [
+     -3,
+     0.054,
+     -15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 35,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -17
+    ],
+    "max": [
+     -1,
+     0.092,
+     -15
+    ]
+   },
+   "size": [
+    2,
+    0.088,
+    2
+   ]
+  },
+  {
+   "index": 37,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 235,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -17
+    ],
+    "max": [
+     1,
+     0.066,
+     -15
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 39,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -17
+    ],
+    "max": [
+     3,
+     0.054,
+     -15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 41,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -17
+    ],
+    "max": [
+     5,
+     0.054,
+     -15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 43,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -17
+    ],
+    "max": [
+     7,
+     0.054,
+     -15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 45,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -15
+    ],
+    "max": [
+     -5,
+     0.054,
+     -13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 47,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -15
+    ],
+    "max": [
+     -3,
+     0.054,
+     -13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 49,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -15
+    ],
+    "max": [
+     -1,
+     0.106,
+     -13
+    ]
+   },
+   "size": [
+    2,
+    0.102,
+    2
+   ]
+  },
+  {
+   "index": 51,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -15
+    ],
+    "max": [
+     1,
+     0.054,
+     -13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 53,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -15
+    ],
+    "max": [
+     3,
+     0.054,
+     -13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 55,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -15
+    ],
+    "max": [
+     5,
+     0.054,
+     -13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 57,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -15
+    ],
+    "max": [
+     7,
+     0.054,
+     -13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 59,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -13
+    ],
+    "max": [
+     -5,
+     0.054,
+     -11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 61,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -13
+    ],
+    "max": [
+     -3,
+     0.054,
+     -11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 63,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 360,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -13
+    ],
+    "max": [
+     -1,
+     0.087,
+     -11
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 65,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -13
+    ],
+    "max": [
+     1,
+     0.054,
+     -11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 67,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -13
+    ],
+    "max": [
+     3,
+     0.077,
+     -11
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 69,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -13
+    ],
+    "max": [
+     5,
+     0.054,
+     -11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 71,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -13
+    ],
+    "max": [
+     7,
+     0.054,
+     -11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 73,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -11
+    ],
+    "max": [
+     -5,
+     0.054,
+     -9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 75,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -11
+    ],
+    "max": [
+     -3,
+     0.054,
+     -9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 77,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -11
+    ],
+    "max": [
+     -1,
+     0.077,
+     -9
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 79,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -11
+    ],
+    "max": [
+     1,
+     0.066,
+     -9
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 81,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -11
+    ],
+    "max": [
+     3,
+     0.092,
+     -9
+    ]
+   },
+   "size": [
+    2,
+    0.088,
+    2
+   ]
+  },
+  {
+   "index": 83,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -11
+    ],
+    "max": [
+     5,
+     0.054,
+     -9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 85,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -11
+    ],
+    "max": [
+     7,
+     0.054,
+     -9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 87,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -9
+    ],
+    "max": [
+     -5,
+     0.054,
+     -7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 89,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -9
+    ],
+    "max": [
+     -3,
+     0.054,
+     -7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 91,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -9
+    ],
+    "max": [
+     -1,
+     0.064,
+     -7
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 93,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -9
+    ],
+    "max": [
+     1,
+     0.064,
+     -7
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 95,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -9
+    ],
+    "max": [
+     3,
+     0.106,
+     -7
+    ]
+   },
+   "size": [
+    2,
+    0.102,
+    2
+   ]
+  },
+  {
+   "index": 97,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -9
+    ],
+    "max": [
+     5,
+     0.054,
+     -7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 99,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -9
+    ],
+    "max": [
+     7,
+     0.054,
+     -7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 101,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -7
+    ],
+    "max": [
+     -5,
+     0.054,
+     -5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 103,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -7
+    ],
+    "max": [
+     -3,
+     0.054,
+     -5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 105,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -7
+    ],
+    "max": [
+     -1,
+     0.054,
+     -5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 107,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -7
+    ],
+    "max": [
+     1,
+     0.054,
+     -5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 109,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 443,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -7
+    ],
+    "max": [
+     3,
+     0.097,
+     -5
+    ]
+   },
+   "size": [
+    2,
+    0.093,
+    2
+   ]
+  },
+  {
+   "index": 111,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -7
+    ],
+    "max": [
+     5,
+     0.054,
+     -5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 113,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -7
+    ],
+    "max": [
+     7,
+     0.054,
+     -5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 115,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -5
+    ],
+    "max": [
+     -5,
+     0.054,
+     -3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 117,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -5
+    ],
+    "max": [
+     -3,
+     0.054,
+     -3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 119,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -5
+    ],
+    "max": [
+     -1,
+     0.066,
+     -3
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 121,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -5
+    ],
+    "max": [
+     1,
+     0.054,
+     -3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 123,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 424,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -5
+    ],
+    "max": [
+     3,
+     0.101,
+     -3
+    ]
+   },
+   "size": [
+    2,
+    0.097,
+    2
+   ]
+  },
+  {
+   "index": 125,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -5
+    ],
+    "max": [
+     5,
+     0.054,
+     -3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 127,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -5
+    ],
+    "max": [
+     7,
+     0.054,
+     -3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 129,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -3
+    ],
+    "max": [
+     -5,
+     0.054,
+     -1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 131,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -3
+    ],
+    "max": [
+     -3,
+     0.054,
+     -1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 133,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 397,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -3
+    ],
+    "max": [
+     -1,
+     0.077,
+     -1
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 135,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -3
+    ],
+    "max": [
+     1,
+     0.064,
+     -1
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 137,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -3
+    ],
+    "max": [
+     3,
+     0.087,
+     -1
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 139,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -3
+    ],
+    "max": [
+     5,
+     0.054,
+     -1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 141,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -3
+    ],
+    "max": [
+     7,
+     0.054,
+     -1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 143,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     -1
+    ],
+    "max": [
+     -5,
+     0.054,
+     1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 145,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     -1
+    ],
+    "max": [
+     -3,
+     0.054,
+     1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 147,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     -1
+    ],
+    "max": [
+     -1,
+     0.092,
+     1
+    ]
+   },
+   "size": [
+    2,
+    0.088,
+    2
+   ]
+  },
+  {
+   "index": 149,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     -1
+    ],
+    "max": [
+     1,
+     0.054,
+     1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 151,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 360,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     -1
+    ],
+    "max": [
+     3,
+     0.077,
+     1
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 153,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     -1
+    ],
+    "max": [
+     5,
+     0.054,
+     1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 155,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     -1
+    ],
+    "max": [
+     7,
+     0.054,
+     1
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 157,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     1
+    ],
+    "max": [
+     -5,
+     0.054,
+     3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 159,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     1
+    ],
+    "max": [
+     -3,
+     0.054,
+     3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 161,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     1
+    ],
+    "max": [
+     -1,
+     0.106,
+     3
+    ]
+   },
+   "size": [
+    2,
+    0.102,
+    2
+   ]
+  },
+  {
+   "index": 163,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     1
+    ],
+    "max": [
+     1,
+     0.066,
+     3
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 165,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     1
+    ],
+    "max": [
+     3,
+     0.066,
+     3
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 167,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     1
+    ],
+    "max": [
+     5,
+     0.054,
+     3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 169,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     1
+    ],
+    "max": [
+     7,
+     0.054,
+     3
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 171,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     3
+    ],
+    "max": [
+     -5,
+     0.054,
+     5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 173,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     3
+    ],
+    "max": [
+     -3,
+     0.054,
+     5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 175,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 443,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     3
+    ],
+    "max": [
+     -1,
+     0.097,
+     5
+    ]
+   },
+   "size": [
+    2,
+    0.093,
+    2
+   ]
+  },
+  {
+   "index": 177,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     3
+    ],
+    "max": [
+     1,
+     0.064,
+     5
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 179,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     3
+    ],
+    "max": [
+     3,
+     0.054,
+     5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 181,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     3
+    ],
+    "max": [
+     5,
+     0.054,
+     5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 183,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     3
+    ],
+    "max": [
+     7,
+     0.054,
+     5
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 185,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     5
+    ],
+    "max": [
+     -5,
+     0.054,
+     7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 187,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     5
+    ],
+    "max": [
+     -3,
+     0.054,
+     7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 189,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 443,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     5
+    ],
+    "max": [
+     -1,
+     0.083,
+     7
+    ]
+   },
+   "size": [
+    2,
+    0.079,
+    2
+   ]
+  },
+  {
+   "index": 191,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     5
+    ],
+    "max": [
+     1,
+     0.064,
+     7
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 193,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     5
+    ],
+    "max": [
+     3,
+     0.054,
+     7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 195,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     5
+    ],
+    "max": [
+     5,
+     0.054,
+     7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 197,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     5
+    ],
+    "max": [
+     7,
+     0.054,
+     7
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 199,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     7
+    ],
+    "max": [
+     -5,
+     0.054,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 201,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     7
+    ],
+    "max": [
+     -3,
+     0.054,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 203,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     7
+    ],
+    "max": [
+     -1,
+     0.077,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 205,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     7
+    ],
+    "max": [
+     1,
+     0.064,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 207,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     7
+    ],
+    "max": [
+     3,
+     0.054,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 209,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     7
+    ],
+    "max": [
+     5,
+     0.054,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 211,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     7
+    ],
+    "max": [
+     7,
+     0.054,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 213,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     9
+    ],
+    "max": [
+     -5,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 215,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     9
+    ],
+    "max": [
+     -3,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 217,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     9
+    ],
+    "max": [
+     -1,
+     0.064,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 219,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     9
+    ],
+    "max": [
+     1,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 221,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     9
+    ],
+    "max": [
+     3,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 223,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     9
+    ],
+    "max": [
+     5,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 225,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     9
+    ],
+    "max": [
+     7,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 227,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     11
+    ],
+    "max": [
+     -5,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 229,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     11
+    ],
+    "max": [
+     -3,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 231,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     11
+    ],
+    "max": [
+     -1,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 233,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     11
+    ],
+    "max": [
+     1,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 235,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     11
+    ],
+    "max": [
+     3,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 237,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     11
+    ],
+    "max": [
+     5,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 239,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     11
+    ],
+    "max": [
+     7,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 241,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     13
+    ],
+    "max": [
+     -5,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 243,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     13
+    ],
+    "max": [
+     -3,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 245,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     13
+    ],
+    "max": [
+     -1,
+     0.066,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 247,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     13
+    ],
+    "max": [
+     1,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 249,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     13
+    ],
+    "max": [
+     3,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 251,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     13
+    ],
+    "max": [
+     5,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 253,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     13
+    ],
+    "max": [
+     7,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 255,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     15
+    ],
+    "max": [
+     -5,
+     0.054,
+     17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 257,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     15
+    ],
+    "max": [
+     -3,
+     0.054,
+     17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 259,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     15
+    ],
+    "max": [
+     -1,
+     0.083,
+     17
+    ]
+   },
+   "size": [
+    2,
+    0.079,
+    2
+   ]
+  },
+  {
+   "index": 261,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     15
+    ],
+    "max": [
+     1,
+     0.066,
+     17
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 263,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 443,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     15
+    ],
+    "max": [
+     3,
+     0.087,
+     17
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 265,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     15
+    ],
+    "max": [
+     5,
+     0.054,
+     17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 267,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     15
+    ],
+    "max": [
+     7,
+     0.054,
+     17
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 269,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     17
+    ],
+    "max": [
+     -5,
+     0.054,
+     19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 271,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     17
+    ],
+    "max": [
+     -3,
+     0.054,
+     19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 273,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     17
+    ],
+    "max": [
+     -1,
+     0.097,
+     19
+    ]
+   },
+   "size": [
+    2,
+    0.093,
+    2
+   ]
+  },
+  {
+   "index": 275,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     17
+    ],
+    "max": [
+     1,
+     0.054,
+     19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 277,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     17
+    ],
+    "max": [
+     3,
+     0.101,
+     19
+    ]
+   },
+   "size": [
+    2,
+    0.097,
+    2
+   ]
+  },
+  {
+   "index": 279,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     17
+    ],
+    "max": [
+     5,
+     0.054,
+     19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 281,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     17
+    ],
+    "max": [
+     7,
+     0.054,
+     19
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 283,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     19
+    ],
+    "max": [
+     -5,
+     0.054,
+     21
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 285,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     19
+    ],
+    "max": [
+     -3,
+     0.054,
+     21
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 287,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     19
+    ],
+    "max": [
+     -1,
+     0.106,
+     21
+    ]
+   },
+   "size": [
+    2,
+    0.102,
+    2
+   ]
+  },
+  {
+   "index": 289,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     19
+    ],
+    "max": [
+     1,
+     0.054,
+     21
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 291,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 397,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     19
+    ],
+    "max": [
+     3,
+     0.092,
+     21
+    ]
+   },
+   "size": [
+    2,
+    0.088,
+    2
+   ]
+  },
+  {
+   "index": 293,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     19
+    ],
+    "max": [
+     5,
+     0.054,
+     21
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 295,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     19
+    ],
+    "max": [
+     7,
+     0.054,
+     21
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 297,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -7,
+     0.004,
+     21
+    ],
+    "max": [
+     -5,
+     0.054,
+     23
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 299,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -5,
+     0.004,
+     21
+    ],
+    "max": [
+     -3,
+     0.054,
+     23
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 301,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -3,
+     0.004,
+     21
+    ],
+    "max": [
+     -1,
+     0.087,
+     23
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 303,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -1,
+     0.004,
+     21
+    ],
+    "max": [
+     1,
+     0.054,
+     23
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 305,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     1,
+     0.004,
+     21
+    ],
+    "max": [
+     3,
+     0.106,
+     23
+    ]
+   },
+   "size": [
+    2,
+    0.102,
+    2
+   ]
+  },
+  {
+   "index": 307,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     3,
+     0.004,
+     21
+    ],
+    "max": [
+     5,
+     0.054,
+     23
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 309,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     5,
+     0.004,
+     21
+    ],
+    "max": [
+     7,
+     0.054,
+     23
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 311,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -9,
+     0.004,
+     9
+    ],
+    "max": [
+     -7,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 313,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -9,
+     0.004,
+     11
+    ],
+    "max": [
+     -7,
+     0.077,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 315,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -9,
+     0.004,
+     13
+    ],
+    "max": [
+     -7,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 317,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -11,
+     0.004,
+     9
+    ],
+    "max": [
+     -9,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 319,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -11,
+     0.004,
+     11
+    ],
+    "max": [
+     -9,
+     0.092,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.088,
+    2
+   ]
+  },
+  {
+   "index": 321,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -11,
+     0.004,
+     13
+    ],
+    "max": [
+     -9,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 323,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -13,
+     0.004,
+     9
+    ],
+    "max": [
+     -11,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 325,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -13,
+     0.004,
+     11
+    ],
+    "max": [
+     -11,
+     0.101,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.097,
+    2
+   ]
+  },
+  {
+   "index": 327,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -13,
+     0.004,
+     13
+    ],
+    "max": [
+     -11,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 329,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -15,
+     0.004,
+     9
+    ],
+    "max": [
+     -13,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 331,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -15,
+     0.004,
+     11
+    ],
+    "max": [
+     -13,
+     0.087,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 333,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -15,
+     0.004,
+     13
+    ],
+    "max": [
+     -13,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 335,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -17,
+     0.004,
+     9
+    ],
+    "max": [
+     -15,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 337,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 360,
+   "aabb": {
+    "min": [
+     -17,
+     0.004,
+     11
+    ],
+    "max": [
+     -15,
+     0.097,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.093,
+    2
+   ]
+  },
+  {
+   "index": 339,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -17,
+     0.004,
+     13
+    ],
+    "max": [
+     -15,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 341,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -19,
+     0.004,
+     9
+    ],
+    "max": [
+     -17,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 343,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -19,
+     0.004,
+     11
+    ],
+    "max": [
+     -17,
+     0.077,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 345,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -19,
+     0.004,
+     13
+    ],
+    "max": [
+     -17,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 347,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -21,
+     0.004,
+     9
+    ],
+    "max": [
+     -19,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 349,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 152,
+   "aabb": {
+    "min": [
+     -21,
+     0.004,
+     11
+    ],
+    "max": [
+     -19,
+     0.064,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.06,
+    2
+   ]
+  },
+  {
+   "index": 351,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -21,
+     0.004,
+     13
+    ],
+    "max": [
+     -19,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 353,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -23,
+     0.004,
+     9
+    ],
+    "max": [
+     -21,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 355,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     -23,
+     0.004,
+     11
+    ],
+    "max": [
+     -21,
+     0.066,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 357,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     -23,
+     0.004,
+     13
+    ],
+    "max": [
+     -21,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 359,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     9
+    ],
+    "max": [
+     9,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 361,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     11
+    ],
+    "max": [
+     9,
+     0.077,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.073,
+    2
+   ]
+  },
+  {
+   "index": 363,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     13
+    ],
+    "max": [
+     9,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 365,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     9,
+     0.004,
+     9
+    ],
+    "max": [
+     11,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 367,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 360,
+   "aabb": {
+    "min": [
+     9,
+     0.004,
+     11
+    ],
+    "max": [
+     11,
+     0.097,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.093,
+    2
+   ]
+  },
+  {
+   "index": 369,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     9,
+     0.004,
+     13
+    ],
+    "max": [
+     11,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 371,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     11,
+     0.004,
+     9
+    ],
+    "max": [
+     13,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 373,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     11,
+     0.004,
+     11
+    ],
+    "max": [
+     13,
+     0.087,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 375,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     11,
+     0.004,
+     13
+    ],
+    "max": [
+     13,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 377,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     13,
+     0.004,
+     9
+    ],
+    "max": [
+     15,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 379,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 397,
+   "aabb": {
+    "min": [
+     13,
+     0.004,
+     11
+    ],
+    "max": [
+     15,
+     0.106,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.102,
+    2
+   ]
+  },
+  {
+   "index": 381,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     13,
+     0.004,
+     13
+    ],
+    "max": [
+     15,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 383,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     15,
+     0.004,
+     9
+    ],
+    "max": [
+     17,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 385,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     15,
+     0.004,
+     11
+    ],
+    "max": [
+     17,
+     0.083,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.079,
+    2
+   ]
+  },
+  {
+   "index": 387,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     15,
+     0.004,
+     13
+    ],
+    "max": [
+     17,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 389,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     17,
+     0.004,
+     9
+    ],
+    "max": [
+     19,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 391,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 189,
+   "aabb": {
+    "min": [
+     17,
+     0.004,
+     11
+    ],
+    "max": [
+     19,
+     0.066,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.062,
+    2
+   ]
+  },
+  {
+   "index": 393,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     17,
+     0.004,
+     13
+    ],
+    "max": [
+     19,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 395,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     19,
+     0.004,
+     9
+    ],
+    "max": [
+     21,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 397,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     19,
+     0.004,
+     11
+    ],
+    "max": [
+     21,
+     0.054,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 399,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     19,
+     0.004,
+     13
+    ],
+    "max": [
+     21,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 401,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     21,
+     0.004,
+     9
+    ],
+    "max": [
+     23,
+     0.054,
+     11
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 403,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     21,
+     0.004,
+     11
+    ],
+    "max": [
+     23,
+     0.087,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.083,
+    2
+   ]
+  },
+  {
+   "index": 405,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 116,
+   "aabb": {
+    "min": [
+     21,
+     0.004,
+     13
+    ],
+    "max": [
+     23,
+     0.054,
+     15
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 407,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     23,
+     0.004,
+     11
+    ],
+    "max": [
+     25,
+     0.092,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.088,
+    2
+   ]
+  },
+  {
+   "index": 409,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     25,
+     0.004,
+     11
+    ],
+    "max": [
+     27,
+     0.106,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.102,
+    2
+   ]
+  },
+  {
+   "index": 411,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     27,
+     0.004,
+     11
+    ],
+    "max": [
+     29,
+     0.097,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.093,
+    2
+   ]
+  },
+  {
+   "index": 413,
+   "name": "dirt-street-tile",
+   "key": "dirt-street-tile",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     29,
+     0.004,
+     11
+    ],
+    "max": [
+     31,
+     0.083,
+     13
+    ]
+   },
+   "size": [
+    2,
+    0.079,
+    2
+   ]
+  },
+  {
+   "index": 415,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 441,
+   "aabb": {
+    "min": [
+     -8.5,
+     0.004,
+     7.5
+    ],
+    "max": [
+     -7,
+     0.687,
+     9
+    ]
+   },
+   "size": [
+    1.5,
+    0.683,
+    1.5
+   ]
+  },
+  {
+   "index": 419,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     5.5
+    ],
+    "max": [
+     -7,
+     0.304,
+     7.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 422,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 425,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     3.5
+    ],
+    "max": [
+     -7,
+     0.724,
+     5.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 426,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     1.5
+    ],
+    "max": [
+     -7,
+     0.304,
+     3.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 429,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -0.5
+    ],
+    "max": [
+     -7,
+     0.724,
+     1.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 433,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 348,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -2.5
+    ],
+    "max": [
+     -6.28,
+     0.304,
+     -0.5
+    ]
+   },
+   "size": [
+    1.72,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 436,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 353,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -4.5
+    ],
+    "max": [
+     -7,
+     0.687,
+     -2.5
+    ]
+   },
+   "size": [
+    1,
+    0.683,
+    2
+   ]
+  },
+  {
+   "index": 440,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 425,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -6.5
+    ],
+    "max": [
+     -7,
+     0.724,
+     -4.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 444,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -8.5
+    ],
+    "max": [
+     -7,
+     0.304,
+     -6.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 447,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -10.5
+    ],
+    "max": [
+     -7,
+     0.724,
+     -8.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 451,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -12.5
+    ],
+    "max": [
+     -7,
+     0.304,
+     -10.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 454,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -14.5
+    ],
+    "max": [
+     -7,
+     0.304,
+     -12.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 457,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 409,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -16.5
+    ],
+    "max": [
+     -6.28,
+     0.687,
+     -14.5
+    ]
+   },
+   "size": [
+    1.72,
+    0.683,
+    2
+   ]
+  },
+  {
+   "index": 461,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -18.5
+    ],
+    "max": [
+     -7,
+     0.304,
+     -16.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 464,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 425,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -20.5
+    ],
+    "max": [
+     -7,
+     0.724,
+     -18.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 468,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     -8,
+     0.004,
+     -22.5
+    ],
+    "max": [
+     -7,
+     0.854,
+     -20.5
+    ]
+   },
+   "size": [
+    1,
+    0.85,
+    2
+   ]
+  },
+  {
+   "index": 471,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     -10.5,
+     0.004,
+     8
+    ],
+    "max": [
+     -8.5,
+     0.724,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.72,
+    1
+   ]
+  },
+  {
+   "index": 475,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12.5,
+     0.004,
+     8
+    ],
+    "max": [
+     -10.5,
+     0.304,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.3,
+    1
+   ]
+  },
+  {
+   "index": 478,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 353,
+   "aabb": {
+    "min": [
+     -14.5,
+     0.004,
+     8
+    ],
+    "max": [
+     -12.5,
+     0.687,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.683,
+    1
+   ]
+  },
+  {
+   "index": 482,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 457,
+   "aabb": {
+    "min": [
+     -16.5,
+     0.004,
+     8
+    ],
+    "max": [
+     -14.5,
+     0.854,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.85,
+    1
+   ]
+  },
+  {
+   "index": 486,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 380,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     7.5
+    ],
+    "max": [
+     8.5,
+     0.304,
+     9
+    ]
+   },
+   "size": [
+    1.5,
+    0.3,
+    1.5
+   ]
+  },
+  {
+   "index": 489,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     5.5
+    ],
+    "max": [
+     8,
+     0.724,
+     7.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 493,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     3.5
+    ],
+    "max": [
+     8,
+     0.304,
+     5.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 496,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     1.5
+    ],
+    "max": [
+     8,
+     0.304,
+     3.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 499,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 353,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -0.5
+    ],
+    "max": [
+     8,
+     0.687,
+     1.5
+    ]
+   },
+   "size": [
+    1,
+    0.683,
+    2
+   ]
+  },
+  {
+   "index": 503,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -2.5
+    ],
+    "max": [
+     8,
+     0.304,
+     -0.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 506,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 425,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -4.5
+    ],
+    "max": [
+     8,
+     0.724,
+     -2.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 510,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 348,
+   "aabb": {
+    "min": [
+     6.28,
+     0.004,
+     -6.5
+    ],
+    "max": [
+     8,
+     0.304,
+     -4.5
+    ]
+   },
+   "size": [
+    1.72,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 513,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -8.5
+    ],
+    "max": [
+     8,
+     0.724,
+     -6.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 517,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -10.5
+    ],
+    "max": [
+     8,
+     0.304,
+     -8.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 520,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 353,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -12.5
+    ],
+    "max": [
+     8,
+     0.687,
+     -10.5
+    ]
+   },
+   "size": [
+    1,
+    0.683,
+    2
+   ]
+  },
+  {
+   "index": 524,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 425,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -14.5
+    ],
+    "max": [
+     8,
+     0.724,
+     -12.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 528,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -16.5
+    ],
+    "max": [
+     8,
+     0.304,
+     -14.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 531,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -18.5
+    ],
+    "max": [
+     8,
+     0.724,
+     -16.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 535,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -20.5
+    ],
+    "max": [
+     8,
+     0.304,
+     -18.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 538,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     -22.5
+    ],
+    "max": [
+     8,
+     0.854,
+     -20.5
+    ]
+   },
+   "size": [
+    1,
+    0.85,
+    2
+   ]
+  },
+  {
+   "index": 541,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 353,
+   "aabb": {
+    "min": [
+     8.5,
+     0.004,
+     8
+    ],
+    "max": [
+     10.5,
+     0.687,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.683,
+    1
+   ]
+  },
+  {
+   "index": 545,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     10.5,
+     0.004,
+     8
+    ],
+    "max": [
+     12.5,
+     0.304,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.3,
+    1
+   ]
+  },
+  {
+   "index": 548,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 425,
+   "aabb": {
+    "min": [
+     12.5,
+     0.004,
+     8
+    ],
+    "max": [
+     14.5,
+     0.724,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.72,
+    1
+   ]
+  },
+  {
+   "index": 552,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     14.5,
+     0.004,
+     8
+    ],
+    "max": [
+     16.5,
+     0.304,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.3,
+    1
+   ]
+  },
+  {
+   "index": 555,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     16.5,
+     0.004,
+     8
+    ],
+    "max": [
+     18.5,
+     0.724,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.72,
+    1
+   ]
+  },
+  {
+   "index": 559,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     18.5,
+     0.004,
+     8
+    ],
+    "max": [
+     20.5,
+     0.304,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.3,
+    1
+   ]
+  },
+  {
+   "index": 562,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 385,
+   "aabb": {
+    "min": [
+     20.5,
+     0.004,
+     8
+    ],
+    "max": [
+     22.5,
+     0.854,
+     9
+    ]
+   },
+   "size": [
+    2,
+    0.85,
+    1
+   ]
+  },
+  {
+   "index": 566,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 513,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     15
+    ],
+    "max": [
+     8.5,
+     0.724,
+     16.5
+    ]
+   },
+   "size": [
+    1.5,
+    0.72,
+    1.5
+   ]
+  },
+  {
+   "index": 570,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 324,
+   "aabb": {
+    "min": [
+     8.5,
+     0.004,
+     15
+    ],
+    "max": [
+     10.5,
+     0.854,
+     16
+    ]
+   },
+   "size": [
+    2,
+    0.85,
+    1
+   ]
+  },
+  {
+   "index": 573,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     16.5
+    ],
+    "max": [
+     8,
+     0.724,
+     18.5
+    ]
+   },
+   "size": [
+    1,
+    0.72,
+    2
+   ]
+  },
+  {
+   "index": 577,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     18.5
+    ],
+    "max": [
+     8,
+     0.304,
+     20.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 580,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     20.5
+    ],
+    "max": [
+     8,
+     0.304,
+     22.5
+    ]
+   },
+   "size": [
+    1,
+    0.3,
+    2
+   ]
+  },
+  {
+   "index": 583,
+   "name": "boardwalk-run",
+   "key": "boardwalk-run",
+   "meshes": 2,
+   "triangles": 385,
+   "aabb": {
+    "min": [
+     7,
+     0.004,
+     22.5
+    ],
+    "max": [
+     8,
+     0.854,
+     24.5
+    ]
+   },
+   "size": [
+    1,
+    0.85,
+    2
+   ]
+  },
+  {
+   "index": 587,
+   "name": "porch-awning-run",
+   "key": "porch-awning-run",
+   "meshes": 1,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     7.015,
+     0.304,
+     -22.45
+    ],
+    "max": [
+     7.95,
+     2.962,
+     -20.5
+    ]
+   },
+   "size": [
+    0.935,
+    2.658,
+    1.95
+   ]
+  },
+  {
+   "index": 589,
+   "name": "porch-awning-run",
+   "key": "porch-awning-run",
+   "meshes": 1,
+   "triangles": 502,
+   "aabb": {
+    "min": [
+     7.015,
+     0.304,
+     -20.5
+    ],
+    "max": [
+     7.95,
+     2.962,
+     -18.5
+    ]
+   },
+   "size": [
+    0.935,
+    2.658,
+    2
+   ]
+  },
+  {
+   "index": 591,
+   "name": "porch-awning-run",
+   "key": "porch-awning-run",
+   "meshes": 1,
+   "triangles": 502,
+   "aabb": {
+    "min": [
+     7.015,
+     0.304,
+     -18.5
+    ],
+    "max": [
+     7.95,
+     2.962,
+     -16.5
+    ]
+   },
+   "size": [
+    0.935,
+    2.658,
+    2
+   ]
+  },
+  {
+   "index": 593,
+   "name": "porch-awning-run",
+   "key": "porch-awning-run",
+   "meshes": 1,
+   "triangles": 502,
+   "aabb": {
+    "min": [
+     7.015,
+     0.304,
+     -16.5
+    ],
+    "max": [
+     7.95,
+     2.962,
+     -14.5
+    ]
+   },
+   "size": [
+    0.935,
+    2.658,
+    2
+   ]
+  },
+  {
+   "index": 595,
+   "name": "porch-awning-run",
+   "key": "porch-awning-run",
+   "meshes": 1,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     7.015,
+     0.304,
+     -14.5
+    ],
+    "max": [
+     7.95,
+     2.962,
+     -12.55
+    ]
+   },
+   "size": [
+    0.935,
+    2.658,
+    1.95
+   ]
+  },
+  {
+   "index": 597,
+   "name": "telegraph-post-office",
+   "key": "telegraph-post-office",
+   "meshes": 5,
+   "triangles": 1424,
+   "aabb": {
+    "min": [
+     -14,
+     0.004,
+     -22
+    ],
+    "max": [
+     -8,
+     6.474,
+     -18
+    ]
+   },
+   "size": [
+    6,
+    6.47,
+    4
+   ]
+  },
+  {
+   "index": 607,
+   "name": "town-bank",
+   "key": "town-bank",
+   "meshes": 5,
+   "triangles": 1789,
+   "aabb": {
+    "min": [
+     -16,
+     0.004,
+     -18
+    ],
+    "max": [
+     -8,
+     6.004,
+     -12
+    ]
+   },
+   "size": [
+    8,
+    6,
+    6
+   ]
+  },
+  {
+   "index": 616,
+   "name": "general-store",
+   "key": "general-store",
+   "meshes": 6,
+   "triangles": 1584,
+   "aabb": {
+    "min": [
+     -16,
+     0.004,
+     -12
+    ],
+    "max": [
+     -8,
+     6.004,
+     -6
+    ]
+   },
+   "size": [
+    8,
+    6,
+    6
+   ]
+  },
+  {
+   "index": 628,
+   "name": "saloon-front",
+   "key": "saloon-front",
+   "meshes": 10,
+   "triangles": 1676,
+   "aabb": {
+    "min": [
+     -16,
+     0.004,
+     -6
+    ],
+    "max": [
+     -8,
+     6.004,
+     2
+    ]
+   },
+   "size": [
+    8,
+    6,
+    8
+   ]
+  },
+  {
+   "index": 648,
+   "name": "undertakers-shop",
+   "key": "undertakers-shop",
+   "meshes": 3,
+   "triangles": 950,
+   "aabb": {
+    "min": [
+     8,
+     0.004,
+     -22
+    ],
+    "max": [
+     16,
+     5.504,
+     -18
+    ]
+   },
+   "size": [
+    8,
+    5.5,
+    4
+   ]
+  },
+  {
+   "index": 654,
+   "name": "sheriff-office-jail",
+   "key": "sheriff-office-jail",
+   "meshes": 6,
+   "triangles": 1803,
+   "aabb": {
+    "min": [
+     8,
+     0.004,
+     -18
+    ],
+    "max": [
+     16,
+     4.504,
+     -12
+    ]
+   },
+   "size": [
+    8,
+    4.5,
+    6
+   ]
+  },
+  {
+   "index": 665,
+   "name": "barber-bath-house",
+   "key": "barber-bath-house",
+   "meshes": 6,
+   "triangles": 1588,
+   "aabb": {
+    "min": [
+     8,
+     0.004,
+     -12
+    ],
+    "max": [
+     16,
+     5.664,
+     -8
+    ]
+   },
+   "size": [
+    8,
+    5.66,
+    4
+   ]
+  },
+  {
+   "index": 677,
+   "name": "frontier-hotel",
+   "key": "frontier-hotel",
+   "meshes": 9,
+   "triangles": 1461,
+   "aabb": {
+    "min": [
+     8,
+     0.004,
+     -8
+    ],
+    "max": [
+     18,
+     7.304,
+     0
+    ]
+   },
+   "size": [
+    10,
+    7.3,
+    8
+   ]
+  },
+  {
+   "index": 695,
+   "name": "stage-freight-office",
+   "key": "stage-freight-office",
+   "meshes": 8,
+   "triangles": 1618,
+   "aabb": {
+    "min": [
+     8,
+     0.004,
+     2
+    ],
+    "max": [
+     16,
+     5.504,
+     8
+    ]
+   },
+   "size": [
+    8,
+    5.5,
+    6
+   ]
+  },
+  {
+   "index": 711,
+   "name": "blacksmith-shop",
+   "key": "blacksmith-shop",
+   "meshes": 3,
+   "triangles": 1389,
+   "aabb": {
+    "min": [
+     16,
+     0.004,
+     2
+    ],
+    "max": [
+     22,
+     6.204,
+     8
+    ]
+   },
+   "size": [
+    6,
+    6.2,
+    6
+   ]
+  },
+  {
+   "index": 717,
+   "name": "livery-stable",
+   "key": "livery-stable",
+   "meshes": 10,
+   "triangles": 1705,
+   "aabb": {
+    "min": [
+     -18,
+     0.004,
+     16
+    ],
+    "max": [
+     -8,
+     6.787,
+     24
+    ]
+   },
+   "size": [
+    10,
+    6.783,
+    8
+   ]
+  },
+  {
+   "index": 739,
+   "name": "one-room-schoolhouse",
+   "key": "one-room-schoolhouse",
+   "meshes": 6,
+   "triangles": 1542,
+   "aabb": {
+    "min": [
+     8,
+     0.004,
+     18
+    ],
+    "max": [
+     16,
+     8.116,
+     24
+    ]
+   },
+   "size": [
+    8,
+    8.112,
+    6
+   ]
+  },
+  {
+   "index": 751,
+   "name": "clapboard-church",
+   "key": "clapboard-church",
+   "meshes": 5,
+   "triangles": 1602,
+   "aabb": {
+    "min": [
+     -33,
+     0.004,
+     9
+    ],
+    "max": [
+     -23,
+     10.004,
+     15
+    ]
+   },
+   "size": [
+    10,
+    10,
+    6
+   ]
+  },
+  {
+   "index": 761,
+   "name": "hanging-shop-sign",
+   "key": "hanging-shop-sign",
+   "meshes": 4,
+   "triangles": 752,
+   "aabb": {
+    "min": [
+     -8.8,
+     2.236,
+     -21.265
+    ],
+    "max": [
+     -7.2,
+     3.302,
+     -21.135
+    ]
+   },
+   "size": [
+    1.6,
+    1.066,
+    0.13
+   ]
+  },
+  {
+   "index": 769,
+   "name": "hanging-shop-sign",
+   "key": "hanging-shop-sign",
+   "meshes": 4,
+   "triangles": 752,
+   "aabb": {
+    "min": [
+     7.2,
+     2.236,
+     -11.265
+    ],
+    "max": [
+     8.8,
+     3.302,
+     -11.135
+    ]
+   },
+   "size": [
+    1.6,
+    1.066,
+    0.13
+   ]
+  },
+  {
+   "index": 777,
+   "name": "hitching-rail-run",
+   "key": "hitching-rail-run",
+   "meshes": 6,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     -6.705,
+     0.054,
+     -8.98
+    ],
+    "max": [
+     -6.305,
+     1.454,
+     -7
+    ]
+   },
+   "size": [
+    0.4,
+    1.4,
+    1.98
+   ]
+  },
+  {
+   "index": 789,
+   "name": "hitching-rail-run",
+   "key": "hitching-rail-run",
+   "meshes": 6,
+   "triangles": 654,
+   "aabb": {
+    "min": [
+     -6.705,
+     0.054,
+     -7
+    ],
+    "max": [
+     -6.305,
+     1.454,
+     -5.02
+    ]
+   },
+   "size": [
+    0.4,
+    1.4,
+    1.98
+   ]
+  },
+  {
+   "index": 801,
+   "name": "hitching-rail-run",
+   "key": "hitching-rail-run",
+   "meshes": 4,
+   "triangles": 492,
+   "aabb": {
+    "min": [
+     6.305,
+     0.054,
+     -18.98
+    ],
+    "max": [
+     6.705,
+     1.454,
+     -17
+    ]
+   },
+   "size": [
+    0.4,
+    1.4,
+    1.98
+   ]
+  },
+  {
+   "index": 809,
+   "name": "hitching-rail-run",
+   "key": "hitching-rail-run",
+   "meshes": 4,
+   "triangles": 430,
+   "aabb": {
+    "min": [
+     6.305,
+     0.054,
+     -17
+    ],
+    "max": [
+     6.705,
+     1.454,
+     -15
+    ]
+   },
+   "size": [
+    0.4,
+    1.4,
+    2
+   ]
+  },
+  {
+   "index": 817,
+   "name": "hitching-rail-run",
+   "key": "hitching-rail-run",
+   "meshes": 4,
+   "triangles": 528,
+   "aabb": {
+    "min": [
+     6.305,
+     0.054,
+     -15
+    ],
+    "max": [
+     6.705,
+     1.454,
+     -13.02
+    ]
+   },
+   "size": [
+    0.4,
+    1.4,
+    1.98
+   ]
+  },
+  {
+   "index": 825,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -6.75,
+     0.054,
+     -20.5
+    ],
+    "max": [
+     -5.75,
+     3.254,
+     -19.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 832,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     5.75,
+     0.054,
+     -20.5
+    ],
+    "max": [
+     6.75,
+     3.254,
+     -19.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 839,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -6.75,
+     0.054,
+     -12.5
+    ],
+    "max": [
+     -5.75,
+     3.254,
+     -11.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 846,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     5.75,
+     0.054,
+     -12.5
+    ],
+    "max": [
+     6.75,
+     3.254,
+     -11.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 853,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -6.75,
+     0.054,
+     -4.5
+    ],
+    "max": [
+     -5.75,
+     3.254,
+     -3.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 860,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     5.75,
+     0.054,
+     -4.5
+    ],
+    "max": [
+     6.75,
+     3.254,
+     -3.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 867,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -6.75,
+     0.054,
+     3.5
+    ],
+    "max": [
+     -5.75,
+     3.254,
+     4.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 874,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     5.75,
+     0.054,
+     3.5
+    ],
+    "max": [
+     6.75,
+     3.254,
+     4.5
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 881,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -6.75,
+     0.054,
+     16.1
+    ],
+    "max": [
+     -5.75,
+     3.254,
+     17.1
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 888,
+   "name": "street-oil-lamp",
+   "key": "street-oil-lamp",
+   "meshes": 3,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     5.75,
+     0.054,
+     16.1
+    ],
+    "max": [
+     6.75,
+     3.254,
+     17.1
+    ]
+   },
+   "size": [
+    1,
+    3.2,
+    1
+   ]
+  },
+  {
+   "index": 895,
+   "name": "plank-trough",
+   "key": "plank-trough",
+   "meshes": 4,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -6.45,
+     0.054,
+     -11.638
+    ],
+    "max": [
+     -5.95,
+     0.795,
+     -9.15
+    ]
+   },
+   "size": [
+    0.499,
+    0.741,
+    2.488
+   ]
+  },
+  {
+   "index": 902,
+   "name": "wanted-poster-board",
+   "key": "wanted-poster-board",
+   "meshes": 9,
+   "triangles": 737,
+   "aabb": {
+    "min": [
+     6.15,
+     0.054,
+     -11.275
+    ],
+    "max": [
+     6.4,
+     2.454,
+     -9.525
+    ]
+   },
+   "size": [
+    0.25,
+    2.4,
+    1.75
+   ]
+  },
+  {
+   "index": 919,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 4,
+   "triangles": 2985,
+   "aabb": {
+    "min": [
+     -6.218,
+     0.054,
+     -8.78
+    ],
+    "max": [
+     -3.882,
+     2.16,
+     -7.888
+    ]
+   },
+   "size": [
+    2.337,
+    2.106,
+    0.892
+   ]
+  },
+  {
+   "index": 951,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 4,
+   "triangles": 2942,
+   "aabb": {
+    "min": [
+     -6.168,
+     0.054,
+     -7.412
+    ],
+    "max": [
+     -3.832,
+     2.16,
+     -6.588
+    ]
+   },
+   "size": [
+    2.337,
+    2.106,
+    0.824
+   ]
+  },
+  {
+   "index": 983,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 4,
+   "triangles": 2985,
+   "aabb": {
+    "min": [
+     -6.268,
+     0.054,
+     -6.18
+    ],
+    "max": [
+     -3.932,
+     2.16,
+     -5.288
+    ]
+   },
+   "size": [
+    2.337,
+    2.106,
+    0.892
+   ]
+  },
+  {
+   "index": 1015,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 4,
+   "triangles": 2942,
+   "aabb": {
+    "min": [
+     3.882,
+     0.054,
+     -16.012
+    ],
+    "max": [
+     6.218,
+     2.16,
+     -15.188
+    ]
+   },
+   "size": [
+    2.337,
+    2.106,
+    0.824
+   ]
+  },
+  {
+   "index": 1047,
+   "name": "stagecoach",
+   "key": "stagecoach",
+   "meshes": 11,
+   "triangles": 2998,
+   "aabb": {
+    "min": [
+     3,
+     0.054,
+     2.35
+    ],
+    "max": [
+     5.408,
+     3.01,
+     6.85
+    ]
+   },
+   "size": [
+    2.408,
+    2.956,
+    4.5
+   ]
+  },
+  {
+   "index": 1069,
+   "name": "buckboard-wagon",
+   "key": "buckboard-wagon",
+   "meshes": 11,
+   "triangles": 2946,
+   "aabb": {
+    "min": [
+     -5.5,
+     0.054,
+     -18.55
+    ],
+    "max": [
+     -3.5,
+     2.183,
+     -13.05
+    ]
+   },
+   "size": [
+    2,
+    2.129,
+    5.5
+   ]
+  },
+  {
+   "index": 1091,
+   "name": "freight-crate-sack-stack",
+   "key": "freight-crate-sack-stack",
+   "meshes": 2,
+   "triangles": 753,
+   "aabb": {
+    "min": [
+     -6.478,
+     0.054,
+     -19.05
+    ],
+    "max": [
+     -5.51,
+     1.049,
+     -17.55
+    ]
+   },
+   "size": [
+    0.968,
+    0.995,
+    1.5
+   ]
+  },
+  {
+   "index": 1095,
+   "name": "buckboard-wagon",
+   "key": "buckboard-wagon",
+   "meshes": 11,
+   "triangles": 2814,
+   "aabb": {
+    "min": [
+     -5.4,
+     0.054,
+     17.25
+    ],
+    "max": [
+     -3.4,
+     2.186,
+     22.75
+    ]
+   },
+   "size": [
+    2,
+    2.132,
+    5.5
+   ]
+  },
+  {
+   "index": 1117,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0.004,
+     2
+    ],
+    "max": [
+     -14,
+     0.054,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1119,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0.004,
+     4
+    ],
+    "max": [
+     -14,
+     0.054,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1121,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -16,
+     0.004,
+     6
+    ],
+    "max": [
+     -14,
+     0.054,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1123,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -14,
+     0.004,
+     2
+    ],
+    "max": [
+     -12,
+     0.054,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1125,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -14,
+     0.004,
+     4
+    ],
+    "max": [
+     -12,
+     0.054,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1127,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -14,
+     0.004,
+     6
+    ],
+    "max": [
+     -12,
+     0.054,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1129,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0.004,
+     2
+    ],
+    "max": [
+     -10,
+     0.054,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1131,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0.004,
+     4
+    ],
+    "max": [
+     -10,
+     0.054,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1133,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -12,
+     0.004,
+     6
+    ],
+    "max": [
+     -10,
+     0.054,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1135,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -10,
+     0.004,
+     2
+    ],
+    "max": [
+     -8,
+     0.054,
+     4
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1137,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -10,
+     0.004,
+     4
+    ],
+    "max": [
+     -8,
+     0.054,
+     6
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1139,
+   "name": "boardwalk-plank-tile",
+   "key": "boardwalk-plank-tile",
+   "meshes": 1,
+   "triangles": 292,
+   "aabb": {
+    "min": [
+     -10,
+     0.004,
+     6
+    ],
+    "max": [
+     -8,
+     0.054,
+     8
+    ]
+   },
+   "size": [
+    2,
+    0.05,
+    2
+   ]
+  },
+  {
+   "index": 1141,
+   "name": "back-bar-shelf",
+   "key": "back-bar-shelf",
+   "meshes": 4,
+   "triangles": 760,
+   "aabb": {
+    "min": [
+     -13,
+     0.054,
+     2.003
+    ],
+    "max": [
+     -11,
+     2.654,
+     2.976
+    ]
+   },
+   "size": [
+    2,
+    2.6,
+    0.973
+   ]
+  },
+  {
+   "index": 1149,
+   "name": "bar-counter-run",
+   "key": "bar-counter-run",
+   "meshes": 3,
+   "triangles": 561,
+   "aabb": {
+    "min": [
+     -13.9,
+     0.054,
+     3.431
+    ],
+    "max": [
+     -12,
+     1.509,
+     4.05
+    ]
+   },
+   "size": [
+    1.9,
+    1.455,
+    0.619
+   ]
+  },
+  {
+   "index": 1155,
+   "name": "bar-counter-run",
+   "key": "bar-counter-run",
+   "meshes": 3,
+   "triangles": 561,
+   "aabb": {
+    "min": [
+     -12,
+     0.054,
+     3.431
+    ],
+    "max": [
+     -10.1,
+     1.509,
+     4.05
+    ]
+   },
+   "size": [
+    1.9,
+    1.455,
+    0.619
+   ]
+  },
+  {
+   "index": 1161,
+   "name": "whiskey-bottle-glass-set",
+   "key": "whiskey-bottle-glass-set",
+   "meshes": 5,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -12.741,
+     1.204,
+     3.542
+    ],
+    "max": [
+     -12.386,
+     1.504,
+     3.926
+    ]
+   },
+   "size": [
+    0.355,
+    0.3,
+    0.384
+   ]
+  },
+  {
+   "index": 1169,
+   "name": "whiskey-bottle-glass-set",
+   "key": "whiskey-bottle-glass-set",
+   "meshes": 5,
+   "triangles": 580,
+   "aabb": {
+    "min": [
+     -11.042,
+     1.204,
+     3.635
+    ],
+    "max": [
+     -10.67,
+     1.504,
+     3.984
+    ]
+   },
+   "size": [
+    0.372,
+    0.3,
+    0.349
+   ]
+  },
+  {
+   "index": 1177,
+   "name": "upright-piano",
+   "key": "upright-piano",
+   "meshes": 4,
+   "triangles": 698,
+   "aabb": {
+    "min": [
+     -15.75,
+     0.054,
+     2.003
+    ],
+    "max": [
+     -14.25,
+     1.434,
+     3.001
+    ]
+   },
+   "size": [
+    1.5,
+    1.38,
+    0.998
+   ]
+  },
+  {
+   "index": 1185,
+   "name": "poker-table",
+   "key": "poker-table",
+   "meshes": 2,
+   "triangles": 712,
+   "aabb": {
+    "min": [
+     -11,
+     0.054,
+     5.2
+    ],
+    "max": [
+     -8.4,
+     0.974,
+     7.8
+    ]
+   },
+   "size": [
+    2.599,
+    0.92,
+    2.599
+   ]
+  },
+  {
+   "index": 1189,
+   "name": "brass-spittoon",
+   "key": "brass-spittoon",
+   "meshes": 2,
+   "triangles": 516,
+   "aabb": {
+    "min": [
+     -10.345,
+     0.054,
+     4.205
+    ],
+    "max": [
+     -10.055,
+     0.292,
+     4.541
+    ]
+   },
+   "size": [
+    0.29,
+    0.238,
+    0.336
+   ]
+  },
+  {
+   "index": 1193,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 3,
+   "triangles": 710,
+   "aabb": {
+    "min": [
+     -15.663,
+     0.054,
+     7.087
+    ],
+    "max": [
+     -15.106,
+     0.79,
+     7.619
+    ]
+   },
+   "size": [
+    0.557,
+    0.736,
+    0.532
+   ]
+  },
+  {
+   "index": 1199,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 3,
+   "triangles": 998,
+   "aabb": {
+    "min": [
+     -15.121,
+     0.054,
+     7.129
+    ],
+    "max": [
+     -14.379,
+     0.99,
+     7.871
+    ]
+   },
+   "size": [
+    0.743,
+    0.936,
+    0.743
+   ]
+  },
+  {
+   "index": 1205,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     -15.622,
+     0.054,
+     6.378
+    ],
+    "max": [
+     -14.978,
+     0.754,
+     7.022
+    ]
+   },
+   "size": [
+    0.644,
+    0.7,
+    0.644
+   ]
+  },
+  {
+   "index": 1209,
+   "name": "brass-spittoon",
+   "key": "brass-spittoon",
+   "meshes": 2,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     -9.545,
+     0.304,
+     -3.745
+    ],
+    "max": [
+     -9.255,
+     0.542,
+     -3.455
+    ]
+   },
+   "size": [
+    0.29,
+    0.238,
+    0.29
+   ]
+  },
+  {
+   "index": 1213,
+   "name": "porch-rocking-chair",
+   "key": "porch-rocking-chair",
+   "meshes": 4,
+   "triangles": 712,
+   "aabb": {
+    "min": [
+     8.8,
+     0.304,
+     -1.45
+    ],
+    "max": [
+     9.672,
+     1.34,
+     -0.813
+    ]
+   },
+   "size": [
+    0.872,
+    1.036,
+    0.637
+   ]
+  },
+  {
+   "index": 1222,
+   "name": "porch-rocking-chair",
+   "key": "porch-rocking-chair",
+   "meshes": 4,
+   "triangles": 722,
+   "aabb": {
+    "min": [
+     8.522,
+     0.304,
+     -13.519
+    ],
+    "max": [
+     9.478,
+     1.34,
+     -12.622
+    ]
+   },
+   "size": [
+    0.957,
+    1.036,
+    0.897
+   ]
+  },
+  {
+   "index": 1231,
+   "name": "water-tower-trestle",
+   "key": "water-tower-trestle",
+   "meshes": 6,
+   "triangles": 795,
+   "aabb": {
+    "min": [
+     -20.39,
+     -1.25,
+     -9.89
+    ],
+    "max": [
+     -17.477,
+     10.21,
+     -7.022
+    ]
+   },
+   "size": [
+    2.913,
+    11.46,
+    2.868
+   ]
+  },
+  {
+   "index": 1243,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     -17.363,
+     -0.252,
+     -1.663
+    ],
+    "max": [
+     -16.837,
+     0.448,
+     -1.131
+    ]
+   },
+   "size": [
+    0.526,
+    0.7,
+    0.532
+   ]
+  },
+  {
+   "index": 1247,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 978,
+   "aabb": {
+    "min": [
+     -17.463,
+     -0.265,
+     -1.013
+    ],
+    "max": [
+     -16.937,
+     0.535,
+     -0.48
+    ]
+   },
+   "size": [
+    0.527,
+    0.8,
+    0.533
+   ]
+  },
+  {
+   "index": 1251,
+   "name": "freight-crate-sack-stack",
+   "key": "freight-crate-sack-stack",
+   "meshes": 2,
+   "triangles": 358,
+   "aabb": {
+    "min": [
+     -17.755,
+     -0.257,
+     -12.25
+    ],
+    "max": [
+     -16.824,
+     0.311,
+     -10.75
+    ]
+   },
+   "size": [
+    0.931,
+    0.568,
+    1.5
+   ]
+  },
+  {
+   "index": 1255,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     16,
+     0.004,
+     -22.593
+    ],
+    "max": [
+     18,
+     1.203,
+     -21.406
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1257,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 375,
+   "aabb": {
+    "min": [
+     18,
+     0.004,
+     -22.593
+    ],
+    "max": [
+     20,
+     1.203,
+     -21.406
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1259,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     20,
+     0.004,
+     -22.773
+    ],
+    "max": [
+     21.214,
+     1.202,
+     -21
+    ]
+   },
+   "size": [
+    1.214,
+    1.198,
+    1.773
+   ]
+  },
+  {
+   "index": 1261,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 401,
+   "aabb": {
+    "min": [
+     20.407,
+     0.004,
+     -21
+    ],
+    "max": [
+     21.594,
+     1.203,
+     -19
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1263,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 375,
+   "aabb": {
+    "min": [
+     20,
+     0.004,
+     -19
+    ],
+    "max": [
+     21.773,
+     1.202,
+     -17.786
+    ]
+   },
+   "size": [
+    1.773,
+    1.198,
+    1.214
+   ]
+  },
+  {
+   "index": 1265,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 375,
+   "aabb": {
+    "min": [
+     16,
+     0.004,
+     -18.593
+    ],
+    "max": [
+     18,
+     1.203,
+     -17.406
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1267,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 4,
+   "triangles": 521,
+   "aabb": {
+    "min": [
+     18,
+     0.004,
+     -18.593
+    ],
+    "max": [
+     20,
+     1.203,
+     -17.406
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1275,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 401,
+   "aabb": {
+    "min": [
+     16,
+     0.004,
+     -12.593
+    ],
+    "max": [
+     18,
+     1.203,
+     -11.406
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1277,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     18,
+     0.004,
+     -12.593
+    ],
+    "max": [
+     20,
+     1.203,
+     -11.406
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1279,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     20,
+     0.004,
+     -13
+    ],
+    "max": [
+     21.773,
+     1.202,
+     -11.786
+    ]
+   },
+   "size": [
+    1.773,
+    1.198,
+    1.214
+   ]
+  },
+  {
+   "index": 1281,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     20.407,
+     0.004,
+     -15
+    ],
+    "max": [
+     21.594,
+     1.203,
+     -13
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1283,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 333,
+   "aabb": {
+    "min": [
+     20.407,
+     0.004,
+     -16.632
+    ],
+    "max": [
+     21.521,
+     1.203,
+     -15
+    ]
+   },
+   "size": [
+    1.114,
+    1.199,
+    1.632
+   ]
+  },
+  {
+   "index": 1285,
+   "name": "miners-shack",
+   "key": "miners-shack",
+   "meshes": 6,
+   "triangles": 1501,
+   "aabb": {
+    "min": [
+     18.05,
+     0.004,
+     -7.965
+    ],
+    "max": [
+     22.05,
+     5.458,
+     -4.035
+    ]
+   },
+   "size": [
+    4,
+    5.454,
+    3.93
+   ]
+  },
+  {
+   "index": 1294,
+   "name": "buckboard-wagon",
+   "key": "buckboard-wagon",
+   "meshes": 11,
+   "triangles": 2910,
+   "aabb": {
+    "min": [
+     18.7,
+     0.004,
+     -3.7
+    ],
+    "max": [
+     20.7,
+     1.904,
+     1.8
+    ]
+   },
+   "size": [
+    2,
+    1.9,
+    5.5
+   ]
+  },
+  {
+   "index": 1316,
+   "name": "freight-crate-sack-stack",
+   "key": "freight-crate-sack-stack",
+   "meshes": 2,
+   "triangles": 667,
+   "aabb": {
+    "min": [
+     21.3,
+     0.004,
+     -3.178
+    ],
+    "max": [
+     22.8,
+     0.999,
+     -2.21
+    ]
+   },
+   "size": [
+    1.5,
+    0.995,
+    0.968
+   ]
+  },
+  {
+   "index": 1320,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     21.187,
+     0.004,
+     -3.813
+    ],
+    "max": [
+     21.713,
+     0.704,
+     -3.281
+    ]
+   },
+   "size": [
+    0.526,
+    0.7,
+    0.532
+   ]
+  },
+  {
+   "index": 1324,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 978,
+   "aabb": {
+    "min": [
+     22.29,
+     0.004,
+     -1.51
+    ],
+    "max": [
+     23.01,
+     0.854,
+     -0.79
+    ]
+   },
+   "size": [
+    0.72,
+    0.85,
+    0.72
+   ]
+  },
+  {
+   "index": 1328,
+   "name": "saddle-rack",
+   "key": "saddle-rack",
+   "meshes": 5,
+   "triangles": 743,
+   "aabb": {
+    "min": [
+     16.85,
+     0.004,
+     -10.8
+    ],
+    "max": [
+     17.35,
+     1.377,
+     -9.8
+    ]
+   },
+   "size": [
+    0.5,
+    1.373,
+    1
+   ]
+  },
+  {
+   "index": 1338,
+   "name": "plank-trough",
+   "key": "plank-trough",
+   "meshes": 3,
+   "triangles": 590,
+   "aabb": {
+    "min": [
+     18.65,
+     0.004,
+     -10.85
+    ],
+    "max": [
+     21.138,
+     0.745,
+     -10.35
+    ]
+   },
+   "size": [
+    2.488,
+    0.741,
+    0.499
+   ]
+  },
+  {
+   "index": 1344,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     16.237,
+     0.004,
+     -13.263
+    ],
+    "max": [
+     16.763,
+     0.704,
+     -12.731
+    ]
+   },
+   "size": [
+    0.526,
+    0.7,
+    0.532
+   ]
+  },
+  {
+   "index": 1348,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 978,
+   "aabb": {
+    "min": [
+     16.179,
+     0.004,
+     -14.021
+    ],
+    "max": [
+     16.921,
+     0.904,
+     -13.279
+    ]
+   },
+   "size": [
+    0.743,
+    0.9,
+    0.743
+   ]
+  },
+  {
+   "index": 1352,
+   "name": "freight-crate-sack-stack",
+   "key": "freight-crate-sack-stack",
+   "meshes": 2,
+   "triangles": 242,
+   "aabb": {
+    "min": [
+     16.945,
+     0.004,
+     -20.8
+    ],
+    "max": [
+     17.876,
+     0.572,
+     -19.8
+    ]
+   },
+   "size": [
+    0.931,
+    0.568,
+    1
+   ]
+  },
+  {
+   "index": 1356,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     16,
+     0.004,
+     23.407
+    ],
+    "max": [
+     18,
+     1.203,
+     24.594
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1358,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     18,
+     0.004,
+     23.407
+    ],
+    "max": [
+     20,
+     1.203,
+     24.594
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1360,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 401,
+   "aabb": {
+    "min": [
+     20,
+     0.004,
+     23.407
+    ],
+    "max": [
+     22,
+     1.203,
+     24.594
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1362,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     22,
+     0.004,
+     23
+    ],
+    "max": [
+     23.773,
+     1.202,
+     24.214
+    ]
+   },
+   "size": [
+    1.773,
+    1.198,
+    1.214
+   ]
+  },
+  {
+   "index": 1364,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 388,
+   "aabb": {
+    "min": [
+     22.407,
+     0.004,
+     21
+    ],
+    "max": [
+     23.594,
+     1.203,
+     23
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1366,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 375,
+   "aabb": {
+    "min": [
+     22.407,
+     0.004,
+     19
+    ],
+    "max": [
+     23.594,
+     1.203,
+     21
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1368,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 359,
+   "aabb": {
+    "min": [
+     22.407,
+     0.004,
+     17.368
+    ],
+    "max": [
+     23.521,
+     1.203,
+     19
+    ]
+   },
+   "size": [
+    1.114,
+    1.199,
+    1.632
+   ]
+  },
+  {
+   "index": 1370,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     16.187,
+     0.004,
+     22.637
+    ],
+    "max": [
+     16.713,
+     0.704,
+     23.169
+    ]
+   },
+   "size": [
+    0.526,
+    0.7,
+    0.532
+   ]
+  },
+  {
+   "index": 1374,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 978,
+   "aabb": {
+    "min": [
+     16.15,
+     0.004,
+     21.9
+    ],
+    "max": [
+     16.85,
+     0.854,
+     22.6
+    ]
+   },
+   "size": [
+    0.7,
+    0.85,
+    0.7
+   ]
+  },
+  {
+   "index": 1378,
+   "name": "freight-crate-sack-stack",
+   "key": "freight-crate-sack-stack",
+   "meshes": 1,
+   "triangles": 156,
+   "aabb": {
+    "min": [
+     16.725,
+     0.004,
+     18.2
+    ],
+    "max": [
+     17.275,
+     0.504,
+     19.2
+    ]
+   },
+   "size": [
+    0.55,
+    0.5,
+    1
+   ]
+  },
+  {
+   "index": 1381,
+   "name": "mine-headframe",
+   "key": "mine-headframe",
+   "meshes": 4,
+   "triangles": 1721,
+   "aabb": {
+    "min": [
+     2,
+     2.877,
+     -41.5
+    ],
+    "max": [
+     6,
+     11.876,
+     -37.5
+    ]
+   },
+   "size": [
+    4,
+    8.999,
+    4
+   ]
+  },
+  {
+   "index": 1389,
+   "name": "ore-chute-bin",
+   "key": "ore-chute-bin",
+   "meshes": 5,
+   "triangles": 674,
+   "aabb": {
+    "min": [
+     8,
+     2.877,
+     -39
+    ],
+    "max": [
+     11,
+     7.198,
+     -36
+    ]
+   },
+   "size": [
+    3,
+    4.321,
+    3
+   ]
+  },
+  {
+   "index": 1399,
+   "name": "mine-rail-run",
+   "key": "mine-rail-run",
+   "meshes": 1,
+   "triangles": 481,
+   "aabb": {
+    "min": [
+     2.03,
+     2.877,
+     -37.35
+    ],
+    "max": [
+     4,
+     3.477,
+     -35.976
+    ]
+   },
+   "size": [
+    1.97,
+    0.6,
+    1.374
+   ]
+  },
+  {
+   "index": 1401,
+   "name": "mine-rail-run",
+   "key": "mine-rail-run",
+   "meshes": 1,
+   "triangles": 307,
+   "aabb": {
+    "min": [
+     4,
+     2.877,
+     -37.34
+    ],
+    "max": [
+     6,
+     3.027,
+     -35.856
+    ]
+   },
+   "size": [
+    2,
+    0.15,
+    1.484
+   ]
+  },
+  {
+   "index": 1403,
+   "name": "mine-rail-run",
+   "key": "mine-rail-run",
+   "meshes": 1,
+   "triangles": 307,
+   "aabb": {
+    "min": [
+     6,
+     2.877,
+     -37.34
+    ],
+    "max": [
+     8,
+     3.027,
+     -35.856
+    ]
+   },
+   "size": [
+    2,
+    0.15,
+    1.484
+   ]
+  },
+  {
+   "index": 1405,
+   "name": "mine-rail-run",
+   "key": "mine-rail-run",
+   "meshes": 1,
+   "triangles": 307,
+   "aabb": {
+    "min": [
+     8,
+     2.877,
+     -37.34
+    ],
+    "max": [
+     10,
+     3.027,
+     -35.856
+    ]
+   },
+   "size": [
+    2,
+    0.15,
+    1.484
+   ]
+  },
+  {
+   "index": 1407,
+   "name": "mine-rail-run",
+   "key": "mine-rail-run",
+   "meshes": 1,
+   "triangles": 481,
+   "aabb": {
+    "min": [
+     10,
+     2.877,
+     -37.524
+    ],
+    "max": [
+     11.97,
+     3.477,
+     -36.15
+    ]
+   },
+   "size": [
+    1.97,
+    0.6,
+    1.374
+   ]
+  },
+  {
+   "index": 1409,
+   "name": "mine-cart",
+   "key": "mine-cart",
+   "meshes": 8,
+   "triangles": 2202,
+   "aabb": {
+    "min": [
+     8.762,
+     3.007,
+     -37.195
+    ],
+    "max": [
+     10.58,
+     4.427,
+     -36.32
+    ]
+   },
+   "size": [
+    1.818,
+    1.42,
+    0.875
+   ]
+  },
+  {
+   "index": 1425,
+   "name": "mine-spoil-tile",
+   "key": "mine-spoil-tile",
+   "meshes": 1,
+   "triangles": 747,
+   "aabb": {
+    "min": [
+     4,
+     2.879,
+     -36
+    ],
+    "max": [
+     6,
+     2.982,
+     -34
+    ]
+   },
+   "size": [
+    2,
+    0.103,
+    2
+   ]
+  },
+  {
+   "index": 1427,
+   "name": "mine-spoil-tile",
+   "key": "mine-spoil-tile",
+   "meshes": 1,
+   "triangles": 720,
+   "aabb": {
+    "min": [
+     4,
+     2.879,
+     -34
+    ],
+    "max": [
+     6,
+     2.982,
+     -32
+    ]
+   },
+   "size": [
+    2,
+    0.103,
+    2
+   ]
+  },
+  {
+   "index": 1429,
+   "name": "mine-spoil-tile",
+   "key": "mine-spoil-tile",
+   "meshes": 1,
+   "triangles": 713,
+   "aabb": {
+    "min": [
+     6,
+     2.879,
+     -36
+    ],
+    "max": [
+     8,
+     2.982,
+     -34
+    ]
+   },
+   "size": [
+    2,
+    0.103,
+    2
+   ]
+  },
+  {
+   "index": 1431,
+   "name": "mine-spoil-tile",
+   "key": "mine-spoil-tile",
+   "meshes": 1,
+   "triangles": 735,
+   "aabb": {
+    "min": [
+     6,
+     2.879,
+     -34
+    ],
+    "max": [
+     8,
+     2.982,
+     -32
+    ]
+   },
+   "size": [
+    2,
+    0.103,
+    2
+   ]
+  },
+  {
+   "index": 1433,
+   "name": "mine-spoil-tile",
+   "key": "mine-spoil-tile",
+   "meshes": 1,
+   "triangles": 752,
+   "aabb": {
+    "min": [
+     8,
+     2.879,
+     -36
+    ],
+    "max": [
+     10,
+     2.982,
+     -34
+    ]
+   },
+   "size": [
+    2,
+    0.103,
+    2
+   ]
+  },
+  {
+   "index": 1435,
+   "name": "mine-spoil-tile",
+   "key": "mine-spoil-tile",
+   "meshes": 1,
+   "triangles": 688,
+   "aabb": {
+    "min": [
+     8,
+     2.879,
+     -34
+    ],
+    "max": [
+     10,
+     2.982,
+     -32
+    ]
+   },
+   "size": [
+    2,
+    0.103,
+    2
+   ]
+  },
+  {
+   "index": 1437,
+   "name": "ore-barrow",
+   "key": "ore-barrow",
+   "meshes": 5,
+   "triangles": 607,
+   "aabb": {
+    "min": [
+     6.642,
+     2.929,
+     -34.635
+    ],
+    "max": [
+     8.084,
+     3.63,
+     -33.417
+    ]
+   },
+   "size": [
+    1.442,
+    0.701,
+    1.218
+   ]
+  },
+  {
+   "index": 1448,
+   "name": "freight-crate-sack-stack",
+   "key": "freight-crate-sack-stack",
+   "meshes": 2,
+   "triangles": 411,
+   "aabb": {
+    "min": [
+     6.507,
+     2.877,
+     -41.2
+    ],
+    "max": [
+     7.49,
+     3.45,
+     -40.2
+    ]
+   },
+   "size": [
+    0.983,
+    0.573,
+    1
+   ]
+  },
+  {
+   "index": 1452,
+   "name": "miners-shack",
+   "key": "miners-shack",
+   "meshes": 10,
+   "triangles": 1652,
+   "aabb": {
+    "min": [
+     -6.965,
+     1.252,
+     -29.75
+    ],
+    "max": [
+     -3.003,
+     6.769,
+     -25.75
+    ]
+   },
+   "size": [
+    3.962,
+    5.517,
+    4
+   ]
+  },
+  {
+   "index": 1469,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     -25.15,
+     -0.041,
+     17.85
+    ],
+    "max": [
+     -24,
+     1.459,
+     19
+    ]
+   },
+   "size": [
+    1.15,
+    1.5,
+    1.15
+   ]
+  },
+  {
+   "index": 1477,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     -20,
+     -0.03,
+     17.85
+    ],
+    "max": [
+     -18.85,
+     1.47,
+     19
+    ]
+   },
+   "size": [
+    1.15,
+    1.5,
+    1.15
+   ]
+  },
+  {
+   "index": 1485,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     -20,
+     -0.035,
+     25
+    ],
+    "max": [
+     -18.85,
+     1.465,
+     26.15
+    ]
+   },
+   "size": [
+    1.15,
+    1.5,
+    1.15
+   ]
+  },
+  {
+   "index": 1493,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     -25.15,
+     -0.075,
+     25
+    ],
+    "max": [
+     -24,
+     1.425,
+     26.15
+    ]
+   },
+   "size": [
+    1.15,
+    1.5,
+    1.15
+   ]
+  },
+  {
+   "index": 1501,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -24,
+     -0.03,
+     17.85
+    ],
+    "max": [
+     -22,
+     1.47,
+     18.329
+    ]
+   },
+   "size": [
+    2,
+    1.5,
+    0.479
+   ]
+  },
+  {
+   "index": 1509,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -22,
+     -0.03,
+     17.85
+    ],
+    "max": [
+     -20,
+     1.47,
+     18.329
+    ]
+   },
+   "size": [
+    2,
+    1.5,
+    0.479
+   ]
+  },
+  {
+   "index": 1517,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -24,
+     -0.039,
+     25.671
+    ],
+    "max": [
+     -22,
+     1.461,
+     26.15
+    ]
+   },
+   "size": [
+    2,
+    1.5,
+    0.479
+   ]
+  },
+  {
+   "index": 1525,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 6,
+   "triangles": 692,
+   "aabb": {
+    "min": [
+     -22,
+     -0.039,
+     25.601
+    ],
+    "max": [
+     -20,
+     1.461,
+     26.15
+    ]
+   },
+   "size": [
+    2,
+    1.5,
+    0.549
+   ]
+  },
+  {
+   "index": 1537,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -25.15,
+     -0.037,
+     19
+    ],
+    "max": [
+     -24.671,
+     1.463,
+     21
+    ]
+   },
+   "size": [
+    0.479,
+    1.5,
+    2
+   ]
+  },
+  {
+   "index": 1545,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -25.15,
+     -0.038,
+     21
+    ],
+    "max": [
+     -24.671,
+     1.462,
+     23
+    ]
+   },
+   "size": [
+    0.479,
+    1.5,
+    2
+   ]
+  },
+  {
+   "index": 1553,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -25.15,
+     -0.038,
+     23
+    ],
+    "max": [
+     -24.671,
+     1.462,
+     25
+    ]
+   },
+   "size": [
+    0.479,
+    1.5,
+    2
+   ]
+  },
+  {
+   "index": 1561,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -19.329,
+     -0.03,
+     19
+    ],
+    "max": [
+     -18.85,
+     1.47,
+     21
+    ]
+   },
+   "size": [
+    0.479,
+    1.5,
+    2
+   ]
+  },
+  {
+   "index": 1569,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -19.329,
+     -0.03,
+     21
+    ],
+    "max": [
+     -18.85,
+     1.47,
+     23
+    ]
+   },
+   "size": [
+    0.479,
+    1.5,
+    2
+   ]
+  },
+  {
+   "index": 1577,
+   "name": "corral-fence-run",
+   "key": "corral-fence-run",
+   "meshes": 4,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -19.329,
+     -0.03,
+     23
+    ],
+    "max": [
+     -18.85,
+     1.47,
+     25
+    ]
+   },
+   "size": [
+    0.479,
+    1.5,
+    2
+   ]
+  },
+  {
+   "index": 1585,
+   "name": "plank-trough",
+   "key": "plank-trough",
+   "meshes": 4,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     -24.45,
+     0.003,
+     20.262
+    ],
+    "max": [
+     -23.95,
+     0.744,
+     22.75
+    ]
+   },
+   "size": [
+    0.499,
+    0.741,
+    2.488
+   ]
+  },
+  {
+   "index": 1592,
+   "name": "plank-trough",
+   "key": "plank-trough",
+   "meshes": 2,
+   "triangles": 660,
+   "aabb": {
+    "min": [
+     -23.25,
+     0.003,
+     18.5
+    ],
+    "max": [
+     -20.782,
+     0.744,
+     19
+    ]
+   },
+   "size": [
+    2.468,
+    0.741,
+    0.499
+   ]
+  },
+  {
+   "index": 1597,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 1,
+   "triangles": 2096,
+   "aabb": {
+    "min": [
+     -21.301,
+     0,
+     19.192
+    ],
+    "max": [
+     -19.899,
+     2.106,
+     21.608
+    ]
+   },
+   "size": [
+    1.401,
+    2.106,
+    2.415
+   ]
+  },
+  {
+   "index": 1623,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 1,
+   "triangles": 2096,
+   "aabb": {
+    "min": [
+     -21.701,
+     0,
+     23.092
+    ],
+    "max": [
+     -20.299,
+     2.106,
+     25.508
+    ]
+   },
+   "size": [
+    1.401,
+    2.106,
+    2.415
+   ]
+  },
+  {
+   "index": 1649,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 1,
+   "triangles": 2096,
+   "aabb": {
+    "min": [
+     -23.768,
+     0,
+     20.68
+    ],
+    "max": [
+     -21.432,
+     2.106,
+     21.32
+    ]
+   },
+   "size": [
+    2.337,
+    2.106,
+    0.641
+   ]
+  },
+  {
+   "index": 1675,
+   "name": "saddle-rack",
+   "key": "saddle-rack",
+   "meshes": 5,
+   "triangles": 743,
+   "aabb": {
+    "min": [
+     -16.1,
+     0.004,
+     24.35
+    ],
+    "max": [
+     -15.1,
+     1.377,
+     24.85
+    ]
+   },
+   "size": [
+    1,
+    1.373,
+    0.5
+   ]
+  },
+  {
+   "index": 1685,
+   "name": "saddle-rack",
+   "key": "saddle-rack",
+   "meshes": 5,
+   "triangles": 634,
+   "aabb": {
+    "min": [
+     -14.7,
+     0.004,
+     24.35
+    ],
+    "max": [
+     -13.7,
+     1.352,
+     24.85
+    ]
+   },
+   "size": [
+    1,
+    1.348,
+    0.5
+   ]
+  },
+  {
+   "index": 1695,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 2,
+   "triangles": 690,
+   "aabb": {
+    "min": [
+     -12.863,
+     0.004,
+     24.237
+    ],
+    "max": [
+     -12.337,
+     0.704,
+     24.769
+    ]
+   },
+   "size": [
+    0.526,
+    0.7,
+    0.532
+   ]
+  },
+  {
+   "index": 1699,
+   "name": "whiskey-barrel",
+   "key": "whiskey-barrel",
+   "meshes": 3,
+   "triangles": 710,
+   "aabb": {
+    "min": [
+     22.337,
+     0.004,
+     7.137
+    ],
+    "max": [
+     22.894,
+     0.74,
+     7.669
+    ]
+   },
+   "size": [
+    0.557,
+    0.736,
+    0.532
+   ]
+  },
+  {
+   "index": 1705,
+   "name": "buckboard-wagon",
+   "key": "buckboard-wagon",
+   "meshes": 10,
+   "triangles": 2486,
+   "aabb": {
+    "min": [
+     24.45,
+     0.054,
+     11
+    ],
+    "max": [
+     29.95,
+     1.954,
+     13
+    ]
+   },
+   "size": [
+    5.5,
+    1.9,
+    2
+   ]
+  },
+  {
+   "index": 1725,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 1,
+   "triangles": 2096,
+   "aabb": {
+    "min": [
+     29.206,
+     -0.058,
+     13.516
+    ],
+    "max": [
+     31.594,
+     2.048,
+     15.084
+    ]
+   },
+   "size": [
+    2.389,
+    2.106,
+    1.568
+   ]
+  },
+  {
+   "index": 1751,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     24.227,
+     -0.17,
+     16.786
+    ],
+    "max": [
+     26,
+     1.028,
+     18
+    ]
+   },
+   "size": [
+    1.773,
+    1.198,
+    1.214
+   ]
+  },
+  {
+   "index": 1753,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 346,
+   "aabb": {
+    "min": [
+     26,
+     -0.368,
+     16.407
+    ],
+    "max": [
+     27.632,
+     0.831,
+     17.521
+    ]
+   },
+   "size": [
+    1.632,
+    1.199,
+    1.114
+   ]
+  },
+  {
+   "index": 1755,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     30,
+     -0.682,
+     16.227
+    ],
+    "max": [
+     31.214,
+     0.515,
+     18
+    ]
+   },
+   "size": [
+    1.214,
+    1.198,
+    1.773
+   ]
+  },
+  {
+   "index": 1757,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 375,
+   "aabb": {
+    "min": [
+     30.407,
+     -0.872,
+     18
+    ],
+    "max": [
+     31.594,
+     0.327,
+     20
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1759,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 336,
+   "aabb": {
+    "min": [
+     24.407,
+     -0.313,
+     18
+    ],
+    "max": [
+     25.594,
+     0.885,
+     20
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1761,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     30.407,
+     -1.044,
+     20
+    ],
+    "max": [
+     31.594,
+     0.154,
+     22
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1763,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     24.407,
+     -0.372,
+     20
+    ],
+    "max": [
+     25.594,
+     0.826,
+     22
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1765,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     30,
+     -1.44,
+     22
+    ],
+    "max": [
+     31.773,
+     -0.243,
+     23.214
+    ]
+   },
+   "size": [
+    1.773,
+    1.198,
+    1.214
+   ]
+  },
+  {
+   "index": 1767,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     24.786,
+     -0.398,
+     22
+    ],
+    "max": [
+     26,
+     0.8,
+     23.773
+    ]
+   },
+   "size": [
+    1.214,
+    1.198,
+    1.773
+   ]
+  },
+  {
+   "index": 1769,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 362,
+   "aabb": {
+    "min": [
+     26,
+     -0.931,
+     22.407
+    ],
+    "max": [
+     28,
+     0.267,
+     23.594
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1771,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     28,
+     -1.039,
+     22.407
+    ],
+    "max": [
+     30,
+     0.159,
+     23.594
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1773,
+   "name": "plank-trough",
+   "key": "plank-trough",
+   "meshes": 3,
+   "triangles": 590,
+   "aabb": {
+    "min": [
+     29.55,
+     -0.859,
+     18.662
+    ],
+    "max": [
+     30.05,
+     -0.118,
+     21.15
+    ]
+   },
+   "size": [
+    0.499,
+    0.741,
+    2.488
+   ]
+  },
+  {
+   "index": 1779,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 1,
+   "triangles": 2096,
+   "aabb": {
+    "min": [
+     26.128,
+     -0.712,
+     18.538
+    ],
+    "max": [
+     28.472,
+     1.393,
+     20.262
+    ]
+   },
+   "size": [
+    2.344,
+    2.106,
+    1.723
+   ]
+  },
+  {
+   "index": 1805,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 1,
+   "triangles": 2096,
+   "aabb": {
+    "min": [
+     26.992,
+     -0.864,
+     20.899
+    ],
+    "max": [
+     29.408,
+     1.242,
+     22.301
+    ]
+   },
+   "size": [
+    2.415,
+    2.106,
+    1.401
+   ]
+  },
+  {
+   "index": 1831,
+   "name": "miners-shack",
+   "key": "miners-shack",
+   "meshes": 10,
+   "triangles": 1764,
+   "aabb": {
+    "min": [
+     15,
+     1.152,
+     34.935
+    ],
+    "max": [
+     19,
+     6.365,
+     38.897
+    ]
+   },
+   "size": [
+    4,
+    5.213,
+    3.962
+   ]
+  },
+  {
+   "index": 1848,
+   "name": "windmill-pump",
+   "key": "windmill-pump",
+   "meshes": 8,
+   "triangles": 748,
+   "aabb": {
+    "min": [
+     20.95,
+     0.982,
+     34.223
+    ],
+    "max": [
+     24.4,
+     8.243,
+     36.85
+    ]
+   },
+   "size": [
+    3.45,
+    7.261,
+    2.627
+   ]
+  },
+  {
+   "index": 1863,
+   "name": "plank-trough",
+   "key": "plank-trough",
+   "meshes": 4,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     21.95,
+     0.982,
+     36.55
+    ],
+    "max": [
+     22.45,
+     1.723,
+     39.038
+    ]
+   },
+   "size": [
+    0.499,
+    0.741,
+    2.488
+   ]
+  },
+  {
+   "index": 1870,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 333,
+   "aabb": {
+    "min": [
+     23.807,
+     0.865,
+     34.368
+    ],
+    "max": [
+     24.921,
+     2.064,
+     36
+    ]
+   },
+   "size": [
+    1.114,
+    1.199,
+    1.632
+   ]
+  },
+  {
+   "index": 1872,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 4,
+   "triangles": 482,
+   "aabb": {
+    "min": [
+     23.807,
+     0.901,
+     36
+    ],
+    "max": [
+     24.994,
+     2.1,
+     38
+    ]
+   },
+   "size": [
+    1.186,
+    1.199,
+    2
+   ]
+  },
+  {
+   "index": 1880,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 333,
+   "aabb": {
+    "min": [
+     23.879,
+     0.9,
+     38
+    ],
+    "max": [
+     24.993,
+     2.099,
+     39.632
+    ]
+   },
+   "size": [
+    1.114,
+    1.199,
+    1.632
+   ]
+  },
+  {
+   "index": 1882,
+   "name": "buckboard-wagon",
+   "key": "buckboard-wagon",
+   "meshes": 11,
+   "triangles": 2908,
+   "aabb": {
+    "min": [
+     19.15,
+     0.847,
+     40.9
+    ],
+    "max": [
+     24.65,
+     2.747,
+     42.9
+    ]
+   },
+   "size": [
+    5.5,
+    1.9,
+    2
+   ]
+  },
+  {
+   "index": 1904,
+   "name": "saddled-horse",
+   "key": "saddled-horse",
+   "meshes": 1,
+   "triangles": 2096,
+   "aabb": {
+    "min": [
+     19.332,
+     0.98,
+     38.28
+    ],
+    "max": [
+     21.668,
+     3.086,
+     38.92
+    ]
+   },
+   "size": [
+    2.337,
+    2.106,
+    0.641
+   ]
+  },
+  {
+   "index": 1930,
+   "name": "pack-mule",
+   "key": "pack-mule",
+   "meshes": 3,
+   "triangles": 2558,
+   "aabb": {
+    "min": [
+     21.486,
+     0.96,
+     39.477
+    ],
+    "max": [
+     23.514,
+     2.93,
+     40.662
+    ]
+   },
+   "size": [
+    2.028,
+    1.97,
+    1.185
+   ]
+  },
+  {
+   "index": 1958,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -26,
+     0.004,
+     7.007
+    ],
+    "max": [
+     -24.368,
+     1.203,
+     8.121
+    ]
+   },
+   "size": [
+    1.632,
+    1.199,
+    1.114
+   ]
+  },
+  {
+   "index": 1960,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     -28,
+     0.004,
+     7.007
+    ],
+    "max": [
+     -26,
+     1.203,
+     8.194
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1962,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     -30,
+     0.004,
+     7.007
+    ],
+    "max": [
+     -28,
+     1.203,
+     8.194
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1964,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     -32,
+     0.004,
+     7.007
+    ],
+    "max": [
+     -30,
+     1.203,
+     8.194
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1966,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 4,
+   "triangles": 440,
+   "aabb": {
+    "min": [
+     -33.632,
+     0.004,
+     7.047
+    ],
+    "max": [
+     -32,
+     1.203,
+     8.193
+    ]
+   },
+   "size": [
+    1.632,
+    1.199,
+    1.146
+   ]
+  },
+  {
+   "index": 1974,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 320,
+   "aabb": {
+    "min": [
+     -26,
+     0.004,
+     15.807
+    ],
+    "max": [
+     -24.368,
+     1.203,
+     16.921
+    ]
+   },
+   "size": [
+    1.632,
+    1.199,
+    1.114
+   ]
+  },
+  {
+   "index": 1976,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     -28,
+     0.004,
+     15.807
+    ],
+    "max": [
+     -26,
+     1.203,
+     16.994
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1978,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     -30,
+     0.004,
+     15.807
+    ],
+    "max": [
+     -28,
+     1.203,
+     16.994
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1980,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 349,
+   "aabb": {
+    "min": [
+     -32,
+     0.004,
+     15.807
+    ],
+    "max": [
+     -30,
+     1.203,
+     16.994
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 1982,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 4,
+   "triangles": 440,
+   "aabb": {
+    "min": [
+     -33.632,
+     0.004,
+     15.847
+    ],
+    "max": [
+     -32,
+     1.203,
+     16.993
+    ]
+   },
+   "size": [
+    1.632,
+    1.199,
+    1.146
+   ]
+  },
+  {
+   "index": 1990,
+   "name": "telegraph-pole-line",
+   "key": "telegraph-pole-line",
+   "meshes": 3,
+   "triangles": 402,
+   "aabb": {
+    "min": [
+     -30.069,
+     0.004,
+     -19.553
+    ],
+    "max": [
+     -21.814,
+     6.804,
+     -17.366
+    ]
+   },
+   "size": [
+    8.254,
+    6.8,
+    2.187
+   ]
+  },
+  {
+   "index": 1996,
+   "name": "telegraph-pole-line",
+   "key": "telegraph-pole-line",
+   "meshes": 5,
+   "triangles": 566,
+   "aabb": {
+    "min": [
+     -22.113,
+     0.004,
+     -20.389
+    ],
+    "max": [
+     -13.858,
+     6.804,
+     -18.202
+    ]
+   },
+   "size": [
+    8.254,
+    6.8,
+    2.187
+   ]
+  },
+  {
+   "index": 2006,
+   "name": "dead-cottonwood",
+   "key": "dead-cottonwood",
+   "meshes": 3,
+   "triangles": 1191,
+   "aabb": {
+    "min": [
+     4.746,
+     -0.096,
+     26.075
+    ],
+    "max": [
+     12.535,
+     6.994,
+     32.566
+    ]
+   },
+   "size": [
+    7.789,
+    7.09,
+    6.491
+   ]
+  },
+  {
+   "index": 2012,
+   "name": "sluice-box",
+   "key": "sluice-box",
+   "meshes": 11,
+   "triangles": 668,
+   "aabb": {
+    "min": [
+     -16.215,
+     -3.27,
+     34.954
+    ],
+    "max": [
+     -14.016,
+     -1.798,
+     38.973
+    ]
+   },
+   "size": [
+    2.199,
+    1.472,
+    4.019
+   ]
+  },
+  {
+   "index": 2029,
+   "name": "miners-shack",
+   "key": "miners-shack",
+   "meshes": 10,
+   "triangles": 1654,
+   "aabb": {
+    "min": [
+     -9.531,
+     -0.648,
+     33.649
+    ],
+    "max": [
+     -4.469,
+     4.565,
+     38.751
+    ]
+   },
+   "size": [
+    5.061,
+    5.213,
+    5.103
+   ]
+  },
+  {
+   "index": 2046,
+   "name": "gold-pan-stand",
+   "key": "gold-pan-stand",
+   "meshes": 5,
+   "triangles": 767,
+   "aabb": {
+    "min": [
+     -9.912,
+     -0.646,
+     35.082
+    ],
+    "max": [
+     -9.288,
+     0.155,
+     35.718
+    ]
+   },
+   "size": [
+    0.624,
+    0.801,
+    0.636
+   ]
+  },
+  {
+   "index": 2056,
+   "name": "pack-mule",
+   "key": "pack-mule",
+   "meshes": 3,
+   "triangles": 2894,
+   "aabb": {
+    "min": [
+     -9.206,
+     -0.748,
+     38.282
+    ],
+    "max": [
+     -7.785,
+     1.222,
+     40.333
+    ]
+   },
+   "size": [
+    1.421,
+    1.97,
+    2.052
+   ]
+  },
+  {
+   "index": 2084,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 375,
+   "aabb": {
+    "min": [
+     -7,
+     -0.026,
+     24.807
+    ],
+    "max": [
+     -5,
+     1.173,
+     25.994
+    ]
+   },
+   "size": [
+    2,
+    1.199,
+    1.186
+   ]
+  },
+  {
+   "index": 2086,
+   "name": "split-rail-fence-run",
+   "key": "split-rail-fence-run",
+   "meshes": 1,
+   "triangles": 346,
+   "aabb": {
+    "min": [
+     -8.632,
+     -0.022,
+     24.879
+    ],
+    "max": [
+     -7,
+     1.177,
+     25.993
+    ]
+   },
+   "size": [
+    1.632,
+    1.199,
+    1.114
+   ]
+  },
+  {
+   "index": 2088,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -39.445,
+     2.147,
+     -2.044
+    ],
+    "max": [
+     -37.412,
+     7.347,
+     -0.006
+    ]
+   },
+   "size": [
+    2.033,
+    5.2,
+    2.039
+   ]
+  },
+  {
+   "index": 2090,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 513,
+   "aabb": {
+    "min": [
+     -32.126,
+     1.246,
+     0.876
+    ],
+    "max": [
+     -31.071,
+     4.948,
+     1.957
+    ]
+   },
+   "size": [
+    1.055,
+    3.701,
+    1.081
+   ]
+  },
+  {
+   "index": 2092,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 648,
+   "aabb": {
+    "min": [
+     3.232,
+     -0.647,
+     44.153
+    ],
+    "max": [
+     4.791,
+     3.353,
+     45.677
+    ]
+   },
+   "size": [
+    1.559,
+    4,
+    1.524
+   ]
+  },
+  {
+   "index": 2094,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 450,
+   "aabb": {
+    "min": [
+     -6.024,
+     -0.871,
+     43.737
+    ],
+    "max": [
+     -4.901,
+     3.789,
+     44.86
+    ]
+   },
+   "size": [
+    1.123,
+    4.66,
+    1.123
+   ]
+  },
+  {
+   "index": 2096,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 525,
+   "aabb": {
+    "min": [
+     -16.974,
+     0.046,
+     -25.133
+    ],
+    "max": [
+     -15.61,
+     3.986,
+     -23.784
+    ]
+   },
+   "size": [
+    1.364,
+    3.94,
+    1.349
+   ]
+  },
+  {
+   "index": 2098,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 639,
+   "aabb": {
+    "min": [
+     22.215,
+     -0.218,
+     26.752
+    ],
+    "max": [
+     23.491,
+     3.962,
+     28.117
+    ]
+   },
+   "size": [
+    1.276,
+    4.18,
+    1.365
+   ]
+  },
+  {
+   "index": 2100,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -24.894,
+     -0.362,
+     -3.052
+    ],
+    "max": [
+     -22.898,
+     3.458,
+     -1.048
+    ]
+   },
+   "size": [
+    1.996,
+    3.82,
+    2.004
+   ]
+  },
+  {
+   "index": 2102,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -21.118,
+     -0.293,
+     -15.6
+    ],
+    "max": [
+     -19.241,
+     4.637,
+     -13.706
+    ]
+   },
+   "size": [
+    1.877,
+    4.93,
+    1.894
+   ]
+  },
+  {
+   "index": 2104,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 639,
+   "aabb": {
+    "min": [
+     -4.529,
+     12.164,
+     -49.583
+    ],
+    "max": [
+     -2.782,
+     16.344,
+     -47.88
+    ]
+   },
+   "size": [
+    1.747,
+    4.18,
+    1.703
+   ]
+  },
+  {
+   "index": 2106,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 375,
+   "aabb": {
+    "min": [
+     3.414,
+     -0.223,
+     33.601
+    ],
+    "max": [
+     4.317,
+     3.747,
+     34.505
+    ]
+   },
+   "size": [
+    0.903,
+    3.97,
+    0.903
+   ]
+  },
+  {
+   "index": 2108,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 771,
+   "aabb": {
+    "min": [
+     -29.861,
+     0.903,
+     -22.515
+    ],
+    "max": [
+     -28.001,
+     4.603,
+     -20.672
+    ]
+   },
+   "size": [
+    1.861,
+    3.7,
+    1.843
+   ]
+  },
+  {
+   "index": 2110,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 518,
+   "aabb": {
+    "min": [
+     13.723,
+     -0.331,
+     29.055
+    ],
+    "max": [
+     14.92,
+     3.969,
+     30.328
+    ]
+   },
+   "size": [
+    1.197,
+    4.3,
+    1.273
+   ]
+  },
+  {
+   "index": 2112,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -13.578,
+     -0.956,
+     40.801
+    ],
+    "max": [
+     -11.706,
+     4.124,
+     42.583
+    ]
+   },
+   "size": [
+    1.872,
+    5.08,
+    1.782
+   ]
+  },
+  {
+   "index": 2114,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     -20.067,
+     -0.87,
+     30.782
+    ],
+    "max": [
+     -18.131,
+     2.95,
+     32.677
+    ]
+   },
+   "size": [
+    1.936,
+    3.82,
+    1.895
+   ]
+  },
+  {
+   "index": 2116,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 648,
+   "aabb": {
+    "min": [
+     13.103,
+     2.878,
+     -34.305
+    ],
+    "max": [
+     14.856,
+     6.788,
+     -32.662
+    ]
+   },
+   "size": [
+    1.754,
+    3.91,
+    1.643
+   ]
+  },
+  {
+   "index": 2118,
+   "name": "saguaro-cactus",
+   "key": "saguaro-cactus",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     36.645,
+     -2.101,
+     27.338
+    ],
+    "max": [
+     38.598,
+     3.009,
+     29.3
+    ]
+   },
+   "size": [
+    1.952,
+    5.11,
+    1.962
+   ]
+  },
+  {
+   "index": 2120,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -30.092,
+     0.029,
+     -5.519
+    ],
+    "max": [
+     -28.545,
+     1.232,
+     -3.997
+    ]
+   },
+   "size": [
+    1.547,
+    1.202,
+    1.523
+   ]
+  },
+  {
+   "index": 2142,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     13.703,
+     2.878,
+     -37.74
+    ],
+    "max": [
+     15.155,
+     4.404,
+     -35.733
+    ]
+   },
+   "size": [
+    1.452,
+    1.526,
+    2.007
+   ]
+  },
+  {
+   "index": 2164,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     12.532,
+     -0.314,
+     30.307
+    ],
+    "max": [
+     13.978,
+     1.147,
+     32.135
+    ]
+   },
+   "size": [
+    1.446,
+    1.461,
+    1.829
+   ]
+  },
+  {
+   "index": 2186,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     1.178,
+     -0.425,
+     36.966
+    ],
+    "max": [
+     3.303,
+     1.117,
+     38.694
+    ]
+   },
+   "size": [
+    2.125,
+    1.542,
+    1.728
+   ]
+  },
+  {
+   "index": 2208,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     8.357,
+     -0.662,
+     43.039
+    ],
+    "max": [
+     9.142,
+     0.192,
+     44.232
+    ]
+   },
+   "size": [
+    0.786,
+    0.854,
+    1.193
+   ]
+  },
+  {
+   "index": 2230,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 636,
+   "aabb": {
+    "min": [
+     24.625,
+     -0.228,
+     28.418
+    ],
+    "max": [
+     26.506,
+     0.987,
+     29.837
+    ]
+   },
+   "size": [
+    1.881,
+    1.215,
+    1.42
+   ]
+  },
+  {
+   "index": 2250,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     3.094,
+     -0.757,
+     48.502
+    ],
+    "max": [
+     3.891,
+     -0.036,
+     49.325
+    ]
+   },
+   "size": [
+    0.797,
+    0.72,
+    0.823
+   ]
+  },
+  {
+   "index": 2272,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     -24.237,
+     0.743,
+     -27.063
+    ],
+    "max": [
+     -23.088,
+     2.005,
+     -25.76
+    ]
+   },
+   "size": [
+    1.149,
+    1.261,
+    1.303
+   ]
+  },
+  {
+   "index": 2292,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 639,
+   "aabb": {
+    "min": [
+     -10.724,
+     -1.006,
+     44.225
+    ],
+    "max": [
+     -9.663,
+     -0.152,
+     45.346
+    ]
+   },
+   "size": [
+    1.061,
+    0.855,
+    1.121
+   ]
+  },
+  {
+   "index": 2312,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     29.546,
+     -0.994,
+     25.3
+    ],
+    "max": [
+     30.705,
+     0.005,
+     26.451
+    ]
+   },
+   "size": [
+    1.159,
+    0.999,
+    1.151
+   ]
+  },
+  {
+   "index": 2334,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     33.499,
+     -2.109,
+     35.571
+    ],
+    "max": [
+     35.65,
+     -0.742,
+     37.034
+    ]
+   },
+   "size": [
+    2.152,
+    1.366,
+    1.463
+   ]
+  },
+  {
+   "index": 2354,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 621,
+   "aabb": {
+    "min": [
+     -3.361,
+     -0.718,
+     41.083
+    ],
+    "max": [
+     -1.143,
+     1.04,
+     43.263
+    ]
+   },
+   "size": [
+    2.218,
+    1.757,
+    2.18
+   ]
+  },
+  {
+   "index": 2374,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 630,
+   "aabb": {
+    "min": [
+     36.242,
+     -2.947,
+     18.485
+    ],
+    "max": [
+     37.884,
+     -1.694,
+     20.319
+    ]
+   },
+   "size": [
+    1.643,
+    1.253,
+    1.833
+   ]
+  },
+  {
+   "index": 2394,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     9.202,
+     -0.339,
+     32.729
+    ],
+    "max": [
+     10.087,
+     0.556,
+     34.033
+    ]
+   },
+   "size": [
+    0.886,
+    0.895,
+    1.304
+   ]
+  },
+  {
+   "index": 2416,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     35.933,
+     -2.171,
+     32.761
+    ],
+    "max": [
+     37.399,
+     -0.629,
+     34.652
+    ]
+   },
+   "size": [
+    1.466,
+    1.542,
+    1.89
+   ]
+  },
+  {
+   "index": 2436,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     35.792,
+     -3.092,
+     23.081
+    ],
+    "max": [
+     36.725,
+     -2.144,
+     24.138
+    ]
+   },
+   "size": [
+    0.933,
+    0.949,
+    1.056
+   ]
+  },
+  {
+   "index": 2456,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 621,
+   "aabb": {
+    "min": [
+     30.436,
+     1.772,
+     -1.287
+    ],
+    "max": [
+     31.891,
+     2.888,
+     0.364
+    ]
+   },
+   "size": [
+    1.454,
+    1.116,
+    1.651
+   ]
+  },
+  {
+   "index": 2476,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -27.714,
+     -0.013,
+     -11.262
+    ],
+    "max": [
+     -26.345,
+     1.321,
+     -9.764
+    ]
+   },
+   "size": [
+    1.369,
+    1.334,
+    1.498
+   ]
+  },
+  {
+   "index": 2498,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 633,
+   "aabb": {
+    "min": [
+     2.354,
+     -0.538,
+     40.108
+    ],
+    "max": [
+     4.231,
+     0.768,
+     41.708
+    ]
+   },
+   "size": [
+    1.877,
+    1.306,
+    1.6
+   ]
+  },
+  {
+   "index": 2518,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     -19.689,
+     1.596,
+     -32.78
+    ],
+    "max": [
+     -18.818,
+     2.618,
+     -31.54
+    ]
+   },
+   "size": [
+    0.871,
+    1.022,
+    1.24
+   ]
+  },
+  {
+   "index": 2538,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     -13.471,
+     1.412,
+     -30.538
+    ],
+    "max": [
+     -11.949,
+     2.365,
+     -29.481
+    ]
+   },
+   "size": [
+    1.523,
+    0.953,
+    1.057
+   ]
+  },
+  {
+   "index": 2558,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 648,
+   "aabb": {
+    "min": [
+     -8.928,
+     -0.957,
+     42.188
+    ],
+    "max": [
+     -7.162,
+     0.71,
+     44.32
+    ]
+   },
+   "size": [
+    1.767,
+    1.667,
+    2.132
+   ]
+  },
+  {
+   "index": 2578,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -1.85,
+     -0.699,
+     42.146
+    ],
+    "max": [
+     0.291,
+     0.943,
+     44.601
+    ]
+   },
+   "size": [
+    2.141,
+    1.642,
+    2.455
+   ]
+  },
+  {
+   "index": 2600,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -28.24,
+     -0.029,
+     -7.369
+    ],
+    "max": [
+     -27.202,
+     0.786,
+     -6.636
+    ]
+   },
+   "size": [
+    1.038,
+    0.816,
+    0.733
+   ]
+  },
+  {
+   "index": 2622,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 639,
+   "aabb": {
+    "min": [
+     0.164,
+     -0.106,
+     30.958
+    ],
+    "max": [
+     1.387,
+     0.79,
+     31.804
+    ]
+   },
+   "size": [
+    1.222,
+    0.896,
+    0.846
+   ]
+  },
+  {
+   "index": 2642,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     27.026,
+     3.73,
+     -19.281
+    ],
+    "max": [
+     28.254,
+     4.857,
+     -17.655
+    ]
+   },
+   "size": [
+    1.228,
+    1.126,
+    1.626
+   ]
+  },
+  {
+   "index": 2664,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -13.167,
+     9.6,
+     -40.213
+    ],
+    "max": [
+     -11.76,
+     10.648,
+     -39.258
+    ]
+   },
+   "size": [
+    1.407,
+    1.048,
+    0.955
+   ]
+  },
+  {
+   "index": 2686,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     36.781,
+     -2.147,
+     30.241
+    ],
+    "max": [
+     37.581,
+     -1.287,
+     31.445
+    ]
+   },
+   "size": [
+    0.8,
+    0.861,
+    1.204
+   ]
+  },
+  {
+   "index": 2706,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     34.742,
+     1.755,
+     0.9
+    ],
+    "max": [
+     35.908,
+     2.793,
+     2.22
+    ]
+   },
+   "size": [
+    1.167,
+    1.039,
+    1.32
+   ]
+  },
+  {
+   "index": 2728,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 636,
+   "aabb": {
+    "min": [
+     -15.213,
+     1.562,
+     -31.818
+    ],
+    "max": [
+     -13.743,
+     2.57,
+     -30.69
+    ]
+   },
+   "size": [
+    1.471,
+    1.008,
+    1.128
+   ]
+  },
+  {
+   "index": 2748,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 636,
+   "aabb": {
+    "min": [
+     4.976,
+     -0.538,
+     40.621
+    ],
+    "max": [
+     5.708,
+     0.107,
+     41.627
+    ]
+   },
+   "size": [
+    0.732,
+    0.644,
+    1.007
+   ]
+  },
+  {
+   "index": 2768,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -12.306,
+     -1.007,
+     42.66
+    ],
+    "max": [
+     -11.035,
+     0.285,
+     44.47
+    ]
+   },
+   "size": [
+    1.271,
+    1.293,
+    1.81
+   ]
+  },
+  {
+   "index": 2790,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 621,
+   "aabb": {
+    "min": [
+     4.419,
+     -0.726,
+     46.777
+    ],
+    "max": [
+     5.908,
+     0.297,
+     48.042
+    ]
+   },
+   "size": [
+    1.489,
+    1.023,
+    1.265
+   ]
+  },
+  {
+   "index": 2810,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -23.47,
+     1.144,
+     -30.268
+    ],
+    "max": [
+     -22.206,
+     2.131,
+     -28.831
+    ]
+   },
+   "size": [
+    1.263,
+    0.987,
+    1.437
+   ]
+  },
+  {
+   "index": 2832,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -25.996,
+     0.857,
+     -28.6
+    ],
+    "max": [
+     -24.285,
+     2.541,
+     -26.218
+    ]
+   },
+   "size": [
+    1.711,
+    1.684,
+    2.381
+   ]
+  },
+  {
+   "index": 2854,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -17.616,
+     1.609,
+     -32.35
+    ],
+    "max": [
+     -16.517,
+     2.498,
+     -31.574
+    ]
+   },
+   "size": [
+    1.099,
+    0.89,
+    0.776
+   ]
+  },
+  {
+   "index": 2876,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     22.201,
+     -0.008,
+     29.557
+    ],
+    "max": [
+     23.34,
+     1.105,
+     31.066
+    ]
+   },
+   "size": [
+    1.139,
+    1.113,
+    1.509
+   ]
+  },
+  {
+   "index": 2898,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     16.396,
+     -0.266,
+     28.173
+    ],
+    "max": [
+     18.275,
+     1.161,
+     29.84
+    ]
+   },
+   "size": [
+    1.88,
+    1.427,
+    1.667
+   ]
+  },
+  {
+   "index": 2920,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 621,
+   "aabb": {
+    "min": [
+     -17.767,
+     1.263,
+     -30.454
+    ],
+    "max": [
+     -15.917,
+     2.59,
+     -28.891
+    ]
+   },
+   "size": [
+    1.85,
+    1.327,
+    1.563
+   ]
+  },
+  {
+   "index": 2940,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 636,
+   "aabb": {
+    "min": [
+     28.377,
+     -0.327,
+     29.823
+    ],
+    "max": [
+     29.405,
+     0.53,
+     30.738
+    ]
+   },
+   "size": [
+    1.028,
+    0.857,
+    0.916
+   ]
+  },
+  {
+   "index": 2960,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -22.824,
+     1.474,
+     -32.632
+    ],
+    "max": [
+     -21.658,
+     2.808,
+     -30.852
+    ]
+   },
+   "size": [
+    1.165,
+    1.335,
+    1.779
+   ]
+  },
+  {
+   "index": 2982,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     30.904,
+     -1.986,
+     36.588
+    ],
+    "max": [
+     32.814,
+     -0.454,
+     38.33
+    ]
+   },
+   "size": [
+    1.909,
+    1.532,
+    1.742
+   ]
+  },
+  {
+   "index": 3004,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 636,
+   "aabb": {
+    "min": [
+     -26.042,
+     -0.245,
+     -4.888
+    ],
+    "max": [
+     -24.981,
+     0.518,
+     -4.148
+    ]
+   },
+   "size": [
+    1.06,
+    0.763,
+    0.74
+   ]
+  },
+  {
+   "index": 3024,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     -26.259,
+     -0.152,
+     -9.583
+    ],
+    "max": [
+     -24.751,
+     1.172,
+     -7.728
+    ]
+   },
+   "size": [
+    1.508,
+    1.324,
+    1.854
+   ]
+  },
+  {
+   "index": 3044,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -28.636,
+     -0.142,
+     -3.427
+    ],
+    "max": [
+     -26.354,
+     1.742,
+     -0.714
+    ]
+   },
+   "size": [
+    2.282,
+    1.884,
+    2.712
+   ]
+  },
+  {
+   "index": 3066,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -25.953,
+     1.13,
+     -30.203
+    ],
+    "max": [
+     -24.584,
+     2.258,
+     -28.917
+    ]
+   },
+   "size": [
+    1.368,
+    1.127,
+    1.286
+   ]
+  },
+  {
+   "index": 3088,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -12.405,
+     1.004,
+     -28.521
+    ],
+    "max": [
+     -10.789,
+     2.132,
+     -27.134
+    ]
+   },
+   "size": [
+    1.615,
+    1.128,
+    1.387
+   ]
+  },
+  {
+   "index": 3110,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -15.769,
+     1.232,
+     -30.055
+    ],
+    "max": [
+     -14.096,
+     2.433,
+     -28.801
+    ]
+   },
+   "size": [
+    1.673,
+    1.202,
+    1.254
+   ]
+  },
+  {
+   "index": 3132,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 621,
+   "aabb": {
+    "min": [
+     3.083,
+     12.884,
+     -47.695
+    ],
+    "max": [
+     5.159,
+     14.615,
+     -45.677
+    ]
+   },
+   "size": [
+    2.076,
+    1.731,
+    2.018
+   ]
+  },
+  {
+   "index": 3152,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -17.162,
+     -3.234,
+     38.357
+    ],
+    "max": [
+     -15.746,
+     -1.887,
+     40.22
+    ]
+   },
+   "size": [
+    1.416,
+    1.348,
+    1.863
+   ]
+  },
+  {
+   "index": 3174,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     35.894,
+     -3.103,
+     20.625
+    ],
+    "max": [
+     37.761,
+     -1.718,
+     21.974
+    ]
+   },
+   "size": [
+    1.867,
+    1.384,
+    1.349
+   ]
+  },
+  {
+   "index": 3196,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     9.285,
+     -0.738,
+     44.657
+    ],
+    "max": [
+     10.308,
+     0.072,
+     45.344
+    ]
+   },
+   "size": [
+    1.023,
+    0.81,
+    0.687
+   ]
+  },
+  {
+   "index": 3216,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -7.356,
+     11.852,
+     -48.012
+    ],
+    "max": [
+     -6.478,
+     12.579,
+     -47.086
+    ]
+   },
+   "size": [
+    0.878,
+    0.727,
+    0.926
+   ]
+  },
+  {
+   "index": 3238,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 648,
+   "aabb": {
+    "min": [
+     1.54,
+     -0.607,
+     41.851
+    ],
+    "max": [
+     3.468,
+     0.715,
+     43.576
+    ]
+   },
+   "size": [
+    1.928,
+    1.321,
+    1.725
+   ]
+  },
+  {
+   "index": 3258,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 621,
+   "aabb": {
+    "min": [
+     -1.151,
+     -0.624,
+     40.373
+    ],
+    "max": [
+     0.834,
+     1.053,
+     42.699
+    ]
+   },
+   "size": [
+    1.985,
+    1.676,
+    2.325
+   ]
+  },
+  {
+   "index": 3278,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 636,
+   "aabb": {
+    "min": [
+     -10.643,
+     9.758,
+     -40.475
+    ],
+    "max": [
+     -9.762,
+     10.799,
+     -39.335
+    ]
+   },
+   "size": [
+    0.881,
+    1.041,
+    1.14
+   ]
+  },
+  {
+   "index": 3298,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 639,
+   "aabb": {
+    "min": [
+     26.391,
+     3.079,
+     -12.804
+    ],
+    "max": [
+     27.348,
+     3.829,
+     -11.72
+    ]
+   },
+   "size": [
+    0.957,
+    0.75,
+    1.084
+   ]
+  },
+  {
+   "index": 3318,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     34.93,
+     3.608,
+     -9.19
+    ],
+    "max": [
+     35.856,
+     4.295,
+     -8.444
+    ]
+   },
+   "size": [
+    0.926,
+    0.687,
+    0.746
+   ]
+  },
+  {
+   "index": 3338,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -16.536,
+     -0.719,
+     29.462
+    ],
+    "max": [
+     -14.823,
+     0.519,
+     30.951
+    ]
+   },
+   "size": [
+    1.712,
+    1.238,
+    1.489
+   ]
+  },
+  {
+   "index": 3360,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 633,
+   "aabb": {
+    "min": [
+     -25.27,
+     1.457,
+     -32.801
+    ],
+    "max": [
+     -23.166,
+     3.094,
+     -30.711
+    ]
+   },
+   "size": [
+    2.104,
+    1.637,
+    2.09
+   ]
+  },
+  {
+   "index": 3380,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     4.871,
+     -0.688,
+     44.961
+    ],
+    "max": [
+     7.141,
+     0.883,
+     46.907
+    ]
+   },
+   "size": [
+    2.27,
+    1.57,
+    1.947
+   ]
+  },
+  {
+   "index": 3402,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     1.425,
+     12.821,
+     -47.796
+    ],
+    "max": [
+     2.345,
+     13.784,
+     -46.55
+    ]
+   },
+   "size": [
+    0.92,
+    0.963,
+    1.246
+   ]
+  },
+  {
+   "index": 3422,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     26.962,
+     -0.386,
+     27.518
+    ],
+    "max": [
+     28.69,
+     0.908,
+     29.477
+    ]
+   },
+   "size": [
+    1.727,
+    1.294,
+    1.959
+   ]
+  },
+  {
+   "index": 3444,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -1.79,
+     -0.76,
+     45.312
+    ],
+    "max": [
+     -0.009,
+     0.81,
+     46.999
+    ]
+   },
+   "size": [
+    1.781,
+    1.57,
+    1.687
+   ]
+  },
+  {
+   "index": 3466,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 633,
+   "aabb": {
+    "min": [
+     -3.752,
+     -0.803,
+     44.561
+    ],
+    "max": [
+     -1.868,
+     0.49,
+     46.274
+    ]
+   },
+   "size": [
+    1.884,
+    1.293,
+    1.713
+   ]
+  },
+  {
+   "index": 3486,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     8.723,
+     -0.77,
+     45.71
+    ],
+    "max": [
+     10.173,
+     0.408,
+     46.8
+    ]
+   },
+   "size": [
+    1.45,
+    1.178,
+    1.09
+   ]
+  },
+  {
+   "index": 3506,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     14.731,
+     2.922,
+     -39.429
+    ],
+    "max": [
+     15.959,
+     4.105,
+     -37.765
+    ]
+   },
+   "size": [
+    1.228,
+    1.183,
+    1.665
+   ]
+  },
+  {
+   "index": 3528,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -19.296,
+     0.089,
+     -25.99
+    ],
+    "max": [
+     -18.125,
+     1.023,
+     -24.69
+    ]
+   },
+   "size": [
+    1.172,
+    0.934,
+    1.3
+   ]
+  },
+  {
+   "index": 3550,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     2.355,
+     -0.719,
+     46.812
+    ],
+    "max": [
+     3.924,
+     0.253,
+     47.864
+    ]
+   },
+   "size": [
+    1.569,
+    0.972,
+    1.052
+   ]
+  },
+  {
+   "index": 3570,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -20.904,
+     0.974,
+     -28.691
+    ],
+    "max": [
+     -19.307,
+     1.905,
+     -27.587
+    ]
+   },
+   "size": [
+    1.596,
+    0.931,
+    1.104
+   ]
+  },
+  {
+   "index": 3592,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 636,
+   "aabb": {
+    "min": [
+     -13.89,
+     0.09,
+     -26.014
+    ],
+    "max": [
+     -12.857,
+     1.053,
+     -24.707
+    ]
+   },
+   "size": [
+    1.033,
+    0.963,
+    1.307
+   ]
+  },
+  {
+   "index": 3612,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -0.316,
+     -0.228,
+     32.737
+    ],
+    "max": [
+     1.297,
+     0.995,
+     34.23
+    ]
+   },
+   "size": [
+    1.613,
+    1.224,
+    1.493
+   ]
+  },
+  {
+   "index": 3634,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     -0.883,
+     -0.758,
+     47.313
+    ],
+    "max": [
+     1.06,
+     0.465,
+     48.815
+    ]
+   },
+   "size": [
+    1.943,
+    1.223,
+    1.502
+   ]
+  },
+  {
+   "index": 3656,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     6.655,
+     -0.605,
+     41.872
+    ],
+    "max": [
+     7.864,
+     0.596,
+     43.402
+    ]
+   },
+   "size": [
+    1.209,
+    1.2,
+    1.529
+   ]
+  },
+  {
+   "index": 3678,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 651,
+   "aabb": {
+    "min": [
+     4.891,
+     -0.476,
+     38.389
+    ],
+    "max": [
+     6.959,
+     1.047,
+     40.335
+    ]
+   },
+   "size": [
+    2.067,
+    1.523,
+    1.946
+   ]
+  },
+  {
+   "index": 3698,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     10.027,
+     -0.296,
+     30.248
+    ],
+    "max": [
+     11.347,
+     0.88,
+     32.192
+    ]
+   },
+   "size": [
+    1.32,
+    1.176,
+    1.944
+   ]
+  },
+  {
+   "index": 3720,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 648,
+   "aabb": {
+    "min": [
+     14.384,
+     -0.851,
+     43.687
+    ],
+    "max": [
+     15.987,
+     0.46,
+     45.299
+    ]
+   },
+   "size": [
+    1.603,
+    1.311,
+    1.612
+   ]
+  },
+  {
+   "index": 3740,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -14.953,
+     -3.069,
+     33.374
+    ],
+    "max": [
+     -12.931,
+     -1.469,
+     35.685
+    ]
+   },
+   "size": [
+    2.021,
+    1.601,
+    2.312
+   ]
+  },
+  {
+   "index": 3762,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 633,
+   "aabb": {
+    "min": [
+     4.694,
+     -0.01,
+     27.077
+    ],
+    "max": [
+     6.368,
+     1.437,
+     28.722
+    ]
+   },
+   "size": [
+    1.674,
+    1.447,
+    1.645
+   ]
+  },
+  {
+   "index": 3782,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     32.306,
+     2.994,
+     -6.374
+    ],
+    "max": [
+     33.259,
+     3.977,
+     -5.049
+    ]
+   },
+   "size": [
+    0.953,
+    0.983,
+    1.325
+   ]
+  },
+  {
+   "index": 3802,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 633,
+   "aabb": {
+    "min": [
+     31.916,
+     3.173,
+     -8.121
+    ],
+    "max": [
+     33.321,
+     4.378,
+     -6.643
+    ]
+   },
+   "size": [
+    1.405,
+    1.204,
+    1.478
+   ]
+  },
+  {
+   "index": 3822,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     28.743,
+     3.578,
+     -14.832
+    ],
+    "max": [
+     30.15,
+     4.629,
+     -13.728
+    ]
+   },
+   "size": [
+    1.407,
+    1.051,
+    1.104
+   ]
+  },
+  {
+   "index": 3842,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 11,
+   "triangles": 684,
+   "aabb": {
+    "min": [
+     13.378,
+     2.878,
+     -40.806
+    ],
+    "max": [
+     15.254,
+     4.16,
+     -39.302
+    ]
+   },
+   "size": [
+    1.875,
+    1.282,
+    1.503
+   ]
+  },
+  {
+   "index": 3864,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     -0.928,
+     -0.546,
+     39.053
+    ],
+    "max": [
+     0.55,
+     0.716,
+     40.144
+    ]
+   },
+   "size": [
+    1.478,
+    1.262,
+    1.091
+   ]
+  },
+  {
+   "index": 3884,
+   "name": "sagebrush",
+   "key": "sagebrush",
+   "meshes": 10,
+   "triangles": 648,
+   "aabb": {
+    "min": [
+     -1.069,
+     -0.387,
+     35.376
+    ],
+    "max": [
+     0.527,
+     0.836,
+     37.08
+    ]
+   },
+   "size": [
+    1.596,
+    1.223,
+    1.704
+   ]
+  },
+  {
+   "index": 3904,
+   "name": "tumbleweed",
+   "key": "tumbleweed",
+   "meshes": 2,
+   "triangles": 718,
+   "aabb": {
+    "min": [
+     -1.786,
+     0.054,
+     -6.293
+    ],
+    "max": [
+     -1.101,
+     0.647,
+     -5.707
+    ]
+   },
+   "size": [
+    0.685,
+    0.593,
+    0.586
+   ]
+  },
+  {
+   "index": 3911,
+   "name": "tumbleweed",
+   "key": "tumbleweed",
+   "meshes": 2,
+   "triangles": 778,
+   "aabb": {
+    "min": [
+     2.288,
+     0.054,
+     13.887
+    ],
+    "max": [
+     2.912,
+     0.546,
+     14.513
+    ]
+   },
+   "size": [
+    0.623,
+    0.492,
+    0.625
+   ]
+  },
+  {
+   "index": 3918,
+   "name": "tumbleweed",
+   "key": "tumbleweed",
+   "meshes": 2,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     19.828,
+     -0.06,
+     24.829
+    ],
+    "max": [
+     20.772,
+     0.682,
+     25.771
+    ]
+   },
+   "size": [
+    0.944,
+    0.742,
+    0.942
+   ]
+  },
+  {
+   "index": 3925,
+   "name": "tumbleweed",
+   "key": "tumbleweed",
+   "meshes": 2,
+   "triangles": 706,
+   "aabb": {
+    "min": [
+     -12.228,
+     -0.838,
+     38.162
+    ],
+    "max": [
+     -11.481,
+     -0.146,
+     38.838
+    ]
+   },
+   "size": [
+    0.747,
+    0.692,
+    0.676
+   ]
+  },
+  {
+   "index": 3932,
+   "name": "tumbleweed",
+   "key": "tumbleweed",
+   "meshes": 2,
+   "triangles": 790,
+   "aabb": {
+    "min": [
+     -26.137,
+     -0.051,
+     22.561
+    ],
+    "max": [
+     -25.463,
+     0.511,
+     23.239
+    ]
+   },
+   "size": [
+    0.675,
+    0.562,
+    0.677
+   ]
+  },
+  {
+   "index": 3939,
+   "name": "tumbleweed",
+   "key": "tumbleweed",
+   "meshes": 2,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     -9.517,
+     -0.02,
+     24.483
+    ],
+    "max": [
+     -8.483,
+     0.729,
+     25.517
+    ]
+   },
+   "size": [
+    1.034,
+    0.749,
+    1.034
+   ]
+  },
+  {
+   "index": 3946,
+   "name": "tumbleweed",
+   "key": "tumbleweed",
+   "meshes": 2,
+   "triangles": 730,
+   "aabb": {
+    "min": [
+     23.988,
+     -0.089,
+     20.291
+    ],
+    "max": [
+     24.696,
+     0.536,
+     20.909
+    ]
+   },
+   "size": [
+    0.708,
+    0.625,
+    0.619
+   ]
+  },
+  {
+   "index": 3953,
+   "name": "outlaw-character",
+   "key": "outlaw-character",
+   "meshes": 10,
+   "triangles": 3603,
+   "aabb": {
+    "min": [
+     -3.731,
+     0.054,
+     -1.846
+    ],
+    "max": [
+     -3.069,
+     1.807,
+     -0.159
+    ]
+   },
+   "size": [
+    0.663,
+    1.753,
+    1.687
+   ]
+  },
+  {
+   "index": 4006,
+   "name": "sheriff-character",
+   "key": "sheriff-character",
+   "meshes": 10,
+   "triangles": 3109,
+   "aabb": {
+    "min": [
+     9.128,
+     0.304,
+     -15.44
+    ],
+    "max": [
+     9.672,
+     2.063,
+     -13.759
+    ]
+   },
+   "size": [
+    0.544,
+    1.759,
+    1.681
+   ]
+  },
+  {
+   "index": 4059,
+   "name": "sheriff-character",
+   "key": "sheriff-character",
+   "meshes": 9,
+   "triangles": 3073,
+   "aabb": {
+    "min": [
+     8.222,
+     0.304,
+     -17.594
+    ],
+    "max": [
+     9.136,
+     1.885,
+     -16.23
+    ]
+   },
+   "size": [
+    0.914,
+    1.581,
+    1.364
+   ]
+  },
+  {
+   "index": 4110,
+   "name": "saloon-keeper-character",
+   "key": "saloon-keeper-character",
+   "meshes": 8,
+   "triangles": 3893,
+   "aabb": {
+    "min": [
+     -12.942,
+     0.054,
+     2.753
+    ],
+    "max": [
+     -11.242,
+     1.784,
+     3.188
+    ]
+   },
+   "size": [
+    1.7,
+    1.73,
+    0.436
+   ]
+  },
+  {
+   "index": 4159,
+   "name": "outlaw-character",
+   "key": "outlaw-character",
+   "meshes": 10,
+   "triangles": 3643,
+   "aabb": {
+    "min": [
+     -13.739,
+     0.054,
+     4.304
+    ],
+    "max": [
+     -12.059,
+     1.807,
+     4.936
+    ]
+   },
+   "size": [
+    1.681,
+    1.753,
+    0.633
+   ]
+  },
+  {
+   "index": 4212,
+   "name": "preacher-character",
+   "key": "preacher-character",
+   "meshes": 8,
+   "triangles": 3011,
+   "aabb": {
+    "min": [
+     -12.199,
+     0.054,
+     4.286
+    ],
+    "max": [
+     -10.482,
+     1.795,
+     5.069
+    ]
+   },
+   "size": [
+    1.717,
+    1.741,
+    0.783
+   ]
+  },
+  {
+   "index": 4261,
+   "name": "outlaw-character",
+   "key": "outlaw-character",
+   "meshes": 10,
+   "triangles": 3643,
+   "aabb": {
+    "min": [
+     -9.838,
+     0.054,
+     5.528
+    ],
+    "max": [
+     -8.802,
+     1.807,
+     7.138
+    ]
+   },
+   "size": [
+    1.037,
+    1.753,
+    1.611
+   ]
+  },
+  {
+   "index": 4314,
+   "name": "sheriff-character",
+   "key": "sheriff-character",
+   "meshes": 10,
+   "triangles": 3109,
+   "aabb": {
+    "min": [
+     -10.677,
+     0.054,
+     5.678
+    ],
+    "max": [
+     -9.062,
+     1.813,
+     6.596
+    ]
+   },
+   "size": [
+    1.615,
+    1.759,
+    0.918
+   ]
+  },
+  {
+   "index": 4367,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 8,
+   "triangles": 4013,
+   "aabb": {
+    "min": [
+     -14.95,
+     0.054,
+     5.074
+    ],
+    "max": [
+     -13.425,
+     1.797,
+     6.083
+    ]
+   },
+   "size": [
+    1.526,
+    1.743,
+    1.009
+   ]
+  },
+  {
+   "index": 4416,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 7,
+   "triangles": 3717,
+   "aabb": {
+    "min": [
+     -8.731,
+     3.004,
+     -1.417
+    ],
+    "max": [
+     -8.346,
+     4.747,
+     0.217
+    ]
+   },
+   "size": [
+    0.385,
+    1.743,
+    1.634
+   ]
+  },
+  {
+   "index": 4463,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 7,
+   "triangles": 3717,
+   "aabb": {
+    "min": [
+     8.396,
+     3.304,
+     -5.417
+    ],
+    "max": [
+     8.783,
+     5.047,
+     -3.783
+    ]
+   },
+   "size": [
+    0.387,
+    1.743,
+    1.634
+   ]
+  },
+  {
+   "index": 4510,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 9,
+   "triangles": 4169,
+   "aabb": {
+    "min": [
+     -9.903,
+     0.304,
+     -10.747
+    ],
+    "max": [
+     -8.323,
+     2.054,
+     -9.157
+    ]
+   },
+   "size": [
+    1.581,
+    1.75,
+    1.591
+   ]
+  },
+  {
+   "index": 4561,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 8,
+   "triangles": 3933,
+   "aabb": {
+    "min": [
+     -9.649,
+     0.304,
+     -9.514
+    ],
+    "max": [
+     -8.386,
+     1.988,
+     -8.251
+    ]
+   },
+   "size": [
+    1.263,
+    1.684,
+    1.263
+   ]
+  },
+  {
+   "index": 4610,
+   "name": "saloon-keeper-character",
+   "key": "saloon-keeper-character",
+   "meshes": 7,
+   "triangles": 3361,
+   "aabb": {
+    "min": [
+     -9.579,
+     0.304,
+     -19.344
+    ],
+    "max": [
+     -8.578,
+     2.034,
+     -17.831
+    ]
+   },
+   "size": [
+    1.001,
+    1.73,
+    1.512
+   ]
+  },
+  {
+   "index": 4657,
+   "name": "preacher-character",
+   "key": "preacher-character",
+   "meshes": 8,
+   "triangles": 2963,
+   "aabb": {
+    "min": [
+     -8.393,
+     0.304,
+     -18.177
+    ],
+    "max": [
+     -6.717,
+     2.045,
+     -17.316
+    ]
+   },
+   "size": [
+    1.676,
+    1.741,
+    0.86
+   ]
+  },
+  {
+   "index": 4706,
+   "name": "preacher-character",
+   "key": "preacher-character",
+   "meshes": 8,
+   "triangles": 2963,
+   "aabb": {
+    "min": [
+     8.655,
+     0.304,
+     -20.31
+    ],
+    "max": [
+     9.144,
+     1.988,
+     -18.646
+    ]
+   },
+   "size": [
+    0.49,
+    1.684,
+    1.665
+   ]
+  },
+  {
+   "index": 4755,
+   "name": "saloon-keeper-character",
+   "key": "saloon-keeper-character",
+   "meshes": 8,
+   "triangles": 3893,
+   "aabb": {
+    "min": [
+     8.332,
+     0.304,
+     -10.078
+    ],
+    "max": [
+     8.825,
+     1.977,
+     -8.483
+    ]
+   },
+   "size": [
+    0.493,
+    1.673,
+    1.595
+   ]
+  },
+  {
+   "index": 4804,
+   "name": "sheriff-character",
+   "key": "sheriff-character",
+   "meshes": 10,
+   "triangles": 3109,
+   "aabb": {
+    "min": [
+     8.629,
+     0.304,
+     -1.952
+    ],
+    "max": [
+     9.151,
+     2.006,
+     -0.348
+    ]
+   },
+   "size": [
+    0.522,
+    1.702,
+    1.603
+   ]
+  },
+  {
+   "index": 4857,
+   "name": "sheriff-character",
+   "key": "sheriff-character",
+   "meshes": 11,
+   "triangles": 3581,
+   "aabb": {
+    "min": [
+     5.334,
+     0.054,
+     6.569
+    ],
+    "max": [
+     7.225,
+     1.72,
+     8.269
+    ]
+   },
+   "size": [
+    1.891,
+    1.666,
+    1.701
+   ]
+  },
+  {
+   "index": 4912,
+   "name": "preacher-character",
+   "key": "preacher-character",
+   "meshes": 8,
+   "triangles": 2915,
+   "aabb": {
+    "min": [
+     8.779,
+     1.004,
+     2.476
+    ],
+    "max": [
+     9.221,
+     2.567,
+     3.976
+    ]
+   },
+   "size": [
+    0.442,
+    1.563,
+    1.5
+   ]
+  },
+  {
+   "index": 4961,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 8,
+   "triangles": 4013,
+   "aabb": {
+    "min": [
+     17.719,
+     0.004,
+     19.609
+    ],
+    "max": [
+     19.113,
+     1.747,
+     20.829
+    ]
+   },
+   "size": [
+    1.394,
+    1.743,
+    1.22
+   ]
+  },
+  {
+   "index": 5010,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 7,
+   "triangles": 3637,
+   "aabb": {
+    "min": [
+     19.226,
+     0.004,
+     21.276
+    ],
+    "max": [
+     20.152,
+     1.185,
+     22.097
+    ]
+   },
+   "size": [
+    0.927,
+    1.181,
+    0.821
+   ]
+  },
+  {
+   "index": 5057,
+   "name": "sheriff-character",
+   "key": "sheriff-character",
+   "meshes": 9,
+   "triangles": 3053,
+   "aabb": {
+    "min": [
+     20.37,
+     0.004,
+     19.457
+    ],
+    "max": [
+     20.83,
+     1.206,
+     20.546
+    ]
+   },
+   "size": [
+    0.459,
+    1.202,
+    1.089
+   ]
+  },
+  {
+   "index": 5108,
+   "name": "preacher-character",
+   "key": "preacher-character",
+   "meshes": 8,
+   "triangles": 3243,
+   "aabb": {
+    "min": [
+     -22.513,
+     0.054,
+     11.649
+    ],
+    "max": [
+     -22.05,
+     1.807,
+     13.694
+    ]
+   },
+   "size": [
+    0.464,
+    1.753,
+    2.045
+   ]
+  },
+  {
+   "index": 5157,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 9,
+   "triangles": 4089,
+   "aabb": {
+    "min": [
+     -21.543,
+     0.054,
+     11.051
+    ],
+    "max": [
+     -20.925,
+     1.747,
+     12.996
+    ]
+   },
+   "size": [
+    0.618,
+    1.693,
+    1.946
+   ]
+  },
+  {
+   "index": 5208,
+   "name": "saloon-keeper-character",
+   "key": "saloon-keeper-character",
+   "meshes": 6,
+   "triangles": 3829,
+   "aabb": {
+    "min": [
+     20.952,
+     0.004,
+     -1.762
+    ],
+    "max": [
+     22.548,
+     1.734,
+     -1.375
+    ]
+   },
+   "size": [
+    1.597,
+    1.73,
+    0.387
+   ]
+  },
+  {
+   "index": 5253,
+   "name": "saloon-keeper-character",
+   "key": "saloon-keeper-character",
+   "meshes": 8,
+   "triangles": 3893,
+   "aabb": {
+    "min": [
+     18.348,
+     0.304,
+     3.463
+    ],
+    "max": [
+     20.037,
+     2.034,
+     3.896
+    ]
+   },
+   "size": [
+    1.689,
+    1.73,
+    0.433
+   ]
+  },
+  {
+   "index": 5302,
+   "name": "outlaw-character",
+   "key": "outlaw-character",
+   "meshes": 9,
+   "triangles": 3415,
+   "aabb": {
+    "min": [
+     -23.648,
+     0.004,
+     21.576
+    ],
+    "max": [
+     -23.052,
+     1.579,
+     23.024
+    ]
+   },
+   "size": [
+    0.595,
+    1.575,
+    1.448
+   ]
+  },
+  {
+   "index": 5353,
+   "name": "outlaw-character",
+   "key": "outlaw-character",
+   "meshes": 10,
+   "triangles": 3823,
+   "aabb": {
+    "min": [
+     25.098,
+     0,
+     13.196
+    ],
+    "max": [
+     26.702,
+     1.696,
+     13.804
+    ]
+   },
+   "size": [
+    1.603,
+    1.696,
+    0.608
+   ]
+  },
+  {
+   "index": 5406,
+   "name": "townswoman-character",
+   "key": "townswoman-character",
+   "meshes": 9,
+   "triangles": 4169,
+   "aabb": {
+    "min": [
+     22.868,
+     0.98,
+     36.724
+    ],
+    "max": [
+     23.332,
+     2.73,
+     38.715
+    ]
+   },
+   "size": [
+    0.463,
+    1.75,
+    1.992
+   ]
+  },
+  {
+   "index": 5457,
+   "name": "outlaw-character",
+   "key": "outlaw-character",
+   "meshes": 10,
+   "triangles": 3795,
+   "aabb": {
+    "min": [
+     22.163,
+     0.903,
+     42.994
+    ],
+    "max": [
+     23.837,
+     2.656,
+     43.606
+    ]
+   },
+   "size": [
+    1.674,
+    1.753,
+    0.612
+   ]
+  },
+  {
+   "index": 5510,
+   "name": "prospector-character",
+   "key": "prospector-character",
+   "meshes": 10,
+   "triangles": 3915,
+   "aabb": {
+    "min": [
+     7.837,
+     2.877,
+     -37.587
+    ],
+    "max": [
+     8.363,
+     4.612,
+     -35.45
+    ]
+   },
+   "size": [
+    0.526,
+    1.735,
+    2.137
+   ]
+  },
+  {
+   "index": 5563,
+   "name": "prospector-character",
+   "key": "prospector-character",
+   "meshes": 10,
+   "triangles": 3915,
+   "aabb": {
+    "min": [
+     5.838,
+     2.929,
+     -33.393
+    ],
+    "max": [
+     7.171,
+     4.664,
+     -31.468
+    ]
+   },
+   "size": [
+    1.334,
+    1.735,
+    1.924
+   ]
+  },
+  {
+   "index": 5616,
+   "name": "prospector-character",
+   "key": "prospector-character",
+   "meshes": 11,
+   "triangles": 4055,
+   "aabb": {
+    "min": [
+     -14.546,
+     -3.169,
+     35.179
+    ],
+    "max": [
+     -13.551,
+     -1.491,
+     37.304
+    ]
+   },
+   "size": [
+    0.995,
+    1.678,
+    2.125
+   ]
+  }
+ ],
+ "id": "frontier-town",
+ "label": "Frontier Town",
+ "sourceBytes": 61752480,
+ "spawn": {
+  "x": 6,
+  "y": 0.5,
+  "z": 14,
+  "on": "271 floor pieces at y=0"
+ }
+}

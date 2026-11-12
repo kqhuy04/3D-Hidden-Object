@@ -1,0 +1,4223 @@
+{
+ "file": "/assets/maps/space-base.glb",
+ "bytes": 820308,
+ "generatedAt": "2026-11-10T03:50:50.296Z",
+ "structure": {
+  "nodes": 764,
+  "meshes": 321,
+  "materials": 185,
+  "images": 0,
+  "partContainer": "space-base-kit-cf65de",
+  "extensions": [
+   "KHR_materials_emissive_strength"
+  ]
+ },
+ "totals": {
+  "objects": 157,
+  "keys": 60,
+  "triangles": 118476,
+  "meshes": 321,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "decal-rover-tracks",
+   "instances": 16,
+   "triangles": 8704,
+   "maxExtent": 4.154,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-boulder",
+   "instances": 15,
+   "triangles": 4125,
+   "maxExtent": 2.077,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-regolith-mound",
+   "instances": 10,
+   "triangles": 2880,
+   "maxExtent": 2.484,
+   "hasBounds": true
+  },
+  {
+   "key": "solar-array",
+   "instances": 8,
+   "triangles": 4080,
+   "maxExtent": 4.259,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-crate",
+   "instances": 7,
+   "triangles": 5152,
+   "maxExtent": 1.795,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-crystal",
+   "instances": 6,
+   "triangles": 2832,
+   "maxExtent": 1.662,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-ice-chunk",
+   "instances": 6,
+   "triangles": 1518,
+   "maxExtent": 1.686,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-beacon",
+   "instances": 4,
+   "triangles": 2432,
+   "maxExtent": 1.2,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-canister",
+   "instances": 4,
+   "triangles": 2080,
+   "maxExtent": 0.9,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-pipe",
+   "instances": 4,
+   "triangles": 2016,
+   "maxExtent": 4.162,
+   "hasBounds": true
+  },
+  {
+   "key": "airlock-cap",
+   "instances": 3,
+   "triangles": 1704,
+   "maxExtent": 4.833,
+   "hasBounds": true
+  },
+  {
+   "key": "corridor-tube",
+   "instances": 3,
+   "triangles": 1272,
+   "maxExtent": 4.833,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-console",
+   "instances": 3,
+   "triangles": 1188,
+   "maxExtent": 1.518,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-floodlight",
+   "instances": 3,
+   "triangles": 1776,
+   "maxExtent": 4.04,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-meteorite",
+   "instances": 3,
+   "triangles": 1890,
+   "maxExtent": 1.114,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-oxygen",
+   "instances": 3,
+   "triangles": 966,
+   "maxExtent": 1.101,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-radiator",
+   "instances": 3,
+   "triangles": 1728,
+   "maxExtent": 4.011,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-railing",
+   "instances": 3,
+   "triangles": 1260,
+   "maxExtent": 3.961,
+   "hasBounds": true
+  },
+  {
+   "key": "terrain-regolith",
+   "instances": 3,
+   "triangles": 1716,
+   "maxExtent": 12.772,
+   "hasBounds": true
+  },
+  {
+   "key": "terrain-rock",
+   "instances": 3,
+   "triangles": 1827,
+   "maxExtent": 10.665,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-hab-module",
+   "instances": 2,
+   "triangles": 2412,
+   "maxExtent": 8.916,
+   "hasBounds": true
+  },
+  {
+   "key": "fuel-tank",
+   "instances": 2,
+   "triangles": 832,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-battery",
+   "instances": 2,
+   "triangles": 1212,
+   "maxExtent": 1.885,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-conveyor",
+   "instances": 2,
+   "triangles": 1236,
+   "maxExtent": 4.111,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-ladder",
+   "instances": 2,
+   "triangles": 848,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "terrain-crater",
+   "instances": 2,
+   "triangles": 800,
+   "maxExtent": 8.89,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-trailer",
+   "instances": 2,
+   "triangles": 2504,
+   "maxExtent": 4.193,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-command",
+   "instances": 1,
+   "triangles": 842,
+   "maxExtent": 9.698,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-depot",
+   "instances": 1,
+   "triangles": 648,
+   "maxExtent": 14.257,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-garage",
+   "instances": 1,
+   "triangles": 614,
+   "maxExtent": 10.631,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-greenhouse",
+   "instances": 1,
+   "triangles": 1534,
+   "maxExtent": 8.916,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-hab-dome",
+   "instances": 1,
+   "triangles": 538,
+   "maxExtent": 10.414,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-hangar",
+   "instances": 1,
+   "triangles": 1484,
+   "maxExtent": 14.547,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-ice-plant",
+   "instances": 1,
+   "triangles": 1060,
+   "maxExtent": 6.03,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-observation-tower",
+   "instances": 1,
+   "triangles": 1366,
+   "maxExtent": 12.21,
+   "hasBounds": true
+  },
+  {
+   "key": "bldg-reactor",
+   "instances": 1,
+   "triangles": 1058,
+   "maxExtent": 9.036,
+   "hasBounds": true
+  },
+  {
+   "key": "char-commander",
+   "instances": 1,
+   "triangles": 1168,
+   "maxExtent": 1.8,
+   "hasBounds": true
+  },
+  {
+   "key": "char-engineer",
+   "instances": 1,
+   "triangles": 1264,
+   "maxExtent": 1.86,
+   "hasBounds": true
+  },
+  {
+   "key": "char-explorer",
+   "instances": 1,
+   "triangles": 1200,
+   "maxExtent": 1.8,
+   "hasBounds": true
+  },
+  {
+   "key": "char-pilot",
+   "instances": 1,
+   "triangles": 1328,
+   "maxExtent": 1.799,
+   "hasBounds": true
+  },
+  {
+   "key": "char-scientist",
+   "instances": 1,
+   "triangles": 1270,
+   "maxExtent": 1.802,
+   "hasBounds": true
+  },
+  {
+   "key": "char-service-robot",
+   "instances": 1,
+   "triangles": 1032,
+   "maxExtent": 1.67,
+   "hasBounds": true
+  },
+  {
+   "key": "comms-dish",
+   "instances": 1,
+   "triangles": 592,
+   "maxExtent": 3.56,
+   "hasBounds": true
+  },
+  {
+   "key": "corridor-corner",
+   "instances": 1,
+   "triangles": 500,
+   "maxExtent": 4.556,
+   "hasBounds": true
+  },
+  {
+   "key": "corridor-t",
+   "instances": 1,
+   "triangles": 590,
+   "maxExtent": 5.207,
+   "hasBounds": true
+  },
+  {
+   "key": "landing-pad",
+   "instances": 1,
+   "triangles": 640,
+   "maxExtent": 9.698,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-antenna",
+   "instances": 1,
+   "triangles": 652,
+   "maxExtent": 3.5,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-charger",
+   "instances": 1,
+   "triangles": 686,
+   "maxExtent": 1.592,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-drill",
+   "instances": 1,
+   "triangles": 672,
+   "maxExtent": 2.2,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-flag",
+   "instances": 1,
+   "triangles": 308,
+   "maxExtent": 1.45,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-stair",
+   "instances": 1,
+   "triangles": 496,
+   "maxExtent": 3.865,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-tank-horizontal",
+   "instances": 1,
+   "triangles": 344,
+   "maxExtent": 2.566,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-weather-mast",
+   "instances": 1,
+   "triangles": 502,
+   "maxExtent": 3.51,
+   "hasBounds": true
+  },
+  {
+   "key": "prop-workbench",
+   "instances": 1,
+   "triangles": 616,
+   "maxExtent": 1.892,
+   "hasBounds": true
+  },
+  {
+   "key": "space-base-terrain",
+   "instances": 1,
+   "triangles": 25328,
+   "maxExtent": 101,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-crawler",
+   "instances": 1,
+   "triangles": 2656,
+   "maxExtent": 6.207,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-drone",
+   "instances": 1,
+   "triangles": 1242,
+   "maxExtent": 1.366,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-loader",
+   "instances": 1,
+   "triangles": 1998,
+   "maxExtent": 3.289,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-rover",
+   "instances": 1,
+   "triangles": 1902,
+   "maxExtent": 4.712,
+   "hasBounds": true
+  },
+  {
+   "key": "veh-shuttle",
+   "instances": 1,
+   "triangles": 1356,
+   "maxExtent": 7,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "space-base-terrain",
+   "key": "space-base-terrain",
+   "meshes": 1,
+   "triangles": 25328,
+   "aabb": {
+    "min": [
+     -48,
+     -5.51,
+     -50
+    ],
+    "max": [
+     44,
+     7.345,
+     51
+    ]
+   },
+   "size": [
+    92,
+    12.854,
+    101
+   ]
+  },
+  {
+   "index": 3,
+   "name": "bldg-hab-dome",
+   "key": "bldg-hab-dome",
+   "meshes": 2,
+   "triangles": 538,
+   "aabb": {
+    "min": [
+     -9.848,
+     0,
+     -19.083
+    ],
+    "max": [
+     0.566,
+     5,
+     -8.668
+    ]
+   },
+   "size": [
+    10.414,
+    5,
+    10.414
+   ]
+  },
+  {
+   "index": 7,
+   "name": "corridor-tube",
+   "key": "corridor-tube",
+   "meshes": 2,
+   "triangles": 424,
+   "aabb": {
+    "min": [
+     -4.533,
+     0,
+     -10.729
+    ],
+    "max": [
+     -0.253,
+     3,
+     -5.896
+    ]
+   },
+   "size": [
+    4.28,
+    3,
+    4.833
+   ]
+  },
+  {
+   "index": 10,
+   "name": "corridor-t",
+   "key": "corridor-t",
+   "meshes": 1,
+   "triangles": 590,
+   "aabb": {
+    "min": [
+     -3.498,
+     0,
+     -7.207
+    ],
+    "max": [
+     1.709,
+     3,
+     -2
+    ]
+   },
+   "size": [
+    5.207,
+    3,
+    5.207
+   ]
+  },
+  {
+   "index": 12,
+   "name": "corridor-tube",
+   "key": "corridor-tube",
+   "meshes": 2,
+   "triangles": 424,
+   "aabb": {
+    "min": [
+     -7.02,
+     0,
+     -5.245
+    ],
+    "max": [
+     -2.187,
+     3,
+     -0.965
+    ]
+   },
+   "size": [
+    4.833,
+    3,
+    4.28
+   ]
+  },
+  {
+   "index": 15,
+   "name": "bldg-greenhouse",
+   "key": "bldg-greenhouse",
+   "meshes": 4,
+   "triangles": 1534,
+   "aabb": {
+    "min": [
+     -14.625,
+     -1.248,
+     -4.21
+    ],
+    "max": [
+     -5.709,
+     1.752,
+     2.495
+    ]
+   },
+   "size": [
+    8.916,
+    3,
+    6.706
+   ]
+  },
+  {
+   "index": 21,
+   "name": "corridor-corner",
+   "key": "corridor-corner",
+   "meshes": 1,
+   "triangles": 500,
+   "aabb": {
+    "min": [
+     0.398,
+     0,
+     -8.055
+    ],
+    "max": [
+     4.954,
+     3,
+     -3.498
+    ]
+   },
+   "size": [
+    4.556,
+    3,
+    4.556
+   ]
+  },
+  {
+   "index": 23,
+   "name": "corridor-tube",
+   "key": "corridor-tube",
+   "meshes": 2,
+   "triangles": 424,
+   "aabb": {
+    "min": [
+     2.172,
+     0,
+     -4.81
+    ],
+    "max": [
+     6.452,
+     3,
+     0.023
+    ]
+   },
+   "size": [
+    4.28,
+    3,
+    4.833
+   ]
+  },
+  {
+   "index": 26,
+   "name": "bldg-hab-module",
+   "key": "bldg-hab-module",
+   "meshes": 4,
+   "triangles": 1206,
+   "aabb": {
+    "min": [
+     3.207,
+     0.005,
+     -1.288
+    ],
+    "max": [
+     9.913,
+     3.475,
+     7.628
+    ]
+   },
+   "size": [
+    6.706,
+    3.47,
+    8.916
+   ]
+  },
+  {
+   "index": 33,
+   "name": "airlock-cap",
+   "key": "airlock-cap",
+   "meshes": 3,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     6.668,
+     0.25,
+     6.317
+    ],
+    "max": [
+     10.948,
+     3.25,
+     11.149
+    ]
+   },
+   "size": [
+    4.28,
+    3,
+    4.833
+   ]
+  },
+  {
+   "index": 38,
+   "name": "bldg-hab-module",
+   "key": "bldg-hab-module",
+   "meshes": 4,
+   "triangles": 1206,
+   "aabb": {
+    "min": [
+     6.916,
+     0.246,
+     -2.787
+    ],
+    "max": [
+     13.621,
+     3.716,
+     6.129
+    ]
+   },
+   "size": [
+    6.706,
+    3.47,
+    8.916
+   ]
+  },
+  {
+   "index": 45,
+   "name": "airlock-cap",
+   "key": "airlock-cap",
+   "meshes": 3,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     5.881,
+     0.02,
+     -6.308
+    ],
+    "max": [
+     10.161,
+     3.02,
+     -1.475
+    ]
+   },
+   "size": [
+    4.28,
+    3,
+    4.833
+   ]
+  },
+  {
+   "index": 50,
+   "name": "airlock-cap",
+   "key": "airlock-cap",
+   "meshes": 3,
+   "triangles": 568,
+   "aabb": {
+    "min": [
+     10.376,
+     0.25,
+     4.818
+    ],
+    "max": [
+     14.656,
+     3.25,
+     9.651
+    ]
+   },
+   "size": [
+    4.28,
+    3,
+    4.833
+   ]
+  },
+  {
+   "index": 55,
+   "name": "prop-weather-mast",
+   "key": "prop-weather-mast",
+   "meshes": 5,
+   "triangles": 502,
+   "aabb": {
+    "min": [
+     -12.921,
+     0,
+     -10.29
+    ],
+    "max": [
+     -11.11,
+     3.51,
+     -8.586
+    ]
+   },
+   "size": [
+    1.811,
+    3.51,
+    1.704
+   ]
+  },
+  {
+   "index": 64,
+   "name": "prop-flag",
+   "key": "prop-flag",
+   "meshes": 2,
+   "triangles": 308,
+   "aabb": {
+    "min": [
+     -9.991,
+     0,
+     -18.821
+    ],
+    "max": [
+     -9.507,
+     1.45,
+     -18.354
+    ]
+   },
+   "size": [
+    0.483,
+    1.45,
+    0.467
+   ]
+  },
+  {
+   "index": 68,
+   "name": "prop-oxygen",
+   "key": "prop-oxygen",
+   "meshes": 2,
+   "triangles": 322,
+   "aabb": {
+    "min": [
+     1.268,
+     0,
+     -13.93
+    ],
+    "max": [
+     1.633,
+     1.101,
+     -13.566
+    ]
+   },
+   "size": [
+    0.365,
+    1.101,
+    0.365
+   ]
+  },
+  {
+   "index": 72,
+   "name": "prop-oxygen",
+   "key": "prop-oxygen",
+   "meshes": 2,
+   "triangles": 322,
+   "aabb": {
+    "min": [
+     2.254,
+     0,
+     -13.358
+    ],
+    "max": [
+     2.619,
+     1.101,
+     -12.993
+    ]
+   },
+   "size": [
+    0.365,
+    1.101,
+    0.365
+   ]
+  },
+  {
+   "index": 76,
+   "name": "prop-canister",
+   "key": "prop-canister",
+   "meshes": 2,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     -9.418,
+     -0.168,
+     -7.037
+    ],
+    "max": [
+     -8.728,
+     0.732,
+     -6.347
+    ]
+   },
+   "size": [
+    0.69,
+    0.9,
+    0.69
+   ]
+  },
+  {
+   "index": 80,
+   "name": "prop-console",
+   "key": "prop-console",
+   "meshes": 3,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -6.39,
+     0,
+     -7.954
+    ],
+    "max": [
+     -5.467,
+     1.518,
+     -7.027
+    ]
+   },
+   "size": [
+    0.922,
+    1.518,
+    0.927
+   ]
+  },
+  {
+   "index": 85,
+   "name": "char-scientist",
+   "key": "char-scientist",
+   "meshes": 5,
+   "triangles": 1270,
+   "aabb": {
+    "min": [
+     -9.172,
+     -0.396,
+     -6.183
+    ],
+    "max": [
+     -7.502,
+     1.406,
+     -4.769
+    ]
+   },
+   "size": [
+    1.67,
+    1.802,
+    1.414
+   ]
+  },
+  {
+   "index": 119,
+   "name": "prop-ladder",
+   "key": "prop-ladder",
+   "meshes": 1,
+   "triangles": 424,
+   "aabb": {
+    "min": [
+     11.964,
+     0.25,
+     0.206
+    ],
+    "max": [
+     13.08,
+     3.25,
+     1.316
+    ]
+   },
+   "size": [
+    1.116,
+    3,
+    1.111
+   ]
+  },
+  {
+   "index": 121,
+   "name": "prop-crate",
+   "key": "prop-crate",
+   "meshes": 3,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     12.57,
+     0.25,
+     -3.081
+    ],
+    "max": [
+     14.365,
+     1.45,
+     -1.289
+    ]
+   },
+   "size": [
+    1.795,
+    1.2,
+    1.792
+   ]
+  },
+  {
+   "index": 127,
+   "name": "char-service-robot",
+   "key": "char-service-robot",
+   "meshes": 1,
+   "triangles": 1032,
+   "aabb": {
+    "min": [
+     14.868,
+     0.25,
+     1.488
+    ],
+    "max": [
+     15.246,
+     1.85,
+     3.159
+    ]
+   },
+   "size": [
+    0.378,
+    1.6,
+    1.67
+   ]
+  },
+  {
+   "index": 151,
+   "name": "landing-pad",
+   "key": "landing-pad",
+   "meshes": 1,
+   "triangles": 640,
+   "aabb": {
+    "min": [
+     -3.577,
+     -1.5,
+     -38.061
+    ],
+    "max": [
+     6.12,
+     -1.09,
+     -28.363
+    ]
+   },
+   "size": [
+    9.698,
+    0.41,
+    9.698
+   ]
+  },
+  {
+   "index": 153,
+   "name": "bldg-hangar",
+   "key": "bldg-hangar",
+   "meshes": 2,
+   "triangles": 1484,
+   "aabb": {
+    "min": [
+     7.099,
+     -1.5,
+     -35.158
+    ],
+    "max": [
+     21.645,
+     4.5,
+     -20.611
+    ]
+   },
+   "size": [
+    14.547,
+    6,
+    14.547
+   ]
+  },
+  {
+   "index": 157,
+   "name": "bldg-command",
+   "key": "bldg-command",
+   "meshes": 3,
+   "triangles": 842,
+   "aabb": {
+    "min": [
+     -15.705,
+     -1.5,
+     -39.024
+    ],
+    "max": [
+     -6.007,
+     5.36,
+     -29.326
+    ]
+   },
+   "size": [
+    9.698,
+    6.86,
+    9.698
+   ]
+  },
+  {
+   "index": 163,
+   "name": "bldg-observation-tower",
+   "key": "bldg-observation-tower",
+   "meshes": 2,
+   "triangles": 1366,
+   "aabb": {
+    "min": [
+     -11.697,
+     -1.5,
+     -44.714
+    ],
+    "max": [
+     -6.144,
+     10.71,
+     -39.161
+    ]
+   },
+   "size": [
+    5.553,
+    12.21,
+    5.553
+   ]
+  },
+  {
+   "index": 167,
+   "name": "veh-shuttle",
+   "key": "veh-shuttle",
+   "meshes": 8,
+   "triangles": 1356,
+   "aabb": {
+    "min": [
+     -0.806,
+     -1.087,
+     -37.003
+    ],
+    "max": [
+     3.494,
+     2.69,
+     -30.003
+    ]
+   },
+   "size": [
+    4.3,
+    3.777,
+    7
+   ]
+  },
+  {
+   "index": 183,
+   "name": "comms-dish",
+   "key": "comms-dish",
+   "meshes": 3,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     -14.838,
+     -1.5,
+     -42.621
+    ],
+    "max": [
+     -12.143,
+     2.06,
+     -40.049
+    ]
+   },
+   "size": [
+    2.695,
+    3.56,
+    2.571
+   ]
+  },
+  {
+   "index": 189,
+   "name": "prop-antenna",
+   "key": "prop-antenna",
+   "meshes": 2,
+   "triangles": 652,
+   "aabb": {
+    "min": [
+     -5.875,
+     -1.5,
+     -43.147
+    ],
+    "max": [
+     -4.421,
+     2,
+     -41.741
+    ]
+   },
+   "size": [
+    1.454,
+    3.5,
+    1.406
+   ]
+  },
+  {
+   "index": 192,
+   "name": "prop-floodlight",
+   "key": "prop-floodlight",
+   "meshes": 3,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     -8.569,
+     -1.5,
+     -28.774
+    ],
+    "max": [
+     -6.776,
+     2.54,
+     -26.868
+    ]
+   },
+   "size": [
+    1.794,
+    4.04,
+    1.906
+   ]
+  },
+  {
+   "index": 198,
+   "name": "prop-floodlight",
+   "key": "prop-floodlight",
+   "meshes": 3,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     10.362,
+     -1.5,
+     -39.285
+    ],
+    "max": [
+     11.99,
+     2.54,
+     -37.491
+    ]
+   },
+   "size": [
+    1.628,
+    4.04,
+    1.794
+   ]
+  },
+  {
+   "index": 204,
+   "name": "prop-beacon",
+   "key": "prop-beacon",
+   "meshes": 4,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     -3.733,
+     -1.5,
+     -39.797
+    ],
+    "max": [
+     -2.98,
+     -0.3,
+     -39.106
+    ]
+   },
+   "size": [
+    0.753,
+    1.2,
+    0.691
+   ]
+  },
+  {
+   "index": 211,
+   "name": "prop-beacon",
+   "key": "prop-beacon",
+   "meshes": 4,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     7.911,
+     -1.5,
+     -36.894
+    ],
+    "max": [
+     8.664,
+     -0.3,
+     -36.203
+    ]
+   },
+   "size": [
+    0.753,
+    1.2,
+    0.691
+   ]
+  },
+  {
+   "index": 218,
+   "name": "prop-beacon",
+   "key": "prop-beacon",
+   "meshes": 4,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     5.491,
+     -1.5,
+     -27.191
+    ],
+    "max": [
+     6.244,
+     -0.3,
+     -26.5
+    ]
+   },
+   "size": [
+    0.753,
+    1.2,
+    0.691
+   ]
+  },
+  {
+   "index": 225,
+   "name": "prop-beacon",
+   "key": "prop-beacon",
+   "meshes": 4,
+   "triangles": 608,
+   "aabb": {
+    "min": [
+     -6.152,
+     -1.5,
+     -30.094
+    ],
+    "max": [
+     -5.399,
+     -0.3,
+     -29.403
+    ]
+   },
+   "size": [
+    0.753,
+    1.2,
+    0.691
+   ]
+  },
+  {
+   "index": 232,
+   "name": "veh-loader",
+   "key": "veh-loader",
+   "meshes": 7,
+   "triangles": 1998,
+   "aabb": {
+    "min": [
+     7.891,
+     -1.5,
+     -25.263
+    ],
+    "max": [
+     9.548,
+     1.05,
+     -21.974
+    ]
+   },
+   "size": [
+    1.657,
+    2.55,
+    3.289
+   ]
+  },
+  {
+   "index": 248,
+   "name": "veh-trailer",
+   "key": "veh-trailer",
+   "meshes": 6,
+   "triangles": 1252,
+   "aabb": {
+    "min": [
+     9.979,
+     -1.5,
+     -23.334
+    ],
+    "max": [
+     12.674,
+     -0.15,
+     -19.141
+    ]
+   },
+   "size": [
+    2.694,
+    1.35,
+    4.193
+   ]
+  },
+  {
+   "index": 262,
+   "name": "veh-drone",
+   "key": "veh-drone",
+   "meshes": 7,
+   "triangles": 1242,
+   "aabb": {
+    "min": [
+     -4.549,
+     -1.5,
+     -26.519
+    ],
+    "max": [
+     -3.182,
+     -1.047,
+     -25.153
+    ]
+   },
+   "size": [
+    1.366,
+    0.453,
+    1.366
+   ]
+  },
+  {
+   "index": 275,
+   "name": "prop-crate",
+   "key": "prop-crate",
+   "meshes": 3,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     1.567,
+     -1.5,
+     -24.338
+    ],
+    "max": [
+     2.833,
+     -0.3,
+     -23.023
+    ]
+   },
+   "size": [
+    1.266,
+    1.2,
+    1.316
+   ]
+  },
+  {
+   "index": 281,
+   "name": "prop-crate",
+   "key": "prop-crate",
+   "meshes": 3,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     2.28,
+     -1.465,
+     -23.615
+    ],
+    "max": [
+     4.074,
+     -0.265,
+     -21.82
+    ]
+   },
+   "size": [
+    1.794,
+    1.2,
+    1.795
+   ]
+  },
+  {
+   "index": 287,
+   "name": "prop-crate",
+   "key": "prop-crate",
+   "meshes": 3,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     1.347,
+     -0.915,
+     -22.618
+    ],
+    "max": [
+     3.135,
+     0.285,
+     -20.826
+    ]
+   },
+   "size": [
+    1.788,
+    1.2,
+    1.793
+   ]
+  },
+  {
+   "index": 293,
+   "name": "prop-canister",
+   "key": "prop-canister",
+   "meshes": 2,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     0.496,
+     -1.5,
+     -23.856
+    ],
+    "max": [
+     1.138,
+     -0.6,
+     -23.214
+    ]
+   },
+   "size": [
+    0.642,
+    0.9,
+    0.642
+   ]
+  },
+  {
+   "index": 297,
+   "name": "char-pilot",
+   "key": "char-pilot",
+   "meshes": 3,
+   "triangles": 1328,
+   "aabb": {
+    "min": [
+     -2.572,
+     -1.5,
+     -29.225
+    ],
+    "max": [
+     -1.092,
+     0.299,
+     -27.727
+    ]
+   },
+   "size": [
+    1.48,
+    1.799,
+    1.498
+   ]
+  },
+  {
+   "index": 326,
+   "name": "char-commander",
+   "key": "char-commander",
+   "meshes": 4,
+   "triangles": 1168,
+   "aabb": {
+    "min": [
+     -8.868,
+     -1.5,
+     -31.268
+    ],
+    "max": [
+     -7.161,
+     0.3,
+     -30.235
+    ]
+   },
+   "size": [
+    1.707,
+    1.8,
+    1.033
+   ]
+  },
+  {
+   "index": 359,
+   "name": "prop-console",
+   "key": "prop-console",
+   "meshes": 3,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -9.797,
+     -1.5,
+     -29.658
+    ],
+    "max": [
+     -9.02,
+     0.018,
+     -28.818
+    ]
+   },
+   "size": [
+    0.778,
+    1.518,
+    0.841
+   ]
+  },
+  {
+   "index": 364,
+   "name": "prop-railing",
+   "key": "prop-railing",
+   "meshes": 1,
+   "triangles": 420,
+   "aabb": {
+    "min": [
+     -4.353,
+     -1.5,
+     -44.04
+    ],
+    "max": [
+     -0.392,
+     0.08,
+     -42.752
+    ]
+   },
+   "size": [
+    3.961,
+    1.58,
+    1.288
+   ]
+  },
+  {
+   "index": 366,
+   "name": "prop-railing",
+   "key": "prop-railing",
+   "meshes": 1,
+   "triangles": 420,
+   "aabb": {
+    "min": [
+     -0.472,
+     -1.5,
+     -43.073
+    ],
+    "max": [
+     3.489,
+     0.08,
+     -41.785
+    ]
+   },
+   "size": [
+    3.961,
+    1.58,
+    1.288
+   ]
+  },
+  {
+   "index": 368,
+   "name": "prop-railing",
+   "key": "prop-railing",
+   "meshes": 1,
+   "triangles": 420,
+   "aabb": {
+    "min": [
+     3.409,
+     -1.5,
+     -42.105
+    ],
+    "max": [
+     7.37,
+     0.08,
+     -40.817
+    ]
+   },
+   "size": [
+    3.961,
+    1.58,
+    1.288
+   ]
+  },
+  {
+   "index": 370,
+   "name": "bldg-reactor",
+   "key": "bldg-reactor",
+   "meshes": 1,
+   "triangles": 1058,
+   "aabb": {
+    "min": [
+     -24.754,
+     -1.25,
+     1.1
+    ],
+    "max": [
+     -15.719,
+     4.75,
+     10.136
+    ]
+   },
+   "size": [
+    9.036,
+    6,
+    9.036
+   ]
+  },
+  {
+   "index": 372,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -46.271,
+     0.456,
+     6.631
+    ],
+    "max": [
+     -42.013,
+     2.051,
+     9.304
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 376,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -42.31,
+     -1.69,
+     6.075
+    ],
+    "max": [
+     -38.052,
+     -0.095,
+     8.748
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 380,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -38.349,
+     -1.529,
+     5.518
+    ],
+    "max": [
+     -34.091,
+     0.065,
+     8.191
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 384,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -34.388,
+     -1.41,
+     4.961
+    ],
+    "max": [
+     -30.13,
+     0.184,
+     7.634
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 388,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -45.715,
+     1.147,
+     10.592
+    ],
+    "max": [
+     -41.456,
+     2.741,
+     13.266
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 392,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -41.754,
+     -1.273,
+     10.036
+    ],
+    "max": [
+     -37.495,
+     0.321,
+     12.709
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 396,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -37.793,
+     -1.076,
+     9.479
+    ],
+    "max": [
+     -33.534,
+     0.518,
+     12.152
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 400,
+   "name": "solar-array",
+   "key": "solar-array",
+   "meshes": 2,
+   "triangles": 510,
+   "aabb": {
+    "min": [
+     -33.831,
+     -0.936,
+     8.922
+    ],
+    "max": [
+     -29.573,
+     0.658,
+     11.595
+    ]
+   },
+   "size": [
+    4.259,
+    1.595,
+    2.673
+   ]
+  },
+  {
+   "index": 404,
+   "name": "prop-radiator",
+   "key": "prop-radiator",
+   "meshes": 1,
+   "triangles": 576,
+   "aabb": {
+    "min": [
+     -27.317,
+     -1.25,
+     -2.204
+    ],
+    "max": [
+     -23.305,
+     0.55,
+     -1.291
+    ]
+   },
+   "size": [
+    4.011,
+    1.8,
+    0.913
+   ]
+  },
+  {
+   "index": 406,
+   "name": "prop-radiator",
+   "key": "prop-radiator",
+   "meshes": 1,
+   "triangles": 576,
+   "aabb": {
+    "min": [
+     -23.355,
+     -1.25,
+     -2.761
+    ],
+    "max": [
+     -19.344,
+     0.55,
+     -1.848
+    ]
+   },
+   "size": [
+    4.011,
+    1.8,
+    0.913
+   ]
+  },
+  {
+   "index": 408,
+   "name": "prop-radiator",
+   "key": "prop-radiator",
+   "meshes": 1,
+   "triangles": 576,
+   "aabb": {
+    "min": [
+     -19.394,
+     -1.25,
+     -3.317
+    ],
+    "max": [
+     -15.383,
+     0.55,
+     -2.404
+    ]
+   },
+   "size": [
+    4.011,
+    1.8,
+    0.913
+   ]
+  },
+  {
+   "index": 410,
+   "name": "fuel-tank",
+   "key": "fuel-tank",
+   "meshes": 1,
+   "triangles": 416,
+   "aabb": {
+    "min": [
+     -14.73,
+     -0.906,
+     9.228
+    ],
+    "max": [
+     -11.794,
+     3.094,
+     12.165
+    ]
+   },
+   "size": [
+    2.937,
+    4,
+    2.937
+   ]
+  },
+  {
+   "index": 412,
+   "name": "fuel-tank",
+   "key": "fuel-tank",
+   "meshes": 1,
+   "triangles": 416,
+   "aabb": {
+    "min": [
+     -14.173,
+     -0.451,
+     13.19
+    ],
+    "max": [
+     -11.237,
+     3.549,
+     16.126
+    ]
+   },
+   "size": [
+    2.937,
+    4,
+    2.937
+   ]
+  },
+  {
+   "index": 414,
+   "name": "prop-pipe",
+   "key": "prop-pipe",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -19.224,
+     -0.478,
+     12.268
+    ],
+    "max": [
+     -15.062,
+     0.302,
+     14.255
+    ]
+   },
+   "size": [
+    4.162,
+    0.78,
+    1.987
+   ]
+  },
+  {
+   "index": 416,
+   "name": "prop-pipe",
+   "key": "prop-pipe",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -23.185,
+     -0.337,
+     12.825
+    ],
+    "max": [
+     -19.023,
+     0.443,
+     14.812
+    ]
+   },
+   "size": [
+    4.162,
+    0.78,
+    1.987
+   ]
+  },
+  {
+   "index": 418,
+   "name": "prop-pipe",
+   "key": "prop-pipe",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -27.146,
+     -0.26,
+     13.382
+    ],
+    "max": [
+     -22.984,
+     0.52,
+     15.369
+    ]
+   },
+   "size": [
+    4.162,
+    0.78,
+    1.987
+   ]
+  },
+  {
+   "index": 420,
+   "name": "prop-pipe",
+   "key": "prop-pipe",
+   "meshes": 1,
+   "triangles": 504,
+   "aabb": {
+    "min": [
+     -31.107,
+     -0.264,
+     13.939
+    ],
+    "max": [
+     -26.945,
+     0.516,
+     15.925
+    ]
+   },
+   "size": [
+    4.162,
+    0.78,
+    1.987
+   ]
+  },
+  {
+   "index": 422,
+   "name": "prop-battery",
+   "key": "prop-battery",
+   "meshes": 3,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     -17.264,
+     -0.846,
+     9.484
+    ],
+    "max": [
+     -15.424,
+     1.039,
+     11.16
+    ]
+   },
+   "size": [
+    1.841,
+    1.885,
+    1.675
+   ]
+  },
+  {
+   "index": 427,
+   "name": "prop-battery",
+   "key": "prop-battery",
+   "meshes": 3,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     -18.864,
+     -0.708,
+     10.315
+    ],
+    "max": [
+     -17.023,
+     1.177,
+     11.991
+    ]
+   },
+   "size": [
+    1.841,
+    1.885,
+    1.675
+   ]
+  },
+  {
+   "index": 432,
+   "name": "prop-charger",
+   "key": "prop-charger",
+   "meshes": 3,
+   "triangles": 686,
+   "aabb": {
+    "min": [
+     -26.647,
+     -1.25,
+     3.759
+    ],
+    "max": [
+     -25.981,
+     0.342,
+     4.338
+    ]
+   },
+   "size": [
+    0.666,
+    1.592,
+    0.579
+   ]
+  },
+  {
+   "index": 437,
+   "name": "prop-console",
+   "key": "prop-console",
+   "meshes": 3,
+   "triangles": 396,
+   "aabb": {
+    "min": [
+     -25.673,
+     -0.729,
+     10.158
+    ],
+    "max": [
+     -24.796,
+     0.789,
+     10.985
+    ]
+   },
+   "size": [
+    0.877,
+    1.518,
+    0.826
+   ]
+  },
+  {
+   "index": 442,
+   "name": "char-engineer",
+   "key": "char-engineer",
+   "meshes": 4,
+   "triangles": 1264,
+   "aabb": {
+    "min": [
+     -24.212,
+     -1.25,
+     0.108
+    ],
+    "max": [
+     -22.836,
+     0.61,
+     1.621
+    ]
+   },
+   "size": [
+    1.376,
+    1.86,
+    1.513
+   ]
+  },
+  {
+   "index": 473,
+   "name": "prop-ladder",
+   "key": "prop-ladder",
+   "meshes": 1,
+   "triangles": 424,
+   "aabb": {
+    "min": [
+     -24.97,
+     -1.119,
+     6.744
+    ],
+    "max": [
+     -23.999,
+     1.881,
+     7.706
+    ]
+   },
+   "size": [
+    0.971,
+    3,
+    0.962
+   ]
+  },
+  {
+   "index": 475,
+   "name": "prop-crate",
+   "key": "prop-crate",
+   "meshes": 3,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     -28.373,
+     -0.477,
+     12.02
+    ],
+    "max": [
+     -26.581,
+     0.723,
+     13.815
+    ]
+   },
+   "size": [
+    1.792,
+    1.2,
+    1.795
+   ]
+  },
+  {
+   "index": 481,
+   "name": "prop-canister",
+   "key": "prop-canister",
+   "meshes": 2,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     -12.707,
+     -1.24,
+     7.854
+    ],
+    "max": [
+     -12.108,
+     -0.34,
+     8.452
+    ]
+   },
+   "size": [
+    0.599,
+    0.9,
+    0.599
+   ]
+  },
+  {
+   "index": 485,
+   "name": "bldg-depot",
+   "key": "bldg-depot",
+   "meshes": 3,
+   "triangles": 648,
+   "aabb": {
+    "min": [
+     13.368,
+     0.25,
+     0.567
+    ],
+    "max": [
+     27.625,
+     6.53,
+     12.889
+    ]
+   },
+   "size": [
+    14.257,
+    6.28,
+    12.322
+   ]
+  },
+  {
+   "index": 491,
+   "name": "bldg-garage",
+   "key": "bldg-garage",
+   "meshes": 2,
+   "triangles": 614,
+   "aabb": {
+    "min": [
+     32.34,
+     0.25,
+     7.207
+    ],
+    "max": [
+     42.971,
+     4.25,
+     17.838
+    ]
+   },
+   "size": [
+    10.631,
+    4,
+    10.631
+   ]
+  },
+  {
+   "index": 495,
+   "name": "bldg-ice-plant",
+   "key": "bldg-ice-plant",
+   "meshes": 2,
+   "triangles": 1060,
+   "aabb": {
+    "min": [
+     9.142,
+     0.25,
+     13.255
+    ],
+    "max": [
+     14.458,
+     6.28,
+     18.571
+    ]
+   },
+   "size": [
+    5.316,
+    6.03,
+    5.316
+   ]
+  },
+  {
+   "index": 499,
+   "name": "prop-drill",
+   "key": "prop-drill",
+   "meshes": 4,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     13.265,
+     0.25,
+     18.918
+    ],
+    "max": [
+     14.565,
+     2.45,
+     20.398
+    ]
+   },
+   "size": [
+    1.3,
+    2.2,
+    1.48
+   ]
+  },
+  {
+   "index": 507,
+   "name": "prop-conveyor",
+   "key": "prop-conveyor",
+   "meshes": 2,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     14.882,
+     0.25,
+     22.459
+    ],
+    "max": [
+     18.993,
+     2.8,
+     25.313
+    ]
+   },
+   "size": [
+    4.111,
+    2.55,
+    2.853
+   ]
+  },
+  {
+   "index": 511,
+   "name": "prop-conveyor",
+   "key": "prop-conveyor",
+   "meshes": 2,
+   "triangles": 618,
+   "aabb": {
+    "min": [
+     18.507,
+     0.25,
+     24.15
+    ],
+    "max": [
+     22.618,
+     2.8,
+     27.003
+    ]
+   },
+   "size": [
+    4.111,
+    2.55,
+    2.853
+   ]
+  },
+  {
+   "index": 515,
+   "name": "prop-workbench",
+   "key": "prop-workbench",
+   "meshes": 3,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     27.463,
+     0.25,
+     13.661
+    ],
+    "max": [
+     29.355,
+     1.697,
+     15.554
+    ]
+   },
+   "size": [
+    1.892,
+    1.447,
+    1.892
+   ]
+  },
+  {
+   "index": 521,
+   "name": "veh-crawler",
+   "key": "veh-crawler",
+   "meshes": 6,
+   "triangles": 2656,
+   "aabb": {
+    "min": [
+     22.177,
+     0.25,
+     13.977
+    ],
+    "max": [
+     28.385,
+     3.41,
+     17.129
+    ]
+   },
+   "size": [
+    6.207,
+    3.16,
+    3.153
+   ]
+  },
+  {
+   "index": 533,
+   "name": "veh-trailer",
+   "key": "veh-trailer",
+   "meshes": 6,
+   "triangles": 1252,
+   "aabb": {
+    "min": [
+     18.242,
+     0.25,
+     13.862
+    ],
+    "max": [
+     22.406,
+     1.6,
+     16.517
+    ]
+   },
+   "size": [
+    4.164,
+    1.35,
+    2.655
+   ]
+  },
+  {
+   "index": 547,
+   "name": "veh-rover",
+   "key": "veh-rover",
+   "meshes": 9,
+   "triangles": 1902,
+   "aabb": {
+    "min": [
+     31.475,
+     0.25,
+     15.484
+    ],
+    "max": [
+     34.475,
+     3.16,
+     20.196
+    ]
+   },
+   "size": [
+    3,
+    2.91,
+    4.712
+   ]
+  },
+  {
+   "index": 569,
+   "name": "prop-tank-horizontal",
+   "key": "prop-tank-horizontal",
+   "meshes": 1,
+   "triangles": 344,
+   "aabb": {
+    "min": [
+     12.388,
+     0.25,
+     8.28
+    ],
+    "max": [
+     14.953,
+     1.582,
+     9.844
+    ]
+   },
+   "size": [
+    2.566,
+    1.332,
+    1.563
+   ]
+  },
+  {
+   "index": 571,
+   "name": "prop-oxygen",
+   "key": "prop-oxygen",
+   "meshes": 2,
+   "triangles": 322,
+   "aabb": {
+    "min": [
+     14.367,
+     0.25,
+     11.715
+    ],
+    "max": [
+     14.74,
+     1.351,
+     12.087
+    ]
+   },
+   "size": [
+    0.372,
+    1.101,
+    0.372
+   ]
+  },
+  {
+   "index": 575,
+   "name": "prop-stair",
+   "key": "prop-stair",
+   "meshes": 1,
+   "triangles": 496,
+   "aabb": {
+    "min": [
+     21.281,
+     0.25,
+     -0.311
+    ],
+    "max": [
+     24.488,
+     4.115,
+     3.525
+    ]
+   },
+   "size": [
+    3.207,
+    3.865,
+    3.836
+   ]
+  },
+  {
+   "index": 577,
+   "name": "prop-floodlight",
+   "key": "prop-floodlight",
+   "meshes": 3,
+   "triangles": 592,
+   "aabb": {
+    "min": [
+     35.859,
+     0.209,
+     22.699
+    ],
+    "max": [
+     37.247,
+     4.249,
+     24.308
+    ]
+   },
+   "size": [
+    1.388,
+    4.04,
+    1.609
+   ]
+  },
+  {
+   "index": 583,
+   "name": "char-explorer",
+   "key": "char-explorer",
+   "meshes": 4,
+   "triangles": 1200,
+   "aabb": {
+    "min": [
+     27.773,
+     0.25,
+     17.754
+    ],
+    "max": [
+     29.112,
+     2.05,
+     19.404
+    ]
+   },
+   "size": [
+    1.339,
+    1.8,
+    1.65
+   ]
+  },
+  {
+   "index": 614,
+   "name": "prop-crate",
+   "key": "prop-crate",
+   "meshes": 3,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     27.038,
+     0.25,
+     11.405
+    ],
+    "max": [
+     28.39,
+     1.45,
+     12.802
+    ]
+   },
+   "size": [
+    1.352,
+    1.2,
+    1.397
+   ]
+  },
+  {
+   "index": 620,
+   "name": "prop-crate",
+   "key": "prop-crate",
+   "meshes": 3,
+   "triangles": 736,
+   "aabb": {
+    "min": [
+     28.277,
+     0.25,
+     11.117
+    ],
+    "max": [
+     30.062,
+     1.45,
+     12.908
+    ]
+   },
+   "size": [
+    1.785,
+    1.2,
+    1.791
+   ]
+  },
+  {
+   "index": 626,
+   "name": "prop-canister",
+   "key": "prop-canister",
+   "meshes": 2,
+   "triangles": 520,
+   "aabb": {
+    "min": [
+     26.471,
+     0.25,
+     10.319
+    ],
+    "max": [
+     27.175,
+     1.15,
+     11.023
+    ]
+   },
+   "size": [
+    0.704,
+    0.9,
+    0.704
+   ]
+  },
+  {
+   "index": 630,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     9.576,
+     0.25,
+     21.658
+    ],
+    "max": [
+     11.249,
+     1.05,
+     23.218
+    ]
+   },
+   "size": [
+    1.673,
+    0.8,
+    1.56
+   ]
+  },
+  {
+   "index": 632,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     12.936,
+     0.25,
+     24.284
+    ],
+    "max": [
+     14.294,
+     1.05,
+     25.786
+    ]
+   },
+   "size": [
+    1.357,
+    0.8,
+    1.503
+   ]
+  },
+  {
+   "index": 634,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     1.451,
+     0.05,
+     -12.032
+    ],
+    "max": [
+     3.334,
+     0.058,
+     -7.89
+    ]
+   },
+   "size": [
+    1.883,
+    0.008,
+    4.142
+   ]
+  },
+  {
+   "index": 636,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     1.954,
+     0.05,
+     -15.776
+    ],
+    "max": [
+     4.973,
+     0.058,
+     -11.769
+    ]
+   },
+   "size": [
+    3.018,
+    0.008,
+    4.006
+   ]
+  },
+  {
+   "index": 638,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.197,
+     -1.45,
+     -23.174
+    ],
+    "max": [
+     10.254,
+     -1.442,
+     -19.022
+    ]
+   },
+   "size": [
+    2.057,
+    0.008,
+    4.152
+   ]
+  },
+  {
+   "index": 640,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     8.792,
+     0.3,
+     5.48
+    ],
+    "max": [
+     12.922,
+     0.308,
+     8.006
+    ]
+   },
+   "size": [
+    4.13,
+    0.008,
+    2.525
+   ]
+  },
+  {
+   "index": 642,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     12.506,
+     0.3,
+     6.966
+    ],
+    "max": [
+     16.636,
+     0.308,
+     9.491
+    ]
+   },
+   "size": [
+    4.13,
+    0.008,
+    2.525
+   ]
+  },
+  {
+   "index": 644,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     16.448,
+     0.3,
+     7.89
+    ],
+    "max": [
+     20.32,
+     0.308,
+     11.186
+    ]
+   },
+   "size": [
+    3.872,
+    0.008,
+    3.296
+   ]
+  },
+  {
+   "index": 646,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     19.938,
+     0.3,
+     9.938
+    ],
+    "max": [
+     23.558,
+     0.308,
+     13.558
+    ]
+   },
+   "size": [
+    3.62,
+    0.008,
+    3.62
+   ]
+  },
+  {
+   "index": 648,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -13.032,
+     -0.738,
+     -0.549
+    ],
+    "max": [
+     -8.89,
+     -0.73,
+     1.334
+    ]
+   },
+   "size": [
+    4.142,
+    0.008,
+    1.883
+   ]
+  },
+  {
+   "index": 650,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -16.901,
+     -1.2,
+     0.072
+    ],
+    "max": [
+     -12.772,
+     -1.192,
+     2.597
+    ]
+   },
+   "size": [
+    4.13,
+    0.008,
+    2.525
+   ]
+  },
+  {
+   "index": 652,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -20.606,
+     -1.2,
+     1.388
+    ],
+    "max": [
+     -16.528,
+     -1.192,
+     4.179
+    ]
+   },
+   "size": [
+    4.079,
+    0.008,
+    2.791
+   ]
+  },
+  {
+   "index": 654,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -24.044,
+     -1.2,
+     4.44
+    ],
+    "max": [
+     -20.044,
+     -1.192,
+     5.56
+    ]
+   },
+   "size": [
+    4,
+    0.008,
+    1.12
+   ]
+  },
+  {
+   "index": 656,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     15.57,
+     -1.45,
+     -20.359
+    ],
+    "max": [
+     18.991,
+     -1.442,
+     -16.569
+    ]
+   },
+   "size": [
+    3.421,
+    0.008,
+    3.79
+   ]
+  },
+  {
+   "index": 658,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     20.608,
+     -3.083,
+     -14.113
+    ],
+    "max": [
+     23.565,
+     -3.075,
+     -10.084
+    ]
+   },
+   "size": [
+    2.957,
+    0.008,
+    4.029
+   ]
+  },
+  {
+   "index": 660,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     23.398,
+     -3.248,
+     -10.877
+    ],
+    "max": [
+     25.573,
+     -3.24,
+     -6.724
+    ]
+   },
+   "size": [
+    2.176,
+    0.008,
+    4.154
+   ]
+  },
+  {
+   "index": 662,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     26.44,
+     0.3,
+     -3.153
+    ],
+    "max": [
+     27.56,
+     0.308,
+     0.847
+    ]
+   },
+   "size": [
+    1.12,
+    0.008,
+    4
+   ]
+  },
+  {
+   "index": 664,
+   "name": "decal-rover-tracks",
+   "key": "decal-rover-tracks",
+   "meshes": 1,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     26.44,
+     0.3,
+     0.847
+    ],
+    "max": [
+     27.56,
+     0.308,
+     4.847
+    ]
+   },
+   "size": [
+    1.12,
+    0.008,
+    4
+   ]
+  },
+  {
+   "index": 666,
+   "name": "terrain-regolith",
+   "key": "terrain-regolith",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     -13.986,
+     3.408,
+     19.353
+    ],
+    "max": [
+     -2.113,
+     3.717,
+     31.744
+    ]
+   },
+   "size": [
+    11.873,
+    0.309,
+    12.391
+   ]
+  },
+  {
+   "index": 668,
+   "name": "terrain-regolith",
+   "key": "terrain-regolith",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     17.123,
+     -3.387,
+     -16.56
+    ],
+    "max": [
+     29.674,
+     -3.078,
+     -3.788
+    ]
+   },
+   "size": [
+    12.552,
+    0.309,
+    12.772
+   ]
+  },
+  {
+   "index": 670,
+   "name": "terrain-regolith",
+   "key": "terrain-regolith",
+   "meshes": 1,
+   "triangles": 572,
+   "aabb": {
+    "min": [
+     12.403,
+     5.838,
+     38.186
+    ],
+    "max": [
+     24.724,
+     6.147,
+     49.955
+    ]
+   },
+   "size": [
+    12.321,
+    0.309,
+    11.769
+   ]
+  },
+  {
+   "index": 672,
+   "name": "terrain-rock",
+   "key": "terrain-rock",
+   "meshes": 1,
+   "triangles": 609,
+   "aabb": {
+    "min": [
+     24.71,
+     3.199,
+     29.899
+    ],
+    "max": [
+     35.375,
+     3.319,
+     40.446
+    ]
+   },
+   "size": [
+    10.665,
+    0.12,
+    10.547
+   ]
+  },
+  {
+   "index": 674,
+   "name": "terrain-rock",
+   "key": "terrain-rock",
+   "meshes": 1,
+   "triangles": 609,
+   "aabb": {
+    "min": [
+     27.871,
+     2.967,
+     32.209
+    ],
+    "max": [
+     36.06,
+     3.087,
+     41.186
+    ]
+   },
+   "size": [
+    8.19,
+    0.12,
+    8.977
+   ]
+  },
+  {
+   "index": 676,
+   "name": "terrain-rock",
+   "key": "terrain-rock",
+   "meshes": 1,
+   "triangles": 609,
+   "aabb": {
+    "min": [
+     -19.019,
+     3.443,
+     17.15
+    ],
+    "max": [
+     -10.049,
+     3.563,
+     26.77
+    ]
+   },
+   "size": [
+    8.97,
+    0.12,
+    9.619
+   ]
+  },
+  {
+   "index": 678,
+   "name": "terrain-crater",
+   "key": "terrain-crater",
+   "meshes": 1,
+   "triangles": 400,
+   "aabb": {
+    "min": [
+     -8.437,
+     3.009,
+     40.986
+    ],
+    "max": [
+     0.284,
+     3.799,
+     49.218
+    ]
+   },
+   "size": [
+    8.721,
+    0.79,
+    8.232
+   ]
+  },
+  {
+   "index": 680,
+   "name": "terrain-crater",
+   "key": "terrain-crater",
+   "meshes": 1,
+   "triangles": 400,
+   "aabb": {
+    "min": [
+     -21.474,
+     6.343,
+     32.761
+    ],
+    "max": [
+     -12.584,
+     7.133,
+     41.198
+    ]
+   },
+   "size": [
+    8.89,
+    0.79,
+    8.437
+   ]
+  },
+  {
+   "index": 682,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -8.408,
+     3.378,
+     24.304
+    ],
+    "max": [
+     -5.924,
+     4.488,
+     26.678
+    ]
+   },
+   "size": [
+    2.484,
+    1.111,
+    2.374
+   ]
+  },
+  {
+   "index": 684,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -8.008,
+     3.492,
+     25.757
+    ],
+    "max": [
+     -6.376,
+     4.192,
+     27.359
+    ]
+   },
+   "size": [
+    1.631,
+    0.7,
+    1.602
+   ]
+  },
+  {
+   "index": 686,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -5.221,
+     2.571,
+     20.974
+    ],
+    "max": [
+     -2.791,
+     3.67,
+     23.285
+    ]
+   },
+   "size": [
+    2.43,
+    1.1,
+    2.311
+   ]
+  },
+  {
+   "index": 688,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -3.668,
+     2.353,
+     21.188
+    ],
+    "max": [
+     -1.687,
+     3.512,
+     23.378
+    ]
+   },
+   "size": [
+    1.981,
+    1.16,
+    2.19
+   ]
+  },
+  {
+   "index": 690,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -3.235,
+     3.114,
+     44.474
+    ],
+    "max": [
+     -0.957,
+     4.126,
+     46.657
+    ]
+   },
+   "size": [
+    2.278,
+    1.013,
+    2.183
+   ]
+  },
+  {
+   "index": 692,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -3.305,
+     3.03,
+     43.04
+    ],
+    "max": [
+     -1.476,
+     3.951,
+     44.717
+    ]
+   },
+   "size": [
+    1.829,
+    0.922,
+    1.678
+   ]
+  },
+  {
+   "index": 694,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -21.632,
+     3.696,
+     27.226
+    ],
+    "max": [
+     -19.38,
+     4.706,
+     29.548
+    ]
+   },
+   "size": [
+    2.252,
+    1.01,
+    2.321
+   ]
+  },
+  {
+   "index": 696,
+   "name": "prop-regolith-mound",
+   "key": "prop-regolith-mound",
+   "meshes": 1,
+   "triangles": 288,
+   "aabb": {
+    "min": [
+     -21.551,
+     2.562,
+     29.187
+    ],
+    "max": [
+     -19.986,
+     3.395,
+     30.601
+    ]
+   },
+   "size": [
+    1.564,
+    0.833,
+    1.413
+   ]
+  },
+  {
+   "index": 698,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     38.977,
+     -3.137,
+     -9.953
+    ],
+    "max": [
+     40.083,
+     -2.122,
+     -8.744
+    ]
+   },
+   "size": [
+    1.106,
+    1.015,
+    1.209
+   ]
+  },
+  {
+   "index": 700,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     39.685,
+     -3.166,
+     -9.939
+    ],
+    "max": [
+     40.969,
+     -2.324,
+     -8.629
+    ]
+   },
+   "size": [
+    1.285,
+    0.842,
+    1.31
+   ]
+  },
+  {
+   "index": 702,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     37.863,
+     -3.115,
+     -11.66
+    ],
+    "max": [
+     39.64,
+     -1.838,
+     -9.979
+    ]
+   },
+   "size": [
+    1.777,
+    1.277,
+    1.68
+   ]
+  },
+  {
+   "index": 704,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -10.102,
+     3.453,
+     23.488
+    ],
+    "max": [
+     -8.788,
+     4.29,
+     24.783
+    ]
+   },
+   "size": [
+    1.314,
+    0.837,
+    1.296
+   ]
+  },
+  {
+   "index": 706,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -8.955,
+     3.519,
+     25.22
+    ],
+    "max": [
+     -8.15,
+     4.213,
+     26.091
+    ]
+   },
+   "size": [
+    0.805,
+    0.695,
+    0.871
+   ]
+  },
+  {
+   "index": 708,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -9.265,
+     3.328,
+     22.755
+    ],
+    "max": [
+     -8.106,
+     4.062,
+     23.911
+    ]
+   },
+   "size": [
+    1.159,
+    0.735,
+    1.156
+   ]
+  },
+  {
+   "index": 710,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -20.769,
+     -3.269,
+     -21.152
+    ],
+    "max": [
+     -18.725,
+     -1.973,
+     -19.111
+    ]
+   },
+   "size": [
+    2.043,
+    1.296,
+    2.041
+   ]
+  },
+  {
+   "index": 712,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -20.194,
+     -3.352,
+     -22.228
+    ],
+    "max": [
+     -18.972,
+     -2.573,
+     -21.025
+    ]
+   },
+   "size": [
+    1.222,
+    0.78,
+    1.203
+   ]
+  },
+  {
+   "index": 714,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -19.406,
+     -3.392,
+     -21.875
+    ],
+    "max": [
+     -18.254,
+     -2.539,
+     -20.793
+    ]
+   },
+   "size": [
+    1.152,
+    0.853,
+    1.082
+   ]
+  },
+  {
+   "index": 716,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     11.815,
+     6.499,
+     44.48
+    ],
+    "max": [
+     13.772,
+     7.742,
+     46.415
+    ]
+   },
+   "size": [
+    1.957,
+    1.244,
+    1.935
+   ]
+  },
+  {
+   "index": 718,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     12.751,
+     6.485,
+     43.924
+    ],
+    "max": [
+     14.31,
+     7.691,
+     45.577
+    ]
+   },
+   "size": [
+    1.558,
+    1.206,
+    1.653
+   ]
+  },
+  {
+   "index": 720,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     12.33,
+     6.348,
+     45.78
+    ],
+    "max": [
+     13.218,
+     6.941,
+     46.636
+    ]
+   },
+   "size": [
+    0.888,
+    0.593,
+    0.857
+   ]
+  },
+  {
+   "index": 722,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -35.832,
+     0.439,
+     -5.626
+    ],
+    "max": [
+     -33.755,
+     1.77,
+     -3.587
+    ]
+   },
+   "size": [
+    2.077,
+    1.331,
+    2.039
+   ]
+  },
+  {
+   "index": 724,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -36.06,
+     0.018,
+     -6.841
+    ],
+    "max": [
+     -34.742,
+     0.864,
+     -5.509
+    ]
+   },
+   "size": [
+    1.318,
+    0.845,
+    1.332
+   ]
+  },
+  {
+   "index": 726,
+   "name": "prop-boulder",
+   "key": "prop-boulder",
+   "meshes": 1,
+   "triangles": 275,
+   "aabb": {
+    "min": [
+     -34.261,
+     -0.136,
+     -4.362
+    ],
+    "max": [
+     -32.849,
+     0.928,
+     -2.871
+    ]
+   },
+   "size": [
+    1.412,
+    1.064,
+    1.491
+   ]
+  },
+  {
+   "index": 728,
+   "name": "prop-meteorite",
+   "key": "prop-meteorite",
+   "meshes": 1,
+   "triangles": 630,
+   "aabb": {
+    "min": [
+     34.434,
+     -5.09,
+     -5.253
+    ],
+    "max": [
+     35.548,
+     -4.077,
+     -4.213
+    ]
+   },
+   "size": [
+    1.114,
+    1.013,
+    1.04
+   ]
+  },
+  {
+   "index": 730,
+   "name": "prop-meteorite",
+   "key": "prop-meteorite",
+   "meshes": 1,
+   "triangles": 630,
+   "aabb": {
+    "min": [
+     32.782,
+     -3.038,
+     -12.747
+    ],
+    "max": [
+     33.701,
+     -2.363,
+     -11.854
+    ]
+   },
+   "size": [
+    0.919,
+    0.675,
+    0.893
+   ]
+  },
+  {
+   "index": 732,
+   "name": "prop-meteorite",
+   "key": "prop-meteorite",
+   "meshes": 1,
+   "triangles": 630,
+   "aabb": {
+    "min": [
+     -4.089,
+     2.793,
+     24.107
+    ],
+    "max": [
+     -3.199,
+     3.489,
+     25.029
+    ]
+   },
+   "size": [
+    0.89,
+    0.696,
+    0.921
+   ]
+  },
+  {
+   "index": 734,
+   "name": "prop-ice-chunk",
+   "key": "prop-ice-chunk",
+   "meshes": 1,
+   "triangles": 253,
+   "aabb": {
+    "min": [
+     -28.09,
+     -1.062,
+     -9.998
+    ],
+    "max": [
+     -27.312,
+     -0.33,
+     -9.242
+    ]
+   },
+   "size": [
+    0.778,
+    0.732,
+    0.755
+   ]
+  },
+  {
+   "index": 736,
+   "name": "prop-ice-chunk",
+   "key": "prop-ice-chunk",
+   "meshes": 1,
+   "triangles": 253,
+   "aabb": {
+    "min": [
+     -27.764,
+     -1.188,
+     -9.555
+    ],
+    "max": [
+     -26.204,
+     0.006,
+     -7.98
+    ]
+   },
+   "size": [
+    1.56,
+    1.193,
+    1.575
+   ]
+  },
+  {
+   "index": 738,
+   "name": "prop-ice-chunk",
+   "key": "prop-ice-chunk",
+   "meshes": 1,
+   "triangles": 253,
+   "aabb": {
+    "min": [
+     -25.992,
+     -2.585,
+     -17.414
+    ],
+    "max": [
+     -24.641,
+     -1.355,
+     -16.099
+    ]
+   },
+   "size": [
+    1.351,
+    1.23,
+    1.315
+   ]
+  },
+  {
+   "index": 740,
+   "name": "prop-ice-chunk",
+   "key": "prop-ice-chunk",
+   "meshes": 1,
+   "triangles": 253,
+   "aabb": {
+    "min": [
+     -25.584,
+     -0.467,
+     -16.06
+    ],
+    "max": [
+     -23.915,
+     0.819,
+     -14.375
+    ]
+   },
+   "size": [
+    1.669,
+    1.286,
+    1.686
+   ]
+  },
+  {
+   "index": 742,
+   "name": "prop-ice-chunk",
+   "key": "prop-ice-chunk",
+   "meshes": 1,
+   "triangles": 253,
+   "aabb": {
+    "min": [
+     33.373,
+     -2.89,
+     -17.944
+    ],
+    "max": [
+     34.762,
+     -1.854,
+     -16.564
+    ]
+   },
+   "size": [
+    1.389,
+    1.036,
+    1.38
+   ]
+  },
+  {
+   "index": 744,
+   "name": "prop-ice-chunk",
+   "key": "prop-ice-chunk",
+   "meshes": 1,
+   "triangles": 253,
+   "aabb": {
+    "min": [
+     34.668,
+     -2.927,
+     -17.641
+    ],
+    "max": [
+     35.608,
+     -2.206,
+     -16.712
+    ]
+   },
+   "size": [
+    0.94,
+    0.721,
+    0.929
+   ]
+  },
+  {
+   "index": 746,
+   "name": "prop-crystal",
+   "key": "prop-crystal",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     34.946,
+     -2.967,
+     -17.372
+    ],
+    "max": [
+     36.607,
+     -1.873,
+     -15.713
+    ]
+   },
+   "size": [
+    1.662,
+    1.094,
+    1.659
+   ]
+  },
+  {
+   "index": 749,
+   "name": "prop-crystal",
+   "key": "prop-crystal",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     36.366,
+     -2.986,
+     -17.436
+    ],
+    "max": [
+     37.059,
+     -2.411,
+     -16.679
+    ]
+   },
+   "size": [
+    0.693,
+    0.576,
+    0.757
+   ]
+  },
+  {
+   "index": 752,
+   "name": "prop-crystal",
+   "key": "prop-crystal",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     -4.177,
+     2.901,
+     41.921
+    ],
+    "max": [
+     -3.241,
+     3.711,
+     42.954
+    ]
+   },
+   "size": [
+    0.936,
+    0.81,
+    1.033
+   ]
+  },
+  {
+   "index": 755,
+   "name": "prop-crystal",
+   "key": "prop-crystal",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     -3.048,
+     2.807,
+     40.8
+    ],
+    "max": [
+     -1.925,
+     3.557,
+     41.888
+    ]
+   },
+   "size": [
+    1.123,
+    0.75,
+    1.088
+   ]
+  },
+  {
+   "index": 758,
+   "name": "prop-crystal",
+   "key": "prop-crystal",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     21.916,
+     5.508,
+     42.269
+    ],
+    "max": [
+     23.362,
+     6.463,
+     43.72
+    ]
+   },
+   "size": [
+    1.447,
+    0.955,
+    1.451
+   ]
+  },
+  {
+   "index": 761,
+   "name": "prop-crystal",
+   "key": "prop-crystal",
+   "meshes": 2,
+   "triangles": 472,
+   "aabb": {
+    "min": [
+     21.535,
+     5.689,
+     43.775
+    ],
+    "max": [
+     22.478,
+     6.345,
+     44.667
+    ]
+   },
+   "size": [
+    0.943,
+    0.657,
+    0.892
+   ]
+  }
+ ],
+ "id": "space-base",
+ "label": "Space Base",
+ "sourceBytes": 14045620,
+ "spawn": {
+  "x": 2.39,
+  "y": 1,
+  "z": -9.96,
+  "on": "49 floor pieces at y=0.5"
+ }
+}

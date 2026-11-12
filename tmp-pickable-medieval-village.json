@@ -1,0 +1,102 @@
+[
+  {
+    "id": "medieval-vending",
+    "name": "Vending machine",
+    "centre": [
+      9,
+      1.56,
+      9.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 10.35,
+      "pz": 13.51,
+      "pitch": 0.05,
+      "hit": "medieval-vending",
+      "bodyToItem": 4.25,
+      "camToItem": 12.23,
+      "prompt": true
+    }
+  },
+  {
+    "id": "medieval-chair",
+    "name": "Office chair",
+    "centre": [
+      -11,
+      0.48,
+      -2
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -11.94,
+      "pz": 0.67,
+      "pitch": 0.72,
+      "hit": "medieval-chair",
+      "bodyToItem": 2.91,
+      "camToItem": 7.51,
+      "prompt": true
+    }
+  },
+  {
+    "id": "medieval-microwave",
+    "name": "Microwave",
+    "centre": [
+      -8.51,
+      0.23,
+      -9.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": -8.51,
+      "pz": -8,
+      "pitch": 0.79,
+      "hit": "medieval-microwave",
+      "bodyToItem": 1.77,
+      "camToItem": 10.01,
+      "prompt": true
+    }
+  },
+  {
+    "id": "medieval-cone",
+    "name": "Traffic cone",
+    "centre": [
+      11.5,
+      0.29,
+      -9.5
+    ],
+    "ok": true,
+    "from": {
+      "angle": 2.36,
+      "px": 11.21,
+      "pz": -11.22,
+      "pitch": 0.67,
+      "hit": "medieval-cone",
+      "bodyToItem": 1.94,
+      "camToItem": 10.15,
+      "prompt": true
+    }
+  },
+  {
+    "id": "medieval-espresso",
+    "name": "Espresso machine",
+    "centre": [
+      13.98,
+      0.43,
+      -2
+    ],
+    "ok": true,
+    "from": {
+      "angle": 0,
+      "px": 13.65,
+      "pz": -1.96,
+      "pitch": 1.01,
+      "hit": "medieval-espresso",
+      "bodyToItem": 0.8,
+      "camToItem": 9.14,
+      "prompt": true
+    }
+  }
+]

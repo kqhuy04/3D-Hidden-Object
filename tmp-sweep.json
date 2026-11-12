@@ -1,0 +1,602 @@
+[
+  {
+    "mapId": "modern-restaurant-cafe",
+    "loadS": 26.2,
+    "parts": 1106,
+    "collisionTris": 311652,
+    "meshes": 1688,
+    "sceneTris": 344077,
+    "body": [
+      5.28,
+      0,
+      10.81
+    ],
+    "groundUnder": 0,
+    "sink": 0,
+    "spawnHint": [
+      0.07,
+      0.5,
+      0
+    ],
+    "hintToBody": 12,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.43,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 6362,
+    "maxReach": 45,
+    "items": [
+      {
+        "id": "cafe-bale",
+        "name": "Straw bale",
+        "fromSpawn": 8.7,
+        "toWalkable": 0.5,
+        "y": 0.55,
+        "groundUnder": 0.05
+      },
+      {
+        "id": "cafe-anvil",
+        "name": "Anvil",
+        "fromSpawn": 14.3,
+        "toWalkable": 0,
+        "y": 1.35,
+        "groundUnder": 1.13
+      },
+      {
+        "id": "cafe-scarecrow",
+        "name": "Scarecrow",
+        "fromSpawn": 14.7,
+        "toWalkable": 0.7,
+        "y": 1,
+        "groundUnder": 0
+      },
+      {
+        "id": "cafe-rowboat",
+        "name": "Rowboat",
+        "fromSpawn": 15.7,
+        "toWalkable": 0,
+        "y": 0.41,
+        "groundUnder": 0.05
+      },
+      {
+        "id": "cafe-tractor",
+        "name": "Riding mower",
+        "fromSpawn": 19.5,
+        "toWalkable": 0.5,
+        "y": 0.7,
+        "groundUnder": 0
+      }
+    ]
+  },
+  {
+    "mapId": "neighborhood-pathways",
+    "loadS": 24,
+    "parts": 268,
+    "collisionTris": 147404,
+    "meshes": 507,
+    "sceneTris": 191918,
+    "body": [
+      -0.5,
+      0.21,
+      -0.28
+    ],
+    "groundUnder": 0.21,
+    "sink": 0,
+    "spawnHint": [
+      -2,
+      0.5,
+      -0.28
+    ],
+    "hintToBody": 1.5,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 6366,
+    "maxReach": 45,
+    "items": [
+      {
+        "id": "hood-cannon",
+        "name": "Deck cannon",
+        "fromSpawn": 17,
+        "toWalkable": 0,
+        "y": 0.75,
+        "groundUnder": 0.42
+      },
+      {
+        "id": "hood-coffin",
+        "name": "Coffin",
+        "fromSpawn": 23.3,
+        "toWalkable": 0.7,
+        "y": 0.73,
+        "groundUnder": 0.42
+      },
+      {
+        "id": "hood-well",
+        "name": "Stone well",
+        "fromSpawn": 16.5,
+        "toWalkable": 0,
+        "y": 1.4,
+        "groundUnder": 1.6
+      },
+      {
+        "id": "hood-outhouse",
+        "name": "Outhouse",
+        "fromSpawn": 25.1,
+        "toWalkable": 0.5,
+        "y": 1.55,
+        "groundUnder": 0
+      },
+      {
+        "id": "hood-anvil",
+        "name": "Anvil",
+        "fromSpawn": 25.8,
+        "toWalkable": 0,
+        "y": 0.67,
+        "groundUnder": 0.45
+      }
+    ]
+  },
+  {
+    "mapId": "pirate-cove",
+    "loadS": 16.3,
+    "parts": 174,
+    "collisionTris": 98371,
+    "meshes": 302,
+    "sceneTris": 114900,
+    "body": [
+      -0.55,
+      0,
+      -0.96
+    ],
+    "groundUnder": 0,
+    "sink": 0,
+    "spawnHint": [
+      -0.55,
+      0.5,
+      -0.96
+    ],
+    "hintToBody": 0,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 6360,
+    "maxReach": 45,
+    "items": [
+      {
+        "id": "cove-vending",
+        "name": "Vending machine",
+        "fromSpawn": 11.5,
+        "toWalkable": 0.5,
+        "y": 1.83,
+        "groundUnder": 0
+      },
+      {
+        "id": "cove-laptop",
+        "name": "Laptop",
+        "fromSpawn": 14.1,
+        "toWalkable": 0,
+        "y": 0.99,
+        "groundUnder": 0.88
+      },
+      {
+        "id": "cove-chair",
+        "name": "Office chair",
+        "fromSpawn": 12.2,
+        "toWalkable": 0.5,
+        "y": 0.44,
+        "groundUnder": 0
+      },
+      {
+        "id": "cove-cone",
+        "name": "Traffic cone",
+        "fromSpawn": 13.5,
+        "toWalkable": 0.5,
+        "y": 0.25,
+        "groundUnder": 0
+      },
+      {
+        "id": "cove-jukebox",
+        "name": "Jukebox",
+        "fromSpawn": 12.2,
+        "toWalkable": 0.5,
+        "y": 0.7,
+        "groundUnder": 0
+      }
+    ]
+  },
+  {
+    "mapId": "skatepark",
+    "loadS": 11.5,
+    "parts": 1257,
+    "collisionTris": 304796,
+    "meshes": 1556,
+    "sceneTris": 354907,
+    "body": [
+      -1,
+      0.05,
+      7
+    ],
+    "groundUnder": 0.05,
+    "sink": 0,
+    "spawnHint": [
+      -1,
+      0.5,
+      7
+    ],
+    "hintToBody": 0,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 6348,
+    "maxReach": 45,
+    "items": [
+      {
+        "id": "skate-sofa",
+        "name": "Sofa",
+        "fromSpawn": 8.7,
+        "toWalkable": 0.5,
+        "y": 0.53,
+        "groundUnder": 0.05
+      },
+      {
+        "id": "skate-fridge",
+        "name": "Fridge freezer",
+        "fromSpawn": 9.6,
+        "toWalkable": 0.5,
+        "y": 1,
+        "groundUnder": -0.6
+      },
+      {
+        "id": "skate-piano",
+        "name": "Upright piano",
+        "fromSpawn": 13.1,
+        "toWalkable": 0.5,
+        "y": 0.65,
+        "groundUnder": 0.05
+      },
+      {
+        "id": "skate-toilet",
+        "name": "Toilet",
+        "fromSpawn": 11,
+        "toWalkable": 0.5,
+        "y": 0.45,
+        "groundUnder": 0.05
+      },
+      {
+        "id": "skate-sink",
+        "name": "Kitchen sink",
+        "fromSpawn": 7.5,
+        "toWalkable": 0.5,
+        "y": 0.33,
+        "groundUnder": 0.05
+      }
+    ]
+  },
+  {
+    "mapId": "space-base",
+    "loadS": 87.3,
+    "parts": 155,
+    "collisionTris": 91688,
+    "meshes": 345,
+    "sceneTris": 126843,
+    "body": [
+      2.39,
+      0,
+      -9.96
+    ],
+    "groundUnder": 0,
+    "sink": 0,
+    "spawnHint": [
+      2.39,
+      1,
+      -9.96
+    ],
+    "hintToBody": 0,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 5827,
+    "maxReach": 45,
+    "items": [
+      {
+        "id": "space-hay",
+        "name": "Hay bale",
+        "fromSpawn": 12.2,
+        "toWalkable": 0.7,
+        "y": 0.93,
+        "groundUnder": 0.7
+      },
+      {
+        "id": "space-well",
+        "name": "Stone well",
+        "fromSpawn": 13.2,
+        "toWalkable": 0,
+        "y": 0.12,
+        "groundUnder": -1.5
+      },
+      {
+        "id": "space-outhouse",
+        "name": "Outhouse",
+        "fromSpawn": 20.8,
+        "toWalkable": 0.5,
+        "y": 0,
+        "groundUnder": -1.5
+      },
+      {
+        "id": "space-fire",
+        "name": "Campfire",
+        "fromSpawn": 23.5,
+        "toWalkable": 0.5,
+        "y": -0.18,
+        "groundUnder": -0.12
+      },
+      {
+        "id": "space-anchor",
+        "name": "Ship anchor",
+        "fromSpawn": 9.1,
+        "toWalkable": 0.5,
+        "y": 1.18,
+        "groundUnder": 0
+      }
+    ]
+  },
+  {
+    "mapId": "stadium",
+    "loadS": 17.1,
+    "parts": 423,
+    "collisionTris": 397516,
+    "meshes": 1409,
+    "sceneTris": 438488,
+    "body": [
+      12.18,
+      0.05,
+      -3.84
+    ],
+    "groundUnder": 0.05,
+    "sink": 0,
+    "spawnHint": [
+      12.18,
+      0.5,
+      -3.84
+    ],
+    "hintToBody": 0,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 2411,
+    "maxReach": 44.9,
+    "items": [
+      {
+        "id": "stadium-sofa",
+        "name": "Sofa",
+        "fromSpawn": 6.5,
+        "toWalkable": 0.5,
+        "y": 0.42,
+        "groundUnder": -0.06
+      },
+      {
+        "id": "stadium-fridge",
+        "name": "Fridge freezer",
+        "fromSpawn": 6.7,
+        "toWalkable": 0.5,
+        "y": 0.89,
+        "groundUnder": -0.06
+      },
+      {
+        "id": "stadium-bale",
+        "name": "Straw bale",
+        "fromSpawn": 9.9,
+        "toWalkable": 0.5,
+        "y": 0.55,
+        "groundUnder": 0.05
+      },
+      {
+        "id": "stadium-piano",
+        "name": "Upright piano",
+        "fromSpawn": 10.2,
+        "toWalkable": 0.5,
+        "y": 0.65,
+        "groundUnder": 0.05
+      },
+      {
+        "id": "stadium-rowboat",
+        "name": "Rowboat",
+        "fromSpawn": 16.2,
+        "toWalkable": 0.5,
+        "y": 0.41,
+        "groundUnder": 0.05
+      }
+    ]
+  },
+  {
+    "mapId": "symphony-stagecraft",
+    "loadS": 20,
+    "parts": 756,
+    "collisionTris": 1176504,
+    "meshes": 1542,
+    "sceneTris": 1192455,
+    "body": [
+      -7,
+      0.05,
+      8
+    ],
+    "groundUnder": 0.05,
+    "sink": 0,
+    "spawnHint": [
+      -7,
+      0.5,
+      -1
+    ],
+    "hintToBody": 9,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.21,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 6361,
+    "maxReach": 45,
+    "items": [
+      {
+        "id": "symphony-bale",
+        "name": "Hay bale",
+        "fromSpawn": 8,
+        "toWalkable": 0.5,
+        "y": 0.71,
+        "groundUnder": 0.45
+      },
+      {
+        "id": "symphony-sink",
+        "name": "Kitchen sink",
+        "fromSpawn": 14,
+        "toWalkable": 0.5,
+        "y": 1.13,
+        "groundUnder": 0.85
+      },
+      {
+        "id": "symphony-tractor",
+        "name": "Riding mower",
+        "fromSpawn": 14.7,
+        "toWalkable": 0.5,
+        "y": 1.38,
+        "groundUnder": 0
+      },
+      {
+        "id": "symphony-vending",
+        "name": "Vending machine",
+        "fromSpawn": 16.4,
+        "toWalkable": 0.5,
+        "y": 1.8,
+        "groundUnder": 0
+      },
+      {
+        "id": "symphony-chair",
+        "name": "Office chair",
+        "fromSpawn": 13.1,
+        "toWalkable": 0.5,
+        "y": 0.89,
+        "groundUnder": 0.45
+      }
+    ]
+  },
+  {
+    "mapId": "dia-de-muertos",
+    "loadS": 30.2,
+    "parts": 508,
+    "collisionTris": 388703,
+    "meshes": 3668,
+    "sceneTris": 496693,
+    "body": [
+      5.28,
+      3.24,
+      2.76
+    ],
+    "groundUnder": 3.19,
+    "sink": 0.05,
+    "spawnHint": [
+      2.51,
+      3.5,
+      3.91
+    ],
+    "hintToBody": 3,
+    "dirs": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "walkable": 4983,
+    "maxReach": 45,
+    "items": [
+      {
+        "id": "muertos-toilet",
+        "name": "Toilet",
+        "fromSpawn": 13.9,
+        "toWalkable": 0.5,
+        "y": -1.3,
+        "groundUnder": -1.7
+      },
+      {
+        "id": "muertos-sofa",
+        "name": "Sofa",
+        "fromSpawn": 16,
+        "toWalkable": 0.5,
+        "y": 3.67,
+        "groundUnder": 3.19
+      },
+      {
+        "id": "muertos-sink",
+        "name": "Kitchen sink",
+        "fromSpawn": 17,
+        "toWalkable": 0.5,
+        "y": -3.24,
+        "groundUnder": -3.52
+      },
+      {
+        "id": "muertos-chair",
+        "name": "Office chair",
+        "fromSpawn": 6.8,
+        "toWalkable": 4.7,
+        "y": 7.63,
+        "groundUnder": 7.19
+      },
+      {
+        "id": "muertos-postbox",
+        "name": "Post box",
+        "fromSpawn": 13.8,
+        "toWalkable": 0.7,
+        "y": 3.89,
+        "groundUnder": 3.19
+      }
+    ]
+  }
+]

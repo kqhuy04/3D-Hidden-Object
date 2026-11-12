@@ -1,0 +1,6522 @@
+{
+ "file": "/assets/maps/construction-site.glb",
+ "bytes": 2314228,
+ "generatedAt": "2026-11-09T17:05:51.152Z",
+ "structure": {
+  "nodes": 2001,
+  "meshes": 760,
+  "materials": 267,
+  "images": 0,
+  "partContainer": "construction-site-9e40b0",
+  "extensions": []
+ },
+ "totals": {
+  "objects": 252,
+  "keys": 63,
+  "triangles": 310806,
+  "meshes": 771,
+  "withoutBounds": 0
+ },
+ "keys": [
+  {
+   "key": "broken-road-tile",
+   "instances": 45,
+   "triangles": 17927,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "mesh-fence-run",
+   "instances": 36,
+   "triangles": 47506,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "concrete-slab-tile",
+   "instances": 22,
+   "triangles": 7536,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "hoarding-run",
+   "instances": 20,
+   "triangles": 18938,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "crash-barrier-run",
+   "instances": 8,
+   "triangles": 6020,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "steel-frame-bay",
+   "instances": 8,
+   "triangles": 15168,
+   "maxExtent": 4.1,
+   "hasBounds": true
+  },
+  {
+   "key": "hardcore-tile",
+   "instances": 7,
+   "triangles": 2469,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "metal-deck-plate",
+   "instances": 6,
+   "triangles": 3315,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "rc-core-section",
+   "instances": 6,
+   "triangles": 9486,
+   "maxExtent": 18.638,
+   "hasBounds": true
+  },
+  {
+   "key": "scaffold-bay",
+   "instances": 5,
+   "triangles": 10202,
+   "maxExtent": 13.1,
+   "hasBounds": true
+  },
+  {
+   "key": "trench-plate",
+   "instances": 5,
+   "triangles": 2400,
+   "maxExtent": 2.5,
+   "hasBounds": true
+  },
+  {
+   "key": "material-pallet",
+   "instances": 4,
+   "triangles": 2638,
+   "maxExtent": 1.2,
+   "hasBounds": true
+  },
+  {
+   "key": "scaffold-material-stack",
+   "instances": 4,
+   "triangles": 2580,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "site-cabin",
+   "instances": 4,
+   "triangles": 4582,
+   "maxExtent": 7.97,
+   "hasBounds": true
+  },
+  {
+   "key": "traffic-cone",
+   "instances": 4,
+   "triangles": 2694,
+   "maxExtent": 5.937,
+   "hasBounds": true
+  },
+  {
+   "key": "formwork-wall-run",
+   "instances": 3,
+   "triangles": 6350,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "portable-toilet",
+   "instances": 3,
+   "triangles": 2556,
+   "maxExtent": 2.48,
+   "hasBounds": true
+  },
+  {
+   "key": "precast-concrete-stack",
+   "instances": 3,
+   "triangles": 1622,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "spoil-heap",
+   "instances": 3,
+   "triangles": 1638,
+   "maxExtent": 4.261,
+   "hasBounds": true
+  },
+  {
+   "key": "trench-bay",
+   "instances": 3,
+   "triangles": 4347,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "crane-banksman",
+   "instances": 2,
+   "triangles": 7690,
+   "maxExtent": 1.817,
+   "hasBounds": true
+  },
+  {
+   "key": "dumpy-bag",
+   "instances": 2,
+   "triangles": 1356,
+   "maxExtent": 1.697,
+   "hasBounds": true
+  },
+  {
+   "key": "groundworker",
+   "instances": 2,
+   "triangles": 9922,
+   "maxExtent": 2.31,
+   "hasBounds": true
+  },
+  {
+   "key": "loading-gantry",
+   "instances": 2,
+   "triangles": 3184,
+   "maxExtent": 4.2,
+   "hasBounds": true
+  },
+  {
+   "key": "mud-rut-tile",
+   "instances": 2,
+   "triangles": 1028,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "rebar-assembly",
+   "instances": 2,
+   "triangles": 1322,
+   "maxExtent": 3.96,
+   "hasBounds": true
+  },
+  {
+   "key": "site-manager",
+   "instances": 2,
+   "triangles": 9166,
+   "maxExtent": 1.871,
+   "hasBounds": true
+  },
+  {
+   "key": "steel-erector",
+   "instances": 2,
+   "triangles": 8030,
+   "maxExtent": 1.832,
+   "hasBounds": true
+  },
+  {
+   "key": "temporary-traffic-light",
+   "instances": 2,
+   "triangles": 1762,
+   "maxExtent": 2.4,
+   "hasBounds": true
+  },
+  {
+   "key": "walkway-tunnel",
+   "instances": 2,
+   "triangles": 2696,
+   "maxExtent": 4,
+   "hasBounds": true
+  },
+  {
+   "key": "air-compressor",
+   "instances": 1,
+   "triangles": 1371,
+   "maxExtent": 2.6,
+   "hasBounds": true
+  },
+  {
+   "key": "arrow-board",
+   "instances": 1,
+   "triangles": 964,
+   "maxExtent": 3.002,
+   "hasBounds": true
+  },
+  {
+   "key": "articulated-dump-truck",
+   "instances": 1,
+   "triangles": 3078,
+   "maxExtent": 9.888,
+   "hasBounds": true
+  },
+  {
+   "key": "backhoe-loader",
+   "instances": 1,
+   "triangles": 2996,
+   "maxExtent": 6.716,
+   "hasBounds": true
+  },
+  {
+   "key": "builders-skip",
+   "instances": 1,
+   "triangles": 506,
+   "maxExtent": 3.982,
+   "hasBounds": true
+  },
+  {
+   "key": "cement-mixer",
+   "instances": 1,
+   "triangles": 976,
+   "maxExtent": 1.27,
+   "hasBounds": true
+  },
+  {
+   "key": "cherry-picker",
+   "instances": 1,
+   "triangles": 2424,
+   "maxExtent": 5.532,
+   "hasBounds": true
+  },
+  {
+   "key": "compactor-plate",
+   "instances": 1,
+   "triangles": 845,
+   "maxExtent": 1.058,
+   "hasBounds": true
+  },
+  {
+   "key": "concrete-mixer-truck",
+   "instances": 1,
+   "triangles": 3090,
+   "maxExtent": 8.636,
+   "hasBounds": true
+  },
+  {
+   "key": "concrete-pump",
+   "instances": 1,
+   "triangles": 3186,
+   "maxExtent": 13.668,
+   "hasBounds": true
+  },
+  {
+   "key": "construction-site-terrain",
+   "instances": 1,
+   "triangles": 25328,
+   "maxExtent": 101,
+   "hasBounds": true
+  },
+  {
+   "key": "crawler-bulldozer",
+   "instances": 1,
+   "triangles": 3612,
+   "maxExtent": 6.899,
+   "hasBounds": true
+  },
+  {
+   "key": "flatbed-lorry",
+   "instances": 1,
+   "triangles": 3552,
+   "maxExtent": 7.5,
+   "hasBounds": true
+  },
+  {
+   "key": "lighting-tower",
+   "instances": 1,
+   "triangles": 942,
+   "maxExtent": 8.997,
+   "hasBounds": true
+  },
+  {
+   "key": "mini-excavator",
+   "instances": 1,
+   "triangles": 2586,
+   "maxExtent": 2.444,
+   "hasBounds": true
+  },
+  {
+   "key": "mobile-crane",
+   "instances": 1,
+   "triangles": 3091,
+   "maxExtent": 13.289,
+   "hasBounds": true
+  },
+  {
+   "key": "road-roller",
+   "instances": 1,
+   "triangles": 2528,
+   "maxExtent": 4.064,
+   "hasBounds": true
+  },
+  {
+   "key": "safety-sign-board",
+   "instances": 1,
+   "triangles": 498,
+   "maxExtent": 2.2,
+   "hasBounds": true
+  },
+  {
+   "key": "scissor-lift",
+   "instances": 1,
+   "triangles": 2461,
+   "maxExtent": 5.205,
+   "hasBounds": true
+  },
+  {
+   "key": "site-dumper",
+   "instances": 1,
+   "triangles": 2781,
+   "maxExtent": 3.742,
+   "hasBounds": true
+  },
+  {
+   "key": "site-generator",
+   "instances": 1,
+   "triangles": 824,
+   "maxExtent": 3.181,
+   "hasBounds": true
+  },
+  {
+   "key": "skid-steer-loader",
+   "instances": 1,
+   "triangles": 2626,
+   "maxExtent": 2.861,
+   "hasBounds": true
+  },
+  {
+   "key": "smoking-shelter",
+   "instances": 1,
+   "triangles": 1684,
+   "maxExtent": 2.3,
+   "hasBounds": true
+  },
+  {
+   "key": "surveyor",
+   "instances": 1,
+   "triangles": 4341,
+   "maxExtent": 1.822,
+   "hasBounds": true
+  },
+  {
+   "key": "telehandler",
+   "instances": 1,
+   "triangles": 2691,
+   "maxExtent": 7.048,
+   "hasBounds": true
+  },
+  {
+   "key": "tool-chest",
+   "instances": 1,
+   "triangles": 893,
+   "maxExtent": 2.012,
+   "hasBounds": true
+  },
+  {
+   "key": "tower-crane",
+   "instances": 1,
+   "triangles": 2521,
+   "maxExtent": 36.976,
+   "hasBounds": true
+  },
+  {
+   "key": "tower-crane-mast",
+   "instances": 1,
+   "triangles": 1298,
+   "maxExtent": 18,
+   "hasBounds": true
+  },
+  {
+   "key": "tracked-excavator",
+   "instances": 1,
+   "triangles": 2800,
+   "maxExtent": 8.669,
+   "hasBounds": true
+  },
+  {
+   "key": "trencher",
+   "instances": 1,
+   "triangles": 3278,
+   "maxExtent": 4.812,
+   "hasBounds": true
+  },
+  {
+   "key": "water-bowser",
+   "instances": 1,
+   "triangles": 951,
+   "maxExtent": 3,
+   "hasBounds": true
+  },
+  {
+   "key": "wheel-wash",
+   "instances": 1,
+   "triangles": 938,
+   "maxExtent": 11.5,
+   "hasBounds": true
+  },
+  {
+   "key": "wheeled-loader",
+   "instances": 1,
+   "triangles": 3016,
+   "maxExtent": 7.044,
+   "hasBounds": true
+  }
+ ],
+ "objects": [
+  {
+   "index": 1,
+   "name": "concrete-pump",
+   "key": "concrete-pump",
+   "meshes": 21,
+   "triangles": 3186,
+   "aabb": {
+    "min": [
+     -13.53,
+     0.05,
+     12.871
+    ],
+    "max": [
+     -4.05,
+     7.501,
+     26.539
+    ]
+   },
+   "size": [
+    9.48,
+    7.451,
+    13.668
+   ]
+  },
+  {
+   "index": 46,
+   "name": "concrete-mixer-truck",
+   "key": "concrete-mixer-truck",
+   "meshes": 14,
+   "triangles": 3090,
+   "aabb": {
+    "min": [
+     -4.396,
+     0.05,
+     21.984
+    ],
+    "max": [
+     4.24,
+     4.346,
+     24.716
+    ]
+   },
+   "size": [
+    8.636,
+    4.296,
+    2.732
+   ]
+  },
+  {
+   "index": 76,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     -26,
+     0,
+     18
+    ],
+    "max": [
+     -22,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 78,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     18
+    ],
+    "max": [
+     -18,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 80,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     18
+    ],
+    "max": [
+     -14,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 82,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     18
+    ],
+    "max": [
+     -10,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 84,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     18
+    ],
+    "max": [
+     -6,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 86,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     18
+    ],
+    "max": [
+     -2,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 88,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     18
+    ],
+    "max": [
+     2,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 90,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     18
+    ],
+    "max": [
+     6,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 92,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     18
+    ],
+    "max": [
+     10,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 94,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     18
+    ],
+    "max": [
+     14,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 96,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     18
+    ],
+    "max": [
+     18,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 98,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     18,
+     0,
+     18
+    ],
+    "max": [
+     22,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 100,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -26,
+     0,
+     22
+    ],
+    "max": [
+     -22,
+     0.05,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 102,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 456,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     26
+    ],
+    "max": [
+     -18,
+     0.092,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.092,
+    4
+   ]
+  },
+  {
+   "index": 104,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     -22,
+     0,
+     22
+    ],
+    "max": [
+     -18,
+     0.05,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 106,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     26
+    ],
+    "max": [
+     -14,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 108,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 739,
+   "aabb": {
+    "min": [
+     -18,
+     0,
+     22
+    ],
+    "max": [
+     -14,
+     0.084,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.084,
+    4
+   ]
+  },
+  {
+   "index": 110,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     26
+    ],
+    "max": [
+     -10,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 112,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 791,
+   "aabb": {
+    "min": [
+     -14,
+     0,
+     22
+    ],
+    "max": [
+     -10,
+     0.084,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.084,
+    4
+   ]
+  },
+  {
+   "index": 114,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     26
+    ],
+    "max": [
+     -6,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 116,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 828,
+   "aabb": {
+    "min": [
+     -10,
+     0,
+     22
+    ],
+    "max": [
+     -6,
+     0.087,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.087,
+    4
+   ]
+  },
+  {
+   "index": 118,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     26
+    ],
+    "max": [
+     -2,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 120,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 839,
+   "aabb": {
+    "min": [
+     -6,
+     0,
+     22
+    ],
+    "max": [
+     -2,
+     0.087,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.087,
+    4
+   ]
+  },
+  {
+   "index": 122,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     26
+    ],
+    "max": [
+     2,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 124,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 872,
+   "aabb": {
+    "min": [
+     -2,
+     0,
+     22
+    ],
+    "max": [
+     2,
+     0.084,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.084,
+    4
+   ]
+  },
+  {
+   "index": 126,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     26
+    ],
+    "max": [
+     6,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 128,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 749,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     22
+    ],
+    "max": [
+     6,
+     0.084,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.084,
+    4
+   ]
+  },
+  {
+   "index": 130,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     26
+    ],
+    "max": [
+     10,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 132,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 792,
+   "aabb": {
+    "min": [
+     6,
+     0,
+     22
+    ],
+    "max": [
+     10,
+     0.086,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.086,
+    4
+   ]
+  },
+  {
+   "index": 134,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     26
+    ],
+    "max": [
+     14,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 136,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 862,
+   "aabb": {
+    "min": [
+     10,
+     0,
+     22
+    ],
+    "max": [
+     14,
+     0.084,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.084,
+    4
+   ]
+  },
+  {
+   "index": 138,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     26
+    ],
+    "max": [
+     18,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 140,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 897,
+   "aabb": {
+    "min": [
+     14,
+     0,
+     22
+    ],
+    "max": [
+     18,
+     0.087,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.087,
+    4
+   ]
+  },
+  {
+   "index": 142,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     18,
+     0,
+     26
+    ],
+    "max": [
+     22,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 144,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     18,
+     0,
+     22
+    ],
+    "max": [
+     22,
+     0.05,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 146,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     26
+    ],
+    "max": [
+     26,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 148,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     22
+    ],
+    "max": [
+     26,
+     0.05,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 150,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     26
+    ],
+    "max": [
+     30,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 152,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     22
+    ],
+    "max": [
+     30,
+     0.05,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 154,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     26
+    ],
+    "max": [
+     34,
+     0.05,
+     30
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 156,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     22
+    ],
+    "max": [
+     34,
+     0.05,
+     26
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 158,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 2,
+   "triangles": 771,
+   "aabb": {
+    "min": [
+     -13.924,
+     0.05,
+     26.5
+    ],
+    "max": [
+     -10,
+     1.285,
+     27.4
+    ]
+   },
+   "size": [
+    3.924,
+    1.235,
+    0.9
+   ]
+  },
+  {
+   "index": 164,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 2,
+   "triangles": 773,
+   "aabb": {
+    "min": [
+     -10,
+     0.05,
+     26.65
+    ],
+    "max": [
+     -6,
+     1.12,
+     27.58
+    ]
+   },
+   "size": [
+    4,
+    1.07,
+    0.93
+   ]
+  },
+  {
+   "index": 170,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 1,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     -6,
+     0.05,
+     26.65
+    ],
+    "max": [
+     -2,
+     1.12,
+     27.25
+    ]
+   },
+   "size": [
+    4,
+    1.07,
+    0.6
+   ]
+  },
+  {
+   "index": 175,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 1,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     -2,
+     0.05,
+     26.65
+    ],
+    "max": [
+     2,
+     1.12,
+     27.25
+    ]
+   },
+   "size": [
+    4,
+    1.07,
+    0.6
+   ]
+  },
+  {
+   "index": 180,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 3,
+   "triangles": 817,
+   "aabb": {
+    "min": [
+     2,
+     0.05,
+     26.65
+    ],
+    "max": [
+     6,
+     1.285,
+     27.58
+    ]
+   },
+   "size": [
+    4,
+    1.235,
+    0.93
+   ]
+  },
+  {
+   "index": 187,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 1,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     6,
+     0.05,
+     26.65
+    ],
+    "max": [
+     10,
+     1.12,
+     27.25
+    ]
+   },
+   "size": [
+    4,
+    1.07,
+    0.6
+   ]
+  },
+  {
+   "index": 192,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 1,
+   "triangles": 705,
+   "aabb": {
+    "min": [
+     10,
+     0.05,
+     26.65
+    ],
+    "max": [
+     14,
+     1.12,
+     27.25
+    ]
+   },
+   "size": [
+    4,
+    1.07,
+    0.6
+   ]
+  },
+  {
+   "index": 197,
+   "name": "crash-barrier-run",
+   "key": "crash-barrier-run",
+   "meshes": 3,
+   "triangles": 839,
+   "aabb": {
+    "min": [
+     14,
+     0.05,
+     26.5
+    ],
+    "max": [
+     17.924,
+     1.285,
+     27.649
+    ]
+   },
+   "size": [
+    3.924,
+    1.235,
+    1.149
+   ]
+  },
+  {
+   "index": 204,
+   "name": "traffic-cone",
+   "key": "traffic-cone",
+   "meshes": 1,
+   "triangles": 742,
+   "aabb": {
+    "min": [
+     -19.839,
+     0.05,
+     22.287
+    ],
+    "max": [
+     -13.946,
+     0.8,
+     26.386
+    ]
+   },
+   "size": [
+    5.893,
+    0.75,
+    4.099
+   ]
+  },
+  {
+   "index": 206,
+   "name": "traffic-cone",
+   "key": "traffic-cone",
+   "meshes": 1,
+   "triangles": 732,
+   "aabb": {
+    "min": [
+     18.094,
+     0.05,
+     21.393
+    ],
+    "max": [
+     21.945,
+     0.8,
+     27.2
+    ]
+   },
+   "size": [
+    3.851,
+    0.75,
+    5.808
+   ]
+  },
+  {
+   "index": 208,
+   "name": "arrow-board",
+   "key": "arrow-board",
+   "meshes": 4,
+   "triangles": 964,
+   "aabb": {
+    "min": [
+     -21.8,
+     0.05,
+     22.65
+    ],
+    "max": [
+     -19.797,
+     3.052,
+     24.65
+    ]
+   },
+   "size": [
+    2.003,
+    3.002,
+    2
+   ]
+  },
+  {
+   "index": 216,
+   "name": "temporary-traffic-light",
+   "key": "temporary-traffic-light",
+   "meshes": 6,
+   "triangles": 944,
+   "aabb": {
+    "min": [
+     -16.508,
+     0.05,
+     21.98
+    ],
+    "max": [
+     -15.499,
+     2.45,
+     23.22
+    ]
+   },
+   "size": [
+    1.01,
+    2.4,
+    1.24
+   ]
+  },
+  {
+   "index": 227,
+   "name": "temporary-traffic-light",
+   "key": "temporary-traffic-light",
+   "meshes": 4,
+   "triangles": 818,
+   "aabb": {
+    "min": [
+     18.899,
+     0.05,
+     21.98
+    ],
+    "max": [
+     19.908,
+     2.45,
+     23.22
+    ]
+   },
+   "size": [
+    1.01,
+    2.4,
+    1.24
+   ]
+  },
+  {
+   "index": 236,
+   "name": "flatbed-lorry",
+   "key": "flatbed-lorry",
+   "meshes": 9,
+   "triangles": 3552,
+   "aabb": {
+    "min": [
+     6.25,
+     0.05,
+     22.103
+    ],
+    "max": [
+     13.75,
+     3.12,
+     25.097
+    ]
+   },
+   "size": [
+    7.5,
+    3.07,
+    2.995
+   ]
+  },
+  {
+   "index": 256,
+   "name": "builders-skip",
+   "key": "builders-skip",
+   "meshes": 3,
+   "triangles": 506,
+   "aabb": {
+    "min": [
+     13.92,
+     0.05,
+     22.3
+    ],
+    "max": [
+     17.902,
+     1.661,
+     24.6
+    ]
+   },
+   "size": [
+    3.982,
+    1.611,
+    2.3
+   ]
+  },
+  {
+   "index": 262,
+   "name": "air-compressor",
+   "key": "air-compressor",
+   "meshes": 8,
+   "triangles": 1371,
+   "aabb": {
+    "min": [
+     14.504,
+     0.05,
+     24.754
+    ],
+    "max": [
+     17.104,
+     1.507,
+     26.25
+    ]
+   },
+   "size": [
+    2.6,
+    1.457,
+    1.496
+   ]
+  },
+  {
+   "index": 277,
+   "name": "walkway-tunnel",
+   "key": "walkway-tunnel",
+   "meshes": 2,
+   "triangles": 1363,
+   "aabb": {
+    "min": [
+     -1.995,
+     0.05,
+     18.03
+    ],
+    "max": [
+     2,
+     3.7,
+     22.03
+    ]
+   },
+   "size": [
+    3.995,
+    3.65,
+    4
+   ]
+  },
+  {
+   "index": 281,
+   "name": "walkway-tunnel",
+   "key": "walkway-tunnel",
+   "meshes": 3,
+   "triangles": 1333,
+   "aabb": {
+    "min": [
+     2,
+     0.05,
+     18.03
+    ],
+    "max": [
+     6,
+     3.7,
+     22.03
+    ]
+   },
+   "size": [
+    4,
+    3.65,
+    4
+   ]
+  },
+  {
+   "index": 286,
+   "name": "loading-gantry",
+   "key": "loading-gantry",
+   "meshes": 4,
+   "triangles": 1596,
+   "aabb": {
+    "min": [
+     6,
+     0.05,
+     18.03
+    ],
+    "max": [
+     10,
+     4.25,
+     22.03
+    ]
+   },
+   "size": [
+    4,
+    4.2,
+    4
+   ]
+  },
+  {
+   "index": 294,
+   "name": "loading-gantry",
+   "key": "loading-gantry",
+   "meshes": 4,
+   "triangles": 1588,
+   "aabb": {
+    "min": [
+     10,
+     0.05,
+     18.03
+    ],
+    "max": [
+     14,
+     4.25,
+     22.03
+    ]
+   },
+   "size": [
+    4,
+    4.2,
+    4
+   ]
+  },
+  {
+   "index": 302,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 916,
+   "aabb": {
+    "min": [
+     -22,
+     0.01,
+     17.1
+    ],
+    "max": [
+     -18,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 304,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 950,
+   "aabb": {
+    "min": [
+     -18,
+     0.01,
+     17.1
+    ],
+    "max": [
+     -14,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 306,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 902,
+   "aabb": {
+    "min": [
+     -14,
+     0.01,
+     17.1
+    ],
+    "max": [
+     -10,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 308,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 1052,
+   "aabb": {
+    "min": [
+     -10,
+     0.01,
+     17.1
+    ],
+    "max": [
+     -6,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 310,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 882,
+   "aabb": {
+    "min": [
+     -6,
+     0.01,
+     17.1
+    ],
+    "max": [
+     -2,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 312,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 950,
+   "aabb": {
+    "min": [
+     -2,
+     0.01,
+     17.1
+    ],
+    "max": [
+     2,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 314,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 1004,
+   "aabb": {
+    "min": [
+     2,
+     0.01,
+     17.1
+    ],
+    "max": [
+     6,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 316,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 1052,
+   "aabb": {
+    "min": [
+     6,
+     0.01,
+     17.1
+    ],
+    "max": [
+     10,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 318,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 984,
+   "aabb": {
+    "min": [
+     10,
+     0.01,
+     17.1
+    ],
+    "max": [
+     14,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 320,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 1018,
+   "aabb": {
+    "min": [
+     14,
+     0.01,
+     17.1
+    ],
+    "max": [
+     18,
+     2.41,
+     18.038
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    0.938
+   ]
+  },
+  {
+   "index": 322,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 2,
+   "triangles": 1416,
+   "aabb": {
+    "min": [
+     18,
+     0.01,
+     17.02
+    ],
+    "max": [
+     22,
+     2.41,
+     18.1
+    ]
+   },
+   "size": [
+    4,
+    2.4,
+    1.08
+   ]
+  },
+  {
+   "index": 326,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 950,
+   "aabb": {
+    "min": [
+     21.1,
+     0.02,
+     14
+    ],
+    "max": [
+     22.038,
+     2.42,
+     18
+    ]
+   },
+   "size": [
+    0.938,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 328,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 1018,
+   "aabb": {
+    "min": [
+     21.1,
+     0.01,
+     10
+    ],
+    "max": [
+     22.038,
+     2.41,
+     14
+    ]
+   },
+   "size": [
+    0.938,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 330,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 3,
+   "triangles": 496,
+   "aabb": {
+    "min": [
+     20.128,
+     0.01,
+     6
+    ],
+    "max": [
+     22.03,
+     2.41,
+     10
+    ]
+   },
+   "size": [
+    1.902,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 336,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 3,
+   "triangles": 496,
+   "aabb": {
+    "min": [
+     20.128,
+     0.01,
+     2
+    ],
+    "max": [
+     22.03,
+     2.41,
+     6
+    ]
+   },
+   "size": [
+    1.902,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 342,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 882,
+   "aabb": {
+    "min": [
+     21.1,
+     0.01,
+     -2
+    ],
+    "max": [
+     22.038,
+     2.41,
+     2
+    ]
+   },
+   "size": [
+    0.938,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 344,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 1052,
+   "aabb": {
+    "min": [
+     21.1,
+     0.01,
+     -6
+    ],
+    "max": [
+     22.038,
+     2.41,
+     -2
+    ]
+   },
+   "size": [
+    0.938,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 346,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 916,
+   "aabb": {
+    "min": [
+     21.1,
+     0.01,
+     -10
+    ],
+    "max": [
+     22.038,
+     2.41,
+     -6
+    ]
+   },
+   "size": [
+    0.938,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 348,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 1018,
+   "aabb": {
+    "min": [
+     21.1,
+     0.01,
+     -14
+    ],
+    "max": [
+     22.038,
+     2.41,
+     -10
+    ]
+   },
+   "size": [
+    0.938,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 350,
+   "name": "hoarding-run",
+   "key": "hoarding-run",
+   "meshes": 1,
+   "triangles": 984,
+   "aabb": {
+    "min": [
+     21.1,
+     0.01,
+     -18
+    ],
+    "max": [
+     22.038,
+     2.41,
+     -14
+    ]
+   },
+   "size": [
+    0.938,
+    2.4,
+    4
+   ]
+  },
+  {
+   "index": 352,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     18,
+     -0.022,
+     -18.36
+    ],
+    "max": [
+     22,
+     1.997,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2.019,
+    0.72
+   ]
+  },
+  {
+   "index": 360,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1424,
+   "aabb": {
+    "min": [
+     14,
+     -0.023,
+     -18.36
+    ],
+    "max": [
+     18,
+     1.977,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 369,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     10,
+     -0.024,
+     -18.36
+    ],
+    "max": [
+     14,
+     1.995,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2.019,
+    0.72
+   ]
+  },
+  {
+   "index": 377,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     6,
+     -0.027,
+     -18.36
+    ],
+    "max": [
+     10,
+     1.973,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 382,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     2,
+     -0.031,
+     -18.36
+    ],
+    "max": [
+     6,
+     1.988,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2.019,
+    0.72
+   ]
+  },
+  {
+   "index": 390,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1424,
+   "aabb": {
+    "min": [
+     -2,
+     -0.035,
+     -18.36
+    ],
+    "max": [
+     2,
+     1.965,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 399,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     -6,
+     -0.039,
+     -18.36
+    ],
+    "max": [
+     -2,
+     1.98,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2.019,
+    0.72
+   ]
+  },
+  {
+   "index": 407,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     -10,
+     -0.042,
+     -18.36
+    ],
+    "max": [
+     -6,
+     1.958,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 412,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     -14,
+     -0.043,
+     -18.36
+    ],
+    "max": [
+     -10,
+     1.976,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2.019,
+    0.72
+   ]
+  },
+  {
+   "index": 420,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1424,
+   "aabb": {
+    "min": [
+     -18,
+     -0.043,
+     -18.36
+    ],
+    "max": [
+     -14,
+     1.957,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 429,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1280,
+   "aabb": {
+    "min": [
+     -22,
+     -0.042,
+     -18.36
+    ],
+    "max": [
+     -18,
+     1.977,
+     -17.64
+    ]
+   },
+   "size": [
+    4,
+    2.019,
+    0.72
+   ]
+  },
+  {
+   "index": 437,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 5,
+   "triangles": 1590,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.041,
+     -18
+    ],
+    "max": [
+     -21.64,
+     1.978,
+     -14
+    ]
+   },
+   "size": [
+    0.72,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 449,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.039,
+     -14
+    ],
+    "max": [
+     -21.64,
+     1.98,
+     -10
+    ]
+   },
+   "size": [
+    0.72,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 457,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.037,
+     -10
+    ],
+    "max": [
+     -21.64,
+     1.982,
+     -6
+    ]
+   },
+   "size": [
+    0.72,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 465,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 5,
+   "triangles": 1590,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.024,
+     -6
+    ],
+    "max": [
+     -21.64,
+     1.995,
+     -2
+    ]
+   },
+   "size": [
+    0.72,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 477,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1382,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.024,
+     -2
+    ],
+    "max": [
+     -21.64,
+     1.995,
+     2
+    ]
+   },
+   "size": [
+    0.72,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 485,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 4,
+   "triangles": 1486,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.023,
+     2
+    ],
+    "max": [
+     -21.3,
+     1.996,
+     6
+    ]
+   },
+   "size": [
+    1.06,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 494,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 6,
+   "triangles": 1526,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.023,
+     6
+    ],
+    "max": [
+     -21.64,
+     1.996,
+     10
+    ]
+   },
+   "size": [
+    0.72,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 507,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 4,
+   "triangles": 1450,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.021,
+     10
+    ],
+    "max": [
+     -21.3,
+     1.998,
+     14
+    ]
+   },
+   "size": [
+    1.06,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 516,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 4,
+   "triangles": 1384,
+   "aabb": {
+    "min": [
+     -22.36,
+     -0.02,
+     14
+    ],
+    "max": [
+     -21.3,
+     1.999,
+     18
+    ]
+   },
+   "size": [
+    1.06,
+    2.019,
+    4
+   ]
+  },
+  {
+   "index": 525,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 1,
+   "triangles": 1974,
+   "aabb": {
+    "min": [
+     -9,
+     -6,
+     -5
+    ],
+    "max": [
+     -5,
+     -1.9,
+     -1
+    ]
+   },
+   "size": [
+    4,
+    4.1,
+    4
+   ]
+  },
+  {
+   "index": 528,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 1,
+   "triangles": 1974,
+   "aabb": {
+    "min": [
+     -9,
+     -6,
+     -1
+    ],
+    "max": [
+     -5,
+     -1.9,
+     3
+    ]
+   },
+   "size": [
+    4,
+    4.1,
+    4
+   ]
+  },
+  {
+   "index": 531,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 1,
+   "triangles": 1858,
+   "aabb": {
+    "min": [
+     -8.853,
+     -3,
+     -4.88
+    ],
+    "max": [
+     -5.147,
+     1.1,
+     -1
+    ]
+   },
+   "size": [
+    3.706,
+    4.1,
+    3.88
+   ]
+  },
+  {
+   "index": 534,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 1,
+   "triangles": 1690,
+   "aabb": {
+    "min": [
+     -8.853,
+     -3,
+     -1
+    ],
+    "max": [
+     -5.147,
+     1.1,
+     2.88
+    ]
+   },
+   "size": [
+    3.706,
+    4.1,
+    3.88
+   ]
+  },
+  {
+   "index": 537,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 1,
+   "triangles": 1858,
+   "aabb": {
+    "min": [
+     -8.853,
+     0,
+     -4.88
+    ],
+    "max": [
+     -5.147,
+     4.1,
+     -1
+    ]
+   },
+   "size": [
+    3.706,
+    4.1,
+    3.88
+   ]
+  },
+  {
+   "index": 540,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 1,
+   "triangles": 1858,
+   "aabb": {
+    "min": [
+     -8.853,
+     0,
+     -1
+    ],
+    "max": [
+     -5.147,
+     4.1,
+     2.88
+    ]
+   },
+   "size": [
+    3.706,
+    4.1,
+    3.88
+   ]
+  },
+  {
+   "index": 543,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 2,
+   "triangles": 2062,
+   "aabb": {
+    "min": [
+     -8.853,
+     3,
+     -4.88
+    ],
+    "max": [
+     -5.065,
+     7.1,
+     -1
+    ]
+   },
+   "size": [
+    3.788,
+    4.1,
+    3.88
+   ]
+  },
+  {
+   "index": 548,
+   "name": "steel-frame-bay",
+   "key": "steel-frame-bay",
+   "meshes": 2,
+   "triangles": 1894,
+   "aabb": {
+    "min": [
+     -8.935,
+     3,
+     -1
+    ],
+    "max": [
+     -5.147,
+     7.1,
+     2.88
+    ]
+   },
+   "size": [
+    3.788,
+    4.1,
+    3.88
+   ]
+  },
+  {
+   "index": 553,
+   "name": "metal-deck-plate",
+   "key": "metal-deck-plate",
+   "meshes": 1,
+   "triangles": 204,
+   "aabb": {
+    "min": [
+     -9,
+     -3,
+     -5
+    ],
+    "max": [
+     -5,
+     -2.8,
+     -1
+    ]
+   },
+   "size": [
+    4,
+    0.2,
+    4
+   ]
+  },
+  {
+   "index": 557,
+   "name": "metal-deck-plate",
+   "key": "metal-deck-plate",
+   "meshes": 1,
+   "triangles": 204,
+   "aabb": {
+    "min": [
+     -9,
+     -3,
+     -1
+    ],
+    "max": [
+     -5,
+     -2.8,
+     3
+    ]
+   },
+   "size": [
+    4,
+    0.2,
+    4
+   ]
+  },
+  {
+   "index": 561,
+   "name": "metal-deck-plate",
+   "key": "metal-deck-plate",
+   "meshes": 1,
+   "triangles": 290,
+   "aabb": {
+    "min": [
+     -9,
+     0,
+     -5
+    ],
+    "max": [
+     -5,
+     0.2,
+     -1
+    ]
+   },
+   "size": [
+    4,
+    0.2,
+    4
+   ]
+  },
+  {
+   "index": 565,
+   "name": "metal-deck-plate",
+   "key": "metal-deck-plate",
+   "meshes": 1,
+   "triangles": 290,
+   "aabb": {
+    "min": [
+     -9,
+     0,
+     -1
+    ],
+    "max": [
+     -5,
+     0.2,
+     3
+    ]
+   },
+   "size": [
+    4,
+    0.2,
+    4
+   ]
+  },
+  {
+   "index": 569,
+   "name": "metal-deck-plate",
+   "key": "metal-deck-plate",
+   "meshes": 3,
+   "triangles": 1333,
+   "aabb": {
+    "min": [
+     -9,
+     3,
+     -5
+    ],
+    "max": [
+     -5,
+     3.64,
+     -1
+    ]
+   },
+   "size": [
+    4,
+    0.64,
+    4
+   ]
+  },
+  {
+   "index": 575,
+   "name": "metal-deck-plate",
+   "key": "metal-deck-plate",
+   "meshes": 1,
+   "triangles": 994,
+   "aabb": {
+    "min": [
+     -9,
+     3,
+     -1
+    ],
+    "max": [
+     -5,
+     3.2,
+     3
+    ]
+   },
+   "size": [
+    4,
+    0.2,
+    4
+   ]
+  },
+  {
+   "index": 579,
+   "name": "rc-core-section",
+   "key": "rc-core-section",
+   "meshes": 1,
+   "triangles": 1409,
+   "aabb": {
+    "min": [
+     1.2,
+     -6,
+     -3
+    ],
+    "max": [
+     3.362,
+     12.638,
+     -0.838
+    ]
+   },
+   "size": [
+    2.162,
+    18.638,
+    2.162
+   ]
+  },
+  {
+   "index": 583,
+   "name": "rc-core-section",
+   "key": "rc-core-section",
+   "meshes": 1,
+   "triangles": 1409,
+   "aabb": {
+    "min": [
+     1.2,
+     -6,
+     -5.162
+    ],
+    "max": [
+     3.362,
+     12.638,
+     -3
+    ]
+   },
+   "size": [
+    2.162,
+    18.638,
+    2.162
+   ]
+  },
+  {
+   "index": 587,
+   "name": "rc-core-section",
+   "key": "rc-core-section",
+   "meshes": 1,
+   "triangles": 1409,
+   "aabb": {
+    "min": [
+     -4.962,
+     -6,
+     -5.162
+    ],
+    "max": [
+     -2.8,
+     12.638,
+     -3
+    ]
+   },
+   "size": [
+    2.162,
+    18.638,
+    2.162
+   ]
+  },
+  {
+   "index": 591,
+   "name": "rc-core-section",
+   "key": "rc-core-section",
+   "meshes": 1,
+   "triangles": 1409,
+   "aabb": {
+    "min": [
+     -4.962,
+     -6,
+     -3
+    ],
+    "max": [
+     -2.8,
+     12.638,
+     -0.838
+    ]
+   },
+   "size": [
+    2.162,
+    18.638,
+    2.162
+   ]
+  },
+  {
+   "index": 595,
+   "name": "rc-core-section",
+   "key": "rc-core-section",
+   "meshes": 3,
+   "triangles": 1978,
+   "aabb": {
+    "min": [
+     -2.8,
+     -6,
+     -1.15
+    ],
+    "max": [
+     1.2,
+     12.637,
+     -0.838
+    ]
+   },
+   "size": [
+    4,
+    18.637,
+    0.312
+   ]
+  },
+  {
+   "index": 601,
+   "name": "rc-core-section",
+   "key": "rc-core-section",
+   "meshes": 2,
+   "triangles": 1872,
+   "aabb": {
+    "min": [
+     -2.8,
+     -6,
+     -5.162
+    ],
+    "max": [
+     1.2,
+     12.637,
+     -4.85
+    ]
+   },
+   "size": [
+    4,
+    18.637,
+    0.312
+   ]
+  },
+  {
+   "index": 606,
+   "name": "scaffold-bay",
+   "key": "scaffold-bay",
+   "meshes": 3,
+   "triangles": 2198,
+   "aabb": {
+    "min": [
+     -9,
+     -6,
+     3.038
+    ],
+    "max": [
+     -5,
+     7.1,
+     4.462
+    ]
+   },
+   "size": [
+    4,
+    13.1,
+    1.425
+   ]
+  },
+  {
+   "index": 611,
+   "name": "scaffold-bay",
+   "key": "scaffold-bay",
+   "meshes": 4,
+   "triangles": 1806,
+   "aabb": {
+    "min": [
+     -4.8,
+     -6,
+     -0.712
+    ],
+    "max": [
+     -0.8,
+     5.1,
+     0.761
+    ]
+   },
+   "size": [
+    4,
+    11.1,
+    1.474
+   ]
+  },
+  {
+   "index": 619,
+   "name": "scaffold-bay",
+   "key": "scaffold-bay",
+   "meshes": 4,
+   "triangles": 1730,
+   "aabb": {
+    "min": [
+     -0.8,
+     -6,
+     -0.712
+    ],
+    "max": [
+     3.2,
+     5.1,
+     0.761
+    ]
+   },
+   "size": [
+    4,
+    11.1,
+    1.474
+   ]
+  },
+  {
+   "index": 627,
+   "name": "scaffold-bay",
+   "key": "scaffold-bay",
+   "meshes": 3,
+   "triangles": 2122,
+   "aabb": {
+    "min": [
+     3.2,
+     -6,
+     -0.712
+    ],
+    "max": [
+     7.2,
+     5.1,
+     0.712
+    ]
+   },
+   "size": [
+    4,
+    11.1,
+    1.425
+   ]
+  },
+  {
+   "index": 632,
+   "name": "scaffold-bay",
+   "key": "scaffold-bay",
+   "meshes": 15,
+   "triangles": 2346,
+   "aabb": {
+    "min": [
+     3.488,
+     -6,
+     -5.05
+    ],
+    "max": [
+     4.961,
+     7.1,
+     -1.05
+    ]
+   },
+   "size": [
+    1.474,
+    13.1,
+    4
+   ]
+  },
+  {
+   "index": 673,
+   "name": "scissor-lift",
+   "key": "scissor-lift",
+   "meshes": 22,
+   "triangles": 2461,
+   "aabb": {
+    "min": [
+     5.992,
+     -6,
+     -4.315
+    ],
+    "max": [
+     7.208,
+     -0.795,
+     -0.997
+    ]
+   },
+   "size": [
+    1.216,
+    5.205,
+    3.318
+   ]
+  },
+  {
+   "index": 722,
+   "name": "cherry-picker",
+   "key": "cherry-picker",
+   "meshes": 10,
+   "triangles": 2424,
+   "aabb": {
+    "min": [
+     7.5,
+     -6,
+     -3.099
+    ],
+    "max": [
+     9,
+     -0.468,
+     -0.101
+    ]
+   },
+   "size": [
+    1.5,
+    5.532,
+    2.997
+   ]
+  },
+  {
+   "index": 744,
+   "name": "mini-excavator",
+   "key": "mini-excavator",
+   "meshes": 12,
+   "triangles": 2586,
+   "aabb": {
+    "min": [
+     4.099,
+     -6,
+     0.888
+    ],
+    "max": [
+     6.543,
+     -3.7,
+     2.165
+    ]
+   },
+   "size": [
+    2.444,
+    2.3,
+    1.277
+   ]
+  },
+  {
+   "index": 769,
+   "name": "tower-crane-mast",
+   "key": "tower-crane-mast",
+   "meshes": 2,
+   "triangles": 1298,
+   "aabb": {
+    "min": [
+     2,
+     0,
+     -16
+    ],
+    "max": [
+     6,
+     18,
+     -12
+    ]
+   },
+   "size": [
+    4,
+    18,
+    4
+   ]
+  },
+  {
+   "index": 772,
+   "name": "tower-crane",
+   "key": "tower-crane",
+   "meshes": 7,
+   "triangles": 2521,
+   "aabb": {
+    "min": [
+     -16.485,
+     18.01,
+     -23.571
+    ],
+    "max": [
+     11.526,
+     35.11,
+     13.406
+    ]
+   },
+   "size": [
+    28.011,
+    17.1,
+    36.976
+   ]
+  },
+  {
+   "index": 786,
+   "name": "formwork-wall-run",
+   "key": "formwork-wall-run",
+   "meshes": 3,
+   "triangles": 2202,
+   "aabb": {
+    "min": [
+     -13,
+     0,
+     12.649
+    ],
+    "max": [
+     -9,
+     3.775,
+     14.7
+    ]
+   },
+   "size": [
+    4,
+    3.775,
+    2.051
+   ]
+  },
+  {
+   "index": 792,
+   "name": "formwork-wall-run",
+   "key": "formwork-wall-run",
+   "meshes": 3,
+   "triangles": 2010,
+   "aabb": {
+    "min": [
+     -9,
+     0,
+     12.649
+    ],
+    "max": [
+     -5,
+     3.775,
+     14.7
+    ]
+   },
+   "size": [
+    4,
+    3.775,
+    2.051
+   ]
+  },
+  {
+   "index": 798,
+   "name": "formwork-wall-run",
+   "key": "formwork-wall-run",
+   "meshes": 3,
+   "triangles": 2138,
+   "aabb": {
+    "min": [
+     -5,
+     0,
+     12.692
+    ],
+    "max": [
+     -1,
+     3.775,
+     14.7
+    ]
+   },
+   "size": [
+    4,
+    3.775,
+    2.008
+   ]
+  },
+  {
+   "index": 804,
+   "name": "lighting-tower",
+   "key": "lighting-tower",
+   "meshes": 4,
+   "triangles": 942,
+   "aabb": {
+    "min": [
+     0.3,
+     0,
+     10.35
+    ],
+    "max": [
+     2.3,
+     8.997,
+     13.85
+    ]
+   },
+   "size": [
+    2,
+    8.997,
+    3.5
+   ]
+  },
+  {
+   "index": 812,
+   "name": "tool-chest",
+   "key": "tool-chest",
+   "meshes": 5,
+   "triangles": 893,
+   "aabb": {
+    "min": [
+     -13,
+     0,
+     15.834
+    ],
+    "max": [
+     -10.988,
+     1.506,
+     17
+    ]
+   },
+   "size": [
+    2.012,
+    1.506,
+    1.166
+   ]
+  },
+  {
+   "index": 822,
+   "name": "rebar-assembly",
+   "key": "rebar-assembly",
+   "meshes": 2,
+   "triangles": 544,
+   "aabb": {
+    "min": [
+     -3.88,
+     0,
+     15.03
+    ],
+    "max": [
+     0.08,
+     0.111,
+     16.97
+    ]
+   },
+   "size": [
+    3.96,
+    0.111,
+    1.94
+   ]
+  },
+  {
+   "index": 826,
+   "name": "scaffold-material-stack",
+   "key": "scaffold-material-stack",
+   "meshes": 3,
+   "triangles": 782,
+   "aabb": {
+    "min": [
+     7.2,
+     0,
+     13.35
+    ],
+    "max": [
+     11.2,
+     0.587,
+     14.85
+    ]
+   },
+   "size": [
+    4,
+    0.587,
+    1.5
+   ]
+  },
+  {
+   "index": 832,
+   "name": "scaffold-material-stack",
+   "key": "scaffold-material-stack",
+   "meshes": 2,
+   "triangles": 606,
+   "aabb": {
+    "min": [
+     7.2,
+     0,
+     15.15
+    ],
+    "max": [
+     11.2,
+     0.506,
+     16.65
+    ]
+   },
+   "size": [
+    4,
+    0.506,
+    1.5
+   ]
+  },
+  {
+   "index": 836,
+   "name": "telehandler",
+   "key": "telehandler",
+   "meshes": 13,
+   "triangles": 2691,
+   "aabb": {
+    "min": [
+     0.105,
+     0,
+     13.514
+    ],
+    "max": [
+     7.153,
+     3.967,
+     17.086
+    ]
+   },
+   "size": [
+    7.048,
+    3.967,
+    3.572
+   ]
+  },
+  {
+   "index": 874,
+   "name": "site-cabin",
+   "key": "site-cabin",
+   "meshes": 3,
+   "triangles": 992,
+   "aabb": {
+    "min": [
+     12.52,
+     0,
+     12.3
+    ],
+    "max": [
+     20.45,
+     3.39,
+     16.3
+    ]
+   },
+   "size": [
+    7.93,
+    3.39,
+    4
+   ]
+  },
+  {
+   "index": 880,
+   "name": "spoil-heap",
+   "key": "spoil-heap",
+   "meshes": 6,
+   "triangles": 616,
+   "aabb": {
+    "min": [
+     14.276,
+     0,
+     -9.9
+    ],
+    "max": [
+     18.537,
+     2.57,
+     -5.746
+    ]
+   },
+   "size": [
+    4.261,
+    2.57,
+    4.154
+   ]
+  },
+  {
+   "index": 888,
+   "name": "tracked-excavator",
+   "key": "tracked-excavator",
+   "meshes": 23,
+   "triangles": 2800,
+   "aabb": {
+    "min": [
+     15,
+     0,
+     -8.141
+    ],
+    "max": [
+     18,
+     4.308,
+     0.529
+    ]
+   },
+   "size": [
+    3,
+    4.308,
+    8.669
+   ]
+  },
+  {
+   "index": 935,
+   "name": "site-dumper",
+   "key": "site-dumper",
+   "meshes": 9,
+   "triangles": 2781,
+   "aabb": {
+    "min": [
+     19.1,
+     0,
+     -4.356
+    ],
+    "max": [
+     21.1,
+     2.92,
+     -0.614
+    ]
+   },
+   "size": [
+    2,
+    2.92,
+    3.742
+   ]
+  },
+  {
+   "index": 954,
+   "name": "scaffold-material-stack",
+   "key": "scaffold-material-stack",
+   "meshes": 3,
+   "triangles": 526,
+   "aabb": {
+    "min": [
+     -21.05,
+     0,
+     0.6
+    ],
+    "max": [
+     -19.55,
+     0.993,
+     4.6
+    ]
+   },
+   "size": [
+    1.5,
+    0.993,
+    4
+   ]
+  },
+  {
+   "index": 960,
+   "name": "scaffold-material-stack",
+   "key": "scaffold-material-stack",
+   "meshes": 3,
+   "triangles": 666,
+   "aabb": {
+    "min": [
+     -18.55,
+     0,
+     0.6
+    ],
+    "max": [
+     -17.05,
+     0.425,
+     4.6
+    ]
+   },
+   "size": [
+    1.5,
+    0.425,
+    4
+   ]
+  },
+  {
+   "index": 966,
+   "name": "precast-concrete-stack",
+   "key": "precast-concrete-stack",
+   "meshes": 2,
+   "triangles": 490,
+   "aabb": {
+    "min": [
+     -21.05,
+     0,
+     5.2
+    ],
+    "max": [
+     -19.55,
+     1.111,
+     9.2
+    ]
+   },
+   "size": [
+    1.5,
+    1.111,
+    4
+   ]
+  },
+  {
+   "index": 970,
+   "name": "precast-concrete-stack",
+   "key": "precast-concrete-stack",
+   "meshes": 2,
+   "triangles": 672,
+   "aabb": {
+    "min": [
+     -18.55,
+     0,
+     5.2
+    ],
+    "max": [
+     -17.05,
+     0.94,
+     9.2
+    ]
+   },
+   "size": [
+    1.5,
+    0.94,
+    4
+   ]
+  },
+  {
+   "index": 974,
+   "name": "skid-steer-loader",
+   "key": "skid-steer-loader",
+   "meshes": 9,
+   "triangles": 2626,
+   "aabb": {
+    "min": [
+     -16.613,
+     0,
+     3.751
+    ],
+    "max": [
+     -14.592,
+     2.18,
+     6.612
+    ]
+   },
+   "size": [
+    2.02,
+    2.18,
+    2.861
+   ]
+  },
+  {
+   "index": 992,
+   "name": "material-pallet",
+   "key": "material-pallet",
+   "meshes": 4,
+   "triangles": 904,
+   "aabb": {
+    "min": [
+     -21.2,
+     0,
+     9.9
+    ],
+    "max": [
+     -20,
+     0.975,
+     10.9
+    ]
+   },
+   "size": [
+    1.2,
+    0.975,
+    1
+   ]
+  },
+  {
+   "index": 999,
+   "name": "material-pallet",
+   "key": "material-pallet",
+   "meshes": 2,
+   "triangles": 524,
+   "aabb": {
+    "min": [
+     -19.8,
+     0,
+     9.9
+    ],
+    "max": [
+     -18.6,
+     1.088,
+     10.9
+    ]
+   },
+   "size": [
+    1.2,
+    1.088,
+    1
+   ]
+  },
+  {
+   "index": 1003,
+   "name": "material-pallet",
+   "key": "material-pallet",
+   "meshes": 3,
+   "triangles": 754,
+   "aabb": {
+    "min": [
+     -21.2,
+     0,
+     11.1
+    ],
+    "max": [
+     -20,
+     1.003,
+     12.1
+    ]
+   },
+   "size": [
+    1.2,
+    1.003,
+    1
+   ]
+  },
+  {
+   "index": 1008,
+   "name": "material-pallet",
+   "key": "material-pallet",
+   "meshes": 2,
+   "triangles": 456,
+   "aabb": {
+    "min": [
+     -19.8,
+     0,
+     11.1
+    ],
+    "max": [
+     -18.6,
+     0.812,
+     12.1
+    ]
+   },
+   "size": [
+    1.2,
+    0.812,
+    1
+   ]
+  },
+  {
+   "index": 1012,
+   "name": "dumpy-bag",
+   "key": "dumpy-bag",
+   "meshes": 6,
+   "triangles": 660,
+   "aabb": {
+    "min": [
+     -18.468,
+     0,
+     9.832
+    ],
+    "max": [
+     -17.332,
+     1.169,
+     10.968
+    ]
+   },
+   "size": [
+    1.135,
+    1.169,
+    1.135
+   ]
+  },
+  {
+   "index": 1025,
+   "name": "dumpy-bag",
+   "key": "dumpy-bag",
+   "meshes": 6,
+   "triangles": 696,
+   "aabb": {
+    "min": [
+     -17.297,
+     0.008,
+     9.684
+    ],
+    "max": [
+     -15.602,
+     0.897,
+     11.382
+    ]
+   },
+   "size": [
+    1.695,
+    0.889,
+    1.697
+   ]
+  },
+  {
+   "index": 1038,
+   "name": "cement-mixer",
+   "key": "cement-mixer",
+   "meshes": 10,
+   "triangles": 976,
+   "aabb": {
+    "min": [
+     -18.025,
+     0,
+     11.565
+    ],
+    "max": [
+     -16.77,
+     1.24,
+     12.835
+    ]
+   },
+   "size": [
+    1.255,
+    1.24,
+    1.27
+   ]
+  },
+  {
+   "index": 1058,
+   "name": "rebar-assembly",
+   "key": "rebar-assembly",
+   "meshes": 2,
+   "triangles": 778,
+   "aabb": {
+    "min": [
+     -19.95,
+     -0.04,
+     15.063
+    ],
+    "max": [
+     -19.05,
+     1.96,
+     15.737
+    ]
+   },
+   "size": [
+    0.9,
+    2,
+    0.674
+   ]
+  },
+  {
+   "index": 1062,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     18
+    ],
+    "max": [
+     26,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1064,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     18
+    ],
+    "max": [
+     30,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1066,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 286,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     18
+    ],
+    "max": [
+     34,
+     0.05,
+     22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1068,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     14
+    ],
+    "max": [
+     26,
+     0.05,
+     18
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1070,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     14
+    ],
+    "max": [
+     30,
+     0.05,
+     18
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1072,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     14
+    ],
+    "max": [
+     34,
+     0.05,
+     18
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1074,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     10
+    ],
+    "max": [
+     26,
+     0.05,
+     14
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1076,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     10
+    ],
+    "max": [
+     30,
+     0.05,
+     14
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1078,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     10
+    ],
+    "max": [
+     34,
+     0.05,
+     14
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1080,
+   "name": "mud-rut-tile",
+   "key": "mud-rut-tile",
+   "meshes": 1,
+   "triangles": 514,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     6
+    ],
+    "max": [
+     26,
+     0.106,
+     10
+    ]
+   },
+   "size": [
+    4,
+    0.106,
+    4
+   ]
+  },
+  {
+   "index": 1082,
+   "name": "hardcore-tile",
+   "key": "hardcore-tile",
+   "meshes": 1,
+   "triangles": 157,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     6
+    ],
+    "max": [
+     30,
+     0.058,
+     10
+    ]
+   },
+   "size": [
+    4,
+    0.058,
+    4
+   ]
+  },
+  {
+   "index": 1084,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 516,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     6
+    ],
+    "max": [
+     34,
+     0.092,
+     10
+    ]
+   },
+   "size": [
+    4,
+    0.092,
+    4
+   ]
+  },
+  {
+   "index": 1086,
+   "name": "mud-rut-tile",
+   "key": "mud-rut-tile",
+   "meshes": 2,
+   "triangles": 514,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     2
+    ],
+    "max": [
+     26,
+     0.106,
+     6
+    ]
+   },
+   "size": [
+    4,
+    0.106,
+    4
+   ]
+  },
+  {
+   "index": 1089,
+   "name": "hardcore-tile",
+   "key": "hardcore-tile",
+   "meshes": 1,
+   "triangles": 443,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     2
+    ],
+    "max": [
+     30,
+     0.066,
+     6
+    ]
+   },
+   "size": [
+    4,
+    0.066,
+    4
+   ]
+  },
+  {
+   "index": 1091,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     2
+    ],
+    "max": [
+     34,
+     0.05,
+     6
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1093,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -2
+    ],
+    "max": [
+     26,
+     0.05,
+     2
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1095,
+   "name": "hardcore-tile",
+   "key": "hardcore-tile",
+   "meshes": 2,
+   "triangles": 181,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -2
+    ],
+    "max": [
+     30,
+     0.058,
+     2
+    ]
+   },
+   "size": [
+    4,
+    0.058,
+    4
+   ]
+  },
+  {
+   "index": 1098,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 447,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     -2
+    ],
+    "max": [
+     34,
+     0.088,
+     2
+    ]
+   },
+   "size": [
+    4,
+    0.088,
+    4
+   ]
+  },
+  {
+   "index": 1100,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -6
+    ],
+    "max": [
+     26,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1102,
+   "name": "hardcore-tile",
+   "key": "hardcore-tile",
+   "meshes": 1,
+   "triangles": 443,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -6
+    ],
+    "max": [
+     30,
+     0.066,
+     -2
+    ]
+   },
+   "size": [
+    4,
+    0.066,
+    4
+   ]
+  },
+  {
+   "index": 1104,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     -6
+    ],
+    "max": [
+     34,
+     0.05,
+     -2
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1106,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -10
+    ],
+    "max": [
+     26,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1108,
+   "name": "hardcore-tile",
+   "key": "hardcore-tile",
+   "meshes": 2,
+   "triangles": 431,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -10
+    ],
+    "max": [
+     30,
+     0.058,
+     -6
+    ]
+   },
+   "size": [
+    4,
+    0.058,
+    4
+   ]
+  },
+  {
+   "index": 1111,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     -10
+    ],
+    "max": [
+     34,
+     0.05,
+     -6
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1113,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -14
+    ],
+    "max": [
+     26,
+     0.05,
+     -10
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1115,
+   "name": "hardcore-tile",
+   "key": "hardcore-tile",
+   "meshes": 1,
+   "triangles": 407,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -14
+    ],
+    "max": [
+     30,
+     0.058,
+     -10
+    ]
+   },
+   "size": [
+    4,
+    0.058,
+    4
+   ]
+  },
+  {
+   "index": 1117,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 479,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     -14
+    ],
+    "max": [
+     34,
+     0.084,
+     -10
+    ]
+   },
+   "size": [
+    4,
+    0.084,
+    4
+   ]
+  },
+  {
+   "index": 1119,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -18
+    ],
+    "max": [
+     26,
+     0.05,
+     -14
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1121,
+   "name": "hardcore-tile",
+   "key": "hardcore-tile",
+   "meshes": 1,
+   "triangles": 407,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -18
+    ],
+    "max": [
+     30,
+     0.058,
+     -14
+    ]
+   },
+   "size": [
+    4,
+    0.058,
+    4
+   ]
+  },
+  {
+   "index": 1123,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     -18
+    ],
+    "max": [
+     34,
+     0.05,
+     -14
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1125,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 376,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -22
+    ],
+    "max": [
+     26,
+     0.05,
+     -18
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1127,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 454,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -22
+    ],
+    "max": [
+     30,
+     0.086,
+     -18
+    ]
+   },
+   "size": [
+    4,
+    0.086,
+    4
+   ]
+  },
+  {
+   "index": 1129,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 272,
+   "aabb": {
+    "min": [
+     30,
+     0,
+     -22
+    ],
+    "max": [
+     34,
+     0.05,
+     -18
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1131,
+   "name": "concrete-slab-tile",
+   "key": "concrete-slab-tile",
+   "meshes": 1,
+   "triangles": 330,
+   "aabb": {
+    "min": [
+     22,
+     0,
+     -26
+    ],
+    "max": [
+     26,
+     0.05,
+     -22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1133,
+   "name": "broken-road-tile",
+   "key": "broken-road-tile",
+   "meshes": 1,
+   "triangles": 252,
+   "aabb": {
+    "min": [
+     26,
+     0,
+     -26
+    ],
+    "max": [
+     30,
+     0.05,
+     -22
+    ]
+   },
+   "size": [
+    4,
+    0.05,
+    4
+   ]
+  },
+  {
+   "index": 1135,
+   "name": "wheel-wash",
+   "key": "wheel-wash",
+   "meshes": 7,
+   "triangles": 938,
+   "aabb": {
+    "min": [
+     26,
+     0.05,
+     -12.5
+    ],
+    "max": [
+     31,
+     4.51,
+     -1
+    ]
+   },
+   "size": [
+    5,
+    4.46,
+    11.5
+   ]
+  },
+  {
+   "index": 1147,
+   "name": "water-bowser",
+   "key": "water-bowser",
+   "meshes": 9,
+   "triangles": 951,
+   "aabb": {
+    "min": [
+     27.65,
+     0.05,
+     -17.3
+    ],
+    "max": [
+     29.15,
+     1.667,
+     -14.3
+    ]
+   },
+   "size": [
+    1.5,
+    1.617,
+    3
+   ]
+  },
+  {
+   "index": 1164,
+   "name": "traffic-cone",
+   "key": "traffic-cone",
+   "meshes": 1,
+   "triangles": 732,
+   "aabb": {
+    "min": [
+     26.283,
+     0.05,
+     10.486
+    ],
+    "max": [
+     30.527,
+     0.8,
+     16.423
+    ]
+   },
+   "size": [
+    4.245,
+    0.75,
+    5.937
+   ]
+  },
+  {
+   "index": 1166,
+   "name": "traffic-cone",
+   "key": "traffic-cone",
+   "meshes": 1,
+   "triangles": 488,
+   "aabb": {
+    "min": [
+     27.225,
+     0.05,
+     -20.275
+    ],
+    "max": [
+     30.575,
+     0.8,
+     -18.425
+    ]
+   },
+   "size": [
+    3.35,
+    0.75,
+    1.85
+   ]
+  },
+  {
+   "index": 1168,
+   "name": "safety-sign-board",
+   "key": "safety-sign-board",
+   "meshes": 1,
+   "triangles": 498,
+   "aabb": {
+    "min": [
+     19.45,
+     0,
+     10.2
+    ],
+    "max": [
+     19.95,
+     2.2,
+     12.2
+    ]
+   },
+   "size": [
+    0.5,
+    2.2,
+    2
+   ]
+  },
+  {
+   "index": 1170,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1176,
+   "aabb": {
+    "min": [
+     5.64,
+     0,
+     31.14
+    ],
+    "max": [
+     8,
+     2,
+     33.5
+    ]
+   },
+   "size": [
+    2.36,
+    2,
+    2.36
+   ]
+  },
+  {
+   "index": 1175,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1176,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     31.14
+    ],
+    "max": [
+     26.36,
+     2,
+     33.5
+    ]
+   },
+   "size": [
+    2.36,
+    2,
+    2.36
+   ]
+  },
+  {
+   "index": 1180,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1176,
+   "aabb": {
+    "min": [
+     24,
+     0,
+     41.5
+    ],
+    "max": [
+     26.36,
+     2,
+     43.86
+    ]
+   },
+   "size": [
+    2.36,
+    2,
+    2.36
+   ]
+  },
+  {
+   "index": 1185,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1176,
+   "aabb": {
+    "min": [
+     5.64,
+     0,
+     41.5
+    ],
+    "max": [
+     8,
+     2,
+     43.86
+    ]
+   },
+   "size": [
+    2.36,
+    2,
+    2.36
+   ]
+  },
+  {
+   "index": 1190,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     31.14
+    ],
+    "max": [
+     12,
+     2,
+     31.86
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 1195,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     8,
+     0,
+     43.14
+    ],
+    "max": [
+     12,
+     2,
+     43.86
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 1200,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     31.14
+    ],
+    "max": [
+     16,
+     2,
+     31.86
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 1205,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 3,
+   "triangles": 1424,
+   "aabb": {
+    "min": [
+     12,
+     0,
+     43.14
+    ],
+    "max": [
+     16,
+     2,
+     43.86
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 1214,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 2,
+   "triangles": 1152,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     31.14
+    ],
+    "max": [
+     20,
+     2,
+     32.785
+    ]
+   },
+   "size": [
+    4,
+    2,
+    1.645
+   ]
+  },
+  {
+   "index": 1220,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     16,
+     0,
+     43.14
+    ],
+    "max": [
+     20,
+     2,
+     43.86
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 1225,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     31.14
+    ],
+    "max": [
+     24,
+     2,
+     31.86
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 1230,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     20,
+     0,
+     43.14
+    ],
+    "max": [
+     24,
+     2,
+     43.86
+    ]
+   },
+   "size": [
+    4,
+    2,
+    0.72
+   ]
+  },
+  {
+   "index": 1235,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     5.64,
+     0,
+     33.5
+    ],
+    "max": [
+     6.36,
+     2,
+     37.5
+    ]
+   },
+   "size": [
+    0.72,
+    2,
+    4
+   ]
+  },
+  {
+   "index": 1240,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     25.64,
+     0,
+     33.5
+    ],
+    "max": [
+     26.36,
+     2,
+     37.5
+    ]
+   },
+   "size": [
+    0.72,
+    2,
+    4
+   ]
+  },
+  {
+   "index": 1245,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     5.64,
+     0,
+     37.5
+    ],
+    "max": [
+     6.36,
+     2,
+     41.5
+    ]
+   },
+   "size": [
+    0.72,
+    2,
+    4
+   ]
+  },
+  {
+   "index": 1250,
+   "name": "mesh-fence-run",
+   "key": "mesh-fence-run",
+   "meshes": 1,
+   "triangles": 1216,
+   "aabb": {
+    "min": [
+     25.64,
+     0,
+     37.5
+    ],
+    "max": [
+     26.36,
+     2,
+     41.5
+    ]
+   },
+   "size": [
+    0.72,
+    2,
+    4
+   ]
+  },
+  {
+   "index": 1255,
+   "name": "site-cabin",
+   "key": "site-cabin",
+   "meshes": 3,
+   "triangles": 1754,
+   "aabb": {
+    "min": [
+     7,
+     0,
+     38.9
+    ],
+    "max": [
+     14.97,
+     6.09,
+     42.9
+    ]
+   },
+   "size": [
+    7.97,
+    6.09,
+    4
+   ]
+  },
+  {
+   "index": 1261,
+   "name": "site-cabin",
+   "key": "site-cabin",
+   "meshes": 3,
+   "triangles": 984,
+   "aabb": {
+    "min": [
+     16.05,
+     0,
+     38.9
+    ],
+    "max": [
+     23.98,
+     4.44,
+     42.9
+    ]
+   },
+   "size": [
+    7.93,
+    4.44,
+    4
+   ]
+  },
+  {
+   "index": 1267,
+   "name": "site-cabin",
+   "key": "site-cabin",
+   "meshes": 3,
+   "triangles": 852,
+   "aabb": {
+    "min": [
+     17.02,
+     0,
+     33.1
+    ],
+    "max": [
+     24.98,
+     3.86,
+     37.1
+    ]
+   },
+   "size": [
+    7.96,
+    3.86,
+    4
+   ]
+  },
+  {
+   "index": 1273,
+   "name": "portable-toilet",
+   "key": "portable-toilet",
+   "meshes": 2,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     6.8,
+     0,
+     32.2
+    ],
+    "max": [
+     8,
+     2.48,
+     33.4
+    ]
+   },
+   "size": [
+    1.2,
+    2.48,
+    1.2
+   ]
+  },
+  {
+   "index": 1277,
+   "name": "portable-toilet",
+   "key": "portable-toilet",
+   "meshes": 2,
+   "triangles": 836,
+   "aabb": {
+    "min": [
+     8.2,
+     0,
+     32.2
+    ],
+    "max": [
+     9.4,
+     2.48,
+     33.69
+    ]
+   },
+   "size": [
+    1.2,
+    2.48,
+    1.49
+   ]
+  },
+  {
+   "index": 1281,
+   "name": "portable-toilet",
+   "key": "portable-toilet",
+   "meshes": 2,
+   "triangles": 884,
+   "aabb": {
+    "min": [
+     9.6,
+     0,
+     32.2
+    ],
+    "max": [
+     10.99,
+     2.48,
+     33.4
+    ]
+   },
+   "size": [
+    1.39,
+    2.48,
+    1.2
+   ]
+  },
+  {
+   "index": 1285,
+   "name": "smoking-shelter",
+   "key": "smoking-shelter",
+   "meshes": 3,
+   "triangles": 1684,
+   "aabb": {
+    "min": [
+     12.405,
+     0,
+     32.25
+    ],
+    "max": [
+     14.395,
+     2.3,
+     33.75
+    ]
+   },
+   "size": [
+    1.99,
+    2.3,
+    1.5
+   ]
+  },
+  {
+   "index": 1290,
+   "name": "site-generator",
+   "key": "site-generator",
+   "meshes": 2,
+   "triangles": 824,
+   "aabb": {
+    "min": [
+     13.35,
+     0,
+     35.75
+    ],
+    "max": [
+     16.531,
+     1.789,
+     37.25
+    ]
+   },
+   "size": [
+    3.181,
+    1.789,
+    1.5
+   ]
+  },
+  {
+   "index": 1295,
+   "name": "trench-bay",
+   "key": "trench-bay",
+   "meshes": 3,
+   "triangles": 1381,
+   "aabb": {
+    "min": [
+     -6,
+     -1.7,
+     32
+    ],
+    "max": [
+     -2,
+     1.008,
+     36
+    ]
+   },
+   "size": [
+    4,
+    2.708,
+    4
+   ]
+  },
+  {
+   "index": 1301,
+   "name": "trench-bay",
+   "key": "trench-bay",
+   "meshes": 2,
+   "triangles": 1585,
+   "aabb": {
+    "min": [
+     -6,
+     -1.7,
+     36
+    ],
+    "max": [
+     -2,
+     0.367,
+     40
+    ]
+   },
+   "size": [
+    4,
+    2.067,
+    4
+   ]
+  },
+  {
+   "index": 1306,
+   "name": "trench-bay",
+   "key": "trench-bay",
+   "meshes": 3,
+   "triangles": 1381,
+   "aabb": {
+    "min": [
+     -6,
+     -1.7,
+     40
+    ],
+    "max": [
+     -2,
+     1.008,
+     44
+    ]
+   },
+   "size": [
+    4,
+    2.708,
+    4
+   ]
+  },
+  {
+   "index": 1312,
+   "name": "trench-plate",
+   "key": "trench-plate",
+   "meshes": 1,
+   "triangles": 476,
+   "aabb": {
+    "min": [
+     -6.5,
+     0,
+     31.2
+    ],
+    "max": [
+     -4,
+     0.11,
+     32.7
+    ]
+   },
+   "size": [
+    2.5,
+    0.11,
+    1.5
+   ]
+  },
+  {
+   "index": 1314,
+   "name": "trench-plate",
+   "key": "trench-plate",
+   "meshes": 1,
+   "triangles": 476,
+   "aabb": {
+    "min": [
+     -6.5,
+     0,
+     43.3
+    ],
+    "max": [
+     -4,
+     0.11,
+     44.8
+    ]
+   },
+   "size": [
+    2.5,
+    0.11,
+    1.5
+   ]
+  },
+  {
+   "index": 1316,
+   "name": "trench-plate",
+   "key": "trench-plate",
+   "meshes": 1,
+   "triangles": 476,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     31.2
+    ],
+    "max": [
+     -1.5,
+     0.11,
+     32.7
+    ]
+   },
+   "size": [
+    2.5,
+    0.11,
+    1.5
+   ]
+  },
+  {
+   "index": 1318,
+   "name": "trench-plate",
+   "key": "trench-plate",
+   "meshes": 1,
+   "triangles": 476,
+   "aabb": {
+    "min": [
+     -4,
+     0,
+     43.3
+    ],
+    "max": [
+     -1.5,
+     0.11,
+     44.8
+    ]
+   },
+   "size": [
+    2.5,
+    0.11,
+    1.5
+   ]
+  },
+  {
+   "index": 1320,
+   "name": "trench-plate",
+   "key": "trench-plate",
+   "meshes": 1,
+   "triangles": 496,
+   "aabb": {
+    "min": [
+     -11.25,
+     0,
+     41.75
+    ],
+    "max": [
+     -9.75,
+     0.275,
+     44.25
+    ]
+   },
+   "size": [
+    1.5,
+    0.275,
+    2.5
+   ]
+  },
+  {
+   "index": 1322,
+   "name": "backhoe-loader",
+   "key": "backhoe-loader",
+   "meshes": 14,
+   "triangles": 2996,
+   "aabb": {
+    "min": [
+     -2.363,
+     0,
+     37.39
+    ],
+    "max": [
+     4.353,
+     3.678,
+     39.81
+    ]
+   },
+   "size": [
+    6.716,
+    3.678,
+    2.42
+   ]
+  },
+  {
+   "index": 1352,
+   "name": "trencher",
+   "key": "trencher",
+   "meshes": 11,
+   "triangles": 3278,
+   "aabb": {
+    "min": [
+     -11.532,
+     0,
+     34.969
+    ],
+    "max": [
+     -8.826,
+     2.56,
+     39.781
+    ]
+   },
+   "size": [
+    2.706,
+    2.56,
+    4.812
+   ]
+  },
+  {
+   "index": 1374,
+   "name": "compactor-plate",
+   "key": "compactor-plate",
+   "meshes": 5,
+   "triangles": 845,
+   "aabb": {
+    "min": [
+     -1.672,
+     0,
+     32.886
+    ],
+    "max": [
+     -0.687,
+     0.999,
+     33.944
+    ]
+   },
+   "size": [
+    0.985,
+    0.999,
+    1.058
+   ]
+  },
+  {
+   "index": 1384,
+   "name": "precast-concrete-stack",
+   "key": "precast-concrete-stack",
+   "meshes": 2,
+   "triangles": 460,
+   "aabb": {
+    "min": [
+     -11.5,
+     0,
+     32.45
+    ],
+    "max": [
+     -7.5,
+     0.599,
+     33.95
+    ]
+   },
+   "size": [
+    4,
+    0.599,
+    1.5
+   ]
+  },
+  {
+   "index": 1388,
+   "name": "crawler-bulldozer",
+   "key": "crawler-bulldozer",
+   "meshes": 10,
+   "triangles": 3612,
+   "aabb": {
+    "min": [
+     27.545,
+     0,
+     31.957
+    ],
+    "max": [
+     31.055,
+     3.18,
+     38.856
+    ]
+   },
+   "size": [
+    3.51,
+    3.18,
+    6.899
+   ]
+  },
+  {
+   "index": 1410,
+   "name": "road-roller",
+   "key": "road-roller",
+   "meshes": 7,
+   "triangles": 2528,
+   "aabb": {
+    "min": [
+     33.11,
+     0,
+     31.486
+    ],
+    "max": [
+     35.887,
+     3.095,
+     35.549
+    ]
+   },
+   "size": [
+    2.778,
+    3.095,
+    4.064
+   ]
+  },
+  {
+   "index": 1426,
+   "name": "mobile-crane",
+   "key": "mobile-crane",
+   "meshes": 24,
+   "triangles": 3091,
+   "aabb": {
+    "min": [
+     -30.625,
+     0,
+     3.955
+    ],
+    "max": [
+     -17.336,
+     9.377,
+     15.11
+    ]
+   },
+   "size": [
+    13.289,
+    9.377,
+    11.155
+   ]
+  },
+  {
+   "index": 1479,
+   "name": "spoil-heap",
+   "key": "spoil-heap",
+   "meshes": 1,
+   "triangles": 560,
+   "aabb": {
+    "min": [
+     -8.903,
+     -3,
+     -32.932
+    ],
+    "max": [
+     -5.07,
+     -0.946,
+     -29.134
+    ]
+   },
+   "size": [
+    3.833,
+    2.054,
+    3.797
+   ]
+  },
+  {
+   "index": 1481,
+   "name": "spoil-heap",
+   "key": "spoil-heap",
+   "meshes": 6,
+   "triangles": 462,
+   "aabb": {
+    "min": [
+     -4.619,
+     -3,
+     -34.624
+    ],
+    "max": [
+     -2.034,
+     -1.066,
+     -32.163
+    ]
+   },
+   "size": [
+    2.585,
+    1.934,
+    2.461
+   ]
+  },
+  {
+   "index": 1489,
+   "name": "articulated-dump-truck",
+   "key": "articulated-dump-truck",
+   "meshes": 15,
+   "triangles": 3078,
+   "aabb": {
+    "min": [
+     -1.553,
+     -3,
+     -32.04
+    ],
+    "max": [
+     8.335,
+     2.922,
+     -28.96
+    ]
+   },
+   "size": [
+    9.888,
+    5.922,
+    3.08
+   ]
+  },
+  {
+   "index": 1514,
+   "name": "wheeled-loader",
+   "key": "wheeled-loader",
+   "meshes": 9,
+   "triangles": 3016,
+   "aabb": {
+    "min": [
+     -6.484,
+     -3,
+     -28.7
+    ],
+    "max": [
+     0.56,
+     0.23,
+     -25.9
+    ]
+   },
+   "size": [
+    7.044,
+    3.23,
+    2.8
+   ]
+  },
+  {
+   "index": 1532,
+   "name": "site-manager",
+   "key": "site-manager",
+   "meshes": 12,
+   "triangles": 4701,
+   "aabb": {
+    "min": [
+     16.554,
+     0,
+     16.349
+    ],
+    "max": [
+     18.425,
+     1.817,
+     16.836
+    ]
+   },
+   "size": [
+    1.871,
+    1.817,
+    0.487
+   ]
+  },
+  {
+   "index": 1589,
+   "name": "surveyor",
+   "key": "surveyor",
+   "meshes": 8,
+   "triangles": 4341,
+   "aabb": {
+    "min": [
+     2.39,
+     0,
+     10.501
+    ],
+    "max": [
+     4.009,
+     1.822,
+     11.59
+    ]
+   },
+   "size": [
+    1.619,
+    1.822,
+    1.089
+   ]
+  },
+  {
+   "index": 1638,
+   "name": "crane-banksman",
+   "key": "crane-banksman",
+   "meshes": 10,
+   "triangles": 3831,
+   "aabb": {
+    "min": [
+     24.69,
+     0.05,
+     0.383
+    ],
+    "max": [
+     26.216,
+     1.867,
+     1.775
+    ]
+   },
+   "size": [
+    1.526,
+    1.817,
+    1.392
+   ]
+  },
+  {
+   "index": 1691,
+   "name": "crane-banksman",
+   "key": "crane-banksman",
+   "meshes": 9,
+   "triangles": 3859,
+   "aabb": {
+    "min": [
+     -15.579,
+     0.05,
+     19.889
+    ],
+    "max": [
+     -14.643,
+     1.867,
+     21.577
+    ]
+   },
+   "size": [
+    0.936,
+    1.817,
+    1.688
+   ]
+  },
+  {
+   "index": 1742,
+   "name": "groundworker",
+   "key": "groundworker",
+   "meshes": 10,
+   "triangles": 4961,
+   "aabb": {
+    "min": [
+     -1.631,
+     0,
+     34.574
+    ],
+    "max": [
+     -1.207,
+     1.822,
+     36.845
+    ]
+   },
+   "size": [
+    0.424,
+    1.822,
+    2.27
+   ]
+  },
+  {
+   "index": 1795,
+   "name": "groundworker",
+   "key": "groundworker",
+   "meshes": 10,
+   "triangles": 4961,
+   "aabb": {
+    "min": [
+     -11.665,
+     2.735,
+     12.769
+    ],
+    "max": [
+     -9.354,
+     4.557,
+     13.193
+    ]
+   },
+   "size": [
+    2.31,
+    1.822,
+    0.424
+   ]
+  },
+  {
+   "index": 1848,
+   "name": "steel-erector",
+   "key": "steel-erector",
+   "meshes": 8,
+   "triangles": 3975,
+   "aabb": {
+    "min": [
+     -8.128,
+     3.2,
+     1.007
+    ],
+    "max": [
+     -7.064,
+     5.032,
+     2.588
+    ]
+   },
+   "size": [
+    1.064,
+    1.832,
+    1.581
+   ]
+  },
+  {
+   "index": 1897,
+   "name": "steel-erector",
+   "key": "steel-erector",
+   "meshes": 8,
+   "triangles": 4055,
+   "aabb": {
+    "min": [
+     10.4,
+     3.05,
+     19.998
+    ],
+    "max": [
+     11.989,
+     4.824,
+     20.773
+    ]
+   },
+   "size": [
+    1.589,
+    1.774,
+    0.775
+   ]
+  },
+  {
+   "index": 1946,
+   "name": "site-manager",
+   "key": "site-manager",
+   "meshes": 10,
+   "triangles": 4465,
+   "aabb": {
+    "min": [
+     11.586,
+     0,
+     36.609
+    ],
+    "max": [
+     13.186,
+     1.817,
+     37.462
+    ]
+   },
+   "size": [
+    1.6,
+    1.817,
+    0.852
+   ]
+  },
+  {
+   "index": 1999,
+   "name": "construction-site-terrain",
+   "key": "construction-site-terrain",
+   "meshes": 1,
+   "triangles": 25328,
+   "aabb": {
+    "min": [
+     -48,
+     -12.256,
+     -50
+    ],
+    "max": [
+     44,
+     4.729,
+     51
+    ]
+   },
+   "size": [
+    92,
+    16.985,
+    101
+   ]
+  }
+ ],
+ "id": "construction-site",
+ "label": "Construction Site",
+ "sourceBytes": 37890364,
+ "spawn": {
+  "x": 9.2,
+  "y": 0.5,
+  "z": 14.1,
+  "on": "90 floor pieces at y=0"
+ }
+}

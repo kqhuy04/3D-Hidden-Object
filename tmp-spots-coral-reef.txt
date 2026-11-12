@@ -1,0 +1,25 @@
+# coral-reef  bounds -18,-3,-24 .. 21,8,23  spawn 2.9,9.1
+# 18 surfaces, 8 spread, showing 8
+  T  x      10  z     5.5  top    1.2  d   7.9  stand (12.4, 4.6) gap 2.59
+  T  x      -8  z      13  top  -1.64  d  11.6  stand (-6.5, 11.7) gap 1.98
+  T  x      -2  z      -5  top   0.99  d  14.9  stand (-2.6, -5.9) gap 1.09
+  T  x   -12.5  z      -2  top      1  d    19  stand (-13.4, -2.1) gap 0.94
+  T  x   -12.5  z    -6.5  top   1.28  d  21.9  stand (-12.5, -6.8) gap 0.25
+  T  x     -17  z    -6.5  top   0.67  d  25.3  stand (-18.3, -3.5) gap 3.27
+  T  x       4  z     -17  top   1.67  d  26.1  stand (6.3, -15.4) gap 2.76
+  T  x       7  z   -21.5  top   2.72  d  30.8  stand (5.7, -21) gap 1.37
+# 27 open ground spots
+  G  x       3  z     9.5  y  -0.01  d   0.4
+  G  x      -2  z     4.5  y      0  d   6.7
+  G  x     5.5  z       2  y      0  d   7.5
+  G  x    10.5  z     9.5  y  -0.67  d   7.6
+  G  x    -4.5  z      12  y  -1.18  d     8
+  G  x     0.5  z      17  y  -2.01  d   8.3
+  G  x       8  z      17  y  -1.67  d   9.4
+  G  x     0.5  z      -3  y      0  d  12.3
+  G  x      13  z       2  y  -0.07  d  12.3
+  G  x    -9.5  z       7  y  -0.65  d  12.6
+  G  x      -7  z    -0.5  y      0  d  13.8
+  G  x      -7  z    19.5  y  -1.92  d  14.4
+  G  x      18  z     9.5  y  -0.31  d  15.1
+  G  x       8  z    -5.5  y      0  d  15.4
