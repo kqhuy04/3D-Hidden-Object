@@ -25,7 +25,6 @@ export class UIManager {
   /** The place name that comes up over the establishing shot. */
   private titleElement: HTMLDivElement;
   private titleName: HTMLHeadingElement;
-  private titleNote: HTMLParagraphElement;
   /** Pending "the caption is gone now" timer, so it can be cancelled. */
   private titleTimer: number | null = null;
 
@@ -67,10 +66,8 @@ export class UIManager {
     this.titleElement.innerHTML = `
       <span class="map-title-rule"></span>
       <h2 class="map-title-name"></h2>
-      <p class="map-title-note"></p>
     `;
     this.titleName = this.titleElement.querySelector('.map-title-name') as HTMLHeadingElement;
-    this.titleNote = this.titleElement.querySelector('.map-title-note') as HTMLParagraphElement;
 
     this.rootContainer.appendChild(this.mainMenu.getElement());
     this.rootContainer.appendChild(this.hud.getElement());
@@ -114,14 +111,18 @@ export class UIManager {
    * Deliberately not part of the HUD: the HUD is a dashboard that is either on
    * or off, and this is a caption that belongs to the three seconds before the
    * hunt. It leaves when the cutscene does.
+   *
+   * The name alone. A second line under it — the weather, the object count —
+   * was read once and then sat under the title like a subtitle for a film
+   * nobody was watching; the weather is visible in the weather, and the count is
+   * on the panel.
    */
-  public showTitleCard(name: string, note: string): void {
+  public showTitleCard(name: string): void {
     if (this.titleTimer !== null) {
       window.clearTimeout(this.titleTimer);
       this.titleTimer = null;
     }
     this.titleName.textContent = name;
-    this.titleNote.textContent = note;
     this.titleElement.classList.remove('hidden', 'is-leaving');
   }
 

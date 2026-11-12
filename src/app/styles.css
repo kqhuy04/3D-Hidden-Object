@@ -816,9 +816,9 @@ canvas {
 /* =========================================================================
    MAP TITLE CARD
    The caption that comes up over the establishing shot: the place's name, and
-   one line about it. It belongs to the three seconds before the hunt, which is
-   why it is not part of the HUD — the HUD is a dashboard that is either on or
-   off, and this is a caption that arrives and leaves on its own.
+   nothing else. It belongs to the three seconds before the hunt, which is why
+   it is not part of the HUD — the HUD is a dashboard that is either on or off,
+   and this is a caption that arrives and leaves on its own.
    ========================================================================= */
 
 .map-title-card {
@@ -863,14 +863,6 @@ canvas {
   line-height: 1.02;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
-
-.map-title-note {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  opacity: 0.92;
 }
 
 #game-hud.hidden {

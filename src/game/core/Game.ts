@@ -20,7 +20,6 @@ import { NpcCrowd } from '../npc/NpcCrowd';
 import { Mounts } from '../npc/Mounts';
 import { Interactions } from '../interact/Interactions';
 import { moodFor } from '../../data/mapMood';
-import type { MapMood } from '../../data/mapMood';
 import { HiddenItemPlacement, hiddenItemsFor } from '../../data/hiddenItems';
 import { UIManager } from '../../ui/UIManager';
 import { GAME_CONFIG } from '../../data/gameConfig';
@@ -50,21 +49,6 @@ const REACH_DISTANCE = 2.8;
 const TITLE_ONLY_MS = 2600;
 
 const _reachOrigin = new THREE.Vector3();
-
-/**
- * What the caption under a map's name says about its weather.
- *
- * A record rather than a chain of ternaries so that adding a `WeatherKind`
- * fails to compile here instead of silently captioning the new one "Clear".
- */
-const WEATHER_LABELS: Record<MapMood['weather'], string> = {
-  clear: 'Clear',
-  overcast: 'Overcast',
-  mist: 'Mist',
-  rain: 'Rain',
-  snow: 'Snow',
-  motes: 'Under water',
-};
 
 export class Game {
   private container: HTMLElement;
@@ -985,9 +969,9 @@ export class Game {
         this.titleUntil = 0;
         // A dashboard over an establishing shot is a dashboard over a photograph.
         this.ui.hud.hide();
-        this.ui.showTitleCard(this.map.label, this.titleNote());
+        this.ui.showTitleCard(this.map.label);
       } else {
-        this.ui.showTitleCard(this.map.label, this.titleNote());
+        this.ui.showTitleCard(this.map.label);
         this.titleUntil = performance.now() + TITLE_ONLY_MS;
       }
     }
@@ -1008,21 +992,6 @@ export class Game {
     this.ui.hideTitleCard();
     this.ui.hud.show();
     this.ui.hud.setViewMode(this.cameraController.isFirstPerson());
-  }
-
-  /**
-   * The line under the place name.
-   *
-   * Two facts the player can act on: what the weather is doing, and how many
-   * odd objects are hidden here. Both are already known at load time, so this
-   * is a caption rather than a promise.
-   */
-  private titleNote(): string {
-    const hunt = hiddenItemsFor(this.map.id);
-    const count = hunt ? hunt.items.length : 0;
-    const mood = moodFor(this.map.id);
-    const weather = WEATHER_LABELS[mood.weather];
-    return count > 0 ? `${weather} · ${count} odd objects` : `${weather} · free roam`;
   }
 
   /**
