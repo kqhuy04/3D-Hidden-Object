@@ -12,7 +12,7 @@ Odd Objects is an offline, casual 3D exploration game built with **Three.js**, *
 2. **No shopping list:** the HUD shows five `???` slots. An object's name is revealed only once it is in your pocket, so you are hunting *wrongness*, not ticking off nouns.
 3. **Pick up with E:** walk within reach, put the crosshair on the object, press **E**. It disappears from the world for good and the slot flips to its name.
 4. **No countdown:** the clock counts *up*. Rushing past the thing you are meant to notice is the wrong instinct, so nothing is timing you.
-5. **Ask a local:** the people in a map are not scenery. Walk up to one and press **E** — they stop, turn, and describe one still-missing object without naming it ("A box that browns bread and pops it up — and it wants a wall socket"). Each of the five is described once, nearest first, so nobody is stuck forever.
+5. **Ask a local:** the people in a map are not scenery. Walk up to one and press **E** — they stop, turn, and describe one still-missing object without naming it ("A box that browns bread and pops it up — and it wants a wall socket"). Each of the five is described once, nearest first, so nobody is stuck forever. Two maps ship no rigged people at all — **Chronos Hearth** and the **Japanese street** — so there the hunt is eyes only.
 6. **Touch the world:** doors open, wheels turn, lanterns light, bells ring, and a saddled horse can be ridden around the map with its own gait.
 7. **Finish:** when the fifth object is pocketed the results card shows the time you took and the names of all five.
 
@@ -28,7 +28,9 @@ Odd Objects is an offline, casual 3D exploration game built with **Three.js**, *
 | **SPACEBAR** | Jump |
 | **E** | Pick up the object nearest in reach — or open a door, light a lantern, ride a horse, ask a person |
 | **TAB** | Cycle between the things in reach when several are close |
+| **SHIFT** | Toggle between walking and running |
 | **C** | Toggle the crawl |
+| **V** | Toggle first / third person |
 | **ESCAPE** or **Pause Button** | Pause / Resume (stops the hunt clock) |
 
 ---

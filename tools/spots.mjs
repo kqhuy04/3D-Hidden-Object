@@ -6,8 +6,8 @@
 // kit's part names, so "put it on the picnic table" cannot be done by name. This
 // asks the collision triangles instead, which is what the game itself trusts.
 //
-// Usage: node tmp-spots.mjs <map-id> [maxCandidates]
-import { launch, waitForGame } from './tmp-cdp.mjs';
+// Usage: node tools/spots.mjs <map-id> [maxCandidates]
+import { launch, waitForGame } from './cdp.mjs';
 
 const mapId = process.argv[2];
 const MAX = Number(process.argv[3] ?? 40);

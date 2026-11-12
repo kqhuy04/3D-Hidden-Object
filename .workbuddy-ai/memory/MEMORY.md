@@ -121,7 +121,10 @@ Player-facing docs: `docs/START_SCREEN.md`, `MAP_SELECT.md`, `ATMOSPHERE.md`,
   to 0.1 s; headless runs at 1–3 fps). Drive `Game.update(1/60)`. Use browser-level
   `Input.dispatchKeyEvent` over CDP, not `dispatchEvent`.
 - **No harness may override the camera or teleport the player and then declare
-  success.** `tmp-pickable.mjs` is the gate.
+  success.** `tools/pickable.mjs` is the gate.
+- **Scratch starts with `tmp-` and is gitignored.** 245 one-off harnesses had been
+  committed across many sessions before that rule existed; a harness worth keeping
+  graduates to `tools/` (`pickable.mjs`, `spots.mjs`), the rest never leaves `tmp-`.
 - **A stopped loop does not draw.** `loop.stop()` then posing then a screenshot
   captures the *previous* frame; call `game.render()` first. A pose harness must
   also assert `game.pickupTarget === item` — a decoy standing in front of it

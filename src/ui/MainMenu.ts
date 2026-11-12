@@ -96,7 +96,8 @@ export class MainMenu {
             in a forest, a barrel in a chrome city. Walk close, press E. You are told
             what they are only after you find them. Wrong object three times and the
             hunt is over. Stuck? Ask one of the people in the map &mdash; they will
-            describe one still-missing object, once each.</em>
+            describe one still-missing object, once each. Not every map has someone
+            standing around.</em>
           </p>
           <button id="btn-close-controls" class="btn btn-small interactive-ui">Got it</button>
         </div>

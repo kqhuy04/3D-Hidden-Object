@@ -129,9 +129,9 @@ session once. Read the relevant section before changing that subsystem.
 - **Never judge input handling from the live loop under SwiftShader.** `GameLoop`
   clamps delta to 0.1 s and the headless renderer runs at 1–3 fps, so half a second of
   real time is frequently *zero* frames: "C did nothing" was really "no frame was
-  produced". Drive `Game.update(1/60)` in a loop (`tmp-crawl3.mjs`, `tmp-gears.mjs`).
+  produced". Drive `Game.update(1/60)` in a loop (`tools/pickable.mjs` shows the shape).
 - Never write a harness that overrides the camera or teleports the player into place
-  and then declares success. `tmp-pickable.mjs` is the gate: it places the body, lets
+  and then declares success. `tools/pickable.mjs` is the gate: it places the body, lets
   the follow camera settle over real frames, aims via `cameraController.targetYaw`, and
   asks the game. It does not touch the camera.
 - Use browser-level input (`Input.dispatchKeyEvent` over CDP), not

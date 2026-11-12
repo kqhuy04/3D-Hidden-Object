@@ -1,14 +1,14 @@
 // Can a player actually pick this up?
 //
-// The old harness (tmp-hunt.mjs) parked the camera two metres from each object
+// The old harness (the old hunt harness) parked the camera two metres from each object
 // and asked the game. That passed while the real game could not pick up
 // anything, because the reach test was measured from a camera that normally
 // sits eight metres behind the body. This one never touches the camera: it puts
 // the body next to the object and lets the follow camera settle on its own, so
 // it measures the game the player actually gets.
 //
-// Usage: node tmp-pickable.mjs <map-id> [outDir]
-import { launch, waitForGame } from './tmp-cdp.mjs';
+// Usage: node tools/pickable.mjs <map-id> [outDir]
+import { launch, waitForGame } from './cdp.mjs';
 import fs from 'node:fs';
 
 const mapId = process.argv[2];

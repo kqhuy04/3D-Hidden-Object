@@ -83,9 +83,9 @@ The meshes live in `public/assets/hidden/` and are downloaded by
 ## 3. The objects
 
 Twenty-two maps, five objects each: **110** in total. Positions come from
-the map's own collision geometry (`node tmp-spots.mjs <map-id>`), not from guesswork,
+the map's own collision geometry (`node tools/spots.mjs <map-id>`), not from guesswork,
 and every one is verified pickable from a natural standing spot with the real follow
-camera (`node tmp-pickable.mjs <map-id>`).
+camera (`node tools/pickable.mjs <map-id>`).
 
 A position of `ground` means the height is not written down: the object stands on
 whatever the collision resolver finds under that point, which is what keeps it from
@@ -378,7 +378,7 @@ pizza box at a campsite is just a pizza box.
 2. **Read the map's vocabulary.** `node tmp-keys.mjs <map-id>` prints the prop
    names the kit places, biggest first, which is what tells you what the map is
    made of — and therefore what cannot belong there.
-3. **Find candidate spots.** `node tmp-spots.mjs <map-id>` scans the map's own
+3. **Find candidate spots.** `node tools/spots.mjs <map-id>` scans the map's own
    collision triangles and prints two lists: `T` surfaces (a flat top between
    knee and chest height, i.e. a table, crate or bench, with the gap to the
    nearest standable point) and `G` open ground where a capsule fits. Node names
@@ -400,7 +400,7 @@ pizza box at a campsite is just a pizza box.
    winning coordinates to `tmp-place-<map-id>.json`. `node tmp-apply.mjs` copies
    those back into the data file. This is the cheap loop: one browser launch
    instead of one per attempt.
-8. **Verify for real.** `node tmp-pickable.mjs <map-id>` walks up to each object
+8. **Verify for real.** `node tools/pickable.mjs <map-id>` walks up to each object
    with the follow camera settling naturally — no camera override — and reports
    `OK` or `NOT PICKABLE` per object. This is the gate: a harness that parks the
    camera two metres out proves nothing about a camera that normally sits eight
@@ -439,7 +439,7 @@ brief line, the hint box, the crosshair and the pickup prompt.
 
 ## 6. Verification
 
-- **110/110 objects** are pickable: `node tmp-pickable.mjs <map-id>` walks up to
+- **110/110 objects** are pickable: `node tools/pickable.mjs <map-id>` walks up to
   each one with the follow camera settling on its own and asks the game's own
   `findTarget`. Every map reports `5/5`; there is no `NOT PICKABLE` line left.
 - **The reach bug that made the hunt unplayable is fixed.** Reach used to be
@@ -460,6 +460,6 @@ brief line, the hint box, the crosshair and the pickup prompt.
   at an asset that was never shipped, and the two rejected example assets (a
   pizza slice, a flat-screen TV) stay unused.
 
-Screenshots: `docs/hunt/`. `node tmp-pickable.mjs <map-id> <out-dir>` writes one
+Screenshots: `docs/hunt/`. `node tools/pickable.mjs <map-id> <out-dir>` writes one
 per object from the angle that actually works, which is also the quickest way to
 see that an object is sitting on something rather than floating.
