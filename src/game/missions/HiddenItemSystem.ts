@@ -214,6 +214,20 @@ export class HiddenItemSystem {
     });
   }
 
+  /**
+   * Hands the object over instead of destroying it.
+   *
+   * The find screen shows the thing you just picked up, turning it over for a
+   * couple of seconds. That needs the real object with its materials still
+   * intact, so the caller takes ownership: it is out of the hunt, out of the
+   * map, and it is the caller's job to free it when the screen closes.
+   */
+  public release(item: HiddenItem): THREE.Object3D {
+    item.found = true;
+    this.group.remove(item.object);
+    return item.object;
+  }
+
   public getItems(): readonly HiddenItem[] {
     return this.items;
   }

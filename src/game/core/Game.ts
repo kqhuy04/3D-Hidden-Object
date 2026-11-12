@@ -15,7 +15,6 @@ import { RenderQuality } from '../render/Quality';
 import { SunShadows } from '../render/SunShadows';
 import { Atmosphere } from '../render/Atmosphere';
 import { TargetOutline } from '../render/TargetOutline';
-import { FoundLabel } from '../render/FoundLabel';
 import { Cutscene } from '../render/Cutscene';
 import { NpcCrowd } from '../npc/NpcCrowd';
 import { Mounts } from '../npc/Mounts';
@@ -51,7 +50,6 @@ const TITLE_ONLY_MS = 2600;
 
 const _reachOrigin = new THREE.Vector3();
 /** Where the found-caption is written, reused so a pickup allocates nothing. */
-const _labelSpot = new THREE.Vector3();
 
 export class Game {
   private container: HTMLElement;
@@ -114,8 +112,6 @@ export class Game {
   private atmosphere: Atmosphere;
   /** Draws the rim around the object under the reticle, in the scene itself. */
   private outline = new TargetOutline();
-  /** The "You've found ..." caption that appears where an object was taken. */
-  private foundLabel = new FoundLabel();
   /** The people the kit already placed in the map, walking about. */
   private npcs: NpcCrowd;
   /** The props that answer to E — doors, wheels, bells, lanterns. */
@@ -276,7 +272,17 @@ export class Game {
    * lowest preset before the player had pressed Play.
    */
   private onFrameTime(frameMs: number): void {
-    if (this.state === GameState.PLAYING && this.isLoaded && !this.switching) {
+    if (
+      this.state === GameState.PLAYING &&
+      this.isLoaded &&
+      !this.switching &&
+      // The found screen blurs the whole viewport for a couple of seconds. That
+      // is a compositor pass the *effect* pays for, not the game: letting the
+      // scaler count it is how a three-second flourish walks the renderer down
+      // a preset and leaves the player at a lower resolution for the rest of
+      // the round. Same trap as the start screen's backdrop.
+      !this.ui.foundScreen.isShowing
+    ) {
       this.quality.tick(frameMs);
     }
     if (this.ui.settings.isOpen) this.ui.settings.setAutoStep(this.quality.getAutoStep());
@@ -337,7 +343,7 @@ export class Game {
     this.interactions.dispose();
     this.mounts.dispose();
     this.hiddenItems.clear();
-    this.foundLabel.clear();
+    this.ui.foundScreen.hide();
     this.pickupTarget = null;
     this.map = map;
 
@@ -494,9 +500,6 @@ export class Game {
       // What the reticle is currently outlining, so a probe can confirm the
       // rim follows the selection rather than a stale object.
       outline: this.outline,
-      // The caption that appears on a find, so a probe can read the name off it
-      // instead of trying to OCR a screenshot.
-      foundLabel: this.foundLabel,
       // The animated cast, so a probe can watch them move and check they stay
       // on the ground instead of judging it from a screenshot.
       npcs: this.npcs,
@@ -944,7 +947,7 @@ export class Game {
     // that were found: the map is the same, the guesses are fresh.
     this.selector.resetRound();
     this.outline.hide();
-    this.foundLabel.clear();
+    this.ui.foundScreen.hide();
 
     this.ui.showGameplay();
     this.titleUntil = 0;
@@ -1101,17 +1104,19 @@ export class Game {
     const item = selected.item;
     if (!item) return;
 
-    // Placed before the object is taken: the caption belongs to the spot the
-    // thing was standing on, and once it is pocketed there is nothing left to
-    // measure against. The ground is re-read so the caption cannot end up inside
-    // the table the object was sitting on.
-    this.showFoundLabel(item);
+    // The object leaves the map and goes to the found screen, which owns it and
+    // frees it when the veil lifts. Taking it here would dispose the geometry
+    // the screen is about to turn over.
+    const object = this.hiddenItems.release(item);
+    const found = this.hiddenItems.getFoundCount();
+    const total = this.hiddenItems.getItems().length;
 
-    this.hiddenItems.take(item);
     this.selector.clearSelection();
     this.pickupTarget = null;
     this.ui.hud.setPickupPrompt(false);
     this.outline.hide();
+
+    this.ui.foundScreen.show(object, item.placement.name, found, total);
 
     if (!this.roundManager.complete(item.placement.id)) return;
 
@@ -1120,23 +1125,6 @@ export class Game {
     // repeating both is the interface congratulating itself over the moment the
     // player was meant to be looking at. The strike banner stays: a mistake is
     // the one thing that has to arrive somewhere the eye is not.
-  }
-
-  /**
-   * Writes "You've found …" under the object that was just pocketed.
-   *
-   * The caption hangs below the object rather than over it: the player is
-   * looking at the thing, and covering it with its own name is the one place the
-   * text must not go. `centre` is the middle of the object's bounding sphere, so
-   * "below" is the centre minus the radius — then clamped up off the floor, which
-   * is what stops a caption on a tabletop object from ending up under the table.
-   */
-  private showFoundLabel(item: HiddenItem): void {
-    const centre = item.centre;
-    const below = centre.y - item.radius - 0.5;
-    const ground = this.collision.groundAt(centre.x, centre.z, centre.y);
-    _labelSpot.set(centre.x, Math.max(ground + 0.9, below), centre.z);
-    this.foundLabel.show(item.placement.name, _labelSpot, this.scene, this.camera.position);
   }
 
   /**
@@ -1174,13 +1162,9 @@ export class Game {
     // rain should keep falling behind the pause menu, and freezing it makes the
     // world look like a screenshot the moment the player stops to think.
     this.atmosphere.update(delta, this.player.getPosition());
-    // The glow breathes whether or not the player is moving, so it reads as a
-    // live highlight rather than a painted-on tint.
+    // The rim is static on purpose; the call stays so the frame loop has one
+    // shape for "things that follow the selection".
     this.outline.update(delta);
-    // The caption turns whether or not the round is still running: the fifth
-    // object ends the round, and freezing the caption on that frame would make
-    // the last find the only one that does not get one.
-    this.foundLabel.update(delta);
     // The people keep walking behind the pause menu, like the weather does.
     this.npcs.update(delta, this.player.getPosition());
     // Doors that were left mid-swing finish their swing, and a lamp that was
@@ -1286,13 +1270,7 @@ export class Game {
     const selected = this.selector.getSelected();
     this.pickupTarget = selected?.item ?? null;
 
-    // The caption gets the frame to itself for its three seconds. A prompt for
-    // the *next* prop, flickering on while "You've found …" is still turning
-    // under the last one, is the interface talking over itself — and the prompt
-    // box sits exactly where the caption is. The selection still resolves every
-    // frame, so E keeps working; only the telling of it waits.
-    const showing = this.foundLabel.isShowing;
-    const visible = selected !== null && !showing;
+    const visible = selected !== null;
     const canCycle = this.selector.getCandidates().length > 1;
     const label =
       selected?.kind === 'action' ? (selected.action?.label() ?? 'Use') : 'Pick up';

@@ -2398,3 +2398,98 @@ canvas {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================================================
+   FOUND — the veil that comes down when the right object is picked up
+
+   The game keeps running underneath: this is a veil, not a modal, and it takes
+   no input at all. It blurs what is behind it with a backdrop filter, which is
+   the compositor's work rather than the renderer's — there is no post-processing
+   chain in this project and this does not add one.
+
+   The object turning in the middle is drawn on its own transparent canvas above
+   the veil, so it stays sharp while everything behind it goes soft. That is the
+   whole point of the effect: the world drops away and the thing you found does
+   not.
+   ========================================================================= */
+
+.found-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: grid;
+  place-items: center;
+  /* No clicks. The player is still walking. */
+  pointer-events: none;
+  background: rgba(244, 236, 217, 0.38);
+  backdrop-filter: blur(13px) saturate(0.86);
+  -webkit-backdrop-filter: blur(13px) saturate(0.86);
+  animation: foundIn 460ms ease-out;
+}
+
+.found-screen.hidden {
+  display: none;
+}
+
+/* Fading out is a transition on opacity; `display: none` comes after it, from
+   the timer in FoundScreen, because an element cannot transition out of
+   `display: none`. */
+.found-screen.is-leaving {
+  opacity: 0;
+  transition: opacity 460ms ease-in;
+}
+
+.found-card {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.found-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(54px, 8.4vw, 100px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  /* Hard offset, never a blur — the same rule as every card in the interface. */
+  text-shadow: 4px 4px 0 rgba(25, 21, 16, 0.09);
+}
+
+.found-well {
+  width: clamp(200px, 26vh, 300px);
+  height: clamp(200px, 26vh, 300px);
+  margin: 10px 0 8px;
+}
+
+.found-stage-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.found-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2.2vw, 27px);
+  color: var(--ink);
+}
+
+.found-count {
+  margin: 7px 0 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+@keyframes foundIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

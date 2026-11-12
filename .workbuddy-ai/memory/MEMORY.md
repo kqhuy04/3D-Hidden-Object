@@ -66,6 +66,13 @@ Player-facing docs: `docs/START_SCREEN.md`, `MAP_SELECT.md`, `ATMOSPHERE.md`,
   to the bottom preset, so every round began at 360p with shadows off.
 - **No post-processing chain.** `Game.render()` is one `renderer.render`;
   `antialias: true` is the only AA. `MIN_SCALE` is 0.80 (0.55 read as "trông rất xấu").
+- **The selection is a rim, not a pulse** (the user asked for the outline back).
+  `TargetOutline` adds an inverted hull per mesh — collect the meshes into an array
+  *first*; adding a hull during `traverse` walks into it and recurses until the stack
+  dies. `update()` is a no-op on purpose.
+- **An in-world caption must start aimed at the camera, be ~2.9 m wide, and use two
+  back-to-back planes** — otherwise it spawns edge-on as a white sliver, or mirrors
+  itself as it spins. `FoundLabel`; the pickup prompt hides while it is up.
 - **A GLB arrives in its bind pose (a T for Mixamo).** Build the clone detached, load
   the animator, step the mixer once, then swap in — add-then-await flashes a T-pose.
 - **Clip JSONs are cached module-wide in `CharacterAnimator`** and

@@ -4,6 +4,7 @@ import { CharacterAnimator } from './CharacterAnimator';
 import { PlayerController } from './PlayerController';
 import { WorldCollision } from '../world/WorldCollision';
 import { GAME_CONFIG } from '../../data/gameConfig';
+import { stopCullingAnimatedParts } from '../render/skinnedCulling';
 
 export class Player {
   private characterGroup: THREE.Group = new THREE.Group();
@@ -47,6 +48,12 @@ export class Player {
 
           normaliseHeight(this.characterModel);
           this.characterGroup.add(this.characterModel);
+
+          // The body is about to be animated, which invalidates the bounding
+          // sphere three caches for a skinned mesh on its first frustum test —
+          // the coat and the hands are separate meshes, and a stale sphere for
+          // one of them is a sleeve that vanishes when the camera turns.
+          stopCullingAnimatedParts(this.characterModel);
 
           // Setup animator
           const tAnimator = performance.now();

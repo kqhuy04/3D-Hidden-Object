@@ -5,6 +5,7 @@ import { ResultsScreen } from './ResultsScreen';
 import { MapSelect } from './MapSelect';
 import { SettingsScreen } from './SettingsScreen';
 import { DebugOverlay } from './DebugOverlay';
+import { FoundScreen } from './FoundScreen';
 import { RoundItem } from '../game/missions/RoundManager';
 
 export class UIManager {
@@ -15,6 +16,8 @@ export class UIManager {
   public mapSelect: MapSelect;
   public settings: SettingsScreen;
   public debugOverlay: DebugOverlay;
+  /** The blur-and-turn that plays when the right object is picked up. */
+  public foundScreen: FoundScreen;
 
   private rootContainer: HTMLElement;
   /** Shown while a map is being swapped, over the (now empty) world. */
@@ -38,6 +41,7 @@ export class UIManager {
     this.mapSelect = new MapSelect();
     this.settings = new SettingsScreen();
     this.debugOverlay = new DebugOverlay();
+    this.foundScreen = new FoundScreen();
 
     this.loadingElement = document.createElement('div');
     this.loadingElement.id = 'map-loading-screen';
@@ -75,6 +79,7 @@ export class UIManager {
     this.rootContainer.appendChild(this.resultsScreen.getElement());
     this.rootContainer.appendChild(this.mapSelect.getElement());
     this.rootContainer.appendChild(this.settings.getElement());
+    this.rootContainer.appendChild(this.foundScreen.getElement());
     this.rootContainer.appendChild(this.loadingElement);
     this.rootContainer.appendChild(this.contextElement);
     this.rootContainer.appendChild(this.titleElement);

@@ -3,6 +3,7 @@ import { WorldCollision } from '../world/WorldCollision';
 import { animateKitHumanoid, ActorAnimator, isHumanoid } from './KitClips';
 import { animateQuadruped, isQuadruped } from './Quadruped';
 import { InteractableAction } from '../interact/Interactions';
+import { stopCullingAnimatedParts } from '../render/skinnedCulling';
 
 /**
  * The people already standing in a map, given something to do.
@@ -281,6 +282,7 @@ export class NpcCrowd {
           const animator: ActorAnimator = animal
             ? animateQuadruped(skeleton, unit)
             : await animateKitHumanoid(skeleton, unit);
+          stopCullingAnimatedParts(unit);
           const home = unit.getWorldPosition(new THREE.Vector3());
           return {
             unit,

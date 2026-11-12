@@ -31,8 +31,16 @@ import * as THREE from 'three';
  * cup.
  */
 
-/** Warm rust, the accent the interface already uses for "this one". */
-const OUTLINE_COLOR = 0xff7a45;
+/**
+ * Warm white, the paper colour of the interface lifted a shade.
+ *
+ * It was rust. On the sand and timber of most kits a rust rim sat close enough
+ * to the prop's own browns to disappear at a glance, which is the one thing a
+ * highlight cannot do; white separates from every palette in the game and reads
+ * as a drawn line rather than as part of the object. The user asked for it by
+ * name: "tôi muốn chuyển thành viền trắng cho dễ nhìn".
+ */
+const OUTLINE_COLOR = 0xfff6e2;
 
 /** Rim thickness as a fraction of the mesh's own bounding radius. */
 const THICKNESS_RATIO = 0.075;
