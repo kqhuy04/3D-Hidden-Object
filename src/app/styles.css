@@ -1846,12 +1846,41 @@ canvas {
    a record, not a selling point — and moss once it is cleared, the one place
    in the interface that colour means "done". */
 .map-card-record {
-  margin-top: 2px;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-mono);
   font-size: 9.5px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink-faint);
+}
+
+/* Three stars per map, lit by how much of it has been found. The dark ones are
+   ink at low opacity rather than a hollow outline: an outline reads as "empty
+   slot", and these are places, not slots. */
+.map-card-stars {
+  display: inline-flex;
+  gap: 3px;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.map-star {
+  color: rgba(25, 21, 16, 0.17);
+}
+
+.map-star.is-on {
+  color: var(--rust);
+  /* Stamped, not glowing — the same hard offset the rest of the interface
+     uses to sit a mark on paper. */
+  text-shadow: 1px 1px 0 rgba(25, 21, 16, 0.25);
+}
+
+.map-card-time {
+  font-variant-numeric: tabular-nums;
 }
 
 .map-card.is-cleared .map-card-record {

@@ -8,6 +8,35 @@ const PER_PAGE = 6;
 const COLUMNS = 3;
 
 /**
+ * How many stars a map has earned, from how many of its five were found.
+ *
+ * Three stars over five objects is a coarse scale on purpose: it is a rating,
+ * not a progress bar, and a progress bar on twenty-two cards is twenty-two
+ * numbers to read. One star for having started (one or two found), two for most
+ * of the way (three or four), three for the lot.
+ */
+function starsFor(found: number): number {
+  if (found >= 5) return 3;
+  if (found >= 3) return 2;
+  if (found >= 1) return 1;
+  return 0;
+}
+
+/**
+ * Three stars, lit or dark. Always three: a card that shows no stars and a card
+ * that shows three dark ones are the same information, and the second one says
+ * there is something here to earn.
+ */
+function starRow(found: number): string {
+  const earned = starsFor(found);
+  let out = '';
+  for (let i = 0; i < 3; i++) {
+    out += `<span class="map-star${i < earned ? ' is-on' : ''}">\u2605</span>`;
+  }
+  return `<span class="map-card-stars" aria-label="${earned} of 3 stars">${out}</span>`;
+}
+
+/**
  * Map browser: every map the build knows about, as a card you can click.
  *
  * It is a *view*, not a router — it reports the chosen id and lets the game
@@ -157,11 +186,9 @@ export class MapSelect {
     const cleared = found >= 5;
     if (cleared) card.classList.add('is-cleared');
 
-    const recordLine = found > 0
-      ? `<span class="map-card-record">${cleared ? 'Cleared' : `${found} of 5 found`}${
-          record?.bestSeconds != null ? ` &middot; ${formatClock(record.bestSeconds)}` : ''
-        }</span>`
-      : '';
+    const recordLine = `<span class="map-card-record">${starRow(found)}${
+      record?.bestSeconds != null ? ` <span class="map-card-time">${formatClock(record.bestSeconds)}</span>` : ''
+    }</span>`;
 
     card.innerHTML = `
       <span class="map-card-frame">
