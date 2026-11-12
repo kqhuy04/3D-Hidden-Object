@@ -69,10 +69,20 @@ Player-facing docs: `docs/START_SCREEN.md`, `MAP_SELECT.md`, `ATMOSPHERE.md`,
 - **The selection is a rim, not a pulse** (the user asked for the outline back).
   `TargetOutline` adds an inverted hull per mesh — collect the meshes into an array
   *first*; adding a hull during `traverse` walks into it and recurses until the stack
-  dies. `update()` is a no-op on purpose.
-- **An in-world caption must start aimed at the camera, be ~2.9 m wide, and use two
-  back-to-back planes** — otherwise it spawns edge-on as a white sliver, or mirrors
-  itself as it spins. `FoundLabel`; the pickup prompt hides while it is up.
+  dies. `update()` is a no-op on purpose. The rim is **cream `#fff6e2`**: rust
+  disappeared into the timber-and-sand kits.
+- **A find takes the screen, it does not label the world.** `FoundScreen` +
+  `FoundStage`: a `backdrop-filter` veil, "Found", the real object turning on its
+  own transparent canvas above the blur, name and count below. The game keeps
+  running and the veil takes no input. **Hold the adaptive scaler off while it is
+  up** — the same trap as the start screen's blur. `HiddenItemSystem.release`
+  hands the object over; `take` would dispose what the screen is about to show.
+- **A skinned mesh's cached bounding sphere is a lie once it animates.**
+  `SkinnedMesh.boundingSphere` is computed on the first frustum test from that
+  frame's pose and never recomputed; on the kits it came out at 0.60–0.82× the
+  geometry it encloses, so people lost their torsos when the camera turned.
+  `stopCullingAnimatedParts` for every body the game animates; static kit props
+  keep culling, their bind pose *is* their pose.
 - **A GLB arrives in its bind pose (a T for Mixamo).** Build the clone detached, load
   the animator, step the mixer once, then swap in — add-then-await flashes a T-pose.
 - **Clip JSONs are cached module-wide in `CharacterAnimator`** and
