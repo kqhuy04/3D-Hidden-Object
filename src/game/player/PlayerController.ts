@@ -93,6 +93,16 @@ const STAIR_MAX_RISE = 0.6;
  *  to keep the camera and the reach test sensible. */
 const CRAWL_HEIGHT = 0.75;
 
+/**
+ * How far below the top of the capsule the eyes are, in metres.
+ *
+ * The first-person lens used to be a constant 1.62 m, which is correct for a
+ * 1.75 m standing capsule and wrong for everything else: pressing C put the
+ * body on its forearms and left the camera looking over the top of it. Reading
+ * the eye from the capsule means the crawl lowers the view by construction.
+ */
+const EYE_DROP = 0.13;
+
 /** How fast a ladder is climbed, in metres per second. */
 const CLIMB_SPEED = 1.4;
 
@@ -395,6 +405,19 @@ export class PlayerController {
     this.running = on;
   }
 
+  /**
+   * Turns the body to a heading on the spot.
+   *
+   * Used when the rod comes out: the player is about to cast at whatever the
+   * camera is pointing at, and a body that swivels 180° over the first half
+   * second of the animation would drag the rod across the screen.
+   */
+  public setFacing(yaw: number): void {
+    this.targetRotationY = yaw;
+    this.currentRotationY = yaw;
+    this.characterGroup.rotation.y = yaw;
+  }
+
   public isRunning(): boolean {
     return this.running;
   }
@@ -415,6 +438,18 @@ export class PlayerController {
 
   public getGait(): Gait {
     return this.gait;
+  }
+
+  /**
+   * Advances the animation without moving the body.
+   *
+   * Fishing freezes the controller — the feet are planted and the rod owns the
+   * whole body — but the mixer still has to run or the cast would be a still
+   * frame. Everything the controller does on its own (gravity, collision, the
+   * walk cycle) is deliberately skipped.
+   */
+  public poseOnly(deltaSeconds: number): void {
+    this.animator.update(deltaSeconds);
   }
 
   public isClimbing(): boolean {
@@ -684,6 +719,16 @@ export class PlayerController {
    */
   public getGroundY(): number {
     return this.groundY;
+  }
+
+  /**
+   * Height of the eyes above the feet, in metres.
+   *
+   * From the capsule rather than a constant, so the crawl carries the camera
+   * down with it. 1.75 - 0.13 is the 1.62 the standing view was tuned at.
+   */
+  public getEyeHeight(): number {
+    return this.capsuleHeight - EYE_DROP;
   }
 
   /** Contacts resolved on the last moving frame, used by the collision debug view. */

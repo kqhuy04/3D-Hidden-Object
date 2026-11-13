@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { WorldCollision } from '../world/WorldCollision';
 import { animateQuadruped, isQuadruped, QuadrupedAnimator } from './Quadruped';
 import { Player } from '../player/Player';
-import { InteractableAction } from '../interact/Interactions';
+import { InteractableAction } from '../interact/InteractableAction';
 
 /**
  * The animals you can get on.

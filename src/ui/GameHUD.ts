@@ -20,11 +20,13 @@ export class GameHUD {
   private hintBox: HTMLDivElement;
   private hintText: HTMLSpanElement;
   private pickupPrompt: HTMLDivElement;
+  private pickupAlt: HTMLSpanElement;
   private pickupLabel: HTMLSpanElement;
   private pickupCycle: HTMLSpanElement;
   private strikesBox: HTMLDivElement;
   private pauseBtn: HTMLButtonElement;
   private viewBtn: HTMLButtonElement;
+  private logBtn: HTMLButtonElement;
   private reticle: HTMLDivElement;
   private fpsChip: HTMLDivElement;
   private fpsValue: HTMLSpanElement;
@@ -33,6 +35,7 @@ export class GameHUD {
 
   private onPauseCallback: (() => void) | null = null;
   private onViewCallback: (() => void) | null = null;
+  private onLogCallback: (() => void) | null = null;
   private feedbackTimeout: number | null = null;
   private audio = AudioEngine.getInstance();
 
@@ -72,6 +75,9 @@ export class GameHUD {
 
       <!-- Top Right: view toggle and pause -->
       <div class="hud-panel hud-top-right">
+        <button id="btn-hud-log" class="btn-icon-pause interactive-ui" title="Catch log (F)">
+          LOG
+        </button>
         <button id="btn-hud-view" class="btn-icon-pause interactive-ui view-toggle" title="First / third person (V)">
           3P
         </button>
@@ -118,11 +124,13 @@ export class GameHUD {
     this.hintText = this.element.querySelector('#hud-hint-text')!;
     this.feedbackBanner = this.element.querySelector('#hud-feedback-banner')!;
     this.pickupPrompt = this.element.querySelector('#hud-pickup-prompt')!;
+    this.pickupAlt = this.element.querySelector('.pickup-alt')!;
     this.pickupLabel = this.element.querySelector('#hud-pickup-label')!;
     this.pickupCycle = this.element.querySelector('#hud-pickup-cycle')!;
     this.strikesBox = this.element.querySelector('#hud-strikes')!;
     this.pauseBtn = this.element.querySelector('#btn-hud-pause')!;
     this.viewBtn = this.element.querySelector('#btn-hud-view')!;
+    this.logBtn = this.element.querySelector('#btn-hud-log')!;
     this.reticle = this.element.querySelector('.aim-reticle')!;
     this.fpsChip = this.element.querySelector('#hud-fps')!;
     this.fpsValue = this.element.querySelector('#hud-fps-value')!;
@@ -148,6 +156,12 @@ export class GameHUD {
       this.audio.playClick();
       this.onViewCallback?.();
     });
+
+    this.logBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.audio.playClick();
+      this.onLogCallback?.();
+    });
   }
 
   /** `3P` / `1P` on the toggle, so the button also reports the current view. */
@@ -158,6 +172,11 @@ export class GameHUD {
 
   public onViewToggle(callback: () => void): void {
     this.onViewCallback = callback;
+  }
+
+  /** The catch log is one key away, and one button away for a mouse player. */
+  public onCatchLog(callback: () => void): void {
+    this.onLogCallback = callback;
   }
 
   /** One line of flavour at the top of the list, set per map. */
@@ -264,9 +283,12 @@ export class GameHUD {
    * picks things up, opens doors, turns wheels and gets you on a horse, and a
    * prompt that always said "Pick up" would be lying about three of those.
    */
-  public setPickupPrompt(visible: boolean, canCycle = false, label = 'Pick up'): void {
+  public setPickupPrompt(visible: boolean, canCycle = false, label = 'Pick up', alt = true): void {
     this.pickupPrompt.classList.toggle('hidden', !visible);
     this.pickupCycle.classList.toggle('hidden', !visible || !canCycle);
+    // "or click" is a shortcut for the same verb. It has to go whenever the
+    // click does something else — while fishing, the left button casts.
+    this.pickupAlt.classList.toggle('hidden', !visible || !alt);
     if (this.pickupLabel.textContent !== label) this.pickupLabel.textContent = label;
     // The reticle is the "you are on target" signal; it opens up and turns rust
     // the moment something is in reach, a beat before the label is read.

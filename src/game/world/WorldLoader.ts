@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import { CollisionGeometry } from './CollisionGeometry';
 import { WorldCollision, ClimbVolume } from './WorldCollision';
-import { PROP_REMOVALS, PropRemoval } from '../../data/mapFixes';
+import { PROP_REMOVALS, PROP_SHIFTS, PropRemoval, PropShift } from '../../data/mapFixes';
 import { GAME_CONFIG } from '../../data/gameConfig';
 
 export class WorldLoader {
@@ -13,6 +13,8 @@ export class WorldLoader {
   private collisionGeometry = new CollisionGeometry();
   /** Where the load time went, in milliseconds. Logged once per map. */
   public timings: Record<string, number> = {};
+  /** The map's water, if it has any. Kept after the load for the fishing rod. */
+  private water: WaterSurface | null = null;
 
   constructor() {
     this.loader = new GLTFLoader();
@@ -83,7 +85,9 @@ export class WorldLoader {
     // no depth to it at all and the character appears to walk on the surface.
     // Dig the bed out from under it before the heightfield is rasterised, so
     // what the player walks on is the bottom of the lake.
-    this.timings.dredge = Math.round(dredgeWaterBeds(root, terrainMeshes));
+    const water = buildWaterSurface(root, terrainMeshes);
+    this.water = water;
+    this.timings.dredge = water ? Math.round(dredgeWaterBeds(terrainMeshes, water)) : 0;
     const terrainSet = new Set<THREE.Object3D>(terrainMeshes);
     collision.setTerrainMeshes(terrainMeshes);
     this.timings.terrain = Math.round(performance.now() - tTerrain);
@@ -95,6 +99,19 @@ export class WorldLoader {
     // out of sight. Bend the decal onto the terrain before the collider is
     // built, so what the player sees and what they walk on agree.
     this.timings.scatter = Math.round(conformGroundScatter(root, collision));
+
+    // Props that float or stand are placed at the author's eye height, not on
+    // the surface they belong to: boats hang over the lake, lily pads hover, a
+    // camper's boots sink into the sand. Settled here, after the bed has been
+    // dug and the ground can be asked for a height, and before the collider is
+    // built from them.
+    root.updateMatrixWorld(true);
+    this.timings.settle = Math.round(settleProps(root, collision, water));
+    const shifts = mapId ? PROP_SHIFTS[mapId] : undefined;
+    if (shifts?.length) {
+      applyPropShifts(root, shifts);
+      root.updateMatrixWorld(true);
+    }
 
     // Collision is built from the real triangles of every solid mesh, so props
     // block by their actual shape instead of an enclosing bounding box. The
@@ -148,11 +165,25 @@ export class WorldLoader {
       disposeObject(child);
     }
     this.timings = {};
+    this.water = null;
     this.collisionGeometry.clear();
   }
 
   public getCollisionGeometry(): CollisionGeometry {
     return this.collisionGeometry;
+  }
+
+  /**
+   * The water sheet the map was built with, or null on a map with none.
+   *
+   * Read by the fishing system, which needs three answers the collider cannot
+   * give: where the surface is, how deep the water is under a point, and
+   * whether a point is open water at all. The sheet wanders 30 cm across the
+   * lake, so every one of those has to come from the sheet and never from a
+   * constant.
+   */
+  public getWater(): WaterSurface | null {
+    return this.water;
   }
 }
 
@@ -391,7 +422,15 @@ function findTerrainMeshes(root: THREE.Object3D): THREE.Mesh[] {
 
   const collect = (node: THREE.Object3D): void => {
     const mesh = node as THREE.Mesh;
-    if (mesh.isMesh && !seen.has(mesh)) {
+    // The campground puts the water sheet *inside* the terrain group, so
+    // sweeping the group's meshes drags the lake in with the land. It has to be
+    // filtered out here and not one level up: the group is named
+    // `campground-lake-terrain`, which is exactly what makes it ground.
+    //
+    // Left in, the sheet became part of the heightfield, the player stood on the
+    // water surface instead of in it, and the bed dredge below moved the lake
+    // down with the bed so the depth never changed.
+    if (mesh.isMesh && !seen.has(mesh) && !/water/i.test(mesh.name || '')) {
       seen.add(mesh);
       meshes.push(mesh);
     }
@@ -559,168 +598,539 @@ function rungColumn(
 
 
 /**
- * Digs the bed out from under a draped water sheet.
+ * The map's water, read off the water mesh itself.
  *
- * The campground's water is not a plane at a fixed level — every one of its
- * vertices sits a centimetre above the terrain it covers. There is therefore no
- * depth anywhere: the character stands on the ground with the waterline at
- * their ankles, which reads as walking on top of the lake.
+ * The kits ship water as a *surface*, not as a level. The campground's lake is
+ * a sheet whose height wanders 30 cm across the map, so a single `waterLevel`
+ * constant is wrong at one end of the shore or the other — the old one was 30 cm
+ * above the sheet everywhere. Anything that needs to know where the water is
+ * asks this instead of a constant.
  *
- * Lowering the terrain under the sheet by `BED_DEPTH` gives the water somewhere
- * to be. The cut is tapered over the first metre and a half inside the
- * shoreline, because a vertical step at the water's edge would show as a trench
- * with a sheet of water floating over it.
- *
- * Only terrain that the water actually covers *and* that is within `BED_SNAP`
- * of it is touched: a pond on a cliff does not drag the cliff down with it.
+ * The sheet is rasterised into 1 m cells and sampled bilinearly: a vertex
+ * lookup leaves holes wherever the sheet is coarser than the grid, and a hole is
+ * a cell that keeps its authored height and reads as ground under the water.
  */
-const BED_DEPTH = 0.5;
-const BED_TAPER = 1.5;
-const BED_SNAP = 0.7;
+export interface WaterSurface {
+  /** Height of the sheet at (x, z), or null where the sheet does not reach. */
+  heightAt(x: number, z: number): number | null;
+  /** Metres from the nearest shoreline. 0 at the waterline itself. */
+  shoreDistance(x: number, z: number): number;
+  /** True when the sheet is above the ground here, i.e. there is open water. */
+  isOpen(x: number, z: number): boolean;
+  /**
+   * Metres of water between the sheet and the bed, or 0 on land.
+   *
+   * `isOpen` answers "is there water", which is a cell test; this answers "how
+   * much", which is what a float needs. A bobber dropped in five centimetres of
+   * puddle at the waterline sits on the sand; the cast has to reach the shelf.
+   */
+  depthAt(x: number, z: number): number;
+  /**
+   * The nearest patch of water at least `minDepth` deep, searched outwards from
+   * (x, z) in rings up to `maxRadius` metres.
+   *
+   * The lake is not where the map spawns — the campground's spawn is a clearing
+   * 25 m from the shore — so "put the fish in the water" needs a search rather
+   * than a position. Null when the map has no water within reach.
+   */
+  nearestOpenWater(
+    x: number,
+    z: number,
+    maxRadius: number,
+    minDepth?: number
+  ): { x: number; z: number; y: number } | null;
+}
+
+/** Marker for "the sheet is not here", so the grid can be one Float32Array. */
+const NO_WATER = -1e9;
+const SQRT2 = Math.SQRT2;
+
 /**
- * Depth kept even at the water's edge, in metres.
+ * Rasterises every water mesh into a height grid, works out the shoreline, and
+ * makes the sheet see-through so a wading body shows below the waterline.
  *
- * The taper exists so the shoreline does not become a trench, but a taper that
- * reaches zero leaves the shallows exactly as they were — and on this map the
- * shallows are most of the lake. 18 cm is ankle-deep, still under the 35 cm
- * step limit, so the player can always wade back out.
+ * The transparency is done here rather than in the material data because the
+ * kits ship the sheet opaque, and an opaque sheet hides the half of the player
+ * that is under it — which is the difference between wading and standing on the
+ * lake. Materials already blended by the kit are left at their own opacity.
  */
-const BED_MIN_DEPTH = 0.18;
-
-function dredgeWaterBeds(root: THREE.Object3D, terrainMeshes: THREE.Mesh[]): number {
-  const started = performance.now();
-
-  const waterNodes: THREE.Object3D[] = [];
+function buildWaterSurface(root: THREE.Object3D, terrainMeshes: THREE.Mesh[]): WaterSurface | null {
+  const waterMeshes = new Set<THREE.Mesh>();
   root.traverse((node) => {
     if (!/water/i.test(node.name || '')) return;
     // The kits wrap water in a group; the built-in campground names the mesh
     // itself. Both are water; only a leaf with no geometry is not.
     if (node.children.length === 0 && !(node as THREE.Mesh).isMesh) return;
-    waterNodes.push(node);
+    node.traverse((child) => {
+      const mesh = child as THREE.Mesh;
+      if (mesh.isMesh && mesh.geometry) waterMeshes.add(mesh);
+    });
   });
-  if (waterNodes.length === 0 || terrainMeshes.length === 0) return 0;
+  if (waterMeshes.size === 0) return null;
 
-  // A 1 m grid of "there is water over this cell", holding the surface height.
-  // Rasterised from the sheet's own triangles rather than sampled from its
-  // vertices: the sheet is coarse — a vertex every 80 cm — so a vertex lookup
-  // leaves holes, and filling them by widening the search would dig the bank
-  // outside the shoreline as well as the bed inside it.
-  const mask = new Map<string, number>();
   const a = new THREE.Vector3();
   const b = new THREE.Vector3();
   const c = new THREE.Vector3();
 
-  for (const water of waterNodes) {
-    water.updateMatrixWorld(true);
-    water.traverse((child) => {
-      const mesh = child as THREE.Mesh;
-      if (!mesh.isMesh || !mesh.geometry) return;
+  // --- bounds ------------------------------------------------------------
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minZ = Infinity;
+  let maxZ = -Infinity;
+  for (const mesh of waterMeshes) {
+    mesh.updateMatrixWorld(true);
+    const position = mesh.geometry.getAttribute('position');
+    if (!position) continue;
+    for (let i = 0; i < position.count; i++) {
+      a.fromBufferAttribute(position, i).applyMatrix4(mesh.matrixWorld);
+      if (a.x < minX) minX = a.x;
+      if (a.x > maxX) maxX = a.x;
+      if (a.z < minZ) minZ = a.z;
+      if (a.z > maxZ) maxZ = a.z;
+    }
+  }
+  if (!Number.isFinite(minX)) return null;
 
-      // Water that is drawn opaque hides whatever is under it, so a body
-      // standing in ankle-deep water looks like a body standing *on* water —
-      // the legs simply stop at the surface. Blending the sheet lets the
-      // submerged half of the character show through, tinted, which is what
-      // makes wading read as wading.
-      const material = mesh.material as THREE.Material | THREE.Material[];
-      const first = Array.isArray(material) ? material[0] : material;
-      if (first && !first.transparent) {
-        const clone = first.clone();
-        clone.transparent = true;
-        clone.opacity = 0.72;
-        clone.depthWrite = false;
-        mesh.material = Array.isArray(material)
-          ? material.map((m, i) => (i === 0 ? clone : m))
-          : clone;
+  const cols = Math.ceil(maxX - minX) + 2;
+  const rows = Math.ceil(maxZ - minZ) + 2;
+  const cellOf = (x: number, z: number): number =>
+    Math.floor(z - minZ) * cols + Math.floor(x - minX);
+
+  // --- the sheet, one height per cell ------------------------------------
+  // Every cell a triangle's footprint touches, not just the ones whose centre
+  // it covers: a triangle that straddles a cell boundary without covering its
+  // centre would otherwise leave a hole, and a hole is ground at water level.
+  const sheet = new Float32Array(cols * rows).fill(NO_WATER);
+  for (const mesh of waterMeshes) {
+    const material = mesh.material as THREE.Material | THREE.Material[];
+    const first = Array.isArray(material) ? material[0] : material;
+    if (first && first.transparent && first.opacity > 0.75) {
+      const clone = first.clone();
+      clone.opacity = 0.6;
+      clone.depthWrite = false;
+      mesh.material = Array.isArray(material) ? material.map((m, i) => (i === 0 ? clone : m)) : clone;
+    } else if (first && !first.transparent) {
+      const clone = first.clone();
+      clone.transparent = true;
+      clone.opacity = 0.6;
+      clone.depthWrite = false;
+      mesh.material = Array.isArray(material) ? material.map((m, i) => (i === 0 ? clone : m)) : clone;
+    }
+
+    const position = mesh.geometry.getAttribute('position');
+    if (!position) continue;
+    const index = mesh.geometry.getIndex();
+    const count = index ? index.count : position.count;
+    for (let i = 0; i + 2 < count; i += 3) {
+      a.fromBufferAttribute(position, index ? index.getX(i) : i).applyMatrix4(mesh.matrixWorld);
+      b.fromBufferAttribute(position, index ? index.getX(i + 1) : i + 1).applyMatrix4(mesh.matrixWorld);
+      c.fromBufferAttribute(position, index ? index.getX(i + 2) : i + 2).applyMatrix4(mesh.matrixWorld);
+
+      const y = (a.y + b.y + c.y) / 3;
+      const x0 = Math.floor(Math.min(a.x, b.x, c.x) - minX);
+      const x1 = Math.floor(Math.max(a.x, b.x, c.x) - minX);
+      const z0 = Math.floor(Math.min(a.z, b.z, c.z) - minZ);
+      const z1 = Math.floor(Math.max(a.z, b.z, c.z) - minZ);
+      if (x1 - x0 > 40 || z1 - z0 > 40) continue; // a degenerate sheet
+
+      for (let cz = z0; cz <= z1; cz++) {
+        for (let cx = x0; cx <= x1; cx++) {
+          const k = cz * cols + cx;
+          if (k < 0 || k >= sheet.length) continue;
+          if (sheet[k] === NO_WATER || y > sheet[k]) sheet[k] = y;
+        }
       }
-      const geometry = mesh.geometry;
-      const position = geometry.getAttribute('position');
-      if (!position) return;
-      const index = geometry.getIndex();
-      const count = index ? index.count : position.count;
+    }
+  }
 
-      for (let i = 0; i + 2 < count; i += 3) {
-        a.fromBufferAttribute(position, index ? index.getX(i) : i).applyMatrix4(mesh.matrixWorld);
-        b.fromBufferAttribute(position, index ? index.getX(i + 1) : i + 1).applyMatrix4(mesh.matrixWorld);
-        c.fromBufferAttribute(position, index ? index.getX(i + 2) : i + 2).applyMatrix4(mesh.matrixWorld);
+  // --- the ground, one height per cell -----------------------------------
+  // The lowest terrain vertex in the cell: a cell holding both bank and bed
+  // counts as water, which pushes the computed shoreline half a cell onto the
+  // bank. Harmless, because the dredge gives the waterline itself zero depth.
+  const ground = new Float32Array(cols * rows).fill(Infinity);
+  const p = new THREE.Vector3();
+  for (const mesh of terrainMeshes) {
+    const position = mesh.geometry.getAttribute('position');
+    if (!position) continue;
+    mesh.updateMatrixWorld(true);
+    for (let i = 0; i < position.count; i++) {
+      p.fromBufferAttribute(position, i).applyMatrix4(mesh.matrixWorld);
+      const k = cellOf(p.x, p.z);
+      if (k < 0 || k >= ground.length) continue;
+      if (p.y < ground[k]) ground[k] = p.y;
+    }
+  }
 
-        const y = (a.y + b.y + c.y) / 3;
-        const minX = Math.floor(Math.min(a.x, b.x, c.x));
-        const maxX = Math.floor(Math.max(a.x, b.x, c.x));
-        const minZ = Math.floor(Math.min(a.z, b.z, c.z));
-        const maxZ = Math.floor(Math.max(a.z, b.z, c.z));
-        if (maxX - minX > 40 || maxZ - minZ > 40) continue; // a degenerate sheet
+  // --- open water, and the distance to its edge --------------------------
+  const BIG = 1e6;
+  const shore = new Float32Array(cols * rows);
+  for (let k = 0; k < sheet.length; k++) {
+    const open = sheet[k] !== NO_WATER && sheet[k] > (ground[k] === Infinity ? -Infinity : ground[k]) + 0.02;
+    shore[k] = open ? BIG : 0;
+  }
 
-        // Every cell the triangle's footprint touches. Testing cell centres
-        // instead misses any triangle that straddles a cell boundary without
-        // covering its centre, and those holes are exactly the cells the bed
-        // would then be left at water level in.
-        for (let cx = minX; cx <= maxX; cx++) {
-          for (let cz = minZ; cz <= maxZ; cz++) {
-            const key = `${cx}:${cz}`;
-            const known = mask.get(key);
-            if (known === undefined || y > known) mask.set(key, y);
+  // Chamfer distance transform, two passes: exact along the axes, within 2 %
+  // diagonally. This is what turns "there is water here" into a beach profile —
+  // without it every cell is either shore (depth 0) or lake (full depth), and
+  // the character steps off a 1 m ledge instead of walking into the water.
+  for (let r = 0; r < rows; r++) {
+    for (let cc = 0; cc < cols; cc++) {
+      const k = r * cols + cc;
+      let d = shore[k];
+      if (d === 0) continue;
+      if (r > 0) d = Math.min(d, shore[k - cols] + 1);
+      if (cc > 0) d = Math.min(d, shore[k - 1] + 1);
+      if (r > 0 && cc > 0) d = Math.min(d, shore[k - cols - 1] + SQRT2);
+      if (r > 0 && cc < cols - 1) d = Math.min(d, shore[k - cols + 1] + SQRT2);
+      shore[k] = d;
+    }
+  }
+  for (let r = rows - 1; r >= 0; r--) {
+    for (let cc = cols - 1; cc >= 0; cc--) {
+      const k = r * cols + cc;
+      let d = shore[k];
+      if (d === 0) continue;
+      if (r < rows - 1) d = Math.min(d, shore[k + cols] + 1);
+      if (cc < cols - 1) d = Math.min(d, shore[k + 1] + 1);
+      if (r < rows - 1 && cc < cols - 1) d = Math.min(d, shore[k + cols + 1] + SQRT2);
+      if (r < rows - 1 && cc > 0) d = Math.min(d, shore[k + cols - 1] + SQRT2);
+      shore[k] = d;
+    }
+  }
+
+  /** Bilinear read of one grid, or NaN if any corner of the cell is missing. */
+  const read = (grid: Float32Array, missing: number, x: number, z: number): number => {
+    const fx = x - minX - 0.5;
+    const fz = z - minZ - 0.5;
+    const x0 = Math.floor(fx);
+    const z0 = Math.floor(fz);
+    if (x0 < 0 || z0 < 0 || x0 + 1 >= cols || z0 + 1 >= rows) return NaN;
+    const tx = fx - x0;
+    const tz = fz - z0;
+    const k = z0 * cols + x0;
+    const v00 = grid[k];
+    const v10 = grid[k + 1];
+    const v01 = grid[k + cols];
+    const v11 = grid[k + cols + 1];
+    if (v00 === missing || v10 === missing || v01 === missing || v11 === missing) return NaN;
+    return (
+      v00 * (1 - tx) * (1 - tz) + v10 * tx * (1 - tz) + v01 * (1 - tx) * tz + v11 * tx * tz
+    );
+  };
+
+  return {
+    heightAt(x, z) {
+      const y = read(sheet, NO_WATER, x, z);
+      return Number.isFinite(y) ? y : null;
+    },
+    shoreDistance(x, z) {
+      const d = read(shore, -1, x, z);
+      // The first water cell is one cell from land, so subtract it: distance 0
+      // is the waterline, which is where the depth has to be zero.
+      return Number.isFinite(d) ? Math.max(0, d - 1) : 0;
+    },
+    isOpen(x, z) {
+      const k = cellOf(x, z);
+      if (k < 0 || k >= sheet.length) return false;
+      return sheet[k] !== NO_WATER && sheet[k] > (ground[k] === Infinity ? -Infinity : ground[k]) + 0.02;
+    },
+    depthAt(x, z) {
+      const surface = read(sheet, NO_WATER, x, z);
+      const bed = read(ground, Infinity, x, z);
+      if (!Number.isFinite(surface) || !Number.isFinite(bed)) return 0;
+      return Math.max(0, surface - bed);
+    },
+    nearestOpenWater(x, z, maxRadius, minDepth = 0.5) {
+      // Rings of one grid cell, so the answer is the closest water by Manhattan
+      // distance and the search is bounded by the lake rather than by the map.
+      const cx = Math.floor(x - minX);
+      const cz = Math.floor(z - minZ);
+      const limit = Math.ceil(maxRadius);
+      for (let r = 0; r <= limit; r++) {
+        for (let dz = -r; dz <= r; dz++) {
+          for (let dx = -r; dx <= r; dx++) {
+            // Only the ring, not the disc: the inside was searched already.
+            if (Math.max(Math.abs(dx), Math.abs(dz)) !== r) continue;
+            const col = cx + dx;
+            const row = cz + dz;
+            if (col < 1 || row < 1 || col >= cols - 1 || row >= rows - 1) continue;
+            const wx = minX + col + 0.5;
+            const wz = minZ + row + 0.5;
+            const surface = read(sheet, NO_WATER, wx, wz);
+            const bed = read(ground, Infinity, wx, wz);
+            if (!Number.isFinite(surface) || !Number.isFinite(bed)) continue;
+            if (surface - bed < minDepth) continue;
+            return { x: wx, z: wz, y: surface };
           }
         }
       }
-    });
-  }
-  if (mask.size === 0) return 0;
-
-  const waterAt = (x: number, z: number): number | null => {
-    const hit = mask.get(`${Math.floor(x)}:${Math.floor(z)}`);
-    return hit === undefined ? null : hit;
+      return null;
+    },
   };
+}
 
-  const ring: [number, number][] = [
-    [1, 0], [-1, 0], [0, 1], [0, -1],
-    [1, 1], [1, -1], [-1, 1], [-1, -1],
-  ];
+/**
+ * Digs the bed out from under the water sheet.
+ *
+ * The campground's water is a sheet *draped on the ground*: over most of the
+ * lake its vertices sit a centimetre or two above the terrain they cover. There
+ * is therefore no depth to it at all, and the character stands on the ground
+ * with the waterline at their ankles — which reads as walking on top of the
+ * lake. The old fix lowered the bed by a flat 18-50 cm, which is ankle-deep at
+ * the shore and knee-deep in the middle: still walking on water.
+ *
+ * This one gives the lake a *beach profile*: the depth is zero at the waterline
+ * and grows by `BED_SLOPE` per metre out, up to `BED_SHELF`. Wading therefore
+ * reads as wading from the first step, the way out is a continuous ramp rather
+ * than a ledge, and the profile stops at the shelf so the authored basin beyond
+ * it is left exactly as the kit made it.
+ */
+const BED_SLOPE = 0.5;
+const BED_SHELF = 1.25;
 
-  /** Chebyshev distance to the shoreline, capped at the taper length. */
-  const shoreDistance = (x: number, z: number): number => {
-    for (let r = 1; r <= Math.ceil(BED_TAPER); r++) {
-      for (const [dx, dz] of ring) {
-        if (waterAt(x + dx * r, z + dz * r) === null) return r - 1;
-      }
-    }
-    return BED_TAPER;
-  };
-
+function dredgeWaterBeds(terrainMeshes: THREE.Mesh[], water: WaterSurface): number {
+  const started = performance.now();
   let moved = 0;
   const p = new THREE.Vector3();
+
   for (const mesh of terrainMeshes) {
     const position = mesh.geometry.getAttribute('position') as THREE.BufferAttribute | undefined;
     if (!position) continue;
     mesh.updateMatrixWorld(true);
 
+    let touched = 0;
     for (let i = 0; i < position.count; i++) {
       p.fromBufferAttribute(position, i).applyMatrix4(mesh.matrixWorld);
-      const surface = waterAt(p.x, p.z);
-      if (surface === null || Math.abs(surface - p.y) > BED_SNAP) continue;
+      const surface = water.heightAt(p.x, p.z);
+      if (surface === null) continue;
+      // Above the sheet is the bank the water runs under, not the bed.
+      if (p.y > surface + 0.02) continue;
 
-      const depth = Math.max(
-        BED_MIN_DEPTH,
-        BED_DEPTH * Math.min(1, shoreDistance(p.x, p.z) / BED_TAPER)
-      );
+      const depth = Math.min(BED_SHELF, water.shoreDistance(p.x, p.z) * BED_SLOPE);
       if (depth < 0.02) continue;
 
-      p.y -= depth;
+      const target = surface - depth;
+      // Already deeper than the profile asks: this is the authored basin, and
+      // the fix is not allowed to flatten it into a bathtub.
+      if (p.y <= target) continue;
+
+      p.y = target;
       p.applyMatrix4(_toLocal.copy(mesh.matrixWorld).invert());
       position.setXYZ(i, p.x, p.y, p.z);
-      moved++;
+      touched++;
     }
 
-    if (moved > 0) {
+    if (touched > 0) {
       position.needsUpdate = true;
       mesh.geometry.computeBoundingBox();
       mesh.geometry.computeBoundingSphere();
+      moved += touched;
     }
   }
 
-  return performance.now() - started;
+  return moved === 0 ? 0 : performance.now() - started;
 }
 
+
 const _toLocal = new THREE.Matrix4();
+
+/**
+ * What a prop is supposed to rest on.
+ *
+ * - `water` — a hull, sunk to its draft below the sheet.
+ * - `surface` — a floating mat: lily pads lie *on* the water, not in it.
+ * - `bed` — a plant, rooted in whatever is underneath, water or sand.
+ * - `feet` — a person. Raised onto the ground if they are sunk; never lowered,
+ *   because a person standing on a rock or a deck is standing on something this
+ *   pass cannot see.
+ */
+type RestOn = 'water' | 'surface' | 'bed' | 'feet';
+
+interface SettleRule {
+  test: RegExp;
+  rest: RestOn;
+  /** How far a hull sits below the surface, metres. */
+  draft?: number;
+}
+
+/**
+ * The families that are placed by hand at one Y and end up wrong when the
+ * ground under them is not flat.
+ *
+ * These are *rules*, not a list of offenders: a canoe floats wherever it is put
+ * down, and the reason it was hanging in the air on map 1 is that the kit drops
+ * every prop at the author's eye height rather than on the surface it belongs
+ * to. Naming the family means the same correction holds on the other maps,
+ * without a hundred coordinates to maintain.
+ */
+const SETTLE_RULES: SettleRule[] = [
+  { test: /canoe|kayak|raft|skiff|boat|dinghy|paddleboard|punt/i, rest: 'water' },
+  { test: /lily|lotus|duckweed/i, rest: 'surface' },
+  { test: /reed|rush|sedge|cattail/i, rest: 'bed' },
+  {
+    // Anchored, and never a *building*: `hip-roof-ranger-station` is a station,
+    // and a rule that reads "ranger" as "a person called Ranger" would try to
+    // stand a building on the ground it is already standing on.
+    test: /^(backpacker|angler|hiker|camper|ranger|visitor|keeper|tourist|swimmer|fisher|walker|jogger)(?![a-z-])/i,
+    rest: 'feet',
+  },
+];
+
+/**
+ * Things that are fixed or stored rather than afloat, so nothing about them
+ * should be "corrected" toward the water. A canoe on a rack is stored; a launch
+ * ramp is poured concrete that happens to have `boat` in its name.
+ */
+const NOT_A_CRAFT = /rack|trailer|shelf|stand|hook|roof|ceiling|awning|table|board|ramp|slipway|dock|pier|jetty|mooring|cradle|winch/i;
+
+/** Hull draft by kind, in metres. A board barely draws a finger. */
+const DRAFT: [RegExp, number][] = [
+  [/paddleboard/i, 0.05],
+  [/raft/i, 0.08],
+  [/kayak/i, 0.1],
+  [/canoe/i, 0.12],
+  [/skiff|boat/i, 0.14],
+];
+const draftFor = (name: string): number => DRAFT.find(([re]) => re.test(name))?.[1] ?? 0.12;
+
+/**
+ * The lowest vertex under a node, in world space.
+ *
+ * This is the point that has to meet the ground: a boot, a keel, the underside
+ * of a lily pad. The bounding box cannot answer it — a box is as wide as the
+ * hat and the backpack, so its base is a corner of empty air beside the person.
+ */
+const _lowest = new THREE.Vector3();
+function lowestPoint(node: THREE.Object3D): { x: number; y: number; z: number } | null {
+  let best: { x: number; y: number; z: number } | null = null;
+  node.traverse((child) => {
+    const mesh = child as THREE.Mesh;
+    if (!mesh.isMesh || !mesh.geometry) return;
+    const position = mesh.geometry.getAttribute('position');
+    if (!position) return;
+    mesh.updateMatrixWorld(true);
+    for (let i = 0; i < position.count; i++) {
+      _lowest.fromBufferAttribute(position, i).applyMatrix4(mesh.matrixWorld);
+      if (!best || _lowest.y < best.y) best = { x: _lowest.x, y: _lowest.y, z: _lowest.z };
+    }
+  });
+  return best;
+}
+
+/**
+ * Sits floating props on the water and people on the ground.
+ *
+ * Each match is moved as one placement node, so a boat keeps its oars and a
+ * person keeps their backpack. Moving the node rather than the geometry matters:
+ * the collision build runs after this, so what the player walks into is the
+ * thing they can see.
+ *
+ * The thresholds are deliberately dull. A prop is only touched when it is off
+ * its surface by more than 3 cm, because a pass that nudges everything to
+ * "perfect" flattens the small deliberate differences — a canoe pulled half up
+ * a slipway, a pad drifting against a reed bed — that make a place look lived
+ * in rather than laid out.
+ */
+function settleProps(
+  root: THREE.Object3D,
+  collision: WorldCollision,
+  water: WaterSurface | null
+): number {
+  const started = performance.now();
+  const box = new THREE.Box3();
+  let moved = 0;
+
+  const settle = (node: THREE.Object3D, rule: SettleRule): boolean => {
+    box.setFromObject(node);
+    if (box.isEmpty()) return false;
+
+    // The lowest *vertex*, not the box corner. A person's box is as wide as
+    // their hat and backpack, so "the ground under the box" can be 15 cm above
+    // the ground under their boots — and raising them to it leaves them
+    // hovering. The lowest vertex is the boot, the keel, the pad's underside.
+    const lowest = lowestPoint(node);
+    if (!lowest) return false;
+
+    const ground = collision.getGroundHeight(lowest.x, lowest.z);
+    const surface = water ? water.heightAt(lowest.x, lowest.z) : null;
+    const dry = ground !== null && surface !== null && ground > surface - 0.02;
+
+    let target: number | null = null;
+    switch (rule.rest) {
+      case 'feet':
+        if (ground === null) return false;
+        target = ground;
+        break;
+      case 'water':
+        if (surface === null || dry) return false; // beached, not floating
+        target = surface - (rule.draft ?? draftFor(node.name));
+        break;
+      case 'surface':
+        if (surface === null || dry) return false;
+        target = surface - 0.02;
+        break;
+      case 'bed':
+        if (surface === null || dry) {
+          if (ground === null) return false;
+          target = ground;
+        } else {
+          // Rooted in the bottom, but a clump whose bottom is two metres down
+          // would be planted out of sight: hold its feet just under the surface
+          // and let the water hide the rest.
+          target = Math.max(ground ?? surface, surface - 0.45);
+        }
+        break;
+    }
+    if (target === null || !Number.isFinite(target)) return false;
+
+    const shift = target - lowest.y;
+    // A person is only ever raised. Lowering one would push them through
+    // whatever they are actually standing on — a rock, a deck, a boat.
+    if (rule.rest === 'feet' && shift < 0) return false;
+    if (Math.abs(shift) < 0.03) return false;
+
+    node.position.y += shift;
+    return true;
+  };
+
+  const visit = (node: THREE.Object3D): void => {
+    if (node.name) {
+      const rule = SETTLE_RULES.find((r) => r.test.test(node.name));
+      if (rule) {
+        // Settle the outermost node that matches and stop: the parts inside a
+        // boat are named after the boat, and settling both would move it twice.
+        if (!NOT_A_CRAFT.test(node.name) && settle(node, rule)) moved++;
+        return;
+      }
+    }
+    for (const child of node.children) visit(child);
+  };
+  visit(root);
+
+  return moved === 0 ? 0 : performance.now() - started;
+}
+
+/**
+ * Applies the explicit per-map moves from `mapFixes.ts`.
+ *
+ * Addressed by placement-node name, not by mesh: a structure is one node with a
+ * dozen parts under it, and a bridge whose deck moves while its posts stay put
+ * is a worse artefact than the one being fixed.
+ */
+export function applyPropShifts(root: THREE.Object3D, shifts: PropShift[]): number {
+  let moved = 0;
+  for (const shift of shifts) {
+    root.traverse((node) => {
+      if (node.name !== shift.node) return;
+      node.position.x += shift.by[0];
+      node.position.y += shift.by[1];
+      node.position.z += shift.by[2];
+      moved++;
+    });
+  }
+  return moved;
+}
+
 
 /** 2D point-in-triangle, used to rasterise the water sheet into a grid. */
 function insideTriangle(

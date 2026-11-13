@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { HiddenItem } from './HiddenItemSystem';
 import { PropTarget } from './PropTargets';
-import { InteractableAction } from '../interact/Interactions';
+import { InteractableAction } from '../interact/InteractableAction';
 import { WorldCollision } from '../world/WorldCollision';
 
 /** Anything the player can point at and press E on. */

@@ -143,6 +143,42 @@ session once. Read the relevant section before changing that subsystem.
   (`tools/terrain.mjs` + `tools/draco.cjs`, which exists because the emscripten wrapper
   needs a CommonJS context). Draco gotcha: `DracoFloat32Array.GetValue(i)` **returns** a
   number; it does not write into an out-parameter.
+- **The kit suffixes repeated part names.** The fourth fence in a run is `fence_3`, not
+  `fence`; a removal keyed to `fence` matched nothing and reported `removals: 0`, which
+  is why a "removed" fence stayed visible for a whole session. Read `removals` in the
+  `[load]` line — zero means the entry never fired.
+- **Water is a *surface*, not a level.** The campground's sheet spans y −4.58 … −0.63:
+  the lake at one end, the creek at the other. Any constant (`WorldCollision.waterLevel`
+  was −3.75, 30 cm above the sheet) is wrong somewhere. `buildWaterSurface` rasterises
+  the sheet into a 1 m grid and answers `heightAt` / `shoreDistance` / `isOpen`.
+- **The water sheet is a child of the terrain node.** `campground-lake-terrain` contains
+  both `ground` and `water`, so sweeping the group's meshes registered the lake as
+  ground: the heightfield *was* the water surface (the body walked on it) and every
+  dredge moved the lake down with the bed, so the depth never changed. Filter by mesh
+  name inside `collect`, not by the node name one level up.
+- **Props are placed at the author's eye height, not on their surface.** `settleProps`
+  fixes the families: craft float at a draft, lily pads lie on the sheet, reeds root,
+  people stand. It anchors on the **lowest vertex**, never the bounding box — a person's
+  box is as wide as their hat, and its base corner is 15 cm of empty air beside them.
+  People are only ever raised, never lowered (they may be standing on a rock).
+  `tools/float-boats.mjs` baked the same correction into the GLB; the loader pass
+  supersedes it.
+
+## The waterline
+
+- The bed is dug to a **beach profile**, not a flat offset: `depth = 0` at the waterline
+  and `BED_SLOPE` (0.5) per metre out, capped at `BED_SHELF` (1.25). The old version
+  added a flat 18–50 cm with an 18 cm floor at the shore, which is ankle-deep over the
+  whole lake and reads as walking on top of it.
+- Only vertices *below* the sheet are dug, and only where the profile asks for more depth
+  than the kit already has — the authored basin survives.
+- The sheet is forced to `opacity 0.6`, `depthWrite: false`, or the half of the body
+  under it is hidden and wading looks like standing.
+- `STAIR_PART` now includes the deck family (boardwalk, dock, pier, deck, ramp,
+  footbridge) and is matched against the **ancestor chain**, not the part name: the kit
+  names the run (`wetland-boardwalk-run`) and numbers the slabs (`boardwalk-bay_1`), so
+  the old leaf-only test gave the campground zero step allowance and its 0.4 m deck lips
+  were walls.
 
 ## Testing discipline
 
@@ -233,6 +269,90 @@ session once. Read the relevant section before changing that subsystem.
   frame and the browser presents an empty canvas — a full-screen flash against
   `body { background: var(--ink) }`. `onWindowResize` has the same shape and now
   repaints straight after `setSize`.
-- All 22 maps sweep clean in one browser session via `tmp-sweepall.mjs` (spawn
-  grounded, body mobile, five objects, no console errors). ~4 minutes.
-  `tmp-climbcheck.mjs <map> <cx> <cz>` is the ladder gate.
+- All 22 maps sweep clean in one browser session (~4 minutes) with a throwaway
+  `tmp-sweepall.mjs`: spawn grounded, body mobile, five objects, no console
+  errors. The ladder gate was `tmp-climbcheck.mjs <map> <cx> <cz>`. Both were
+  deleted in the 2026-11-13 cleanup — they are two-page scripts, worth rewriting
+  rather than restoring.
+
+## Fishing
+
+- **The rod hangs off the hand bone, so its per-frame work runs after the body
+  is posed.** `FishingSystem.update` is called before the player update (the
+  float and the line have to be where this frame's camera looks). The rod's own
+  work is therefore split into `updateRod(delta)`, called from `Game.update`
+  *after* `controller.poseOnly`. Running it in the earlier slot aimed the rod at
+  last frame's arm; at 0.1 s a frame during a cast that is 30° of error.
+- **The rod is aimed, not inherited.** Parenting a prop to a hand is the usual
+  answer and it failed twice over: the Mixamo cast rolls the wrist through 140°
+  (rod at the sky at rest, at the ground at the top of the back swing, 0.4 m
+  under the terrain), and the two hands do not encode a direction either — at
+  rest they sit side by side with the rod vertical, at the peak they swap
+  heights. `FishingRod.aim(direction)` takes the *direction* from an authored
+  curve (`ROD_AIM`, elevation + azimuth about the character's yaw) and only the
+  *position* from the hands. A lever, not a prop. Everything that tried to clamp
+  the wrist-inherited version — `keepTipUp`, `ROD_TUNING`, `MIN_RISE`, `base` —
+  is gone.
+- **`aim` needs two rotations, not one.** The second rolls the rod about its own
+  axis until its "up" faces the world's, which is what keeps the reel hanging
+  down instead of swinging round with the palm. A rod pointed straight up has no
+  answer — every roll is equally upright — so it keeps whatever it had.
+- **Both fists go on the cork.** The idle clip puts the hands 0.22 m apart
+  *across* the shaft (Z), not along it (X is the rod), so a rod welded to the
+  right hand passes 22 cm from the left one. `aim` slides the holder to the
+  midpoint between the hands every frame via `parent.worldToLocal` — which
+  already carries the character's height normalisation. `attach(hand, other)`.
+- **The grip sits near the butt end (`GRIP.x = 0.06`).** Everything behind the
+  grip hangs down out of the hand, and at the top of the wind-up the hand is
+  beside the head, so 30 cm of butt is 30 cm through the chest. Clearance is
+  measured, not eyeballed: every rod vertex against every bone segment, per pose
+  (`Head` 0.24, `RightForeArm` 0.12+ across the clip).
+- **Aim in the body's frame, and remember the roster faces +Z.** The cast ray
+  works in camera yaw and uses `(-sin, ., -cos)`; the body was turned to face it,
+  so `ROD_AIM` must use `(+sin, ., +cos)`. Getting this wrong aims the rod
+  backwards, which looks like a modelling error.
+- **`getCastTime()` is null outside `throw`/`hold`**, so a scrubbed pose fell
+  back to the idle aim. `getCastClipTime()` reads the action's own time and is
+  what `aimRod` uses.
+- **`scrubCast(t)` pins one frame of the cast.** Sampling by wall clock gets a
+  different frame every run on SwiftShader (1–3 fps, delta clamped at 0.1 s). Two
+  traps: the scrub only reaches the skeleton through the crossfade, so it needs
+  real frames to take effect; and `updateFishing` overwrites the time in every
+  phase except `windup`, which is why the pin uses that one.
+- **Measure the rod in `rod-mesh`'s frame, not the glTF root's.** The root sits
+  1.1 m along +X from the mesh, so a bbox taken in the root's frame puts the butt
+  in the middle of the rod and reports nonsense heights.
+- **The rod's own modelled line has to go by triangle.** It and the float are in
+  the same mesh as the rod, occupying `x > 1.9 && y < 0.9` in the mesh's frame;
+  the game draws its own line from the tip to wherever the float landed.
+- **Fishing is per-map, and the roster is a weight table over a global
+  catalogue.** `FISHING_SPOTS` in `src/data/fishing.ts` names four maps;
+  `spotForMap` is the only way in. A map with no spot gets no rod, no school and
+  no prompt — the survey that picked them is in `docs/FISHING.md`. `FISH` is
+  global because the catch log shows all of it.
+- **The school loads only the current spot's roster.** Sixteen models is sixteen
+  megabytes; loading them to place nine is a long first cast. `prototypes`
+  outlives a spot, so `loadedSpot` is what decides whether to re-run the load.
+- **Placement needs two rings.** A 4 … 26 m ring around the shore is right for a
+  lake; the reef is a 6 × 5 m pool and that ring is mostly land, which put two
+  fish in it. The second pass is 1.2 … 6 m.
+- **`benthic` species are placed on the bed, not at a fixed depth.** A crab held
+  0.15 m under the surface hangs like a balloon; `depthFor` reads the water
+  column instead. The two crabs also ship `Idle`/`Walk`/`Run`, mapped through
+  `species.clips`.
+- **The catch card is the found-object card.** `FoundScreen.showObject` is the
+  general form (`show` is the "2 of 5" wrapper); the fish is
+  `FishSchool.displayClone`, and `FoundStage.show(object, owns=false)` is what
+  stops the stage freeing geometry the school still needs. The clone is turned a
+  quarter about Y: a fish is authored nose-first along +Z, straight at the card's
+  camera, and the stage frames by bounding sphere.
+- **The catch log is in the map, on F.** It pauses like the pause menu does
+  (`GameState.PAUSED`, so the reel freezes) and Escape closes it back to the game
+  rather than swapping panels. Pictures are 192 px PNGs from
+  `tools/fish-thumbs.mjs`; uncaught fish are the same picture with
+  `filter: brightness(0)`.
+- `tools/fishing-probe.mjs` drives the whole trip (shore → cast → bite → reel →
+  card) through the debug handle and real mouse events. `tools/rod-calibrate.mjs`
+  freezes the boom and films the cast from a fixed arc. `tools/fish-thumbs.mjs`
+  regenerates the catch log's pictures. All write to `%TEMP%/hunt-shots`, never
+  the project.

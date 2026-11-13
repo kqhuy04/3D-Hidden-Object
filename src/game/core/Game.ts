@@ -18,10 +18,11 @@ import { TargetOutline } from '../render/TargetOutline';
 import { Cutscene } from '../render/Cutscene';
 import { NpcCrowd } from '../npc/NpcCrowd';
 import { Mounts } from '../npc/Mounts';
-import { Interactions } from '../interact/Interactions';
+import { FishingSystem } from '../fishing/FishingSystem';
 import { moodFor } from '../../data/mapMood';
 import { HiddenItemPlacement, hiddenItemsFor } from '../../data/hiddenItems';
 import { UIManager } from '../../ui/UIManager';
+import { PortraitBooth } from '../../ui/PortraitBooth';
 import { GAME_CONFIG } from '../../data/gameConfig';
 import { MapEntry, resolveMap } from '../../data/mapRegistry';
 import { SaveStore, Settings } from '../../app/Storage';
@@ -114,12 +115,14 @@ export class Game {
   private outline = new TargetOutline();
   /** The people the kit already placed in the map, walking about. */
   private npcs: NpcCrowd;
-  /** The props that answer to E — doors, wheels, bells, lanterns. */
-  private interactions: Interactions;
   /** The animals that can be ridden, and the rider on them. */
   private mounts: Mounts;
+  /** The rod, the fish in the lake, and the bar. */
+  private fishing: FishingSystem;
   /** The establishing shot a map opens with. */
   private cutscene = new Cutscene();
+  /** Takes the picture that goes beside a line of dialogue. */
+  private portraits: PortraitBooth;
   /** True once a freshly loaded map still owes the player its establishing shot. */
   private cutscenePending = false;
   /**
@@ -186,7 +189,6 @@ export class Game {
     this.collisionDebug = new CollisionDebugView(this.scene);
 
     this.player = new Player();
-    this.interactions = new Interactions(this.collision);
     this.mounts = new Mounts(this.collision, this.player);
     this.cameraController = new CameraController(this.camera, this.renderer.domElement);
     this.cameraController.setCollision(this.collision);
@@ -201,6 +203,16 @@ export class Game {
     this.roundManager = new RoundManager();
     this.hiddenItems = new HiddenItemSystem();
     this.ui = new UIManager(this.container);
+    this.portraits = new PortraitBooth(this.renderer);
+    this.fishing = new FishingSystem(
+      this.scene,
+      this.player,
+      this.cameraController,
+      this.input,
+      this.save,
+      this.ui.fishing,
+      this.ui.foundScreen
+    );
 
     // 4. Quality ladder. Constructed before the settings are applied, because
     // applying them is what picks the starting level.
@@ -350,10 +362,11 @@ export class Game {
     }
     this.collision.clear();
     this.npcs.dispose();
-    this.interactions.dispose();
     this.mounts.dispose();
     this.hiddenItems.clear();
     this.ui.foundScreen.hide();
+    this.ui.dialogue.hide();
+    this.portraits.clear();
     this.pickupTarget = null;
     this.map = map;
 
@@ -390,14 +403,13 @@ export class Game {
     // because a thing that does something must not also be a thing that costs a
     // mistake — two candidates on one object is a coin toss on every press.
     onProgress?.('Waking the furniture...');
-    this.interactions.attach(worldGroup);
     const spawn = new THREE.Vector3(map.spawn.x, map.spawn.y, map.spawn.z);
     await this.mounts.attach(worldGroup, spawn);
     // The kit's own cast, given something to do. The horses are excluded: the
     // mount system is driving those.
     onProgress?.('Waking the locals...');
     await this.npcs.attach(worldGroup, spawn, this.mounts.claimed);
-    this.npcs.setAskHandler(() => this.revealAskedHint());
+    this.npcs.setAskHandler((speaker) => this.revealAskedHint(speaker));
 
     // What has to follow its own shadow. Everything else on the map is baked
     // into the static shadow map and costs nothing until the sun's anchor
@@ -417,19 +429,12 @@ export class Game {
     // People are not props, animated or not: pressing E on a farmer and being
     // told you guessed wrong is the game punishing you for its own furniture.
     const props = collectPropTargets(worldGroup, collisionGeometry.getPartContainerName()).filter(
-      (prop) =>
-        !this.interactions.covers(prop.object) &&
-        !this.mounts.claimed.has(prop.object) &&
-        !this.npcs.characters.has(prop.object)
+      (prop) => !this.mounts.claimed.has(prop.object) && !this.npcs.characters.has(prop.object)
     );
     this.selector.setProps(props);
-    this.selector.setActions([
-      ...this.interactions.actions,
-      ...this.mounts.actions,
-      ...this.npcs.actions,
-    ]);
+    this.selector.setActions([...this.mounts.actions, ...this.npcs.actions]);
     console.info(
-      `[hunt] ${props.length} decoy props, ${this.interactions.count} answering props, ` +
+      `[hunt] ${props.length} decoy props, ` +
         `${this.mounts.count} rideable animals, ${this.npcs.count} people on ${map.id}`
     );
 
@@ -466,6 +471,12 @@ export class Game {
     onProgress?.('Setting up spawn position...');
     this.placeAtSpawn();
     const tSpawn = performance.now();
+
+    // The rod and the lake. Loaded behind the loading screen like everything
+    // else, and after the spawn because the school is placed relative to where
+    // the player is standing when the map opens.
+    onProgress?.('Baiting the hook...');
+    await this.fishing.prepare(map.id, this.worldLoader.getWater());
 
     // Compile every material now, behind the loading screen.
     //
@@ -537,13 +548,16 @@ export class Game {
       // The props that answer to E, and the animals that can be ridden. Both are
       // exposed because "does the door open" is not a thing a screenshot
       // settles: the harness reads the node's angle.
-      interactions: this.interactions,
       mounts: this.mounts,
       // What the reticle resolves to, and what is in reach of it. A probe that
       // wants to know whether the prompt appears for a person has to read the
       // selection, because the answer is a DOM node and a distance.
       selector: this.selector,
       save: this.save,
+      // The rod and the lake. A probe cannot judge "the fish bites" from a
+      // screenshot, so the state machine is readable from here.
+      fishing: this.fishing,
+      worldLoader: this.worldLoader,
       // A getter, not a snapshot: `selectMap` replaces the collider, and a
       // harness that held the old one measured the previous map's geometry
       // without noticing — every probe came back empty instead of wrong.
@@ -766,10 +780,30 @@ export class Game {
 
     // Same action on a click, because the prompt says "pick up" and half the
     // people who read it reach for the mouse.
+    //
+    // With the cursor captured the click is a pickup; without it, the click is
+    // the gesture that captures it. Doing both would charge a strike for a
+    // press the player made to get their mouse back.
     this.input.onPickupClick(() => {
-      if (this.state === GameState.PLAYING) {
-        this.handlePickup();
+      if (this.state !== GameState.PLAYING) return;
+      // The button that reels is the button that picks things up. While the rod
+      // is out, the click belongs to the rod — otherwise releasing a cast would
+      // also pick up whatever is behind the float.
+      if (this.fishing.isActive()) return;
+      if (!this.cameraController.isPointerLocked()) {
+        this.cameraController.lockPointer();
+        return;
       }
+      this.handlePickup();
+    });
+
+    // Held, not clicked: the cast meter and the reeling bar both read the
+    // button's state rather than its edge.
+    this.input.onPrimaryDown(() => {
+      if (this.state === GameState.PLAYING) this.fishing.primaryDown();
+    });
+    this.input.onPrimaryUp(() => {
+      if (this.state === GameState.PLAYING) this.fishing.primaryUp();
     });
 
     // Tab walks the selection to the next object within reach. Deliberately not
@@ -801,7 +835,21 @@ export class Game {
     this.input.onViewToggle(() => this.toggleView());
     this.ui.hud.onViewToggle(() => this.toggleView());
 
+    // F, or the log button in the corner, opens the catch log over the map.
+    this.input.onLogToggle(() => this.toggleCatchLog());
+    this.ui.hud.onCatchLog(() => this.toggleCatchLog());
+    this.ui.catchLog.onClose(() => this.closeCatchLog());
+
     this.input.onPause(() => {
+      // Escape on a captured cursor is the browser's "give me my mouse back",
+      // and the player pressed it for exactly that. The lock has already been
+      // dropped by the time this handler runs, so the recent-unlock window is
+      // what tells the two meanings apart; pausing here would put a menu over
+      // somebody who only wanted to reach their desktop.
+      if (this.cameraController.isPointerLocked() || this.cameraController.wasJustUnlocked()) {
+        this.cameraController.unlockPointer();
+        return;
+      }
       // The options sheet and the map picker sit on top of the pause menu and
       // answer to the same key. Handling all three here, in one place, is what
       // keeps Escape from closing a panel and un-pausing the game in the same
@@ -812,6 +860,10 @@ export class Game {
       }
       if (this.ui.mapSelect.isOpen) {
         this.closeMapSelect();
+        return;
+      }
+      if (this.ui.catchLog.isShowing) {
+        this.closeCatchLog();
         return;
       }
       if (this.state === GameState.PLAYING || this.state === GameState.PAUSED) {
@@ -960,8 +1012,10 @@ export class Game {
   /** Shared tail of "start" and "retry": reset the body and the panels. */
   private beginHunt(brief = ''): void {
     // A teleport ends a ride: the horse stays where it is standing, and the
-    // body goes to the spawn point on its own two feet.
+    // body goes to the spawn point on its own two feet. It also ends a fishing
+    // trip — the rod is in a hand that is about to be moved across the map.
     this.mounts.dismount();
+    this.fishing.end(true);
     this.placeAtSpawn();
 
     // Starting a round while the last one's establishing shot is still flying
@@ -1066,6 +1120,9 @@ export class Game {
    * flipped, which is free.
    */
   public toggleView(): void {
+    // The rod is a two-handed, full-body performance. A lens in the head would
+    // be inside the character's own arm, so the view is fixed while it is out.
+    if (this.fishing.isActive()) return;
     const mode = this.cameraController.toggleMode();
     const first = mode === 'first';
     this.player.getGroup().visible = !first;
@@ -1077,6 +1134,9 @@ export class Game {
       // Pausing mid-descent would freeze the camera in the air with the round
       // frozen too. The shot is three seconds long; land it and pause.
       if (this.cutscene.isRunning) this.endCutscene();
+      // A captured cursor is invisible, and every button on the pause card
+      // needs one. Release it before the card goes up.
+      this.cameraController.unlockPointer();
       this.state = GameState.PAUSED;
       this.roundManager.pause();
       this.ui.showPause();
@@ -1090,15 +1150,51 @@ export class Game {
       this.state = GameState.PLAYING;
       this.roundManager.resume();
       this.ui.hidePause();
+      this.ui.hideCatchLog();
+      // Called from the Resume button, so the gesture is still trusted and the
+      // cursor can be taken back without a second click.
+      this.cameraController.lockPointer();
     }
+  }
+
+  /**
+   * The catch log, over the map.
+   *
+   * Pauses like the pause menu does, and for the same reason: the panel is a
+   * scrollable grid under a captured cursor, and neither of those works while
+   * the body is walking. It is a separate state from the pause menu so that
+   * Escape closes the log back to the game rather than swapping one panel for
+   * another.
+   */
+  public toggleCatchLog(): void {
+    if (this.ui.catchLog.isShowing) {
+      this.closeCatchLog();
+      return;
+    }
+    if (this.state !== GameState.PLAYING) return;
+    if (this.cutscene.isRunning) this.endCutscene();
+    this.cameraController.unlockPointer();
+    this.state = GameState.PAUSED;
+    this.roundManager.pause();
+    this.ui.showCatchLog(this.save.fishing.caught);
+  }
+
+  public closeCatchLog(): void {
+    if (!this.ui.catchLog.isShowing) return;
+    this.ui.hideCatchLog();
+    // `resumeGame` is the one place that knows how to put the game back, and
+    // the log was opened from exactly the state it restores.
+    if (this.state === GameState.PAUSED) this.resumeGame();
   }
 
   public returnToMainMenu(): void {
     // Leaving mid-descent leaves the shot running with nobody to watch it, and
     // the next round would inherit a camera still in the air.
     this.cutscene.skip(this.camera);
+    this.fishing.end(true);
     this.titleUntil = 0;
     this.ui.hideTitleCard();
+    this.cameraController.unlockPointer();
     this.state = GameState.MENU;
     this.roundManager.pause();
     this.ui.showMainMenu();
@@ -1115,9 +1211,24 @@ export class Game {
   private handlePickup(): void {
     if (this.state !== GameState.PLAYING) return;
 
+    // E is the fishing key too. While the rod is out it is the only thing the
+    // key does — putting the rod away — and standing at the water with nothing
+    // under the reticle starts a trip.
+    if (this.fishing.isActive()) {
+      this.fishing.interact();
+      this.refreshPickupPrompt();
+      return;
+    }
+
     this.refreshPickupPrompt();
     const selected = this.selector.getSelected();
-    if (!selected) return;
+    if (!selected) {
+      if (this.fishing.interact()) {
+        this.ui.hud.setViewMode(this.cameraController.isFirstPerson());
+        this.refreshPickupPrompt();
+      }
+      return;
+    }
 
     // A prop that answers does not cost a mistake. That is the whole point of
     // the interaction layer: some things in this world are yours to touch.
@@ -1198,9 +1309,6 @@ export class Game {
     this.outline.update(delta);
     // The people keep walking behind the pause menu, like the weather does.
     this.npcs.update(delta, this.player.getPosition());
-    // Doors that were left mid-swing finish their swing, and a lamp that was
-    // switched on comes up, whether or not the game is paused.
-    this.interactions.update(delta);
 
     if (this.state === GameState.PLAYING) {
       // The caption on a map with no establishing shot retires on its own. It
@@ -1231,9 +1339,17 @@ export class Game {
           this.endCutscene();
         }
       } else {
-        const riding = this.mounts.isRiding();
+        // The rod owns the body while it is out. Fishing is updated first so
+        // the float and the line are where this frame's camera will look for
+        // them, not where they were last frame.
+        this.fishing.update(delta);
+        const fishing = this.fishing.isActive();
+        const riding = !fishing && this.mounts.isRiding();
 
-        if (riding) {
+        if (fishing) {
+          // Feet planted, mixer running: the cast is the only thing moving.
+          controller?.poseOnly(delta);
+        } else if (riding) {
           // A horse owns the body the way a ladder does: the mount drives both
           // the animal and the rider, and the controller is not consulted.
           this.mounts.update(delta, moveVec, cameraYaw);
@@ -1242,13 +1358,22 @@ export class Game {
           this.mounts.update(delta, moveVec, cameraYaw);
         }
 
+        // The rod is parented to the hand, so its own per-frame work has to
+        // run *after* the body has been posed. It did not, and the wrist roll
+        // that keeps the tip out of the ground was therefore computed against
+        // last frame's arm: at 0.1 s a frame during a cast, that is 30 degrees
+        // of error, and the tip went underground anyway.
+        if (fishing) this.fishing.updateRod(delta);
+
         // 2. Camera follow & orbit. The surface height is passed separately: the
         // camera settles onto the ground rather than riding the jump arc, and
         // under a rider that surface is the one the horse is standing on.
         this.cameraController.update(
           this.player.getPosition(),
           delta,
-          riding ? this.mounts.getGroundY() : controller?.getGroundY()
+          riding ? this.mounts.getGroundY() : controller?.getGroundY(),
+          // The lens sits inside the capsule, so a crawl has to bring it down.
+          controller?.getEyeHeight()
         );
 
         // 3. Hunt clock, the crosshair prompt, and the nudge
@@ -1289,6 +1414,15 @@ export class Game {
    * after the follow has moved it — the same view the player is looking at.
    */
   private refreshPickupPrompt(): void {
+    // While the rod is out, the only thing E does is put it away. Leaving the
+    // hunt's prompt up would offer "Pick up" over the float.
+    if (this.fishing.isActive()) {
+      this.pickupTarget = null;
+      this.outline.hide();
+      this.ui.hud.setPickupPrompt(true, false, 'Stop fishing', false);
+      return;
+    }
+
     this.selector.update(
       this.hiddenItems.getItems(),
       this.camera,
@@ -1301,10 +1435,18 @@ export class Game {
     const selected = this.selector.getSelected();
     this.pickupTarget = selected?.item ?? null;
 
-    const visible = selected !== null;
+    // Water is the one thing that answers E without being a prop: standing at
+    // the shoreline puts "Fish" on the same prompt, so the player learns one
+    // key for "this is a thing you can do here".
+    const fishingLabel = selected ? null : this.fishing.getPromptLabel();
+    const visible = selected !== null || fishingLabel !== null;
     const canCycle = this.selector.getCandidates().length > 1;
     const label =
-      selected?.kind === 'action' ? (selected.action?.label() ?? 'Use') : 'Pick up';
+      selected?.kind === 'action'
+        ? (selected.action?.label() ?? 'Use')
+        : selected
+          ? 'Pick up'
+          : (fishingLabel ?? 'Fish');
     this.ui.hud.setPickupPrompt(visible, canCycle, label);
 
     // The object itself wears a rim, rather than a bracket drawn over it. It
@@ -1352,7 +1494,7 @@ export class Game {
    * closest thing still missing. Every object is described once, and once all
    * of them have been, the locals have nothing left to add.
    */
-  private revealAskedHint(): void {
+  private revealAskedHint(speaker: THREE.Object3D): void {
     const body = this.player.getPosition();
     const next = this.roundManager
       .getItems()
@@ -1363,13 +1505,22 @@ export class Game {
           Math.hypot(b.placement.spot.x - body.x, b.placement.spot.z - body.z)
       )[0];
 
+    // A conversation, not a notification: who is saying it, and what they look
+    // like saying it. The picture is taken once per speaker and kept.
+    const name = this.npcs.nameOf(speaker);
+    const portrait = this.portraits.capture(speaker, body, this.npcs.partsOf(speaker));
+
     if (!next) {
-      this.ui.hud.showHint('Nothing more to tell you. What you want is out there, not in here.');
+      this.ui.dialogue.show(
+        name,
+        'Nothing more to tell you. What you want is out there, not in here.',
+        portrait
+      );
       return;
     }
 
     this.hinted.add(next.placement.id);
-    this.ui.hud.showHint(next.placement.hint);
+    this.ui.dialogue.show(name, next.placement.hint, portrait);
   }
 
   /**

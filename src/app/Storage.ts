@@ -1,3 +1,5 @@
+import { xpForLevel } from '../data/fishing';
+
 /**
  * What survives closing the tab.
  *
@@ -44,9 +46,24 @@ export interface MapRecord {
   bestSeconds: number | null;
 }
 
+/**
+ * The fishing ledger.
+ *
+ * Level and experience are progress, not a setting: they are earned in the map
+ * and "reset progress" is supposed to take them away with everything else. The
+ * caught table is keyed by species id and holds the heaviest one landed, which
+ * is the only number a player will ever quote back to you.
+ */
+export interface FishingRecord {
+  level: number;
+  xp: number;
+  caught: Record<string, number>;
+}
+
 export interface Progress {
   lastMap: string;
   maps: Record<string, MapRecord>;
+  fishing: FishingRecord;
 }
 
 export interface SaveData {
@@ -69,7 +86,9 @@ export const DEFAULT_SETTINGS: Settings = {
   character: 'family-road-tripper-247570',
 };
 
-const DEFAULT_PROGRESS: Progress = { lastMap: '', maps: {} };
+const DEFAULT_FISHING: FishingRecord = { level: 1, xp: 0, caught: {} };
+
+const DEFAULT_PROGRESS: Progress = { lastMap: '', maps: {}, fishing: { ...DEFAULT_FISHING, caught: {} } };
 
 function clamp(value: unknown, lo: number, hi: number, fallback: number): number {
   const n = typeof value === 'number' ? value : Number(value);
@@ -113,9 +132,20 @@ function readProgress(raw: unknown): Progress {
       };
     }
   }
+  const caught: Record<string, number> = {};
+  const rawCaught = (src.fishing?.caught ?? {}) as Record<string, unknown>;
+  for (const [id, kg] of Object.entries(rawCaught)) {
+    const n = typeof kg === 'number' ? kg : Number(kg);
+    if (Number.isFinite(n) && n > 0) caught[id] = Math.round(n * 100) / 100;
+  }
   return {
     lastMap: typeof src.lastMap === 'string' ? src.lastMap : '',
     maps,
+    fishing: {
+      level: Math.round(clamp(src.fishing?.level, 1, 99, 1)),
+      xp: Math.round(clamp(src.fishing?.xp, 0, 1e6, 0)),
+      caught,
+    },
   };
 }
 
@@ -124,7 +154,10 @@ export class SaveStore {
   private available = true;
 
   constructor() {
-    this.data = { settings: { ...DEFAULT_SETTINGS }, progress: { ...DEFAULT_PROGRESS, maps: {} } };
+    this.data = {
+      settings: { ...DEFAULT_SETTINGS },
+      progress: { ...DEFAULT_PROGRESS, maps: {}, fishing: { ...DEFAULT_FISHING, caught: {} } },
+    };
     try {
       const text = window.localStorage.getItem(KEY);
       if (text) {
@@ -191,6 +224,31 @@ export class SaveStore {
     return this.data.progress.maps[mapId];
   }
 
+  public get fishing(): FishingRecord {
+    return this.data.progress.fishing;
+  }
+
+  /**
+   * Banks one catch.
+   *
+   * Levels can be crossed more than once by a single big fish (a shark at level
+   * 1 is most of two levels), so the loop is a loop. Returns whether the level
+   * changed, because the catch card says so and the card should not have to
+   * re-derive it from numbers it was handed afterwards.
+   */
+  public recordCatch(speciesId: string, kg: number, xpGain: number): { level: number; levelled: boolean } {
+    const fishing = this.data.progress.fishing;
+    const before = fishing.level;
+    fishing.xp += Math.max(0, Math.round(xpGain));
+    while (fishing.xp >= xpForLevel(fishing.level) && fishing.level < 99) {
+      fishing.xp -= xpForLevel(fishing.level);
+      fishing.level++;
+    }
+    fishing.caught[speciesId] = Math.max(fishing.caught[speciesId] ?? 0, kg);
+    this.flush();
+    return { level: fishing.level, levelled: fishing.level > before };
+  }
+
   /**
    * Forgets every map record.
    *
@@ -199,7 +257,7 @@ export class SaveStore {
    * sensitivity thrown away.
    */
   public resetProgress(): void {
-    this.data.progress = { lastMap: '', maps: {} };
+    this.data.progress = { lastMap: '', maps: {}, fishing: { ...DEFAULT_FISHING, caught: {} } };
     this.flush();
   }
 

@@ -1,12 +1,17 @@
 # Photo Hunt — project notes
 
 Third-person hidden-object game. Three.js + TS + Vite + Tauri. 22 maps × 5 hidden
-objects (110), 12 playable characters.
+objects (110), 12 playable characters. **Fishing on four maps** —
+`campground-lake`, `alpine-and-snow`, `countryside-railway`, `coral-reef` — each
+with its own roster out of a 16-species catalogue: rod, school, Stardew-style
+reeling bar, XP that widens the band, a *Found*-style 3D catch card, and a catch
+log on **F** that opens over the map.
 
 **All traps, rationale and numbers: `memory/ARCHITECTURE.md`** (rendering/perf,
-atmosphere, collision, characters, kits, tooling, frame loop). Read it before touching
-the renderer, the collision solver or a tool. Player docs: `docs/START_SCREEN.md`,
-`MAP_SELECT.md`, `ATMOSPHERE.md`, `HIDDEN_OBJECTS.md`.
+atmosphere, collision, characters, kits, fishing, tooling, frame loop). Read it before
+touching the renderer, the collision solver or a tool. Player docs:
+`docs/START_SCREEN.md`, `MAP_SELECT.md`, `ATMOSPHERE.md`, `HIDDEN_OBJECTS.md`,
+`FISHING.md`.
 
 ## Standing rules from the user
 

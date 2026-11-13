@@ -104,8 +104,6 @@ export class WorldCollision {
    * twelve metres below it.
    */
   private lastGroundY = 0;
-  /** Lake surface height. Water is walkable; this is only a reference level. */
-  public readonly waterLevel = -3.75;
   /** Reused scratch space for multi-contact resolution. */
   private contactPool: CircleContact[] = Array.from({ length: 8 }, () => ({
     nx: 0, nz: 0, penetration: 0, point: new THREE.Vector3(), partName: '',

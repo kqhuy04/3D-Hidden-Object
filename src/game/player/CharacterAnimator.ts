@@ -77,7 +77,40 @@ const CHAIN_WINDOW_MS = 320;
 const LANDING_SKIP = 0.15;
 
 /** Every clip the animator knows how to drive. */
-const CLIP_NAMES = ['idle', 'walk', 'run', 'jump', 'stairsUp', 'stairsDown', 'ladder', 'crawl', 'driving'] as const;
+const CLIP_NAMES = [
+  'idle',
+  'walk',
+  'run',
+  'jump',
+  'stairsUp',
+  'stairsDown',
+  'ladder',
+  'crawl',
+  'driving',
+  'fishIdle',
+  'fishCast',
+] as const;
+
+/**
+ * Phase boundaries of the Fishing Cast clip, in seconds.
+ *
+ * The clip is 8.77 s and it is four animations in one: a wind-up, a throw, a
+ * hold while the line is out, and then a long stretch of cranking the reel. It
+ * was authored as a single take, so the phases are measured rather than
+ * declared — `tmp-analyze-cast.mjs` (the harness that produced these numbers)
+ * samples the right hand every frame and the throw is the frame where it
+ * accelerates forward at 2 m/s.
+ *
+ * Playing the whole thing once per cast would leave the player standing still
+ * for six seconds after the float has landed, which is why it is cut up here.
+ */
+const CAST_WINDUP_END = 1.55;
+/** Where the arm starts the back swing. The meter scrubs from here to the top. */
+const CAST_READY = 0.55;
+const CAST_RELEASE = 2.02;
+const CAST_SETTLE = 2.75;
+const REEL_START = 4.35;
+const REEL_END = 8.3;
 
 /**
  * The raw keyframe files, fetched once for the whole app.
@@ -180,6 +213,15 @@ export class CharacterAnimator {
    * instead, so the pose accelerates into the landing rather than jumping there.
    */
   private jumpRush = 1;
+
+  /** True from the moment the rod comes out to the moment it is put away. */
+  private fishing = false;
+  /** The two clips the rod drives, and the phase the cast clip is frozen in. */
+  private fishIdleAction: THREE.AnimationAction | null = null;
+  private fishCastAction: THREE.AnimationAction | null = null;
+  private castPhase: 'none' | 'windup' | 'throw' | 'hold' | 'reel' | 'tail' = 'none';
+  /** Runs while the line is out, so the hold has a sway instead of a freeze. */
+  private holdClock = 0;
   constructor(character: THREE.Object3D) {
     this.character = character;
     this.mixer = new THREE.AnimationMixer(character);
@@ -226,6 +268,16 @@ export class CharacterAnimator {
           action.clampWhenFinished = true;
           this.jumpAction = action;
           this.readJumpPhases(raw);
+        } else if (name === 'fishCast') {
+          // Driven by hand: the game scrubs it to a power meter, plays the
+          // throw, freezes it while the float is out and loops the crank. A
+          // looping action would run all four phases on its own schedule.
+          action.setLoop(THREE.LoopOnce, 1);
+          action.clampWhenFinished = true;
+          this.fishCastAction = action;
+        } else if (name === 'fishIdle') {
+          action.setLoop(THREE.LoopRepeat, Infinity);
+          this.fishIdleAction = action;
         } else {
           action.setLoop(THREE.LoopRepeat, Infinity);
         }
@@ -329,6 +381,252 @@ export class CharacterAnimator {
     this.actions.set(clip.name, action);
   }
 
+  /**
+   * Takes the rod out.
+   *
+   * Returns false when the two fishing clips are missing, so the caller can
+   * refuse to start a fishing trip it has no animation for — a body standing
+   * frozen with a rod in its hand is worse than no fishing at all.
+   */
+  public beginFishing(): boolean {
+    if (!this.fishIdleAction || !this.fishCastAction) return false;
+    this.fishing = true;
+    this.castPhase = 'none';
+    this.holdClock = 0;
+    // The cast clip may be sitting on its last frame from the previous fish.
+    this.fishCastAction.stop();
+    this.showIdle(0.22);
+    return true;
+  }
+
+  public endFishing(): void {
+    if (!this.fishing) return;
+    this.fishing = false;
+    this.castPhase = 'none';
+    this.fishCastAction?.stop();
+    this.play('Idle', 0.3);
+  }
+
+  public isFishing(): boolean {
+    return this.fishing;
+  }
+
+  /**
+   * Scrub the wind-up to match the power meter.
+   *
+   * The arm follows the bar: hold the button and the rod goes back, let go and
+   * it throws from wherever it had got to. That is why the clip is not reset on
+   * release — the throw continues the same motion rather than restarting it.
+   */
+  public aimCast(power: number): void {
+    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+    this.showCast();
+    this.castPhase = 'windup';
+    cast.paused = true;
+    cast.timeScale = 0;
+    const k = Math.min(1, Math.max(0, power));
+    // The meter starts part-way through the back swing rather than on the idle
+    // frame: a cast that begins at zero would spend half a second of the
+    // player's charge doing nothing they can see.
+    cast.time = CAST_READY + k * (CAST_WINDUP_END - CAST_READY);
+  }
+
+  /**
+   * Let the throw run, at a rate that leans on the meter.
+   *
+   * A full-power cast is a snap and a weak one is a lob, and the difference is
+   * carried by the playback rate: the clip is the same throw either way, so
+   * without this a tap and a full hold would look identical. It never jumps
+   * forward — the throw continues from wherever the meter had pulled the arm
+   * to, which is why the rod does not teleport on release.
+   */
+  public releaseCast(power: number): void {
+    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+    this.castPhase = 'throw';
+    cast.paused = false;
+    cast.timeScale = 1.6 + Math.min(1, Math.max(0, power)) * 0.9;
+  }
+
+  /**
+   * Clip time of the throw, for the caller that has to let the float go.
+   *
+   * The float leaves the rod at the frame the arm snaps forward, which is a
+   * fact about the animation rather than a number the fishing system should
+   * own. Null whenever the throw is not running.
+   */
+  public getCastTime(): number | null {
+    if (!this.fishCastAction) return null;
+    // Read across both phases: a slow machine can step the clip from before
+    // the release to past the settle in one frame, and a caller that only
+    // listened during `throw` would miss the release entirely.
+    if (this.castPhase !== 'throw' && this.castPhase !== 'hold') return null;
+    return this.fishCastAction.time;
+  }
+
+  /**
+   * The cast clip's own time, in every fishing phase that is playing it.
+   *
+   * `getCastTime` answers a narrower question — "has the arm snapped forward
+   * yet" — and is null outside the throw. The rod needs the position within the
+   * clip at all times, including the wind-up the power meter scrubs and the
+   * frames a harness pins, so it asks this instead.
+   */
+  public getCastClipTime(): number | null {
+    if (!this.fishing || !this.fishCastAction || this.castPhase === 'none') return null;
+    return this.fishCastAction.time;
+  }
+
+  /** Freezes the cast on its line-out pose, with a slow sway. */
+  public holdLine(): void {    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+    this.castPhase = 'hold';
+    this.holdClock = 0;
+    cast.paused = true;
+    cast.timeScale = 0;
+    cast.time = CAST_SETTLE;
+  }
+
+  /** Cranks the reel. Loops the authored cranking until the fish is landed. */
+  public startReel(): void {
+    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+    this.castPhase = 'reel';
+    cast.paused = false;
+    cast.timeScale = 1.25;
+    cast.time = REEL_START;
+  }
+
+  /** Plays the tail of the clip — the rod coming back up with a fish on it. */
+  public landCatch(): void {
+    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+    this.castPhase = 'tail';
+    cast.paused = false;
+    cast.timeScale = 1.5;
+    cast.time = REEL_END;
+  }
+
+  /** Nothing was caught: back to holding the rod, line in. */
+  public returnToHold(): void {
+    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+    this.castPhase = 'none';
+    cast.paused = true;
+    this.showIdle(0.3);
+  }
+
+  /**
+   * Moves the whole body onto the fishing clips.
+   *
+   * The cast clip starts on exactly the pose `fishIdle` starts on — both were
+   * exported from the same Mixamo take — so the crossfade is invisible and the
+   * rod does not jump when the player first presses the button.
+   */
+  private showCast(fade = 0.16): void {
+    const cast = this.fishCastAction;
+    if (!cast || this.currentAction === cast) return;
+    cast.reset();
+    cast.setEffectiveWeight(1);
+    cast.play();
+    if (this.currentAction) this.currentAction.crossFadeTo(cast, fade, false);
+    this.currentAction = cast;
+    this.currentActionName = 'FishCast';
+  }
+
+  private showIdle(fade = 0.2): void {
+    const idle = this.fishIdleAction;
+    if (!idle) return;
+    if (this.currentAction === idle) {
+      idle.paused = false;
+      idle.timeScale = 1;
+      return;
+    }
+    idle.reset();
+    idle.paused = false;
+    idle.timeScale = 1;
+    idle.play();
+    if (this.currentAction) this.currentAction.crossFadeTo(idle, fade, false);
+    this.currentAction = idle;
+    this.currentActionName = 'FishIdle';
+  }
+
+  /**
+   * Keeps the cast clip inside the phase it is supposed to be in.
+   *
+   * Called before the mixer steps, so a clamp lands on the same frame the clip
+   * would have crossed the boundary rather than one frame later.
+   */
+  private updateFishing(deltaSeconds: number): void {
+    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+
+    switch (this.castPhase) {
+      case 'throw':
+        // The throw ends where the line is out. Everything after that is the
+        // reel and the return, which the game plays on its own schedule.
+        if (cast.time >= CAST_SETTLE) {
+          cast.time = CAST_SETTLE;
+          cast.paused = true;
+          this.castPhase = 'hold';
+          this.holdClock = 0;
+        }
+        break;
+
+      case 'hold':
+        // A body holding a rod does not freeze. Six seconds of a motionless
+        // arm reads as a paused game; a two-centimetre sway at one cycle every
+        // seven seconds reads as breathing, and costs one sine.
+        this.holdClock += deltaSeconds;
+        cast.time = CAST_SETTLE + Math.sin(this.holdClock * 0.9) * 0.06;
+        break;
+
+      case 'reel':
+        // The authored cranking is 4.35 … 8.3 s. Looping inside that window
+        // keeps the hands working for as long as the bar takes.
+        if (cast.time >= REEL_END) cast.time = REEL_START;
+        break;
+
+      case 'tail':
+        if (cast.time >= cast.getClip().duration - 0.02) {
+          this.castPhase = 'none';
+          this.showIdle(0.25);
+        }
+        break;
+    }
+  }
+
+  /** The bone the rod is strapped to, by name. Null before the clips load. */
+  public findBone(name: string): THREE.Bone | null {
+    let found: THREE.Bone | null = null;
+    this.character.traverse((node) => {
+      if (!found && (node as THREE.Bone).isBone && node.name === name) found = node as THREE.Bone;
+    });
+    return found;
+  }
+
+  /**
+   * Pins the cast clip to one moment of the throw, for the calibration harness.
+   *
+   * `aimCast` can only scrub the wind-up, because that is the part the power
+   * meter owns. The throw, the line-out and the cranking cannot be held that
+   * way, and a harness that samples them off the wall clock gets a different
+   * frame on every run of a slow machine — which makes "is the rod in the hand"
+   * unanswerable. This holds one frame still so it can be looked at.
+   */
+  public scrubCast(seconds: number): void {
+    const cast = this.fishCastAction;
+    if (!this.fishing || !cast) return;
+    this.showCast();
+    // `windup` is the one phase `updateFishing` leaves alone, which is exactly
+    // what a pin needs: no phase machine overwrites the time on the next frame.
+    this.castPhase = 'windup';
+    cast.paused = true;
+    cast.timeScale = 0;
+    cast.time = Math.min(cast.getClip().duration, Math.max(0, seconds));
+  }
+
   private buildClip(
     raw: RawAnimTrackData,
     clipName: string,
@@ -419,6 +717,10 @@ export class CharacterAnimator {
     gait: Gait = 'flat',
     running = false
   ): void {
+    // The rod owns the whole body. A walk cycle fading in while the player is
+    // standing at the waterline would cancel the cast mid-throw.
+    if (this.fishing) return;
+
     // A jump owns the whole body: letting the walk cycle fade in halfway
     // through would cancel the crouch and the landing. The exception is the
     // tail of the clip — once the hips are upright again and the player is
@@ -545,6 +847,8 @@ export class CharacterAnimator {
    * body in place for the whole drop.
    */
   public getMoveScale(): number {
+    if (this.fishing) return 0;
+
     const action = this.jumpAction;
     if (!this.jumping || !action) return 1;
     if (this.jumpHeld) return 1;
@@ -713,6 +1017,7 @@ export class CharacterAnimator {
 
   public update(deltaSeconds: number): void {
     this.applyJumpRate();
+    this.updateFishing(deltaSeconds);
     this.mixer.update(deltaSeconds);
   }
 

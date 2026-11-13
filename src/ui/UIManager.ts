@@ -6,6 +6,9 @@ import { MapSelect } from './MapSelect';
 import { SettingsScreen } from './SettingsScreen';
 import { DebugOverlay } from './DebugOverlay';
 import { FoundScreen } from './FoundScreen';
+import { DialoguePanel } from './DialoguePanel';
+import { FishingMinigame } from './FishingMinigame';
+import { CatchLog } from './CatchLog';
 import { RoundItem } from '../game/missions/RoundManager';
 
 export class UIManager {
@@ -18,6 +21,12 @@ export class UIManager {
   public debugOverlay: DebugOverlay;
   /** The blur-and-turn that plays when the right object is picked up. */
   public foundScreen: FoundScreen;
+  /** What a person in the map says, across the bottom of the screen. */
+  public dialogue: DialoguePanel;
+  /** The reeling bar, the catch card and the fishing level chip. */
+  public fishing: FishingMinigame;
+  /** Every fish in the game, and which of them the player has landed. */
+  public catchLog: CatchLog;
 
   private rootContainer: HTMLElement;
   /** Shown while a map is being swapped, over the (now empty) world. */
@@ -42,6 +51,9 @@ export class UIManager {
     this.settings = new SettingsScreen();
     this.debugOverlay = new DebugOverlay();
     this.foundScreen = new FoundScreen();
+    this.dialogue = new DialoguePanel();
+    this.fishing = new FishingMinigame();
+    this.catchLog = new CatchLog();
 
     this.loadingElement = document.createElement('div');
     this.loadingElement.id = 'map-loading-screen';
@@ -80,6 +92,9 @@ export class UIManager {
     this.rootContainer.appendChild(this.mapSelect.getElement());
     this.rootContainer.appendChild(this.settings.getElement());
     this.rootContainer.appendChild(this.foundScreen.getElement());
+    this.rootContainer.appendChild(this.dialogue.getElement());
+    this.rootContainer.appendChild(this.fishing.getElement());
+    this.rootContainer.appendChild(this.catchLog.getElement());
     this.rootContainer.appendChild(this.loadingElement);
     this.rootContainer.appendChild(this.contextElement);
     this.rootContainer.appendChild(this.titleElement);
@@ -91,10 +106,13 @@ export class UIManager {
   public showMainMenu(): void {
     this.mainMenu.show();
     this.hud.hide();
+    this.dialogue.hide();
+    this.fishing.hideAll();
     this.pauseMenu.hide();
     this.resultsScreen.hide();
     this.mapSelect.hide();
     this.settings.hide();
+    this.catchLog.hide();
     this.titleElement.classList.add('hidden');
     this.hideLoading();
   }
@@ -102,10 +120,12 @@ export class UIManager {
   public showGameplay(): void {
     this.mainMenu.hide();
     this.hud.show();
+    this.dialogue.hide();
     this.pauseMenu.hide();
     this.resultsScreen.hide();
     this.mapSelect.hide();
     this.settings.hide();
+    this.catchLog.hide();
     this.hideTitleCard();
     this.hideLoading();
   }
@@ -147,11 +167,23 @@ export class UIManager {
   }
 
   public showPause(): void {
+    // A line left on screen under a pause card reads as part of the menu.
+    this.dialogue.hide();
     this.pauseMenu.show();
   }
 
   public hidePause(): void {
     this.pauseMenu.hide();
+  }
+
+  /** The fishing collection, over the map rather than behind the main menu. */
+  public showCatchLog(caught: Record<string, number>): void {
+    this.dialogue.hide();
+    this.catchLog.show(caught);
+  }
+
+  public hideCatchLog(): void {
+    this.catchLog.hide();
   }
 
   public showMapSelect(currentId: string, records?: Record<string, { found: number; bestSeconds: number | null }>): void {
@@ -210,6 +242,8 @@ export class UIManager {
     this.hud.hide();
     this.pauseMenu.hide();
     this.settings.hide();
+    this.dialogue.hide();
+    this.fishing.hideAll();
     this.resultsScreen.showResults(isWon, found, total, elapsedLabel, items, bestSeconds, isNewBest);
   }
 }

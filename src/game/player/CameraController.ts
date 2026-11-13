@@ -56,8 +56,31 @@ const GROUND_CLEARANCE = 0.6;
  * Slightly above the third-person focus point (1.5 m): the focus is aimed at
  * the character's chest so the boom frames the whole body, while a lens in the
  * head has to be at the eyes or the world reads as knee-high.
+ *
+ * This is the *standing* value. The lens is driven from the capsule height at
+ * run time (see `EYE_DROP`), because a crawl that leaves the camera at 1.62 m
+ * is a crawl the player cannot see.
  */
 const EYE_HEIGHT = 1.62;
+
+/**
+ * How far below the top of the capsule the eyes are, in metres.
+ *
+ * Derived rather than written twice: a standing capsule is 1.75 m, and
+ * 1.75 - 0.13 is the 1.62 the view was tuned at, so nothing about the standing
+ * view changes. A crawling capsule is 0.75 m, which puts the lens at 0.62 —
+ * knee height, which is what being on your forearms looks like.
+ */
+const EYE_DROP = 0.13;
+
+/**
+ * Largest mouse movement, in pixels, one event may contribute.
+ *
+ * Browsers occasionally report a spike of several hundred pixels for a single
+ * event — a dropped frame, a device that was asleep, a lock that just engaged.
+ * Applied raw, that is a half-turn out of nowhere; clamped, it is a nudge.
+ */
+const MAX_LOOK_STEP = 120;
 
 /** How fast the view blends between first and third person, per second. */
 const VIEW_BLEND_RATE = 9;
@@ -83,6 +106,8 @@ export class CameraController {
   private targetPitch = GAME_CONFIG.camera.defaultPitch;
   private currentDistance = GAME_CONFIG.camera.defaultDistance;
   private targetDistance = GAME_CONFIG.camera.defaultDistance;
+  /** False while the fishing minigame owns the mouse button. See `applyLook`. */
+  private lookEnabled = true;
   /**
    * Boom length after collision, in metres.
    *
@@ -136,6 +161,20 @@ export class CameraController {
   private sensitivity = GAME_CONFIG.camera.mouseSensitivity;
   private scrollSensitivity = GAME_CONFIG.camera.scrollSensitivity;
 
+  /**
+   * True while the cursor is captured and the mouse turns the view on its own.
+   *
+   * This is the mode the game is actually played in. Dragging works as a
+   * fallback for the cases where the browser will not give us the lock — an
+   * iframe without the sandbox flag, a browser that refuses the gesture — but
+   * having to hold the button down to look around was the whole complaint.
+   */
+  private pointerLocked = false;
+  /** When the lock was last dropped by the browser rather than by us. */
+  private lockReleasedAt = -1e9;
+  /** Called when the player presses Escape out of the captured cursor. */
+  private lockLostHandler: (() => void) | null = null;
+
   constructor(camera: THREE.PerspectiveCamera, domElement: HTMLElement) {
     this.camera = camera;
     this.domElement = domElement;
@@ -150,27 +189,45 @@ export class CameraController {
     this.domElement.addEventListener('pointerdown', (e) => {
       // Ignore if clicking UI buttons (shutter, menus)
       if ((e.target as HTMLElement).closest('.interactive-ui')) return;
+      // A captured cursor is already turning the view; there is nothing to drag.
+      if (this.pointerLocked) return;
 
       this.isDragging = true;
       this.lastPointerPos = { x: e.clientX, y: e.clientY };
     });
 
     window.addEventListener('pointermove', (e) => {
+      if (this.pointerLocked) {
+        // Relative movement: the cursor is parked, the delta is the gesture.
+        this.applyLook(e.movementX || 0, e.movementY || 0);
+        return;
+      }
       if (!this.isDragging) return;
 
       const deltaX = e.clientX - this.lastPointerPos.x;
       const deltaY = e.clientY - this.lastPointerPos.y;
       this.lastPointerPos = { x: e.clientX, y: e.clientY };
-
-      this.targetYaw -= deltaX * this.sensitivity;
-      this.targetPitch += deltaY * this.sensitivity;
-
-      // Clamp vertical pitch to avoid flipping over or digging through ground
-      this.targetPitch = Math.max(
-        GAME_CONFIG.camera.minPitch,
-        Math.min(GAME_CONFIG.camera.maxPitch, this.targetPitch)
-      );
+      this.applyLook(deltaX, deltaY);
     });
+
+    // The browser drops the lock on Escape, on a tab switch and when the
+    // window loses focus. Only the first of those is a decision by the player,
+    // and only that one should leave the game un-paused with the cursor free.
+    //
+    // Guarded: the controller is constructed by tests that have no DOM, and a
+    // missing document must not stop the camera from existing.
+    if (typeof document !== 'undefined') {
+      document.addEventListener('pointerlockchange', () => {
+        const locked = document.pointerLockElement === this.domElement;
+        const wasLocked = this.pointerLocked;
+        this.pointerLocked = locked;
+        this.isDragging = false;
+        if (wasLocked && !locked) {
+          this.lockReleasedAt = performance.now();
+          this.lockLostHandler?.();
+        }
+      });
+    }
 
     window.addEventListener('pointerup', () => {
       this.isDragging = false;
@@ -203,12 +260,83 @@ export class CameraController {
     );
   }
 
+  /**
+   * One mouse step into yaw and pitch, from either the lock or a drag.
+   *
+   * Shared so the two input paths cannot drift apart: a captured cursor and a
+   * dragged one have to feel the same, and the clamp on the step is the only
+   * place a spike can be caught.
+   */
+  private applyLook(deltaX: number, deltaY: number): void {
+    // Reeling a fish is a two-handed job: the mouse button is holding the bar
+    // up, and a hand that drifts while it holds is a camera that swings away
+    // from the float at the exact moment the player is watching it. The look is
+    // frozen for the length of the minigame, not for the whole fishing trip.
+    if (!this.lookEnabled) return;
+
+    const dx = Math.max(-MAX_LOOK_STEP, Math.min(MAX_LOOK_STEP, deltaX));
+    const dy = Math.max(-MAX_LOOK_STEP, Math.min(MAX_LOOK_STEP, deltaY));
+    this.targetYaw -= dx * this.sensitivity;
+    this.targetPitch += dy * this.sensitivity;
+    // Clamp vertical pitch to avoid flipping over or digging through ground
+    this.targetPitch = Math.max(
+      GAME_CONFIG.camera.minPitch,
+      Math.min(GAME_CONFIG.camera.maxPitch, this.targetPitch)
+    );
+  }
+
+  /**
+   * Captures the cursor, so the mouse turns the view without a button held.
+   *
+   * Must be called from a user gesture. A browser that refuses — an unsandboxed
+   * iframe, a policy, a user who dismissed the prompt — leaves the game in the
+   * drag mode it has always had, which is why this never throws.
+   */
+  public lockPointer(): void {
+    if (this.pointerLocked) return;
+    const element = this.domElement as HTMLElement;
+    const request = element.requestPointerLock?.() as unknown;
+    if (request && typeof (request as Promise<void>).catch === 'function') {
+      (request as Promise<void>).catch(() => {});
+    }
+  }
+
+  public unlockPointer(): void {
+    if (typeof document === 'undefined') return;
+    if (document.pointerLockElement === this.domElement) document.exitPointerLock();
+  }
+
+  public isPointerLocked(): boolean {
+    return this.pointerLocked;
+  }
+
+  /**
+   * True for a moment after the cursor was released without us asking.
+   *
+   * Escape is two things at once: the browser's own "give me my cursor back",
+   * and this game's pause key. When the player uses it on a captured cursor
+   * they mean the first one — so the keydown that arrives right after the lock
+   * drops must not also open the pause menu.
+   */
+  public wasJustUnlocked(windowMs = 300): boolean {
+    return performance.now() - this.lockReleasedAt < windowMs;
+  }
+
+  /** Told when the cursor is released, so the game can put the pause up. */
+  public onPointerLockLost(callback: () => void): void {
+    this.lockLostHandler = callback;
+  }
+
   /** Switches between the boom and the head. */
-  public setMode(mode: ViewMode): void {
-    this.mode = mode;
+  public setMode(mode: ViewMode): void {    this.mode = mode;
     if (mode === 'third') {
       this.targetFov = this.baseFov;
     }
+  }
+
+  /** Freezes mouse look without releasing the cursor. See `applyLook`. */
+  public setLookEnabled(on: boolean): void {
+    this.lookEnabled = on;
   }
 
   /**
@@ -252,7 +380,14 @@ export class CameraController {
   public update(
     targetPosition: THREE.Vector3,
     deltaSeconds: number,
-    surfaceY = targetPosition.y
+    surfaceY = targetPosition.y,
+    /**
+     * Height of the eyes above the feet, in metres. Passed in rather than
+     * assumed because the body changes shape: a crawl is 0.75 m of capsule and
+     * a lens left at standing height is a camera looking over the top of a body
+     * that is on the floor.
+     */
+    eyeHeight = EYE_HEIGHT
   ): void {
     const t = Math.min(1.0, GAME_CONFIG.camera.damping * deltaSeconds);
     const tv = Math.min(1.0, GAME_CONFIG.camera.verticalDamping * deltaSeconds);
@@ -369,7 +504,7 @@ export class CameraController {
     // The lens, when there is one in the head. It follows the body's own
     // height rather than the damped focus: a first-person view that eases
     // vertically is a view that lags a jump by half a second.
-    _eye.set(targetPosition.x, targetPosition.y + EYE_HEIGHT, targetPosition.z);
+    _eye.set(targetPosition.x, targetPosition.y + eyeHeight, targetPosition.z);
     if (this.viewBlend < 0.001) this.eyePoint.copy(_eye);
     else this.eyePoint.lerp(_eye, Math.min(1, tv * 1.6));
 

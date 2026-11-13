@@ -183,8 +183,8 @@ catalogue feel like a game rather than a sampler.
 ### Assignment rule
 
 A map gets the mechanic its *kit* suggests. Fishing goes where there is water
-the player can already walk into (`collision.waterLevel` exists, and the
-campground's bed is already dredged). Rhythm goes where there is a stage. This
+the player can already walk into (the campground's bed is dredged to a beach
+profile and its shallows are wadeable). Rhythm goes where there is a stage. This
 is why the list above names maps: if a mechanic does not fit the geometry, it
 will read as bolted on no matter how good it is.
 

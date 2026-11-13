@@ -22,6 +22,7 @@ const FADE_MS = 460;
 
 export class FoundScreen {
   private element: HTMLDivElement;
+  private titleEl: HTMLParagraphElement;
   private nameEl: HTMLParagraphElement;
   private countEl: HTMLParagraphElement;
   private stage: FoundStage;
@@ -42,6 +43,7 @@ export class FoundScreen {
       </div>
     `;
 
+    this.titleEl = this.element.querySelector('.found-title') as HTMLParagraphElement;
     this.nameEl = this.element.querySelector('.found-name') as HTMLParagraphElement;
     this.countEl = this.element.querySelector('.found-count') as HTMLParagraphElement;
     const well = this.element.querySelector('.found-well') as HTMLDivElement;
@@ -72,6 +74,27 @@ export class FoundScreen {
     total: number,
     onHidden?: () => void
   ): void {
+    this.showObject(object, 'Found', name, `${found} of ${total}`, HOLD_MS, onHidden);
+  }
+
+  /**
+   * The same card, for anything that is not a hidden object.
+   *
+   * A landed fish gets the identical treatment — the word, the turning model,
+   * the name — because it is the same event as far as the player is concerned:
+   * something came out of the world and it is yours now. `title` and `line` are
+   * free so the catch can print its weight and experience where the hunt prints
+   * "2 of 5".
+   */
+  public showObject(
+    object: THREE.Object3D,
+    title: string,
+    name: string,
+    line: string,
+    holdMs = HOLD_MS,
+    onHidden?: () => void,
+    owns = true
+  ): void {
     this.clearTimers();
     this.onHidden = onHidden ?? null;
 
@@ -79,9 +102,10 @@ export class FoundScreen {
     // element measures zero.
     this.element.classList.remove('hidden', 'is-leaving');
 
+    this.titleEl.textContent = title;
     this.nameEl.textContent = name;
-    this.countEl.textContent = `${found} of ${total}`;
-    this.stage.show(object);
+    this.countEl.textContent = line;
+    this.stage.show(object, owns);
 
     this.holdTimer = window.setTimeout(() => {
       this.holdTimer = null;
@@ -90,7 +114,7 @@ export class FoundScreen {
         this.fadeTimer = null;
         this.hide();
       }, FADE_MS);
-    }, HOLD_MS);
+    }, holdMs);
   }
 
   /**

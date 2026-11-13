@@ -208,7 +208,7 @@ function collectPart(
     meshes: partMeshes,
     triangles: vertices.length / 9,
     neverWall: isNeverWall(child.name || ''),
-    stepBonus: STAIR_PART.test(child.name || '') ? STAIR_STEP_BONUS : 0,
+    stepBonus: stairBonusFor(child),
   };
   // Derive the part bounds from the triangle bounds we already computed.
   part.bounds.makeEmpty();
@@ -428,10 +428,36 @@ interface CollisionPart {
   stepBonus: number;
 }
 
-/** Parts the player is expected to walk up, by name. */
-const STAIR_PART = /stair|steps?(-|_|$)|staircase/i;
+/**
+ * Parts the player is expected to walk up, by name.
+ *
+ * A staircase is not always called a staircase. The kits also ship raised
+ * *decks* reached by a lip — a wetland boardwalk on its piles, a lake dock a
+ * hand's width above the bank — and those lips are the same problem: 0.4-0.5 m
+ * of riser that the body refuses, on a surface it is plainly meant to mount.
+ * The family is therefore "things built to be walked along", which is exactly
+ * the set whose name says so.
+ */
+const STAIR_PART = /stair|steps?(-|_|$)|staircase|boardwalk|dock|pier|jetty|deck|landing|footbridge|catwalk|ramp/i;
 /** How much extra step a staircase gets, in metres. */
 const STAIR_STEP_BONUS = 0.22;
+
+/**
+ * The step allowance for a part, taken from the part *and its ancestors*.
+ *
+ * The kit names the prop and leaves the parts inside it numbered: a boardwalk
+ * run is `wetland-boardwalk-run` and its slabs are `boardwalk-bay`,
+ * `boardwalk-bay_1`, and so on. Testing the part name alone therefore catches
+ * exactly the kits that happened to name the leaf — and misses the ones that
+ * did not, which is why the campground's boardwalk could not be climbed.
+ */
+function stairBonusFor(node: THREE.Object3D): number {
+  let current: THREE.Object3D | null = node;
+  for (let depth = 0; current && depth < 4; depth++, current = current.parent) {
+    if (STAIR_PART.test(current.name || '')) return STAIR_STEP_BONUS;
+  }
+  return 0;
+}
 
 const _v = new THREE.Vector3();
 

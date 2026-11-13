@@ -17,6 +17,14 @@ This project incorporates assets, code algorithms, and libraries licensed under 
   - **Kit cover artwork**, the isometric promotional renders of each kit, at
     `public/maps/<id>.jpg`. Derived from `https://polyfork.dev/kits/<kit>/cover.png`
     and re-encoded; see `tools/fetch-kit-covers.mjs`.
+  - **One fishing rod and sixteen fish**, at `public/assets/props/` and
+    `public/assets/fish/` (`propped-fishing-rod-072978`, and the five freshwater
+    and eleven reef species listed in `src/data/fishing.ts`). Attribution, with
+    the asset URL for each, is in `public/assets/props/CREDITS.md` and
+    `public/assets/fish/CREDITS.md`.
+  - **Fish thumbnails**, at `public/assets/fish/thumbs/`. Rendered from the same
+    GLB files by `tools/fish-thumbs.mjs`; no third-party artwork is involved
+    beyond the models they depict.
   - Animation keyframe tracks (`anim-idle.json`, `anim-walk.json`, `anim-run.json`,
     and the five gait clips).
 - **License Terms:**
@@ -73,7 +81,19 @@ copies or substantial portions of the Software.
 
 ---
 
-## 4. Three.js
+## 4. Adobe Mixamo Animations
+- **Source:** Adobe Mixamo (https://www.mixamo.com)
+- **Included Assets:** The two fishing clips, `Fishing Idle` and `Fishing Cast`,
+  downloaded as FBX and converted to `public/assets/anims/anim-fishIdle.json` and
+  `anim-fishCast.json` by `tools/convert-fbx-anim.mjs`. The other gait, jump and
+  idle clips on the roster are built the same way.
+- **License Terms:** Mixamo animations are free to use in personal and commercial
+  projects under Adobe's Mixamo terms. The animations are baked to keyframe data
+  for the game's own rig; no Mixamo files are redistributed as standalone assets.
+
+---
+
+## 5. Three.js
 - **Author:** Ricardo Cabello (Mr.doob) and Three.js Authors (https://threejs.org)
 - **License:** MIT License
 

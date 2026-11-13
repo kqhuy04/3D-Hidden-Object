@@ -1,6 +1,12 @@
 // Float the boats: every craft placed in the lake is moved so its hull sits at a
 // believable waterline instead of under (or above) the water plane.
 //
+// SUPERSEDED. `WorldLoader.settleProps` does this at load time, from the water
+// mesh's own height, for craft, lily pads, reeds and people. This tool bakes the
+// result into the GLB against a single constant, and the constant was wrong: the
+// campground's sheet spans y -4.58 to -0.63 (lake at one end, creek at the other),
+// not -3.75. Kept only because it is what put the current GLB where it is.
+//
 // The kit bakes each placement into a node matrix and the hull vertices are in
 // local space, so the fix is a Y offset on the placement matrix — no geometry is
 // touched and the collision build follows automatically.

@@ -35,6 +35,15 @@ export class FoundStage {
   private camera: THREE.PerspectiveCamera;
   private holder = new THREE.Group();
   private object: THREE.Object3D | null = null;
+  /**
+   * Whether the stage may free the object's buffers.
+   *
+   * A hidden object comes out of the map and is gone, so it does. A fish shown
+   * for a catch is a clone of a prototype the school still needs, and its
+   * geometry is that prototype's geometry — disposing it here would empty the
+   * water for the rest of the session.
+   */
+  private owns = true;
   private frame = 0;
   private running = false;
   private clock = new THREE.Clock();
@@ -115,9 +124,10 @@ export class FoundStage {
    * bounding sphere and scaled to fit, so the screen does not depend on where
    * in the world the player happened to find it.
    */
-  public show(object: THREE.Object3D): void {
+  public show(object: THREE.Object3D, owns = true): void {
     this.clear();
     this.object = object;
+    this.owns = owns;
     // The well may have been measured while the screen was `display: none`, and
     // the observer that fixes that fires on the next frame — which is one frame
     // of a badly sized canvas. Measure now that the element is up.
@@ -186,16 +196,18 @@ export class FoundStage {
   private clear(): void {
     if (!this.object) return;
     this.holder.remove(this.object);
-    this.object.traverse((node) => {
-      const mesh = node as THREE.Mesh;
-      if (!mesh.isMesh) return;
-      // The object came out of the hunt with its buffers intact, so this is the
-      // only place they are freed.
-      mesh.geometry?.dispose();
-      const material = mesh.material;
-      if (Array.isArray(material)) material.forEach((m) => m.dispose());
-      else material?.dispose();
-    });
+    if (this.owns) {
+      this.object.traverse((node) => {
+        const mesh = node as THREE.Mesh;
+        if (!mesh.isMesh) return;
+        // The object came out of the hunt with its buffers intact, so this is
+        // the only place they are freed.
+        mesh.geometry?.dispose();
+        const material = mesh.material;
+        if (Array.isArray(material)) material.forEach((m) => m.dispose());
+        else material?.dispose();
+      });
+    }
     this.object = null;
   }
 

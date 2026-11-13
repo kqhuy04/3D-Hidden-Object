@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { WorldCollision } from '../world/WorldCollision';
 import { animateKitHumanoid, ActorAnimator, isHumanoid } from './KitClips';
 import { animateQuadruped, isQuadruped } from './Quadruped';
-import { InteractableAction } from '../interact/Interactions';
+import { InteractableAction } from '../interact/InteractableAction';
 import { stopCullingAnimatedParts } from '../render/skinnedCulling';
 
 /**
@@ -112,6 +112,24 @@ const BODY_RADIUS = 0.5;
 
 const UP = new THREE.Vector3(0, 1, 0);
 
+/**
+ * Node names that describe a wrapper rather than a person.
+ *
+ * Every kit nests its cast the same way — `lake-angler` → `character` →
+ * `character-mesh` — and only the outermost of those is a name worth printing.
+ */
+const WRAPPER_NAME = /^(character|char|body|rig|root|armature|group|scene|skeleton|.*-mesh|.*-character)(_?\d+)?$/i;
+
+/** `lake-angler` → `Lake Angler`. Digits and separators are kit plumbing. */
+function prettyName(raw: string): string {
+  const words = raw
+    .replace(/_(\d+)$/, '')
+    .split(/[-_.\s]+/)
+    .filter((word) => word.length > 0 && !/^\d+$/.test(word));
+  if (words.length === 0) return 'Someone';
+  return words.map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+}
+
 interface Actor {
   unit: THREE.Object3D;
   animator: ActorAnimator;
@@ -152,6 +170,14 @@ interface Actor {
    * sheep, and a prompt offering to would be the first joke the map makes.
    */
   talk: InteractableAction | null;
+  /**
+   * Every mesh skinned to this person's rig — body, hair, hat, coat, trousers.
+   *
+   * The unit holds only the body (see `characterUnit`), which is the right
+   * granularity for walking and the wrong one for anything that has to show the
+   * person: a portrait of the body alone is a portrait with no face on it.
+   */
+  parts: THREE.Object3D[];
 }
 
 const _world = new THREE.Vector3();
@@ -265,6 +291,30 @@ export class NpcCrowd {
     return this.actors.map((actor) => actor.unit.getWorldPosition(new THREE.Vector3()));
   }
 
+  /** Every mesh skinned to this person's rig, for the portrait. */
+  public partsOf(unit: THREE.Object3D): readonly THREE.Object3D[] {
+    const actor = this.actors.find((candidate) => candidate.unit === unit);
+    return actor ? actor.parts : [unit];
+  }
+
+  /**
+   * What to call somebody, for the dialogue panel.
+   *
+   * The kits name their people for what they are — `lake-angler`,
+   * `park-ranger`, `city-commuter` — and that is the only identity they have.
+   * The node the crowd drives is usually an inner `character` wrapper, so the
+   * search climbs until it finds a word that is not a wrapper.
+   */
+  public nameOf(unit: THREE.Object3D): string {
+    let node: THREE.Object3D | null = unit;
+    for (let climb = 0; node && climb < 6; climb++) {
+      const raw = (node.name || '').trim();
+      if (raw && !WRAPPER_NAME.test(raw)) return prettyName(raw);
+      node = node.parent;
+    }
+    return 'Someone';
+  }
+
   /**
    * Finds the people in a freshly loaded map and starts them.
    *
@@ -292,9 +342,11 @@ export class NpcCrowd {
     // character" has to be done to them separately. Grouping by the root bone
     // finds all of them: same bone object, five skeletons.
     const byRootBone = new Map<THREE.Bone, THREE.SkinnedMesh[]>();
+    const allSkinned: THREE.SkinnedMesh[] = [];
     root.traverse((child) => {
       const mesh = child as THREE.SkinnedMesh;
       if (!mesh.isSkinnedMesh || !mesh.skeleton) return;
+      allSkinned.push(mesh);
       const list = bySkeleton.get(mesh.skeleton);
       if (list) list.push(mesh);
       else bySkeleton.set(mesh.skeleton, [mesh]);
@@ -336,6 +388,24 @@ export class NpcCrowd {
       }
     }
 
+    /**
+     * Every mesh that shares a bone with this rig.
+     *
+     * A kit splits one person into a body, a coat, a hat and a pair of
+     * trousers, each skinned to the same bones. `byRootBone` groups them by
+     * `bones[0]`, which is right for the walking parts — but a kit is free to
+     * order a coat's bones differently, and then the coat is not in the group
+     * even though it moves with the body. Sharing *any* bone is the honest
+     * test, and it is what the portrait needs: a head with no hat on it is not
+     * the person the player is talking to.
+     */
+    const partsFor = (skeleton: THREE.Skeleton): THREE.Object3D[] => {
+      const bones = new Set(skeleton.bones);
+      return allSkinned.filter(
+        (mesh) => mesh.skeleton && mesh.skeleton.bones.some((bone) => bones.has(bone))
+      );
+    };
+
     const all = [...byPlace.values()].sort((a, b) => a.distance - b.distance);
     const chosen = [
       ...all.filter((candidate) => !candidate.animal).slice(0, MAX_ACTORS),
@@ -352,6 +422,7 @@ export class NpcCrowd {
           // the coat and the trousers are separate objects, and they are the
           // parts that vanish.
           const parts = byRootBone.get(skeleton.bones[0]) ?? [];
+          const rigParts = partsFor(skeleton);
           for (const part of parts) part.frustumCulled = false;
           stopCullingAnimatedParts(unit);
           this.moving.push(...parts);
@@ -372,6 +443,7 @@ export class NpcCrowd {
             legLength: 1,
             searchTries: 0,
             searchFrom: home.clone(),
+            parts: rigParts,
             talk: animal
               ? null
               : {

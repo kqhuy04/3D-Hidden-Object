@@ -29,6 +29,10 @@
   --rust-dark: #8a3520;
   --moss: #4f6b4e;
   --clay: #a2593b;
+  /* The fourth ink. Used for one thing only — a legendary fish's name — because
+     a rarity ladder that ends in the same red as the rung below it is not a
+     ladder. */
+  --plum: #5c2b4d;
 
   /* Type */
   --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia,
@@ -1246,6 +1250,13 @@ canvas {
   font-size: 11px;
   font-style: italic;
   color: var(--ink-faint);
+}
+
+/* The shortcut is hidden whenever the click does something else — while the
+   rod is out the left button casts, so offering "or click" for "stop fishing"
+   would be a lie in the same line as the truth. */
+.pickup-alt.hidden {
+  display: none;
 }
 
 .pickup-cycle {
@@ -2491,5 +2502,661 @@ canvas {
   }
   to {
     opacity: 1;
+  }
+}
+
+/* Dialogue ---------------------------------------------------------------- */
+
+/* A conversation sits across the bottom of the screen, the way a person
+   standing in front of you does. It is not a toast and it is not part of the
+   objectives panel: the moment somebody answers you, they are the subject. */
+.dialogue-panel {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: min(720px, calc(100vw - 48px));
+  padding: 13px 16px 15px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-2);
+  pointer-events: none;
+  animation: dialogueIn 150ms ease-out;
+}
+
+.dialogue-panel.hidden {
+  display: none;
+}
+
+.dialogue-portrait {
+  flex: 0 0 auto;
+  width: 86px;
+  height: 86px;
+  background: var(--paper-deep);
+  border: 1.5px solid var(--ink);
+  overflow: hidden;
+}
+
+.dialogue-portrait canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* No photograph: a paper seal with the speaker's initial. Still a person. */
+.dialogue-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1;
+  color: var(--ink-soft);
+}
+
+.dialogue-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 74px;
+}
+
+.dialogue-name {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 8px 2px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-radius: 1px;
+}
+
+.dialogue-line {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.dialogue-dismiss {
+  position: absolute;
+  right: 15px;
+  bottom: 11px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+@keyframes dialogueIn {
+  from {
+    transform: translate(-50%, 10px);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+/* =========================================================================
+   FISHING — the rod, the bar and the catch card
+
+   The one part of the interface that is a *gauge* rather than a list. It is
+   still printed paper: a flat water-blue channel, a moss band for the zone, a
+   rust mark for the fish, ink rules and a hard offset shadow. No gradients, no
+   glow — the bar has to be readable at a glance while a hand is holding a
+   button down, and a gradient is exactly what makes a 12 px mark disappear
+   against its track.
+   ========================================================================= */
+
+#fishing-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 120;
+  pointer-events: none;
+}
+
+/* The instruction under the reticle. Same paper chip as the pickup prompt,
+   moved down so the two can never sit on top of each other. */
+.fishing-status {
+  position: absolute;
+  left: 50%;
+  bottom: 118px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 13px 7px 7px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 rgba(25, 21, 16, 0.22);
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.fishing-status.hidden,
+.fishing-power.hidden,
+.fishing-minigame.hidden,
+.fishing-bite.hidden,
+.fishing-card.hidden,
+.fishing-chip.hidden {
+  display: none;
+}
+
+/* Power meter ------------------------------------------------------------ */
+
+.fishing-power {
+  position: absolute;
+  left: 50%;
+  bottom: 164px;
+  transform: translateX(-50%);
+  width: 208px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fishing-power-track {
+  position: relative;
+  flex: 1;
+  height: 14px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 rgba(25, 21, 16, 0.2);
+  overflow: hidden;
+}
+
+.fishing-power-track i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--rust);
+}
+
+.fishing-power-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--paper);
+  text-shadow: 1px 1px 0 var(--ink);
+}
+
+/* The reeling panel ------------------------------------------------------ */
+
+.fishing-minigame {
+  position: absolute;
+  right: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  padding: 11px 12px 9px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 5px 5px 0 rgba(25, 21, 16, 0.22);
+}
+
+.fishing-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.fishing-kicker {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.fishing-species {
+  font-family: var(--font-display);
+  font-size: 17px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.fishing-body {
+  display: flex;
+  gap: 8px;
+  padding: 9px 0 7px;
+}
+
+/* The channel. Flat blue with a hairline of ink, so the moss band reads as
+   something laid on top of water rather than a second colour in it. */
+.fishing-track {
+  position: relative;
+  flex: 1;
+  height: 268px;
+  background: #46707b;
+  border: 1.5px solid var(--ink);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.fishing-zone {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  background: #6f8f5c;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+.fishing-track.in-zone .fishing-zone {
+  background: #86a86a;
+}
+
+/* A rust mark with a tail: the fish, at 12 px. It faces up the bar, which is
+   the direction it is trying to escape in. */
+.fishing-fish {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 22px;
+  height: 13px;
+  margin-left: -11px;
+  margin-bottom: -6px;
+  background: var(--rust);
+  clip-path: polygon(24% 0, 100% 0, 100% 100%, 24% 100%, 0 50%);
+}
+
+.fishing-track.in-zone .fishing-fish {
+  background: var(--paper-hi);
+  box-shadow: 0 0 0 1.5px var(--ink);
+}
+
+.fishing-gauge {
+  position: relative;
+  width: 15px;
+  height: 268px;
+  background: var(--paper-deep);
+  border: 1.5px solid var(--ink);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.fishing-gauge i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  background: var(--moss);
+  border-top: 1.5px solid var(--ink);
+}
+
+.fishing-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  padding-top: 7px;
+  border-top: 1.5px solid var(--ink-rule);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+}
+
+.fishing-level-note {
+  color: var(--rust);
+}
+
+/* The bite --------------------------------------------------------------- */
+
+.fishing-bite {
+  position: absolute;
+  left: 50%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.fishing-bite-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 rgba(25, 21, 16, 0.3);
+  font-family: var(--font-display);
+  font-size: 38px;
+  line-height: 1;
+  color: var(--rust);
+}
+
+.fishing-bite-text {
+  padding: 2px 7px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* The catch card --------------------------------------------------------- */
+
+.fishing-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(310px, 78vw);
+  padding: 18px 22px 20px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-3);
+  text-align: left;
+}
+
+.fishing-card-kicker {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.fishing-card h3 {
+  margin: 6px 0 4px;
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.fishing-card p {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.fishing-card-xp {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 8px 2px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 1px;
+}
+
+.fishing-card.is-level .fishing-card-xp {
+  background: var(--rust);
+}
+
+/* The level chip --------------------------------------------------------- */
+
+.fishing-chip {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  width: 132px;
+  padding: 8px 10px 9px;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 rgba(25, 21, 16, 0.2);
+}
+
+.fishing-chip-label {
+  display: block;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.fishing-chip-level {
+  display: block;
+  margin: 1px 0 5px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.fishing-chip-bar {
+  height: 5px;
+  background: var(--paper-deep);
+  border: 1px solid var(--ink);
+  overflow: hidden;
+}
+
+.fishing-chip-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--rust);
+}
+
+@media (max-width: 720px) {
+  .fishing-minigame {
+    right: 14px;
+    transform: translateY(-50%) scale(0.86);
+  }
+
+  .fishing-chip {
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+/* =========================================================================
+   CATCH LOG
+
+   The fishing collection: one cell per species, the picture in a paper well,
+   the name in the colour of its rarity. Uncaught fish keep the same picture
+   and lose all of its colour — a silhouette is the honest way to say "there is
+   something here and it is not yours yet" without spoiling what it is.
+
+   The grid is `auto-fill` rather than a fixed column count so the card works
+   on a laptop and on a 32-inch monitor without a second media query.
+   ========================================================================= */
+
+.catch-log-card {
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--lift-3);
+  width: min(880px, 94vw);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  /* A grid child of a flex column needs both of these or it cannot shrink and
+     pushes the footer off the bottom of the card. */
+  min-height: 0;
+}
+
+.catch-log-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 26px 30px 16px;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.catch-log-title {
+  margin: 6px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.catch-log-count {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.catch-log-grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 14px;
+  padding: 22px 30px;
+}
+
+.catch-log-grid::-webkit-scrollbar {
+  width: 7px;
+}
+
+.catch-log-grid::-webkit-scrollbar-thumb {
+  background: rgba(25, 21, 16, 0.24);
+}
+
+.catch-cell {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 10px 8px 12px;
+  border: 1.5px solid var(--ink-rule);
+  background: var(--paper-hi);
+}
+
+.catch-cell.is-caught {
+  border-color: var(--ink);
+  box-shadow: var(--lift-1);
+}
+
+.catch-thumb {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--paper-deep);
+  border: 1px solid var(--ink-rule);
+  overflow: hidden;
+}
+
+.catch-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* The thumbnails are 192 px and the well is smaller; keep the pixels crisp
+     rather than smearing them, which is the whole look of the interface. */
+  image-rendering: auto;
+}
+
+/* Uncaught: the same fish, with none of its colour. Not a blur, not a fade —
+   a flat black shape, which is what a silhouette is. Full opacity on purpose:
+   "đen sì" was the ask, and a softened one is a picture of a fish you cannot
+   see rather than a picture of a fish you have not caught. */
+.catch-thumb.is-unknown img {
+  filter: brightness(0);
+}
+
+.catch-name {
+  margin-top: 3px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--ink);
+}
+
+.catch-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.catch-cell.is-caught .catch-meta {
+  color: var(--ink-soft);
+}
+
+/* Rarity, as ink colours. Four, because four is how many rarities there are
+   and a collection where everything is the same brown is a checklist. */
+.rarity-common {
+  color: var(--ink);
+}
+
+.rarity-uncommon {
+  color: var(--moss);
+}
+
+.rarity-rare {
+  color: var(--rust);
+}
+
+.rarity-legendary {
+  color: var(--plum);
+}
+
+.rarity-unknown {
+  color: var(--ink-faint);
+}
+
+.catch-log-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 30px 22px;
+  border-top: 1.5px solid var(--ink);
+}
+
+.catch-log-hint {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+@media (max-width: 720px) {
+  .catch-log-head,
+  .catch-log-grid,
+  .catch-log-foot {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .catch-log-grid {
+    grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+    gap: 10px;
   }
 }

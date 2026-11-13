@@ -9,8 +9,21 @@ export class InputController {
   private crawlCallbacks: ((crawling: boolean) => void)[] = [];
   private runCallbacks: ((running: boolean) => void)[] = [];
   private viewCallbacks: (() => void)[] = [];
+  private logCallbacks: (() => void)[] = [];
   private pauseCallbacks: (() => void)[] = [];
+  private primaryDownCallbacks: (() => void)[] = [];
+  private primaryUpCallbacks: (() => void)[] = [];
   private virtualJoystickVector = new THREE.Vector2();
+
+  /**
+   * Whether the left button is down *right now*, held rather than clicked.
+   *
+   * The hunt only ever needed edges — a press picks something up. The fishing
+   * rod needs the press itself: the bar rises while the button is held and
+   * falls when it is let go, and a 30 ms tap has to be distinguishable from a
+   * two-second hold. So this is state, not a queue.
+   */
+  private primaryHeld = false;
 
   /**
    * Space is a jump now, so it is edge-triggered and latched: holding the key
@@ -54,13 +67,21 @@ export class InputController {
       const target = e.target as HTMLElement | null;
       if (target?.closest?.('.interactive-ui')) return;
       this.clickOrigin = { x: e.clientX, y: e.clientY };
+      this.primaryHeld = true;
+      for (const cb of this.primaryDownCallbacks) cb();
     });
 
     window.addEventListener('pointerup', (e) => {
       const origin = this.clickOrigin;
       this.clickOrigin = null;
-      if (!origin || e.button !== 0) return;
+      if (e.button !== 0) return;
 
+      if (this.primaryHeld) {
+        this.primaryHeld = false;
+        for (const cb of this.primaryUpCallbacks) cb();
+      }
+
+      if (!origin) return;
       const moved = Math.hypot(e.clientX - origin.x, e.clientY - origin.y);
       if (moved > 6) return;
 
@@ -69,6 +90,9 @@ export class InputController {
 
     window.addEventListener('pointercancel', () => {
       this.clickOrigin = null;
+      if (!this.primaryHeld) return;
+      this.primaryHeld = false;
+      for (const cb of this.primaryUpCallbacks) cb();
     });
   }
 
@@ -120,6 +144,13 @@ export class InputController {
         this.triggerView();
       }
 
+      // F opens the catch log. In the map, not in a menu: a collection you have
+      // to leave the map to look at is a collection nobody looks at.
+      if (e.code === 'KeyF' && !e.repeat) {
+        e.preventDefault();
+        this.triggerLog();
+      }
+
       if (e.code === 'Escape') {
         e.preventDefault();
         this.triggerPause();
@@ -136,6 +167,13 @@ export class InputController {
       this.jumpQueued = false;
       this.interactQueued = false;
       this.virtualJoystickVector.set(0, 0);
+      // A held button that never gets its `pointerup` is a bar that stays up
+      // forever. Releasing it here is the same thing the browser would do if
+      // the pointer had stayed inside the window.
+      if (this.primaryHeld) {
+        this.primaryHeld = false;
+        for (const cb of this.primaryUpCallbacks) cb();
+      }
     });
   }
 
@@ -146,6 +184,19 @@ export class InputController {
   /** Left click on the world; the game decides whether it picks anything up. */
   public onPickupClick(callback: () => void): void {
     this.pickupClickCallbacks.push(callback);
+  }
+
+  /** The left button went down on the world. Held, not clicked — see `isPrimaryHeld`. */
+  public onPrimaryDown(callback: () => void): void {
+    this.primaryDownCallbacks.push(callback);
+  }
+
+  public onPrimaryUp(callback: () => void): void {
+    this.primaryUpCallbacks.push(callback);
+  }
+
+  public isPrimaryHeld(): boolean {
+    return this.primaryHeld;
   }
 
   /** Tab: move the selection to the next object within reach. */
@@ -164,6 +215,10 @@ export class InputController {
   }
 
   /** V or the HUD button: swap between first and third person. */
+  public onLogToggle(callback: () => void): void {
+    this.logCallbacks.push(callback);
+  }
+
   public onViewToggle(callback: () => void): void {
     this.viewCallbacks.push(callback);
   }
@@ -194,6 +249,10 @@ export class InputController {
 
   public triggerRun(running: boolean): void {
     for (const cb of this.runCallbacks) cb(running);
+  }
+
+  public triggerLog(): void {
+    for (const cb of this.logCallbacks) cb();
   }
 
   public triggerView(): void {
