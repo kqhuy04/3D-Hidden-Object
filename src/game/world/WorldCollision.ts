@@ -90,6 +90,20 @@ export class WorldCollision {
   private climbVolumes: ClimbVolume[] = [];
   private raycaster = new THREE.Raycaster();
   private downVector = new THREE.Vector3(0, -1, 0);
+  /**
+   * Last terrain height the heightfield actually had data for.
+   *
+   * Past the edge of the rasterised field there is no ground to sample, and the
+   * exact answer — `raycastGround`, a `Raycaster` over every terrain triangle —
+   * measured at 6.2 ms per query on the campground's 22,540 triangles. The walk
+   * asks for the ground four times a frame, so a body standing on a pier or a
+   * reef ledge just outside the field was paying 25 ms a frame for a number
+   * nobody can see: off the field there is no terrain to be accurate about.
+   * Holding the last real sample is both cheaper and steadier — the body keeps
+   * the level of the edge instead of dropping to the skirt the kit modelled
+   * twelve metres below it.
+   */
+  private lastGroundY = 0;
   /** Lake surface height. Water is walkable; this is only a reference level. */
   public readonly waterLevel = -3.75;
   /** Reused scratch space for multi-contact resolution. */
@@ -115,6 +129,15 @@ export class WorldCollision {
   public setTerrainMeshes(meshes: THREE.Mesh[]): void {
     this.terrainMeshes = meshes.filter(Boolean);
     this.heightField = buildHeightField(this.terrainMeshes);
+    // A new map's heights mean nothing to the old map's last sample.
+    this.lastGroundY = 0;
+    const field = this.heightField;
+    if (field) {
+      const centreX = field.minX + (field.cell * field.size) / 2;
+      const centreZ = field.minZ + (field.cell * field.size) / 2;
+      const centre = sampleHeightField(field, centreX, centreZ);
+      if (centre !== null) this.lastGroundY = centre;
+    }
   }
 
   public setTerrainMesh(mesh: THREE.Mesh): void {
@@ -216,6 +239,7 @@ export class WorldCollision {
     this.heightField = null;
     this.geometry = null;
     this.climbVolumes = [];
+    this.lastGroundY = 0;
   }
 
   /**
@@ -278,7 +302,7 @@ export class WorldCollision {
     // Eject any overlap the player starts in. Without this a body that has been
     // pushed into geometry (or spawned inside it) can never move again: every
     // sub-step is rejected by the safety net below and it stays frozen.
-    const groundBefore = this.getGroundHeight(position.x, position.z);
+    const groundBefore = this.groundNear(position.x, position.z);
     const bandBefore = bodyFeetY ?? groundBefore;
     this.depenetrate(position, capsule, bandBefore, bandBefore + capsule.height);
 
@@ -293,7 +317,7 @@ export class WorldCollision {
     // the window sat on the terrain 3 m below its feet.
     const supportRef = bodyFeetY ?? position.y;
     const supportStart = this.supportHeight(position.x, position.z, supportRef, capsule);
-    const terrainStart = this.getGroundHeight(position.x, position.z);
+    const terrainStart = this.groundNear(position.x, position.z);
     const groundStart =
       supportStart !== null && supportStart > terrainStart ? supportStart : terrainStart;
     position.y = groundStart;
@@ -456,7 +480,7 @@ export class WorldCollision {
     }
 
     // Final height: terrain, or the deck/bridge the body is standing on.
-    const terrainEnd = this.getGroundHeight(position.x, position.z);
+    const terrainEnd = this.groundNear(position.x, position.z);
     const supportEnd = this.supportHeight(position.x, position.z, supportRef, capsule);
     position.y =
       supportEnd !== null && supportEnd > terrainEnd ? supportEnd : terrainEnd;
@@ -681,6 +705,30 @@ export class WorldCollision {
     return null;
   }
 
+  /**
+   * Terrain height for the walk, without the exact-but-expensive fallback.
+   *
+   * Identical to `getGroundHeight` everywhere the heightfield has data, which is
+   * everywhere the body can actually go: `hasGround` already refuses a step off
+   * the rasterised field unless a prop is holding the body up. Off the field the
+   * answer is the last height that *was* real, which is what the body should
+   * stand at anyway — see `lastGroundY`.
+   *
+   * `getGroundHeight` is kept for the one-off queries that genuinely want the
+   * exact surface: spawning, placing a hidden object, the debug view.
+   */
+  private groundNear(x: number, z: number): number {
+    const field = this.heightField;
+    if (field) {
+      const h = sampleHeightField(field, x, z);
+      if (h !== null) {
+        this.lastGroundY = h;
+        return h;
+      }
+    }
+    return this.lastGroundY;
+  }
+
   /** Terrain height at (x, z); returns 0 when no terrain is registered. */
   public getGroundHeight(x: number, z: number): number {
     const field = this.heightField;
@@ -714,7 +762,10 @@ export class WorldCollision {
    * under a jetty and call every deck a cliff.
    */
   public groundAt(x: number, z: number, feetY: number, capsule = this.capsule): number {
-    const terrain = this.getGroundHeight(x, z);
+    // `groundNear`, not `getGroundHeight`: this is asked once per frame by the
+    // slope probe and by every NPC leg, and the exact fallback is the 6.2 ms
+    // raycast this class exists to avoid.
+    const terrain = this.groundNear(x, z);
     const support = this.supportHeight(x, z, feetY, capsule);
     return support !== null && support > terrain ? support : terrain;
   }

@@ -117,20 +117,7 @@ export class TargetOutline {
         Math.max(MIN_THICKNESS, radius * THICKNESS_RATIO)
       );
 
-      const material = new THREE.ShaderMaterial({
-        uniforms: {
-          thickness: { value: thickness },
-          color: { value: this.color },
-        },
-        vertexShader: VERTEX_SHADER,
-        fragmentShader: FRAGMENT_SHADER,
-        side: THREE.BackSide,
-        // The rim is an overlay, not a solid: it is drawn after the rest of the
-        // opaque scene and tested against it, so it can never cover something in
-        // front of the object — and it writes no depth, so it cannot punch a
-        // hole in the shadow or in the prop standing behind it either.
-        depthWrite: false,
-      });
+      const material = this.createMaterial(thickness);
 
       const hull = new THREE.Mesh(geometry, material);
       hull.castShadow = false;
@@ -141,6 +128,64 @@ export class TargetOutline {
 
       this.hulls.push({ host: mesh, hull, material });
     }
+  }
+
+  /**
+   * The rim material, one per selected mesh.
+   *
+   * Extracted so `warm` can build the identical program without a real
+   * selection — the shader is the same for every thickness, and the program is
+   * what costs.
+   */
+  private createMaterial(thickness: number): THREE.ShaderMaterial {
+    return new THREE.ShaderMaterial({
+      uniforms: {
+        thickness: { value: thickness },
+        color: { value: this.color },
+      },
+      vertexShader: VERTEX_SHADER,
+      fragmentShader: FRAGMENT_SHADER,
+      side: THREE.BackSide,
+      // The rim is an overlay, not a solid: it is drawn after the rest of the
+      // opaque scene and tested against it, so it can never cover something in
+      // front of the object — and it writes no depth, so it cannot punch a
+      // hole in the shadow or in the prop standing behind it either.
+      depthWrite: false,
+    });
+  }
+
+  /**
+   * Compiles the rim shader, once, behind the loading screen.
+   *
+   * A `ShaderMaterial` compiles on its first draw, and the first draw is the
+   * frame the player walks close enough to a prop for the prompt to appear —
+   * which is the worst possible frame to spend 20-40 ms on, because it is the
+   * frame the player is watching for the prompt. One 2 cm cube drawn into a
+   * 1×1 target costs nothing and moves that cost into a place the player already
+   * expects to wait.
+   */
+  public warm(renderer: THREE.WebGLRenderer): void {
+    const geometry = new THREE.BoxGeometry(0.02, 0.02, 0.02);
+    const material = this.createMaterial(MIN_THICKNESS);
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.frustumCulled = false;
+
+    const scene = new THREE.Scene();
+    scene.add(mesh);
+    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+    camera.position.z = 1;
+
+    const target = new THREE.WebGLRenderTarget(1, 1, { depthBuffer: false });
+    const previous = renderer.getRenderTarget();
+    const autoClear = renderer.autoClear;
+    renderer.setRenderTarget(target);
+    renderer.render(scene, camera);
+    renderer.setRenderTarget(previous);
+    renderer.autoClear = autoClear;
+
+    target.dispose();
+    geometry.dispose();
+    material.dispose();
   }
 
   public hide(): void {

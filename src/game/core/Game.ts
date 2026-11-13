@@ -134,6 +134,16 @@ export class Game {
   private settingsReturn: GameState = GameState.MENU;
   /** Smoothed frame rate for the HUD readout. */
   private fpsSmoothed = 60;
+  /**
+   * Alternates while the found screen is up, so every other frame is skipped.
+   *
+   * See `render`: a 13 px backdrop blur covers the whole viewport for three
+   * seconds every time something is found, and the world behind it is not
+   * readable at all — so drawing it sixty times a second is paying full price
+   * for a picture nobody can see. Half the frames is invisible under that blur
+   * and takes the peak off the one moment the game is doing two jobs at once.
+   */
+  private skipDraw = false;
   private audio = AudioEngine.getInstance();
 
   constructor(container: HTMLElement) {
@@ -468,6 +478,16 @@ export class Game {
     onProgress?.('Warming up the shaders...');
     const tWarm = performance.now();
     this.renderer.compile(this.scene, this.camera);
+
+    // Two programs `compile` cannot reach, because neither is in the scene yet:
+    // the rim on the selected prop, and everything the found screen draws in its
+    // own context. Both would otherwise compile on the frame the player first
+    // walks up to something and on the frame they first find something — the two
+    // frames they are most likely to notice.
+    this.outline.warm(this.renderer);
+    const firstItem = this.hiddenItems.getItems()[0];
+    if (firstItem) this.ui.foundScreen.warm(firstItem.object);
+
     const warmMs = Math.round(performance.now() - tWarm);
 
     // One line per map: where the seconds went. A 400k-triangle kit that loads
@@ -1352,7 +1372,11 @@ export class Game {
     this.ui.hud.showHint(next.placement.hint);
   }
 
-  private render(): void {
+  /**
+   * @param force draw even if this frame would have been skipped. A resize
+   *   resets the drawing buffer, so it must always be followed by a draw.
+   */
+  private render(force = false): void {
     // The start screen is opaque and full-bleed, so a frame of the world behind
     // it is a frame nobody sees — and it is not free: a 300k-triangle map, its
     // shadow pass and its weather, drawn every frame underneath a menu, is
@@ -1360,6 +1384,18 @@ export class Game {
     // its last frame, which is still there if the menu is dismissed without
     // starting a round.
     if (this.state === GameState.MENU) return;
+
+    // The found screen is a full-viewport `backdrop-filter: blur(13px)` and the
+    // hunt keeps running underneath it. Every other frame is enough: the blur
+    // is what the player is looking at, and the game's own frame interval is
+    // untouched — the loop still ticks at 60, only the draw is skipped, so the
+    // adaptive scaler cannot mistake this for a slow machine.
+    if (!force && this.state === GameState.PLAYING && this.ui.foundScreen.isShowing) {
+      this.skipDraw = !this.skipDraw;
+      if (this.skipDraw) return;
+    } else {
+      this.skipDraw = false;
+    }
 
     // Before the draw, never after: moving a light once the shadow map has been
     // built leaves the previous anchor's shadows on screen for a frame.
@@ -1425,6 +1461,6 @@ export class Game {
     // `setSize` resets the drawing buffer, and a resize arrives between frames
     // rather than inside one — so without this the window is briefly presented
     // as an empty canvas before the next rAF paints it.
-    this.render();
+    this.render(true);
   }
 }

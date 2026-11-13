@@ -73,6 +73,8 @@ const _local = new THREE.Vector3();
 const _quat = new THREE.Quaternion();
 const _probe = new THREE.Vector3();
 const _move = new THREE.Vector3();
+/** Scratch for the saddle position, which is read every frame while riding. */
+const _seat = new THREE.Vector3();
 const UP = new THREE.Vector3(0, 1, 0);
 
 function boneKey(name: string): string {
@@ -397,8 +399,13 @@ export class Mounts {
   /** Puts the rider on the saddle, facing the way the animal faces. */
   private placeRider(mount: Mount): void {
     const group = this.player.getGroup();
-    mount.unit.updateMatrixWorld(true);
-    const seat = mount.unit.localToWorld(mount.seatLocal.clone());
+    // The unit's own matrix, not its whole subtree: `place` has just written its
+    // position, and the saddle is a point in the unit's frame. `true` for the
+    // ancestors is what a rotated placement group needs; the forty bones under
+    // it are re-derived by the scene's own traversal before the draw, so forcing
+    // them here was doing that work twice every frame.
+    mount.unit.updateWorldMatrix(true, false);
+    const seat = mount.unit.localToWorld(_seat.copy(mount.seatLocal));
 
     group.position.set(seat.x, seat.y - (this.hipMeasured ? this.hipLift : HIP_LIFT_FALLBACK), seat.z);
     group.rotation.y = mount.yaw;

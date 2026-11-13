@@ -54,12 +54,22 @@ const CELL = 4;
 const MAX_CANDIDATES = 6;
 
 /**
- * Raycasts allowed per frame for the occlusion test.
+ * Fresh occlusion rays allowed in one frame.
  *
- * Sorted nearest-first, so the first unoccluded one is the answer; the budget
- * only has to be big enough to skip past a few things hidden behind a table.
+ * A ray through a whole map is about three quarters of a millisecond here, and
+ * the old budget of ten let a crowded corner spend seven of them in a single
+ * frame — half a 60 fps budget, on the frame the player happened to walk into a
+ * market stall. The answer only has to be right within a couple of frames,
+ * because the player is not pressing E faster than that, so the rest of the
+ * candidates are taken on trust for a frame or two and asked about next frame:
+ * an answered candidate is cached for `SIGHT_TTL`, so the backlog drains at two
+ * per frame and the steady state is zero rays.
+ *
+ * A hidden object is never taken on trust. It is the one candidate the whole
+ * hunt is about, there is at most one of them within reach, and a prompt for an
+ * object that is actually behind a wall would be the game lying to the player.
  */
-const MAX_RAYS = 10;
+const RAYS_PER_FRAME = 2;
 
 /**
  * How long a Tab choice survives the nearest-wins rule, in milliseconds.
@@ -270,32 +280,39 @@ export class InteractableSelector {
 
     // Nearest first, and the first one that is not behind something wins. The
     // raycast is the expensive part of this function, so it is spent in that
-    // order and stops as soon as there are enough candidates for Tab.
+    // order, on a budget, and stops as soon as there are enough candidates for
+    // Tab.
     const visible: Candidate[] = [];
     const now = performance.now();
     let rays = 0;
     for (const candidate of scored) {
-      if (visible.length >= MAX_CANDIDATES || rays >= MAX_RAYS) break;
+      if (visible.length >= MAX_CANDIDATES) break;
       if (geometry) {
         const sighted = this.sightedRecently(candidate, cameraPosition, now);
         if (sighted === false) continue;
         if (sighted === null) {
-          rays++;
-          _toTarget.copy(candidate.centre);
-          const sight = cameraPosition.distanceTo(_toTarget);
-          const t = geometry.raycastSegment(
-            cameraPosition.x,
-            cameraPosition.y,
-            cameraPosition.z,
-            _toTarget.x,
-            _toTarget.y,
-            _toTarget.z
-          );
-          // Same 0.35 m near-miss the hunt allows: a prop behind a table edge
-          // is still a prop the player can see and mean.
-          const blocked = t !== null && t * sight < sight - 0.35;
-          this.rememberSight(candidate.key, cameraPosition, now, !blocked);
-          if (blocked) continue;
+          // Out of budget: keep the candidate for this frame and ask about it
+          // on a later one. Dropping it instead would make the prompt flicker
+          // off while the player walks, which reads as the game refusing E.
+          const mustAsk = candidate.kind === 'item' || rays < RAYS_PER_FRAME;
+          if (mustAsk) {
+            rays++;
+            _toTarget.copy(candidate.centre);
+            const sight = cameraPosition.distanceTo(_toTarget);
+            const t = geometry.raycastSegment(
+              cameraPosition.x,
+              cameraPosition.y,
+              cameraPosition.z,
+              _toTarget.x,
+              _toTarget.y,
+              _toTarget.z
+            );
+            // Same 0.35 m near-miss the hunt allows: a prop behind a table edge
+            // is still a prop the player can see and mean.
+            const blocked = t !== null && t * sight < sight - 0.35;
+            this.rememberSight(candidate.key, cameraPosition, now, !blocked);
+            if (blocked) continue;
+          }
         }
       }
       visible.push(candidate);

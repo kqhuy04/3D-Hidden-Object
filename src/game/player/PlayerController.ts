@@ -8,6 +8,14 @@ import { GAME_CONFIG } from '../../data/gameConfig';
 const _groundProbe = new THREE.Vector3();
 /** Zero-length move: asks the resolver to settle the body where it stands. */
 const _noMovement = new THREE.Vector3();
+/**
+ * Scratch for this frame's step.
+ *
+ * The resolver copies the position it is given and only reads the movement, so
+ * a shared vector is safe here — and a walk is 60 of these a second, which is
+ * 60 objects a second the collector has to sweep for no reason.
+ */
+const _movementDelta = new THREE.Vector3();
 
 /**
  * Floor for the slope speed correction, as a fraction of the flat speed.
@@ -234,7 +242,7 @@ export class PlayerController {
       const moveX = Math.sin(moveAngle) * step;
       const moveZ = Math.cos(moveAngle) * step;
 
-      const movementDelta = new THREE.Vector3(moveX, 0, moveZ);
+      const movementDelta = _movementDelta.set(moveX, 0, moveZ);
 
       // Resolve movement with the capsule collider: sub-stepped, pushed out of
       // real mesh triangles, sliding along surfaces. The probe carries the

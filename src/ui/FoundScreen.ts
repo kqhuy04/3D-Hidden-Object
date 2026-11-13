@@ -93,6 +93,15 @@ export class FoundScreen {
     }, HOLD_MS);
   }
 
+  /**
+   * Compiles the found screen's shaders before it is ever needed.
+   *
+   * Called once per map, from the loading screen. See `FoundStage.warm`.
+   */
+  public warm(object: THREE.Object3D): void {
+    this.stage.warm(object);
+  }
+
   public hide(): void {
     this.clearTimers();
     this.element.classList.add('hidden');

@@ -138,6 +138,42 @@ export class FoundStage {
     this.start();
   }
 
+  /**
+   * Compiles an object's materials in *this* context, before the screen opens.
+   *
+   * This is a second WebGL context, so every program the found screen needs is
+   * compiled again from scratch the first time it is drawn — and the first time
+   * it is drawn is the moment the player has just found something, which is the
+   * one moment the game must not stutter. A proxy mesh sharing the real
+   * geometry and material compiles the identical program without touching the
+   * object, which is still standing in the map.
+   *
+   * Skinned meshes are skipped: their program depends on the rig, and binding a
+   * second mesh to a live skeleton to save one compile is not a trade worth
+   * making. No hidden object in the game is skinned.
+   */
+  public warm(object: THREE.Object3D): void {
+    const proxies: THREE.Mesh[] = [];
+    object.traverse((node) => {
+      const mesh = node as THREE.Mesh;
+      if (!mesh.isMesh || !mesh.material) return;
+      if ((mesh as THREE.SkinnedMesh).isSkinnedMesh) return;
+      const proxy = new THREE.Mesh(mesh.geometry, mesh.material);
+      proxy.frustumCulled = false;
+      proxies.push(proxy);
+      this.holder.add(proxy);
+    });
+    if (proxies.length === 0) return;
+
+    // The well is `display: none` until the screen opens, so its measured size
+    // is zero and a zero-sized drawing buffer is not a reliable place to compile
+    // anything. One pixel is; `show` measures the real size again.
+    this.renderer.setSize(1, 1, false);
+    this.renderer.render(this.scene, this.camera);
+
+    for (const proxy of proxies) this.holder.remove(proxy);
+  }
+
   public hide(): void {
     this.stop();
     this.clear();
