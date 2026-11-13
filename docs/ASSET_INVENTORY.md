@@ -12,6 +12,21 @@
 | `downloaded_anims/anim-walk.json` | Polyfork Animation CDN | JSON track data | ~25 KB | 22 humanoid bone tracks | `Walk` (30 keyframe poses) | Polyfork License | Character walk locomotion cycle (100% offline) |
 | `downloaded_anims/anim-run.json` | Polyfork Animation CDN | JSON track data | ~20 KB | 22 humanoid bone tracks | `Run` (22 keyframe poses) | Polyfork License | Optional run/sprint locomotion (100% offline) |
 
+### What this repository does and does not redistribute
+
+Polyfork's terms split the kit in two: **the GLB meshes are CC BY 4.0**, everything
+else in the download — the `.mjs` build modules, `LAYOUT.json`, `PARTS.json`,
+`kit.json`, `KIT.md`, `API.md` — is under the **Polyfork License**, which forbids
+redistributing them as standalone asset files. The public repository therefore
+carries only the merged map (`public/assets/maps/*.glb`, CC BY 4.0) and the game's
+own code.
+
+`assets-source/` and `extracted_kit/` are **not** in the repository and are listed
+in `.gitignore`. They are rebuild inputs, produced locally by
+`node tools/prepare-maps.mjs` from the kit download; the rows above document that
+local lineage so a future rebuild knows what it is starting from. Do not commit
+them, and do not paste their contents into an issue, a release or a gist.
+
 ## Target Objects Available in Map
 From `LAYOUT.json` and `kit.json`, the following catalog of 19 distinct target types are physically present in the Campground & Lake scene:
 1. `camp-canoe` (Vehicle, 2 instances)

@@ -50,7 +50,7 @@
 
 ## 3. Polyfork Integration Strategy
 
-- **Build-Time & Packaging:** The kit files (`extracted_kit`) are packaged into `public/assets/environment/`.
+- **Build-Time & Packaging:** `buildKit()` reads the kit from a local, gitignored `assets-source/` and writes the merged result to `public/assets/maps/`. Only that merged GLB is committed — see *What this repository does and does not redistribute* in `ASSET_INVENTORY.md` for why the kit's `.mjs` modules and manifests never ship.
 - **Target Node Retention (`keep` parameter):** When `buildKit()` is invoked, target object IDs (such as `camp-canoe`, `camping-lantern`, `a-frame-cabin`, etc.) are passed to `keep`. This ensures Polyfork merges static background clutter (trees, terrain, fences) into batch draw calls for 60 FPS performance while keeping interactive photo targets as isolated nodes for bounding-box and raycast validation.
 - **Animation Local Packaging:** Animations (`Idle`, `Walk`, `Run`) were fetched and saved locally in `public/assets/anims/` so no runtime network calls ever occur.
 
