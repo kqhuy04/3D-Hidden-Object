@@ -32,6 +32,16 @@ This project incorporates assets, code algorithms, and libraries licensed under 
   - ES Modules (`.mjs`) & kit logic: Polyfork Commercial License.
   - Permitted Use: Games, apps, interactive products sold or distributed commercially.
   - Restrictions: Files are not redistributed as standalone raw 3D assets or used to train commercial 3D asset generators.
+- **What is deliberately not in this repository:** no `.mjs` module, `LAYOUT.json`,
+  `PARTS.json`, `kit.json`, `KIT.md` or `API.md` from any kit download. Those are
+  rebuild inputs, extracted locally into `assets-source/` and `extracted_kit/`,
+  both gitignored. The repository ships the merged result of `buildKit()` as
+  `public/assets/environment/scene.glb` and nothing of the kit's own source.
+- **One item to keep an eye on:** the animation tracks in `public/assets/anims/`
+  are keyframe data served by Polyfork, not mesh files, so they sit on the
+  Polyfork-License side of the split rather than the CC BY 4.0 side. They are
+  included because the game plays them at runtime. If Polyfork asks for them to
+  go, they can be re-fetched into the build instead of committed.
 
 ---
 
