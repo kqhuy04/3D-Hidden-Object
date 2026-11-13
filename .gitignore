@@ -11,6 +11,19 @@ src-tauri/gen/
 maps/work/
 *.zip
 
+# The extracted Polyfork kit itself — never in the repo.
+#
+# These trees hold the kit's own source modules (`.mjs`), its authoring
+# manifests (`LAYOUT.json`, `PARTS.json`, `KIT.md`) and the raw part meshes.
+# Only the `.glb` files are CC BY 4.0; the `.mjs` and the manifests are under
+# the Polyfork License, which forbids redistributing them as standalone asset
+# files — and a public GitHub repo is exactly that, down to the last commit.
+# The game does not need them: it serves the maps `tools/prepare-maps.mjs`
+# builds into `public/assets/maps/`, which are CC BY 4.0 and credited in
+# `docs/THIRD_PARTY_NOTICES.md`. Re-extract a kit locally when rebuilding one.
+assets-source/
+extracted_kit/
+
 # Scratch stays out of the repo. One-off harnesses, their logs, their screenshots
 # and the Chrome profile the CDP driver opens all start with `tmp-`, so the prefix
 # is the rule. A harness worth keeping graduates to `tools/` — `pickable.mjs` and
