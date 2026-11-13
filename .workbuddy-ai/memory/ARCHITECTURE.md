@@ -69,9 +69,29 @@ session once. Read the relevant section before changing that subsystem.
   is simply wrong. It defaults to a 28 m radius — always pass a small one.
 - Props are `SkinnedMesh` even though nothing animates; `Skeleton.dispose()` is
   required on map unload and on a character swap or the bone texture leaks.
+- **The cost is the loop over parts, not the triangles in them.** 480 parts × five
+  support probes × seven ground queries per NPC leg; measured at 171 µs per
+  `groundAt` on `hospital` and 279 µs on `cozy-farm`. `gatherParts` buckets parts by
+  their XZ footprint (2 m cells) and every hot query walks that list instead — the
+  same parts, ascending, so answers are bit-identical (verified by hashing 4 000
+  queries and a 800-step `moveCapsule` trail on two maps). `groundAt` −62 %,
+  `moveCapsule` −56 %.
+- **A triangle-level index was tried first and lost.** Props are a metre or two
+  across, so every triangle lands in the same one or two cells: 0.25 m cells measured
+  *slower* than the scan (67.6 µs vs 48.5) because it added an indirection per
+  triangle and culled nothing. Do not re-do it. Indexing the broad phase is the win.
+- `rebakePart` rebuilds the part buckets: a door that swings has a new footprint.
 
 ## Characters
 
+- **A leg is chosen across frames, not in one.** `startLeg` used to try twelve
+  directions in a single frame; each try is six ground samples over the collision
+  soup, so five people finishing a pause together was one 7–20 ms frame (measured:
+  worst frame per search, median 6.9 ms, max 19.8 ms on `hospital`). One attempt per
+  frame for the *whole crowd* (`LEG_TRIES_PER_FRAME`), and the search keeps its
+  remaining tries on the actor. Worst frame per search: median 1.3 ms, max 11.8 ms
+  (the residual is a GC pause, not the search). Nobody can see a person start walking
+  200 ms after a pause instead of immediately.
 - **T-posed characters are a rig question, not a naming one.** `relaxPosedArms` is
   driven by the skeleton: it collects every unique `Skeleton` once (hats, belts and
   tablets are separate skinned meshes sharing one) and only drops the arms when **both**

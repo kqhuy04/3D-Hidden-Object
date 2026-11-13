@@ -71,6 +71,29 @@ const TALK_RANGE = 3.5;
 const IDLE_MIN = 2.5;
 const IDLE_MAX = 6.0;
 
+/**
+ * How many directions to try before giving up on a leg.
+ *
+ * A rejection is not free: each attempt walks six samples of the ground query
+ * over the whole collision soup, which on the heaviest map is a couple of
+ * milliseconds. Twelve attempts in one frame was the largest remaining spike in
+ * the game — 26 ms, on a map with a big terrain.
+ */
+const LEG_TRIES = 12;
+
+/**
+ * How many of those attempts the whole crowd may spend in one frame.
+ *
+ * One, not one per person: five people finishing a pause on the same frame
+ * would otherwise be five searches at once, which is the spike this exists to
+ * remove. One attempt is six ground samples, and the search simply resumes next
+ * frame — the actor is standing still either way, so the only thing that changes
+ * is that a leg that used to be chosen in one frame is now chosen over twelve.
+ * Nobody can see the difference between a person who starts walking 200 ms
+ * after a pause and one who starts immediately.
+ */
+const LEG_TRIES_PER_FRAME = 1;
+
 /** How far from the spawn point a person may be and still be worth animating. */
 const MAX_SPAWN_DISTANCE = 45;
 
@@ -117,6 +140,13 @@ interface Actor {
   toY: number;
   /** Length of the current leg, so progress along it can be interpolated. */
   legLength: number;
+  /**
+   * Candidate directions left to try for the next leg. Zero means "not
+   * searching", which is also the state of somebody who is walking or idling.
+   */
+  searchTries: number;
+  /** Where the search was started from. The actor does not move while it runs. */
+  searchFrom: THREE.Vector3;
   /**
    * The "Ask" verb, for a person. Null for an animal — you do not interview a
    * sheep, and a prompt offering to would be the first joke the map makes.
@@ -188,6 +218,13 @@ export class NpcCrowd {
   private playerPosition = new THREE.Vector3();
   /** What to do when the player asks somebody something. */
   private askHandler: ((speaker: THREE.Object3D) => void) | null = null;
+  /**
+   * Attempts left this frame, across the whole crowd.
+   *
+   * A field rather than a parameter because the search is entered from three
+   * places in `update` and the budget has to be shared by all of them.
+   */
+  private legBudget = 0;
 
   constructor(private collision: WorldCollision) {}
 
@@ -333,6 +370,8 @@ export class NpcCrowd {
             fromY: home.y,
             toY: home.y,
             legLength: 1,
+            searchTries: 0,
+            searchFrom: home.clone(),
             talk: animal
               ? null
               : {
@@ -370,6 +409,9 @@ export class NpcCrowd {
     if (!actor) return;
 
     actor.target = null;
+    // A search that was part-way through would otherwise walk them off
+    // mid-answer: the tries are the only thing keeping them standing.
+    actor.searchTries = 0;
     actor.idle = Math.max(actor.idle, ANSWER_SECONDS);
     actor.talking = true;
     actor.animator.play('Talking');
@@ -386,6 +428,7 @@ export class NpcCrowd {
    */
   public update(delta: number, player?: THREE.Vector3): void {
     if (player) this.playerPosition.copy(player);
+    this.legBudget = LEG_TRIES_PER_FRAME;
 
     for (const actor of this.actors) {
       actor.animator.update(delta);
@@ -396,18 +439,25 @@ export class NpcCrowd {
         actor.talk.centre.set(here.x, here.y + HEAD_LIFT, here.z);
       }
 
+      if (actor.target) {
+        this.walk(actor, delta);
+        continue;
+      }
+
+      // Mid-search. `startLeg` spends at most what is left of the frame's
+      // budget, so a search can span a dozen frames and never blocks the frame.
+      if (actor.searchTries > 0) {
+        this.startLeg(actor);
+        continue;
+      }
+
       if (actor.idle > 0) {
         actor.idle -= delta;
         if (actor.idle <= 0) this.startLeg(actor);
         continue;
       }
 
-      if (!actor.target) {
-        this.startLeg(actor);
-        continue;
-      }
-
-      this.walk(actor, delta);
+      this.startLeg(actor);
     }
   }
 
@@ -484,35 +534,52 @@ export class NpcCrowd {
   private startLeg(actor: Actor): void {
     actor.talking = false;
 
-    // Walk home once they have drifted too far, so a map's cast stays where the
-    // kit arranged it instead of slowly collecting in a corner.
     const position = actor.unit.getWorldPosition(_world);
-    const fromHome = position.distanceTo(actor.home);
-    if (fromHome > HOME_RADIUS) {
-      actor.target = actor.home.clone();
-      actor.fromY = position.y;
-      actor.legLength = Math.max(0.01, fromHome);
-      actor.toY =
-        this.collision.groundAt(actor.home.x, actor.home.z, position.y) + actor.footOffset;
-      return;
+
+    // First slice of a new pause. The leg used to be picked here in one go;
+    // now the pause only decides whether the wander has gone too far, and the
+    // candidate directions are tried a frame at a time.
+    if (actor.searchTries <= 0) {
+      // Walk home once they have drifted too far, so a map's cast stays where
+      // the kit arranged it instead of slowly collecting in a corner. This one
+      // is a single ground query, so it does not need slicing.
+      const fromHome = position.distanceTo(actor.home);
+      if (fromHome > HOME_RADIUS) {
+        actor.target = actor.home.clone();
+        actor.fromY = position.y;
+        actor.legLength = Math.max(0.01, fromHome);
+        actor.toY =
+          this.collision.groundAt(actor.home.x, actor.home.z, position.y) + actor.footOffset;
+        return;
+      }
+      actor.searchFrom.copy(position);
+      actor.searchTries = LEG_TRIES;
     }
 
-    for (let attempt = 0; attempt < 12; attempt++) {
-      const angle = Math.random() * Math.PI * 2;
-      const length = LEG_MIN + Math.random() * (LEG_MAX - LEG_MIN);
-      const x = position.x + Math.cos(angle) * length;
-      const z = position.z + Math.sin(angle) * length;
-      if (!this.legIsWalkable(actor, position, x, z)) continue;
+    // Somebody else's search already spent this frame's budget.
+    if (this.legBudget <= 0) return;
+    this.legBudget--;
+    actor.searchTries--;
+
+    const angle = Math.random() * Math.PI * 2;
+    const length = LEG_MIN + Math.random() * (LEG_MAX - LEG_MIN);
+    const x = actor.searchFrom.x + Math.cos(angle) * length;
+    const z = actor.searchFrom.z + Math.sin(angle) * length;
+
+    if (this.legIsWalkable(actor, actor.searchFrom, x, z)) {
       actor.target = new THREE.Vector3(x, position.y, z);
       actor.fromY = position.y;
       actor.legLength = length;
       actor.toY = this.collision.groundAt(x, z, position.y) + actor.footOffset;
+      actor.searchTries = 0;
       return;
     }
 
-    // Nowhere safe to go. Stand still — which is what the map did before.
-    actor.idle = IDLE_MIN;
-    actor.animator.play('Idle');
+    // Out of directions. Stand still — which is what the map did before.
+    if (actor.searchTries <= 0) {
+      actor.idle = IDLE_MIN;
+      actor.animator.play('Idle');
+    }
   }
 
   /**

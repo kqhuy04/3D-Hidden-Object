@@ -295,6 +295,96 @@ export interface CollisionBuildStats {
   buildMs: number;
 }
 
+/**
+ * Parts bucketed by their XZ footprint.
+ *
+ * The triangle-level index was tried first and it lost: a prop is a metre or
+ * two across, so every triangle of it lands in the same handful of cells and
+ * the lookup culls nothing while adding an indirection per triangle. What the
+ * profiles actually showed is that the *loop over parts* is the cost — 480
+ * parts, five probes per ground query, seven ground queries per NPC leg — and
+ * that is a broad phase, so the broad phase is what gets indexed.
+ *
+ * A part goes into every cell its box touches. A query then walks the cells its
+ * own box touches and gets exactly the parts the linear scan would have kept,
+ * which is why the answers do not move.
+ */
+interface PartGrid {
+  cell: number;
+  minX: number;
+  minZ: number;
+  nx: number;
+  nz: number;
+  start: Int32Array;
+  items: Int32Array;
+}
+
+/** Edge of one part bucket. Props are metres across; two metres keeps the lists short. */
+const PART_CELL = 2.0;
+
+/** Below this many parts, walking the list beats looking anything up. */
+const PART_GRID_MIN = 16;
+
+function buildPartGrid(parts: CollisionPart[]): PartGrid | null {
+  if (parts.length < PART_GRID_MIN) return null;
+
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minZ = Infinity;
+  let maxZ = -Infinity;
+  for (const part of parts) {
+    const b = part.bounds;
+    if (b.min.x < minX) minX = b.min.x;
+    if (b.max.x > maxX) maxX = b.max.x;
+    if (b.min.z < minZ) minZ = b.min.z;
+    if (b.max.z > maxZ) maxZ = b.max.z;
+  }
+  if (!(maxX > minX) || !(maxZ > minZ)) return null;
+
+  const nx = Math.max(1, Math.ceil((maxX - minX) / PART_CELL));
+  const nz = Math.max(1, Math.ceil((maxZ - minZ) / PART_CELL));
+  const cells = nx * nz;
+  const start = new Int32Array(cells + 1);
+
+  const cellX = (v: number) => clampCell(Math.floor((v - minX) / PART_CELL), nx);
+  const cellZ = (v: number) => clampCell(Math.floor((v - minZ) / PART_CELL), nz);
+
+  for (const part of parts) {
+    const b = part.bounds;
+    const x0 = cellX(b.min.x);
+    const x1 = cellX(b.max.x);
+    const z0 = cellZ(b.min.z);
+    const z1 = cellZ(b.max.z);
+    for (let cz = z0; cz <= z1; cz++) {
+      const row = cz * nx;
+      for (let cx = x0; cx <= x1; cx++) start[row + cx + 1]++;
+    }
+  }
+  for (let i = 0; i < cells; i++) start[i + 1] += start[i];
+
+  const items = new Int32Array(start[cells]);
+  const cursor = Int32Array.from(start.subarray(0, cells));
+  for (let p = 0; p < parts.length; p++) {
+    const b = parts[p].bounds;
+    const x0 = cellX(b.min.x);
+    const x1 = cellX(b.max.x);
+    const z0 = cellZ(b.min.z);
+    const z1 = cellZ(b.max.z);
+    for (let cz = z0; cz <= z1; cz++) {
+      const row = cz * nx;
+      for (let cx = x0; cx <= x1; cx++) items[cursor[row + cx]++] = p;
+    }
+  }
+
+  return { cell: PART_CELL, minX, minZ, nx, nz, start, items };
+}
+
+function clampCell(index: number, count: number): number {
+  if (index < 0) return 0;
+  if (index >= count) return count - 1;
+  return index;
+}
+
 export interface CircleContact {
   /** Horizontal push direction (unit). */
   nx: number;
@@ -356,6 +446,14 @@ export class CollisionGeometry {
   /** Name of the placement node the parts were taken from (see `build`). */
   private containerName = '';
 
+  /** Parts bucketed by footprint, so a query does not walk all of them. */
+  private partGrid: PartGrid | null = null;
+  /** Scratch: part indices a query is about to visit, ascending. */
+  private _candidates = new Int32Array(256);
+  /** Per-part stamp, so a part in two queried cells is visited once. */
+  private _candidateStamp = new Int32Array(0);
+  private _candidateQuery = 0;
+
   public get stats(): CollisionBuildStats {
     return this._stats;
   }
@@ -384,7 +482,63 @@ export class CollisionGeometry {
     this.parts = [];
     this.bonusParts = 0;
     this.containerName = '';
+    this.partGrid = null;
     this._stats = { parts: 0, meshes: 0, triangles: 0, skippedMeshes: 0, buildMs: 0 };
+  }
+
+  /**
+   * Fills `_candidates` with the parts whose box overlaps an XZ rectangle, in
+   * ascending part order, and returns how many there are.
+   *
+   * Ascending order is not cosmetic: `collectContacts` keeps the deepest few
+   * contacts out of everything it finds and breaks ties by the order it met
+   * them in. Visiting the same parts in the same order is what lets the index
+   * be a pure accelerator instead of a change in behaviour.
+   */
+  private gatherParts(minX: number, maxX: number, minZ: number, maxZ: number): number {
+    const grid = this.partGrid;
+    const parts = this.parts;
+    if (!grid) {
+      if (this._candidates.length < parts.length) this._candidates = new Int32Array(parts.length);
+      for (let i = 0; i < parts.length; i++) this._candidates[i] = i;
+      return parts.length;
+    }
+
+    const cx0 = clampCell(Math.floor((minX - grid.minX) / grid.cell), grid.nx);
+    const cx1 = clampCell(Math.floor((maxX - grid.minX) / grid.cell), grid.nx);
+    const cz0 = clampCell(Math.floor((minZ - grid.minZ) / grid.cell), grid.nz);
+    const cz1 = clampCell(Math.floor((maxZ - grid.minZ) / grid.cell), grid.nz);
+
+    const stamp = ++this._candidateQuery;
+    const out = this._candidates;
+    let n = 0;
+    for (let cz = cz0; cz <= cz1; cz++) {
+      const row = cz * grid.nx;
+      for (let cx = cx0; cx <= cx1; cx++) {
+        const cell = row + cx;
+        const from = grid.start[cell];
+        const to = grid.start[cell + 1];
+        for (let k = from; k < to; k++) {
+          const p = grid.items[k];
+          if (this._candidateStamp[p] === stamp) continue;
+          this._candidateStamp[p] = stamp;
+          out[n++] = p;
+        }
+      }
+    }
+
+    // Ascending, because the scan this replaces was in part order. Insertion
+    // sort: the list is the handful of props around one body.
+    for (let i = 1; i < n; i++) {
+      const v = out[i];
+      let j = i - 1;
+      while (j >= 0 && out[j] > v) {
+        out[j + 1] = out[j];
+        j--;
+      }
+      out[j + 1] = v;
+    }
+    return n;
   }
 
   /** True when the mesh must not contribute collision. */
@@ -462,6 +616,10 @@ export class CollisionGeometry {
 
     this.parts = parts;
     this.bonusParts = parts.reduce((n, p) => n + (p.stepBonus > 0 ? 1 : 0), 0);
+    this.partGrid = buildPartGrid(parts);
+    this._candidateStamp = new Int32Array(parts.length);
+    this._candidateQuery = 0;
+    if (this._candidates.length < parts.length) this._candidates = new Int32Array(parts.length);
     this._stats = {
       parts: parts.length,
       meshes: meshCount,
@@ -505,6 +663,10 @@ export class CollisionGeometry {
     if (!built.part || built.part.triangles !== before.triangles) return false;
 
     this.parts[index] = built.part;
+    // A door that swung open has a different footprint, so the buckets are
+    // rebuilt. It is a few thousand integer writes, paid once per interaction,
+    // next to a re-read of every triangle in the part.
+    this.partGrid = buildPartGrid(this.parts);
     return true;
   }
 
@@ -523,7 +685,9 @@ export class CollisionGeometry {
     const carry = this.stepBonusUnder(x, z, feetY);
     let best: number | null = null;
 
-    for (const part of this.parts) {
+    const found = this.gatherParts(x, x, z, z);
+    for (let i = 0; i < found; i++) {
+      const part = this.parts[this._candidates[i]];
       const hi = feetY + stepHeight + Math.max(part.stepBonus, carry) + 0.02;
       const top = topOfPart(part, x, z, lo, hi);
       if (top !== null && (best === null || top > best)) best = top;
@@ -549,7 +713,9 @@ export class CollisionGeometry {
   private stepBonusUnder(x: number, z: number, feetY: number): number {
     if (this.bonusParts === 0) return 0;
     let bonus = 0;
-    for (const part of this.parts) {
+    const found = this.gatherParts(x, x, z, z);
+    for (let i = 0; i < found; i++) {
+      const part = this.parts[this._candidates[i]];
       if (part.stepBonus <= bonus) continue;
       if (part.bounds.max.y < feetY - 0.3) continue;
       if (part.bounds.min.y > feetY + 0.05) continue;
@@ -623,7 +789,9 @@ export class CollisionGeometry {
     let smallest = 0;
 
     const carry = this.stepBonusUnder(x, z, feetY);
-    for (const part of this.parts) {
+    const found = this.gatherParts(x - radius, x + radius, z - radius, z + radius);
+    for (let i = 0; i < found; i++) {
+      const part = this.parts[this._candidates[i]];
       const bonus = Math.max(part.stepBonus, carry);
       const step = stepHeight + bonus;
       if (part.neverWall && this.standingOn(part, x, z, feetY, step, radius)) continue;
@@ -700,7 +868,9 @@ export class CollisionGeometry {
     let found = false;
 
     const carry = this.stepBonusUnder(x, z, feetY);
-    for (const part of this.parts) {
+    const nearby = this.gatherParts(x - radius, x + radius, z - radius, z + radius);
+    for (let i = 0; i < nearby; i++) {
+      const part = this.parts[this._candidates[i]];
       const bonus = Math.max(part.stepBonus, carry);
       const step = stepHeight + bonus;
       if (part.neverWall && this.standingOn(part, x, z, feetY, step, radius)) continue;
@@ -781,7 +951,9 @@ export class CollisionGeometry {
 
     let best = 1;
 
-    for (const part of this.parts) {
+    const found = this.gatherParts(segMinX, segMaxX, segMinZ, segMaxZ);
+    for (let i = 0; i < found; i++) {
+      const part = this.parts[this._candidates[i]];
       const b = part.bounds;
       // Slab test, segment against the part's box.
       let tMin = 0;
