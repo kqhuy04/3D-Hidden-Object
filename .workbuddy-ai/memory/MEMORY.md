@@ -39,3 +39,11 @@ touching the renderer, the collision solver or a tool. Player docs:
   shrink and pushes the footer off screen.
 - **Scratch starts with `tmp-` and is gitignored**; a harness worth keeping graduates to
   `tools/`. `node tools/hidden-objects-doc.mjs --write` regenerates the object tables.
+- **A Polyfork kit download is two licences, not one.** The `.glb` meshes are
+  CC BY 4.0 and may ship; the `.mjs` modules, `LAYOUT.json`, `PARTS.json`,
+  `kit.json`, `KIT.md` and `API.md` are Polyfork License and may **never** be
+  committed. `assets-source/` and `extracted_kit/` are gitignored rebuild inputs
+  (`node tools/prepare-maps.mjs`). A force-push does not purge: GitHub serves
+  unreachable objects by SHA, so removing files from history means dropping
+  `refs/original/*`, tags and reflogs before `gc`, and — if the repo was already
+  public — deleting and re-creating it (2026-11-13).
