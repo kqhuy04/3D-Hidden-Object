@@ -8,17 +8,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest run",
-    "tauri": "tauri"
+    "test": "vitest run"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.2.0",
-    "@tauri-apps/plugin-opener": "^2.2.0",
     "three": "^0.170.0"
   },
   "devDependencies": {
     "@gltf-transform/cli": "^4.5.1",
-    "@tauri-apps/cli": "^2.2.0",
     "@types/node": "^22.10.0",
     "@types/three": "^0.170.0",
     "typescript": "^5.7.0",

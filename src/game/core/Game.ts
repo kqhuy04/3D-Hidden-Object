@@ -724,14 +724,7 @@ export class Game {
       this.save.updateSettings({ character: id });
     });
     this.ui.mainMenu.onExit(() => {
-      // In Tauri, close window; in browser, alert or close
-      if ((window as unknown as { __TAURI__?: unknown }).__TAURI__) {
-        import('@tauri-apps/api/window').then(({ getCurrentWindow }) => {
-          getCurrentWindow().close();
-        }).catch(() => {});
-      } else {
-        window.close();
-      }
+      window.close();
     });
 
     // Pause events

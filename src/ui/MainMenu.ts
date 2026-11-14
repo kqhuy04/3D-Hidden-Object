@@ -124,7 +124,7 @@ export class MainMenu {
           </div>
           <div class="credits-block">
             <span class="credits-label">Engine</span>
-            <p class="credits-line">three.js &middot; Vite &middot; Tauri &middot; TypeScript</p>
+            <p class="credits-line">three.js &middot; Vite &middot; TypeScript</p>
           </div>
           <button id="btn-close-credits" class="btn btn-small interactive-ui">Close</button>
         </div>
