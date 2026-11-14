@@ -68,7 +68,7 @@ npm install
 ```bash
 npm run dev
 ```
-Open `http://localhost:1420` in your web browser. Append `?debug=1` for real-time diagnostic telemetry (FPS, coordinates, object distances, draw calls).
+Open `http://localhost:1420` in your web browser. Append `?debug=1` for real-time diagnostic telemetry (FPS, coordinates, object distances, draw calls). No desktop runtime is needed — this is the only way to run the game.
 
 ### Running Automated Unit Tests
 ```bash
@@ -81,14 +81,19 @@ npm run build
 ```
 
 ### Building Windows Executable & MSI
+The Tauri desktop shell was removed — the game runs in the browser. `npm run
+build` produces a static site in `dist/`; serve it with any static host (or
+`npm run preview` to check it locally).
+
+### The gacha mini-game
+`gacha/` is a separate app in the same repo (its own port, its own assets, its
+own README). It has no `package.json` of its own — it borrows the root
+`node_modules`:
+
 ```bash
-# Build desktop executable and MSI bundle
-npm run tauri build -- --bundles msi
-```
-The resulting installation packages are generated in:
-```
-src-tauri/target/release/bundle/msi/Photo Hunt_0.1.0_x64_en-US.msi
-src-tauri/target/release/bundle/nsis/Photo Hunt_0.1.0_x64-setup.exe
+npm run dev:gacha     # -> http://127.0.0.1:5180
+npm run build:gacha   # -> gacha/dist/
+npm run typecheck     # both apps
 ```
 
 ---

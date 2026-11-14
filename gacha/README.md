@@ -6,13 +6,16 @@ reference art. Standalone — it does not touch the Photo Hunt game code.
 ## Run it
 
 ```bash
-# from the repo root (three.js + vite already live in the root node_modules)
-./node_modules/.bin/vite --config gacha/vite.config.ts
-# -> http://127.0.0.1:5180/
+npm install          # once, from the repo root — gacha has no package.json of
+                     # its own, it borrows the root node_modules and vite
+npm run dev:gacha    # -> http://127.0.0.1:5180/
 ```
 
-Production build: `./node_modules/.bin/vite build --config gacha/vite.config.ts`
-(output in `gacha/dist/`).
+Production build: `npm run build:gacha` (output in `gacha/dist/`).
+Typecheck: `npm run typecheck` (both apps; `gacha/tsconfig.json` covers this one).
+
+The Photo Hunt game is `npm run dev` on port 1420. Both servers can run at the
+same time — different ports, different configs.
 
 ## The loop
 
@@ -24,7 +27,8 @@ Production build: `./node_modules/.bin/vite build --config gacha/vite.config.ts`
    capsule drops straight down the shaft and out through the arch.
 4. **Click the capsule** — it flies to the middle of the screen, cracks open, and
    the creature inside comes out (see *The reveal*).
-5. **Turn it over** — drag with the mouse. Let go and it drifts round on its own.
+5. **Turn it over** — drag with the mouse. It stays where you leave it; there is
+   no auto-spin, so the pose is the player's.
 6. The prize joins your collection (kept in `localStorage`) and flies back down
    to the floor when you insert the next coin.
 

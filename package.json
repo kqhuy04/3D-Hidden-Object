@@ -8,7 +8,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && tsc -p gacha/tsconfig.json",
+    "dev:gacha": "vite --config gacha/vite.config.ts",
+    "build:gacha": "vite build --config gacha/vite.config.ts"
   },
   "dependencies": {
     "three": "^0.170.0"
