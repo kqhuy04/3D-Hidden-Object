@@ -1324,6 +1324,13 @@ export class Game {
         // The establishing shot owns the camera and the clock. The round has not
         // started yet, so the seconds it takes do not count against the hunt.
         const still = this.cutscene.update(delta, this.camera, this.player.getPosition());
+        // The body still has to breathe. `cutscene.update` moves the lens and
+        // nothing else, and the else-branch below is what normally advances the
+        // mixer — so without this the player stood in bind pose, arms straight
+        // out, for the whole three-second descent. The people in the map were
+        // animated the whole time (`npcs.update` runs above this branch), which
+        // is exactly why the freeze read as a bug rather than as a style.
+        controller?.poseOnly(delta);
         // Any input at all means "I would like to play now".
         if (moveVec.length() > 0.05 || jump) {
           this.cutscene.skip(this.camera);
