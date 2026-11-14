@@ -21,6 +21,35 @@ const fixes: MapFixes = {
         'three segments before it only clear the ground by 10-14 cm, which reads ' +
         'as a fence following a slope; this one reads as a fence end floating.',
     },
+    {
+      name: 'ladder-timber',
+      // The boarding ladder hung off the swim raft at (27.5, 29).
+      at: [27.98, -3.01, 30.49],
+      why:
+        'Two faults in one prop. A ladder on a floating raft has nothing to lead ' +
+        'down to, and the raft is the shallowest-draft craft in the kit, so a ' +
+        'ladder hanging a metre under the deck was also the lowest point on it — ' +
+        'settleProps beds the *lowest vertex* at the waterline, which lifted the ' +
+        'deck half a metre clear of the lake. Removing the ladder lets the float ' +
+        'sit in the water where it belongs.',
+    },
+    {
+      name: 'painter-rope',
+      // Bow line of the skiff moored at (12.7, 30.6).
+      at: [12.86, -3.37, 32.9],
+      why:
+        'A painter is the rope that ties a boat to something. This one ends in a ' +
+        'mooring ring hanging over open water with nothing on the other end, so ' +
+        'it reads as a rope tied to the air.',
+    },
+    {
+      name: 'painter-rope_1',
+      // Bow line of the second skiff, moored at (6.5, 34).
+      at: [7.65, -3.37, 35.99],
+      why:
+        'Same defect as the first: a bow line with no bollard, cleat or ring to ' +
+        'reach. Both are removed so the two skiffs match.',
+    },
   ],
   shifts: [
     {
@@ -32,6 +61,17 @@ const fixes: MapFixes = {
         'and -1.24. Both ends therefore hang a hand-span clear of the ground — ' +
         'the "two corners in the air". Dropping it 32 cm beds the abutments into ' +
         'the banks, which is how a footbridge over a 30 cm gully is built.',
+    },
+    {
+      node: 'swim-raft',
+      by: [0, -0.35, 0],
+      why:
+        'SettleProps beds the raft\'s lowest vertex at the waterline, which is ' +
+        'right for a hull and wrong for a pontoon: the whole platform then stood ' +
+        'clear of the lake on top of the water rather than in it. Sinking it 35 ' +
+        'cm puts the floats under the surface, where a pontoon belongs, and ' +
+        'brings the deck down to a height you step onto from a boat. Tune this ' +
+        'number here if it still reads high.',
     },
   ],
 };

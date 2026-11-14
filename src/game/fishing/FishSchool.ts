@@ -208,7 +208,7 @@ export class FishSchool {
     }
     clips.swim?.play();
 
-    const y = this.depthFor(species, x, z, surface, halfHeight);
+    const y = this.restY(species, x, z, surface, halfHeight);
     root.position.set(x, y, z);
     this.group.add(root);
 
@@ -239,6 +239,29 @@ export class FishSchool {
    * than assumed. A crab in a 20 cm puddle ends up at the surface either way,
    * which is correct: that is where a crab in a puddle is.
    */
+  /**
+   * The height a body's centre belongs at, for a species at a place on the
+   * sheet.
+   *
+   * `depthFor` answers "how deep does this species cruise", which is a property
+   * of the fish and says nothing about the bed. Over the shelf by the shore
+   * that depth is *under the sand*: the school spawned inside the bank with its
+   * heads out of the water. Half a body above the bed is the floor, and the
+   * same rule has to hold at spawn and every frame after it, or a fish placed
+   * in the bank stays there until something moves it.
+   */
+  private restY(
+    species: FishSpecies,
+    x: number,
+    z: number,
+    surface: number,
+    halfHeight: number
+  ): number {
+    const wanted = this.depthFor(species, x, z, surface, halfHeight);
+    const column = this.water?.depthAt(x, z) ?? 0;
+    return Math.max(wanted, surface - column + halfHeight);
+  }
+
   private depthFor(species: FishSpecies, x: number, z: number, surface: number, halfHeight: number): number {
     if (!species.benthic) return surface - species.depth - halfHeight;
     const column = this.water?.depthAt(x, z) ?? species.depth + 1;
@@ -372,7 +395,7 @@ export class FishSchool {
       const surface = this.water?.heightAt(actor.position.x, actor.position.z) ?? null;
       if (surface !== null) {
         actor.surface = surface;
-        const floor = this.depthFor(actor.species, actor.position.x, actor.position.z, surface, actor.halfHeight);
+        const floor = this.restY(actor.species, actor.position.x, actor.position.z, surface, actor.halfHeight);
         actor.position.y += (floor - actor.position.y) * Math.min(1, delta * 1.6);
       }
 
@@ -388,19 +411,35 @@ export class FishSchool {
    * that strafes is a fish on rails. Turn rate is what makes a koi look placid
    * and a barracuda look nervous.
    */
+  /**
+   * A point a fish may swim to: inside its roaming radius, and over water deep
+   * enough to cover it.
+   *
+   * The target used to be picked blind, so a koi whose home was ten metres off
+   * a point could be sent straight at the beach and spend the next two seconds
+   * swimming up the sand. Six tries, then home — a school pinned against a
+   * shoreline still has to keep moving, and a target that is never accepted
+   * would be a fish that stops dead.
+   */
+  private wanderTarget(actor: Actor): { x: number; z: number } {
+    for (let tries = 0; tries < 6; tries += 1) {
+      const angle = Math.random() * Math.PI * 2;
+      const radius = Math.random() * ROAM_RADIUS;
+      const x = actor.home.x + Math.cos(angle) * radius;
+      const z = actor.home.z + Math.sin(angle) * radius;
+      if ((this.water?.depthAt(x, z) ?? 0) >= MIN_DEPTH) return { x, z };
+    }
+    return { x: actor.home.x, z: actor.home.z };
+  }
+
   private steer(actor: Actor, delta: number): void {
     actor.timer -= delta;
 
     if (actor.state === 'free') {
       if (actor.timer <= 0 || actor.position.distanceTo(actor.target) < 0.6) {
         actor.timer = 1.6 + Math.random() * 2.6;
-        const angle = Math.random() * Math.PI * 2;
-        const radius = Math.random() * ROAM_RADIUS;
-        actor.target.set(
-          actor.home.x + Math.cos(angle) * radius,
-          actor.position.y,
-          actor.home.z + Math.sin(angle) * radius
-        );
+        const spot = this.wanderTarget(actor);
+        actor.target.set(spot.x, actor.position.y, spot.z);
         // Drifting fish idle now and then; it is what keeps the school from
         // reading as nine identical wind-up toys.
         if (Math.random() < 0.22) this.play(actor, 'idle', 0.4);

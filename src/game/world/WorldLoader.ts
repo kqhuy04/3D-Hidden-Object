@@ -704,16 +704,17 @@ function buildWaterSurface(root: THREE.Object3D, terrainMeshes: THREE.Mesh[]): W
   for (const mesh of waterMeshes) {
     const material = mesh.material as THREE.Material | THREE.Material[];
     const first = Array.isArray(material) ? material[0] : material;
-    if (first && first.transparent && first.opacity > 0.75) {
+    if (first) {
+      // The sheet is a single-sided plane, which is invisible from underneath:
+      // wade out and look up and the lake simply stops existing above your
+      // head. Double-sided is the whole fix — a sheet has no "inside".
       const clone = first.clone();
-      clone.opacity = 0.6;
-      clone.depthWrite = false;
-      mesh.material = Array.isArray(material) ? material.map((m, i) => (i === 0 ? clone : m)) : clone;
-    } else if (first && !first.transparent) {
-      const clone = first.clone();
-      clone.transparent = true;
-      clone.opacity = 0.6;
-      clone.depthWrite = false;
+      clone.side = THREE.DoubleSide;
+      if (!clone.transparent || clone.opacity > 0.75) {
+        clone.transparent = true;
+        clone.opacity = 0.6;
+        clone.depthWrite = false;
+      }
       mesh.material = Array.isArray(material) ? material.map((m, i) => (i === 0 ? clone : m)) : clone;
     }
 
