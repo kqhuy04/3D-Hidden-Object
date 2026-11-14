@@ -47,3 +47,13 @@ touching the renderer, the collision solver or a tool. Player docs:
   unreachable objects by SHA, so removing files from history means dropping
   `refs/original/*`, tags and reflogs before `gc`, and — if the repo was already
   public — deleting and re-creating it (2026-11-13).
+
+## `gacha/` is a separate game, not a Photo Hunt mode
+
+`gacha/` is a standalone DESIGN GACHA mini-game (its own Vite app on port 5180,
+its own assets, its own `README.md`). It shares the repo's `node_modules` and
+`tools/cdp.mjs` but **must not be wired into Photo Hunt** — the "do not add
+modes" rule still holds. It is the only Blender-authored asset in the repo:
+`gacha/build_machine.py` builds `gacha/assets/gacha-machine.glb` procedurally.
+See `gacha/README.md` and `memory/2026-11-14.md` for the Blender MCP
+connection procedure and the glTF axis gotchas.

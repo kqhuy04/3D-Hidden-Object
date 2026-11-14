@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>DESIGN GACHA</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <canvas id="stage"></canvas>
+
+  <header class="hud hud-top">
+    <div class="panel coin-panel">
+      <span class="coin-dot"></span>
+      <span class="coin-count" id="coin-count">3</span>
+      <span class="label">coins</span>
+    </div>
+    <div class="panel title-panel">
+      <span class="title-main">DESIGN GACHA</span>
+      <span class="title-sub">KYDORIA MODEL K-02</span>
+    </div>
+    <div class="panel collection-panel">
+      <span class="label">collection</span>
+      <span class="collect-count" id="collect-count">0 / 6</span>
+    </div>
+  </header>
+
+  <footer class="hud hud-bottom">
+    <button class="btn btn-primary" id="btn-coin">
+      <span class="btn-key">SPACE</span>
+      <span>Insert coin</span>
+    </button>
+    <button class="btn" id="btn-collection">Collection</button>
+    <p class="hint" id="hint">Insert a coin to start the machine.</p>
+  </footer>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-head">
+      <h2>Collection</h2>
+      <button class="btn btn-close" id="btn-close-drawer">Close</button>
+    </div>
+    <div class="grid" id="collection-grid"></div>
+  </div>
+
+  <div class="reveal" id="reveal" hidden>
+    <div class="reveal-card">
+      <span class="reveal-rarity" id="reveal-rarity">common</span>
+      <h2 id="reveal-name">Prize</h2>
+    </div>
+  </div>
+
+  <div class="drawer-note" id="drawer-note">Click a capsule on the floor to open it.</div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
